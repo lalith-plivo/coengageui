@@ -12,33 +12,32 @@ export default createStyles((theme, { size }: InputWrapperStylesParams) => ({
 
   label: {
     display: 'inline-block',
-    marginBottom: 4,
-    fontSize: theme.fn.size({ size, sizes: theme.fontSizes }),
+    fontSize: `${theme.fontSizes.sm}px`,
     fontWeight: 500,
-    color: theme.colorScheme === 'dark' ? theme.colors.dark[0] : theme.colors.gray[9],
+    color: theme.colorScheme === 'dark' ? theme.black : theme.black,
     wordBreak: 'break-word',
     cursor: 'default',
     WebkitTapHighlightColor: 'transparent',
   },
 
   error: {
-    marginTop: theme.spacing.xs / 2,
+    marginTop: 8,
     wordBreak: 'break-word',
-    color: theme.colors.red[theme.colorScheme === 'dark' ? 6 : 7],
+    color: theme.colors.danger[1],
   },
 
   description: {
-    marginTop: -3,
-    marginBottom: 7,
+    marginTop: 8,
     wordBreak: 'break-word',
     color: `${
-      theme.colorScheme === 'dark' ? theme.colors.dark[2] : theme.colors.gray[6]
+      theme.colorScheme === 'dark' ? theme.typography_light : theme.typography_light
     } !important`,
-    fontSize: theme.fn.size({ size, sizes: theme.fontSizes }) - 2,
-    lineHeight: 1.2,
+    fontSize: `${theme.fontSizes.sm}px`,
+    lineHeight: 1.5,
+    fontWeight: 400,
   },
 
   required: {
-    color: theme.colorScheme === 'dark' ? theme.colors.red[5] : theme.colors.red[7],
+    color: theme.colors.danger[1],
   },
 }));

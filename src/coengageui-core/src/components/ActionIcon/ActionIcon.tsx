@@ -44,7 +44,7 @@ type ActionIconComponent = (<C = 'button'>(props: ActionIconProps<C>) => React.R
 };
 
 const defaultProps: Partial<ActionIconProps<any>> = {
-  color: 'gray',
+  color: 'brand',
   size: 'md',
   variant: 'hover',
   disabled: false,

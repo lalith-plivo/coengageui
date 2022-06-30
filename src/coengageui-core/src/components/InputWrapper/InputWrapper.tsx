@@ -104,15 +104,12 @@ export const InputWrapper = forwardRef<HTMLDivElement, InputWrapperProps>(
     return (
       <Box className={cx(classes.root, className)} ref={ref} {...others}>
         {label && inputLabel}
-
+        {children}
         {description && (
-          <Text {...descriptionProps} color="gray" className={classes.description}>
+          <Text {...descriptionProps} className={classes.description}>
             {description}
           </Text>
         )}
-
-        {children}
-
         {typeof error !== 'boolean' && error && (
           <Text {...errorProps} size={size} className={classes.error}>
             {error}

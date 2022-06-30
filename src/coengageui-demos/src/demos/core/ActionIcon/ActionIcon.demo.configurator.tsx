@@ -38,9 +38,8 @@ export const configurator: CoengageUIDemo = {
   component: Wrapper,
   codeTemplate,
   configurator: [
-    { name: 'color', type: 'color', initialValue: 'gray', defaultValue: 'gray' },
     { name: 'size', type: 'size', initialValue: 'md', defaultValue: 'md' },
-    { name: 'radius', type: 'size', initialValue: 'sm', defaultValue: 'sm' },
+    // { name: 'radius', type: 'size', initialValue: 'sm', defaultValue: 'sm' },
     {
       name: 'variant',
       type: 'select',

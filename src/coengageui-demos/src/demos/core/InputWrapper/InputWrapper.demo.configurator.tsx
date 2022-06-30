@@ -53,11 +53,5 @@ export const configurator: CoengageUIDemo = {
       type: 'string',
       initialValue: 'Your credit card expired',
     },
-    {
-      name: 'size',
-      type: 'size',
-      initialValue: 'sm',
-      defaultValue: 'sm',
-    },
   ],
 };

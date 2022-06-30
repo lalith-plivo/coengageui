@@ -55,7 +55,7 @@ function getVariantStyles({ variant, theme, color }: GetVariantStyles) {
   return {
     backgroundColor: colors.background,
     color: colors.color,
-    border: `1px solid ${colors.border}`,
+    border: `1px solid ${colors.color}`,
     ...theme.fn.hover({ backgroundColor: colors.hover }),
   };
 }
