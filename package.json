@@ -4,11 +4,14 @@
   "workspaces": [
     "src/*"
   ],
-  "version": "4.2.11",
+  "version": "1.0.0",
   "description": "CoengageUI Components Monorepo",
   "main": "index.js",
-  "repository": "https://github.com/coengagedev/coengage.git",
-  "author": "Lalith Narayan Kashyap <rtivital@gmail.com>",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/coengagedev/coengage.git"
+  },
+  "author": "Lalith Narayan Kashyap <lalith.s@plivo.com>",
   "license": "MIT",
   "scripts": {
     "sync-branches": "sh scripts/sync-branches.sh",
@@ -146,5 +149,18 @@
     "stylis-plugin-rtl": "^2.1.1",
     "tabler-icons-react": "^1.35.0",
     "zod": "^3.13.4"
-  }
+  },
+  "bugs": {
+    "url": "https://github.com/coengagedev/coengage/issues"
+  },
+  "homepage": "https://github.com/coengagedev/coengage#readme",
+  "directories": {
+    "doc": "docs"
+  },
+  "keywords": [
+    "ui",
+    "libui",
+    "components",
+    "react"
+  ]
 }

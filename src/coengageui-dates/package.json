@@ -6,7 +6,7 @@
   "module": "esm/index.js",
   "types": "lib/index.d.ts",
   "license": "MIT",
-  "author": "Lalith Narayan Kashyap <rtivital@gmail.com>",
+  "author": "Lalith Narayan Kashyap <lalith.s@plivo.com>",
   "homepage": "https://coengage.dev/dates/getting-started/",
   "keywords": [
     "react",

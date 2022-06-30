@@ -3,7 +3,7 @@
   "private": true,
   "description": "CoengageUI docs",
   "version": "1.0.0",
-  "author": "Lalith Narayan Kashyap <rtivital@gmail.com>",
+  "author": "Lalith Narayan Kashyap <lalith.s@plivo.com>",
   "dependencies": {
     "@mdx-js/mdx": "^1.6.22",
     "@mdx-js/react": "^1.6.22",
