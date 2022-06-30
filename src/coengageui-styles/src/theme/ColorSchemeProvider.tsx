@@ -36,4 +36,4 @@ export function ColorSchemeProvider({
   );
 }
 
-ColorSchemeProvider.displayName = '@coengageui/core/ColorSchemeProvider';
+ColorSchemeProvider.displayName = 'coengageui_core/ColorSchemeProvider';

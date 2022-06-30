@@ -1,6 +1,6 @@
 import dayjs from 'dayjs';
 import React, { useState, forwardRef } from 'react';
-import { useCoengageUIDefaultProps } from '@coengageui/core';
+import { useCoengageUIDefaultProps } from 'coengageui_core';
 import { isSameDate } from '../../utils';
 import { DayModifiers } from '../Month';
 import { CalendarBase, CalendarBaseProps } from '../CalendarBase/CalendarBase';
@@ -125,4 +125,4 @@ export const RangeCalendar = forwardRef<HTMLDivElement, RangeCalendarProps>(
   }
 );
 
-RangeCalendar.displayName = '@coengageui/dates/RangeCalendar';
+RangeCalendar.displayName = 'coengageui_dates/RangeCalendar';

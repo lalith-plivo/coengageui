@@ -7,7 +7,7 @@ import {
   Center,
   Group,
   useCoengageUITheme,
-} from '@coengageui/core';
+} from 'coengageui_core';
 
 function Wrapper(props: PopperProps<HTMLDivElement>) {
   const [referenceElement, setReferenceElement] = useState(null);
@@ -46,7 +46,7 @@ function Wrapper(props: PopperProps<HTMLDivElement>) {
 
 const codeTemplate = (props: string) => `
 import { useState } from 'react';
-import { Popper, Button, Paper, Center, Group, useCoengageUITheme } from '@coengageui/core';
+import { Popper, Button, Paper, Center, Group, useCoengageUITheme } from 'coengageui_core';
 
 function Demo() {
   const [referenceElement, setReferenceElement] = useState(null);
@@ -61,10 +61,10 @@ function Demo() {
 
       <Popper
         ${props
-          .split('\n')
-          .map((part) => `      ${part}`)
-          .join('\n')
-          .trim()}
+    .split('\n')
+    .map((part) => `      ${part}`)
+    .join('\n')
+    .trim()}
         mounted={visible}
         referenceElement={referenceElement}
         transition="pop-top-left"

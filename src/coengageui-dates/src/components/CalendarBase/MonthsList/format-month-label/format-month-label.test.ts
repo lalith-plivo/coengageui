@@ -1,7 +1,7 @@
 import { formatMonthLabel } from './format-month-label';
 import 'dayjs/locale/ru';
 
-describe('@coengageui/dates/MonthsList/format-month-label', () => {
+describe('coengageui_dates/MonthsList/format-month-label', () => {
   it('formats label with given format and locale', () => {
     expect(
       formatMonthLabel({ month: new Date(2021, 11, 1), locale: 'en', format: 'MMMM YYYY' })

@@ -1,5 +1,5 @@
 import React from 'react';
-import { Burger, Code } from '@coengageui/core';
+import { Burger, Code } from 'coengageui_core';
 import corePackageJson from '../../../../../package.json';
 import { Logo } from '../../Logo/Logo';
 import { HeaderControls } from './HeaderControls/HeaderControls';

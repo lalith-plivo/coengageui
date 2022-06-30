@@ -1,6 +1,6 @@
 import React from 'react';
-import { Text, Paper } from '@coengageui/core';
-import { AccordionDemo, TimelineBase } from '@coengageui/demos';
+import { Text, Paper } from 'coengageui_core';
+import { AccordionDemo, TimelineBase } from 'coengageui_demos';
 
 export function ContentDemos() {
   return (

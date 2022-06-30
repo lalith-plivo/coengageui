@@ -1,19 +1,19 @@
 import React from 'react';
 import { Check } from 'tabler-icons-react';
-import { Notification, NotificationProps } from '@coengageui/core';
+import { Notification, NotificationProps } from 'coengageui_core';
 import { demoBase } from './_demo-base';
 
 function Wrapper(props: NotificationProps) {
   return (
     <div style={{ maxWidth: 400, margin: 'auto' }}>
-      <Notification onClose={() => {}} {...props} />
-      <Notification mt="md" icon={<Check size={20} />} onClose={() => {}} {...props} />
+      <Notification onClose={() => { }} {...props} />
+      <Notification mt="md" icon={<Check size={20} />} onClose={() => { }} {...props} />
     </div>
   );
 }
 
 const codeTemplate = (props: string, children: string) => `
-import { Notification } from '@coengageui/core';
+import { Notification } from 'coengageui_core';
 import { Check } from 'tabler-icons-react';
 
 function Demo() {

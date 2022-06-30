@@ -1,9 +1,9 @@
 import React from 'react';
 import { Star } from 'tabler-icons-react';
-import { Avatar, Group } from '@coengageui/core';
+import { Avatar, Group } from 'coengageui_core';
 
 const code = `
-import { Avatar } from '@coengageui/core';
+import { Avatar } from 'coengageui_core';
 import { Star } from 'tabler-icons-react';
 
 function Demo() {

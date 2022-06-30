@@ -1,7 +1,7 @@
-import { JsonInput } from '@coengageui/core';
+import { JsonInput } from 'coengageui_core';
 
 const codeTemplate = (props: string) => `
-import { JsonInput } from '@coengageui/core';
+import { JsonInput } from 'coengageui_core';
 
 function Demo() {
   return (

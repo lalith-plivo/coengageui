@@ -1,6 +1,6 @@
 import { getCurves } from './get-curves';
 
-describe('@coengageui/core/RingProgress/get-curves', () => {
+describe('coengageui_core/RingProgress/get-curves', () => {
   it('returns valid curves data', () => {
     const curves = getCurves({
       size: 350,

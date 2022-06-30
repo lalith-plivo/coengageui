@@ -1,5 +1,5 @@
 import React from 'react';
-import { NumberInput } from '@coengageui/core';
+import { NumberInput } from 'coengageui_core';
 
 const code = `
 // Error as boolean – red border color

@@ -73,7 +73,7 @@ export function useFullscreen<T extends HTMLElement = any>() {
       setFullscreen(false);
       // eslint-disable-next-line no-console
       console.error(
-        `[@coengageui/hooks] use-fullscreen: Error attempting full-screen mode method: ${event} (${event.target})`
+        `[coengageui_hooks] use-fullscreen: Error attempting full-screen mode method: ${event} (${event.target})`
       );
     },
     [setFullscreen]

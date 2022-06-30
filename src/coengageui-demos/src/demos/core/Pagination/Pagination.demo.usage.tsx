@@ -1,5 +1,5 @@
 import React from 'react';
-import { Pagination } from '@coengageui/core';
+import { Pagination } from 'coengageui_core';
 
 function Demo() {
   return <Pagination total={10} position="center" />;

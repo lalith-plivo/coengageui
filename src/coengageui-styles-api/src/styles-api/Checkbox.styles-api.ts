@@ -1,4 +1,4 @@
-import { CheckboxStylesNames } from '@coengageui/core';
+import { CheckboxStylesNames } from 'coengageui_core';
 
 export const Checkbox: Record<CheckboxStylesNames, string> = {
   root: 'Root button element',

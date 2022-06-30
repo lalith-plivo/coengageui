@@ -1,4 +1,4 @@
-import { PinInput } from '@coengageui/labs';
+import { PinInput } from 'coengageui_labs';
 
 const codeTemplate = (props: string) => `<PasswordInput
  ${props}

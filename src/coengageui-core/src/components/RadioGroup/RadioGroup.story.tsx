@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { storiesOf } from '@storybook/react';
-import { COENGAGEUI_SIZES } from '@coengageui/styles';
+import { COENGAGEUI_SIZES } from 'coengageui_styles';
 import { RadioGroup, Radio } from './index';
 
 const sizes = COENGAGEUI_SIZES.map((size) => (

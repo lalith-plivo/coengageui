@@ -1,6 +1,6 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
-import { COENGAGEUI_SIZES } from '@coengageui/core';
+import { COENGAGEUI_SIZES } from 'coengageui_core';
 import { CalendarBase, CalendarBaseProps } from './CalendarBase';
 
 function Wrapper(props: Partial<CalendarBaseProps>) {

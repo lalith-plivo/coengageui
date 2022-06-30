@@ -1,7 +1,7 @@
-import { DatePicker } from '@coengageui/dates';
+import { DatePicker } from 'coengageui_dates';
 
 const codeTemplate = (props: string) => `
-import { DatePicker } from '@coengageui/dates';
+import { DatePicker } from 'coengageui_dates';
 
 function Demo() {
   return (

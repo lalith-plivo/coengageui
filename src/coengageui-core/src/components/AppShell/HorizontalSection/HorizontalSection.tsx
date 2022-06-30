@@ -6,7 +6,7 @@ import {
   getDefaultZIndex,
   ForwardRefWithStaticComponents,
   Global,
-} from '@coengageui/styles';
+} from 'coengageui_styles';
 import { Box } from '../../Box';
 import { useAppShellContext } from '../AppShell.context';
 import { getSortedBreakpoints } from './get-sorted-breakpoints/get-sorted-breakpoints';
@@ -46,7 +46,7 @@ export interface HorizontalSectionSharedProps extends DefaultProps<HorizontalSec
 
 export interface HorizontalSectionProps
   extends HorizontalSectionSharedProps,
-    Omit<React.ComponentPropsWithRef<'nav'>, 'children'> {
+  Omit<React.ComponentPropsWithRef<'nav'>, 'children'> {
   section: 'navbar' | 'aside';
   __staticSelector: string;
 }
@@ -128,4 +128,4 @@ export const HorizontalSection: HorizontalSectionComponent = forwardRef<
 ) as any;
 
 HorizontalSection.Section = Section;
-HorizontalSection.displayName = '@coengageui/core/HorizontalSection';
+HorizontalSection.displayName = 'coengageui_core/HorizontalSection';

@@ -8,10 +8,10 @@ Form management library
 
 ```sh
 # With yarn
-yarn add @coengageui/form
+yarn add coengageui_form
 
 # With npm
-npm install @coengageui/form
+npm install coengageui_form
 ```
 
 ## License

@@ -1,6 +1,6 @@
 import React from 'react';
-import { Button, Group } from '@coengageui/core';
-import { useSpotlight } from '@coengageui/spotlight';
+import { Button, Group } from 'coengageui_core';
+import { useSpotlight } from 'coengageui_spotlight';
 
 export function SpotlightControl({ buttonLabel }: { buttonLabel?: string }) {
   const spotlight = useSpotlight();

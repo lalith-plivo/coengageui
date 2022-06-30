@@ -1,17 +1,17 @@
 import React from 'react';
 import { render } from '@testing-library/react';
-import { itSupportsSystemProps } from '@coengageui/tests';
+import { itSupportsSystemProps } from 'coengageui_tests';
 import { TabControl, TabControlProps } from './TabControl';
 
 const defaultProps: TabControlProps = {
   active: true,
 };
 
-describe('@coengageui/core/TabControl', () => {
+describe('coengageui_core/TabControl', () => {
   itSupportsSystemProps({
     component: TabControl,
     props: defaultProps,
-    displayName: '@coengageui/core/TabControl',
+    displayName: 'coengageui_core/TabControl',
     refType: HTMLButtonElement,
   });
 

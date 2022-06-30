@@ -1,8 +1,8 @@
 import React from 'react';
-import { MultiSelect } from '@coengageui/core';
+import { MultiSelect } from 'coengageui_core';
 
 const codeTemplate = (props: string) => `
-import { MultiSelect } from '@coengageui/core';
+import { MultiSelect } from 'coengageui_core';
 
 function Demo() {
   return (

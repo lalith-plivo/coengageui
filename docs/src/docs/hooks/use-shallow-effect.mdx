@@ -1,12 +1,12 @@
 ---
 group: 'coengageui-hooks'
-package: '@coengageui/hooks'
+package: 'coengageui_hooks'
 title: 'use-shallow-effect'
 category: 'lifecycle'
 order: 1
 slug: /hooks/use-shallow-effect/
 description: 'useEffect drop in replacement with dependencies shallow comparison'
-import: "import { useShallowEffect } from '@coengageui/hooks';"
+import: "import { useShallowEffect } from 'coengageui_hooks';"
 docs: 'hooks/use-shallow-effect.mdx'
 source: 'coengageui-hooks/src/use-shallow-effect/use-shallow-effect.ts'
 ---
@@ -17,7 +17,7 @@ use-shallow-effect works exactly like `useEffect` but performs shallow dependenc
 
 ```tsx
 import { useEffect } from 'react';
-import { useShallowEffect } from '@coengageui/hooks';
+import { useShallowEffect } from 'coengageui_hooks';
 
 // Will be called on each render
 useEffect(() => {}, [{ a: 1 }]);

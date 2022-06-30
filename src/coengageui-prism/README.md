@@ -8,10 +8,10 @@ Code highlight built with prism and CoengageUI
 
 ```sh
 # With yarn
-yarn add @coengageui/hooks @coengageui/core @coengageui/prism
+yarn add coengageui_hooks coengageui_core coengageui_prism
 
 # With npm
-npm install @coengageui/hooks @coengageui/core @coengageui/prism
+npm install coengageui_hooks coengageui_core coengageui_prism
 ```
 
 ## License

@@ -1,6 +1,6 @@
 ---
 group: 'coengageui-form'
-package: '@coengageui/form'
+package: 'coengageui_form'
 title: 'use-form schema'
 order: 2
 slug: /form/schema/
@@ -9,12 +9,12 @@ docs: 'form/schema.mdx'
 source: 'coengageui-form/src'
 ---
 
-import { FormDemos } from '@coengageui/demos';
+import { FormDemos } from 'coengageui_demos';
 
 ## Getting started
 
-`@coengageui/form` supports schema validation with [zod](https://www.npmjs.com/package/zod), [joi](https://www.npmjs.com/package/joi) and [yup](https://www.npmjs.com/package/yup) out of the box.
-You will need to install one of the libraries yourself, as `@coengageui/form` package does not depend on any of them.
+`coengageui_form` supports schema validation with [zod](https://www.npmjs.com/package/zod), [joi](https://www.npmjs.com/package/joi) and [yup](https://www.npmjs.com/package/yup) out of the box.
+You will need to install one of the libraries yourself, as `coengageui_form` package does not depend on any of them.
 If you do not know what validation library to choose, we recommend choosing [zod](https://www.npmjs.com/package/zod)
 as the most modern and developer-friendly library.
 
@@ -27,7 +27,7 @@ yarn add zod
 npm install zod
 ```
 
-Then create schema and wrap it with `zodResolver` exported from `@coengageui/form`:
+Then create schema and wrap it with `zodResolver` exported from `coengageui_form`:
 
 <Demo data={FormDemos.zod} />
 
@@ -40,7 +40,7 @@ yarn add yup
 npm install yup
 ```
 
-Then create schema and wrap it with `yupResolver` exported from `@coengageui/form`:
+Then create schema and wrap it with `yupResolver` exported from `coengageui_form`:
 
 <Demo data={FormDemos.yup} />
 
@@ -53,6 +53,6 @@ yarn add joi
 npm install joi
 ```
 
-Then create schema and wrap it with `joiResolver` exported from `@coengageui/form`:
+Then create schema and wrap it with `joiResolver` exported from `coengageui_form`:
 
 <Demo data={FormDemos.joi} />

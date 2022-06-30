@@ -1,8 +1,8 @@
 import React from 'react';
-import { Tooltip, Group, Button } from '@coengageui/core';
+import { Tooltip, Group, Button } from 'coengageui_core';
 
 const code = `
-import { Button, Tooltip } from '@coengageui/core';
+import { Button, Tooltip } from 'coengageui_core';
 
 function Demo() {
   return (

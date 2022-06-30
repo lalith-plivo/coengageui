@@ -1,5 +1,5 @@
 import React, { forwardRef } from 'react';
-import { DefaultProps, useCoengageUIDefaultProps } from '@coengageui/styles';
+import { DefaultProps, useCoengageUIDefaultProps } from 'coengageui_styles';
 import { Box } from '../Box/Box';
 import useStyles from './AspectRatio.styles';
 
@@ -26,4 +26,4 @@ export const AspectRatio = forwardRef<HTMLDivElement, AspectRatioProps>(
   }
 );
 
-AspectRatio.displayName = '@coengageui/core/AspectRatio';
+AspectRatio.displayName = 'coengageui_core/AspectRatio';

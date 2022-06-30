@@ -1,8 +1,8 @@
 import React from 'react';
 import { Link } from 'gatsby';
-import { Button, Group } from '@coengageui/core';
+import { Button, Group } from 'coengageui_core';
 import { ArrowRightIcon } from '@modulz/radix-icons';
-import { Demo, CreateStylesDemos } from '@coengageui/demos';
+import { Demo, CreateStylesDemos } from 'coengageui_demos';
 import { PageSection } from '../PageSection/PageSection';
 
 export function Emotion() {

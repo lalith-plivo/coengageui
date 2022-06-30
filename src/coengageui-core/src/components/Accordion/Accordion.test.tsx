@@ -1,7 +1,7 @@
 import React from 'react';
 import { render, screen } from '@testing-library/react';
 import userEvent from '@testing-library/user-event';
-import { checkAccessibility, itSupportsSystemProps } from '@coengageui/tests';
+import { checkAccessibility, itSupportsSystemProps } from 'coengageui_tests';
 import { Button } from '../Button';
 import { Accordion, AccordionProps } from './Accordion';
 import { AccordionItem } from './AccordionItem/AccordionItem';
@@ -15,11 +15,11 @@ const defaultProps: AccordionProps = {
   ],
 };
 
-describe('@coengageui/core/Accordion', () => {
+describe('coengageui_core/Accordion', () => {
   itSupportsSystemProps({
     component: Accordion,
     props: defaultProps,
-    displayName: '@coengageui/core/Accordion',
+    displayName: 'coengageui_core/Accordion',
     refType: HTMLDivElement,
   });
   checkAccessibility([<Accordion {...defaultProps} />]);

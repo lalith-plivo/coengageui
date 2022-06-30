@@ -1,5 +1,5 @@
 import React from 'react';
-import { Prism } from '@coengageui/prism';
+import { Prism } from 'coengageui_prism';
 
 export const go = `
 package main

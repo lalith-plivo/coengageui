@@ -12,7 +12,7 @@ export { CountriesSelect } from './demos/core/MultiSelect/MultiSelect.demo.count
 export * as CreateStylesDemos from './demos/create-styles';
 export * as ThemeDemos from './demos/theme';
 
-// @coengageui/core
+// coengageui_core
 export * as AccordionDemos from './demos/core/Accordion';
 export * as ActionIconDemos from './demos/core/ActionIcon';
 export * as AffixDemos from './demos/core/Affix';
@@ -94,7 +94,7 @@ export * as TransferListDemos from './demos/core/TransferList';
 export * as TransitionDemos from './demos/core/Transition';
 export * as TypographyStylesProviderDemos from './demos/core/TypographyStylesProvider';
 
-// @coengageui/dates
+// coengageui_dates
 export * as CalendarDemos from './demos/dates/Calendar';
 export * as DatePickerDemos from './demos/dates/DatePicker';
 export * as DateRangePickerDemos from './demos/dates/DateRangePicker';
@@ -113,6 +113,6 @@ export * as HooksDemos from './demos/hooks';
 export * as SpotlightDemos from './demos/spotlight';
 export * as FormDemos from './demos/form';
 
-// @coengageui/labs
+// coengageui_labs
 export * as PinInputDemos from './demos/labs/PinInput';
 export * as TagInputDemos from './demos/labs/TagInput';

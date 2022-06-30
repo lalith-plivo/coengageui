@@ -8,10 +8,10 @@ A set of react hooks for state and UI management
 
 ```sh
 # With yarn
-yarn add @coengageui/hooks
+yarn add coengageui_hooks
 
 # With npm
-npm install @coengageui/hooks
+npm install coengageui_hooks
 ```
 
 ## License

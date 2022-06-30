@@ -1,4 +1,4 @@
-import { createStyles } from '@coengageui/core';
+import { createStyles } from 'coengageui_core';
 import image from './banner.webp';
 
 export default createStyles((theme) => ({

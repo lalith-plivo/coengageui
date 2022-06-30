@@ -1,8 +1,8 @@
 import React from 'react';
-import { Group, Button, CoengageUIProvider, useCoengageUITheme } from '@coengageui/core';
+import { Group, Button, CoengageUIProvider, useCoengageUITheme } from 'coengageui_core';
 
 const code = `
-import { Button, CoengageUIProvider } from '@coengageui/core';
+import { Button, CoengageUIProvider } from 'coengageui_core';
 
 function Demo() {
   return (

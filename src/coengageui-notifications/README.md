@@ -8,10 +8,10 @@ Notifications system
 
 ```sh
 # With yarn
-yarn add @coengageui/hooks @coengageui/core @coengageui/notifications
+yarn add coengageui_hooks coengageui_core coengageui_notifications
 
 # With npm
-npm install @coengageui/hooks @coengageui/core @coengageui/notifications
+npm install coengageui_hooks coengageui_core coengageui_notifications
 ```
 
 ## License

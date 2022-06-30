@@ -1,10 +1,10 @@
 import React from 'react';
-import { useCoengageUITheme, Group, Text, Code } from '@coengageui/core';
-import { useMouse } from '@coengageui/hooks';
+import { useCoengageUITheme, Group, Text, Code } from 'coengageui_core';
+import { useMouse } from 'coengageui_hooks';
 
 const code = `
-import { useCoengageUITheme, Text, Code, Group } from '@coengageui/core';
-import { useMouse } from '@coengageui/hooks';
+import { useCoengageUITheme, Text, Code, Group } from 'coengageui_core';
+import { useMouse } from 'coengageui_hooks';
 
 function Demo() {
   const theme = useCoengageUITheme();

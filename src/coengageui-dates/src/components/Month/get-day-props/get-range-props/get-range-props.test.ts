@@ -2,7 +2,7 @@ import { getRangeProps } from './get-range-props';
 
 const range: [Date, Date] = [new Date(2021, 0, 1), new Date(2021, 0, 15)];
 
-describe('@coengageui/dates/Day/get-range-props', () => {
+describe('coengageui_dates/Day/get-range-props', () => {
   it('correctly detects date to be in range', () => {
     expect(getRangeProps(new Date(2021, 0, 12), range).inRange).toBe(true);
   });

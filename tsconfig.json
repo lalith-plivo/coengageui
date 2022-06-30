@@ -22,7 +22,7 @@
   ],
   "compilerOptions": {
     "paths": {
-      "@coengageui/*": ["src/coengageui-*/src"],
+      "coengageui_*": ["src/coengageui-*/src"],
       "@demos/*": ["src/coengageui-*/src/demos"]
     }
   }

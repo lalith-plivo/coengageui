@@ -1,9 +1,9 @@
 import React from 'react';
 import { Flame } from 'tabler-icons-react';
-import { Blockquote } from '@coengageui/core';
+import { Blockquote } from 'coengageui_core';
 
 const code = `
-import { Blockquote } from '@coengageui/core';
+import { Blockquote } from 'coengageui_core';
 import { Flame } from 'tabler-icons-react';
 
 function Demo() {

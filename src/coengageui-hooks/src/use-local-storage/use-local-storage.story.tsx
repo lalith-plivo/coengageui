@@ -7,7 +7,7 @@ export default {
 
 export function Usage() {
   const [value, setValue] = useLocalStorage<string>({
-    key: '@coengageui/localStorage/val',
+    key: 'coengageui_localStorage/val',
     defaultValue: 'Value persists through reloads and changes across multiple tabs',
   });
 
@@ -20,17 +20,17 @@ export function Usage() {
 
 export function SerializeJson() {
   const [value, setValue] = useLocalStorage<{ coengage: string }>({
-    key: '@coengageui/localStorage/val',
+    key: 'coengageui_localStorage/val',
     defaultValue: { coengage: 'is awesome' },
   });
 
   const [value2, setValue2] = useLocalStorage<{ coengage: string }>({
-    key: '@coengageui/localStorage/val',
+    key: 'coengageui_localStorage/val',
     defaultValue: { coengage: 'is awesome' },
   });
 
   const [value3, setValue3] = useLocalStorage<{ coengage: string }>({
-    key: '@coengageui/localStorage/another-value',
+    key: 'coengageui_localStorage/another-value',
     defaultValue: { coengage: 'is awesome' },
   });
 
@@ -54,7 +54,7 @@ export function SerializeJson() {
 
 export function SerializeBoolean() {
   const [value, setValue] = useLocalStorage<boolean>({
-    key: '@coengageui/localStorage/val',
+    key: 'coengageui_localStorage/val',
     defaultValue: true,
   });
 

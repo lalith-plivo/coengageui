@@ -1,5 +1,5 @@
 import React from 'react';
-import { List, ListProps } from '@coengageui/core';
+import { List, ListProps } from 'coengageui_core';
 
 function Wrapper(props: ListProps) {
   return (
@@ -14,7 +14,7 @@ function Wrapper(props: ListProps) {
 }
 
 const codeTemplate = (props: string) => `
-import { List } from '@coengageui/core';
+import { List } from 'coengageui_core';
 
 function Demo() {
   return (

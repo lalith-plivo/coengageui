@@ -1,7 +1,7 @@
 import { StepCompleted } from './StepCompleted';
 
-describe('@coengageui/core/StepCompleted', () => {
+describe('coengageui_core/StepCompleted', () => {
   it('has correct displayName', () => {
-    expect(StepCompleted.displayName).toStrictEqual('@coengageui/core/StepCompleted');
+    expect(StepCompleted.displayName).toStrictEqual('coengageui_core/StepCompleted');
   });
 });

@@ -1,9 +1,9 @@
 import React from 'react';
 import { Photo, MessageCircle, Settings } from 'tabler-icons-react';
-import { Tabs, TabsProps } from '@coengageui/core';
+import { Tabs, TabsProps } from 'coengageui_core';
 
 const code = `
-import { TabsProps, Tabs } from '@coengageui/core';
+import { TabsProps, Tabs } from 'coengageui_core';
 import { Photo, MessageCircle, Settings } from 'tabler-icons-react';
 
 function StyledTabs(props: TabsProps) {
@@ -63,9 +63,8 @@ function StyledTabs(props: TabsProps) {
         tabControl: {
           backgroundColor: theme.colorScheme === 'dark' ? theme.colors.dark[6] : theme.white,
           color: theme.colorScheme === 'dark' ? theme.colors.dark[0] : theme.colors.gray[9],
-          border: `1px solid ${
-            theme.colorScheme === 'dark' ? theme.colors.dark[6] : theme.colors.gray[4]
-          }`,
+          border: `1px solid ${theme.colorScheme === 'dark' ? theme.colors.dark[6] : theme.colors.gray[4]
+            }`,
           fontSize: theme.fontSizes.md,
           padding: `${theme.spacing.lg}px ${theme.spacing.xl}px`,
 

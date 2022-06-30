@@ -26,4 +26,4 @@ export const HueSlider = forwardRef<HTMLDivElement, HueSliderProps>(
   )
 );
 
-HueSlider.displayName = '@coengageui/core/HueSlider';
+HueSlider.displayName = 'coengageui_core/HueSlider';

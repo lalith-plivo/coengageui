@@ -1,7 +1,7 @@
-import { PasswordInput } from '@coengageui/core';
+import { PasswordInput } from 'coengageui_core';
 
 const codeTemplate = (props: string) => `
-import { PasswordInput } from '@coengageui/core';
+import { PasswordInput } from 'coengageui_core';
 
 function Demo() {
   return (

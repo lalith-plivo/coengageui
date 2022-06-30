@@ -1,9 +1,9 @@
 import React from 'react';
-import { Table } from '@coengageui/core';
+import { Table } from 'coengageui_core';
 import { elements } from './_data';
 
 const code = `
-import { Table } from '@coengageui/core';
+import { Table } from 'coengageui_core';
 
 function Demo() {
   const rows = elements.map((element) => (

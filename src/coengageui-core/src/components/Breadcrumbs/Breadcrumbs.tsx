@@ -1,5 +1,5 @@
 import React, { forwardRef } from 'react';
-import { DefaultProps, Selectors, useCoengageUIDefaultProps } from '@coengageui/styles';
+import { DefaultProps, Selectors, useCoengageUIDefaultProps } from 'coengageui_styles';
 import { Text } from '../Text';
 import { Box } from '../Box';
 import useStyles from './Breadcrumbs.styles';
@@ -8,7 +8,7 @@ export type BreadcrumbsStylesNames = Selectors<typeof useStyles>;
 
 export interface BreadcrumbsProps
   extends DefaultProps<BreadcrumbsStylesNames>,
-    React.ComponentPropsWithoutRef<'div'> {
+  React.ComponentPropsWithoutRef<'div'> {
   /** Separator between breadcrumbs */
   separator?: React.ReactNode;
 
@@ -52,4 +52,4 @@ export const Breadcrumbs = forwardRef<HTMLDivElement, BreadcrumbsProps>(
   }
 );
 
-Breadcrumbs.displayName = '@coengageui/core/Breadcrumbs';
+Breadcrumbs.displayName = 'coengageui_core/Breadcrumbs';

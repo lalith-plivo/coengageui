@@ -1,8 +1,8 @@
 import React from 'react';
-import { Chips, Chip, createStyles } from '@coengageui/core';
+import { Chips, Chip, createStyles } from 'coengageui_core';
 
 const code = `
-import { createStyles, Chip, Chips } from '@coengageui/core';
+import { createStyles, Chip, Chips } from 'coengageui_core';
 
 const useStyles = createStyles((theme, _params, getRef) => ({
   iconWrapper: {

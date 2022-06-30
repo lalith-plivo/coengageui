@@ -1,5 +1,5 @@
 import React from 'react';
-import { ScrollArea, ScrollAreaProps } from '@coengageui/core';
+import { ScrollArea, ScrollAreaProps } from 'coengageui_core';
 import { Content } from './_content';
 
 function Wrapper(props: ScrollAreaProps) {
@@ -13,7 +13,7 @@ function Wrapper(props: ScrollAreaProps) {
 }
 
 const codeTemplate = (props: string) => `
-import { ScrollArea } from '@coengageui/core';
+import { ScrollArea } from 'coengageui_core';
 
 function Demo() {
   return (

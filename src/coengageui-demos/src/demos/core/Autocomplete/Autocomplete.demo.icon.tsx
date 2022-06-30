@@ -1,9 +1,9 @@
 import React from 'react';
 import { Hash } from 'tabler-icons-react';
-import { Autocomplete } from '@coengageui/core';
+import { Autocomplete } from 'coengageui_core';
 
 const code = `
-import { Autocomplete } from '@coengageui/core';
+import { Autocomplete } from 'coengageui_core';
 import { Hash } from 'tabler-icons-react';
 
 function Demo() {

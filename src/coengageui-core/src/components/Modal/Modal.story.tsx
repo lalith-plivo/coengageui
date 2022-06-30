@@ -1,6 +1,6 @@
 import React, { useState, useRef, useEffect } from 'react';
 import { storiesOf } from '@storybook/react';
-import { CoengageUIProvider } from '@coengageui/styles';
+import { CoengageUIProvider } from 'coengageui_styles';
 import { Button } from '../Button/Button';
 import { Text } from '../Text/Text';
 import { Select } from '../Select/Select';

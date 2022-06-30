@@ -1,8 +1,8 @@
 import React from 'react';
-import { Progress } from '@coengageui/core';
+import { Progress } from 'coengageui_core';
 
 const code = `
-import { Progress } from '@coengageui/core';
+import { Progress } from 'coengageui_core';
 
 function Demo() {
   return (

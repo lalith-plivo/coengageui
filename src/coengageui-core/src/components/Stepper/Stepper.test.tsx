@@ -1,7 +1,7 @@
 import React from 'react';
 import { render, screen } from '@testing-library/react';
 import userEvent from '@testing-library/user-event';
-import { checkAccessibility, itSupportsSystemProps } from '@coengageui/tests';
+import { checkAccessibility, itSupportsSystemProps } from 'coengageui_tests';
 import { Step } from './Step/Step';
 import { StepCompleted } from './StepCompleted/StepCompleted';
 import { Stepper, StepperProps } from './Stepper';
@@ -25,12 +25,12 @@ const defaultProps: StepperProps = {
   ],
 };
 
-describe('@coengageui/core/Stepper', () => {
+describe('coengageui_core/Stepper', () => {
   checkAccessibility([<Stepper {...defaultProps} />]);
   itSupportsSystemProps({
     component: Stepper,
     props: defaultProps,
-    displayName: '@coengageui/core/Stepper',
+    displayName: 'coengageui_core/Stepper',
     refType: HTMLDivElement,
   });
 

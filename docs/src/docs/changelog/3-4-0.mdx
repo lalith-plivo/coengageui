@@ -7,9 +7,15 @@ release: https://github.com/coengagedev/coengage/releases/tag/3.4.0
 date: 'December 13th, 2021'
 ---
 
-import { SelectDemos, HighlightDemos, CardDemos, CalendarDemos, HooksDemos } from '@coengageui/demos';
+import {
+  SelectDemos,
+  HighlightDemos,
+  CardDemos,
+  CalendarDemos,
+  HooksDemos,
+} from 'coengageui_demos';
 
-## @coengageui/dates improvements
+## coengageui_dates improvements
 
 [Calendar](https://coengage.dev/dates/calendar/) component was rebuilt to improved date picking experience.
 Now user can change level by clicking label between next and previous controls:
@@ -19,7 +25,7 @@ Now user can change level by clicking label between next and previous controls:
 This change is applied to all components that use Calendar: [DatePicker](https://coengage.dev/dates/date-picker/), [DateRangePicker](https://coengage.dev/dates/date-picker/) and [RangeCalendar](https://coengage.dev/dates/calendar/).
 There are several **breaking changes** associated with this improvement:
 
-- All @coengageui/dates components that use Calendar no longer support `withSelect` and `yearsRange` props
+- All coengageui_dates components that use Calendar no longer support `withSelect` and `yearsRange` props
 - Styles API names were changed to include new calendar header
 
 ## New hooks
@@ -31,8 +37,8 @@ There are several **breaking changes** associated with this improvement:
 [use-input-state](https://coengage.dev/hooks/use-input-state/) hook lets you handle state of native inputs (with event in `onChange` handler) and custom inputs (with value in `onChange` handler):
 
 ```tsx
-import { useInputState } from '@coengageui/hooks';
-import { TextInput, NumberInput } from '@coengageui/core';
+import { useInputState } from 'coengageui_hooks';
+import { TextInput, NumberInput } from 'coengageui_core';
 
 function Demo() {
   const [stringValue, setStringValue] = useInputState('');

@@ -8,7 +8,7 @@ const customTransition = {
   transitionProperty: 'color, background-color',
 };
 
-describe('@coengageui/core/Transition/get-transition-styles', () => {
+describe('coengageui_core/Transition/get-transition-styles', () => {
   it('returns predefined transition with string value', () => {
     expect(
       getTransitionStyles({

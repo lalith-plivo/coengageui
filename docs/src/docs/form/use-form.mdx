@@ -1,32 +1,32 @@
 ---
 group: 'coengageui-form'
-package: '@coengageui/form'
+package: 'coengageui_form'
 title: 'use-form'
 order: 0
 slug: /form/use-form/
 description: 'Manage form state'
-import: "import { useForm } from '@coengageui/form';"
+import: "import { useForm } from 'coengageui_form';"
 docs: 'form/use-form.mdx'
 source: 'coengageui-form/src'
 license: MIT
 ---
 
-import { FormDemos } from '@coengageui/demos';
+import { FormDemos } from 'coengageui_demos';
 
 ## Installation
 
-`@coengageui/form` package does not depend on any other libraries, you can use it with or without `@coengageui/core` inputs:
+`coengageui_form` package does not depend on any other libraries, you can use it with or without `coengageui_core` inputs:
 
 Install with npm:
 
 ```sh
-npm install @coengageui/form
+npm install coengageui_form
 ```
 
 Install with yarn:
 
 ```sh
-yarn add @coengageui/form
+yarn add coengageui_form
 ```
 
 ## Usage
@@ -80,11 +80,11 @@ form.setFieldValue('age', 22);
 form.values; // -> { name: 'John', age: 22 }
 ```
 
-`setFieldValue` can be used with all `@coengageui/core` inputs, example with [TextInput](/core/text-input/) component:
+`setFieldValue` can be used with all `coengageui_core` inputs, example with [TextInput](/core/text-input/) component:
 
 ```tsx
-import { TextInput } from '@coengageui/core';
-import { useForm } from '@coengageui/form';
+import { TextInput } from 'coengageui_core';
+import { useForm } from 'coengageui_form';
 
 function Demo() {
   const form = useForm({ initialValues: { name: '' } });
@@ -307,7 +307,7 @@ form.getInputProps('termsOfService', { type: 'checkbox' }); // -> returns object
 - call provided function with form values when form is submitted if all fields are valid
 
 ```tsx
-import { useForm } from '@coengageui/form';
+import { useForm } from 'coengageui_form';
 
 function Demo() {
   const form = useForm({ initialValues: { name: '', age: 0 } });
@@ -324,7 +324,7 @@ function Demo() {
 ### Get form values type
 
 ```tsx
-import { useForm } from '@coengageui/form';
+import { useForm } from 'coengageui_form';
 
 function Demo() {
   const form = useForm({ initialValues: { name: '', age: 0 } });
@@ -344,7 +344,7 @@ To avoid that, you can pass type to `useForm` hook, this approach is useful when
 types cannot be inferred or when you want to provide more specific types:
 
 ```tsx
-import { useForm } from '@coengageui/form';
+import { useForm } from 'coengageui_form';
 
 interface FormValues {
   name: string; // regular field, same as inferred type

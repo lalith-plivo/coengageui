@@ -7,7 +7,7 @@ import {
   itConnectsLabelAndInput,
   itSupportsFocusEvents,
   itSupportsInputWrapperProps,
-} from '@coengageui/tests';
+} from 'coengageui_tests';
 import { TimeRangeInput, TimeRangeInputProps } from './TimeRangeInput';
 
 const defaultProps: TimeRangeInputProps = {
@@ -17,7 +17,7 @@ const defaultProps: TimeRangeInputProps = {
   secondsLabel: 'test-seconds',
 };
 
-describe('@coengageui/dates/TimeRangeInput', () => {
+describe('coengageui_dates/TimeRangeInput', () => {
   itSupportsInputRightSection(TimeRangeInput, defaultProps);
   itSupportsInputWrapperProps(TimeRangeInput, defaultProps, 'TimeRangeInput');
   itSupportsInputIcon(TimeRangeInput, defaultProps);
@@ -26,7 +26,7 @@ describe('@coengageui/dates/TimeRangeInput', () => {
   itSupportsSystemProps({
     component: TimeRangeInput,
     props: defaultProps,
-    displayName: '@coengageui/dates/TimeRangeInput',
+    displayName: 'coengageui_dates/TimeRangeInput',
     refType: HTMLInputElement,
     excludeOthers: true,
   });

@@ -1,4 +1,4 @@
-import { createStyles, CoengageUISize, CoengageUIColor } from '@coengageui/styles';
+import { createStyles, CoengageUISize, CoengageUIColor } from 'coengageui_styles';
 
 export interface RadioStylesParams {
   size: CoengageUISize;
@@ -49,9 +49,8 @@ export default createStyles(
       radio: {
         ...theme.fn.focusStyles(),
         backgroundColor: theme.colorScheme === 'dark' ? theme.colors.dark[4] : theme.white,
-        border: `1px solid ${
-          theme.colorScheme === 'dark' ? theme.colors.dark[4] : theme.colors.gray[4]
-        }`,
+        border: `1px solid ${theme.colorScheme === 'dark' ? theme.colors.dark[4] : theme.colors.gray[4]
+          }`,
         position: 'relative',
         appearance: 'none',
         width: theme.fn.size({ sizes, size }),

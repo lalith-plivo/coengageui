@@ -1,5 +1,5 @@
 import React from 'react';
-import { TimelineProps } from '@coengageui/core';
+import { TimelineProps } from 'coengageui_core';
 import { TimelineBase } from './_base';
 
 function Wrapper(props: TimelineProps) {
@@ -11,7 +11,7 @@ function Wrapper(props: TimelineProps) {
 }
 
 const codeTemplate = (props: string) => `
-import { Timeline } from '@coengageui/core';
+import { Timeline } from 'coengageui_core';
 
 function Demo() {
   return (

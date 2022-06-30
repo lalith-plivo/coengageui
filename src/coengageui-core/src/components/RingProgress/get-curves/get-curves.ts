@@ -1,4 +1,4 @@
-import type { CoengageUIColor } from '@coengageui/styles';
+import type { CoengageUIColor } from 'coengageui_styles';
 
 interface CurveData {
   value: number;

@@ -1,8 +1,8 @@
 import React from 'react';
-import { TimeInput } from '@coengageui/dates';
+import { TimeInput } from 'coengageui_dates';
 
 const codeTemplate = (props: string) => `
-import { TimeInput } from '@coengageui/dates';
+import { TimeInput } from 'coengageui_dates';
 
 function Demo() {
   return (

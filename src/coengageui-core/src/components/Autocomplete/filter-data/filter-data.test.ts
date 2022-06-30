@@ -3,7 +3,7 @@ import { defaultFilter, AutocompleteItem } from '../Autocomplete';
 
 const data = [{ value: 'react' }, { value: 'ng' }, { value: 'svelte' }, { value: 'vue' }];
 
-describe('@coengageui/core/Autocomplete/filter-data', () => {
+describe('coengageui_core/Autocomplete/filter-data', () => {
   it('filters data based on value', () => {
     expect(
       filterData({

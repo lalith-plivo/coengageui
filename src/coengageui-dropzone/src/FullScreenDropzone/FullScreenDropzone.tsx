@@ -7,8 +7,8 @@ import {
   DefaultProps,
   Box,
   useCoengageUIDefaultProps,
-} from '@coengageui/core';
-import { useIsomorphicEffect } from '@coengageui/hooks';
+} from 'coengageui_core';
+import { useIsomorphicEffect } from 'coengageui_hooks';
 import { DropzoneStatus } from '../Dropzone';
 import useStyles from './FullscreenDropzone.styles';
 
@@ -16,7 +16,7 @@ export type FullScreenDropzoneStylesNames = Selectors<typeof useStyles>;
 
 export interface FullScreenDropzoneProps
   extends DefaultProps<FullScreenDropzoneStylesNames>,
-    Omit<React.ComponentPropsWithoutRef<'div'>, 'onDrop'> {
+  Omit<React.ComponentPropsWithoutRef<'div'>, 'onDrop'> {
   /** Space between dropzone and viewport edges */
   offset?: CoengageUINumberSize;
 
@@ -168,4 +168,4 @@ export function FullScreenDropzone(props: FullScreenDropzoneProps) {
   );
 }
 
-FullScreenDropzone.displayName = '@coengageui/dropzone/FullScreenDropzone';
+FullScreenDropzone.displayName = 'coengageui_dropzone/FullScreenDropzone';

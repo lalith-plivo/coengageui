@@ -1,6 +1,6 @@
 import React from 'react';
 import { AlertCircle } from 'tabler-icons-react';
-import { Alert } from '@coengageui/core';
+import { Alert } from 'coengageui_core';
 
 function Wrapper(props: React.ComponentPropsWithoutRef<typeof Alert>) {
   return (
@@ -11,7 +11,7 @@ function Wrapper(props: React.ComponentPropsWithoutRef<typeof Alert>) {
 }
 
 const codeTemplate = (props: string, children: string) => `
-import { Alert } from '@coengageui/core';
+import { Alert } from 'coengageui_core';
 import { AlertCircle } from 'tabler-icons-react';
 
 function Demo() {

@@ -1,7 +1,7 @@
 /* eslint-disable no-console */
 import React, { useEffect } from 'react';
 import { storiesOf } from '@storybook/react';
-import { Button, Box } from '@coengageui/core';
+import { Button, Box } from 'coengageui_core';
 import { Search } from 'tabler-icons-react';
 import {
   SpotlightProvider,
@@ -101,9 +101,9 @@ function DynamicActions() {
       actions={(query) =>
         query.trim().length > 0
           ? [
-              { title: `Search docs: ${query}`, onTrigger: () => console.log('Search') },
-              { title: `Create new ticket: ${query}`, onTrigger: () => console.log('Search') },
-            ]
+            { title: `Search docs: ${query}`, onTrigger: () => console.log('Search') },
+            { title: `Create new ticket: ${query}`, onTrigger: () => console.log('Search') },
+          ]
           : []
       }
     >

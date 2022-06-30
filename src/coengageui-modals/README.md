@@ -8,10 +8,10 @@ Manage modals state
 
 ```sh
 # With yarn
-yarn add @coengageui/hooks @coengageui/core @coengageui/modals
+yarn add coengageui_hooks coengageui_core coengageui_modals
 
 # With npm
-npm install @coengageui/hooks @coengageui/core @coengageui/modals
+npm install coengageui_hooks coengageui_core coengageui_modals
 ```
 
 ## License

@@ -1,6 +1,6 @@
 import React from 'react';
 import { render } from '@testing-library/react';
-import { checkAccessibility, itRendersChildren, itSupportsSystemProps } from '@coengageui/tests';
+import { checkAccessibility, itRendersChildren, itSupportsSystemProps } from 'coengageui_tests';
 import { Notification, NotificationProps } from './Notification';
 
 const defaultProps: NotificationProps = {
@@ -9,13 +9,13 @@ const defaultProps: NotificationProps = {
   closeButtonProps: { title: 'test-close' },
 };
 
-describe('@coengageui/core/Notification', () => {
+describe('coengageui_core/Notification', () => {
   itRendersChildren(Notification, defaultProps);
   checkAccessibility([<Notification {...defaultProps} />]);
   itSupportsSystemProps({
     component: Notification,
     props: defaultProps,
-    displayName: '@coengageui/core/Notification',
+    displayName: 'coengageui_core/Notification',
     refType: HTMLDivElement,
   });
 

@@ -1,9 +1,9 @@
 import React from 'react';
-import { Group } from '@coengageui/core';
-import { Calendar } from '@coengageui/dates';
+import { Group } from 'coengageui_core';
+import { Calendar } from 'coengageui_dates';
 
 const code = `
-import { Calendar } from '@coengageui/dates';
+import { Calendar } from 'coengageui_dates';
 
 function Demo() {
   return <Calendar allowLevelChange={false} />;

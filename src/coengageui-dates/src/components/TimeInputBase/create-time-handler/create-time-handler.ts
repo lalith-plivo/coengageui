@@ -1,4 +1,4 @@
-import { clamp } from '@coengageui/hooks';
+import { clamp } from 'coengageui_hooks';
 import { padTime } from '../pad-time/pad-time';
 import { allButLastDigit } from './all-but-last-digit/all-but-last-digit';
 

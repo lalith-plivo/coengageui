@@ -1,12 +1,12 @@
 import React, { cloneElement, forwardRef } from 'react';
-import { useUncontrolled, useUuid } from '@coengageui/hooks';
+import { useUncontrolled, useUuid } from 'coengageui_hooks';
 import {
   DefaultProps,
   CoengageUINumberSize,
   CoengageUISize,
   CoengageUIColor,
   useCoengageUIDefaultProps,
-} from '@coengageui/styles';
+} from 'coengageui_styles';
 import { filterChildrenByType } from '../../utils';
 import {
   InputWrapper,
@@ -20,8 +20,8 @@ export type RadioGroupStylesNames = InputWrapperStylesNames | RadioStylesNames;
 
 export interface RadioGroupProps
   extends DefaultProps<RadioGroupStylesNames>,
-    InputWrapperBaseProps,
-    Omit<React.ComponentPropsWithoutRef<'div'>, 'onChange'> {
+  InputWrapperBaseProps,
+  Omit<React.ComponentPropsWithoutRef<'div'>, 'onChange'> {
   /** <Radio /> components only */
   children: React.ReactNode;
 
@@ -134,4 +134,4 @@ export const RadioGroup = forwardRef<HTMLDivElement, RadioGroupProps>(
   }
 );
 
-RadioGroup.displayName = '@coengageui/core/RadioGroup';
+RadioGroup.displayName = 'coengageui_core/RadioGroup';

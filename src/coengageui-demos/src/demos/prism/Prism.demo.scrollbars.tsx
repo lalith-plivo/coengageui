@@ -1,10 +1,10 @@
 import React from 'react';
-import { Text } from '@coengageui/core';
-import { Prism } from '@coengageui/prism';
+import { Text } from 'coengageui_core';
+import { Prism } from 'coengageui_prism';
 
 const code = `
-import { Text } from '@coengageui/core';
-import { Prism } from '@coengageui/prism';
+import { Text } from 'coengageui_core';
+import { Prism } from 'coengageui_prism';
 
 const longCode = \`
 <p>

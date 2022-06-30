@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { storiesOf } from '@storybook/react';
-import { DEFAULT_THEME, CoengageUISize, COENGAGEUI_SIZES } from '@coengageui/styles';
+import { DEFAULT_THEME, CoengageUISize, COENGAGEUI_SIZES } from 'coengageui_styles';
 import { Switch, SwitchProps } from './Switch';
 
 function SwitchWrapper(props: Omit<SwitchProps, 'value' | 'onChange'>) {

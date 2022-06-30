@@ -1,5 +1,5 @@
 import React from 'react';
-import { Indicator, IndicatorProps, Avatar, Group } from '@coengageui/core';
+import { Indicator, IndicatorProps, Avatar, Group } from 'coengageui_core';
 
 function Wrapper(props: IndicatorProps) {
   return (
@@ -15,7 +15,7 @@ function Wrapper(props: IndicatorProps) {
 }
 
 const codeTemplate = (props: string) => `
-import { Indicator, Avatar, Group } from '@coengageui/core';
+import { Indicator, Avatar, Group } from 'coengageui_core';
 
 function Demo() {
   return (

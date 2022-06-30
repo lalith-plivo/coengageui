@@ -1,12 +1,12 @@
 ---
 group: 'coengageui-hooks'
-package: '@coengageui/hooks'
+package: 'coengageui_hooks'
 title: 'use-uncontrolled'
 category: 'state'
 order: 1
 slug: /hooks/use-uncontrolled/
 description: 'Manage state of both controlled and uncontrolled components'
-import: "import { useUncontrolled } from '@coengageui/hooks';"
+import: "import { useUncontrolled } from 'coengageui_hooks';"
 docs: 'hooks/use-uncontrolled.mdx'
 source: 'coengageui-hooks/src/use-uncontrolled/use-uncontrolled.ts'
 ---
@@ -16,7 +16,7 @@ source: 'coengageui-hooks/src/use-uncontrolled/use-uncontrolled.ts'
 use-uncontrolled allows you to manage state for both controlled and uncontrolled components:
 
 ```tsx
-import { useUncontrolled } from '@coengageui/hooks';
+import { useUncontrolled } from 'coengageui_hooks';
 
 function CustomInput({ value, defaultValue, onChange }) {
   const [_value, handleChange] = useUncontrolled({

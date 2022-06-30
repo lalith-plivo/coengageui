@@ -1,4 +1,4 @@
-import { createStyles } from '@coengageui/styles';
+import { createStyles } from 'coengageui_styles';
 
 export default createStyles((theme) => {
   const headings = Object.keys(theme.headings.sizes).reduce((acc, h) => {
@@ -94,9 +94,8 @@ export default createStyles((theme) => {
         backgroundColor: theme.colorScheme === 'dark' ? theme.colors.dark[9] : theme.colors.gray[0],
         fontFamily: theme.fontFamilyMonospace,
         fontSize: theme.fontSizes.xs,
-        border: `1px solid ${
-          theme.colorScheme === 'dark' ? theme.colors.dark[9] : theme.colors.gray[3]
-        }`,
+        border: `1px solid ${theme.colorScheme === 'dark' ? theme.colors.dark[9] : theme.colors.gray[3]
+          }`,
       },
 
       '& ul, & ol': {
@@ -129,22 +128,19 @@ export default createStyles((theme) => {
         },
 
         '& thead th': {
-          borderBottom: `1px solid ${
-            theme.colorScheme === 'dark' ? theme.colors.dark[4] : theme.colors.gray[3]
-          }`,
+          borderBottom: `1px solid ${theme.colorScheme === 'dark' ? theme.colors.dark[4] : theme.colors.gray[3]
+            }`,
         },
 
         '& tfoot th': {
-          borderTop: `1px solid ${
-            theme.colorScheme === 'dark' ? theme.colors.dark[4] : theme.colors.gray[3]
-          }`,
+          borderTop: `1px solid ${theme.colorScheme === 'dark' ? theme.colors.dark[4] : theme.colors.gray[3]
+            }`,
         },
 
         '& td': {
           padding: '7px 10px',
-          borderBottom: `1px solid ${
-            theme.colorScheme === 'dark' ? theme.colors.dark[4] : theme.colors.gray[3]
-          }`,
+          borderBottom: `1px solid ${theme.colorScheme === 'dark' ? theme.colors.dark[4] : theme.colors.gray[3]
+            }`,
           fontSize: 14,
         },
 

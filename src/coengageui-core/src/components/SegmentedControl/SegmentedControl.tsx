@@ -6,7 +6,7 @@ import {
   useUuid,
   useMergedRef,
   useIsomorphicEffect,
-} from '@coengageui/hooks';
+} from 'coengageui_hooks';
 import {
   DefaultProps,
   CoengageUINumberSize,
@@ -14,7 +14,7 @@ import {
   CoengageUIColor,
   Selectors,
   useCoengageUIDefaultProps,
-} from '@coengageui/styles';
+} from 'coengageui_styles';
 import { Box } from '../Box';
 import useStyles, { WRAPPER_PADDING } from './SegmentedControl.styles';
 
@@ -28,7 +28,7 @@ export type SegmentedControlStylesNames = Selectors<typeof useStyles>;
 
 export interface SegmentedControlProps
   extends DefaultProps<SegmentedControlStylesNames>,
-    Omit<React.ComponentPropsWithoutRef<'div'>, 'value' | 'onChange'> {
+  Omit<React.ComponentPropsWithoutRef<'div'>, 'value' | 'onChange'> {
   /** Data based on which controls are rendered */
   data: string[] | SegmentedControlItem[];
 
@@ -219,4 +219,4 @@ export const SegmentedControl = forwardRef<HTMLDivElement, SegmentedControlProps
   );
 });
 
-SegmentedControl.displayName = '@coengageui/core/SegmentedControl';
+SegmentedControl.displayName = 'coengageui_core/SegmentedControl';

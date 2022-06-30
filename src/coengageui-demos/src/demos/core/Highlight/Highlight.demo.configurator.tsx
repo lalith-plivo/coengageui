@@ -1,5 +1,5 @@
 import React from 'react';
-import { Highlight, HighlightProps } from '@coengageui/core';
+import { Highlight, HighlightProps } from 'coengageui_core';
 
 function Wrapper(props: HighlightProps<'div'>) {
   return (
@@ -10,7 +10,7 @@ function Wrapper(props: HighlightProps<'div'>) {
 }
 
 const codeTemplate = (props: string, children: string) => `
-import { Highlight } from '@coengageui/core';
+import { Highlight } from 'coengageui_core';
 
 function Demo() {
   return (

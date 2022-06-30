@@ -13,11 +13,11 @@ const defaultProps: MarksProps = {
   min: 0,
   max: 100,
   value: 80,
-  onChange: () => {},
+  onChange: () => { },
   disabled: false,
 };
 
-describe('@coengageui/core/Slider/Marks', () => {
+describe('coengageui_core/Slider/Marks', () => {
   it('renders correct marks labels', () => {
     const { container } = render(<Marks {...defaultProps} />);
     const labels = container.querySelectorAll('.coengageui-Slider-markLabel');
@@ -54,6 +54,6 @@ describe('@coengageui/core/Slider/Marks', () => {
   });
 
   it('has correct displayName', () => {
-    expect(Marks.displayName).toStrictEqual('@coengageui/core/SliderMarks');
+    expect(Marks.displayName).toStrictEqual('coengageui_core/SliderMarks');
   });
 });

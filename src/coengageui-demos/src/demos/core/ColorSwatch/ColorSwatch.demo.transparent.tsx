@@ -1,8 +1,8 @@
 import React from 'react';
-import { useCoengageUITheme, ColorSwatch, Group } from '@coengageui/core';
+import { useCoengageUITheme, ColorSwatch, Group } from 'coengageui_core';
 
 const code = `
-import { ColorSwatch, Group, useCoengageUITheme } from '@coengageui/core';
+import { ColorSwatch, Group, useCoengageUITheme } from 'coengageui_core';
 
 function Demo() {
   const theme = useCoengageUITheme();

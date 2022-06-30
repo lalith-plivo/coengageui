@@ -1,35 +1,35 @@
 ---
 group: 'Other packages'
-package: '@coengageui/spotlight'
+package: 'coengageui_spotlight'
 title: 'Spotlight'
 order: 1
 slug: /others/spotlight/
 description: 'Command center for your application'
 props: ['SpotlightProvider']
-import: "import { SpotlightProvider } from '@coengageui/spotlight';"
+import: "import { SpotlightProvider } from 'coengageui_spotlight';"
 source: 'coengageui-spotlight/src'
 docs: 'others/spotlight.mdx'
-installation: '@coengageui/spotlight'
+installation: 'coengageui_spotlight'
 license: MIT
 styles: ['SpotlightProvider']
 ---
 
-import { SpotlightDemos } from '@coengageui/demos';
+import { SpotlightDemos } from 'coengageui_demos';
 
 ## Installation
 
-Package depends on `@coengageui/core` and `@coengageui/hooks`.
+Package depends on `coengageui_core` and `coengageui_hooks`.
 
 Install with npm:
 
 ```sh
-npm install @coengageui/spotlight @coengageui/core @coengageui/hooks
+npm install coengageui_spotlight coengageui_core coengageui_hooks
 ```
 
 Install with yarn:
 
 ```sh
-yarn add @coengageui/spotlight @coengageui/core @coengageui/hooks
+yarn add coengageui_spotlight coengageui_core coengageui_hooks
 ```
 
 ## Usage
@@ -43,8 +43,8 @@ with `SpotlightProvider` component:
 Note that if you are using [CoengageUIProvider](/theming/coengageui-provider/), `SpotlightProvider` must be used as its child:
 
 ```tsx
-import { CoengageUIProvider } from '@coengageui/core';
-import { SpotlightProvider } from '@coengageui/spotlight';
+import { CoengageUIProvider } from 'coengageui_core';
+import { SpotlightProvider } from 'coengageui_spotlight';
 
 function App() {
   return (
@@ -66,7 +66,7 @@ when users press `⌘ + K` on MacOS and `Ctrl + K` on any other os.
 You can setup multiple shortcuts, for example, CoengageUI documentation uses the following setup:
 
 ```tsx
-import { SpotlightProvider } from '@coengageui/spotlight';
+import { SpotlightProvider } from 'coengageui_spotlight';
 
 function App() {
   return (
@@ -95,7 +95,7 @@ Keyboard shortcuts will not work if:
 To disabled keyboard shortcuts set `shortcut={null}`:
 
 ```tsx
-import { SpotlightProvider } from '@coengageui/spotlight';
+import { SpotlightProvider } from 'coengageui_spotlight';
 
 function App() {
   return (
@@ -112,8 +112,8 @@ function App() {
 For example, it can be used to open spotlight with button click:
 
 ```tsx
-import { useSpotlight } from '@coengageui/spotlight';
-import { Button, Group } from '@coengageui/core';
+import { useSpotlight } from 'coengageui_spotlight';
+import { Button, Group } from 'coengageui_core';
 
 function SpotlightControl() {
   const spotlight = useSpotlight();
@@ -160,7 +160,7 @@ interface UseSpotlight {
 
 ## Event based functions
 
-`@coengageui/spotlight` exports several functions which can be used to perform certain actions
+`coengageui_spotlight` exports several functions which can be used to perform certain actions
 from any part of your application:
 
 ```tsx
@@ -172,7 +172,7 @@ import {
   triggerSpotlightAction,
   registerSpotlightActions,
   removeSpotlightActions,
-} from '@coengageui/spotlight';
+} from 'coengageui_spotlight';
 
 // Opens spotlight
 openSpotlight();
@@ -238,10 +238,10 @@ interface SpotlightAction {
 }
 ```
 
-You can import `SpotlightAction` type from `@coengageui/spotlight` package:
+You can import `SpotlightAction` type from `coengageui_spotlight` package:
 
 ```tsx
-import type { SpotlightAction } from '@coengageui/spotlight';
+import type { SpotlightAction } from 'coengageui_spotlight';
 ```
 
 ## Actions filtering

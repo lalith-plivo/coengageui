@@ -6,8 +6,8 @@ import {
   CoengageUIStyleSystemSize,
   getDefaultZIndex,
   Box,
-} from '@coengageui/core';
-import { useReducedMotion, useForceUpdate, useDidUpdate } from '@coengageui/hooks';
+} from 'coengageui_core';
+import { useReducedMotion, useForceUpdate, useDidUpdate } from 'coengageui_hooks';
 import { NotificationsContext } from '../Notifications.context';
 import { NotificationsProviderPositioning } from '../types';
 import { useNotificationsEvents } from '../events';
@@ -28,15 +28,15 @@ const POSITIONS = [
 
 export interface NotificationProviderProps
   extends Omit<DefaultProps, CoengageUIStyleSystemSize>,
-    React.ComponentPropsWithoutRef<'div'> {
+  React.ComponentPropsWithoutRef<'div'> {
   /** Notifications position */
   position?:
-    | 'top-left'
-    | 'top-right'
-    | 'top-center'
-    | 'bottom-left'
-    | 'bottom-right'
-    | 'bottom-center';
+  | 'top-left'
+  | 'top-right'
+  | 'top-center'
+  | 'bottom-left'
+  | 'bottom-right'
+  | 'bottom-center';
 
   /** Auto close timeout for all notifications, false to disable auto close, can be overwritten for individual notifications by showNotification function */
   autoClose?: number | false;
@@ -161,4 +161,4 @@ export function NotificationsProvider({
   );
 }
 
-NotificationsProvider.displayName = '@coengageui/notifications/NotificationsProvider';
+NotificationsProvider.displayName = 'coengageui_notifications/NotificationsProvider';

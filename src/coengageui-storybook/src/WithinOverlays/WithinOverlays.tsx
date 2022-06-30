@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Modal, Button, Popover, Group, Drawer } from '@coengageui/core';
+import { Modal, Button, Popover, Group, Drawer } from 'coengageui_core';
 
 interface WithinOverlayProps {
   children: React.ReactNode;

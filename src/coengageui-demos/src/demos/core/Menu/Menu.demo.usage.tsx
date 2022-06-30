@@ -1,9 +1,9 @@
 import React from 'react';
-import { Group, Menu } from '@coengageui/core';
+import { Group, Menu } from 'coengageui_core';
 import { menuItems } from './_menu-items';
 
 const code = `
-import { Menu, Divider, Text } from '@coengageui/core';
+import { Menu, Divider, Text } from 'coengageui_core';
 import { Settings, Search, Photo, MessageCircle, Trash, ArrowsLeftRight } from 'tabler-icons-react';
 
 function Demo() {

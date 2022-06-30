@@ -1,5 +1,5 @@
 import React from 'react';
-import { DefaultProps, CoengageUINumberSize, CoengageUIColor, Selectors } from '@coengageui/styles';
+import { DefaultProps, CoengageUINumberSize, CoengageUIColor, Selectors } from 'coengageui_styles';
 import { Box } from '../../Box';
 import { getPosition } from '../utils/get-position/get-position';
 import { isMarkFilled } from './is-mark-filled';
@@ -70,4 +70,4 @@ export function Marks({
   return <div>{items}</div>;
 }
 
-Marks.displayName = '@coengageui/core/SliderMarks';
+Marks.displayName = 'coengageui_core/SliderMarks';

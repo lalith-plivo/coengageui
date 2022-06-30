@@ -1,9 +1,9 @@
 import React from 'react';
 import { Hash } from 'tabler-icons-react';
-import { NativeSelect } from '@coengageui/core';
+import { NativeSelect } from 'coengageui_core';
 
 const code = `
-import { NativeSelect } from '@coengageui/core';
+import { NativeSelect } from 'coengageui_core';
 import { Hash } from 'tabler-icons-react';
 
 function Demo() {

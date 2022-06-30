@@ -1,9 +1,9 @@
 import React, { useState } from 'react';
-import { Autocomplete } from '@coengageui/core';
+import { Autocomplete } from 'coengageui_core';
 
 const code = `
 import { useState } from 'react';
-import { Autocomplete } from '@coengageui/core';
+import { Autocomplete } from 'coengageui_core';
 
 function Demo() {
   const [value, setValue] = useState('');

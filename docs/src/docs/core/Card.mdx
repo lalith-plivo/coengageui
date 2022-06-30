@@ -1,19 +1,19 @@
 ---
 group: 'coengageui-core'
-package: '@coengageui/core'
+package: 'coengageui_core'
 title: Card
 order: 1
 slug: /core/card/
 category: 'data-display'
 description: 'Card with context styles for Image and Divider components'
 props: ['Card']
-import: "import { Card } from '@coengageui/core';"
+import: "import { Card } from 'coengageui_core';"
 source: 'coengageui-core/src/components/Card/Card.tsx'
 docs: 'core/Card.mdx'
 styles: ['Card', 'single-node']
 ---
 
-import { CardDemos } from '@coengageui/demos';
+import { CardDemos } from 'coengageui_demos';
 
 ## Usage
 
@@ -73,7 +73,7 @@ You can also use React component instead of an element, for example, Link from r
 
 ```tsx
 import { Link } from 'react-router-dom';
-import { Card } from '@coengageui/core';
+import { Card } from 'coengageui_core';
 
 function Demo() {
   return <Card component={Link} to="/my-route/" />;
@@ -83,7 +83,7 @@ function Demo() {
 To use custom component with TypeScript provide type:
 
 ```tsx
-import { Card } from '@coengageui/core';
+import { Card } from 'coengageui_core';
 import { Link } from 'react-router-dom';
 
 function Demo() {

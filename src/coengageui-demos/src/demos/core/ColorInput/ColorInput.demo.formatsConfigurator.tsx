@@ -1,5 +1,5 @@
 import React from 'react';
-import { ColorInput, ColorInputProps } from '@coengageui/core';
+import { ColorInput, ColorInputProps } from 'coengageui_core';
 
 function Wrapper(props: ColorInputProps) {
   return (
@@ -15,7 +15,7 @@ function Wrapper(props: ColorInputProps) {
 }
 
 const codeTemplate = (props: string) => `
-import { ColorInput } from '@coengageui/core';
+import { ColorInput } from 'coengageui_core';
 
 function Demo() {
   return <ColorInput defaultValue="#C5D899"${props} />;

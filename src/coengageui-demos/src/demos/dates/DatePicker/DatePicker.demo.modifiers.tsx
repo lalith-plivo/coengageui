@@ -1,10 +1,10 @@
 import React from 'react';
-import { createStyles } from '@coengageui/core';
-import { DatePicker } from '@coengageui/dates';
+import { createStyles } from 'coengageui_core';
+import { DatePicker } from 'coengageui_dates';
 
 const code = `
-import { createStyles } from '@coengageui/core';
-import { DatePicker } from '@coengageui/dates';
+import { createStyles } from 'coengageui_core';
+import { DatePicker } from 'coengageui_dates';
 
 const useStyles = createStyles((theme) => ({
   outside: {

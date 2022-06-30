@@ -1,4 +1,4 @@
-import { createStyles } from '@coengageui/core';
+import { createStyles } from 'coengageui_core';
 
 export interface PrismStylesParams {
   colorScheme: 'light' | 'dark';

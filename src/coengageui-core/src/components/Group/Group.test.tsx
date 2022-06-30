@@ -1,16 +1,16 @@
 import React from 'react';
 import { render } from '@testing-library/react';
-import { itRendersChildren, itSupportsSystemProps } from '@coengageui/tests';
+import { itRendersChildren, itSupportsSystemProps } from 'coengageui_tests';
 import { Group, GroupProps } from './Group';
 
 const defaultProps: GroupProps = {};
 
-describe('@coengageui/core/Group', () => {
+describe('coengageui_core/Group', () => {
   itRendersChildren(Group, defaultProps);
   itSupportsSystemProps({
     component: Group,
     props: defaultProps,
-    displayName: '@coengageui/core/Group',
+    displayName: 'coengageui_core/Group',
     refType: HTMLDivElement,
   });
 

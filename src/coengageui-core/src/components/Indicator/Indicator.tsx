@@ -7,7 +7,7 @@ import {
   CoengageUINumberSize,
   useCoengageUIDefaultProps,
   getDefaultZIndex,
-} from '@coengageui/styles';
+} from 'coengageui_styles';
 import { Box } from '../Box';
 import { IndicatorPosition } from './Indicator.types';
 import useStyles from './Indicator.styles';
@@ -16,7 +16,7 @@ export type IndicatorStylesNames = Selectors<typeof useStyles>;
 
 export interface IndicatorProps
   extends DefaultProps<IndicatorStylesNames>,
-    React.ComponentPropsWithoutRef<'div'> {
+  React.ComponentPropsWithoutRef<'div'> {
   /** Element that should have an indicator */
   children: React.ReactNode;
 
@@ -94,4 +94,4 @@ export const Indicator = forwardRef<HTMLDivElement, IndicatorProps>((props, ref)
   );
 });
 
-Indicator.displayName = '@coengageui/core/Indicator';
+Indicator.displayName = 'coengageui_core/Indicator';

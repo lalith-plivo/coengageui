@@ -1,17 +1,17 @@
 import React from 'react';
 import { render } from '@testing-library/react';
-import { checkAccessibility, itSupportsSystemProps } from '@coengageui/tests';
-import { DEFAULT_THEME } from '@coengageui/styles';
+import { checkAccessibility, itSupportsSystemProps } from 'coengageui_tests';
+import { DEFAULT_THEME } from 'coengageui_styles';
 import { ColorPicker, ColorPickerProps } from './ColorPicker';
 
 const swatches = DEFAULT_THEME.colors.red;
 const defaultProps: ColorPickerProps = {};
 
-describe('@coengageui/core/ColorPicker', () => {
+describe('coengageui_core/ColorPicker', () => {
   itSupportsSystemProps({
     component: ColorPicker,
     props: defaultProps,
-    displayName: '@coengageui/core/ColorPicker',
+    displayName: 'coengageui_core/ColorPicker',
     refType: HTMLDivElement,
   });
   checkAccessibility([

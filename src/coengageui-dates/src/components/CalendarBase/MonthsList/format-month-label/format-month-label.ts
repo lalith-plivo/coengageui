@@ -1,5 +1,5 @@
 import dayjs from 'dayjs';
-import { upperFirst } from '@coengageui/hooks';
+import { upperFirst } from 'coengageui_hooks';
 
 interface FormatMonthLabel {
   month: Date;

@@ -1,9 +1,9 @@
 /* eslint-disable no-console */
 import React, { useState } from 'react';
 import { storiesOf } from '@storybook/react';
-import { useDisclosure } from '@coengageui/hooks';
-import { COENGAGEUI_SIZES, CoengageUIProvider, TextInput, Modal, Button } from '@coengageui/core';
-import { WithinOverlays, SubmitForm } from '@coengageui/storybook';
+import { useDisclosure } from 'coengageui_hooks';
+import { COENGAGEUI_SIZES, CoengageUIProvider, TextInput, Modal, Button } from 'coengageui_core';
+import { WithinOverlays, SubmitForm } from 'coengageui_storybook';
 import { DatePicker } from './DatePicker';
 
 function Controlled() {

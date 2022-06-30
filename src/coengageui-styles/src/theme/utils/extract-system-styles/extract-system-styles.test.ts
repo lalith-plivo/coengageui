@@ -1,6 +1,6 @@
 import { extractSystemStyles } from './extract-system-styles';
 
-describe('@coengageui/styles/extract-system-styles', () => {
+describe('coengageui_styles/extract-system-styles', () => {
   it('correctly extracts margin props', () => {
     expect(extractSystemStyles({ mt: 10, mb: 15 })).toStrictEqual({
       systemStyles: { mt: 10, mb: 15 },

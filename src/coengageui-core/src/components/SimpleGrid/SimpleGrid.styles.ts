@@ -1,4 +1,4 @@
-import { createStyles, CoengageUINumberSize } from '@coengageui/styles';
+import { createStyles, CoengageUINumberSize } from 'coengageui_styles';
 import { getSortedBreakpoints } from './get-sorted-breakpoints/get-sorted-breakpoints';
 
 export interface SimpleGridBreakpoint {

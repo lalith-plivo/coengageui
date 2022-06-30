@@ -4,7 +4,7 @@ import {
   COENGAGEUI_SIZES,
   CoengageUISize,
   CoengageUITheme,
-} from '@coengageui/styles';
+} from 'coengageui_styles';
 
 interface ColStyles {
   gutter: CoengageUINumberSize;

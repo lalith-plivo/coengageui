@@ -1,4 +1,4 @@
-import { createStyles, CoengageUISize } from '@coengageui/styles';
+import { createStyles, CoengageUISize } from 'coengageui_styles';
 
 export interface JsonInputStylesParams {
   size: CoengageUISize;

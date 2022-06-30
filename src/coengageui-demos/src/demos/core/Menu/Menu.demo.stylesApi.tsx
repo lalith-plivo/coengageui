@@ -1,9 +1,9 @@
 import React from 'react';
-import { createStyles, Menu, Group } from '@coengageui/core';
+import { createStyles, Menu, Group } from 'coengageui_core';
 import { menuItems } from './_menu-items';
 
 const code = `
-import { Menu, createStyles } from '@coengageui/core';
+import { Menu, createStyles } from 'coengageui_core';
 
 const useStyles = createStyles((theme) => ({
   itemHovered: {

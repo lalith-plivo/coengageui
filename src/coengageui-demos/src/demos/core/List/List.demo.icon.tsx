@@ -1,9 +1,9 @@
 import React from 'react';
 import { CircleCheck, CircleDashed } from 'tabler-icons-react';
-import { ThemeIcon, List } from '@coengageui/core';
+import { ThemeIcon, List } from 'coengageui_core';
 
 const code = `
-import { List, ThemeIcon } from '@coengageui/core';
+import { List, ThemeIcon } from 'coengageui_core';
 import { CircleCheck, CircleDashed } from 'tabler-icons-react';
 
 function Demo() {

@@ -1,6 +1,6 @@
 import React from 'react';
 import { render, screen } from '@testing-library/react';
-import { itRendersChildren, itIsPolymorphic, itSupportsSystemProps } from '@coengageui/tests';
+import { itRendersChildren, itIsPolymorphic, itSupportsSystemProps } from 'coengageui_tests';
 import { Text, TextProps } from './Text';
 
 const defaultProps: TextProps<'div'> = {
@@ -12,13 +12,13 @@ const expectStyle = (props: TextProps<'div'>, style: Record<string, any>) => {
   expect(screen.getByText('test-text')).toHaveStyle(style);
 };
 
-describe('@coengageui/core/Text', () => {
+describe('coengageui_core/Text', () => {
   itRendersChildren(Text, defaultProps);
   itIsPolymorphic(Text, defaultProps);
   itSupportsSystemProps({
     component: Text,
     props: defaultProps,
-    displayName: '@coengageui/core/Text',
+    displayName: 'coengageui_core/Text',
     refType: HTMLDivElement,
   });
 

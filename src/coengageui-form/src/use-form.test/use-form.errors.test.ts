@@ -1,7 +1,7 @@
 import { act, renderHook } from '@testing-library/react-hooks';
 import { useForm } from '../index';
 
-describe('@coengageui/form/use-form errors', () => {
+describe('coengageui_form/use-form errors', () => {
   it('sets initial errors based on input', () => {
     const hook = renderHook(() =>
       useForm({

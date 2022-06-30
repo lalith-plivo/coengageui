@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Text, Title, UnstyledButton, Group } from '@coengageui/core';
+import { Text, Title, UnstyledButton, Group } from 'coengageui_core';
 import { GUIDES_DATA } from './data';
 import { guides, GuideProps } from './Guide';
 import useStyles from './Guides.styles';

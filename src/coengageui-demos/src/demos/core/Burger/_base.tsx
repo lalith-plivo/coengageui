@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Burger } from '@coengageui/core';
+import { Burger } from 'coengageui_core';
 
 export function DemoBase(
   props: Omit<React.ComponentPropsWithoutRef<typeof Burger>, 'opened' | 'onChange'>

@@ -1,20 +1,20 @@
-import { itSupportsSystemProps } from '@coengageui/tests';
+import { itSupportsSystemProps } from 'coengageui_tests';
 import { ColorSlider, ColorSliderProps } from './ColorSlider';
 
 const defaultProps: ColorSliderProps = {
   value: 25,
-  onChange: () => {},
+  onChange: () => { },
   size: 'sm',
   maxValue: 360,
   overlays: [{ color: 'red' }],
   round: true,
 };
 
-describe('@coengageui/core/ColorSlider', () => {
+describe('coengageui_core/ColorSlider', () => {
   itSupportsSystemProps({
     component: ColorSlider,
     props: defaultProps,
-    displayName: '@coengageui/core/ColorSlider',
+    displayName: 'coengageui_core/ColorSlider',
     refType: HTMLDivElement,
   });
 });

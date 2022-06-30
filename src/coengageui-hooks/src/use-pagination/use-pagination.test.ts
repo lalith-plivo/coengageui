@@ -1,7 +1,7 @@
 import { renderHook, act } from '@testing-library/react-hooks';
 import { usePagination } from './use-pagination';
 
-describe('@coengageui/hooks/use-pagination', () => {
+describe('coengageui_hooks/use-pagination', () => {
   it('setPage function sets active page', () => {
     const { result } = renderHook(() => usePagination({ total: 10 }));
 

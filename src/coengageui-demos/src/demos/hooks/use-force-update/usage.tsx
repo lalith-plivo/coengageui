@@ -1,10 +1,10 @@
 import React from 'react';
-import { Button, Text, Group } from '@coengageui/core';
-import { useForceUpdate, randomId } from '@coengageui/hooks';
+import { Button, Text, Group } from 'coengageui_core';
+import { useForceUpdate, randomId } from 'coengageui_hooks';
 
 const code = `
-import { Button, Text, Group } from '@coengageui/core';
-import { useForceUpdate, randomId } from '@coengageui/hooks';
+import { Button, Text, Group } from 'coengageui_core';
+import { useForceUpdate, randomId } from 'coengageui_hooks';
 
 function Demo() {
   const forceUpdate = useForceUpdate();

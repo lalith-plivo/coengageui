@@ -1,10 +1,10 @@
 import React from 'react';
-import { useWindowScroll } from '@coengageui/hooks';
-import { Button, Text, Group } from '@coengageui/core';
+import { useWindowScroll } from 'coengageui_hooks';
+import { Button, Text, Group } from 'coengageui_core';
 
 const code = `
-import { useWindowScroll } from '@coengageui/hooks';
-import { Button, Text, Group } from '@coengageui/core';
+import { useWindowScroll } from 'coengageui_hooks';
+import { Button, Text, Group } from 'coengageui_core';
 
 function Demo() {
   const [scroll, scrollTo] = useWindowScroll();

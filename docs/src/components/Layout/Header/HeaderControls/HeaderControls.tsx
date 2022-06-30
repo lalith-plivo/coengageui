@@ -1,5 +1,5 @@
 import React from 'react';
-import { Box, Group, useCoengageUIColorScheme } from '@coengageui/core';
+import { Box, Group, useCoengageUIColorScheme } from 'coengageui_core';
 import { TextDirectionRtl, TextDirectionLtr, Sun, Moon } from 'tabler-icons-react';
 import { MarkGithubIcon } from '@primer/octicons-react';
 import { DiscordIcon } from './DiscordIcon';

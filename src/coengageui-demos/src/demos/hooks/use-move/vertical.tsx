@@ -1,10 +1,10 @@
 import React, { useState } from 'react';
-import { useCoengageUITheme, Group, Text } from '@coengageui/core';
-import { useMove } from '@coengageui/hooks';
+import { useCoengageUITheme, Group, Text } from 'coengageui_core';
+import { useMove } from 'coengageui_hooks';
 
 const code = `
-import { useCoengageUITheme, Text } from '@coengageui/core';
-import { useMove } from '@coengageui/hooks';
+import { useCoengageUITheme, Text } from 'coengageui_core';
+import { useMove } from 'coengageui_hooks';
 
 function Demo() {
   const theme = useCoengageUITheme();

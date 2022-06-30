@@ -1,4 +1,4 @@
-import type { ModalStylesNames } from '@coengageui/core';
+import type { ModalStylesNames } from 'coengageui_core';
 
 export const Modal: Record<ModalStylesNames, string> = {
   root: 'Root element, contains modal and overlay',

@@ -1,5 +1,5 @@
 import React from 'react';
-import { useCoengageUIDefaultProps } from '@coengageui/core';
+import { useCoengageUIDefaultProps } from 'coengageui_core';
 import { CalendarBase, CalendarBaseProps } from '../CalendarBase/CalendarBase';
 import { isSameDate } from '../../utils';
 
@@ -44,4 +44,4 @@ export function Calendar<Multiple extends boolean = false>(props: CalendarProps<
   );
 }
 
-Calendar.displayName = '@coengageui/dates/Calendar';
+Calendar.displayName = 'coengageui_dates/Calendar';

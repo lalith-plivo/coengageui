@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { DEFAULT_THEME, Text, HueSlider, HueSliderProps } from '@coengageui/core';
+import { DEFAULT_THEME, Text, HueSlider, HueSliderProps } from 'coengageui_core';
 
 function Wrapper(props: HueSliderProps) {
   const [value, onChange] = useState(250);
@@ -20,7 +20,7 @@ function Wrapper(props: HueSliderProps) {
 }
 
 const codeTemplate = (props: string) => `import { useState } from 'react';
-import { HueSlider, Text } from '@coengageui/core';
+import { HueSlider, Text } from 'coengageui_core';
 
 function Demo() {
   const [value, onChange] = useState(250);

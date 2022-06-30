@@ -1,4 +1,4 @@
-import { createStyles, CoengageUINumberSize } from '@coengageui/core';
+import { createStyles, CoengageUINumberSize } from 'coengageui_core';
 
 export interface FullScreenDropzoneStylesParams {
   offset: CoengageUINumberSize;
@@ -27,9 +27,8 @@ export default createStyles(
         ...theme.fn.fontStyles(),
         boxSizing: 'border-box',
         backgroundColor: theme.colorScheme === 'dark' ? theme.colors.dark[7] : theme.white,
-        border: `2px dashed ${
-          theme.colorScheme === 'dark' ? theme.colors.dark[3] : theme.colors.gray[4]
-        }`,
+        border: `2px dashed ${theme.colorScheme === 'dark' ? theme.colors.dark[3] : theme.colors.gray[4]
+          }`,
         padding: theme.fn.size({ size: padding, sizes: theme.spacing }),
         borderRadius: theme.fn.radius(radius),
         cursor: 'pointer',

@@ -1,9 +1,9 @@
 import React from 'react';
 import { BrandTwitter } from 'tabler-icons-react';
-import { Input, Badge } from '@coengageui/core';
+import { Input, Badge } from 'coengageui_core';
 
 const code = `
-import { Input, Badge } from '@coengageui/core';
+import { Input, Badge } from 'coengageui_core';
 import { BrandTwitter } from 'tabler-icons-react';
 
 function Demo() {

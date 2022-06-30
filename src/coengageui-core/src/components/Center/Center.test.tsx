@@ -1,17 +1,17 @@
-import { itRendersChildren, itIsPolymorphic, itSupportsSystemProps } from '@coengageui/tests';
+import { itRendersChildren, itIsPolymorphic, itSupportsSystemProps } from 'coengageui_tests';
 import { Center, CenterProps } from './Center';
 
 const defaultProps: CenterProps<'div'> = {
   children: 'test-center',
 };
 
-describe('@coengageui/core/Center', () => {
+describe('coengageui_core/Center', () => {
   itRendersChildren(Center, defaultProps);
   itIsPolymorphic(Center, defaultProps);
   itSupportsSystemProps({
     component: Center,
     props: defaultProps,
-    displayName: '@coengageui/core/Center',
+    displayName: 'coengageui_core/Center',
     refType: HTMLDivElement,
   });
 });

@@ -1,9 +1,9 @@
 import React from 'react';
 import { EyeCheck, EyeOff } from 'tabler-icons-react';
-import { PasswordInput } from '@coengageui/core';
+import { PasswordInput } from 'coengageui_core';
 
 const code = `
-import { PasswordInput } from '@coengageui/core';
+import { PasswordInput } from 'coengageui_core';
 import { EyeCheck, EyeOff } from 'tabler-icons-react';
 
 function Demo() {

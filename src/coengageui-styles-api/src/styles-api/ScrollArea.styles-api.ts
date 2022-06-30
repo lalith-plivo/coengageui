@@ -1,4 +1,4 @@
-import type { ScrollAreaStylesNames } from '@coengageui/core';
+import type { ScrollAreaStylesNames } from 'coengageui_core';
 
 export const ScrollArea: Record<ScrollAreaStylesNames, string> = {
   root: 'Root element',

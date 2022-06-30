@@ -1,5 +1,5 @@
 import React from 'react';
-import { COENGAGEUI_SIZES, Group } from '@coengageui/core';
+import { COENGAGEUI_SIZES, Group } from 'coengageui_core';
 import { DemoBase } from './_base';
 
 const items = COENGAGEUI_SIZES.map((size) => <DemoBase size={size} key={size} />);

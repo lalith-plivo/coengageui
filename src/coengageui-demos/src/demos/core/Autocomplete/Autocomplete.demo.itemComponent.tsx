@@ -6,11 +6,11 @@ import {
   CoengageUIColor,
   SelectItemProps,
   Autocomplete,
-} from '@coengageui/core';
+} from 'coengageui_core';
 
 const code = `
 import { forwardRef } from 'react';
-import { Group, Avatar, Text, CoengageUIColor, SelectItemProps, Autocomplete } from '@coengageui/core';
+import { Group, Avatar, Text, CoengageUIColor, SelectItemProps, Autocomplete } from 'coengageui_core';
 
 const charactersList = [
   {

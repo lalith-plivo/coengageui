@@ -1,4 +1,4 @@
-import { createStyles } from '@coengageui/core';
+import { createStyles } from 'coengageui_core';
 import { BREAKPOINT, TABLE_OF_CONTENTS_WIDTH } from '../settings';
 
 export default createStyles((theme) => ({
@@ -31,9 +31,8 @@ export default createStyles((theme) => ({
   },
 
   items: {
-    borderLeft: `1px solid ${
-      theme.colorScheme === 'dark' ? theme.colors.info[1] : theme.colors.info[1]
-    }`,
+    borderLeft: `1px solid ${theme.colorScheme === 'dark' ? theme.colors.info[1] : theme.colors.info[1]
+      }`,
   },
 
   link: {

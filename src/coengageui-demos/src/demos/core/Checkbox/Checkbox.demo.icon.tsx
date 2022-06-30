@@ -1,9 +1,9 @@
 import React from 'react';
 import { Biohazard, Radioactive } from 'tabler-icons-react';
-import { Checkbox, CheckboxProps } from '@coengageui/core';
+import { Checkbox, CheckboxProps } from 'coengageui_core';
 
 const code = `
-import { Checkbox, CheckboxProps } from '@coengageui/core';
+import { Checkbox, CheckboxProps } from 'coengageui_core';
 import { Biohazard, Radioactive } from 'tabler-icons-react';
 
 const CheckboxIcon: CheckboxProps['icon'] = ({ indeterminate, className }) =>

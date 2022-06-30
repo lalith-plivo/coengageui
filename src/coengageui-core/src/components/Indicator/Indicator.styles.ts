@@ -1,4 +1,4 @@
-import { createStyles, CSSObject, CoengageUIColor, CoengageUINumberSize } from '@coengageui/styles';
+import { createStyles, CSSObject, CoengageUIColor, CoengageUINumberSize } from 'coengageui_styles';
 import { IndicatorPosition } from './Indicator.types';
 
 export interface IndicatorStylesParams {

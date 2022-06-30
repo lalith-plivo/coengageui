@@ -7,7 +7,7 @@ import {
   getDefaultZIndex,
   useCoengageUIDefaultProps,
   CSSObject,
-} from '@coengageui/styles';
+} from 'coengageui_styles';
 import { Box } from '../Box';
 
 interface _OverlayProps extends DefaultProps {
@@ -97,4 +97,4 @@ export const Overlay: OverlayComponent = forwardRef(
   }
 ) as any;
 
-Overlay.displayName = '@coengageui/core/Overlay';
+Overlay.displayName = 'coengageui_core/Overlay';

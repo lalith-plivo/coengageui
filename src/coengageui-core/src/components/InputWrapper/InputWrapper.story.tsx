@@ -1,6 +1,6 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
-import { COENGAGEUI_SIZES } from '@coengageui/styles';
+import { COENGAGEUI_SIZES } from 'coengageui_styles';
 import { InputWrapper } from './InputWrapper';
 import { Text } from '../Text/Text';
 

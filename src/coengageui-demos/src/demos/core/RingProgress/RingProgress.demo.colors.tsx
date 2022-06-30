@@ -1,8 +1,8 @@
 import React from 'react';
-import { RingProgress, Group } from '@coengageui/core';
+import { RingProgress, Group } from 'coengageui_core';
 
 const code = `
-import { RingProgress } from '@coengageui/core';
+import { RingProgress } from 'coengageui_core';
 
 function Demo() {
   return (

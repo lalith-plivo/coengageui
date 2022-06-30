@@ -6,12 +6,12 @@ import {
   itIsPolymorphic,
   itSupportsSystemProps,
   itSupportsFocusEvents,
-} from '@coengageui/tests';
+} from 'coengageui_tests';
 import { Button, ButtonProps } from './Button';
 
 const defaultProps: ButtonProps<'button'> = {};
 
-describe('@coengageui/core/Button', () => {
+describe('coengageui_core/Button', () => {
   checkAccessibility([<Button>CoengageUI button</Button>]);
   itRendersChildren(Button, defaultProps);
   itIsPolymorphic(Button, defaultProps);
@@ -19,7 +19,7 @@ describe('@coengageui/core/Button', () => {
   itSupportsSystemProps({
     component: Button,
     props: defaultProps,
-    displayName: '@coengageui/core/Button',
+    displayName: 'coengageui_core/Button',
     refType: HTMLButtonElement,
   });
 

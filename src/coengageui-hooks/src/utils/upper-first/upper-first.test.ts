@@ -1,6 +1,6 @@
 import { upperFirst } from './upper-first';
 
-describe('@coengageui/hooks/upper-first', () => {
+describe('coengageui_hooks/upper-first', () => {
   it('capitalizes first letter', () => {
     expect(upperFirst('hello')).toBe('Hello');
     expect(upperFirst('hELLO')).toBe('HELLO');

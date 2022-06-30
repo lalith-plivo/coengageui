@@ -1,4 +1,4 @@
-import type { MonthStylesNames } from '@coengageui/dates';
+import type { MonthStylesNames } from 'coengageui_dates';
 
 export const Month: Record<MonthStylesNames, string> = {
   month: 'Root element',

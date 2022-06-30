@@ -1,7 +1,7 @@
 import React from 'react';
 import { render, screen } from '@testing-library/react';
 import userEvent from '@testing-library/user-event';
-import { itRendersChildren, itSupportsRef, itSupportsSystemProps } from '@coengageui/tests';
+import { itRendersChildren, itSupportsRef, itSupportsSystemProps } from 'coengageui_tests';
 import { Dialog, CoengageUIDialog, DialogProps } from './Dialog';
 
 const defaultProps: DialogProps = {
@@ -10,7 +10,7 @@ const defaultProps: DialogProps = {
   withCloseButton: true,
 };
 
-describe('@coengageui/core/Dialog', () => {
+describe('coengageui_core/Dialog', () => {
   itRendersChildren(CoengageUIDialog, defaultProps);
   itSupportsRef(Dialog, defaultProps, HTMLDivElement);
   itSupportsSystemProps({ component: CoengageUIDialog, props: defaultProps });
@@ -23,6 +23,6 @@ describe('@coengageui/core/Dialog', () => {
   });
 
   it('has correct displayName', () => {
-    expect(Dialog.displayName).toStrictEqual('@coengageui/core/Dialog');
+    expect(Dialog.displayName).toStrictEqual('coengageui_core/Dialog');
   });
 });

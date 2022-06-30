@@ -1,4 +1,4 @@
-import { CSSObject } from '@coengageui/core';
+import { CSSObject } from 'coengageui_core';
 import { NotificationsProviderPositioning } from '../../types';
 
 export default function getPositionStyles(

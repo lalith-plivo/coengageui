@@ -1,11 +1,11 @@
 /* eslint-disable no-console */
 import React from 'react';
-import { TextInput, Checkbox, Button, Group, Box } from '@coengageui/core';
-import { useForm } from '@coengageui/form';
+import { TextInput, Checkbox, Button, Group, Box } from 'coengageui_core';
+import { useForm } from 'coengageui_form';
 
 const code = `
-import { TextInput, Checkbox, Button, Group, Box } from '@coengageui/core';
-import { useForm } from '@coengageui/form';
+import { TextInput, Checkbox, Button, Group, Box } from 'coengageui_core';
+import { useForm } from 'coengageui_form';
 
 function Demo() {
   const form = useForm({

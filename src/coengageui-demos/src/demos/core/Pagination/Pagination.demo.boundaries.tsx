@@ -1,8 +1,8 @@
 import React from 'react';
-import { Text, Pagination } from '@coengageui/core';
+import { Text, Pagination } from 'coengageui_core';
 
 const code = `
-import { Text, Pagination } from '@coengageui/core';
+import { Text, Pagination } from 'coengageui_core';
 
 function Demo() {
   return (

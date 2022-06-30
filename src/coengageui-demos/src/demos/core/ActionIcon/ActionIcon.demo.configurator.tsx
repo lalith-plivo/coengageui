@@ -1,6 +1,6 @@
 import React from 'react';
 import { Adjustments } from 'tabler-icons-react';
-import { ActionIcon, ActionIconProps, Group } from '@coengageui/core';
+import { ActionIcon, ActionIconProps, Group } from 'coengageui_core';
 
 const iconSizes = {
   xs: 12,
@@ -21,7 +21,7 @@ function Wrapper(props: ActionIconProps<'button'>) {
 }
 
 const codeTemplate = (props: string) => `
-import { ActionIcon } from '@coengageui/core';
+import { ActionIcon } from 'coengageui_core';
 import { Adjustments } from 'tabler-icons-react';
 
 function Demo() {

@@ -8,10 +8,10 @@ Calendars, date and time pickers
 
 ```sh
 # With yarn
-yarn add @coengageui/core @coengageui/hooks @coengageui/dates dayjs
+yarn add coengageui_core coengageui_hooks coengageui_dates dayjs
 
 # With npm
-npm install @coengageui/core @coengageui/hooks @coengageui/dates dayjs
+npm install coengageui_core coengageui_hooks coengageui_dates dayjs
 ```
 
 ## License

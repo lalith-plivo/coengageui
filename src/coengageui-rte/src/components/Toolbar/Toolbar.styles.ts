@@ -1,4 +1,4 @@
-import { createStyles } from '@coengageui/core';
+import { createStyles } from 'coengageui_core';
 
 interface ToolbarStyles {
   sticky: boolean;
@@ -18,9 +18,8 @@ export default createStyles((theme, { sticky, stickyOffset }: ToolbarStyles) => 
     zIndex: 1,
     top: sticky ? stickyOffset : 0,
     backgroundColor: theme.colorScheme === 'dark' ? theme.colors.dark[7] : theme.white,
-    borderBottom: `1px solid ${
-      theme.colorScheme === 'dark' ? theme.colors.dark[7] : theme.colors.gray[4]
-    }`,
+    borderBottom: `1px solid ${theme.colorScheme === 'dark' ? theme.colors.dark[7] : theme.colors.gray[4]
+      }`,
     borderTopRightRadius: theme.radius.sm,
     borderTopLeftRadius: theme.radius.sm,
     padding: `${theme.spacing.sm}px ${theme.spacing.md}px`,

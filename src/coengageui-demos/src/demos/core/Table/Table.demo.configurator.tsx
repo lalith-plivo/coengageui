@@ -1,5 +1,5 @@
 import React from 'react';
-import { Table, TableProps } from '@coengageui/core';
+import { Table, TableProps } from 'coengageui_core';
 import { elements } from './_data';
 
 function Wrapper(props: TableProps) {
@@ -28,7 +28,7 @@ function Wrapper(props: TableProps) {
 }
 
 const codeTemplate = (props: string) => `
-import { Table } from '@coengageui/core';
+import { Table } from 'coengageui_core';
 
 function Demo() {
   return (

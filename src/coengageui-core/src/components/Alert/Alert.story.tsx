@@ -1,8 +1,8 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
 import { XCircleFillIcon } from '@primer/octicons-react';
-import { CoengageUIProvider } from '@coengageui/styles';
-import { StylesAPIStory } from '@coengageui/storybook';
+import { CoengageUIProvider } from 'coengageui_styles';
+import { StylesAPIStory } from 'coengageui_storybook';
 import { Alert, AlertProps } from './Alert';
 import { Title } from '../Title';
 

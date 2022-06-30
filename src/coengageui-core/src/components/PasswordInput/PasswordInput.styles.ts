@@ -1,4 +1,4 @@
-import { createStyles, CoengageUISize } from '@coengageui/styles';
+import { createStyles, CoengageUISize } from 'coengageui_styles';
 import { INPUT_SIZES } from '../Input';
 
 export interface PasswordInputStylesParams {

@@ -1,16 +1,16 @@
 import React from 'react';
 import { render, screen } from '@testing-library/react';
-import { itRendersChildren, itSupportsSystemProps } from '@coengageui/tests';
+import { itRendersChildren, itSupportsSystemProps } from 'coengageui_tests';
 import { TimelineItem, TimelineItemProps } from './TimelineItem';
 
 const defaultProps: TimelineItemProps = {};
 
-describe('@coengageui/core/TimelineItem', () => {
+describe('coengageui_core/TimelineItem', () => {
   itRendersChildren(TimelineItem, defaultProps);
   itSupportsSystemProps({
     component: TimelineItem,
     props: defaultProps,
-    displayName: '@coengageui/core/TimelineItem',
+    displayName: 'coengageui_core/TimelineItem',
   });
 
   it('renders given bullet', () => {

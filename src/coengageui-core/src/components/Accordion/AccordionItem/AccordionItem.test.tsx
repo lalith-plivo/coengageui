@@ -1,24 +1,24 @@
 import React from 'react';
 import { render, screen } from '@testing-library/react';
 import userEvent from '@testing-library/user-event';
-import { checkAccessibility, itSupportsSystemProps, itRendersChildren } from '@coengageui/tests';
+import { checkAccessibility, itSupportsSystemProps, itRendersChildren } from 'coengageui_tests';
 import { AccordionItem, AccordionItemProps } from './AccordionItem';
 
 const defaultProps: AccordionItemProps = {
   label: 'test-label',
   opened: true,
-  onToggle: () => {},
+  onToggle: () => { },
   transitionDuration: 200,
   id: 'test-id',
 };
 
-describe('@coengageui/core/AccordionItem', () => {
+describe('coengageui_core/AccordionItem', () => {
   checkAccessibility([<AccordionItem {...defaultProps} />]);
   itRendersChildren(AccordionItem, defaultProps);
   itSupportsSystemProps({
     component: AccordionItem,
     props: defaultProps,
-    displayName: '@coengageui/core/AccordionItem',
+    displayName: 'coengageui_core/AccordionItem',
   });
 
   it('renders given label', () => {

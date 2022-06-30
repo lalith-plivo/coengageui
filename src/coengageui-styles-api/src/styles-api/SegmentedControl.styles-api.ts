@@ -1,4 +1,4 @@
-import type { SegmentedControlStylesNames } from '@coengageui/core';
+import type { SegmentedControlStylesNames } from 'coengageui_core';
 
 export const SegmentedControl: Record<SegmentedControlStylesNames, string> = {
   root: 'Root element',

@@ -1,11 +1,11 @@
 import React, { useState } from 'react';
-import { useDebouncedValue } from '@coengageui/hooks';
-import { TextInput, Text, Button } from '@coengageui/core';
+import { useDebouncedValue } from 'coengageui_hooks';
+import { TextInput, Text, Button } from 'coengageui_core';
 
 const code = `
 import { useState } from 'react';
-import { useDebouncedValue } from '@coengageui/hooks';
-import { TextInput, Text, Button } from '@coengageui/core';
+import { useDebouncedValue } from 'coengageui_hooks';
+import { TextInput, Text, Button } from 'coengageui_core';
 
 function Demo() {
   const [value, setValue] = useState('');

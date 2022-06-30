@@ -8,7 +8,7 @@ export function Hooks() {
       title="Hooks library"
       description={[
         'CoengageUI comes with more than 30 hooks to manage state and UI to help you build custom components.',
-        'All hooks that are used to build CoengageUI components are exported from @coengageui/hooks package, hooks do not depend on components packages, you can use them independently in any react application.',
+        'All hooks that are used to build CoengageUI components are exported from coengageui_hooks package, hooks do not depend on components packages, you can use them independently in any react application.',
       ]}
     >
       <HooksDemo />

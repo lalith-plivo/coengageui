@@ -14,4 +14,4 @@ export function OptionalPortal({ withinPortal = true, children, ...others }: Opt
   return <>{children}</>;
 }
 
-OptionalPortal.displayName = '@coengageui/core/OptionalPortal';
+OptionalPortal.displayName = 'coengageui_core/OptionalPortal';

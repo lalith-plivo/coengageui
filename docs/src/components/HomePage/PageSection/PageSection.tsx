@@ -1,5 +1,5 @@
 import React from 'react';
-import { Container, Text } from '@coengageui/core';
+import { Container, Text } from 'coengageui_core';
 import { SectionTitle } from '../SectionTitle/SectionTitle';
 import useStyles from './PageSection.styles';
 

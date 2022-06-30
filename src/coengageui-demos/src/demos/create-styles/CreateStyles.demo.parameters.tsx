@@ -1,8 +1,8 @@
 import React from 'react';
-import { createStyles } from '@coengageui/core';
+import { createStyles } from 'coengageui_core';
 
 const code = `
-import { createStyles } from '@coengageui/core';
+import { createStyles } from 'coengageui_core';
 
 interface ButtonProps {
   color: 'blue' | 'violet';

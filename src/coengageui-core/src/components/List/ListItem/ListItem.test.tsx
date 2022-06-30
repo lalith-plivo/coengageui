@@ -1,6 +1,6 @@
 import React from 'react';
 import { render } from '@testing-library/react';
-import { itSupportsSystemProps } from '@coengageui/tests';
+import { itSupportsSystemProps } from 'coengageui_tests';
 import { ListItem, ListItemProps } from './ListItem';
 
 const defaultProps: ListItemProps = {
@@ -8,11 +8,11 @@ const defaultProps: ListItemProps = {
   children: 'test-list-item',
 };
 
-describe('@coengageui/core/ListItem', () => {
+describe('coengageui_core/ListItem', () => {
   itSupportsSystemProps({
     component: ListItem,
     props: defaultProps,
-    displayName: '@coengageui/core/ListItem',
+    displayName: 'coengageui_core/ListItem',
   });
 
   it('renders icon based on prop', () => {

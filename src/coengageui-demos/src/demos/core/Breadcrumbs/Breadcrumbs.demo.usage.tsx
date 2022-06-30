@@ -1,8 +1,8 @@
 import React from 'react';
-import { useCoengageUITheme, Breadcrumbs, Anchor } from '@coengageui/core';
+import { useCoengageUITheme, Breadcrumbs, Anchor } from 'coengageui_core';
 
 const code = `
-import { Breadcrumbs, Anchor } from '@coengageui/core';
+import { Breadcrumbs, Anchor } from 'coengageui_core';
 
 const items = [
   { title: 'CoengageUI', href: '#' },

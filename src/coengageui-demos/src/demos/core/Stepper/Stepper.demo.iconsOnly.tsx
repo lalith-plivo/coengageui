@@ -1,10 +1,10 @@
 import React, { useState } from 'react';
 import { UserCheck, MailOpened, ShieldCheck } from 'tabler-icons-react';
-import { Stepper } from '@coengageui/core';
+import { Stepper } from 'coengageui_core';
 
 const code = `
 import { useState } from 'react';
-import { Stepper } from '@coengageui/core';
+import { Stepper } from 'coengageui_core';
 import { UserCheck, MailOpened, ShieldCheck } from 'tabler-icons-react';
 
 function Demo() {

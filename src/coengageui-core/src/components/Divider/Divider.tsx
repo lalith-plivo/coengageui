@@ -5,7 +5,7 @@ import {
   CoengageUINumberSize,
   CoengageUIColor,
   useCoengageUIDefaultProps,
-} from '@coengageui/styles';
+} from 'coengageui_styles';
 import useStyles from './Divider.styles';
 import { Text, TextProps } from '../Text';
 import { Box } from '../Box';
@@ -14,7 +14,7 @@ export type DividerStylesNames = 'label';
 
 export interface DividerProps
   extends DefaultProps<DividerStylesNames>,
-    React.ComponentPropsWithoutRef<'div'> {
+  React.ComponentPropsWithoutRef<'div'> {
   /** Line color from theme, defaults to gray in light color scheme and to dark in dark color scheme */
   color?: CoengageUIColor;
 
@@ -102,4 +102,4 @@ export const Divider = forwardRef<HTMLDivElement, DividerProps>((props: DividerP
   );
 });
 
-Divider.displayName = '@coengageui/core/Divider';
+Divider.displayName = 'coengageui_core/Divider';

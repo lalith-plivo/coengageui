@@ -1,6 +1,6 @@
 import React, { useRef, forwardRef, useState } from 'react';
-import { useMergedRef, clamp } from '@coengageui/hooks';
-import { Text, CoengageUISize } from '@coengageui/core';
+import { useMergedRef, clamp } from 'coengageui_hooks';
+import { Text, CoengageUISize } from 'coengageui_core';
 import { padTime } from '../pad-time/pad-time';
 import useStyles from '../TimeInputBase.styles';
 import type { createTimeHandler } from '../create-time-handler/create-time-handler';
@@ -127,8 +127,8 @@ export const TimeField = forwardRef<HTMLInputElement, TimeFieldProps>(
               color: value
                 ? 'inherit'
                 : theme.colorScheme === 'dark'
-                ? theme.colors.dark[2]
-                : theme.colors.gray[7],
+                  ? theme.colors.dark[2]
+                  : theme.colors.gray[7],
             }}
           >
             :
@@ -139,4 +139,4 @@ export const TimeField = forwardRef<HTMLInputElement, TimeFieldProps>(
   }
 );
 
-TimeField.displayName = '@coengageui/dates/TimeField';
+TimeField.displayName = 'coengageui_dates/TimeField';

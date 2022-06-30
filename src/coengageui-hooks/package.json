@@ -1,6 +1,6 @@
 {
-  "name": "@coengageui/hooks",
-  "version": "4.2.11",
+  "name": "coengageui_hooks",
+  "version": "0.0.1",
   "main": "cjs/index.js",
   "module": "esm/index.js",
   "types": "lib/index.d.ts",

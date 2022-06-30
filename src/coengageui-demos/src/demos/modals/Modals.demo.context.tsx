@@ -1,10 +1,10 @@
 import React from 'react';
-import { Group, Button } from '@coengageui/core';
-import { useModals } from '@coengageui/modals';
+import { Group, Button } from 'coengageui_core';
+import { useModals } from 'coengageui_modals';
 
 const code = `
-import { Button } from '@coengageui/core';
-import { useModals } from '@coengageui/modals';
+import { Button } from 'coengageui_core';
+import { useModals } from 'coengageui_modals';
 
 function Demo() {
   const modals = useModals();

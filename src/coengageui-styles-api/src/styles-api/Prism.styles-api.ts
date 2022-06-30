@@ -1,4 +1,4 @@
-import type { PrismStylesNames, PrismTabsStylesNames } from '@coengageui/prism';
+import type { PrismStylesNames, PrismTabsStylesNames } from 'coengageui_prism';
 
 export const Prism: Record<PrismStylesNames, string> = {
   root: 'Root element',

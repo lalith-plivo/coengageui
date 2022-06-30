@@ -1,6 +1,6 @@
 import React, { useReducer } from 'react';
-import { Modal } from '@coengageui/core';
-import { randomId } from '@coengageui/hooks';
+import { Modal } from 'coengageui_core';
+import { randomId } from 'coengageui_hooks';
 import {
   ModalsContext,
   ModalSettings,

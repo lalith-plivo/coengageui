@@ -1,5 +1,5 @@
 import { PrismTheme } from 'prism-react-renderer';
-import { CoengageUITheme } from '@coengageui/core';
+import { CoengageUITheme } from 'coengageui_core';
 
 export const dark = (theme: CoengageUITheme): PrismTheme => ({
   plain: {

@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
 import { useDarkMode } from 'storybook-dark-mode';
-import { CoengageUIProvider, ColorSchemeProvider, Affix, ActionIcon } from '@coengageui/core';
-import { useHotkeys } from '@coengageui/hooks';
-import { NotificationsProvider } from '@coengageui/notifications';
+import { CoengageUIProvider, ColorSchemeProvider, Affix, ActionIcon } from 'coengageui_core';
+import { useHotkeys } from 'coengageui_hooks';
+import { NotificationsProvider } from 'coengageui_notifications';
 import rtlPlugin from 'stylis-plugin-rtl';
 
 export const parameters = { layout: 'fullscreen' };
@@ -13,7 +13,7 @@ function ThemeWrapper(props: any) {
   useHotkeys([['mod + L', toggleRtl]]);
 
   return (
-    <ColorSchemeProvider colorScheme="light" toggleColorScheme={() => {}}>
+    <ColorSchemeProvider colorScheme="light" toggleColorScheme={() => { }}>
       <CoengageUIProvider
         theme={{
           dir: rtl ? 'rtl' : 'ltr',

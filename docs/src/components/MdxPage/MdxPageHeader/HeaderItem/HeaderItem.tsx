@@ -1,5 +1,5 @@
 import React from 'react';
-import { Text } from '@coengageui/core';
+import { Text } from 'coengageui_core';
 import useStyles from './HeaderItem.styles';
 
 interface HeaderItemProps {

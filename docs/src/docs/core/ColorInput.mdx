@@ -1,19 +1,19 @@
 ---
 group: 'coengageui-core'
-package: '@coengageui/core'
+package: 'coengageui_core'
 title: ColorInput
 order: 1
 slug: /core/color-input/
 category: 'inputs'
 description: 'Capture color data from user'
 props: ['ColorInput']
-import: "import { ColorInput } from '@coengageui/core';"
+import: "import { ColorInput } from 'coengageui_core';"
 source: 'coengageui-core/src/components/ColorInput/ColorInput.tsx'
 docs: 'core/ColorInput.mdx'
 styles: ['ColorInput']
 ---
 
-import { ColorInputDemos, ColorPickerDemos } from '@coengageui/demos';
+import { ColorInputDemos, ColorPickerDemos } from 'coengageui_demos';
 
 ## Usage
 
@@ -23,7 +23,7 @@ import { ColorInputDemos, ColorPickerDemos } from '@coengageui/demos';
 
 ```tsx
 import { useState } from 'react';
-import { ColorInput } from '@coengageui/core';
+import { ColorInput } from 'coengageui_core';
 
 function Demo() {
   const [value, setValue] = useState('');
@@ -86,7 +86,7 @@ you can remove it (`withPreview={false}` prop) or replace with any React node (`
 
 ```tsx
 import { useRef } from 'react';
-import { ColorInput } from '@coengageui/core';
+import { ColorInput } from 'coengageui_core';
 
 function Demo() {
   const ref = useRef<HTMLInputElement>();

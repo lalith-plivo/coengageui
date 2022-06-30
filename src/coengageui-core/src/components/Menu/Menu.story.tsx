@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { storiesOf } from '@storybook/react';
-import { WithinOverlays } from '@coengageui/storybook';
+import { WithinOverlays } from 'coengageui_storybook';
 import { TextInput } from '../TextInput';
 import { Container } from '../Container';
 import { Divider } from '../Divider';

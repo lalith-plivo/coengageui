@@ -1,8 +1,8 @@
 import React from 'react';
-import { UnstyledButton, Group, Avatar, Text } from '@coengageui/core';
+import { UnstyledButton, Group, Avatar, Text } from 'coengageui_core';
 
 const code = `
-import { UnstyledButton, Group, Avatar, Text } from '@coengageui/core';
+import { UnstyledButton, Group, Avatar, Text } from 'coengageui_core';
 
 function Demo() {
   return (
@@ -22,7 +22,7 @@ function Demo() {
 function Demo() {
   return (
     <Group position="center">
-      <UnstyledButton aria-label="Open user menu" onClick={() => {}}>
+      <UnstyledButton aria-label="Open user menu" onClick={() => { }}>
         <Group>
           <Avatar size={40} color="blue">
             BH

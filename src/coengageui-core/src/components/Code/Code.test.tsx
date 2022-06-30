@@ -1,18 +1,18 @@
 import React from 'react';
 import { render } from '@testing-library/react';
-import { itRendersChildren, itSupportsSystemProps } from '@coengageui/tests';
+import { itRendersChildren, itSupportsSystemProps } from 'coengageui_tests';
 import { Code, CodeProps } from './Code';
 
 const defaultProps: CodeProps = {
   children: 'test-code',
 };
 
-describe('@coengageui/core/Code', () => {
+describe('coengageui_core/Code', () => {
   itRendersChildren(Code, defaultProps);
   itSupportsSystemProps({
     component: Code,
     props: defaultProps,
-    displayName: '@coengageui/core/Code',
+    displayName: 'coengageui_core/Code',
     refType: HTMLElement,
   });
 

@@ -1,8 +1,8 @@
 import React from 'react';
-import { JsonInput } from '@coengageui/core';
+import { JsonInput } from 'coengageui_core';
 
 const code = `
-import { JsonInput } from '@coengageui/core';
+import { JsonInput } from 'coengageui_core';
 
 function Demo() {
   return (

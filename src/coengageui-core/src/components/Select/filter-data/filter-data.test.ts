@@ -17,7 +17,7 @@ const baseOptions = {
   value: null,
 };
 
-describe('@coengageui/core/Select/filter-data', () => {
+describe('coengageui_core/Select/filter-data', () => {
   it('returns unmodified data if input is not searchable', () => {
     expect(filterData({ ...baseOptions, searchable: false, searchValue: '' })).toBe(data);
   });

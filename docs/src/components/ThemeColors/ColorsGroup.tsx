@@ -1,5 +1,5 @@
 import React from 'react';
-import { ColorSwatch, Text, Box } from '@coengageui/core';
+import { ColorSwatch, Text, Box } from 'coengageui_core';
 import useStyles from './ColorsGroup.styles';
 
 interface ColorsGroupProps {

@@ -8,7 +8,7 @@ const storiesPath = !argv._[0]
   : path
       .resolve(
         __dirname,
-        `../../src/coengageui-${argv._[0].replace('@coengageui/', '')}/**/*.story.@(ts|tsx)`
+        `../../src/coengageui-${argv._[0].replace('coengageui_', '')}/**/*.story.@(ts|tsx)`
       )
       .replace(/\\/g, '/');
 

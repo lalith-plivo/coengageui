@@ -5,7 +5,7 @@ import {
   useWindowEvent,
   useUncontrolled,
   useUuid,
-} from '@coengageui/hooks';
+} from 'coengageui_hooks';
 import {
   DefaultProps,
   CoengageUINumberSize,
@@ -14,7 +14,7 @@ import {
   getDefaultZIndex,
   ForwardRefWithStaticComponents,
   useCoengageUIDefaultProps,
-} from '@coengageui/styles';
+} from 'coengageui_styles';
 import { Box } from '../Box';
 import { Paper } from '../Paper';
 import { ActionIcon } from '../ActionIcon';
@@ -32,8 +32,8 @@ export type MenuStylesNames =
 
 export interface MenuProps
   extends DefaultProps<MenuStylesNames>,
-    SharedPopperProps,
-    React.ComponentPropsWithRef<'div'> {
+  SharedPopperProps,
+  React.ComponentPropsWithRef<'div'> {
   /** <MenuItem /> and <Divider /> components only, children are passed to MenuBody component  */
   children: React.ReactNode;
 
@@ -379,4 +379,4 @@ export const Menu: MenuComponent = forwardRef<HTMLButtonElement, MenuProps>(
 Menu.Item = MenuItem;
 Menu.Label = MenuLabel;
 
-Menu.displayName = '@coengageui/core/Menu';
+Menu.displayName = 'coengageui_core/Menu';

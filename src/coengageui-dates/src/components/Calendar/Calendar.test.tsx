@@ -1,4 +1,4 @@
-import { itSupportsSystemProps } from '@coengageui/tests';
+import { itSupportsSystemProps } from 'coengageui_tests';
 import { Calendar, CalendarProps } from './Calendar';
 
 const defaultProps: CalendarProps = {
@@ -6,10 +6,10 @@ const defaultProps: CalendarProps = {
   value: new Date(),
 };
 
-describe('@coengageui/dates/Calendar', () => {
+describe('coengageui_dates/Calendar', () => {
   itSupportsSystemProps({
     component: Calendar,
     props: defaultProps,
-    displayName: '@coengageui/dates/Calendar',
+    displayName: 'coengageui_dates/Calendar',
   });
 });

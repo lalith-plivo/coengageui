@@ -1,9 +1,9 @@
 import React from 'react';
-import { Group, Avatar, Text, Accordion, AccordionProps } from '@coengageui/core';
+import { Group, Avatar, Text, Accordion, AccordionProps } from 'coengageui_core';
 import { charactersList } from './_mockdata';
 
 const code = `
-import { Group, Avatar, Text, Accordion } from '@coengageui/core';
+import { Group, Avatar, Text, Accordion } from 'coengageui_core';
 
 const charactersList = [
   {

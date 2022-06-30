@@ -1,4 +1,4 @@
-import { createStyles, CoengageUISize } from '@coengageui/styles';
+import { createStyles, CoengageUISize } from 'coengageui_styles';
 
 export interface InputWrapperStylesParams {
   size: CoengageUISize;
@@ -32,9 +32,8 @@ export default createStyles((theme, { size }: InputWrapperStylesParams) => ({
   description: {
     marginTop: 4,
     wordBreak: 'break-word',
-    color: `${
-      theme.colorScheme === 'dark' ? theme.typography_light : theme.typography_light
-    } !important`,
+    color: `${theme.colorScheme === 'dark' ? theme.typography_light : theme.typography_light
+      } !important`,
     fontSize: `${theme.fontSizes.sm}px`,
     lineHeight: 1.5,
     fontWeight: 400,

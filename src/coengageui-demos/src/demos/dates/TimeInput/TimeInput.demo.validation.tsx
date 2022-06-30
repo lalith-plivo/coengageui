@@ -1,5 +1,5 @@
 import React from 'react';
-import { TimeInput } from '@coengageui/dates';
+import { TimeInput } from 'coengageui_dates';
 
 const code = `
 // Error as boolean – red border color

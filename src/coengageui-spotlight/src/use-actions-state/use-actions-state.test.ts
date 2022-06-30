@@ -22,7 +22,7 @@ function validateActionsIds(actions: SpotlightAction[]) {
   expect(ids.every((id) => typeof id === 'string')).toBe(true);
 }
 
-describe('@coengageui/spotlight/use-actions-state', () => {
+describe('coengageui_spotlight/use-actions-state', () => {
   it('returns correct initial state', () => {
     const hook = renderHook(() => useActionsState(ACTIONS, ''));
     expect(hook.result.current[0]).toStrictEqual(ACTIONS);

@@ -1,11 +1,11 @@
 import React, { useState } from 'react';
 import { CheckIcon } from '@modulz/radix-icons';
-import { useCoengageUITheme, ColorSwatch, Group } from '@coengageui/core';
+import { useCoengageUITheme, ColorSwatch, Group } from 'coengageui_core';
 
 const code = `
 import { useState } from 'react';
 import { CheckIcon } from '@modulz/radix-icons';
-import { ColorSwatch, Group, useCoengageUITheme } from '@coengageui/core';
+import { ColorSwatch, Group, useCoengageUITheme } from 'coengageui_core';
 
 function Demo() {
   const theme = useCoengageUITheme();

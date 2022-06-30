@@ -1,5 +1,5 @@
 import React from 'react';
-import { Avatar, AvatarProps, Group } from '@coengageui/core';
+import { Avatar, AvatarProps, Group } from 'coengageui_core';
 import { avatars } from './_mockdata';
 
 function Wrapper(props: AvatarProps<'div'>) {
@@ -11,7 +11,7 @@ function Wrapper(props: AvatarProps<'div'>) {
 }
 
 const codeTemplate = (props: string) => `
-import { Avatar } from '@coengageui/core';
+import { Avatar } from 'coengageui_core';
 
 function Demo() {
   return <Avatar${props} />;

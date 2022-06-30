@@ -1,7 +1,7 @@
 import dayjs from 'dayjs';
 import React, { useState, useRef, forwardRef, useEffect } from 'react';
-import { useUncontrolled, useMergedRef, upperFirst } from '@coengageui/hooks';
-import { useCoengageUITheme, useCoengageUIDefaultProps } from '@coengageui/core';
+import { useUncontrolled, useMergedRef, upperFirst } from 'coengageui_hooks';
+import { useCoengageUITheme, useCoengageUIDefaultProps } from 'coengageui_core';
 import { FirstDayOfWeek } from '../../types';
 import { Calendar } from '../Calendar/Calendar';
 import { CalendarSharedProps } from '../CalendarBase/CalendarBase';
@@ -9,7 +9,7 @@ import { DatePickerBase, DatePickerBaseSharedProps } from '../DatePickerBase/Dat
 
 export interface DatePickerProps
   extends Omit<DatePickerBaseSharedProps, 'onChange'>,
-    Omit<CalendarSharedProps, 'size' | 'classNames' | 'styles' | 'onMonthChange'> {
+  Omit<CalendarSharedProps, 'size' | 'classNames' | 'styles' | 'onMonthChange'> {
   /** Selected date, required with controlled input */
   value?: Date | null;
 
@@ -300,4 +300,4 @@ export const DatePicker = forwardRef<HTMLInputElement, DatePickerProps>(
   }
 );
 
-DatePicker.displayName = '@coengageui/dates/DatePicker';
+DatePicker.displayName = 'coengageui_dates/DatePicker';

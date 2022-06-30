@@ -15,17 +15,17 @@ import {
   PaginationDemos,
   TimeRangeInputDemos,
   RichTextEditorDemos,
-} from '@coengageui/demos';
+} from 'coengageui_demos';
 
 ## UMD builds deprecation
 
-All `@coengageui/` packages will no longer default to umd builds via `browser` field in `package.json`.
+All `coengageui_` packages will no longer default to umd builds via `browser` field in `package.json`.
 This change will simplify tree shacking for Webpack and should not affect your Next.js, Gatsby, Vite or CRA applications.
 
 ## react-jss peer dependency removal
 
-All `@coengageui/` packages no longer require react-jss installation as peer dependency – it will be installed automatically as @coengageui/core dependency.
-Instead of direct react-jss usage @coengageui/core now exports [createStyles](https://coengage.dev/theming/react-jss/) function
+All `coengageui_` packages no longer require react-jss installation as peer dependency – it will be installed automatically as coengageui_core dependency.
+Instead of direct react-jss usage coengageui_core now exports [createStyles](https://coengage.dev/theming/react-jss/) function
 and a [set of components](https://coengage.dev/theming/next/) to implement server side rendering.
 
 ### createStyles function
@@ -33,7 +33,7 @@ and a [set of components](https://coengage.dev/theming/next/) to implement serve
 New `createStyles` function lets you create styles with CoengageUI theme:
 
 ```tsx
-import { createStyles } from '@coengageui/core';
+import { createStyles } from 'coengageui_core';
 
 const useStyles = createStyles((theme) => ({
   button: {
@@ -53,12 +53,12 @@ Note that it will only work if your application is wrapped with CoengageUIProvid
 
 ### Builtin server side rendering
 
-@coengageui/core package now comes with components to simplify server side rendering setup with Next.js and any other environment.
+coengageui_core package now comes with components to simplify server side rendering setup with Next.js and any other environment.
 Checkout [Next.js guide](https://coengage.dev/theming/next/) to learn more.
 
-## New package @coengageui/rte
+## New package coengageui_rte
 
-[@coengageui/rte](https://coengage.dev/others/rte/) is a new package with RichTextEditor component.
+[coengageui_rte](https://coengage.dev/others/rte/) is a new package with RichTextEditor component.
 Component integrates seamlessly with your CoengageUITheme and provides all basic rich text editing features:
 
 <Demo data={RichTextEditorDemos.usage} />

@@ -1,16 +1,16 @@
 import React from 'react';
-import { DEFAULT_THEME, Group, ColorPicker } from '@coengageui/core';
+import { DEFAULT_THEME, Group, ColorPicker } from 'coengageui_core';
 
 const code = `
-import { ColorPicker } from '@coengageui/core';
+import { ColorPicker } from 'coengageui_core';
 
 function Demo() {
   return (
     <ColorPicker
       format="hex"
       swatches={[${Object.keys(DEFAULT_THEME.colors)
-        .map((color) => `'${DEFAULT_THEME.colors[color][6]}'`)
-        .join(', ')}]}
+    .map((color) => `'${DEFAULT_THEME.colors[color][6]}'`)
+    .join(', ')}]}
     />
   );
 }

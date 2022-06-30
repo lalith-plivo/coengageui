@@ -1,12 +1,12 @@
 ---
 group: 'coengageui-hooks'
-package: '@coengageui/hooks'
+package: 'coengageui_hooks'
 title: 'use-local-storage'
 category: 'state'
 order: 1
 slug: /hooks/use-local-storage/
 description: 'Use localStorage value as react state, sync state across opened tabs'
-import: "import { useLocalStorage } from '@coengageui/hooks';"
+import: "import { useLocalStorage } from 'coengageui_hooks';"
 docs: 'hooks/use-local-storage.mdx'
 source: 'coengageui-hooks/src/use-local-storage/use-local-storage.ts'
 ---
@@ -17,7 +17,7 @@ use-local-storage allows you to use value from `localStorage` as react state.
 Hook works exactly the same as `useState`, but also writes the value to local storage:
 
 ```tsx
-import { useLocalStorage } from '@coengageui/hooks';
+import { useLocalStorage } from 'coengageui_hooks';
 
 // hook will read value from localStorage.getItem('color-scheme')
 // if localStorage is not available or value at given key does not exist
@@ -36,8 +36,8 @@ setValue((current) => (current === 'dark' ? 'light' : 'dark'));
 CoengageUI docs website uses this hook to store color scheme information:
 
 ```tsx
-import { useLocalStorage } from '@coengageui/hooks';
-import { ActionIcon, ColorScheme } from '@coengageui/core';
+import { useLocalStorage } from 'coengageui_hooks';
+import { ActionIcon, ColorScheme } from 'coengageui_core';
 import { Sun, MoonStars } from 'tabler-icons-react';
 
 function ColorSchemeToggle() {

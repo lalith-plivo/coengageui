@@ -1,12 +1,12 @@
 ---
 group: 'coengageui-hooks'
-package: '@coengageui/hooks'
+package: 'coengageui_hooks'
 title: 'use-input-state'
 category: 'state'
 order: 1
 slug: /hooks/use-input-state/
 description: 'Manage state of native and custom inputs'
-import: "import { useInputState } from '@coengageui/hooks';"
+import: "import { useInputState } from 'coengageui_hooks';"
 docs: 'hooks/use-input-state.mdx'
 source: 'coengageui-hooks/src/use-input-state/use-input-state.ts'
 ---
@@ -18,8 +18,8 @@ Hook works with all CoengageUI and native inputs:
 
 ```tsx
 import { useState } from 'react';
-import { useInputState } from '@coengageui/hooks';
-import { TextInput, NumberInput } from '@coengageui/core';
+import { useInputState } from 'coengageui_hooks';
+import { TextInput, NumberInput } from 'coengageui_core';
 
 function WithUseInputState() {
   const [stringValue, setStringValue] = useInputState('');

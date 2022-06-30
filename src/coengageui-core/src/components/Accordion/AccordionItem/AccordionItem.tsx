@@ -1,6 +1,6 @@
 import React from 'react';
-import { useReducedMotion } from '@coengageui/hooks';
-import { DefaultProps, Selectors } from '@coengageui/styles';
+import { useReducedMotion } from 'coengageui_hooks';
+import { DefaultProps, Selectors } from 'coengageui_styles';
 import { Box } from '../../Box';
 import { Collapse } from '../../Collapse';
 import { UnstyledButton } from '../../Button';
@@ -13,7 +13,7 @@ export type AccordionItemStylesNames = Selectors<typeof useStyles>;
 
 export interface PublicAccordionItemProps
   extends DefaultProps<AccordionItemStylesNames>,
-    React.ComponentPropsWithoutRef<'div'> {
+  React.ComponentPropsWithoutRef<'div'> {
   label?: React.ReactNode;
   icon?: React.ReactNode;
   children?: React.ReactNode;
@@ -90,4 +90,4 @@ export function AccordionItem({
   );
 }
 
-AccordionItem.displayName = '@coengageui/core/AccordionItem';
+AccordionItem.displayName = 'coengageui_core/AccordionItem';

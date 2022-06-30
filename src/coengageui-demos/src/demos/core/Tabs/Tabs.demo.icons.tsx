@@ -1,9 +1,9 @@
 import React from 'react';
 import { Settings, MessageCircle, Coin } from 'tabler-icons-react';
-import { Tabs } from '@coengageui/core';
+import { Tabs } from 'coengageui_core';
 
 const code = `
-import { Tabs } from '@coengageui/core';
+import { Tabs } from 'coengageui_core';
 import { Settings, MessageCircle, Coin } from 'tabler-icons-react';
 
 function Demo() {

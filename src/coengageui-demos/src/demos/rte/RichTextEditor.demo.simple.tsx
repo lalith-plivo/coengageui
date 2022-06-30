@@ -3,7 +3,7 @@ import { SSRWrapper } from './_SSRWrapper';
 
 const code = `
 import { useState } from 'react';
-import { RichTextEditor } from '@coengageui/rte';
+import { RichTextEditor } from 'coengageui_rte';
 
 const initialValue =
   '<p>Your initial <b>html value</b> or an empty string to init editor without value</p>';

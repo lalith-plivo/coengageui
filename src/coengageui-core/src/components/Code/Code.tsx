@@ -4,7 +4,7 @@ import {
   DefaultProps,
   CoengageUIColor,
   useCoengageUIDefaultProps,
-} from '@coengageui/styles';
+} from 'coengageui_styles';
 import { Box } from '../Box';
 import useStyles from './Code.styles';
 
@@ -47,4 +47,4 @@ export const Code = forwardRef<HTMLElement, CodeProps>((props: CodeProps, ref) =
   );
 });
 
-Code.displayName = '@coengageui/core/Code';
+Code.displayName = 'coengageui_core/Code';

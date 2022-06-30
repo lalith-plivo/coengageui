@@ -7,13 +7,13 @@ import {
   Group,
   ActionIcon,
   useCoengageUIColorScheme,
-} from '@coengageui/core';
+} from 'coengageui_core';
 import { MainLinks } from './_mainLinks';
 import { User } from './_user';
 import { Logo } from './_logo';
 
 const code = `
-import { AppShell, Navbar, Header } from '@coengageui/core';
+import { AppShell, Navbar, Header } from 'coengageui_core';
 
 function Demo() {
   return (

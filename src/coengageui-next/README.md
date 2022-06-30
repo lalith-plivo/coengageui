@@ -8,10 +8,10 @@ Utilities to setup CoengageUI server side rendering with Next.js
 
 ```sh
 # With yarn
-yarn add @coengageui/hooks @coengageui/core @coengageui/next
+yarn add coengageui_hooks coengageui_core coengageui_next
 
 # With npm
-npm install @coengageui/hooks @coengageui/core @coengageui/next
+npm install coengageui_hooks coengageui_core coengageui_next
 ```
 
 ## License

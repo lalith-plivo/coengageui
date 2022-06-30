@@ -26,4 +26,4 @@ export function CopyIcon({ copied }: CopyIconProps) {
   );
 }
 
-CopyIcon.displayName = '@coengageui/prism/CopyIcon';
+CopyIcon.displayName = 'coengageui_prism/CopyIcon';

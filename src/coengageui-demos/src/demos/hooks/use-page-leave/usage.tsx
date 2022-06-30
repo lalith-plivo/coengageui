@@ -1,10 +1,10 @@
 import React, { useState } from 'react';
-import { usePageLeave } from '@coengageui/hooks';
-import { Text } from '@coengageui/core';
+import { usePageLeave } from 'coengageui_hooks';
+import { Text } from 'coengageui_core';
 
 const code = `
 import { useState } from 'react';
-import { usePageLeave } from '@coengageui/hooks';
+import { usePageLeave } from 'coengageui_hooks';
 
 function Demo() {
   const [leftsCount, setLeftsCount] = useState(0);

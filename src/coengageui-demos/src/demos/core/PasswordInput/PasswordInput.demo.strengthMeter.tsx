@@ -1,11 +1,11 @@
 import React, { useState } from 'react';
 import { CheckIcon, Cross1Icon } from '@modulz/radix-icons';
-import { PasswordInput, Progress, Text, Popover, Box } from '@coengageui/core';
+import { PasswordInput, Progress, Text, Popover, Box } from 'coengageui_core';
 
 const code = `
 import { useState } from 'react';
 import { CheckIcon, Cross1Icon } from '@modulz/radix-icons';
-import { PasswordInput, Progress, Text, Popover, Box } from '@coengageui/core';
+import { PasswordInput, Progress, Text, Popover, Box } from 'coengageui_core';
 
 function PasswordRequirement({ meets, label }: { meets: boolean; label: string }) {
   return (

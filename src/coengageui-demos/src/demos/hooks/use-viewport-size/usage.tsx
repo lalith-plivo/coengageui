@@ -1,9 +1,9 @@
 import React from 'react';
-import { useViewportSize } from '@coengageui/hooks';
-import { Text } from '@coengageui/core';
+import { useViewportSize } from 'coengageui_hooks';
+import { Text } from 'coengageui_core';
 
 const code = `
-import { useViewportSize } from '@coengageui/hooks';
+import { useViewportSize } from 'coengageui_hooks';
 
 function Demo() {
   const { height, width } = useViewportSize();

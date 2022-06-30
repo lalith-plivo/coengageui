@@ -6,7 +6,7 @@ import {
   CloseButton,
   SelectItemProps,
   MultiSelectValueProps,
-} from '@coengageui/core';
+} from 'coengageui_core';
 import { countriesData, flags } from './_countries-data';
 
 const code = `
@@ -18,7 +18,7 @@ import {
   CloseButton,
   SelectItemProps,
   MultiSelectValueProps,
-} from '@coengageui/core';
+} from 'coengageui_core';
 
 const countriesData = [
   { label: 'United States', value: 'US' },
@@ -114,9 +114,8 @@ function Value({
           cursor: 'default',
           alignItems: 'center',
           backgroundColor: theme.colorScheme === 'dark' ? theme.colors.dark[7] : theme.white,
-          border: `1px solid ${
-            theme.colorScheme === 'dark' ? theme.colors.dark[7] : theme.colors.gray[4]
-          }`,
+          border: `1px solid ${theme.colorScheme === 'dark' ? theme.colors.dark[7] : theme.colors.gray[4]
+            }`,
           paddingLeft: 10,
           borderRadius: 4,
         })}

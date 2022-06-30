@@ -9,7 +9,7 @@ import {
   MediaQuery,
   Burger,
   useCoengageUITheme,
-} from '@coengageui/core';
+} from 'coengageui_core';
 import Head from '../components/Head/Head';
 
 export default function AppShellDemo() {

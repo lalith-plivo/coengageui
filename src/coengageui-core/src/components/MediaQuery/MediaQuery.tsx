@@ -1,5 +1,5 @@
 import React, { Children } from 'react';
-import { CoengageUINumberSize, CSSObject, useCoengageUIDefaultProps } from '@coengageui/styles';
+import { CoengageUINumberSize, CSSObject, useCoengageUIDefaultProps } from 'coengageui_styles';
 import useStyles from './MediaQuery.styles';
 
 export interface MediaQueryProps {
@@ -44,4 +44,4 @@ export function MediaQuery(props: MediaQueryProps) {
   return child;
 }
 
-MediaQuery.displayName = '@coengageui/core/MediaQuery';
+MediaQuery.displayName = 'coengageui_core/MediaQuery';

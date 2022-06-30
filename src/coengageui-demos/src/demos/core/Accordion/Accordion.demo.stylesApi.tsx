@@ -1,10 +1,10 @@
 import React from 'react';
 import { Plus } from 'tabler-icons-react';
-import { Accordion, AccordionProps, createStyles } from '@coengageui/core';
+import { Accordion, AccordionProps, createStyles } from 'coengageui_core';
 import { baseDemoItems } from './_base';
 
 const code = `
-import { Accordion, AccordionProps, createStyles } from '@coengageui/core';
+import { Accordion, AccordionProps, createStyles } from 'coengageui_core';
 import { Plus } from 'tabler-icons-react';
 
 const useStyles = createStyles((theme, _params, getRef) => ({

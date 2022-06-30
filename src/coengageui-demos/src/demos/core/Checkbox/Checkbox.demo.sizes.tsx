@@ -1,5 +1,5 @@
 import React from 'react';
-import { Checkbox, COENGAGEUI_SIZES, Group } from '@coengageui/core';
+import { Checkbox, COENGAGEUI_SIZES, Group } from 'coengageui_core';
 
 function Demo() {
   const items = COENGAGEUI_SIZES.map((size) => (

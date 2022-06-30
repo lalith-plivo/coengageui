@@ -1,12 +1,12 @@
 import { createContext, ReactNode } from 'react';
-import { ModalProps } from '@coengageui/core';
+import { ModalProps } from 'coengageui_core';
 import type { ConfirmModalProps } from './ConfirmModal';
 
 export type ModalSettings = Partial<Omit<ModalProps, 'opened'>>;
 
 export type ConfirmLabels = Record<'confirm' | 'cancel', ReactNode>;
 
-export interface OpenConfirmModal extends ModalSettings, ConfirmModalProps {}
+export interface OpenConfirmModal extends ModalSettings, ConfirmModalProps { }
 export interface OpenContextModal<CustomProps extends Record<string, unknown> = {}>
   extends ModalSettings {
   innerProps: CustomProps;
@@ -36,4 +36,4 @@ export interface ModalsContextProps {
 }
 
 export const ModalsContext = createContext<ModalsContextProps>(null);
-ModalsContext.displayName = '@coengageui/modals/ModalsContext';
+ModalsContext.displayName = 'coengageui_modals/ModalsContext';

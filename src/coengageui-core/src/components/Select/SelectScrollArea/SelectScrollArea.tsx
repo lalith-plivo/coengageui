@@ -9,4 +9,4 @@ export const SelectScrollArea = forwardRef<HTMLDivElement, ScrollAreaProps>(
   )
 );
 
-SelectScrollArea.displayName = '@coengageui/core/SelectScrollArea';
+SelectScrollArea.displayName = 'coengageui_core/SelectScrollArea';

@@ -1,8 +1,8 @@
 import React from 'react';
-import { Kbd } from '@coengageui/core';
+import { Kbd } from 'coengageui_core';
 
 const code = `
-import { Kbd } from '@coengageui/core';
+import { Kbd } from 'coengageui_core';
 
 function Demo() {
   return (

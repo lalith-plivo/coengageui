@@ -1,7 +1,7 @@
 import { SegmentedControlWrapper } from './Wrapper';
 
 const codeTemplate = (props: string) => `
-import { SegmentedControl } from '@coengageui/core';
+import { SegmentedControl } from 'coengageui_core';
 
 function Demo() {
   return <SegmentedControl${props} />;

@@ -1,5 +1,5 @@
 import React, { forwardRef } from 'react';
-import { DefaultProps, useCoengageUIDefaultProps } from '@coengageui/styles';
+import { DefaultProps, useCoengageUIDefaultProps } from 'coengageui_styles';
 import { Box } from '../Box';
 import useStyles from './Title.styles';
 
@@ -37,4 +37,4 @@ export const Title = forwardRef<HTMLHeadingElement, TitleProps>((props: TitlePro
   );
 });
 
-Title.displayName = '@coengageui/core/Title';
+Title.displayName = 'coengageui_core/Title';

@@ -5,7 +5,7 @@ import {
   CoengageUISizes,
   CoengageUIColor,
   CoengageUITheme,
-} from '@coengageui/styles';
+} from 'coengageui_styles';
 
 export type ButtonVariant =
   | 'filled'

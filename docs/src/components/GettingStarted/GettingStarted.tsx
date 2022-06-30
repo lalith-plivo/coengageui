@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Container } from '@coengageui/core';
+import { Container } from 'coengageui_core';
 import { Footer } from '../Footer/Footer';
 import Head from '../Head/Head';
 import { Installation } from './Installation/Installation';
@@ -10,7 +10,7 @@ import useStyles from './GettingStarted.styles';
 
 export function GettingStarted() {
   const { classes } = useStyles();
-  const [dependencies, setDependencies] = useState('@coengageui/hooks @coengageui/core');
+  const [dependencies, setDependencies] = useState('coengageui_hooks coengageui_core');
 
   return (
     <>

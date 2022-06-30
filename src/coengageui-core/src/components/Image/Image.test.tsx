@@ -1,6 +1,6 @@
 import React from 'react';
 import { render, screen } from '@testing-library/react';
-import { checkAccessibility, itSupportsSystemProps } from '@coengageui/tests';
+import { checkAccessibility, itSupportsSystemProps } from 'coengageui_tests';
 import { Image, ImageProps } from './Image';
 
 const defaultProps: ImageProps = {
@@ -8,7 +8,7 @@ const defaultProps: ImageProps = {
   alt: 'Test',
 };
 
-describe('@coengageui/core/Image', () => {
+describe('coengageui_core/Image', () => {
   checkAccessibility([
     <Image {...defaultProps} />,
     <Image {...defaultProps} src={null} />,
@@ -18,7 +18,7 @@ describe('@coengageui/core/Image', () => {
   itSupportsSystemProps({
     component: Image,
     props: defaultProps,
-    displayName: '@coengageui/core/Image',
+    displayName: 'coengageui_core/Image',
     refType: HTMLDivElement,
   });
 

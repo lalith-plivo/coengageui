@@ -1,16 +1,16 @@
 import React from 'react';
-import { checkAccessibility, itSupportsSystemProps } from '@coengageui/tests';
+import { checkAccessibility, itSupportsSystemProps } from 'coengageui_tests';
 import { render } from '@testing-library/react';
 import { Step, StepProps } from './Step';
 
 const defaultProps: StepProps = {};
 
-describe('@coengageui/core/Step', () => {
+describe('coengageui_core/Step', () => {
   checkAccessibility([<Step aria-label="Test" />, <Step title="Test" />, <Step label="Test" />]);
   itSupportsSystemProps({
     component: Step,
     props: defaultProps,
-    displayName: '@coengageui/core/Step',
+    displayName: 'coengageui_core/Step',
     refType: HTMLButtonElement,
   });
 

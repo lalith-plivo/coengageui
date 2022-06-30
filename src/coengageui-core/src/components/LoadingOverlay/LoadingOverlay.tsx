@@ -4,7 +4,7 @@ import {
   CoengageUINumberSize,
   getDefaultZIndex,
   useCoengageUIDefaultProps,
-} from '@coengageui/styles';
+} from 'coengageui_styles';
 import { Overlay } from '../Overlay';
 import { Transition } from '../Transition';
 import { Loader, LoaderProps } from '../Loader';
@@ -101,4 +101,4 @@ export const LoadingOverlay = forwardRef<HTMLDivElement, LoadingOverlayProps>(
   }
 );
 
-LoadingOverlay.displayName = '@coengageui/core/LoadingOverlay';
+LoadingOverlay.displayName = 'coengageui_core/LoadingOverlay';

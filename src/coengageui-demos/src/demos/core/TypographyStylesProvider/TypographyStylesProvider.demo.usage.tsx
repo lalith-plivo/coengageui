@@ -1,5 +1,5 @@
 import React from 'react';
-import { TypographyStylesProvider } from '@coengageui/core';
+import { TypographyStylesProvider } from 'coengageui_core';
 
 const html = `
 <h1>Example article</h1>
@@ -26,7 +26,7 @@ const html = `
 `;
 
 const code = `
-import { TypographyStylesProvider } from '@coengageui/core';
+import { TypographyStylesProvider } from 'coengageui_core';
 
 function Demo() {
   return (

@@ -1,4 +1,4 @@
-import { createStyles, CoengageUIColor } from '@coengageui/styles';
+import { createStyles, CoengageUIColor } from 'coengageui_styles';
 
 export interface MarkStylesParams {
   color: CoengageUIColor;

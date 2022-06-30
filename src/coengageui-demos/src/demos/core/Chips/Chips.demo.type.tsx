@@ -1,5 +1,5 @@
 import React from 'react';
-import { Chips, Chip } from '@coengageui/core';
+import { Chips, Chip } from 'coengageui_core';
 
 const code = `
 // Single chip can be selected at a time (radio input)

@@ -1,5 +1,5 @@
 import React from 'react';
-import { Menu, MenuProps, Group } from '@coengageui/core';
+import { Menu, MenuProps, Group } from 'coengageui_core';
 import { menuItems } from './_menu-items';
 
 function Wrapper(props: MenuProps) {
@@ -13,7 +13,7 @@ function Wrapper(props: MenuProps) {
 }
 
 const codeTemplate = (props: string) => `
-import { Menu } from '@coengageui/core';
+import { Menu } from 'coengageui_core';
 
 function Demo() {
   return (

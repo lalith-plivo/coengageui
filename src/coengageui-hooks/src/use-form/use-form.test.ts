@@ -41,7 +41,7 @@ const BOOLEAN_FORM = {
   },
 };
 
-describe('@coengageui/hooks/use-form', () => {
+describe('coengageui_hooks/use-form', () => {
   it('returns correct values', () => {
     const hook = renderHook(() => useForm(TEST_FORM));
     expect(hook.result.current.values).toStrictEqual(TEST_FORM.initialValues);

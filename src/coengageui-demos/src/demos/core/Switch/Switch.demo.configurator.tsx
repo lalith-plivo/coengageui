@@ -1,8 +1,8 @@
 import React from 'react';
-import { Switch, SwitchProps } from '@coengageui/core';
+import { Switch, SwitchProps } from 'coengageui_core';
 
 const codeTemplate = (props: string) => `
-import { Switch } from '@coengageui/core';
+import { Switch } from 'coengageui_core';
 
 function Demo() {
   return (

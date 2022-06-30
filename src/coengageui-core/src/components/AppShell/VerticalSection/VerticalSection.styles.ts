@@ -1,4 +1,4 @@
-import { createStyles } from '@coengageui/styles';
+import { createStyles } from 'coengageui_styles';
 
 export interface VerticalSectionPosition {
   top?: number;
@@ -28,15 +28,13 @@ export default createStyles(
       backgroundColor: theme.colorScheme === 'dark' ? theme.colors.dark[7] : theme.white,
       borderBottom:
         borderPosition === 'bottom'
-          ? `1px solid ${
-              theme.colorScheme === 'dark' ? theme.colors.dark[5] : theme.colors.gray[2]
-            }`
+          ? `1px solid ${theme.colorScheme === 'dark' ? theme.colors.dark[5] : theme.colors.gray[2]
+          }`
           : undefined,
       borderTop:
         borderPosition === 'top'
-          ? `1px solid ${
-              theme.colorScheme === 'dark' ? theme.colors.dark[5] : theme.colors.gray[2]
-            }`
+          ? `1px solid ${theme.colorScheme === 'dark' ? theme.colors.dark[5] : theme.colors.gray[2]
+          }`
           : undefined,
     },
   })

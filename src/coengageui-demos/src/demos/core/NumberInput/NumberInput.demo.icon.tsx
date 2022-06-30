@@ -1,9 +1,9 @@
 import React from 'react';
 import { Medal } from 'tabler-icons-react';
-import { NumberInput } from '@coengageui/core';
+import { NumberInput } from 'coengageui_core';
 
 const code = `
-import { NumberInput } from '@coengageui/core';
+import { NumberInput } from 'coengageui_core';
 import { Medal } from 'tabler-icons-react';
 
 function Demo() {

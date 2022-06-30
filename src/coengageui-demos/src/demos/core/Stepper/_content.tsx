@@ -1,5 +1,5 @@
 import React from 'react';
-import { Box, BoxProps } from '@coengageui/core';
+import { Box, BoxProps } from 'coengageui_core';
 
 export function Content(props: BoxProps<'div'>) {
   return (

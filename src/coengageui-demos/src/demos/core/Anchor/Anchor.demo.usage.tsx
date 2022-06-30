@@ -1,8 +1,8 @@
 import React from 'react';
-import { Anchor } from '@coengageui/core';
+import { Anchor } from 'coengageui_core';
 
 const code = `
-import { Anchor } from '@coengageui/core';
+import { Anchor } from 'coengageui_core';
 
 function Demo() {
   return (

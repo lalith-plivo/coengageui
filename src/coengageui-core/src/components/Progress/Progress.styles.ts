@@ -1,4 +1,4 @@
-import { createStyles, CoengageUINumberSize, CoengageUIColor, keyframes } from '@coengageui/styles';
+import { createStyles, CoengageUINumberSize, CoengageUIColor, keyframes } from 'coengageui_styles';
 
 export const sizes = {
   xs: 3,

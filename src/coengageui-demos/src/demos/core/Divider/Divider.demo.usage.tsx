@@ -1,8 +1,8 @@
 import React from 'react';
-import { Divider } from '@coengageui/core';
+import { Divider } from 'coengageui_core';
 
 const code = `
-import { Divider } from '@coengageui/core';
+import { Divider } from 'coengageui_core';
 
 function Demo() {
   return (

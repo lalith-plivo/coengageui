@@ -1,6 +1,6 @@
 import { parsePopperPosition } from './parse-popper-position';
 
-describe('@coengageui/core/Popper/parsePopperPosition', () => {
+describe('coengageui_core/Popper/parsePopperPosition', () => {
   it('returns default position if argument is null or undefined', () => {
     expect(parsePopperPosition(null)).toStrictEqual({ position: 'top', placement: 'center' });
     expect(parsePopperPosition(undefined)).toStrictEqual({ position: 'top', placement: 'center' });

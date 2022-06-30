@@ -1,4 +1,4 @@
-import { BlockquoteStylesNames } from '@coengageui/core';
+import { BlockquoteStylesNames } from 'coengageui_core';
 
 export const Blockquote: Record<BlockquoteStylesNames, string> = {
   root: 'Root element',

@@ -1,7 +1,7 @@
 import { renderHook } from '@testing-library/react-hooks';
 import { useShallowEffect } from './use-shallow-effect';
 
-describe('@coengageui/hooks/use-shallow-effect', () => {
+describe('coengageui_hooks/use-shallow-effect', () => {
   beforeEach(() => {
     jest.clearAllMocks();
   });

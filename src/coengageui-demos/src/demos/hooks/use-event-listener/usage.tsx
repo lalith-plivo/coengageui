@@ -1,11 +1,11 @@
 import React, { useState, useCallback } from 'react';
-import { Button, Group } from '@coengageui/core';
-import { useEventListener } from '@coengageui/hooks';
+import { Button, Group } from 'coengageui_core';
+import { useEventListener } from 'coengageui_hooks';
 
 const code = `
 import { useState, useCallback } from 'react';
-import { Button, Group } from '@coengageui/core';
-import { useEventListener } from '@coengageui/hooks';
+import { Button, Group } from 'coengageui_core';
+import { useEventListener } from 'coengageui_hooks';
 
 function Demo() {
   const [count, setCount] = useState(0);

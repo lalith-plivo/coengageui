@@ -1,4 +1,4 @@
-import { itRendersChildren, itSupportsSystemProps } from '@coengageui/tests';
+import { itRendersChildren, itSupportsSystemProps } from 'coengageui_tests';
 import { Footer, FooterProps } from './Footer';
 
 const defaultProps: FooterProps = {
@@ -6,12 +6,12 @@ const defaultProps: FooterProps = {
   children: 'test-footer',
 };
 
-describe('@coengageui/core/Footer', () => {
+describe('coengageui_core/Footer', () => {
   itRendersChildren(Footer, defaultProps);
   itSupportsSystemProps({
     component: Footer,
     props: defaultProps,
-    displayName: '@coengageui/core/Footer',
+    displayName: 'coengageui_core/Footer',
     refType: HTMLElement,
   });
 });

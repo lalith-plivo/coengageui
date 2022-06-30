@@ -6,19 +6,19 @@ import {
   itIsPolymorphic,
   itSupportsFocusEvents,
   itSupportsSystemProps,
-} from '@coengageui/tests';
+} from 'coengageui_tests';
 import { ActionIcon, ActionIconProps } from './ActionIcon';
 
 const defaultProps: ActionIconProps<'button'> = { children: <div /> };
 
-describe('@coengageui/core/ActionIcon', () => {
+describe('coengageui_core/ActionIcon', () => {
   itIsPolymorphic(ActionIcon, defaultProps);
   itRendersChildren(ActionIcon, defaultProps);
   itSupportsFocusEvents(ActionIcon, defaultProps, '.coengageui-ActionIcon-root');
   itSupportsSystemProps({
     component: ActionIcon,
     props: defaultProps,
-    displayName: '@coengageui/core/ActionIcon',
+    displayName: 'coengageui_core/ActionIcon',
     refType: HTMLButtonElement,
   });
 

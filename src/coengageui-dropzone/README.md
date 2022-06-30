@@ -8,10 +8,10 @@ Capture files from user
 
 ```sh
 # With yarn
-yarn add @coengageui/dropzone @coengageui/core @coengageui/hooks
+yarn add coengageui_dropzone coengageui_core coengageui_hooks
 
 # With npm
-npm install @coengageui/dropzone @coengageui/core @coengageui/hooks
+npm install coengageui_dropzone coengageui_core coengageui_hooks
 ```
 
 ## License

@@ -1,5 +1,5 @@
 import React from 'react';
-import { Tooltip, TooltipProps, Group, Button } from '@coengageui/core';
+import { Tooltip, TooltipProps, Group, Button } from 'coengageui_core';
 
 const Wrapper = (props: TooltipProps) => (
   <div style={{ padding: 30 }}>
@@ -14,7 +14,7 @@ const Wrapper = (props: TooltipProps) => (
 );
 
 const codeTemplate = (props: string) => `
-import { Tooltip, Button } from '@coengageui/core';
+import { Tooltip, Button } from 'coengageui_core';
 
 function Demo() {
   return (

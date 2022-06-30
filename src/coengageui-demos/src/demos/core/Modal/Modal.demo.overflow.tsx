@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Modal, Group, Button } from '@coengageui/core';
+import { Modal, Group, Button } from 'coengageui_core';
 
 const code = `
 // (default) – overflow is handled by modal wrapper

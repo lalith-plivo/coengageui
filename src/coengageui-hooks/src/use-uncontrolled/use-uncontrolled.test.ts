@@ -1,14 +1,14 @@
 import { renderHook, act } from '@testing-library/react-hooks';
 import { UncontrolledOptions, useUncontrolled } from './use-uncontrolled';
 
-describe('@coengageui/hooks/use-uncontrolled', () => {
+describe('coengageui_hooks/use-uncontrolled', () => {
   it('returns value from configuration object', () => {
     const hook = renderHook(() =>
       useUncontrolled({
         value: 'test-value',
         defaultValue: null,
         finalValue: null,
-        onChange: () => {},
+        onChange: () => { },
         rule: (f) => !!f,
       })
     );
@@ -50,7 +50,7 @@ describe('@coengageui/hooks/use-uncontrolled', () => {
         value: null,
         defaultValue: 'test-default-value',
         finalValue: null,
-        onChange: () => {},
+        onChange: () => { },
         rule: (f) => !!f,
       })
     );
@@ -64,7 +64,7 @@ describe('@coengageui/hooks/use-uncontrolled', () => {
         value: null,
         defaultValue: null,
         finalValue: 'test-final-value',
-        onChange: () => {},
+        onChange: () => { },
         rule: (f) => !!f,
       })
     );

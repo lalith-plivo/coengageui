@@ -1,8 +1,8 @@
 import React from 'react';
-import { NumberInput, NumberInputProps } from '@coengageui/core';
+import { NumberInput, NumberInputProps } from 'coengageui_core';
 
 const codeTemplate = (props: string) => `
-import { NumberInput } from '@coengageui/core';
+import { NumberInput } from 'coengageui_core';
 
 function Demo() {
   return (

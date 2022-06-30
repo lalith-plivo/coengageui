@@ -1,9 +1,9 @@
 import React, { useState } from 'react';
-import { Select } from '@coengageui/core';
+import { Select } from 'coengageui_core';
 
 const code = `
 import { useState } from 'react';
-import { Select } from '@coengageui/core';
+import { Select } from 'coengageui_core';
 
 export function Demo() {
   const [data, setData] = useState(['React', 'Angular', 'Svelte', 'Vue']);

@@ -6,14 +6,14 @@ import {
   CoengageUINumberSize,
   CSSObject,
   useCoengageUIDefaultProps,
-} from '@coengageui/styles';
+} from 'coengageui_styles';
 import { filterChildrenByType } from '../../utils';
 import { Box } from '../Box';
 import { TimelineItem, TimelineItemStylesNames } from './TimelineItem/TimelineItem';
 
 export interface TimelineProps
   extends DefaultProps<TimelineItemStylesNames>,
-    React.ComponentPropsWithoutRef<'div'> {
+  React.ComponentPropsWithoutRef<'div'> {
   /** <Timeline.Item /> components only */
   children: React.ReactNode;
 
@@ -103,4 +103,4 @@ export const Timeline: TimelineComponent = forwardRef<HTMLDivElement, TimelinePr
 ) as any;
 
 Timeline.Item = TimelineItem;
-Timeline.displayName = '@coengageui/core/Timeline';
+Timeline.displayName = 'coengageui_core/Timeline';

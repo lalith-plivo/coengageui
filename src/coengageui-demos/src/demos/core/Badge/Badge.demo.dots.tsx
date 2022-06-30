@@ -1,5 +1,5 @@
 import React from 'react';
-import { Group, COENGAGEUI_COLORS, Badge } from '@coengageui/core';
+import { Group, COENGAGEUI_COLORS, Badge } from 'coengageui_core';
 
 function Demo() {
   const items = COENGAGEUI_COLORS.map((color) => (

@@ -1,12 +1,12 @@
 import React from 'react';
-import { Group, TextInput, Box, Text, Code, Button, Center } from '@coengageui/core';
-import { useForm, formList } from '@coengageui/form';
+import { Group, TextInput, Box, Text, Code, Button, Center } from 'coengageui_core';
+import { useForm, formList } from 'coengageui_form';
 import { DragDropContext, Droppable, Draggable } from 'react-beautiful-dnd';
 import { GripVertical } from 'tabler-icons-react';
 
 const code = `
-import { Group, TextInput, Box, Text, Code, Button, Center } from '@coengageui/core';
-import { useForm, formList } from '@coengageui/form';
+import { Group, TextInput, Box, Text, Code, Button, Center } from 'coengageui_core';
+import { useForm, formList } from 'coengageui_form';
 import { DragDropContext, Droppable, Draggable } from 'react-beautiful-dnd';
 import { GripVertical } from 'tabler-icons-react';
 

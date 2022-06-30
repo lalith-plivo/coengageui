@@ -1,8 +1,8 @@
 import React from 'react';
-import { Blockquote } from '@coengageui/core';
+import { Blockquote } from 'coengageui_core';
 
 const code = `
-import { Blockquote } from '@coengageui/core';
+import { Blockquote } from 'coengageui_core';
 
 function Demo() {
   return (

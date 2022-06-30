@@ -1,6 +1,6 @@
 import { useState, useEffect, useRef } from 'react';
-import { useReducedMotion, useDidUpdate } from '@coengageui/hooks';
-import { useCoengageUITheme } from '@coengageui/styles';
+import { useReducedMotion, useDidUpdate } from 'coengageui_hooks';
+import { useCoengageUITheme } from 'coengageui_styles';
 
 export type TransitionStatus =
   | 'entered'

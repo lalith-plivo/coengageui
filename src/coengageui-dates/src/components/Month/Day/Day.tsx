@@ -1,5 +1,5 @@
 import React, { forwardRef } from 'react';
-import { DefaultProps, CoengageUISize, Selectors } from '@coengageui/core';
+import { DefaultProps, CoengageUISize, Selectors } from 'coengageui_core';
 import { getDayTabIndex } from './get-day-tab-index/get-day-tab-index';
 import { getDayAutofocus } from './get-day-autofocus/get-day-autofocus';
 import useStyles from './Day.styles';
@@ -8,7 +8,7 @@ export type DayStylesNames = Selectors<typeof useStyles>;
 
 export interface DayProps
   extends DefaultProps<DayStylesNames>,
-    Omit<React.ComponentPropsWithoutRef<'button'>, 'value' | 'onMouseEnter'> {
+  Omit<React.ComponentPropsWithoutRef<'button'>, 'value' | 'onMouseEnter'> {
   value: Date;
   selected: boolean;
   weekend: boolean;
@@ -87,4 +87,4 @@ export const Day = forwardRef<HTMLButtonElement, DayProps>(
   }
 );
 
-Day.displayName = '@coengageui/core/Day';
+Day.displayName = 'coengageui_core/Day';

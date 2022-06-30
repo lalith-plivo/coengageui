@@ -8,7 +8,7 @@ import {
   TransferListData,
   TransferListItemComponent,
   TransferListItemComponentProps,
-} from '@coengageui/core';
+} from 'coengageui_core';
 import { charactersList } from './_mockdata';
 
 const code = `
@@ -22,7 +22,7 @@ import {
   TransferListData,
   TransferListItemComponent,
   TransferListItemComponentProps,
-} from '@coengageui/core';
+} from 'coengageui_core';
 
 const mockdata = [
   {
@@ -100,7 +100,7 @@ const ItemComponent: TransferListItemComponent = ({
         {data.description}
       </Text>
     </div>
-    <Checkbox checked={selected} onChange={() => {}} tabIndex={-1} sx={{ pointerEvents: 'none' }} />
+    <Checkbox checked={selected} onChange={() => { }} tabIndex={-1} sx={{ pointerEvents: 'none' }} />
   </Group>
 );
 

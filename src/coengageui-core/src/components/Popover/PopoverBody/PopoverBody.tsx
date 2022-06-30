@@ -4,7 +4,7 @@ import {
   CoengageUINumberSize,
   CoengageUIShadow,
   Selectors,
-} from '@coengageui/styles';
+} from 'coengageui_styles';
 import { Text } from '../../Text/Text';
 import { CloseButton } from '../../ActionIcon/CloseButton/CloseButton';
 import useStyles from './PopoverBody.styles';
@@ -13,7 +13,7 @@ export type PopoverBodyStylesNames = Selectors<typeof useStyles>;
 
 export interface PopoverBodyProps
   extends DefaultProps<PopoverBodyStylesNames>,
-    Omit<React.ComponentPropsWithoutRef<'div'>, 'title'> {
+  Omit<React.ComponentPropsWithoutRef<'div'>, 'title'> {
   shadow: CoengageUIShadow;
   radius: CoengageUINumberSize;
   spacing: CoengageUINumberSize;
@@ -90,4 +90,4 @@ export const PopoverBody = forwardRef<HTMLDivElement, PopoverBodyProps>(
   }
 );
 
-PopoverBody.displayName = '@coengageui/core/PopoverBody';
+PopoverBody.displayName = 'coengageui_core/PopoverBody';

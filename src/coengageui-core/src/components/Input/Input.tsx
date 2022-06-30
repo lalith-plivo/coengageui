@@ -9,7 +9,7 @@ import {
   PolymorphicRef,
   extractSystemStyles,
   useCoengageUIDefaultProps,
-} from '@coengageui/styles';
+} from 'coengageui_styles';
 import { Box } from '../Box';
 import useStyles, { InputVariant } from './Input.styles';
 
@@ -150,4 +150,4 @@ export const Input: InputComponent = forwardRef(
   }
 ) as any;
 
-Input.displayName = '@coengageui/core/Input';
+Input.displayName = 'coengageui_core/Input';

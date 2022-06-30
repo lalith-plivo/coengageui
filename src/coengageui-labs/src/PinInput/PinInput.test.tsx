@@ -10,18 +10,18 @@ import {
   checkAccessibility,
   itSupportsSystemProps,
   renderWithAct,
-} from '@coengageui/tests';
+} from 'coengageui_tests';
 import { PinInput } from './PinInput';
 
 const defaultProps = {};
 
-describe('@coengageui/core/PinInput', () => {
+describe('coengageui_core/PinInput', () => {
   checkAccessibility([<PinInput {...defaultProps} />]);
   itSupportsFocusEvents(PinInput, defaultProps, 'input');
   itSupportsSystemProps({
     component: PinInput,
     props: defaultProps,
-    displayName: '@coengageui/core/PinInput',
+    displayName: 'coengageui_core/PinInput',
     refType: HTMLDivElement,
     excludeOthers: true,
   });

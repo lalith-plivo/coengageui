@@ -1,6 +1,6 @@
 import { getHotkeysPayload } from './use-spotlight-shortcuts';
 
-describe('@coengageui/spotlight/use-spotlight-shortcuts', () => {
+describe('coengageui_spotlight/use-spotlight-shortcuts', () => {
   const spy = jest.fn();
 
   it('returns correct values for string shortcut', () => {

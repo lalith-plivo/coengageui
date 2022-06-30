@@ -5,15 +5,15 @@ import {
   itSupportsOthers,
   itSupportsStyle,
   itSupportsRef,
-} from '@coengageui/tests';
+} from 'coengageui_tests';
 import { TimeField } from './TimeField';
 
 const defaultProps = {
-  onChange: () => {},
-  setValue: () => {},
+  onChange: () => { },
+  setValue: () => { },
 };
 
-describe('@coengageui/dates/TimeField', () => {
+describe('coengageui_dates/TimeField', () => {
   itSupportsClassName(TimeField, defaultProps);
   itSupportsOthers(TimeField, defaultProps);
   itSupportsStyle(TimeField, defaultProps);
@@ -27,6 +27,6 @@ describe('@coengageui/dates/TimeField', () => {
   });
 
   it('has correct displayName', () => {
-    expect(TimeField.displayName).toStrictEqual('@coengageui/dates/TimeField');
+    expect(TimeField.displayName).toStrictEqual('coengageui_dates/TimeField');
   });
 });

@@ -1,4 +1,4 @@
-import { TagInputStylesNames } from '@coengageui/labs';
+import { TagInputStylesNames } from 'coengageui_labs';
 import { Input } from './Input.styles-api';
 import { InputWrapper } from './InputWrapper.styles-api';
 

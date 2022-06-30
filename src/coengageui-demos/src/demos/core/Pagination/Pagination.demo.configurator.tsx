@@ -1,5 +1,5 @@
 import React from 'react';
-import { Pagination, Group } from '@coengageui/core';
+import { Pagination, Group } from 'coengageui_core';
 
 function Wrapper(props: any) {
   return (
@@ -10,7 +10,7 @@ function Wrapper(props: any) {
 }
 
 const codeTemplate = (props: string) => `
-import { Pagination } from '@coengageui/core';
+import { Pagination } from 'coengageui_core';
 
 function Demo() {
   return <Pagination total={10}${props} />;

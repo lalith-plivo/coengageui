@@ -1,11 +1,11 @@
 import React, { useState } from 'react';
-import { useClickOutside } from '@coengageui/hooks';
-import { Transition, Paper, Button, useCoengageUITheme } from '@coengageui/core';
+import { useClickOutside } from 'coengageui_hooks';
+import { Transition, Paper, Button, useCoengageUITheme } from 'coengageui_core';
 
 const code = `
 import { useState } from 'react';
-import { Transition, Paper, Button } from '@coengageui/core';
-import { useClickOutside } from '@coengageui/hooks';
+import { Transition, Paper, Button } from 'coengageui_core';
+import { useClickOutside } from 'coengageui_hooks';
 
 const scaleY = {
   in: { opacity: 1, transform: 'scaleY(1)' },

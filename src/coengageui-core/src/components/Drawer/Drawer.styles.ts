@@ -1,5 +1,5 @@
 import React from 'react';
-import { createStyles, CoengageUITheme } from '@coengageui/styles';
+import { createStyles, CoengageUITheme } from 'coengageui_styles';
 
 export const sizes = {
   xs: 180,

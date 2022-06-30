@@ -1,7 +1,7 @@
 import { act, renderHook } from '@testing-library/react-hooks';
 import { useDisclosure } from './use-disclosure';
 
-describe('@coengageui/hooks/use-disclosure', () => {
+describe('coengageui_hooks/use-disclosure', () => {
   it('handles close correctly', () => {
     const hook = renderHook(() => useDisclosure(true));
     expect(hook.result.current[0]).toBe(true);

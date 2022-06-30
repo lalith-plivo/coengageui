@@ -1,5 +1,5 @@
 import React from 'react';
-import { AccordionProps } from '@coengageui/core';
+import { AccordionProps } from 'coengageui_core';
 import { BaseDemo } from './_base';
 
 function Wrapper(props: Partial<AccordionProps>) {
@@ -7,7 +7,7 @@ function Wrapper(props: Partial<AccordionProps>) {
 }
 
 const codeTemplate = (props: string) => `
-import { Accordion } from '@coengageui/core';
+import { Accordion } from 'coengageui_core';
 
 function Demo() {
   return (

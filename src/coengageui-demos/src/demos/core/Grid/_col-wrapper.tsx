@@ -1,5 +1,5 @@
 import React from 'react';
-import { Col, ColProps, Text, useCoengageUITheme, Box } from '@coengageui/core';
+import { Col, ColProps, Text, useCoengageUITheme, Box } from 'coengageui_core';
 
 export function ColWrapper(props: ColProps) {
   const theme = useCoengageUITheme();

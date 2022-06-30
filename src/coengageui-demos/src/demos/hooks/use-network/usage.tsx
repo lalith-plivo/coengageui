@@ -1,10 +1,10 @@
 import React from 'react';
-import { Text, Table } from '@coengageui/core';
-import { useNetwork } from '@coengageui/hooks';
+import { Text, Table } from 'coengageui_core';
+import { useNetwork } from 'coengageui_hooks';
 
 const code = `
-import { Text, Table } from '@coengageui/core';
-import { useNetwork } from '@coengageui/hooks';
+import { Text, Table } from 'coengageui_core';
+import { useNetwork } from 'coengageui_hooks';
 
 function Demo() {
   const networkStatus = useNetwork();

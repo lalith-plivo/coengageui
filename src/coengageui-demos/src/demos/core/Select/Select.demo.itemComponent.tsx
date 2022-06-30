@@ -1,9 +1,9 @@
 import React, { forwardRef } from 'react';
-import { Group, Avatar, Text, Select } from '@coengageui/core';
+import { Group, Avatar, Text, Select } from 'coengageui_core';
 
 const code = `
 import { forwardRef } from 'react';
-import { Group, Avatar, Text, Select } from '@coengageui/core';
+import { Group, Avatar, Text, Select } from 'coengageui_core';
 
 const data = [
   {

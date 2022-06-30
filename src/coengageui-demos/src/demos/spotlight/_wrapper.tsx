@@ -1,5 +1,5 @@
 import React from 'react';
-import { SpotlightProvider, SpotlightProviderProps } from '@coengageui/spotlight';
+import { SpotlightProvider, SpotlightProviderProps } from 'coengageui_spotlight';
 import { actions } from './_actions';
 import { SpotlightControl } from './_control';
 

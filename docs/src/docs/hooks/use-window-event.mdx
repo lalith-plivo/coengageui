@@ -1,12 +1,12 @@
 ---
 group: 'coengageui-hooks'
-package: '@coengageui/hooks'
+package: 'coengageui_hooks'
 title: 'use-window-event'
 category: 'utils'
 order: 1
 slug: /hooks/use-window-event/
 description: 'Adds event listener to window on component mount and removes it on unmount'
-import: "import { useWindowEvent } from '@coengageui/hooks';"
+import: "import { useWindowEvent } from 'coengageui_hooks';"
 docs: 'hooks/use-window-event.mdx'
 source: 'coengageui-hooks/src/use-window-event/use-window-event.ts'
 ---
@@ -17,7 +17,7 @@ use-window-event adds event listener to `window` object on component mount and r
 
 ```tsx
 import { useEffect } from 'react';
-import { useWindowEvent } from '@coengageui/hooks';
+import { useWindowEvent } from 'coengageui_hooks';
 
 const handler = (event) => console.log(event);
 
@@ -37,7 +37,7 @@ Search focus with `⌘ + K` on mac or `Ctrl + K` on windows and linux on Coengag
 
 ```tsx
 import { useRef } from 'react';
-import { useWindowEvent } from '@coengageui/hooks';
+import { useWindowEvent } from 'coengageui_hooks';
 
 function Demo() {
   const inputRef = useRef<HTMLInputElement>();

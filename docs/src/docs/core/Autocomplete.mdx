@@ -1,19 +1,19 @@
 ---
 group: 'coengageui-core'
-package: '@coengageui/core'
+package: 'coengageui_core'
 title: Autocomplete
 order: 1
 slug: /core/autocomplete/
 category: 'inputs'
 description: 'Autocomplete user input with any list of options'
 props: ['Autocomplete']
-import: "import { Autocomplete } from '@coengageui/core';"
+import: "import { Autocomplete } from 'coengageui_core';"
 source: 'coengageui-core/src/components/Autocomplete/Autocomplete.tsx'
 docs: 'core/Autocomplete.mdx'
 styles: ['Autocomplete']
 ---
 
-import { AutocompleteDemos } from '@coengageui/demos';
+import { AutocompleteDemos } from 'coengageui_demos';
 
 ## Usage
 
@@ -23,7 +23,7 @@ import { AutocompleteDemos } from '@coengageui/demos';
 
 ```tsx
 import { useState } from 'react';
-import { Autocomplete } from '@coengageui/core';
+import { Autocomplete } from 'coengageui_core';
 
 function Demo() {
   const [value, setValue] = useState('');
@@ -39,7 +39,7 @@ Autocomplete support two different data formats:
 2. An array of objects with required `value` property and any other additional properties
 
 ```tsx
-import { Autocomplete } from '@coengageui/core';
+import { Autocomplete } from 'coengageui_core';
 
 function Demo() {
   return (
@@ -139,7 +139,7 @@ To enable animations set the following optional props:
 
 ```tsx
 import { useRef } from 'react';
-import { Autocomplete } from '@coengageui/core';
+import { Autocomplete } from 'coengageui_core';
 
 function Demo() {
   const ref = useRef<HTMLInputElement>();

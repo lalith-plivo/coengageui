@@ -1,9 +1,9 @@
 import React from 'react';
-import { useCoengageUITheme, Text, Group } from '@coengageui/core';
-import { useElementSize } from '@coengageui/hooks';
+import { useCoengageUITheme, Text, Group } from 'coengageui_core';
+import { useElementSize } from 'coengageui_hooks';
 
 const code = `
-import { useElementSize } from '@coengageui/hooks';
+import { useElementSize } from 'coengageui_hooks';
 
 function Demo() {
   const { ref, width, height } = useElementSize();

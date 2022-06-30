@@ -1,9 +1,9 @@
 import React, { useState } from 'react';
-import { DateRangePicker } from '@coengageui/dates';
+import { DateRangePicker } from 'coengageui_dates';
 
 const code = `
 import { useState } from 'react';
-import { DateRangePicker } from '@coengageui/dates';
+import { DateRangePicker } from 'coengageui_dates';
 
 function Demo() {
   const [value, setValue] = useState<[Date | null, Date | null]>([

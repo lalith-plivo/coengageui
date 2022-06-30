@@ -8,7 +8,7 @@ import {
   itSupportsWrapperProps,
   itHandlesBooleanState,
   itSupportsFocusEvents,
-} from '@coengageui/tests';
+} from 'coengageui_tests';
 import { Chip, ChipProps } from './Chip';
 
 const defaultProps: ChipProps = {
@@ -16,7 +16,7 @@ const defaultProps: ChipProps = {
   children: 'test-chip',
 };
 
-describe('@coengageui/core/Chip', () => {
+describe('coengageui_core/Chip', () => {
   checkAccessibility([<Chip {...defaultProps} />]);
   itRendersChildren(Chip, defaultProps);
   itConnectsLabelAndInput(Chip, defaultProps);
@@ -26,7 +26,7 @@ describe('@coengageui/core/Chip', () => {
   itSupportsSystemProps({
     component: Chip,
     props: defaultProps,
-    displayName: '@coengageui/core/Chip',
+    displayName: 'coengageui_core/Chip',
     refType: HTMLInputElement,
     excludeOthers: true,
   });

@@ -7,7 +7,7 @@ const getThemeBase = () => {
   return themeBase;
 };
 
-describe('@coengageui/styles/merge-theme', () => {
+describe('coengageui_styles/merge-theme', () => {
   it('shallow merges non-object properties', () => {
     const themeBase = getThemeBase();
     expect(mergeTheme(themeBase, { primaryColor: 'red', white: '#ccc' })).toStrictEqual({

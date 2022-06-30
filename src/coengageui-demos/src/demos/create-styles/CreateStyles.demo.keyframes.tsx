@@ -1,8 +1,8 @@
 import React from 'react';
-import { createStyles, keyframes } from '@coengageui/core';
+import { createStyles, keyframes } from 'coengageui_core';
 
 const code = `
-import { createStyles, keyframes } from '@coengageui/core';
+import { createStyles, keyframes } from 'coengageui_core';
 
 // Export animation to reuse it in other components
 export const bounce = keyframes({

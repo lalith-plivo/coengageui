@@ -1,5 +1,5 @@
 import React from 'react';
-import { DefaultProps, CoengageUIColor, Selectors, CoengageUINumberSize } from '@coengageui/styles';
+import { DefaultProps, CoengageUIColor, Selectors, CoengageUINumberSize } from 'coengageui_styles';
 import { Text } from '../../Text';
 import { Box } from '../../Box';
 import useStyles from './TimelineItem.styles';
@@ -8,7 +8,7 @@ export type TimelineItemStylesNames = Selectors<typeof useStyles>;
 
 export interface TimelineItemProps
   extends DefaultProps<TimelineItemStylesNames>,
-    Omit<React.ComponentPropsWithoutRef<'div'>, 'title'> {
+  Omit<React.ComponentPropsWithoutRef<'div'>, 'title'> {
   /** Item title, rendered next to bullet */
   title?: React.ReactNode;
 
@@ -86,4 +86,4 @@ export function TimelineItem({
   );
 }
 
-TimelineItem.displayName = '@coengageui/core/TimelineItem';
+TimelineItem.displayName = 'coengageui_core/TimelineItem';

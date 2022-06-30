@@ -1,9 +1,9 @@
 import React, { useState } from 'react';
-import { Slider, Text, Container } from '@coengageui/core';
+import { Slider, Text, Container } from 'coengageui_core';
 
 const code = `
 import { useState } from 'react';
-import { Slider, Text, Container } from '@coengageui/core';
+import { Slider, Text, Container } from 'coengageui_core';
 
 function Demo() {
   const [value, setValue] = useState(50);

@@ -1,4 +1,4 @@
-import { createStyles, CoengageUINumberSize } from '@coengageui/styles';
+import { createStyles, CoengageUINumberSize } from 'coengageui_styles';
 
 export interface AvatarsGroupStylesParams {
   spacing: CoengageUINumberSize;

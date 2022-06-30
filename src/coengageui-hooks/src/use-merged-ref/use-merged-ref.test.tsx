@@ -7,7 +7,7 @@ function TestComponent({ refs }: { refs: React.ForwardedRef<HTMLButtonElement>[]
   return <button ref={useMergedRef(...refs, ref)} type="button" />;
 }
 
-describe('@coengageui/hook/use-merged-ref', () => {
+describe('coengageui_hook/use-merged-ref', () => {
   it('assigns refs to all given arguments', () => {
     const objectRef = createRef<HTMLButtonElement>();
     let fnRefValue: HTMLButtonElement = null;

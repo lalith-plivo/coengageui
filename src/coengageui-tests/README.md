@@ -1,6 +1,6 @@
 # CoengageUI tests
 
-@coengageui/tests is a helper package that is used to contain commonly repeated tests logic. It is not published on npm.
+coengageui_tests is a helper package that is used to contain commonly repeated tests logic. It is not published on npm.
 
 ## checkAccessibility
 
@@ -8,8 +8,8 @@ checkAccessibility test checks markup of given component with axe. It allows to 
 
 ```tsx
 import { render } from '@testing-library/react';
-import { checkAccessibility } from '@coengageui/tests';
-import { Tabs, Tab } from '@coengageui/core';
+import { checkAccessibility } from 'coengageui_tests';
+import { Tabs, Tab } from 'coengageui_core';
 
 const content = [
   <Tab label="tab-1" key="tab-1">
@@ -23,7 +23,7 @@ const content = [
   </Tab>,
 ];
 
-describe('@coengageui/core/Tabs', () => {
+describe('coengageui_core/Tabs', () => {
   checkAccessibility([<Tabs>{content}</Tabs>, <Tabs initialTab={2}>{content}</Tabs>]);
 });
 ```
@@ -33,10 +33,10 @@ describe('@coengageui/core/Tabs', () => {
 Checks if component renders React node at any position. itRendersChildren accepts 2 arguments: component and required component props.
 
 ```tsx
-import { itRendersChildren } from '@coengageui/tests';
-import { Button } from '@coengageui/core';
+import { itRendersChildren } from 'coengageui_tests';
+import { Button } from 'coengageui_core';
 
-describe('@coengageui/core/Button', () => {
+describe('coengageui_core/Button', () => {
   itRendersChildren(Button, { color: 'red' });
 });
 ```
@@ -46,10 +46,10 @@ describe('@coengageui/core/Button', () => {
 Checks if component sets given className on root element. itSupportsClassName accepts 2 arguments: component and required component props.
 
 ```tsx
-import { itSupportsClassName } from '@coengageui/tests';
-import { Button } from '@coengageui/core';
+import { itSupportsClassName } from 'coengageui_tests';
+import { Button } from 'coengageui_core';
 
-describe('@coengageui/core/Button', () => {
+describe('coengageui_core/Button', () => {
   itSupportsClassName(Button, { color: 'red' });
 });
 ```
@@ -59,10 +59,10 @@ describe('@coengageui/core/Button', () => {
 Checks if component spreads ...others props on root element. itSupportsOthers accepts 2 arguments: component and required component props.
 
 ```tsx
-import { itSupportsOthers } from '@coengageui/tests';
-import { Button } from '@coengageui/core';
+import { itSupportsOthers } from 'coengageui_tests';
+import { Button } from 'coengageui_core';
 
-describe('@coengageui/core/Button', () => {
+describe('coengageui_core/Button', () => {
   itSupportsOthers(Button, { children: 'test' });
 });
 ```
@@ -72,10 +72,10 @@ describe('@coengageui/core/Button', () => {
 Checks it component sets given styles object to style property of root element. itSupportsStyle accepts 2 arguments: component and required component props.
 
 ```tsx
-import { itSupportsStyle } from '@coengageui/tests';
-import { Button } from '@coengageui/core';
+import { itSupportsStyle } from 'coengageui_tests';
+import { Button } from 'coengageui_core';
 
-describe('@coengageui/core/Button', () => {
+describe('coengageui_core/Button', () => {
   itSupportsStyle(Button, { children: 'test' });
 });
 ```
@@ -90,10 +90,10 @@ Checks if component produces ref on mount. itSupportsRef accepts 4 arguments:
 - ref prop key (optional, defaults to 'ref')
 
 ```tsx
-import { itSupportsRef } from '@coengageui/tests';
-import { Button } from '@coengageui/core';
+import { itSupportsRef } from 'coengageui_tests';
+import { Button } from 'coengageui_core';
 
-describe('@coengageui/core/Button', () => {
+describe('coengageui_core/Button', () => {
   itSupportsRef(Button, { children: 'test' }, HTMLButtonElement, 'customRefPath');
 });
 ```
@@ -103,11 +103,11 @@ describe('@coengageui/core/Button', () => {
 Checks if component attaches correct styles to inner elements:
 
 ```tsx
-import { itSupportsStylesApi } from '@coengageui/tests';
+import { itSupportsStylesApi } from 'coengageui_tests';
 import { Button } from './Button';
 import { Button as ButtonStylesApi } from './styles.api';
 
-describe('@coengageui/core/Button', () => {
+describe('coengageui_core/Button', () => {
   itSupportsRef(Button, { children: 'test' }, Object.keys(ButtonStylesApi), 'button');
 });
 ```

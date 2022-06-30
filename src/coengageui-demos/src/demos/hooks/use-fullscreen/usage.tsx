@@ -1,10 +1,10 @@
 import React from 'react';
-import { useFullscreen } from '@coengageui/hooks';
-import { Button, Group } from '@coengageui/core';
+import { useFullscreen } from 'coengageui_hooks';
+import { Button, Group } from 'coengageui_core';
 
 const code = `
-import { useFullscreen } from '@coengageui/hooks';
-import { Button } from '@coengageui/core';
+import { useFullscreen } from 'coengageui_hooks';
+import { Button } from 'coengageui_core';
 
 function Demo() {
   const { toggle, fullscreen } = useFullscreen();

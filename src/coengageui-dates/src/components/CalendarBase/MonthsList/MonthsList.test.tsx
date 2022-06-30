@@ -1,7 +1,7 @@
 import React from 'react';
 import { render, screen } from '@testing-library/react';
 import userEvent from '@testing-library/user-event';
-import { checkAccessibility } from '@coengageui/tests';
+import { checkAccessibility } from 'coengageui_tests';
 import { MonthsList, MonthsListProps } from './MonthsList';
 
 const defaultProps: MonthsListProps = {
@@ -10,14 +10,14 @@ const defaultProps: MonthsListProps = {
   locale: 'en',
   allowLevelChange: true,
   daysRefs: { current: [[]] } as any,
-  onMonthChange: () => {},
-  onNextLevel: () => {},
-  onDayKeyDown: () => {},
+  onMonthChange: () => { },
+  onNextLevel: () => { },
+  onDayKeyDown: () => { },
   nextMonthLabel: 'test-next-month',
   previousMonthLabel: 'test-previous-month',
 };
 
-describe('@coengageui/dates/MonthsList', () => {
+describe('coengageui_dates/MonthsList', () => {
   checkAccessibility([
     <MonthsList {...defaultProps} amountOfMonths={1} />,
     <MonthsList {...defaultProps} amountOfMonths={2} />,
@@ -58,6 +58,6 @@ describe('@coengageui/dates/MonthsList', () => {
   });
 
   it('has correct displayName', () => {
-    expect(MonthsList.displayName).toStrictEqual('@coengageui/dates/MonthsList');
+    expect(MonthsList.displayName).toStrictEqual('coengageui_dates/MonthsList');
   });
 });

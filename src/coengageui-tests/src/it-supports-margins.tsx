@@ -1,5 +1,5 @@
 import React from 'react';
-import { DEFAULT_THEME } from '@coengageui/styles';
+import { DEFAULT_THEME } from 'coengageui_styles';
 import { renderWithAct } from './render-with-act';
 
 export function itSupportsMargins<P>(Component: React.ComponentType<P>, requiredProps: P) {

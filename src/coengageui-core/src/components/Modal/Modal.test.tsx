@@ -1,19 +1,19 @@
 import React from 'react';
 import { render, screen } from '@testing-library/react';
 import userEvent from '@testing-library/user-event';
-import { checkAccessibility, itRendersChildren, itSupportsSystemProps } from '@coengageui/tests';
+import { checkAccessibility, itRendersChildren, itSupportsSystemProps } from 'coengageui_tests';
 import { Modal, ModalProps } from './Modal';
 
 const defaultProps: ModalProps = {
   opened: true,
   withinPortal: false,
-  onClose: () => {},
+  onClose: () => { },
   title: 'test-modal',
   closeButtonLabel: 'test-close',
   children: 'test-modal',
 };
 
-describe('@coengageui/core/Modal', () => {
+describe('coengageui_core/Modal', () => {
   checkAccessibility([<Modal {...defaultProps} />]);
   itSupportsSystemProps({ component: Modal, props: defaultProps });
   itRendersChildren(Modal, defaultProps);
@@ -54,6 +54,6 @@ describe('@coengageui/core/Modal', () => {
   });
 
   it('has correct displayName', () => {
-    expect(Modal.displayName).toStrictEqual('@coengageui/core/Modal');
+    expect(Modal.displayName).toStrictEqual('coengageui_core/Modal');
   });
 });

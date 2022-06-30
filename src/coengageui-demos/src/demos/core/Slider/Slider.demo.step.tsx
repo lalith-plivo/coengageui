@@ -1,8 +1,8 @@
 import React from 'react';
-import { Slider, Text } from '@coengageui/core';
+import { Slider, Text } from 'coengageui_core';
 
 const code = `
-import { Slider } from '@coengageui/core';
+import { Slider } from 'coengageui_core';
 
 // Configure marks to match step
 const MARKS = [

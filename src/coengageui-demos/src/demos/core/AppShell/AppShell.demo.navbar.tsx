@@ -1,11 +1,11 @@
 import React from 'react';
-import { Navbar } from '@coengageui/core';
+import { Navbar } from 'coengageui_core';
 import { User } from './_user';
 import { Brand } from './_brand';
 import { MainLinks } from './_mainLinks';
 
 const code = `
-import { Navbar } from '@coengageui/core';
+import { Navbar } from 'coengageui_core';
 
 function Demo() {
   return (

@@ -1,8 +1,8 @@
 import React from 'react';
-import { Highlight } from '@coengageui/core';
+import { Highlight } from 'coengageui_core';
 
 const code = `
-import { Highlight } from '@coengageui/core';
+import { Highlight } from 'coengageui_core';
 
 function Demo() {
   return (

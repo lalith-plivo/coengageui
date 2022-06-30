@@ -1,35 +1,35 @@
 ---
 group: 'Other packages'
-package: '@coengageui/rte'
+package: 'coengageui_rte'
 title: 'Rich text editor'
 order: 1
 slug: /others/rte/
 description: 'Quill based rich text editor'
 props: ['RichTextEditor']
-import: "import { RichTextEditor } from '@coengageui/rte';"
+import: "import { RichTextEditor } from 'coengageui_rte';"
 source: 'coengageui-rte/src'
 docs: 'others/rte.mdx'
-installation: '@coengageui/rte'
+installation: 'coengageui_rte'
 license: MIT
 styles: ['RichTextEditor']
 ---
 
-import { RichTextEditorDemos } from '@coengageui/demos';
+import { RichTextEditorDemos } from 'coengageui_demos';
 
 ## Installation
 
-Package has peer dependencies: [react](https://www.npmjs.com/package/react), [react-dom](https://www.npmjs.com/package/react-dom), [@coengageui/hooks](https://www.npmjs.com/package/@coengageui/hooks) and [@coengageui/core](https://www.npmjs.com/package/@coengageui/core):.
+Package has peer dependencies: [react](https://www.npmjs.com/package/react), [react-dom](https://www.npmjs.com/package/react-dom), [coengageui_hooks](https://www.npmjs.com/package/coengageui_hooks) and [coengageui_core](https://www.npmjs.com/package/coengageui_core):.
 
 Install with npm:
 
 ```sh
-npm install @coengageui/rte @coengageui/core @coengageui/hooks
+npm install coengageui_rte coengageui_core coengageui_hooks
 ```
 
 Install with yarn:
 
 ```sh
-yarn add @coengageui/rte @coengageui/core @coengageui/hooks
+yarn add coengageui_rte coengageui_core coengageui_hooks
 ```
 
 ## Demo
@@ -91,7 +91,7 @@ To set up images upload add `onImageUpload` function:
 
 ```tsx
 import { useState } from 'react';
-import { RichTextEditor } from '@coengageui/rte';
+import { RichTextEditor } from 'coengageui_rte';
 
 // Example with imgbb.com, usually you would use similar logic to upload to S3 like storages
 // Function must return a promise that resolves with uploaded image url
@@ -133,7 +133,7 @@ You can provide any amount of extra modules. Note that it is required to memoize
 
 ```tsx
 import { useMemo } from 'react';
-import { RichTextEditor } from '@coengageui/rte';
+import { RichTextEditor } from 'coengageui_rte';
 
 function Demo() {
   const modules = useMemo(
@@ -165,7 +165,7 @@ When editor is readonly state, user cannot edit content, toolbar is hidden:
 
 ```tsx
 import { useRef, useEffect } from 'react';
-import { RichTextEditor, Editor } from '@coengageui/rte';
+import { RichTextEditor, Editor } from 'coengageui_rte';
 
 function Demo() {
   const editorRef = useRef<Editor>();
@@ -188,12 +188,12 @@ General strategy:
 ```tsx
 // Create a separate component which will load RichTextEditor only in browser
 import React from 'react';
-import type { RichTextEditorProps } from '@coengageui/rte';
+import type { RichTextEditorProps } from 'coengageui_rte';
 
 export function RichText(props: RichTextEditorProps) {
   if (typeof window !== 'undefined') {
     // eslint-disable-next-line import/extensions, global-require
-    const { RichTextEditor } = require('@coengageui/rte');
+    const { RichTextEditor } = require('coengageui_rte');
     return <RichTextEditor {...props} />;
   }
 
@@ -210,7 +210,7 @@ To make component work with Next.js use [dynamic module](https://nextjs.org/docs
 // RichText.tsx in your components folder
 import dynamic from 'next/dynamic';
 
-export default dynamic(() => import('@coengageui/rte'), {
+export default dynamic(() => import('coengageui_rte'), {
   // Disable during server side rendering
   ssr: false,
 

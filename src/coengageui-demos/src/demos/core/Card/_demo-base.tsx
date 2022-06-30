@@ -1,5 +1,5 @@
 import React from 'react';
-import { DEFAULT_THEME } from '@coengageui/core';
+import { DEFAULT_THEME } from 'coengageui_core';
 
 export const demoBase: Partial<CoengageUIDemo> = {
   wrapper: ({ children }: { children: React.ReactNode }) => (

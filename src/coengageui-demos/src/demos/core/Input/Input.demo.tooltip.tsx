@@ -1,9 +1,9 @@
 import React from 'react';
 import { AlertCircle } from 'tabler-icons-react';
-import { Input, Tooltip } from '@coengageui/core';
+import { Input, Tooltip } from 'coengageui_core';
 
 const code = `
-import { Input, Tooltip } from '@coengageui/core';
+import { Input, Tooltip } from 'coengageui_core';
 import { AlertCircle } from 'tabler-icons-react';
 
 function Demo() {

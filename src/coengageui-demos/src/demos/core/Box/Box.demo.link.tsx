@@ -1,8 +1,8 @@
 import React from 'react';
-import { Box } from '@coengageui/core';
+import { Box } from 'coengageui_core';
 
 const code = `
-import { Box } from '@coengageui/core';
+import { Box } from 'coengageui_core';
 
 function Demo() {
   return (

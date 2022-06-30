@@ -5,7 +5,7 @@ import {
   Selectors,
   CoengageUINumberSize,
   useCoengageUIDefaultProps,
-} from '@coengageui/styles';
+} from 'coengageui_styles';
 import { Text } from '../Text';
 import { Loader } from '../Loader';
 import { CloseButton } from '../ActionIcon';
@@ -18,7 +18,7 @@ export type NotificationVariant = 'info' | 'success' | 'warning' | 'danger';
 
 export interface NotificationProps
   extends DefaultProps<NotificationStylesNames>,
-    Omit<React.ComponentPropsWithoutRef<'div'>, 'title'> {
+  Omit<React.ComponentPropsWithoutRef<'div'>, 'title'> {
   /** Called when close button is clicked */
   onClose?(): void;
 
@@ -112,4 +112,4 @@ export const Notification = forwardRef<HTMLDivElement, NotificationProps>(
   }
 );
 
-Notification.displayName = '@coengageui/core/Notification';
+Notification.displayName = 'coengageui_core/Notification';

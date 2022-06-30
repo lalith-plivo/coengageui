@@ -1,5 +1,5 @@
 import React from 'react';
-import { Group, ActionIcon, useCoengageUIColorScheme, Box } from '@coengageui/core';
+import { Group, ActionIcon, useCoengageUIColorScheme, Box } from 'coengageui_core';
 import { Sun, MoonStars } from 'tabler-icons-react';
 import { Logo } from './_logo';
 
@@ -12,9 +12,8 @@ export function Brand() {
         paddingLeft: theme.spacing.xs,
         paddingRight: theme.spacing.xs,
         paddingBottom: theme.spacing.lg,
-        borderBottom: `1px solid ${
-          theme.colorScheme === 'dark' ? theme.colors.dark[4] : theme.colors.gray[2]
-        }`,
+        borderBottom: `1px solid ${theme.colorScheme === 'dark' ? theme.colors.dark[4] : theme.colors.gray[2]
+          }`,
       })}
     >
       <Group position="apart">

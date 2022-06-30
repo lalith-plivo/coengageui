@@ -8,7 +8,7 @@ export function RichText() {
       title="Rich text editor"
       description="A Quill.js based rich text editor: handles images uploads, supports embedded video, integrates seamlessly with your CoengageUI theme"
       link="/others/rte/"
-      label="Get started with @coengageui/rte"
+      label="Get started with coengageui_rte"
     >
       <RichTextDemo />
     </Section>

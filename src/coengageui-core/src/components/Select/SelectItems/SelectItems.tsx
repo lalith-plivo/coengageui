@@ -1,5 +1,5 @@
 import React from 'react';
-import { DefaultProps, CoengageUISize, Selectors } from '@coengageui/styles';
+import { DefaultProps, CoengageUISize, Selectors } from 'coengageui_styles';
 import { Text } from '../../Text/Text';
 import { Divider } from '../../Divider/Divider';
 import { SelectItem } from '../types';
@@ -70,9 +70,9 @@ export function SelectItems({
         onMouseDown={
           !item.disabled
             ? (event: React.MouseEvent<HTMLDivElement>) => {
-                event.preventDefault();
-                onItemSelect(item);
-              }
+              event.preventDefault();
+              onItemSelect(item);
+            }
             : null
         }
         disabled={item.disabled}
@@ -150,4 +150,4 @@ export function SelectItems({
   );
 }
 
-SelectItems.displayName = '@coengageui/core/SelectItems';
+SelectItems.displayName = 'coengageui_core/SelectItems';

@@ -1,10 +1,10 @@
 import React from 'react';
-import { Text, Code } from '@coengageui/core';
-import { useMouse } from '@coengageui/hooks';
+import { Text, Code } from 'coengageui_core';
+import { useMouse } from 'coengageui_hooks';
 
 const code = `
-import { Text, Code } from '@coengageui/core';
-import { useMouse } from '@coengageui/hooks';
+import { Text, Code } from 'coengageui_core';
+import { useMouse } from 'coengageui_hooks';
 
 function Demo() {
   const { x, y } = useMouse();

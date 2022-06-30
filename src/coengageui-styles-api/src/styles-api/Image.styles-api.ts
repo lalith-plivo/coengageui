@@ -1,4 +1,4 @@
-import { ImageStylesNames } from '@coengageui/core';
+import { ImageStylesNames } from 'coengageui_core';
 
 export const Image: Record<ImageStylesNames, string> = {
   root: 'Root element',

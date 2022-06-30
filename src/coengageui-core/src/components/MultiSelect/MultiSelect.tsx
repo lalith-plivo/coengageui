@@ -5,14 +5,14 @@ import {
   useDidUpdate,
   useScrollIntoView,
   useUuid,
-} from '@coengageui/hooks';
+} from 'coengageui_hooks';
 import {
   DefaultProps,
   Selectors,
   extractSystemStyles,
   getDefaultZIndex,
   useCoengageUIDefaultProps,
-} from '@coengageui/styles';
+} from 'coengageui_styles';
 import { InputWrapper } from '../InputWrapper';
 import { Input } from '../Input';
 import { DefaultValue, DefaultValueStylesNames } from './DefaultValue/DefaultValue';
@@ -30,15 +30,15 @@ import { SelectSharedProps } from '../Select/Select';
 export type MultiSelectStylesNames =
   | DefaultValueStylesNames
   | Exclude<
-      Selectors<typeof useStyles>,
-      'searchInputEmpty' | 'searchInputInputHidden' | 'searchInputPointer'
-    >
+    Selectors<typeof useStyles>,
+    'searchInputEmpty' | 'searchInputInputHidden' | 'searchInputPointer'
+  >
   | Exclude<BaseSelectStylesNames, 'selected'>;
 
 export interface MultiSelectProps
   extends DefaultProps<MultiSelectStylesNames>,
-    BaseSelectProps,
-    Omit<SelectSharedProps<SelectItem, string[]>, 'filter'> {
+  BaseSelectProps,
+  Omit<SelectSharedProps<SelectItem, string[]>, 'filter'> {
   /** Component used to render values */
   valueComponent?: React.FC<any>;
 
@@ -684,4 +684,4 @@ export const MultiSelect = forwardRef<HTMLInputElement, MultiSelectProps>(
   }
 );
 
-MultiSelect.displayName = '@coengageui/core/MultiSelect';
+MultiSelect.displayName = 'coengageui_core/MultiSelect';

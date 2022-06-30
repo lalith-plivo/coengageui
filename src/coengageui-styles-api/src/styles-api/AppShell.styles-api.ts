@@ -1,4 +1,4 @@
-import type { AppShellStylesNames, HorizontalSectionStylesNames } from '@coengageui/core';
+import type { AppShellStylesNames, HorizontalSectionStylesNames } from 'coengageui_core';
 
 export const AppShell: Record<AppShellStylesNames, string> = {
   root: 'Root element, wraps Navbar, Header and content',

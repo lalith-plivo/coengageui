@@ -1,9 +1,9 @@
 import React from 'react';
-import { ThemeIcon, Text, Avatar, Timeline } from '@coengageui/core';
+import { ThemeIcon, Text, Avatar, Timeline } from 'coengageui_core';
 import { Sun, Video } from 'tabler-icons-react';
 
 const code = `
-import { ThemeIcon, Text, Avatar, Timeline } from '@coengageui/core';
+import { ThemeIcon, Text, Avatar, Timeline } from 'coengageui_core';
 import { Sun, Video } from 'tabler-icons-react';
 
 function Demo() {

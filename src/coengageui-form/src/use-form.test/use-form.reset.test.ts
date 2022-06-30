@@ -1,7 +1,7 @@
 import { act, renderHook } from '@testing-library/react-hooks';
 import { useForm, formList, isFormList } from '../index';
 
-describe('@coengageui/form/use-form reset', () => {
+describe('coengageui_form/use-form reset', () => {
   it('resets values to initial state with reset handler', () => {
     const hook = renderHook(() =>
       useForm({ initialValues: { banana: 'initial banana', orange: 20, apple: { nested: true } } })

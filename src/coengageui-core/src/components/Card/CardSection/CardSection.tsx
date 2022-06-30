@@ -4,7 +4,7 @@ import {
   CoengageUINumberSize,
   PolymorphicComponentProps,
   PolymorphicRef,
-} from '@coengageui/styles';
+} from 'coengageui_styles';
 import { Box } from '../../Box';
 import useStyles from './CardSection.styles';
 
@@ -37,4 +37,4 @@ export const CardSection: CardSectionComponent = forwardRef(
   }
 ) as any;
 
-CardSection.displayName = '@coengageui/core/CardSection';
+CardSection.displayName = 'coengageui_core/CardSection';

@@ -1,12 +1,12 @@
 import React, { forwardRef } from 'react';
-import { usePagination } from '@coengageui/hooks';
+import { usePagination } from 'coengageui_hooks';
 import {
   DefaultProps,
   CoengageUINumberSize,
   CoengageUIColor,
   Selectors,
   useCoengageUIDefaultProps,
-} from '@coengageui/styles';
+} from 'coengageui_styles';
 import { Group, GroupProps } from '../Group/Group';
 import { DefaultItem, PaginationItemProps } from './DefaultItem/DefaultItem';
 import useStyles from './Pagination.styles';
@@ -15,7 +15,7 @@ export type PaginationStylesNames = Selectors<typeof useStyles>;
 
 export interface PaginationProps
   extends DefaultProps<PaginationStylesNames>,
-    Omit<GroupProps, 'classNames' | 'styles' | 'onChange'> {
+  Omit<GroupProps, 'classNames' | 'styles' | 'onChange'> {
   /** Change item component */
   itemComponent?: React.FC<PaginationItemProps>;
 
@@ -183,4 +183,4 @@ export const Pagination = forwardRef<HTMLDivElement, PaginationProps>(
   }
 );
 
-Pagination.displayName = '@coengageui/core/Pagination';
+Pagination.displayName = 'coengageui_core/Pagination';

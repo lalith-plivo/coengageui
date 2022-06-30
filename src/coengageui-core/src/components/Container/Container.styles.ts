@@ -1,4 +1,4 @@
-import { createStyles, CoengageUINumberSize, CoengageUISize } from '@coengageui/styles';
+import { createStyles, CoengageUINumberSize, CoengageUISize } from 'coengageui_styles';
 
 export interface ContainerStylesParams {
   fluid: boolean;

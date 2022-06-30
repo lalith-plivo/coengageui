@@ -1,8 +1,8 @@
 import React from 'react';
-import { NumberInput } from '@coengageui/core';
+import { NumberInput } from 'coengageui_core';
 
 const code = `
-import { NumberInput } from '@coengageui/core';
+import { NumberInput } from 'coengageui_core';
 
 function Demo() {
   return <NumberInput disabled />;

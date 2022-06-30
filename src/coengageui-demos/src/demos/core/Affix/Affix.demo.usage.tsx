@@ -1,12 +1,12 @@
 import React from 'react';
 import { ArrowUpIcon } from '@modulz/radix-icons';
-import { useWindowScroll } from '@coengageui/hooks';
-import { Button, Text, Transition, Affix } from '@coengageui/core';
+import { useWindowScroll } from 'coengageui_hooks';
+import { Button, Text, Transition, Affix } from 'coengageui_core';
 
 const code = `
 import { ArrowUpIcon } from '@modulz/radix-icons';
-import { useWindowScroll } from '@coengageui/hooks';
-import { Affix, Button, Text, Transition } from '@coengageui/core';
+import { useWindowScroll } from 'coengageui_hooks';
+import { Affix, Button, Text, Transition } from 'coengageui_core';
 
 function Demo() {
   const [scroll, scrollTo] = useWindowScroll();

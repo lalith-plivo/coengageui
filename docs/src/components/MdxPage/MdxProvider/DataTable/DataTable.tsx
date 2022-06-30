@@ -1,5 +1,5 @@
 import React from 'react';
-import { Table } from '@coengageui/core';
+import { Table } from 'coengageui_core';
 import DocsSection from '../../../DocsSection/DocsSection';
 
 interface DataTableProps {

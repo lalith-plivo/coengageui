@@ -1,6 +1,6 @@
 import { getStartOfWeek } from './get-start-of-week';
 
-describe('@coengageui/dates/get-start-of-week', () => {
+describe('coengageui_dates/get-start-of-week', () => {
   it('returns start of week', () => {
     const startOfWeek = getStartOfWeek(new Date(2021, 1, 5));
     expect(startOfWeek.getDay()).toBe(1);

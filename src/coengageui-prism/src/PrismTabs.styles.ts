@@ -1,19 +1,17 @@
-import { createStyles } from '@coengageui/core';
+import { createStyles } from 'coengageui_core';
 
 export default createStyles((theme) => ({
   tabs: {
-    borderBottom: `1px solid ${
-      theme.colorScheme === 'dark' ? theme.colors.dark[5] : theme.colors.gray[2]
-    }`,
+    borderBottom: `1px solid ${theme.colorScheme === 'dark' ? theme.colors.dark[5] : theme.colors.gray[2]
+      }`,
   },
 
   tab: {
     paddingLeft: theme.spacing.sm,
     paddingRight: theme.spacing.sm,
     height: 34,
-    border: `1px solid ${
-      theme.colorScheme === 'dark' ? theme.colors.dark[5] : theme.colors.gray[2]
-    }`,
+    border: `1px solid ${theme.colorScheme === 'dark' ? theme.colors.dark[5] : theme.colors.gray[2]
+      }`,
     borderBottom: 0,
     fontSize: theme.fontSizes.sm,
     color: theme.colorScheme === 'dark' ? theme.colors.dark[1] : theme.colors.gray[7],
@@ -47,9 +45,8 @@ export default createStyles((theme) => ({
   code: {
     borderTopRightRadius: 0,
     borderTopLeftRadius: 0,
-    border: `1px solid ${
-      theme.colorScheme === 'dark' ? theme.colors.dark[5] : theme.colors.gray[2]
-    }`,
+    border: `1px solid ${theme.colorScheme === 'dark' ? theme.colors.dark[5] : theme.colors.gray[2]
+      }`,
     borderTop: 0,
   },
 }));

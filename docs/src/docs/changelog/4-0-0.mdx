@@ -17,7 +17,7 @@ import {
   SpotlightDemos,
   OverlayDemos,
   FormDemos,
-} from '@coengageui/demos';
+} from 'coengageui_demos';
 
 ## CoengageUI UI
 
@@ -30,10 +30,10 @@ CoengageUI UI is free for everyone.
 
 ## Breaking changes
 
-- `@coengageui/core` package no longer exports `CONTAINER_SIZES` variable
+- `coengageui_core` package no longer exports `CONTAINER_SIZES` variable
 - [Prism](https://coengage.dev/others/prism/) now trims code by default, to disable that set `<Prism trim={false} />`
-- `useForm` hook exported from `@coengageui/hooks` package is now deprecated, it will be removed in one of the next releases.
-- [@coengageui/eslint-config](https://www.npmjs.com/package/@coengageui/eslint-config) was migrated to [eslint-config-mantine](https://www.npmjs.com/package/eslint-config-mantine)
+- `useForm` hook exported from `coengageui_hooks` package is now deprecated, it will be removed in one of the next releases.
+- [coengageui_eslint-config](https://www.npmjs.com/package/coengageui_eslint-config) was migrated to [eslint-config-mantine](https://www.npmjs.com/package/eslint-config-mantine)
 
 ## Renamed props
 
@@ -69,7 +69,7 @@ Some props were renamed to make CoengageUI components more consistent:
 Most of components now support default props on CoengageUIProvider:
 
 ```tsx
-import { CoengageUIProvider, Button } from '@coengageui/core';
+import { CoengageUIProvider, Button } from 'coengageui_core';
 
 function App() {
   return (
@@ -100,7 +100,7 @@ Each component that has [Styles API](https://coengage.dev/theming/styles-api/) n
 `ComponentNameStylesParams`, for example, `ButtonStylesParams`. This feature can be used to add more complex context styles that were not possible before:
 
 ```tsx
-import { CoengageUIProvider, ButtonStylesParams } from '@coengageui/core';
+import { CoengageUIProvider, ButtonStylesParams } from 'coengageui_core';
 
 function Demo() {
   return (
@@ -125,7 +125,7 @@ Nested CoengageUIProviders will now inherit `theme` override, `emotionOptions`, 
 parent provider if `inherit` prop is set:
 
 ```tsx
-import { CoengageUIProvider, Button } from '@coengageui/core';
+import { CoengageUIProvider, Button } from 'coengageui_core';
 
 function App() {
   return (
@@ -158,7 +158,7 @@ CoengageUI theme now includes two new properties: `defaultRadius` and `focusRing
 `defaultRadius` property is used to set border-radius on most components by default:
 
 ```tsx
-import { CoengageUIProvider, Button } from '@coengageui/core';
+import { CoengageUIProvider, Button } from 'coengageui_core';
 
 function App() {
   return (
@@ -177,7 +177,7 @@ With `focusRing` property you can configure how focus ring is displayed:
 - `never` – focus ring is always hidden (not recommended)
 
 ```tsx
-import { CoengageUIProvider, Button } from '@coengageui/core';
+import { CoengageUIProvider, Button } from 'coengageui_core';
 
 function App() {
   return (
@@ -201,7 +201,7 @@ All components now support setting following props to control padding:
 - `pr` – sets `padding-right` property on root element
 
 ```tsx
-import { Paper, Container } from '@coengageui/core';
+import { Paper, Container } from 'coengageui_core';
 
 function Demo() {
   return (
@@ -241,10 +241,10 @@ createStyles((theme, params, getRef) => ({
 }));
 ```
 
-## @coengageui/form package
+## coengageui_form package
 
-New [@coengageui/form package](https://coengage.dev/form/use-form/) is an enhanced version of `useForm` hook that was previously exported from
-`@coengageui/hooks` package. `@coengageui/form` introduces the following features:
+New [coengageui_form package](https://coengage.dev/form/use-form/) is an enhanced version of `useForm` hook that was previously exported from
+`coengageui_hooks` package. `coengageui_form` introduces the following features:
 
 - Improved fields validation logic
 - Schema based validation with zod, yup or joi
@@ -252,9 +252,9 @@ New [@coengageui/form package](https://coengage.dev/form/use-form/) is an enhanc
 
 <Demo data={FormDemos.usage} />
 
-## @coengageui/spotlight package
+## coengageui_spotlight package
 
-[@coengageui/spotlight](https://coengage.dev/others/spotlight/) is a new package that lets you create
+[coengageui_spotlight](https://coengage.dev/others/spotlight/) is a new package that lets you create
 a command center for you application. It can be triggered with keyboard shortcut and programmatically
 from anywhere in you application:
 
@@ -311,7 +311,7 @@ New [BackgroundImage](https://coengage.dev/core/image/#backgroundimage-component
 - [Text](https://coengage.dev/core/text/), [Anchor](https://coengage.dev/core/anchor/) and [Highlight](https://coengage.dev/core/highlight/) components now support `underline` prop
 - [Container](https://coengage.dev/core/container/) component now supports sizes configuration with default props on CoengageUIProvider
 - All components now support negative margins for theme values with margin props (`m`, `mx`, `my`, `mt`, etc.): `<Button mx="-xl">Negative margins</Button>`
-- `onCancel` callback in [@coengageui/modals](https://coengage.dev/others/modals/) is now also called when confirm modal is closed without confirmation
+- `onCancel` callback in [coengageui_modals](https://coengage.dev/others/modals/) is now also called when confirm modal is closed without confirmation
 - New [OptionalPortal](https://coengage.dev/core/portal/#optionalportal-component) component can be used to switch between rendering within Portal or as a regular child with `withinPortal` prop
 - [Modal](https://coengage.dev/core/modal/) and [Drawer](https://coengage.dev/core/drawer/) can now be used without [Portal](https://coengage.dev/core/portal/)
 - [Title](https://coengage.dev/core/title/) component now inherits color from parent element
@@ -332,4 +332,4 @@ New [BackgroundImage](https://coengage.dev/core/image/#backgroundimage-component
 - Add missing right and bottom padding to [AppShell](https://coengage.dev/core/app-shell/) component
 - Fix `initialLevel` prop not working in [DateRangePicker](https://coengage.dev/dates/date-picker/) component
 - Add correct input mode to [NumberInput](https://coengage.dev/core/number-input/) – mobile devices will display correct keyboard now
-- Fix `findDomNode` warning in [@coengageui/notifications](https://coengage.dev/others/notifications/) while using strict react mode
+- Fix `findDomNode` warning in [coengageui_notifications](https://coengage.dev/others/notifications/) while using strict react mode

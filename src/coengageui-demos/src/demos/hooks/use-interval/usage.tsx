@@ -1,11 +1,11 @@
 import React, { useState, useEffect } from 'react';
-import { Group, Button, Text } from '@coengageui/core';
-import { useInterval } from '@coengageui/hooks';
+import { Group, Button, Text } from 'coengageui_core';
+import { useInterval } from 'coengageui_hooks';
 
 const code = `
 import { useState, useEffect } from 'react';
-import { useInterval } from '@coengageui/hooks';
-import { Group, Button, Text } from '@coengageui/core';
+import { useInterval } from 'coengageui_hooks';
+import { Group, Button, Text } from 'coengageui_core';
 
 function Demo() {
   const [seconds, setSeconds] = useState(0);

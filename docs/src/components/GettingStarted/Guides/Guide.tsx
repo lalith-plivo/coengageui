@@ -1,6 +1,6 @@
 import React from 'react';
-import { Text, Button, useCoengageUITheme } from '@coengageui/core';
-import { Prism } from '@coengageui/prism';
+import { Text, Button, useCoengageUITheme } from 'coengageui_core';
+import { Prism } from 'coengageui_prism';
 import GatsbyLink from '../../MdxPage/MdxProvider/GatsbyLink/GatsbyLink';
 
 /* eslint-disable react/no-unused-prop-types */
@@ -15,7 +15,7 @@ export interface GuideProps {
 /* eslint-enable react/no-unused-prop-types */
 
 const done = `
-import { Button } from '@coengageui/core';
+import { Button } from 'coengageui_core';
 
 export function MyApp() {
   return <Button>Hello world!</Button>;
@@ -54,16 +54,15 @@ function Guide({ dependencies, initScript, children, action, actionLink, withDon
         With yarn
       </Text>
 
-      <Prism language="bash">{`yarn add ${
-        dependencies || '@coengageui/core @coengageui/hooks'
-      }`}</Prism>
+      <Prism language="bash">{`yarn add ${dependencies || 'coengageui_core coengageui_hooks'
+        }`}</Prism>
 
       <Text mb={5} mt={15} size="sm">
         With npm
       </Text>
 
       <Prism language="bash">
-        {`npm install ${dependencies || '@coengageui/core @coengageui/hooks'}`}
+        {`npm install ${dependencies || 'coengageui_core coengageui_hooks'}`}
       </Prism>
 
       {children}
@@ -104,7 +103,7 @@ function ViteGuide({ dependencies }: GuideProps) {
 function NextGuide({ dependencies }: GuideProps) {
   return (
     <Guide
-      dependencies={`${dependencies} @coengageui/next`}
+      dependencies={`${dependencies} coengageui_next`}
       initScript="npx create-next-app --ts"
       action="Get started with Next.js GitHub template"
       actionLink="https://github.com/coengagedev/coengageui-next-template"
@@ -138,7 +137,7 @@ function GatsbyGuide({ dependencies }: GuideProps) {
 const remixCode = `import { renderToString } from 'react-dom/server';
 import { RemixServer } from '@remix-run/react';
 import type { EntryContext } from '@remix-run/node';
-import { injectStylesIntoStaticMarkup } from '@coengageui/ssr';
+import { injectStylesIntoStaticMarkup } from 'coengageui_ssr';
 
 export default function handleRequest(
   request: Request,
@@ -159,7 +158,7 @@ export default function handleRequest(
 function RemixGuide({ dependencies }: GuideProps) {
   return (
     <Guide
-      dependencies={`${dependencies} @coengageui/ssr`}
+      dependencies={`${dependencies} coengageui_ssr`}
       initScript="npx create-remix@latest"
       action="View example setup"
       actionLink="https://github.com/remix-run/remix/tree/main/examples/coengage"

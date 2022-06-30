@@ -1,12 +1,12 @@
 import 'dayjs/locale/ru';
 import React, { useState } from 'react';
-import { Group } from '@coengageui/core';
-import { Month } from '@coengageui/dates';
+import { Group } from 'coengageui_core';
+import { Month } from 'coengageui_dates';
 
 const code = `
 import 'dayjs/locale/ru';
 import { useState } from 'react';
-import { Month } from '@coengageui/dates';
+import { Month } from 'coengageui_dates';
 
 function Demo() {
   const [value, setValue] = useState(new Date());

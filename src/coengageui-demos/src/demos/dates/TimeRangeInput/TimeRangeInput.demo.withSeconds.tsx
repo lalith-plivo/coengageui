@@ -1,11 +1,11 @@
 import dayjs from 'dayjs';
 import React from 'react';
-import { Container } from '@coengageui/core';
-import { TimeRangeInput } from '@coengageui/dates';
+import { Container } from 'coengageui_core';
+import { TimeRangeInput } from 'coengageui_dates';
 
 const code = `
 import dayjs from 'dayjs';
-import { TimeRangeInput } from '@coengageui/dates';
+import { TimeRangeInput } from 'coengageui_dates';
 
 function Demo() {
   return (

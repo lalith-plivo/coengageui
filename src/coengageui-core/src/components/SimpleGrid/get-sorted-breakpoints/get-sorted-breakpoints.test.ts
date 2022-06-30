@@ -1,7 +1,7 @@
-import { DEFAULT_THEME } from '@coengageui/styles';
+import { DEFAULT_THEME } from 'coengageui_styles';
 import { getSortedBreakpoints } from './get-sorted-breakpoints';
 
-describe('@coengageui/core/SimpleGrid/get-sorted-breakpoints', () => {
+describe('coengageui_core/SimpleGrid/get-sorted-breakpoints', () => {
   it('returns an empty array if breakpoints are not set', () => {
     expect(getSortedBreakpoints(DEFAULT_THEME, [])).toStrictEqual([]);
   });

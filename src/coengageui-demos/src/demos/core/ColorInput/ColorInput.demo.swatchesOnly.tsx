@@ -1,8 +1,8 @@
 import React from 'react';
-import { ColorInput, DEFAULT_THEME } from '@coengageui/core';
+import { ColorInput, DEFAULT_THEME } from 'coengageui_core';
 
 const code = `
-import { ColorInput, DEFAULT_THEME } from '@coengageui/core';
+import { ColorInput, DEFAULT_THEME } from 'coengageui_core';
 
 function Demo() {
   return (

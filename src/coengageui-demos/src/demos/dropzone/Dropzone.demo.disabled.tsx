@@ -1,10 +1,10 @@
 import React from 'react';
-import { createStyles } from '@coengageui/core';
+import { createStyles } from 'coengageui_core';
 import { BaseDemo } from './_base';
 
 const code = `
-import { createStyles } from '@coengageui/core';
-import { Dropzone } from '@coengageui/dropzone';
+import { createStyles } from 'coengageui_core';
+import { Dropzone } from 'coengageui_dropzone';
 
 // Add your own disabled styles
 const useStyles = createStyles((theme) => ({

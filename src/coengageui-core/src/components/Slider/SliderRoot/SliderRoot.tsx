@@ -1,5 +1,5 @@
 import React, { forwardRef } from 'react';
-import { CoengageUINumberSize, DefaultProps, Selectors } from '@coengageui/styles';
+import { CoengageUINumberSize, DefaultProps, Selectors } from 'coengageui_styles';
 import { Box } from '../../Box';
 import useStyles from './SliderRoot.styles';
 
@@ -7,7 +7,7 @@ export type SliderRootStylesNames = Selectors<typeof useStyles>;
 
 export interface SliderRootProps
   extends DefaultProps<SliderRootStylesNames>,
-    React.ComponentPropsWithoutRef<'div'> {
+  React.ComponentPropsWithoutRef<'div'> {
   size: CoengageUINumberSize;
   children: React.ReactNode;
   disabled: boolean;
@@ -20,4 +20,4 @@ export const SliderRoot = forwardRef<HTMLDivElement, SliderRootProps>(
   }
 );
 
-SliderRoot.displayName = '@coengageui/core/SliderRoot';
+SliderRoot.displayName = 'coengageui_core/SliderRoot';

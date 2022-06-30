@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { TagInput } from '@coengageui/labs';
+import { TagInput } from 'coengageui_labs';
 
 const code = `
 <TagInput

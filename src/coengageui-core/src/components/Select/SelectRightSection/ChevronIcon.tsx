@@ -1,5 +1,5 @@
 import React from 'react';
-import { useCoengageUITheme, DefaultProps, CoengageUISize } from '@coengageui/styles';
+import { useCoengageUITheme, DefaultProps, CoengageUISize } from 'coengageui_styles';
 
 interface ChevronIconProps extends DefaultProps, React.ComponentPropsWithoutRef<'svg'> {
   size: CoengageUISize;

@@ -1,9 +1,9 @@
 import React, { useState } from 'react';
-import { createStyles } from '@coengageui/core';
+import { createStyles } from 'coengageui_core';
 
 const code = `
 import { useState } from 'react';
-import { createStyles } from '@coengageui/core';
+import { createStyles } from 'coengageui_core';
 
 const useStyles = createStyles((theme) => ({
   button: {

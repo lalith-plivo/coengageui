@@ -1,4 +1,4 @@
-import { ChipStylesNames } from '@coengageui/core';
+import { ChipStylesNames } from 'coengageui_core';
 
 export const Chip: Record<ChipStylesNames, string> = {
   root: 'Root element',

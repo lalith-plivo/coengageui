@@ -1,10 +1,10 @@
 import React from 'react';
-import { useScrollIntoView } from '@coengageui/hooks';
-import { Button, Text, Group, useCoengageUITheme } from '@coengageui/core';
+import { useScrollIntoView } from 'coengageui_hooks';
+import { Button, Text, Group, useCoengageUITheme } from 'coengageui_core';
 
 const code = `
-import { useScrollIntoView } from '@coengageui/hooks';
-import { Button, Text } from '@coengageui/core';
+import { useScrollIntoView } from 'coengageui_hooks';
+import { Button, Text } from 'coengageui_core';
 
 function Demo() {
   const { scrollIntoView, targetRef } = useScrollIntoView<HTMLDivElement>({ offset: 60 });

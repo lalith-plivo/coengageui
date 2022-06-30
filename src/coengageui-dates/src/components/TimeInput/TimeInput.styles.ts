@@ -1,4 +1,4 @@
-import { createStyles, INPUT_SIZES, CoengageUISize } from '@coengageui/core';
+import { createStyles, INPUT_SIZES, CoengageUISize } from 'coengageui_core';
 
 export interface TimeInputStylesParams {
   size: CoengageUISize;

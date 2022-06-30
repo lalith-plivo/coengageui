@@ -1,8 +1,8 @@
 import React from 'react';
-import { RadioGroup, RadioGroupProps, Radio } from '@coengageui/core';
+import { RadioGroup, RadioGroupProps, Radio } from 'coengageui_core';
 
 const codeTemplate = (props: string) => `
-import { RadioGroup, Radio } from '@coengageui/core';
+import { RadioGroup, Radio } from 'coengageui_core';
 
 function Demo() {
   return (

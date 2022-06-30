@@ -24,7 +24,7 @@ const defaultResult = {
   weekend: false,
 };
 
-describe('@coengageui/dates/Day/get-day-props', () => {
+describe('coengageui_dates/Day/get-day-props', () => {
   it('detects selected date', () => {
     expect(
       getDayProps({

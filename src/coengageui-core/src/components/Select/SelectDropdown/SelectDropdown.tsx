@@ -1,5 +1,5 @@
 import React, { forwardRef, useRef } from 'react';
-import { DefaultProps, CoengageUIShadow, Selectors, getDefaultZIndex } from '@coengageui/styles';
+import { DefaultProps, CoengageUIShadow, Selectors, getDefaultZIndex } from 'coengageui_styles';
 import type { Placement } from '@popperjs/core';
 import { SelectScrollArea } from '../SelectScrollArea/SelectScrollArea';
 import { CoengageUITransition } from '../../Transition';
@@ -140,4 +140,4 @@ export const SelectDropdown = forwardRef<HTMLDivElement, SelectDropdownProps>(
   }
 );
 
-SelectDropdown.displayName = '@coengageui/core/SelectDropdown';
+SelectDropdown.displayName = 'coengageui_core/SelectDropdown';

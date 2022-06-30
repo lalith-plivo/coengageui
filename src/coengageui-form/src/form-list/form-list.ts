@@ -1,4 +1,4 @@
-const LIST_IDENTIFIER = Symbol('@coengageui/form/list');
+const LIST_IDENTIFIER = Symbol('coengageui_form/list');
 
 export interface FormList<T> extends Array<T> {
   [LIST_IDENTIFIER]: true;

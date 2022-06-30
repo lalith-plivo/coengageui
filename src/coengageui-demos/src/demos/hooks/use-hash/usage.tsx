@@ -1,10 +1,10 @@
 import React from 'react';
-import { useHash, randomId } from '@coengageui/hooks';
-import { Group, Button, Text, Code } from '@coengageui/core';
+import { useHash, randomId } from 'coengageui_hooks';
+import { Group, Button, Text, Code } from 'coengageui_core';
 
 const code = `
-import { useHash, randomId } from '@coengageui/hooks';
-import { Button, Text, Code } from '@coengageui/core';
+import { useHash, randomId } from 'coengageui_hooks';
+import { Button, Text, Code } from 'coengageui_core';
 
 function Demo() {
   const [hash, setHash] = useHash();

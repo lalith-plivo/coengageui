@@ -5,8 +5,8 @@ import {
   Selectors,
   CoengageUINumberSize,
   useCoengageUIDefaultProps,
-} from '@coengageui/styles';
-import { useUuid } from '@coengageui/hooks';
+} from 'coengageui_styles';
+import { useUuid } from 'coengageui_hooks';
 import { CloseButton } from '../ActionIcon';
 import { Box } from '../Box';
 import useStyles from './Alert.styles';
@@ -19,7 +19,7 @@ export type AlertStylesNames = Selectors<typeof useStyles>;
 
 export interface AlertProps
   extends DefaultProps<AlertStylesNames>,
-    Omit<React.ComponentPropsWithoutRef<'div'>, 'title'> {
+  Omit<React.ComponentPropsWithoutRef<'div'>, 'title'> {
   /** Alert title */
   title?: React.ReactNode;
 
@@ -128,4 +128,4 @@ export const Alert = forwardRef<HTMLDivElement, AlertProps>((props: AlertProps, 
   );
 });
 
-Alert.displayName = '@coengageui/core/Alert';
+Alert.displayName = 'coengageui_core/Alert';

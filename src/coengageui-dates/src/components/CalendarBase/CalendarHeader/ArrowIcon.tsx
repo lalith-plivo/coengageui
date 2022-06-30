@@ -1,5 +1,5 @@
 import React from 'react';
-import { useCoengageUITheme } from '@coengageui/core';
+import { useCoengageUITheme } from 'coengageui_core';
 
 interface ArrowIconProps extends React.ComponentPropsWithoutRef<'svg'> {
   direction: 'left' | 'right';
@@ -16,7 +16,7 @@ export function ArrowIcon({ direction, style, ...others }: ArrowIconProps) {
         ...style,
         transform:
           (direction === 'right' && theme.dir === 'ltr') ||
-          (direction === 'left' && theme.dir === 'rtl')
+            (direction === 'left' && theme.dir === 'rtl')
             ? 'rotate(180deg)'
             : 'none',
       }}
@@ -32,4 +32,4 @@ export function ArrowIcon({ direction, style, ...others }: ArrowIconProps) {
   );
 }
 
-ArrowIcon.displayName = '@coengageui/dates/ArrowIcon';
+ArrowIcon.displayName = 'coengageui_dates/ArrowIcon';

@@ -6,19 +6,19 @@ import {
   itSupportsSystemProps,
   itSupportsFocusEvents,
   itSupportsInputProps,
-} from '@coengageui/tests';
+} from 'coengageui_tests';
 import { TextInput, TextInputProps } from './TextInput';
 
 const defaultProps: TextInputProps = {};
 
-describe('@coengageui/core/Input', () => {
+describe('coengageui_core/Input', () => {
   checkAccessibility([<TextInput label="test-input" />, <TextInput aria-label="test-input" />]);
   itSupportsInputProps(TextInput, defaultProps, 'TextInput');
   itSupportsFocusEvents(TextInput, defaultProps, 'input');
   itSupportsSystemProps({
     component: TextInput,
     props: defaultProps,
-    displayName: '@coengageui/core/TextInput',
+    displayName: 'coengageui_core/TextInput',
     refType: HTMLInputElement,
     excludeOthers: true,
   });

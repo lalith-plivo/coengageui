@@ -1,7 +1,7 @@
 {
-  "name": "@coengageui/next",
+  "name": "coengageui_next",
   "description": "CoengageUI integration for Next.js",
-  "version": "4.2.11",
+  "version": "0.0.1",
   "main": "cjs/index.js",
   "module": "esm/index.js",
   "types": "lib/index.d.ts",
@@ -25,7 +25,7 @@
     "next": "*"
   },
   "dependencies": {
-    "@coengageui/ssr": "4.2.11"
+    "coengageui_ssr": "0.0.1"
   },
   "devDependencies": {}
 }

@@ -1,15 +1,15 @@
 import React from 'react';
 import { render } from '@testing-library/react';
-import { itSupportsSystemProps } from '@coengageui/tests';
+import { itSupportsSystemProps } from 'coengageui_tests';
 import { Space, SpaceProps } from './Space';
 
 const defaultProps: SpaceProps = {};
 
-describe('@coengageui/core/Space', () => {
+describe('coengageui_core/Space', () => {
   itSupportsSystemProps({
     component: Space as any,
     props: defaultProps,
-    displayName: '@coengageui/core/Space',
+    displayName: 'coengageui_core/Space',
     refType: HTMLDivElement,
   });
 

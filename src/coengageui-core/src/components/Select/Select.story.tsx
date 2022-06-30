@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { storiesOf } from '@storybook/react';
-import { SubmitForm } from '@coengageui/storybook';
+import { SubmitForm } from 'coengageui_storybook';
 import { Select, SelectProps } from './Select';
 import { Button } from '../Button';
 import { Group } from '../Group';

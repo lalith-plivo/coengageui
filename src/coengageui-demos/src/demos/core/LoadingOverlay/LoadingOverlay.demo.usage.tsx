@@ -1,11 +1,11 @@
 import React, { useState } from 'react';
-import { LoadingOverlay, Button, Group, useCoengageUITheme } from '@coengageui/core';
+import { LoadingOverlay, Button, Group, useCoengageUITheme } from 'coengageui_core';
 import { AuthenticationForm } from '../../../shared/AuthenticationForm/AuthenticationForm';
 import { demoBase } from './_demo-base';
 
 const code = `
 import { useState } from 'react';
-import { LoadingOverlay, Button, Group } from '@coengageui/core';
+import { LoadingOverlay, Button, Group } from 'coengageui_core';
 
 function Demo() {
   const [visible, setVisible] = useState(false);

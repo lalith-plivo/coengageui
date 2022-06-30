@@ -1,10 +1,10 @@
 import React from 'react';
-import { Group, Badge } from '@coengageui/core';
-import { useMediaQuery } from '@coengageui/hooks';
+import { Group, Badge } from 'coengageui_core';
+import { useMediaQuery } from 'coengageui_hooks';
 
 const code = `
-import { Badge } from '@coengageui/core';
-import { useMediaQuery } from '@coengageui/hooks';
+import { Badge } from 'coengageui_core';
+import { useMediaQuery } from 'coengageui_hooks';
 
 function Demo() {
   const matches = useMediaQuery('(min-width: 900px)');

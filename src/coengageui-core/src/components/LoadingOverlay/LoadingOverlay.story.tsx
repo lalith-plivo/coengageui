@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { storiesOf } from '@storybook/react';
-import { CoengageUIProvider, DEFAULT_THEME } from '@coengageui/styles';
+import { CoengageUIProvider, DEFAULT_THEME } from 'coengageui_styles';
 import { Button } from '../Button/Button';
 import { Group } from '../Group/Group';
 import { LoadingOverlay } from './LoadingOverlay';

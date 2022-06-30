@@ -1,19 +1,19 @@
 ---
 group: 'coengageui-core'
-package: '@coengageui/core'
+package: 'coengageui_core'
 title: Text
 order: 1
 slug: /core/text/
 category: 'typography'
 description: 'Display text and links with theme styles'
 props: ['Text']
-import: "import { Text } from '@coengageui/core';"
+import: "import { Text } from 'coengageui_core';"
 source: 'coengageui-core/src/components/Text/Text.tsx'
 docs: 'core/Text.mdx'
 styles: ['Text', 'single-node']
 ---
 
-import { TextDemos } from '@coengageui/demos';
+import { TextDemos } from 'coengageui_demos';
 
 ## Usage
 
@@ -70,7 +70,7 @@ styles set `inherit` prop. For example, highlight part of [Title](/core/title/):
 By default, text is rendered as div element, to change it by set `component` prop:
 
 ```tsx
-import { Text } from '@coengageui/core';
+import { Text } from 'coengageui_core';
 import { Link } from 'react-router-dom';
 
 function Demo() {

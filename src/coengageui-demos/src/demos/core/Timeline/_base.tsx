@@ -1,6 +1,6 @@
 import React from 'react';
 import { GitBranch, GitPullRequest, GitCommit, MessageDots } from 'tabler-icons-react';
-import { Text, Timeline, TimelineProps } from '@coengageui/core';
+import { Text, Timeline, TimelineProps } from 'coengageui_core';
 
 export function TimelineBase(props: Partial<TimelineProps> & { noIcon?: boolean }) {
   const displayIcon = !props?.noIcon;

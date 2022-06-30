@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { storiesOf } from '@storybook/react';
-import { COENGAGEUI_SIZES, Group, TextInput } from '@coengageui/core';
-import { SubmitForm } from '@coengageui/storybook';
+import { COENGAGEUI_SIZES, Group, TextInput } from 'coengageui_core';
+import { SubmitForm } from 'coengageui_storybook';
 import { TagInput } from './TagInput';
 
 function Controlled() {

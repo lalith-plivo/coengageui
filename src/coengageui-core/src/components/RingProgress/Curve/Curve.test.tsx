@@ -1,7 +1,7 @@
 import { Curve } from './Curve';
 
-describe('@coengageui/core/RingProgress/Curve', () => {
+describe('coengageui_core/RingProgress/Curve', () => {
   it('has correct displayName', () => {
-    expect(Curve.displayName).toStrictEqual('@coengageui/core/Curve');
+    expect(Curve.displayName).toStrictEqual('coengageui_core/Curve');
   });
 });

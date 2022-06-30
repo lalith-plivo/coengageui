@@ -1,9 +1,9 @@
 import React from 'react';
-import { Group, ScrollArea } from '@coengageui/core';
+import { Group, ScrollArea } from 'coengageui_core';
 import { Content } from './_content';
 
 const code = `
-import { ScrollArea } from '@coengageui/core';
+import { ScrollArea } from 'coengageui_core';
 
 function Demo() {
   return (

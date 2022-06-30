@@ -3,7 +3,7 @@ import {
   PolymorphicComponentProps,
   PolymorphicRef,
   useCoengageUIDefaultProps,
-} from '@coengageui/styles';
+} from 'coengageui_styles';
 import { Text, SharedTextProps } from '../Text/Text';
 import useStyles from './Anchor.styles';
 
@@ -38,4 +38,4 @@ export const Anchor: AnchorComponent = forwardRef(
   }
 ) as any;
 
-Anchor.displayName = '@coengageui/core/Anchor';
+Anchor.displayName = 'coengageui_core/Anchor';

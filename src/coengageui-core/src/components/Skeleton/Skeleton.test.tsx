@@ -1,14 +1,14 @@
-import { itRendersChildren, itSupportsSystemProps } from '@coengageui/tests';
+import { itRendersChildren, itSupportsSystemProps } from 'coengageui_tests';
 import { Skeleton, SkeletonProps } from './Skeleton';
 
 const defaultProps: SkeletonProps = {};
 
-describe('@coengageui/core/Skeleton', () => {
+describe('coengageui_core/Skeleton', () => {
   itRendersChildren(Skeleton, defaultProps);
   itSupportsSystemProps({
     component: Skeleton,
     props: defaultProps,
-    displayName: '@coengageui/core/Skeleton',
+    displayName: 'coengageui_core/Skeleton',
     refType: HTMLDivElement,
   });
 });

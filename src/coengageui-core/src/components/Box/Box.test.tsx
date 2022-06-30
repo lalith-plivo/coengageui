@@ -1,15 +1,15 @@
-import { itRendersChildren, itIsPolymorphic, itSupportsSystemProps } from '@coengageui/tests';
+import { itRendersChildren, itIsPolymorphic, itSupportsSystemProps } from 'coengageui_tests';
 import { Box, BoxProps } from './Box';
 
 const defaultProps: BoxProps<'div'> = {};
 
-describe('@coengageui/core/Box', () => {
+describe('coengageui_core/Box', () => {
   itRendersChildren(Box, defaultProps);
   itIsPolymorphic(Box, defaultProps);
   itSupportsSystemProps({
     component: Box,
     props: defaultProps,
-    displayName: '@coengageui/core/Box',
+    displayName: 'coengageui_core/Box',
     refType: HTMLDivElement,
   });
 });

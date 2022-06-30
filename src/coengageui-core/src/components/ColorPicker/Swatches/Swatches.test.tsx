@@ -1,16 +1,16 @@
 import React from 'react';
 import { render, screen } from '@testing-library/react';
 import userEvent from '@testing-library/user-event';
-import { DEFAULT_THEME } from '@coengageui/styles';
+import { DEFAULT_THEME } from 'coengageui_styles';
 import { Swatches, SwatchesProps } from './Swatches';
 import { parseColor } from '../converters';
 
 const defaultProps: SwatchesProps = {
   data: [...DEFAULT_THEME.colors.red],
-  onSelect: () => {},
+  onSelect: () => { },
 };
 
-describe('@coengageui/core/Swatches', () => {
+describe('coengageui_core/Swatches', () => {
   it('calls onSelect when color is clicked', () => {
     const spy = jest.fn();
     render(<Swatches {...defaultProps} onSelect={spy} />);
@@ -26,6 +26,6 @@ describe('@coengageui/core/Swatches', () => {
   });
 
   it('has correct displayName', () => {
-    expect(Swatches.displayName).toStrictEqual('@coengageui/core/Swatches');
+    expect(Swatches.displayName).toStrictEqual('coengageui_core/Swatches');
   });
 });

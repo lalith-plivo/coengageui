@@ -1,4 +1,4 @@
-import { createStyles, CoengageUINumberSize, keyframes } from '@coengageui/styles';
+import { createStyles, CoengageUINumberSize, keyframes } from 'coengageui_styles';
 
 export interface SkeletonStylesParams {
   height: number | string;

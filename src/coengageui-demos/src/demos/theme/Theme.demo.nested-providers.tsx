@@ -5,9 +5,9 @@ import {
   Text,
   CoengageUIProvider,
   useCoengageUIColorScheme,
-} from '@coengageui/core';
+} from 'coengageui_core';
 
-const code = `import { Button, CoengageUIProvider, Text } from '@coengageui/core';
+const code = `import { Button, CoengageUIProvider, Text } from 'coengageui_core';
 
 function Demo() {
   return (

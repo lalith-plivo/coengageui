@@ -1,4 +1,4 @@
-import { useQueue, randomId } from '@coengageui/hooks';
+import { useQueue, randomId } from 'coengageui_hooks';
 import { NotificationProps } from '../../types';
 
 export default function useNotificationsState({ limit }: { limit: number }) {

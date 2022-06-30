@@ -1,10 +1,10 @@
 import React from 'react';
-import { useListState, randomId } from '@coengageui/hooks';
-import { Checkbox } from '@coengageui/core';
+import { useListState, randomId } from 'coengageui_hooks';
+import { Checkbox } from 'coengageui_core';
 
 const code = `
-import { useListState, randomId } from '@coengageui/hooks';
-import { Checkbox } from '@coengageui/core';
+import { useListState, randomId } from 'coengageui_hooks';
+import { Checkbox } from 'coengageui_core';
 
 const initialValues = [
   { label: 'Receive email notifications', checked: false, key: randomId() },

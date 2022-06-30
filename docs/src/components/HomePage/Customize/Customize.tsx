@@ -1,9 +1,9 @@
 import React from 'react';
 import { Link } from 'gatsby';
 import { ArrowRightIcon } from '@modulz/radix-icons';
-import { Text, SimpleGrid, Slider, Button } from '@coengageui/core';
-import { Prism } from '@coengageui/prism';
-import { Slider as SliderStylesApi } from '@coengageui/styles-api';
+import { Text, SimpleGrid, Slider, Button } from 'coengageui_core';
+import { Prism } from 'coengageui_prism';
+import { Slider as SliderStylesApi } from 'coengageui_styles-api';
 import DataTable from '../../MdxPage/MdxProvider/DataTable/DataTable';
 import { PageSection } from '../PageSection/PageSection';
 

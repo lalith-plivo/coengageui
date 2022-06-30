@@ -1,19 +1,19 @@
 ---
 group: 'coengageui-core'
-package: '@coengageui/core'
+package: 'coengageui_core'
 title: Tooltip
 order: 1
 slug: /core/tooltip/
 category: 'overlay'
 description: 'Renders tooltip at given element on mouse over or any other event'
 props: ['Tooltip']
-import: "import { Tooltip, FloatingTooltip } from '@coengageui/core';"
+import: "import { Tooltip, FloatingTooltip } from 'coengageui_core';"
 source: 'coengageui-core/src/components/Tooltip/Tooltip.tsx'
 docs: 'core/Tooltip.mdx'
 styles: ['Tooltip']
 ---
 
-import { TooltipDemos } from '@coengageui/demos';
+import { TooltipDemos } from 'coengageui_demos';
 
 ## Usage
 
@@ -115,7 +115,7 @@ Provide `tooltipId` and `aria-describedby` props to make tooltip accessible:
 
 ```tsx
 import { useState } from 'react';
-import { Tooltip, Button } from '@coengageui/core';
+import { Tooltip, Button } from 'coengageui_core';
 
 function Demo() {
   const [opened, setOpened] = useState(false);

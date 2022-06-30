@@ -3,7 +3,7 @@ import {
   CoengageUINumberSize,
   CoengageUISize,
   CoengageUIColor,
-} from '@coengageui/styles';
+} from 'coengageui_styles';
 
 export const WRAPPER_PADDING = 4;
 
@@ -62,9 +62,8 @@ export default createStyles(
         textOverflow: 'ellipsis',
         userSelect: 'none',
         color: theme.colorScheme === 'dark' ? theme.colors.dark[1] : theme.colors.gray[7],
-        transition: `color ${shouldAnimate ? 0 : transitionDuration}ms ${
-          transitionTimingFunction || theme.transitionTimingFunction
-        }`,
+        transition: `color ${shouldAnimate ? 0 : transitionDuration}ms ${transitionTimingFunction || theme.transitionTimingFunction
+          }`,
 
         '&:hover': {
           color: theme.colorScheme === 'dark' ? theme.colors.dark[0] : theme.black,
@@ -77,9 +76,8 @@ export default createStyles(
         boxSizing: 'border-box',
         flex: 1,
         zIndex: 2,
-        transition: `border-left-color ${shouldAnimate ? 0 : transitionDuration}ms ${
-          transitionTimingFunction || theme.transitionTimingFunction
-        }`,
+        transition: `border-left-color ${shouldAnimate ? 0 : transitionDuration}ms ${transitionTimingFunction || theme.transitionTimingFunction
+          }`,
 
         '&:not(:first-of-type)': {
           borderStyle: 'solid',
@@ -104,11 +102,9 @@ export default createStyles(
             outline: 'none',
             boxShadow:
               theme.focusRing === 'always' || theme.focusRing === 'auto'
-                ? `0 0 0 2px ${
-                    theme.colorScheme === 'dark' ? theme.colors.dark[9] : theme.white
-                  }, 0 0 0 4px ${
-                    theme.colors[theme.primaryColor][theme.colorScheme === 'dark' ? 7 : 5]
-                  }`
+                ? `0 0 0 2px ${theme.colorScheme === 'dark' ? theme.colors.dark[9] : theme.white
+                }, 0 0 0 4px ${theme.colors[theme.primaryColor][theme.colorScheme === 'dark' ? 7 : 5]
+                }`
                 : undefined,
           },
 
@@ -150,8 +146,8 @@ export default createStyles(
           ? color in theme.colors
             ? colors.background
             : theme.colorScheme === 'dark'
-            ? theme.colors.dark[5]
-            : theme.white
+              ? theme.colors.dark[5]
+              : theme.white
           : undefined,
       },
 
@@ -174,17 +170,15 @@ export default createStyles(
         position: 'absolute',
         zIndex: 1,
         boxShadow: color || theme.colorScheme === 'dark' ? 'none' : theme.shadows.xs,
-        transition: `transform ${shouldAnimate ? 0 : transitionDuration}ms ${
-          theme.transitionTimingFunction
-        }, width ${shouldAnimate ? 0 : transitionDuration / 2}ms ${
-          transitionTimingFunction || theme.transitionTimingFunction
-        }`,
+        transition: `transform ${shouldAnimate ? 0 : transitionDuration}ms ${theme.transitionTimingFunction
+          }, width ${shouldAnimate ? 0 : transitionDuration / 2}ms ${transitionTimingFunction || theme.transitionTimingFunction
+          }`,
         backgroundColor:
           color in theme.colors
             ? colors.background
             : theme.colorScheme === 'dark'
-            ? theme.colors.dark[5]
-            : theme.white,
+              ? theme.colors.dark[5]
+              : theme.white,
       },
     };
   }

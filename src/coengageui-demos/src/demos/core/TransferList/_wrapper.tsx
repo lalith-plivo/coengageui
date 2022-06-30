@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { TransferList, TransferListData, TransferListProps } from '@coengageui/core';
+import { TransferList, TransferListData, TransferListProps } from 'coengageui_core';
 
 const mockdata: TransferListData = [
   [

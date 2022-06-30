@@ -1,7 +1,7 @@
 import { renderHook, act } from '@testing-library/react-hooks';
 import { useForm } from '../index';
 
-describe('@coengageui/form/use-form function validation', () => {
+describe('coengageui_form/use-form function validation', () => {
   it('validates all fields with validate handler', () => {
     const hook = renderHook(() =>
       useForm({

@@ -1,4 +1,4 @@
-import { itSupportsClassName, itSupportsStyle } from '@coengageui/tests';
+import { itSupportsClassName, itSupportsStyle } from 'coengageui_tests';
 import { Thumb, ThumbProps } from './Thumb';
 
 const defaultProps: ThumbProps = {
@@ -7,11 +7,11 @@ const defaultProps: ThumbProps = {
   size: 'sm',
 };
 
-describe('@coengageui/core/Thumb', () => {
+describe('coengageui_core/Thumb', () => {
   itSupportsClassName(Thumb, defaultProps);
   itSupportsStyle(Thumb, defaultProps);
 
   it('has correct displayName', () => {
-    expect(Thumb.displayName).toStrictEqual('@coengageui/core/Thumb');
+    expect(Thumb.displayName).toStrictEqual('coengageui_core/Thumb');
   });
 });

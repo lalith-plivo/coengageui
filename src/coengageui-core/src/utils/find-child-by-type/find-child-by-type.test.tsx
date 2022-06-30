@@ -3,7 +3,7 @@ import { findChildByType } from './find-child-by-type';
 
 const TestComponent = () => <div>Test</div>;
 
-describe('@coengageui/core/utils/find-child-by-type', () => {
+describe('coengageui_core/utils/find-child-by-type', () => {
   it('finds child with a given type', () => {
     const result = findChildByType(
       [

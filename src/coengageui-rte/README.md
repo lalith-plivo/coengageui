@@ -8,10 +8,10 @@ Quill based rich text editor
 
 ```sh
 # With yarn
-yarn add @coengageui/hooks @coengageui/core @coengageui/rte
+yarn add coengageui_hooks coengageui_core coengageui_rte
 
 # With npm
-npm install @coengageui/hooks @coengageui/core @coengageui/rte
+npm install coengageui_hooks coengageui_core coengageui_rte
 ```
 
 ## License

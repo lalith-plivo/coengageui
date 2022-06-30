@@ -1,5 +1,5 @@
 import React from 'react';
-import { Badge, BadgeProps, Group } from '@coengageui/core';
+import { Badge, BadgeProps, Group } from 'coengageui_core';
 
 function Wrapper(props: BadgeProps<'div'>) {
   return (
@@ -10,7 +10,7 @@ function Wrapper(props: BadgeProps<'div'>) {
 }
 
 const codeTemplate = (props: string) => `
-import { Badge } from '@coengageui/core';
+import { Badge } from 'coengageui_core';
 
 function Demo() {
   return (

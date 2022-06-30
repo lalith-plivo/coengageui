@@ -1,6 +1,6 @@
 import React from 'react';
-import { TextInput } from '@coengageui/core';
-import { upperFirst } from '@coengageui/hooks';
+import { TextInput } from 'coengageui_core';
+import { upperFirst } from 'coengageui_hooks';
 
 interface StringControlProps {
   value: string;

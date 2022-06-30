@@ -1,5 +1,5 @@
 import React, { useState, useRef } from 'react';
-import { useDidUpdate, useDisclosure } from '@coengageui/hooks';
+import { useDidUpdate, useDisclosure } from 'coengageui_hooks';
 import { useActionsState } from './use-actions-state/use-actions-state';
 import { useSpotlightShortcuts } from './use-spotlight-shortcuts/use-spotlight-shortcuts';
 import { Spotlight, InnerSpotlightProps } from './Spotlight/Spotlight';
@@ -101,4 +101,4 @@ export function SpotlightProvider({
   );
 }
 
-SpotlightProvider.displayName = '@coengageui/spotlight/SpotlightProvider';
+SpotlightProvider.displayName = 'coengageui_spotlight/SpotlightProvider';

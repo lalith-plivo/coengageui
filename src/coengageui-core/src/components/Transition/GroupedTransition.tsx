@@ -86,4 +86,4 @@ export function GroupedTransition({
   return <>{children(transitionsStyles)}</>;
 }
 
-GroupedTransition.displayName = '@coengageui/core/GroupedTransition';
+GroupedTransition.displayName = 'coengageui_core/GroupedTransition';

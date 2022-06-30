@@ -1,9 +1,9 @@
 import React from 'react';
 import { ExternalLink } from 'tabler-icons-react';
-import { Menu, Group } from '@coengageui/core';
+import { Menu, Group } from 'coengageui_core';
 
 const code = `
-import { Menu } from '@coengageui/core';
+import { Menu } from 'coengageui_core';
 import { ExternalLink } from 'tabler-icons-react';
 
 function Demo() {

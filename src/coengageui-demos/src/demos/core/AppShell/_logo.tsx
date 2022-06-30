@@ -1,5 +1,5 @@
 import React from 'react';
-import { ColorScheme } from '@coengageui/core';
+import { ColorScheme } from 'coengageui_core';
 
 export function Logo({ colorScheme }: { colorScheme: ColorScheme }) {
   return (

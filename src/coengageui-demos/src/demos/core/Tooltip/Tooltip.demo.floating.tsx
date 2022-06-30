@@ -1,5 +1,5 @@
 import React from 'react';
-import { FloatingTooltip, FloatingTooltipProps, Group, Button } from '@coengageui/core';
+import { FloatingTooltip, FloatingTooltipProps, Group, Button } from 'coengageui_core';
 
 const Wrapper = (props: FloatingTooltipProps) => (
   <div style={{ padding: 30 }}>
@@ -14,7 +14,7 @@ const Wrapper = (props: FloatingTooltipProps) => (
 );
 
 const codeTemplate = (props: string) => `
-import { FloatingTooltip, Button } from '@coengageui/core';
+import { FloatingTooltip, Button } from 'coengageui_core';
 
 function Demo() {
   return (

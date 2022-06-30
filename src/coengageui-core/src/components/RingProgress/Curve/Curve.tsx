@@ -1,5 +1,5 @@
 import React from 'react';
-import { useCoengageUITheme, CoengageUIColor } from '@coengageui/styles';
+import { useCoengageUITheme, CoengageUIColor } from 'coengageui_styles';
 import { getCurveProps } from './get-curve-props';
 
 interface CurveProps {
@@ -40,4 +40,4 @@ export function Curve({
   );
 }
 
-Curve.displayName = '@coengageui/core/Curve';
+Curve.displayName = 'coengageui_core/Curve';

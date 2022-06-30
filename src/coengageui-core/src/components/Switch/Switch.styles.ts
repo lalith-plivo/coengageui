@@ -3,7 +3,7 @@ import {
   CoengageUINumberSize,
   CoengageUISize,
   CoengageUIColor,
-} from '@coengageui/styles';
+} from 'coengageui_styles';
 
 export interface SwitchStylesParams {
   color: CoengageUIColor;
@@ -69,9 +69,8 @@ export default createStyles(
         position: 'relative',
         borderRadius,
         backgroundColor: theme.colorScheme === 'dark' ? theme.colors.dark[4] : theme.colors.gray[2],
-        border: `1px solid ${
-          theme.colorScheme === 'dark' ? theme.colors.dark[4] : theme.colors.gray[3]
-        }`,
+        border: `1px solid ${theme.colorScheme === 'dark' ? theme.colors.dark[4] : theme.colors.gray[3]
+          }`,
         height: theme.fn.size({ size, sizes: switchHeight }),
         width: theme.fn.size({ size, sizes: switchWidth }),
         minWidth: theme.fn.size({ size, sizes: switchWidth }),
@@ -123,11 +122,10 @@ export default createStyles(
           borderColor: colors.background,
 
           '&::before': {
-            transform: `translateX(${
-              theme.fn.size({ size, sizes: switchWidth }) -
+            transform: `translateX(${theme.fn.size({ size, sizes: switchWidth }) -
               theme.fn.size({ size, sizes: handleSizes }) -
               (size === 'xs' ? 3 : 4) // borderWidth: 2 + padding: 2 * 2
-            }px)`,
+              }px)`,
             borderColor: theme.white,
           },
 

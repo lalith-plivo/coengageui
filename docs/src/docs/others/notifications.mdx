@@ -1,7 +1,7 @@
 ---
 order: 1
 group: 'Other packages'
-package: '@coengageui/notifications'
+package: 'coengageui_notifications'
 title: Notifications system
 slug: /others/notifications/
 props: ['NotificationsProvider']
@@ -9,24 +9,24 @@ source: 'coengageui-notifications/src'
 docs: 'others/notifications.mdx'
 pageTitle: 'CoengageUI Notifications'
 description: 'CoengageUI notifications system'
-installation: '@coengageui/notifications'
+installation: 'coengageui_notifications'
 license: MIT
 ---
 
-import { NotificationDemos, NotificationsDemos } from '@coengageui/demos';
+import { NotificationDemos, NotificationsDemos } from 'coengageui_demos';
 
 ## Installation
 
 Install with npm:
 
 ```sh
-npm install @coengageui/notifications @coengageui/core @coengageui/hooks
+npm install coengageui_notifications coengageui_core coengageui_hooks
 ```
 
 Install with yarn:
 
 ```sh
-yarn add @coengageui/notifications @coengageui/core @coengageui/hooks
+yarn add coengageui_notifications coengageui_core coengageui_hooks
 ```
 
 ## Demo
@@ -38,7 +38,7 @@ yarn add @coengageui/notifications @coengageui/core @coengageui/hooks
 Wrap your application with NotificationsProvider:
 
 ```tsx
-import { NotificationsProvider } from '@coengageui/notifications';
+import { NotificationsProvider } from 'coengageui_notifications';
 
 function App() {
   return (
@@ -58,7 +58,7 @@ Then use `showNotification` function anywhere in your application:
 ## Functions
 
 Notifications system is based on [custom events](https://developer.mozilla.org/en-US/docs/Web/Events/Creating_and_triggering_events),
-`@coengageui/notifications` package exports the following functions:
+`coengageui_notifications` package exports the following functions:
 
 - **showNotification** – adds given notification to notifications list or queue depending on current state and limit
 - **updateNotification** – updates notification that was previously added to the state or queue
@@ -66,10 +66,10 @@ Notifications system is based on [custom events](https://developer.mozilla.org/e
 - **cleanNotifications** – removes all notifications from notifications state and queue
 - **cleanNotificationsQueue** – removes all notifications from queue
 
-All functions can be imported from `@coengageui/notifications` package and can be used in any part of your application:
+All functions can be imported from `coengageui_notifications` package and can be used in any part of your application:
 
 ```tsx
-import { showNotification } from '@coengageui/notifications';
+import { showNotification } from 'coengageui_notifications';
 ```
 
 ## Notification props
@@ -87,7 +87,7 @@ Notification state item can have these properties:
 All properties except **message** are optional.
 
 ```tsx
-import { showNotification } from '@coengageui/notifications';
+import { showNotification } from 'coengageui_notifications';
 
 // Bare minimum – message is required for all notifications
 showNotification({ message: 'Hello' });
@@ -133,7 +133,7 @@ Position cannot be changed per notification. NotificationsProvider supports the 
 - `bottom-center`
 
 ```tsx
-import { NotificationsProvider } from '@coengageui/notifications';
+import { NotificationsProvider } from 'coengageui_notifications';
 
 function App() {
   return (
@@ -151,7 +151,7 @@ You can limit maximum amount of notifications that can be displayed by setting
 `limit` prop on NotificationsProvider:
 
 ```tsx
-import { NotificationsProvider } from '@coengageui/notifications';
+import { NotificationsProvider } from 'coengageui_notifications';
 
 function App() {
   return (
@@ -172,7 +172,7 @@ and displayed when notification from current state is closed.
 To remove specific notification from state or queue use `hideNotification` function:
 
 ```tsx
-import { showNotification, hideNotification } from '@coengageui/notifications';
+import { showNotification, hideNotification } from 'coengageui_notifications';
 
 showNotification({ id: 'hello', message: 'Hello!' });
 hideNotification('hello');
@@ -192,7 +192,7 @@ Use `cleanNotificationsQueue` function to remove all notifications that are not 
 You can configure auto close timeout with NotificationsProvider:
 
 ```tsx
-import { NotificationsProvider } from '@coengageui/notifications';
+import { NotificationsProvider } from 'coengageui_notifications';
 
 // All notifications will be closed automatically in 4000ms
 function App() {
@@ -207,7 +207,7 @@ function App() {
 Or in `showNotification`/`updateNotification` functions:
 
 ```tsx
-import { showNotification, updateNotification } from '@coengageui/notifications';
+import { showNotification, updateNotification } from 'coengageui_notifications';
 
 showNotification({
   message: 'I will close in 500ms seconds',

@@ -1,6 +1,6 @@
 import { formList, isFormList } from './form-list';
 
-describe('@coengageui/form form-list', () => {
+describe('coengageui_form form-list', () => {
   it('creates new list from given list without noticeable modifications', () => {
     expect(formList([{ apple: 1 }, { banana: 'fruit' }])).toStrictEqual([
       { apple: 1 },
@@ -32,6 +32,6 @@ describe('@coengageui/form form-list', () => {
     expect(isFormList(NaN as any)).toBe(false);
     expect(isFormList(String as any)).toBe(false);
     expect(isFormList(false as any)).toBe(false);
-    expect(isFormList((() => {}) as any)).toBe(false);
+    expect(isFormList((() => { }) as any)).toBe(false);
   });
 });

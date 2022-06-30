@@ -1,18 +1,18 @@
 import React from 'react';
 import { render, screen } from '@testing-library/react';
-import { checkAccessibility, itSupportsSystemProps } from '@coengageui/tests';
+import { checkAccessibility, itSupportsSystemProps } from 'coengageui_tests';
 import { Progress, ProgressProps } from './Progress';
 
 const defaultProps: ProgressProps = {
   value: 80,
 };
 
-describe('@coengageui/core/Progress', () => {
+describe('coengageui_core/Progress', () => {
   checkAccessibility([<Progress value={80} aria-label="test-progress" />]);
   itSupportsSystemProps({
     component: Progress,
     props: defaultProps,
-    displayName: '@coengageui/core/Progress',
+    displayName: 'coengageui_core/Progress',
     refType: HTMLDivElement,
   });
 

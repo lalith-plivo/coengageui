@@ -3,7 +3,7 @@ import {
   getDefaultZIndex,
   ForwardRefWithStaticComponents,
   useCoengageUIDefaultProps,
-} from '@coengageui/styles';
+} from 'coengageui_styles';
 import {
   HorizontalSection,
   HorizontalSectionSharedProps,
@@ -11,7 +11,7 @@ import {
 
 export interface AsideProps
   extends HorizontalSectionSharedProps,
-    React.ComponentPropsWithRef<'nav'> {
+  React.ComponentPropsWithRef<'nav'> {
   /** Aside content */
   children: React.ReactNode;
 }
@@ -37,4 +37,4 @@ export const Aside: AsideComponent = forwardRef<HTMLElement, AsideProps>(
 ) as any;
 
 Aside.Section = HorizontalSection.Section;
-Aside.displayName = '@coengageui/core/Aside';
+Aside.displayName = 'coengageui_core/Aside';

@@ -1,6 +1,6 @@
 import React from 'react';
 import { render } from '@testing-library/react';
-import { itSupportsSystemProps } from '@coengageui/tests';
+import { itSupportsSystemProps } from 'coengageui_tests';
 import { Prism, PrismTab, PrismTabs, PrismProps, PrismTabsProps } from './Prism';
 
 const defaultProps: PrismProps = {
@@ -9,11 +9,11 @@ const defaultProps: PrismProps = {
   language: 'tsx',
 };
 
-describe('@coengageui/prism/Prism', () => {
+describe('coengageui_prism/Prism', () => {
   itSupportsSystemProps({
     component: Prism,
     props: defaultProps,
-    displayName: '@coengageui/prism/Prism',
+    displayName: 'coengageui_prism/Prism',
     refType: HTMLDivElement,
   });
 
@@ -50,11 +50,11 @@ const defaultTabsProps: PrismTabsProps = {
   ],
 };
 
-describe('@coengageui/prism/Prism.Tabs', () => {
+describe('coengageui_prism/Prism.Tabs', () => {
   itSupportsSystemProps({
     component: Prism.Tabs,
     props: defaultTabsProps,
-    displayName: '@coengageui/prism/Tabs',
+    displayName: 'coengageui_prism/Tabs',
     refType: HTMLDivElement,
   });
 });

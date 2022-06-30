@@ -6,10 +6,10 @@ import {
   Title,
   CoengageUIProvider,
   useCoengageUIColorScheme,
-} from '@coengageui/core';
+} from 'coengageui_core';
 
 const code = `
-import { Button, Code, Title, CoengageUIProvider } from '@coengageui/core';
+import { Button, Code, Title, CoengageUIProvider } from 'coengageui_core';
 
 function Demo() {
   return (

@@ -1,8 +1,8 @@
 import React from 'react';
-import { Slider } from '@coengageui/core';
+import { Slider } from 'coengageui_core';
 
 const code = `
-import { Slider } from '@coengageui/core';
+import { Slider } from 'coengageui_core';
 
 const marks = [
   { value: 20, label: '20%' },

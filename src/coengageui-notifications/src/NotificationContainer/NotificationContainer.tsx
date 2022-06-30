@@ -1,5 +1,5 @@
 import React, { useEffect, useRef } from 'react';
-import { Notification, DefaultProps } from '@coengageui/core';
+import { Notification, DefaultProps } from 'coengageui_core';
 import getAutoClose from './get-auto-close/get-auto-close';
 import { NotificationProps } from '../types';
 
@@ -61,4 +61,4 @@ export default function NotificationContainer({
   );
 }
 
-NotificationContainer.displayName = '@coengageui/notifications/NotificationContainer';
+NotificationContainer.displayName = 'coengageui_notifications/NotificationContainer';

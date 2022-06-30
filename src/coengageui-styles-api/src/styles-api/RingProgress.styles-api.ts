@@ -1,4 +1,4 @@
-import type { RingProgressStylesNames } from '@coengageui/core';
+import type { RingProgressStylesNames } from 'coengageui_core';
 
 export const RingProgress: Record<RingProgressStylesNames, string> = {
   root: 'Root element',

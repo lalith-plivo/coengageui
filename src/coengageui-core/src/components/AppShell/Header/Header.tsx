@@ -1,10 +1,10 @@
 import React, { forwardRef } from 'react';
-import { getDefaultZIndex, useCoengageUIDefaultProps } from '@coengageui/styles';
+import { getDefaultZIndex, useCoengageUIDefaultProps } from 'coengageui_styles';
 import { VerticalSection, VerticalSectionSharedProps } from '../VerticalSection/VerticalSection';
 
 export interface HeaderProps
   extends VerticalSectionSharedProps,
-    React.ComponentPropsWithoutRef<'nav'> {
+  React.ComponentPropsWithoutRef<'nav'> {
   /** Header content */
   children: React.ReactNode;
 }
@@ -20,4 +20,4 @@ export const Header = forwardRef<HTMLElement, HeaderProps>((props: HeaderProps, 
   return <VerticalSection section="header" __staticSelector="Header" {..._props} ref={ref} />;
 });
 
-Header.displayName = '@coengageui/core/Header';
+Header.displayName = 'coengageui_core/Header';

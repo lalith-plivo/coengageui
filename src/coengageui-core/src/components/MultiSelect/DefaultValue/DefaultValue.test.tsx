@@ -6,18 +6,18 @@ import {
   itSupportsStyle,
   itSupportsOthers,
   checkAccessibility,
-} from '@coengageui/tests';
+} from 'coengageui_tests';
 import { DefaultValue, MultiSelectValueProps } from './DefaultValue';
 
 const defaultProps: MultiSelectValueProps = {
   label: 'test-label',
-  onRemove: () => {},
+  onRemove: () => { },
   disabled: false,
   size: 'sm',
   radius: 'sm',
 };
 
-describe('@coengageui/core/MultiSelect/DefaultValue', () => {
+describe('coengageui_core/MultiSelect/DefaultValue', () => {
   checkAccessibility([<DefaultValue {...defaultProps} />]);
   itSupportsClassName(DefaultValue, defaultProps);
   itSupportsStyle(DefaultValue, defaultProps);
@@ -43,6 +43,6 @@ describe('@coengageui/core/MultiSelect/DefaultValue', () => {
   });
 
   it('has correct displayName', () => {
-    expect(DefaultValue.displayName).toStrictEqual('@coengageui/core/MultiSelect/DefaultValue');
+    expect(DefaultValue.displayName).toStrictEqual('coengageui_core/MultiSelect/DefaultValue');
   });
 });

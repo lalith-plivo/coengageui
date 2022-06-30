@@ -14,9 +14,9 @@ import {
   ColorInput,
   createStyles,
   Paper,
-} from '@coengageui/core';
-import { CustomSelectDemo, CountriesSelect } from '@coengageui/demos';
-import { DatePicker, DateRangePicker } from '@coengageui/dates';
+} from 'coengageui_core';
+import { CustomSelectDemo, CountriesSelect } from 'coengageui_demos';
+import { DatePicker, DateRangePicker } from 'coengageui_dates';
 
 const BREAKPOINT = '@media (max-width: 960px)';
 

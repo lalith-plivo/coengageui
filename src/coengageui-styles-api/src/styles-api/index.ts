@@ -1,4 +1,4 @@
-// @coengageui/core
+// coengageui_core
 export * from './Accordion.styles-api';
 export * from './ActionIcon.styles-api';
 export * from './Alert.styles-api';
@@ -51,7 +51,7 @@ export * from './Timeline.styles-api';
 export * from './Tooltip.styles-api';
 export * from './TransferList.styles-api';
 
-// @coengageui/dates
+// coengageui_dates
 export * from './Calendar.styles-api';
 export * from './CalendarBase.styles-api';
 export * from './DatePicker.styles-api';

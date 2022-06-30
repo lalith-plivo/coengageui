@@ -1,6 +1,6 @@
 import React from 'react';
-import { Switch } from '@coengageui/core';
-import { upperFirst } from '@coengageui/hooks';
+import { Switch } from 'coengageui_core';
+import { upperFirst } from 'coengageui_hooks';
 
 interface BooleanControlProps {
   value: boolean;

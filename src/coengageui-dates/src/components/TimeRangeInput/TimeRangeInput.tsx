@@ -12,8 +12,8 @@ import {
   CloseButton,
   extractSystemStyles,
   useCoengageUIDefaultProps,
-} from '@coengageui/core';
-import { useDidUpdate, useMergedRef, useUuid } from '@coengageui/hooks';
+} from 'coengageui_core';
+import { useDidUpdate, useMergedRef, useUuid } from 'coengageui_hooks';
 import useStyles from './TimeRangeInput.styles';
 import { TimeInput } from '../TimeInput';
 
@@ -24,9 +24,9 @@ export type TimeRangeInputStylesNames =
 
 export interface TimeRangeInputProps
   extends DefaultProps<TimeRangeInputStylesNames>,
-    InputBaseProps,
-    InputWrapperBaseProps,
-    Omit<React.ComponentPropsWithoutRef<'div'>, 'onChange' | 'value' | 'defaultValue'> {
+  InputBaseProps,
+  InputWrapperBaseProps,
+  Omit<React.ComponentPropsWithoutRef<'div'>, 'onChange' | 'value' | 'defaultValue'> {
   /** Input size */
   size?: CoengageUISize;
 
@@ -262,4 +262,4 @@ export const TimeRangeInput = forwardRef<HTMLInputElement, TimeRangeInputProps>(
   }
 );
 
-TimeRangeInput.displayName = '@coengageui/dates/TimeRangeInput';
+TimeRangeInput.displayName = 'coengageui_dates/TimeRangeInput';

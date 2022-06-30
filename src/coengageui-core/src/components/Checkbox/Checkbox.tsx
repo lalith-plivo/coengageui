@@ -7,8 +7,8 @@ import {
   extractSystemStyles,
   CoengageUINumberSize,
   useCoengageUIDefaultProps,
-} from '@coengageui/styles';
-import { useUuid } from '@coengageui/hooks';
+} from 'coengageui_styles';
+import { useUuid } from 'coengageui_hooks';
 import { Box } from '../Box';
 import { CheckboxIcon } from './CheckboxIcon';
 import useStyles from './Checkbox.styles';
@@ -17,7 +17,7 @@ export type CheckboxStylesNames = Selectors<typeof useStyles>;
 
 export interface CheckboxProps
   extends DefaultProps<CheckboxStylesNames>,
-    Omit<React.ComponentPropsWithoutRef<'input'>, 'type' | 'size'> {
+  Omit<React.ComponentPropsWithoutRef<'input'>, 'type' | 'size'> {
   /** Checkbox checked and indeterminate state color from theme, defaults to theme.primaryColor */
   color?: CoengageUIColor;
 
@@ -115,4 +115,4 @@ export const Checkbox = forwardRef<HTMLInputElement, CheckboxProps>((props: Chec
   );
 });
 
-Checkbox.displayName = '@coengageui/core/Checkbox';
+Checkbox.displayName = 'coengageui_core/Checkbox';

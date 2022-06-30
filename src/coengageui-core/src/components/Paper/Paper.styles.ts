@@ -1,4 +1,4 @@
-import { createStyles, CoengageUINumberSize, CoengageUIShadow } from '@coengageui/styles';
+import { createStyles, CoengageUINumberSize, CoengageUIShadow } from 'coengageui_styles';
 
 export interface PaperStylesParams {
   radius: CoengageUINumberSize;

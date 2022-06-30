@@ -1,5 +1,5 @@
 import React, { forwardRef } from 'react';
-import { DefaultProps, CoengageUINumberSize, useCoengageUIDefaultProps } from '@coengageui/styles';
+import { DefaultProps, CoengageUINumberSize, useCoengageUIDefaultProps } from 'coengageui_styles';
 import { Box } from '../Box';
 
 export interface SpaceProps extends DefaultProps {
@@ -34,4 +34,4 @@ export const Space = forwardRef<HTMLDivElement, SpaceProps>((props: SpaceProps, 
   );
 });
 
-Space.displayName = '@coengageui/core/Space';
+Space.displayName = 'coengageui_core/Space';

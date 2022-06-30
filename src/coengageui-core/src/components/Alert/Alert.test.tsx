@@ -1,7 +1,7 @@
 import React from 'react';
 import { render, screen } from '@testing-library/react';
 import userEvent from '@testing-library/user-event';
-import { checkAccessibility, itRendersChildren, itSupportsSystemProps } from '@coengageui/tests';
+import { checkAccessibility, itRendersChildren, itSupportsSystemProps } from 'coengageui_tests';
 import { Alert, AlertProps } from './Alert';
 
 const defaultProps: AlertProps = {
@@ -11,13 +11,13 @@ const defaultProps: AlertProps = {
   closeButtonLabel: 'test-close',
 };
 
-describe('@coengageui/core/Alert', () => {
+describe('coengageui_core/Alert', () => {
   itRendersChildren(Alert, defaultProps);
   checkAccessibility([<Alert {...defaultProps} />]);
   itSupportsSystemProps({
     component: Alert,
     props: defaultProps,
-    displayName: '@coengageui/core/Alert',
+    displayName: 'coengageui_core/Alert',
     refType: HTMLDivElement,
   });
 

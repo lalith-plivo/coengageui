@@ -1,6 +1,6 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
-import { DEFAULT_THEME, CoengageUIProvider } from '@coengageui/styles';
+import { DEFAULT_THEME, CoengageUIProvider } from 'coengageui_styles';
 import { Loader, LoaderProps } from './Loader';
 
 const getThemes = (props?: LoaderProps) =>

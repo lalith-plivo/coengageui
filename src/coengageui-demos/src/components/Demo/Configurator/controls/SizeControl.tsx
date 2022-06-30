@@ -1,6 +1,6 @@
 import React from 'react';
-import { Slider, InputWrapper } from '@coengageui/core';
-import { upperFirst } from '@coengageui/hooks';
+import { Slider, InputWrapper } from 'coengageui_core';
+import { upperFirst } from 'coengageui_hooks';
 
 const MARKS = [
   { value: 0, label: 'xs' },

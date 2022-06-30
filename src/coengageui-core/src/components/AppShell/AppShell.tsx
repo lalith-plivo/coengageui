@@ -6,7 +6,7 @@ import {
   CoengageUIStyleSystemSize,
   getDefaultZIndex,
   useCoengageUIDefaultProps,
-} from '@coengageui/styles';
+} from 'coengageui_styles';
 import { Box } from '../Box';
 import { AppShellProvider } from './AppShell.context';
 import useStyles from './AppShell.styles';
@@ -91,4 +91,4 @@ export const AppShell = forwardRef<HTMLDivElement, AppShellProps>((props: AppShe
   );
 });
 
-AppShell.displayName = '@coengageui/core/AppShell';
+AppShell.displayName = 'coengageui_core/AppShell';

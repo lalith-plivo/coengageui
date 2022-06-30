@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { SegmentedControl, SegmentedControlProps } from '@coengageui/core';
+import { SegmentedControl, SegmentedControlProps } from 'coengageui_core';
 
 const data = [
   { label: 'React', value: 'react' },

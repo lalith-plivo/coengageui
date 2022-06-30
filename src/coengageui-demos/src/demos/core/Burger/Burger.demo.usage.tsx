@@ -1,10 +1,10 @@
 import React from 'react';
-import { Group } from '@coengageui/core';
+import { Group } from 'coengageui_core';
 import { DemoBase } from './_base';
 
 const code = `
 import { useState } from 'react';
-import { Burger } from '@coengageui/core';
+import { Burger } from 'coengageui_core';
 
 function Demo() {
   const [opened, setOpened] = useState(false);

@@ -1,7 +1,7 @@
 import React from 'react';
 import { render, screen } from '@testing-library/react';
 import userEvent from '@testing-library/user-event';
-import { itSupportsClassName, checkAccessibility } from '@coengageui/tests';
+import { itSupportsClassName, checkAccessibility } from 'coengageui_tests';
 import { CalendarHeader, CalendarHeaderProps } from './CalendarHeader';
 
 const defaultProps: CalendarHeaderProps = {
@@ -14,7 +14,7 @@ const defaultProps: CalendarHeaderProps = {
 
 const LEVEL_ICON_SELECTOR = '.coengageui-CalendarHeader-calendarHeaderLevelIcon';
 
-describe('@coengageui/dates/CalendarHeader', () => {
+describe('coengageui_dates/CalendarHeader', () => {
   itSupportsClassName(CalendarHeader, defaultProps);
   checkAccessibility([<CalendarHeader {...defaultProps} />]);
 
@@ -82,6 +82,6 @@ describe('@coengageui/dates/CalendarHeader', () => {
   });
 
   it('has correct displayName', () => {
-    expect(CalendarHeader.displayName).toStrictEqual('@coengageui/dates/CalendarHeader');
+    expect(CalendarHeader.displayName).toStrictEqual('coengageui_dates/CalendarHeader');
   });
 });

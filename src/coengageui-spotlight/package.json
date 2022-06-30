@@ -1,7 +1,7 @@
 {
-  "name": "@coengageui/spotlight",
+  "name": "coengageui_spotlight",
   "description": "Command center for your application",
-  "version": "4.2.11",
+  "version": "0.0.1",
   "main": "cjs/index.js",
   "module": "esm/index.js",
   "types": "lib/index.d.ts",
@@ -15,8 +15,8 @@
     "directory": "src/coengageui-spotlight"
   },
   "peerDependencies": {
-    "@coengageui/core": "4.2.11",
-    "@coengageui/hooks": "4.2.11",
+    "coengageui_core": "0.0.1",
+    "coengageui_hooks": "0.0.1",
     "react": ">=16.8.0",
     "react-dom": ">=16.8.0"
   },

@@ -1,20 +1,20 @@
 ---
 group: 'coengageui-core'
-package: '@coengageui/core'
+package: 'coengageui_core'
 title: MediaQuery
 order: 1
 slug: /core/media-query/
 category: 'layout'
 description: 'Apply styles to children if media query matches'
 props: ['MediaQuery']
-import: "import { MediaQuery } from '@coengageui/core';"
+import: "import { MediaQuery } from 'coengageui_core';"
 source: 'coengageui-core/src/components/MediaQuery/MediaQuery.tsx'
 docs: 'core/MediaQuery.mdx'
 styles: ['MediaQuery', 'single-node']
 ---
 
-import { DEFAULT_THEME } from '@coengageui/core';
-import { MediaQueryDemos } from '@coengageui/demos';
+import { DEFAULT_THEME } from 'coengageui_core';
+import { MediaQueryDemos } from 'coengageui_demos';
 
 ## Usage
 
@@ -43,7 +43,7 @@ CoengageUI uses Bootstrap's breakpoint values as defaults:
 To change these values wrap your application with CoengageUIProvider and set `breakpoints` prop on theme:
 
 ```tsx
-import { CoengageUIProvider } from '@coengageui/core';
+import { CoengageUIProvider } from 'coengageui_core';
 
 function YourApp() {
   return (
@@ -85,7 +85,7 @@ not have correct styles:
 
 ```tsx
 // Invalid MediaQuery usage, do not do this
-import { MediaQuery } from '@coengageui/core';
+import { MediaQuery } from 'coengageui_core';
 
 function InvalidDemo() {
   return <MediaQuery>No styles applied</MediaQuery>;

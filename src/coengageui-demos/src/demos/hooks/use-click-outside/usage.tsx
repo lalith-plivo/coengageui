@@ -1,11 +1,11 @@
 import React, { useState } from 'react';
-import { Paper, Button, Group, useCoengageUITheme } from '@coengageui/core';
-import { useClickOutside } from '@coengageui/hooks';
+import { Paper, Button, Group, useCoengageUITheme } from 'coengageui_core';
+import { useClickOutside } from 'coengageui_hooks';
 
 const code = `
 import { useState } from 'react';
-import { Paper, Button } from '@coengageui/core';
-import { useClickOutside } from '@coengageui/hooks';
+import { Paper, Button } from 'coengageui_core';
+import { useClickOutside } from 'coengageui_hooks';
 
 function Demo() {
   const [opened, setOpened] = useState(false);

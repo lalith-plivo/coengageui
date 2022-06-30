@@ -6,7 +6,7 @@ import {
   itSupportsInputWrapperProps,
   itSupportsSystemProps,
   itFiltersChildren,
-} from '@coengageui/tests';
+} from 'coengageui_tests';
 import { CheckboxGroup, Checkbox, CheckboxGroupProps } from '../index';
 
 const defaultProps: CheckboxGroupProps = {
@@ -17,12 +17,12 @@ const defaultProps: CheckboxGroupProps = {
   ],
 };
 
-describe('@coengageui/core/CheckboxGroup', () => {
+describe('coengageui_core/CheckboxGroup', () => {
   itSupportsInputWrapperProps(CheckboxGroup, defaultProps, 'CheckboxGroup');
   itSupportsSystemProps({
     component: CheckboxGroup,
     props: defaultProps,
-    displayName: '@coengageui/core/CheckboxGroup',
+    displayName: 'coengageui_core/CheckboxGroup',
     excludeOthers: true,
     refType: HTMLDivElement,
   });

@@ -5,14 +5,14 @@ import {
   itSupportsOthers,
   itSupportsStyle,
   itSupportsRef,
-} from '@coengageui/tests';
+} from 'coengageui_tests';
 import { DefaultItem, SelectItemProps } from './DefaultItem';
 
 const defaultProps: SelectItemProps = {
   label: 'test',
 };
 
-describe('@coengageui/core/Autocomplete/DefaultItem', () => {
+describe('coengageui_core/Autocomplete/DefaultItem', () => {
   itSupportsClassName(DefaultItem, defaultProps);
   itSupportsOthers(DefaultItem, defaultProps);
   itSupportsStyle(DefaultItem, defaultProps);
@@ -29,6 +29,6 @@ describe('@coengageui/core/Autocomplete/DefaultItem', () => {
   });
 
   it('has correct displayName', () => {
-    expect(DefaultItem.displayName).toStrictEqual('@coengageui/core/DefaultItem');
+    expect(DefaultItem.displayName).toStrictEqual('coengageui_core/DefaultItem');
   });
 });

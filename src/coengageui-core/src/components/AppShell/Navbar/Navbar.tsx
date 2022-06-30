@@ -3,7 +3,7 @@ import {
   getDefaultZIndex,
   ForwardRefWithStaticComponents,
   useCoengageUIDefaultProps,
-} from '@coengageui/styles';
+} from 'coengageui_styles';
 import {
   HorizontalSection,
   HorizontalSectionSharedProps,
@@ -11,7 +11,7 @@ import {
 
 export interface NavbarProps
   extends HorizontalSectionSharedProps,
-    React.ComponentPropsWithRef<'nav'> {
+  React.ComponentPropsWithRef<'nav'> {
   /** Navbar content */
   children: React.ReactNode;
 }
@@ -37,4 +37,4 @@ export const Navbar: NavbarComponent = forwardRef<HTMLElement, NavbarProps>(
 ) as any;
 
 Navbar.Section = HorizontalSection.Section;
-Navbar.displayName = '@coengageui/core/Navbar';
+Navbar.displayName = 'coengageui_core/Navbar';

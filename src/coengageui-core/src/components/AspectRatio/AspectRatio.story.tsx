@@ -1,5 +1,5 @@
 import React from 'react';
-import { StylesAPIStory } from '@coengageui/storybook';
+import { StylesAPIStory } from 'coengageui_storybook';
 import { AspectRatio } from './AspectRatio';
 
 export default {

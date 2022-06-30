@@ -1,10 +1,10 @@
 import React, { useState } from 'react';
-import { LoadingOverlay, Button, Group, useCoengageUITheme, DEFAULT_THEME } from '@coengageui/core';
+import { LoadingOverlay, Button, Group, useCoengageUITheme, DEFAULT_THEME } from 'coengageui_core';
 import { AuthenticationForm } from '../../../shared/AuthenticationForm/AuthenticationForm';
 import { demoBase } from './_demo-base';
 
 const code = `
-import { DEFAULT_THEME, LoadingOverlay } from '@coengageui/core';
+import { DEFAULT_THEME, LoadingOverlay } from 'coengageui_core';
 
 const customLoader = (
   <svg

@@ -1,5 +1,5 @@
 import React from 'react';
-import { Title, Text } from '@coengageui/core';
+import { Title, Text } from 'coengageui_core';
 import { MarkGithubIcon, PencilIcon, LawIcon, CalendarIcon } from '@primer/octicons-react';
 import { ImportStatement } from './ImportStatement/ImportStatement';
 import { NpmIcon } from './NpmIcon';
@@ -78,10 +78,10 @@ export function MdxPageHeader({ frontmatter }: MdxPageProps) {
             icon={<NpmIcon />}
             link={`https://www.npmjs.com/package/${frontmatter.package.replace(
               'coengageui-',
-              '@coengageui/'
+              'coengageui_'
             )}`}
           >
-            {frontmatter.package.replace('coengageui-', '@coengageui/')}
+            {frontmatter.package.replace('coengageui-', 'coengageui_')}
           </LinkItem>
         )}
 

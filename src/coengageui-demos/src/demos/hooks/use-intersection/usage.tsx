@@ -1,11 +1,11 @@
 import React, { useRef } from 'react';
-import { useIntersection } from '@coengageui/hooks';
-import { Text, Paper, useCoengageUITheme } from '@coengageui/core';
+import { useIntersection } from 'coengageui_hooks';
+import { Text, Paper, useCoengageUITheme } from 'coengageui_core';
 
 const code = `
 import { useRef } from 'react';
-import { useIntersection } from '@coengageui/hooks';
-import { Paper, Text, useCoengageUITheme } from '@coengageui/core';
+import { useIntersection } from 'coengageui_hooks';
+import { Paper, Text, useCoengageUITheme } from 'coengageui_core';
 
 function Demo() {
   const containerRef = useRef();

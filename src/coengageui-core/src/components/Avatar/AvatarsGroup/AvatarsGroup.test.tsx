@@ -1,6 +1,6 @@
 import React from 'react';
 import { render } from '@testing-library/react';
-import { itSupportsSystemProps } from '@coengageui/tests';
+import { itSupportsSystemProps } from 'coengageui_tests';
 import { AvatarsGroup, AvatarsGroupProps } from './AvatarsGroup';
 import { Avatar } from '../Avatar';
 
@@ -8,11 +8,11 @@ const defaultProps: AvatarsGroupProps = {
   children: [<Avatar>M</Avatar>, <Avatar>K</Avatar>, <Avatar>L</Avatar>, <Avatar>L</Avatar>],
 };
 
-describe('@coengageui/core/AvatarsGroup', () => {
+describe('coengageui_core/AvatarsGroup', () => {
   itSupportsSystemProps({
     component: AvatarsGroup,
     props: defaultProps,
-    displayName: '@coengageui/core/AvatarsGroup',
+    displayName: 'coengageui_core/AvatarsGroup',
     refType: HTMLDivElement,
   });
 

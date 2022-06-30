@@ -1,6 +1,6 @@
 import React, { useRef, useState } from 'react';
-import { DefaultProps, Selectors, CoengageUINumberSize } from '@coengageui/styles';
-import { useScrollIntoView } from '@coengageui/hooks';
+import { DefaultProps, Selectors, CoengageUINumberSize } from 'coengageui_styles';
+import { useScrollIntoView } from 'coengageui_hooks';
 import { SelectScrollArea } from '../../Select/SelectScrollArea/SelectScrollArea';
 import { UnstyledButton } from '../../Button';
 import { ActionIcon } from '../../ActionIcon';
@@ -251,4 +251,4 @@ export function RenderList({
   );
 }
 
-RenderList.displayName = '@coengageui/core/RenderList';
+RenderList.displayName = 'coengageui_core/RenderList';

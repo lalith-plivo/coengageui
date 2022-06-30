@@ -1,12 +1,12 @@
 import React, { useRef, useState, forwardRef, useEffect } from 'react';
-import { useMove, useUncontrolled, useMergedRef } from '@coengageui/hooks';
+import { useMove, useUncontrolled, useMergedRef } from 'coengageui_hooks';
 import {
   DefaultProps,
   CoengageUINumberSize,
   CoengageUIColor,
   useCoengageUITheme,
   useCoengageUIDefaultProps,
-} from '@coengageui/styles';
+} from 'coengageui_styles';
 import { CoengageUITransition } from '../../Transition';
 import { getClientPosition } from '../utils/get-client-position/get-client-position';
 import { getPosition } from '../utils/get-position/get-position';
@@ -26,7 +26,7 @@ type Value = [number, number];
 
 export interface RangeSliderProps
   extends DefaultProps<RangeSliderStylesNames>,
-    Omit<React.ComponentPropsWithoutRef<'div'>, 'value' | 'onChange' | 'defaultValue'> {
+  Omit<React.ComponentPropsWithoutRef<'div'>, 'value' | 'onChange' | 'defaultValue'> {
   /** Color from theme.colors */
   color?: CoengageUIColor;
 
@@ -445,4 +445,4 @@ export const RangeSlider = forwardRef<HTMLDivElement, RangeSliderProps>(
   }
 );
 
-RangeSlider.displayName = '@coengageui/core/RangeSlider';
+RangeSlider.displayName = 'coengageui_core/RangeSlider';

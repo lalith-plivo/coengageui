@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Modal, Group, Button } from '@coengageui/core';
+import { Modal, Group, Button } from 'coengageui_core';
 import { AuthenticationForm } from '../../../shared/AuthenticationForm/AuthenticationForm';
 
 const SIZES = ['xs', 'sm', 'md', 'lg', 'xl', 'full', 322, '70%'];

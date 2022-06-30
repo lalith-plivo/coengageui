@@ -1,6 +1,6 @@
 import { highlighter } from './highlighter';
 
-describe('@coengageui/core/Highlight/highlighter', () => {
+describe('coengageui_core/Highlight/highlighter', () => {
   const VALUE = 'Hello, World';
 
   it('highlights start of string', () => {

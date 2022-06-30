@@ -1,4 +1,4 @@
-import { createStyles } from '@coengageui/styles';
+import { createStyles } from 'coengageui_styles';
 
 export default createStyles((theme) => ({
   root: {
@@ -10,11 +10,9 @@ export default createStyles((theme) => ({
     color: theme.colorScheme === 'dark' ? theme.colors.dark[0] : theme.colors.gray[7],
     padding: `3px ${theme.spacing.xs / 2}px`,
     borderRadius: theme.radius.sm,
-    border: `1px solid ${
-      theme.colorScheme === 'dark' ? theme.colors.dark[9] : theme.colors.gray[3]
-    }`,
-    borderBottom: `3px solid ${
-      theme.colorScheme === 'dark' ? theme.colors.dark[9] : theme.colors.gray[3]
-    }`,
+    border: `1px solid ${theme.colorScheme === 'dark' ? theme.colors.dark[9] : theme.colors.gray[3]
+      }`,
+    borderBottom: `3px solid ${theme.colorScheme === 'dark' ? theme.colors.dark[9] : theme.colors.gray[3]
+      }`,
   },
 }));

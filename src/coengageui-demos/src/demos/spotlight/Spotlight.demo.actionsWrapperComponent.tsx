@@ -1,11 +1,11 @@
 import React from 'react';
 import { Search } from 'tabler-icons-react';
-import { Group, Text, Anchor } from '@coengageui/core';
+import { Group, Text, Anchor } from 'coengageui_core';
 import { Wrapper } from './_wrapper';
 
 const code = `
-import { SpotlightProvider } from '@coengageui/spotlight';
-import { Group, Text, Anchor } from '@coengageui/core';
+import { SpotlightProvider } from 'coengageui_spotlight';
+import { Group, Text, Anchor } from 'coengageui_core';
 
 function ActionsWrapper({ children }: { children: React.ReactNode }) {
   return (
@@ -55,9 +55,8 @@ function ActionsWrapper({ children }: { children: React.ReactNode }) {
         px={15}
         py="xs"
         sx={(theme) => ({
-          borderTop: `1px solid ${
-            theme.colorScheme === 'dark' ? theme.colors.dark[4] : theme.colors.gray[2]
-          }`,
+          borderTop: `1px solid ${theme.colorScheme === 'dark' ? theme.colors.dark[4] : theme.colors.gray[2]
+            }`,
         })}
       >
         <Text size="xs" color="dimmed">

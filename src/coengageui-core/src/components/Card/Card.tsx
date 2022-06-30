@@ -3,7 +3,7 @@ import {
   PolymorphicComponentProps,
   PolymorphicRef,
   useCoengageUIDefaultProps,
-} from '@coengageui/styles';
+} from 'coengageui_styles';
 import { Paper, SharedPaperProps } from '../Paper/Paper';
 import { CardSection } from './CardSection/CardSection';
 import useStyles from './Card.styles';
@@ -59,4 +59,4 @@ export const Card: CardComponent = forwardRef(
 ) as any;
 
 Card.Section = CardSection;
-Card.displayName = '@coengageui/core/Card';
+Card.displayName = 'coengageui_core/Card';

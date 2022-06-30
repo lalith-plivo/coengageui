@@ -1,11 +1,11 @@
 import React from 'react';
-import { useScrollLock } from '@coengageui/hooks';
+import { useScrollLock } from 'coengageui_hooks';
 import { LockClosedIcon, LockOpen2Icon } from '@modulz/radix-icons';
-import { Group, Button } from '@coengageui/core';
+import { Group, Button } from 'coengageui_core';
 
 const code = `
-import { useScrollLock } from '@coengageui/hooks';
-import { Button, Group } from '@coengageui/core';
+import { useScrollLock } from 'coengageui_hooks';
+import { Button, Group } from 'coengageui_core';
 import { LockClosedIcon, LockOpen2Icon } from '@modulz/radix-icons';
 
 function Demo() {

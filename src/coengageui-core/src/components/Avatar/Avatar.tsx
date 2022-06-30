@@ -7,7 +7,7 @@ import {
   PolymorphicComponentProps,
   PolymorphicRef,
   useCoengageUIDefaultProps,
-} from '@coengageui/styles';
+} from 'coengageui_styles';
 import { Box } from '../Box';
 import { AvatarPlaceholderIcon } from './AvatarPlaceholderIcon';
 import useStyles from './Avatar.styles';
@@ -99,4 +99,4 @@ export const Avatar: AvatarComponent = forwardRef(
   }
 ) as any;
 
-Avatar.displayName = '@coengageui/core/Avatar';
+Avatar.displayName = 'coengageui_core/Avatar';

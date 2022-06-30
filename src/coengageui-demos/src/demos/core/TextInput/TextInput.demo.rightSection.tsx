@@ -1,8 +1,8 @@
 import React from 'react';
-import { TextInput, Loader } from '@coengageui/core';
+import { TextInput, Loader } from 'coengageui_core';
 
 const code = `
-import { TextInput, Loader } from '@coengageui/core';
+import { TextInput, Loader } from 'coengageui_core';
 
 function Demo() {
   return <TextInput label="Your email" placeholder="Your email" rightSection={<Loader size="xs" />} />;

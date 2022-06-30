@@ -1,13 +1,13 @@
-import { itSupportsSystemProps } from '@coengageui/tests';
+import { itSupportsSystemProps } from 'coengageui_tests';
 import { Table, TableProps } from './Table';
 
 const defaultProps: TableProps = {};
 
-describe('@coengageui/core/Table', () => {
+describe('coengageui_core/Table', () => {
   itSupportsSystemProps({
     component: Table,
     props: defaultProps,
-    displayName: '@coengageui/core/Table',
+    displayName: 'coengageui_core/Table',
     refType: HTMLTableElement,
   });
 });

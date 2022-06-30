@@ -1,10 +1,10 @@
 import React from 'react';
-import { itSupportsSystemProps } from '@coengageui/tests';
+import { itSupportsSystemProps } from 'coengageui_tests';
 import { Popover, PopoverProps } from './Popover';
 
 const defaultProps: PopoverProps = {
   opened: true,
-  onClose: () => {},
+  onClose: () => { },
   withinPortal: false,
   target: <div>target</div>,
   children: 'test-content',
@@ -12,10 +12,10 @@ const defaultProps: PopoverProps = {
   transitionDuration: 0,
 };
 
-describe('@coengageui/core/Popover', () => {
+describe('coengageui_core/Popover', () => {
   itSupportsSystemProps({
     component: Popover,
     props: defaultProps,
-    displayName: '@coengageui/core/Popover',
+    displayName: 'coengageui_core/Popover',
   });
 });

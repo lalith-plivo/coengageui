@@ -1,4 +1,4 @@
-import { createStyles, CoengageUISize } from '@coengageui/core';
+import { createStyles, CoengageUISize } from 'coengageui_core';
 import { sizes as DAY_SIZES } from '../Month/Day/Day.styles';
 
 interface CalendarBaseStyles {

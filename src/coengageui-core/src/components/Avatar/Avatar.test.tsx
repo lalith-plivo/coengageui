@@ -1,13 +1,13 @@
 import React from 'react';
 import { render, screen } from '@testing-library/react';
-import { checkAccessibility, itIsPolymorphic, itSupportsSystemProps } from '@coengageui/tests';
+import { checkAccessibility, itIsPolymorphic, itSupportsSystemProps } from 'coengageui_tests';
 import { Avatar, AvatarProps } from './Avatar';
 
 const defaultProps: AvatarProps<'div'> = {
   src: './test-image',
 };
 
-describe('@coengageui/core/Avatar', () => {
+describe('coengageui_core/Avatar', () => {
   itIsPolymorphic(Avatar, defaultProps);
   checkAccessibility([
     <Avatar {...defaultProps} alt="It's me!" />,
@@ -17,7 +17,7 @@ describe('@coengageui/core/Avatar', () => {
   itSupportsSystemProps({
     component: Avatar,
     props: defaultProps,
-    displayName: '@coengageui/core/Avatar',
+    displayName: 'coengageui_core/Avatar',
     refType: HTMLDivElement,
   });
 

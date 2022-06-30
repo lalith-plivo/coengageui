@@ -18,14 +18,14 @@ const defaultProps: SelectItemsProps = {
   isItemSelected: () => false,
   uuid: 'test-id',
   itemsRefs: { current: {} } as any,
-  onItemHover: () => {},
-  onItemSelect: () => {},
+  onItemHover: () => { },
+  onItemSelect: () => { },
   size: 'sm' as const,
   itemComponent: DefaultItem,
   nothingFound: 'test-nothing',
 };
 
-describe('@coengageui/core/Select/SelectItems', () => {
+describe('coengageui_core/Select/SelectItems', () => {
   it('renders nothing found message if data array is empty', () => {
     const { container: withData } = render(<SelectItems {...defaultProps} data={data} />);
     const { container: withoutData } = render(
@@ -80,6 +80,6 @@ describe('@coengageui/core/Select/SelectItems', () => {
   });
 
   it('has correct displayName', () => {
-    expect(SelectItems.displayName).toStrictEqual('@coengageui/core/SelectItems');
+    expect(SelectItems.displayName).toStrictEqual('coengageui_core/SelectItems');
   });
 });

@@ -1,10 +1,10 @@
 import React from 'react';
-import { Group, Badge } from '@coengageui/core';
-import { useIdle } from '@coengageui/hooks';
+import { Group, Badge } from 'coengageui_core';
+import { useIdle } from 'coengageui_hooks';
 
 const initialStateCode = `
-import { Badge } from '@coengageui/core';
-import { useIdle } from '@coengageui/hooks';
+import { Badge } from 'coengageui_core';
+import { useIdle } from 'coengageui_hooks';
 
 function Demo() {
   const idle = useIdle(2000, { initialState: false });

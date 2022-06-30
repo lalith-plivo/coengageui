@@ -1,17 +1,17 @@
 import React from 'react';
 import { render } from '@testing-library/react';
-import { itRendersChildren, itIsPolymorphic, itSupportsSystemProps } from '@coengageui/tests';
+import { itRendersChildren, itIsPolymorphic, itSupportsSystemProps } from 'coengageui_tests';
 import { Badge, BadgeProps } from './Badge';
 
 const defaultProps: BadgeProps<'div'> = {};
 
-describe('@coengageui/core/Badge', () => {
+describe('coengageui_core/Badge', () => {
   itRendersChildren(Badge, defaultProps);
   itIsPolymorphic(Badge, defaultProps);
   itSupportsSystemProps({
     component: Badge,
     props: defaultProps,
-    displayName: '@coengageui/core/Badge',
+    displayName: 'coengageui_core/Badge',
     refType: HTMLDivElement,
   });
 

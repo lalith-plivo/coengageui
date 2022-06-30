@@ -1,7 +1,7 @@
 import dayjs from 'dayjs';
 import React, { useState, useRef, forwardRef } from 'react';
-import { useUncontrolled, useMergedRef, upperFirst } from '@coengageui/hooks';
-import { useCoengageUITheme, useCoengageUIDefaultProps } from '@coengageui/core';
+import { useUncontrolled, useMergedRef, upperFirst } from 'coengageui_hooks';
+import { useCoengageUITheme, useCoengageUIDefaultProps } from 'coengageui_core';
 import { FirstDayOfWeek } from '../../types';
 import { CalendarSharedProps } from '../CalendarBase/CalendarBase';
 import { RangeCalendar } from '../RangeCalendar/RangeCalendar';
@@ -9,10 +9,10 @@ import { DatePickerBase, DatePickerBaseSharedProps } from '../DatePickerBase/Dat
 
 export interface DateRangePickerProps
   extends Omit<DatePickerBaseSharedProps, 'value' | 'onChange' | 'fixOnBlur'>,
-    Omit<
-      CalendarSharedProps,
-      'size' | 'styles' | 'classNames' | 'value' | 'onChange' | 'onMonthChange'
-    > {
+  Omit<
+  CalendarSharedProps,
+  'size' | 'styles' | 'classNames' | 'value' | 'onChange' | 'onMonthChange'
+  > {
   /** Selected date, required with controlled input */
   value?: [Date | null, Date | null];
 
@@ -226,4 +226,4 @@ export const DateRangePicker = forwardRef<HTMLInputElement, DateRangePickerProps
   }
 );
 
-DateRangePicker.displayName = '@coengageui/dates/DateRangePicker';
+DateRangePicker.displayName = 'coengageui_dates/DateRangePicker';

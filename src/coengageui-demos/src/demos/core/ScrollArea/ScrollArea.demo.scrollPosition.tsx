@@ -1,10 +1,10 @@
 import React, { useState } from 'react';
-import { Group, Code, Text, ScrollArea } from '@coengageui/core';
+import { Group, Code, Text, ScrollArea } from 'coengageui_core';
 import { Content } from './_content';
 
 const code = `
 import { useState } from 'react';
-import { Text, ScrollArea, Code } from '@coengageui/core';
+import { Text, ScrollArea, Code } from 'coengageui_core';
 
 function Demo() {
   const [scrollPosition, onScrollPositionChange] = useState({ x: 0, y: 0 });

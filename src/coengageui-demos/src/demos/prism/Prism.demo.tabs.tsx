@@ -1,5 +1,5 @@
 import React from 'react';
-import { Prism } from '@coengageui/prism';
+import { Prism } from 'coengageui_prism';
 import { py, css } from './Prism.demo.languages';
 import { demoCode } from './Prism.demo.usage';
 
@@ -45,7 +45,7 @@ function TsIcon(props: React.ComponentProps<'svg'>) {
 }
 
 const code = `
-import { Prism } from '@coengageui/prism';
+import { Prism } from 'coengageui_prism';
 
 function CSSIcon(props: React.ComponentProps<'svg'>) {
   return (

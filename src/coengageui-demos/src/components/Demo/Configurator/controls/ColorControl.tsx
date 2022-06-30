@@ -1,6 +1,6 @@
 import React from 'react';
-import { Group, InputWrapper, useCoengageUITheme, ColorSwatch } from '@coengageui/core';
-import { upperFirst } from '@coengageui/hooks';
+import { Group, InputWrapper, useCoengageUITheme, ColorSwatch } from 'coengageui_core';
+import { upperFirst } from 'coengageui_hooks';
 import { CheckIcon } from '@modulz/radix-icons';
 
 interface ColorControlProps {

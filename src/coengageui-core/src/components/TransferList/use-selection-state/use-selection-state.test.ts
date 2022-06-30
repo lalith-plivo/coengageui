@@ -1,7 +1,7 @@
 import { renderHook, act } from '@testing-library/react-hooks';
 import { useSelectionState } from './use-selection-state';
 
-describe('@coengageui/core/TransferList/use-selection-state', () => {
+describe('coengageui_core/TransferList/use-selection-state', () => {
   it('sets correct selection for string value', () => {
     const hook = renderHook(() => useSelectionState());
 

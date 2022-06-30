@@ -1,9 +1,9 @@
 import React from 'react';
 import { Calendar } from 'tabler-icons-react';
-import { DatePicker } from '@coengageui/dates';
+import { DatePicker } from 'coengageui_dates';
 
 const code = `
-import { DatePicker } from '@coengageui/dates';
+import { DatePicker } from 'coengageui_dates';
 import { Calendar } from 'tabler-icons-react';
 
 function Demo() {

@@ -1,5 +1,5 @@
 import React from 'react';
-import { useCoengageUITheme, Container, Box } from '@coengageui/core';
+import { useCoengageUITheme, Container, Box } from 'coengageui_core';
 import Head from '../Head/Head';
 import { Jumbotron } from './Jumbotron/Jumbotron';
 import { Footer } from '../Footer/Footer';

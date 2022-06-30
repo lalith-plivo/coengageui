@@ -1,18 +1,18 @@
 ---
 group: 'coengageui-dates'
-package: '@coengageui/dates'
+package: 'coengageui_dates'
 title: Calendar
 order: 1
 slug: /dates/calendar/
 description: 'Display inline calendar to pick single date or dates range'
 props: ['Calendar', 'RangeCalendar']
-import: "import { Calendar, RangeCalendar } from '@coengageui/dates';"
+import: "import { Calendar, RangeCalendar } from 'coengageui_dates';"
 source: 'coengageui-dates/src/components/Calendar/Calendar.tsx'
 docs: 'dates/Calendar.mdx'
 styles: ['Calendar', 'RangeCalendar']
 ---
 
-import { CalendarDemos, RangeCalendarDemos } from '@coengageui/demos';
+import { CalendarDemos, RangeCalendarDemos } from 'coengageui_demos';
 
 ## Usage
 
@@ -43,7 +43,7 @@ Control month that is currently displayed with `month` and `onMonthChange` props
 
 ```tsx
 import { useState } from 'react';
-import { Calendar } from '@coengageui/dates';
+import { Calendar } from 'coengageui_dates';
 
 function Demo() {
   const [month, onMonthChange] = useState(new Date());
@@ -66,7 +66,7 @@ To disable that, set `allowLevelChange` prop to false:
 
 ## Localization
 
-All @coengageui/dates components are built with [dayjs](https://day.js.org/) library.
+All coengageui_dates components are built with [dayjs](https://day.js.org/) library.
 Default locale is `en`, to change this follow [dayjs localization guide](https://day.js.org/docs/en/i18n/loading-into-nodejs):
 
 ```tsx

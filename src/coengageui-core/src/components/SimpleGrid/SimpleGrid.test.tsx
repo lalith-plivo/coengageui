@@ -1,5 +1,5 @@
 import React from 'react';
-import { itRendersChildren, itSupportsSystemProps } from '@coengageui/tests';
+import { itRendersChildren, itSupportsSystemProps } from 'coengageui_tests';
 import { SimpleGrid, SimpleGridProps } from './SimpleGrid';
 
 const defaultProps: SimpleGridProps = {
@@ -7,12 +7,12 @@ const defaultProps: SimpleGridProps = {
   children: <span>test</span>,
 };
 
-describe('@coengageui/core/SimpleGrid', () => {
+describe('coengageui_core/SimpleGrid', () => {
   itRendersChildren(SimpleGrid, defaultProps);
   itSupportsSystemProps({
     component: SimpleGrid,
     props: defaultProps,
-    displayName: '@coengageui/core/SimpleGrid',
+    displayName: 'coengageui_core/SimpleGrid',
     refType: HTMLDivElement,
   });
 });

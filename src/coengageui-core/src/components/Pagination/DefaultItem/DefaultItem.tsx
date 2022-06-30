@@ -1,5 +1,5 @@
 import React from 'react';
-import { useCoengageUITheme } from '@coengageui/styles';
+import { useCoengageUITheme } from 'coengageui_styles';
 import * as _icons from '../icons';
 
 export interface PaginationItemProps extends React.ComponentPropsWithoutRef<'button'> {
@@ -36,4 +36,4 @@ export function DefaultItem({ page, active, onClick, ...others }: PaginationItem
   );
 }
 
-DefaultItem.displayName = '@coengageui/core/Pagination/DefaultItem';
+DefaultItem.displayName = 'coengageui_core/Pagination/DefaultItem';

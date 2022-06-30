@@ -1,6 +1,6 @@
 import React from 'react';
 import { Photo } from 'tabler-icons-react';
-import { ThemeIcon, ThemeIconProps } from '@coengageui/core';
+import { ThemeIcon, ThemeIconProps } from 'coengageui_core';
 
 const iconSizes = {
   xs: 10,
@@ -21,7 +21,7 @@ function Wrapper(props: ThemeIconProps) {
 }
 
 const codeTemplate = (props: string) => `
-import { ThemeIcon } from '@coengageui/core';
+import { ThemeIcon } from 'coengageui_core';
 import { Photo } from 'tabler-icons-react';
 
 function Demo() {

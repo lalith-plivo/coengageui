@@ -1,11 +1,11 @@
 import React from 'react';
-import { Code } from '@coengageui/core';
+import { Code } from 'coengageui_core';
 
 const code = `
-import { Code } from '@coengageui/core';
+import { Code } from 'coengageui_core';
 
 const codeForPreviousDemo = \`import React from 'react';
-import { Code } from '@coengageui/core';
+import { Code } from 'coengageui_core';
 
 function Demo() {
   return <Code>React.createElement()</Code>;
@@ -17,7 +17,7 @@ function Demo() {
 `;
 
 const codeForPreviousDemo = `import React from 'react';
-import { Code } from '@coengageui/core';
+import { Code } from 'coengageui_core';
 
 function Demo() {
   return <Code>React.createElement()</Code>;

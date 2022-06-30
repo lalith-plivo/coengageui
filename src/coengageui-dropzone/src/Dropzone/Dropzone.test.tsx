@@ -1,18 +1,18 @@
 import React from 'react';
 import { render } from '@testing-library/react';
-import { itSupportsSystemProps } from '@coengageui/tests';
+import { itSupportsSystemProps } from 'coengageui_tests';
 import { Dropzone, DropzoneProps } from './Dropzone';
 
 const defaultProps: DropzoneProps = {
-  onDrop: () => {},
+  onDrop: () => { },
   children: () => null,
 };
 
-describe('@coengageui/dropzone/Dropzone', () => {
+describe('coengageui_dropzone/Dropzone', () => {
   itSupportsSystemProps({
     component: Dropzone,
     props: defaultProps,
-    displayName: '@coengageui/dropzone/Dropzone',
+    displayName: 'coengageui_dropzone/Dropzone',
     refType: HTMLDivElement,
   });
 

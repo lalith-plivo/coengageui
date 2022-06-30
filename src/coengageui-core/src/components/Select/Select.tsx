@@ -5,7 +5,7 @@ import {
   useDidUpdate,
   useScrollIntoView,
   useUuid,
-} from '@coengageui/hooks';
+} from 'coengageui_hooks';
 import {
   DefaultProps,
   CoengageUISize,
@@ -13,7 +13,7 @@ import {
   extractSystemStyles,
   getDefaultZIndex,
   useCoengageUIDefaultProps,
-} from '@coengageui/styles';
+} from 'coengageui_styles';
 import { SelectScrollArea } from './SelectScrollArea/SelectScrollArea';
 import { InputWrapper } from '../InputWrapper';
 import { Input } from '../Input';
@@ -94,8 +94,8 @@ export interface SelectSharedProps<Item, Value> {
 
 export interface SelectProps
   extends DefaultProps<BaseSelectStylesNames>,
-    BaseSelectProps,
-    SelectSharedProps<SelectItem, string | null> {
+  BaseSelectProps,
+  SelectSharedProps<SelectItem, string | null> {
   /** Maximum dropdown height in px */
   maxDropdownHeight?: number;
 
@@ -669,4 +669,4 @@ export const Select = forwardRef<HTMLInputElement, SelectProps>((props: SelectPr
   );
 });
 
-Select.displayName = '@coengageui/core/Select';
+Select.displayName = 'coengageui_core/Select';

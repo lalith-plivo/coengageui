@@ -6,12 +6,12 @@ order: 3
 search: 'Media queries, breakpoints, inline responsive styles'
 ---
 
-import { DEFAULT_THEME } from '@coengageui/core';
-import { MediaQueryDemos, CreateStylesDemos } from '@coengageui/demos';
+import { DEFAULT_THEME } from 'coengageui_core';
+import { MediaQueryDemos, CreateStylesDemos } from 'coengageui_demos';
 
 # Responsive styles
 
-`@coengageui/core` package exports several components that can help you organize responsive styles without writing CSS.
+`coengageui_core` package exports several components that can help you organize responsive styles without writing CSS.
 Note that in most cases that are not covered in this guide, the best way to make your app responsive is to
 add styles with [createStyles](/theming/create-styles/) function.
 
@@ -21,7 +21,7 @@ add styles with [createStyles](/theming/create-styles/) function.
 You can configure these values with [CoengageUIProvider](/theming/coengageui-provider/):
 
 ```tsx
-import { CoengageUIProvider } from '@coengageui/core';
+import { CoengageUIProvider } from 'coengageui_core';
 
 function App() {
   return (
@@ -89,8 +89,8 @@ The approach with [MediaQuery](/core/media-query/) component will work with SSR.
 the more cleaner way to change size is to use [use-media-query](/hooks/use-media-query/) hook:
 
 ```tsx
-import { TextInput } from '@coengageui/core';
-import { useMediaQuery } from '@coengageui/hooks';
+import { TextInput } from 'coengageui_core';
+import { useMediaQuery } from 'coengageui_hooks';
 
 function Demo() {
   // Will always return false during ssr, use only when you do not have ssr
@@ -104,7 +104,7 @@ function Demo() {
 All CoengageUI components support `sx` prop with which you can add styles (including responsive styles) to root component element:
 
 ```tsx
-import { TextInput } from '@coengageui/core';
+import { TextInput } from 'coengageui_core';
 
 function Demo() {
   return (
@@ -127,7 +127,7 @@ If you want to add styles with `sx` prop to non-CoengageUI component, you can wr
 ```tsx
 // Example with react-router-dom Link
 import { Link } from 'react-router-dom';
-import { Box } from '@coengageui/core';
+import { Box } from 'coengageui_core';
 
 function Demo() {
   return (

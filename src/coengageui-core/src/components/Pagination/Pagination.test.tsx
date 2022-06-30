@@ -1,5 +1,5 @@
 import React from 'react';
-import { checkAccessibility, itSupportsSystemProps } from '@coengageui/tests';
+import { checkAccessibility, itSupportsSystemProps } from 'coengageui_tests';
 import { Pagination, PaginationProps } from './Pagination';
 
 const defaultProps: PaginationProps = {
@@ -7,12 +7,12 @@ const defaultProps: PaginationProps = {
   getItemAriaLabel: () => 'test-label',
 };
 
-describe('@coengageui/core/Pagination', () => {
+describe('coengageui_core/Pagination', () => {
   checkAccessibility([<Pagination {...defaultProps} />]);
   itSupportsSystemProps({
     component: Pagination,
     props: defaultProps,
-    displayName: '@coengageui/core/Pagination',
+    displayName: 'coengageui_core/Pagination',
     refType: HTMLDivElement,
   });
 });

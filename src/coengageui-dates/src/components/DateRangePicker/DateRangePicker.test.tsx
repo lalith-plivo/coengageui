@@ -1,23 +1,23 @@
 import 'dayjs/locale/ru';
 import React from 'react';
-import { CoengageUIProvider } from '@coengageui/core';
+import { CoengageUIProvider } from 'coengageui_core';
 import { render, screen } from '@testing-library/react';
 import {
   itSupportsSystemProps,
   itSupportsInputProps,
   itSupportsFocusEvents,
-} from '@coengageui/tests';
+} from 'coengageui_tests';
 import { DateRangePicker, DateRangePickerProps } from './DateRangePicker';
 
 const defaultProps: DateRangePickerProps = {};
 
-describe('@coengageui/dates/DateRangePicker', () => {
+describe('coengageui_dates/DateRangePicker', () => {
   itSupportsInputProps(DateRangePicker, defaultProps, 'DateRangePicker');
   itSupportsFocusEvents(DateRangePicker, defaultProps, 'input');
   itSupportsSystemProps({
     component: DateRangePicker,
     props: defaultProps,
-    displayName: '@coengageui/dates/DateRangePicker',
+    displayName: 'coengageui_dates/DateRangePicker',
     excludeOthers: true,
     refType: HTMLInputElement,
   });

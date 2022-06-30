@@ -1,8 +1,8 @@
 import React from 'react';
-import { Select } from '@coengageui/core';
+import { Select } from 'coengageui_core';
 
 const code = `
-import { Select } from '@coengageui/core';
+import { Select } from 'coengageui_core';
 
 function Demo() {
   return (

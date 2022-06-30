@@ -8,7 +8,7 @@ export function Notifications() {
       title="Notifications system"
       description="A fully featured notifications system integrates seamlessly with your CoengageUI theme."
       link="/others/notifications/"
-      label="Get started with @coengageui/notifications"
+      label="Get started with coengageui_notifications"
     >
       <NotificationsDemo />
     </Section>

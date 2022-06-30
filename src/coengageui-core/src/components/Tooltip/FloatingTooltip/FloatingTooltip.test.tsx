@@ -6,7 +6,7 @@ import {
   itSupportsSystemProps,
   renderWithAct,
   actAsync,
-} from '@coengageui/tests';
+} from 'coengageui_tests';
 import { FloatingTooltip, FloatingTooltipProps } from './FloatingTooltip';
 
 const defaultProps: FloatingTooltipProps = {
@@ -15,7 +15,7 @@ const defaultProps: FloatingTooltipProps = {
   transitionDuration: 0,
 };
 
-describe('@coengageui/core/FloatingTooltip', () => {
+describe('coengageui_core/FloatingTooltip', () => {
   afterEach(() => jest.useRealTimers());
 
   itRendersChildren(FloatingTooltip, defaultProps);
@@ -23,7 +23,7 @@ describe('@coengageui/core/FloatingTooltip', () => {
   itSupportsSystemProps({
     component: FloatingTooltip,
     props: defaultProps,
-    displayName: '@coengageui/core/FloatingTooltip',
+    displayName: 'coengageui_core/FloatingTooltip',
     refType: HTMLDivElement,
   });
 

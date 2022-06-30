@@ -1,10 +1,10 @@
 import React from 'react';
-import { useCoengageUITheme } from '@coengageui/core';
-import { DatePicker } from '@coengageui/dates';
+import { useCoengageUITheme } from 'coengageui_core';
+import { DatePicker } from 'coengageui_dates';
 
 const code = `
-import { useCoengageUITheme } from '@coengageui/core';
-import { DatePicker } from '@coengageui/dates';
+import { useCoengageUITheme } from 'coengageui_core';
+import { DatePicker } from 'coengageui_dates';
 
 function Demo() {
   const theme = useCoengageUITheme();

@@ -1,4 +1,4 @@
-import type { AvatarStylesNames, AvatarsGroupStylesNames } from '@coengageui/core';
+import type { AvatarStylesNames, AvatarsGroupStylesNames } from 'coengageui_core';
 
 export const AvatarsGroup: Record<AvatarsGroupStylesNames, string> = {
   root: 'Root element',

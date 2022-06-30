@@ -1,6 +1,6 @@
 import { clamp } from './clamp';
 
-describe('@coengageui/hooks/clamp', () => {
+describe('coengageui_hooks/clamp', () => {
   it('clamps given value', () => {
     expect(clamp({ value: 10, min: 0, max: 5 })).toBe(5);
     expect(clamp({ value: -10, min: 0, max: 5 })).toBe(0);

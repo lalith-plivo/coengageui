@@ -1,4 +1,4 @@
-import { createStyles, CoengageUISize } from '@coengageui/core';
+import { createStyles, CoengageUISize } from 'coengageui_core';
 
 interface YearPickerStyles {
   size: CoengageUISize;

@@ -5,10 +5,10 @@ import {
   Badge,
   CoengageUIProvider,
   useCoengageUIColorScheme,
-} from '@coengageui/core';
+} from 'coengageui_core';
 
 const code = `
-import { Badge, Button, CoengageUIProvider } from '@coengageui/core';
+import { Badge, Button, CoengageUIProvider } from 'coengageui_core';
 
 function Demo() {
   return (

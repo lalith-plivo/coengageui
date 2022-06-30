@@ -9,7 +9,7 @@ import {
   PolymorphicComponentProps,
   PolymorphicRef,
   useCoengageUIDefaultProps,
-} from '@coengageui/styles';
+} from 'coengageui_styles';
 import { Box } from '../Box';
 import useStyles, { ButtonVariant } from './Button.styles';
 import { Loader, LoaderProps } from '../Loader';
@@ -129,7 +129,7 @@ export const Button: ButtonComponent = forwardRef(
         type={type}
         disabled={disabled || loading}
         ref={ref}
-        onTouchStart={() => {}}
+        onTouchStart={() => { }}
         {...others}
       >
         <div className={classes.inner}>
@@ -157,4 +157,4 @@ export const Button: ButtonComponent = forwardRef(
   }
 ) as any;
 
-Button.displayName = '@coengageui/core/Button';
+Button.displayName = 'coengageui_core/Button';

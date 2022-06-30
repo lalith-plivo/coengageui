@@ -1,6 +1,6 @@
 import React from 'react';
 import { render } from '@testing-library/react';
-import { itRendersChildren, itSupportsSystemProps } from '@coengageui/tests';
+import { itRendersChildren, itSupportsSystemProps } from 'coengageui_tests';
 import { InputWrapper, InputWrapperProps } from './InputWrapper';
 
 const defaultProps: InputWrapperProps = {
@@ -20,12 +20,12 @@ const queries = {
     container.querySelector('.coengageui-InputWrapper-description'),
 };
 
-describe('@coengageui/core/InputWrapper', () => {
+describe('coengageui_core/InputWrapper', () => {
   itRendersChildren(InputWrapper, defaultProps);
   itSupportsSystemProps({
     component: InputWrapper,
     props: defaultProps,
-    displayName: '@coengageui/core/InputWrapper',
+    displayName: 'coengageui_core/InputWrapper',
     refType: HTMLDivElement,
   });
 

@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import { randomId } from '@coengageui/hooks';
+import { randomId } from 'coengageui_hooks';
 import type { SpotlightAction } from '../types';
 
 function prepareAction(action: SpotlightAction) {

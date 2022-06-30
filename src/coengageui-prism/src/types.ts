@@ -1,5 +1,5 @@
 import type { Language } from 'prism-react-renderer';
-import type { CoengageUIColor } from '@coengageui/core';
+import type { CoengageUIColor } from 'coengageui_core';
 
 export interface PrismSharedProps {
   /** Code which will be highlighted */

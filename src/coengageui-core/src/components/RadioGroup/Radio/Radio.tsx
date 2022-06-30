@@ -1,5 +1,5 @@
 import React, { forwardRef } from 'react';
-import { useUuid } from '@coengageui/hooks';
+import { useUuid } from 'coengageui_hooks';
 import {
   DefaultProps,
   CoengageUISize,
@@ -7,7 +7,7 @@ import {
   Selectors,
   extractSystemStyles,
   useCoengageUIDefaultProps,
-} from '@coengageui/styles';
+} from 'coengageui_styles';
 import { Box } from '../../Box';
 import { RadioIcon } from './RadioIcon';
 import useStyles from './Radio.styles';
@@ -16,7 +16,7 @@ export type RadioStylesNames = Exclude<Selectors<typeof useStyles>, 'labelDisabl
 
 export interface RadioProps
   extends DefaultProps<RadioStylesNames>,
-    Omit<React.ComponentPropsWithoutRef<'input'>, 'size'> {
+  Omit<React.ComponentPropsWithoutRef<'input'>, 'size'> {
   /** Radio label */
   label?: React.ReactNode;
 
@@ -100,4 +100,4 @@ export const Radio = forwardRef<HTMLInputElement, RadioProps>((props: RadioProps
   );
 });
 
-Radio.displayName = '@coengageui/core/Radio';
+Radio.displayName = 'coengageui_core/Radio';

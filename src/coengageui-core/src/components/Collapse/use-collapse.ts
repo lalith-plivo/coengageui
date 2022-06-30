@@ -1,6 +1,6 @@
 import React, { useState, useRef } from 'react';
 import { flushSync } from 'react-dom';
-import { useDidUpdate, useMergedRef } from '@coengageui/hooks';
+import { useDidUpdate, useMergedRef } from 'coengageui_hooks';
 
 function getAutoHeightDuration(height: number | string) {
   if (!height || typeof height === 'string') {
@@ -36,7 +36,7 @@ interface GetCollapseProps {
 export function useCollapse({
   transitionDuration,
   transitionTimingFunction = 'ease',
-  onTransitionEnd = () => {},
+  onTransitionEnd = () => { },
   opened,
 }: UseCollapse): (props: GetCollapseProps) => Record<string, any> {
   const el = useRef<HTMLElement | null>(null);

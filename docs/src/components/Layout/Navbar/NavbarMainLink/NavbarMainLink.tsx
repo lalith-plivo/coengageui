@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'gatsby';
-import { ThemeIcon, useCoengageUITheme } from '@coengageui/core';
+import { ThemeIcon, useCoengageUITheme } from 'coengageui_core';
 import useStyles from './NavbarMainLink.styles';
 
 interface NavbarMainLinkProps {

@@ -1,7 +1,7 @@
 import { fontStyles } from './font-styles';
 import { DEFAULT_THEME } from '../../../default-theme';
 
-describe('@coengageui/tss/get-font-styles', () => {
+describe('coengageui_tss/get-font-styles', () => {
   it('sets font-family from given theme', () => {
     expect(fontStyles(DEFAULT_THEME)().fontFamily).toBe(DEFAULT_THEME.fontFamily);
   });

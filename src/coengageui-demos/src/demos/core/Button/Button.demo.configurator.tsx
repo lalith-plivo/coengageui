@@ -1,5 +1,5 @@
 import React from 'react';
-import { Button, ButtonProps, Group } from '@coengageui/core';
+import { Button, ButtonProps, Group } from 'coengageui_core';
 
 function Wrapper(props: ButtonProps<'button'>) {
   return (
@@ -10,7 +10,7 @@ function Wrapper(props: ButtonProps<'button'>) {
 }
 
 const codeTemplate = (props: string, children: string) => `
-import { Button } from '@coengageui/core';
+import { Button } from 'coengageui_core';
 
 function Demo() {
   return (

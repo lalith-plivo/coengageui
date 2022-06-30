@@ -1,7 +1,7 @@
 import React from 'react';
-import { Table, Title, Text } from '@coengageui/core';
-import { Prism } from '@coengageui/prism';
-import * as STYLES_API from '@coengageui/styles-api';
+import { Table, Title, Text } from 'coengageui_core';
+import { Prism } from 'coengageui_prism';
+import * as STYLES_API from 'coengageui_styles-api';
 import { generateStylesCode, generateClassNamesCode } from '../generate-styles-code';
 import useStyles from './StylesApiItem.styles';
 

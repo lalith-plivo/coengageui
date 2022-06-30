@@ -1,12 +1,12 @@
 import React, { forwardRef } from 'react';
-import { useUuid } from '@coengageui/hooks';
+import { useUuid } from 'coengageui_hooks';
 import {
   DefaultProps,
   CoengageUISize,
   extractSystemStyles,
   useCoengageUITheme,
   useCoengageUIDefaultProps,
-} from '@coengageui/styles';
+} from 'coengageui_styles';
 import {
   InputWrapperBaseProps,
   InputWrapper,
@@ -20,9 +20,9 @@ export type NativeSelectStylesNames = InputStylesNames | InputWrapperStylesNames
 
 export interface NativeSelectProps
   extends DefaultProps<NativeSelectStylesNames>,
-    InputWrapperBaseProps,
-    InputBaseProps,
-    Omit<React.ComponentPropsWithoutRef<'select'>, 'size'> {
+  InputWrapperBaseProps,
+  InputBaseProps,
+  Omit<React.ComponentPropsWithoutRef<'select'>, 'size'> {
   /** id is used to bind input and label, if not passed unique id will be generated for each input */
   id?: string;
 
@@ -146,4 +146,4 @@ export const NativeSelect = forwardRef<HTMLSelectElement, NativeSelectProps>(
   }
 );
 
-NativeSelect.displayName = '@coengageui/core/NativeSelect';
+NativeSelect.displayName = 'coengageui_core/NativeSelect';

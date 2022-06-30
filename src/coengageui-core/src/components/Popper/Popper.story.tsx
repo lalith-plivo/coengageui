@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { storiesOf } from '@storybook/react';
-import { useCoengageUITheme } from '@coengageui/styles';
+import { useCoengageUITheme } from 'coengageui_styles';
 import { Group } from '../Group';
 import { Button } from '../Button';
 import { Paper } from '../Paper';

@@ -1,5 +1,5 @@
 import React from 'react';
-import { SimpleGrid, SimpleGridProps } from '@coengageui/core';
+import { SimpleGrid, SimpleGridProps } from 'coengageui_core';
 import { defaultItems } from './_Item';
 
 function Wrapper(props: SimpleGridProps) {
@@ -11,7 +11,7 @@ function Wrapper(props: SimpleGridProps) {
 }
 
 const codeTemplate = (props: string) => `
-import { SimpleGrid } from '@coengageui/core';
+import { SimpleGrid } from 'coengageui_core';
 
 function Demo() {
   return (

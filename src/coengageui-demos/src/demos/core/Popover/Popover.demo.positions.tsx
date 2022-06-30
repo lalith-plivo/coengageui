@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Popover, Badge, Group } from '@coengageui/core';
+import { Popover, Badge, Group } from 'coengageui_core';
 
 function Wrapper(
   props: Omit<
@@ -11,7 +11,7 @@ function Wrapper(
   return (
     <Popover
       opened={opened}
-      onClose={() => {}}
+      onClose={() => { }}
       placement={props.placement}
       position={props.position}
       transitionDuration={0}

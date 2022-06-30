@@ -5,19 +5,19 @@ import {
   itSupportsSystemProps,
   itSupportsInputProps,
   itSupportsFocusEvents,
-} from '@coengageui/tests';
+} from 'coengageui_tests';
 import { DatePicker, DatePickerProps } from './DatePicker';
 
 const defaultProps: DatePickerProps = {};
 
-describe('@coengageui/dates/DatePicker', () => {
+describe('coengageui_dates/DatePicker', () => {
   itSupportsInputProps(DatePicker, defaultProps, 'DatePicker');
   itSupportsFocusEvents(DatePicker, defaultProps, 'input');
   checkAccessibility([<DatePicker label="date picker" />]);
   itSupportsSystemProps({
     component: DatePicker,
     props: defaultProps,
-    displayName: '@coengageui/dates/DatePicker',
+    displayName: 'coengageui_dates/DatePicker',
     refType: HTMLInputElement,
     excludeOthers: true,
   });

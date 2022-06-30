@@ -1,5 +1,5 @@
 import React from 'react';
-import { Radio, RadioGroup, RadioProps } from '@coengageui/core';
+import { Radio, RadioGroup, RadioProps } from 'coengageui_core';
 
 const getSizes = (props?: RadioProps) =>
   (['xs', 'sm', 'md', 'lg', 'xl'] as const).map((size, index) => (

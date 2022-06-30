@@ -1,6 +1,6 @@
 import React from 'react';
 import { At } from 'tabler-icons-react';
-import { Input, InputProps } from '@coengageui/core';
+import { Input, InputProps } from 'coengageui_core';
 
 const iconSizes = {
   xs: 14,
@@ -15,7 +15,7 @@ function Wrapper(props: InputProps<'input'>) {
 }
 
 const codeTemplate = (props: string) => `
-import { Input } from '@coengageui/core';
+import { Input } from 'coengageui_core';
 import { At } from 'tabler-icons-react';
 
 function Demo() {

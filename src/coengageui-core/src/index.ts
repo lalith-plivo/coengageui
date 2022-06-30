@@ -1,4 +1,4 @@
-export * from '@coengageui/styles';
+export * from 'coengageui_styles';
 export * from './utils';
 
 export * from './components/Accordion';

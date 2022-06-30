@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Text, DEFAULT_THEME, AlphaSlider, AlphaSliderProps } from '@coengageui/core';
+import { Text, DEFAULT_THEME, AlphaSlider, AlphaSliderProps } from 'coengageui_core';
 
 function Wrapper(props: AlphaSliderProps) {
   const [value, onChange] = useState(1);
@@ -20,7 +20,7 @@ function Wrapper(props: AlphaSliderProps) {
 }
 
 const codeTemplate = (props: string) => `import { useState } from 'react';
-import { AlphaSlider, Text } from '@coengageui/core';
+import { AlphaSlider, Text } from 'coengageui_core';
 
 function Demo() {
   const [value, onChange] = useState(1);

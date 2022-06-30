@@ -1,4 +1,4 @@
-import { JsonInputStylesNames } from '@coengageui/core';
+import { JsonInputStylesNames } from 'coengageui_core';
 import { Input } from './Input.styles-api';
 import { InputWrapper } from './InputWrapper.styles-api';
 

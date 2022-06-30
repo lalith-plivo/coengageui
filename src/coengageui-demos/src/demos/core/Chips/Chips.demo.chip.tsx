@@ -1,9 +1,9 @@
 import React, { useState } from 'react';
-import { Group, Chip } from '@coengageui/core';
+import { Group, Chip } from 'coengageui_core';
 
 const code = `
 import { useState } from 'react';
-import { Chip } from '@coengageui/core';
+import { Chip } from 'coengageui_core';
 
 function Demo() {
   const [checked, setChecked] = useState(false);

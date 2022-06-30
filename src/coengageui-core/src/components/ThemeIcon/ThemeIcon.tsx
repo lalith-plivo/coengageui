@@ -5,7 +5,7 @@ import {
   CoengageUIGradient,
   CoengageUIColor,
   useCoengageUIDefaultProps,
-} from '@coengageui/styles';
+} from 'coengageui_styles';
 import { Box } from '../Box';
 import useStyles, { ThemeIconVariant } from './ThemeIcon.styles';
 
@@ -61,4 +61,4 @@ export const ThemeIcon = forwardRef<HTMLDivElement, ThemeIconProps>(
   }
 );
 
-ThemeIcon.displayName = '@coengageui/core/ThemeIcon';
+ThemeIcon.displayName = 'coengageui_core/ThemeIcon';

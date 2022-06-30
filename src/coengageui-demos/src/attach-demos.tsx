@@ -1,5 +1,5 @@
 import React from 'react';
-import { Container } from '@coengageui/core';
+import { Container } from 'coengageui_core';
 import { Demo } from './components/Demo/Demo';
 
 export function attachDemos(stories: any, demos: Record<string, CoengageUIDemo>) {

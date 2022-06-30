@@ -1,31 +1,31 @@
 ---
 group: 'coengageui-dates'
-package: '@coengageui/dates'
+package: 'coengageui_dates'
 title: Month
 order: 1
 slug: /dates/month/
 description: 'Most basic date related component, displays given month with optional weekdays row'
 props: ['Month']
-import: "import { Month } from '@coengageui/dates';"
+import: "import { Month } from 'coengageui_dates';"
 source: 'coengageui-dates/src/components/Month/Month.tsx'
 docs: 'dates/Month.mdx'
 styles: ['Month']
 ---
 
-import { MonthDemos } from '@coengageui/demos';
+import { MonthDemos } from 'coengageui_demos';
 
 ## Usage
 
-Month is the most basic @coengageui/dates component, it displays single month without any controls to change current month.
+Month is the most basic coengageui_dates component, it displays single month without any controls to change current month.
 Component is used as base for [Calendar](/dates/calendar/), [DatePicker](/dates/date-picker/)
-and other components. You can use Month to build custom date or date range pickers that are not included in @coengageui/dates
+and other components. You can use Month to build custom date or date range pickers that are not included in coengageui_dates
 but in most cases other components will be more suitable in your application.
 
 <Demo data={MonthDemos.usage} />
 
 ## Localization
 
-All @coengageui/dates components are built with [dayjs](https://day.js.org/) library.
+All coengageui_dates components are built with [dayjs](https://day.js.org/) library.
 Default locale is `en`, to change this follow [dayjs localization guide](https://day.js.org/docs/en/i18n/loading-into-nodejs):
 
 ```tsx

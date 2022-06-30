@@ -1,8 +1,8 @@
 import React from 'react';
-import { Textarea } from '@coengageui/core';
+import { Textarea } from 'coengageui_core';
 
 const code = `
-import { Textarea } from '@coengageui/core';
+import { Textarea } from 'coengageui_core';
 
 function Demo() {
   return (

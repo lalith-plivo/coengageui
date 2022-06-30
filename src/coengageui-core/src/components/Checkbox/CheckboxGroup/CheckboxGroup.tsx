@@ -1,12 +1,12 @@
 import React, { cloneElement, forwardRef } from 'react';
-import { useUncontrolled } from '@coengageui/hooks';
+import { useUncontrolled } from 'coengageui_hooks';
 import {
   DefaultProps,
   CoengageUINumberSize,
   CoengageUISize,
   CoengageUIColor,
   useCoengageUIDefaultProps,
-} from '@coengageui/styles';
+} from 'coengageui_styles';
 import { filterChildrenByType } from '../../../utils';
 import {
   InputWrapper,
@@ -20,8 +20,8 @@ export type CheckboxGroupStylesNames = InputWrapperStylesNames | CheckboxStylesN
 
 export interface CheckboxGroupProps
   extends DefaultProps<CheckboxGroupStylesNames>,
-    InputWrapperBaseProps,
-    Omit<React.ComponentPropsWithoutRef<'div'>, 'onChange'> {
+  InputWrapperBaseProps,
+  Omit<React.ComponentPropsWithoutRef<'div'>, 'onChange'> {
   /** <Checkbox /> components only */
   children: React.ReactNode;
 
@@ -130,4 +130,4 @@ export const CheckboxGroup = forwardRef<HTMLDivElement, CheckboxGroupProps>(
   }
 );
 
-CheckboxGroup.displayName = '@coengageui/core/CheckboxGroup';
+CheckboxGroup.displayName = 'coengageui_core/CheckboxGroup';

@@ -1,6 +1,6 @@
 import { isOutside } from './is-outside';
 
-describe('@coengageui/dates/Day/is-outside', () => {
+describe('coengageui_dates/Day/is-outside', () => {
   it('detects dates that are outside of given month', () => {
     expect(isOutside(new Date(2021, 0, 30), new Date(2021, 1, 1))).toBe(true);
     expect(isOutside(new Date(2021, 2, 1), new Date(2021, 1, 1))).toBe(true);

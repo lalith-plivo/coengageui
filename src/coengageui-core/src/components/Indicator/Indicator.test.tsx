@@ -1,19 +1,19 @@
 import React from 'react';
 import { render, screen } from '@testing-library/react';
-import { itSupportsSystemProps, itRendersChildren } from '@coengageui/tests';
+import { itSupportsSystemProps, itRendersChildren } from 'coengageui_tests';
 import { Indicator, IndicatorProps } from './Indicator';
 
 const defaultProps: IndicatorProps = {
   children: 'Child',
 };
 
-describe('@coengageui/core/Indicator', () => {
+describe('coengageui_core/Indicator', () => {
   itRendersChildren(Indicator, defaultProps);
   itSupportsSystemProps({
     component: Indicator,
     props: defaultProps,
     refType: HTMLDivElement,
-    displayName: '@coengageui/core/Indicator',
+    displayName: 'coengageui_core/Indicator',
   });
 
   it('renders given label', () => {

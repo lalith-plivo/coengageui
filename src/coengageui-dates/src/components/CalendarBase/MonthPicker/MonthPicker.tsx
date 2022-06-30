@@ -1,5 +1,5 @@
 import React from 'react';
-import { DefaultProps, Selectors, UnstyledButton, CoengageUISize } from '@coengageui/core';
+import { DefaultProps, Selectors, UnstyledButton, CoengageUISize } from 'coengageui_core';
 import { getMonthsNames } from '../../../utils';
 import { CalendarHeader, CalendarHeaderStylesNames } from '../CalendarHeader/CalendarHeader';
 import { isMonthInRange } from './is-month-in-range/is-month-in-range';
@@ -9,7 +9,7 @@ export type MonthPickerStylesNames = Selectors<typeof useStyles> | CalendarHeade
 
 export interface MonthPickerProps
   extends DefaultProps<MonthPickerStylesNames>,
-    Omit<React.ComponentPropsWithoutRef<'div'>, 'onChange'> {
+  Omit<React.ComponentPropsWithoutRef<'div'>, 'onChange'> {
   value: { year: number; month: number };
   onChange(value: number): void;
   locale: string;
@@ -85,4 +85,4 @@ export function MonthPicker({
   );
 }
 
-MonthPicker.displayName = '@coengageui/dates/MonthPicker';
+MonthPicker.displayName = 'coengageui_dates/MonthPicker';

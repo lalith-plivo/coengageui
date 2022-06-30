@@ -1,9 +1,9 @@
 import React from 'react';
 import { Search } from 'tabler-icons-react';
-import { Divider, Box } from '@coengageui/core';
+import { Divider, Box } from 'coengageui_core';
 
 const code = `
-import { Divider, Box } from '@coengageui/core';
+import { Divider, Box } from 'coengageui_core';
 import { Search } from 'tabler-icons-react';
 
 function Demo() {

@@ -1,5 +1,5 @@
 import React, { forwardRef, useRef, useEffect, useState } from 'react';
-import { useUncontrolled, useUuid } from '@coengageui/hooks';
+import { useUncontrolled, useUuid } from 'coengageui_hooks';
 import {
   DefaultProps,
   CoengageUINumberSize,
@@ -9,7 +9,7 @@ import {
   Input,
   InputBaseProps,
   InputStylesNames,
-} from '@coengageui/core';
+} from 'coengageui_core';
 import useStyles from './PinInput.styles';
 import { createPinArray } from './create-pin-array/create-pin-array';
 import { regex } from './regex/regex';
@@ -18,8 +18,8 @@ export type PinInputStylesNames = InputStylesNames;
 
 export interface PinInputProps
   extends DefaultProps<PinInputStylesNames>,
-    InputBaseProps,
-    Omit<React.ComponentPropsWithoutRef<'div'>, 'onChange'> {
+  InputBaseProps,
+  Omit<React.ComponentPropsWithoutRef<'div'>, 'onChange'> {
   /** Input name attribute, used to bind inputs in one group, by default generated randomly with use-id hook */
   name?: string;
 
@@ -143,7 +143,7 @@ export const PinInput = forwardRef<HTMLDivElement, PinInputProps>(
           if (type instanceof RegExp) {
             matcher = type;
           } else {
-            throw new Error('[@coengageui/core] PinInput: Invalid regex format');
+            throw new Error('[coengageui_core] PinInput: Invalid regex format');
           }
       }
 
@@ -276,4 +276,4 @@ export const PinInput = forwardRef<HTMLDivElement, PinInputProps>(
   }
 );
 
-PinInput.displayName = '@coengageui/core/PinInput';
+PinInput.displayName = 'coengageui_core/PinInput';

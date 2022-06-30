@@ -1,8 +1,8 @@
 import React from 'react';
 import { MDXProvider } from '@mdx-js/react';
-import { Code, Text } from '@coengageui/core';
-import { Prism } from '@coengageui/prism';
-import { Demo } from '@coengageui/demos';
+import { Code, Text } from 'coengageui_core';
+import { Prism } from 'coengageui_prism';
+import { Demo } from 'coengageui_demos';
 import GatsbyLink from './GatsbyLink/GatsbyLink';
 import DataTable from './DataTable/DataTable';
 import MdxTitle from './MdxTitle/MdxTitle';

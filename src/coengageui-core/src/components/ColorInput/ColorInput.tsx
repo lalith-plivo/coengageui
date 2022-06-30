@@ -1,12 +1,12 @@
 import React, { useState, useEffect, forwardRef } from 'react';
-import { useUncontrolled, useDidUpdate, useUuid } from '@coengageui/hooks';
+import { useUncontrolled, useDidUpdate, useUuid } from 'coengageui_hooks';
 import {
   DefaultProps,
   Selectors,
   extractSystemStyles,
   getDefaultZIndex,
   useCoengageUIDefaultProps,
-} from '@coengageui/styles';
+} from 'coengageui_styles';
 import { InputWrapper, InputWrapperBaseProps, InputWrapperStylesNames } from '../InputWrapper';
 import { Input, InputBaseProps, InputStylesNames } from '../Input';
 import { ColorSwatch } from '../ColorSwatch';
@@ -29,10 +29,10 @@ export type ColorInputStylesNames =
 
 export interface ColorInputProps
   extends InputWrapperBaseProps,
-    InputBaseProps,
-    ColorPickerBaseProps,
-    DefaultProps<ColorInputStylesNames>,
-    Omit<React.ComponentPropsWithoutRef<'input'>, 'size' | 'onChange' | 'defaultValue' | 'value'> {
+  InputBaseProps,
+  ColorPickerBaseProps,
+  DefaultProps<ColorInputStylesNames>,
+  Omit<React.ComponentPropsWithoutRef<'input'>, 'size' | 'onChange' | 'defaultValue' | 'value'> {
   /** Disallow free input */
   disallowInput?: boolean;
 
@@ -258,4 +258,4 @@ export const ColorInput = forwardRef<HTMLInputElement, ColorInputProps>(
   }
 );
 
-ColorInput.displayName = '@coengageui/core/ColorInput';
+ColorInput.displayName = 'coengageui_core/ColorInput';

@@ -1,8 +1,8 @@
 import React from 'react';
-import { useCoengageUITheme, Container } from '@coengageui/core';
+import { useCoengageUITheme, Container } from 'coengageui_core';
 
 const code = `
-import { Container } from '@coengageui/core';
+import { Container } from 'coengageui_core';
 
 function Demo() {
   return (

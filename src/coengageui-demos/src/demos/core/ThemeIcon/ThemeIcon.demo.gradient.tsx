@@ -1,10 +1,10 @@
 import React from 'react';
 import { Photo } from 'tabler-icons-react';
-import { Group, ThemeIcon } from '@coengageui/core';
+import { Group, ThemeIcon } from 'coengageui_core';
 
 const code = `
 import { Photo } from 'tabler-icons-react';
-import { ThemeIcon } from '@coengageui/core';
+import { ThemeIcon } from 'coengageui_core';
 
 function Demo() {
   return (

@@ -13,4 +13,4 @@ export const DefaultItem = forwardRef<HTMLDivElement, SelectItemProps>(
   )
 );
 
-DefaultItem.displayName = '@coengageui/core/DefaultItem';
+DefaultItem.displayName = 'coengageui_core/DefaultItem';

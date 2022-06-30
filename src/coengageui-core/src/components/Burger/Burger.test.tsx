@@ -4,7 +4,7 @@ import {
   checkAccessibility,
   itSupportsFocusEvents,
   itSupportsSystemProps,
-} from '@coengageui/tests';
+} from 'coengageui_tests';
 import { Burger, BurgerProps } from './Burger';
 
 const defaultProps: BurgerProps = {
@@ -12,13 +12,13 @@ const defaultProps: BurgerProps = {
   title: 'Close navigation',
 };
 
-describe('@coengageui/core/Burger', () => {
+describe('coengageui_core/Burger', () => {
   checkAccessibility([<Burger {...defaultProps} />]);
   itSupportsFocusEvents(Burger, defaultProps, 'button');
   itSupportsSystemProps({
     component: Burger,
     props: defaultProps,
-    displayName: '@coengageui/core/Burger',
+    displayName: 'coengageui_core/Burger',
     refType: HTMLButtonElement,
   });
 

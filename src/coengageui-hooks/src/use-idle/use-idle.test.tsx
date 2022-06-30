@@ -1,7 +1,7 @@
 import { renderHook, act } from '@testing-library/react-hooks';
 import { useIdle } from './use-idle';
 
-describe('@coengageui/hooks/use-idle', () => {
+describe('coengageui_hooks/use-idle', () => {
   beforeEach(() => {
     jest.useFakeTimers();
   });

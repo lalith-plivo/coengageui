@@ -1,4 +1,4 @@
-import type { AccordionStylesNames } from '@coengageui/core';
+import type { AccordionStylesNames } from 'coengageui_core';
 
 export const Accordion: Record<AccordionStylesNames, string> = {
   item: 'Accordion item',

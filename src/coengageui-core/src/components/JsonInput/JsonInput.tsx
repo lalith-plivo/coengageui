@@ -1,6 +1,6 @@
 import React, { forwardRef, useState } from 'react';
-import { useUncontrolled } from '@coengageui/hooks';
-import { DefaultProps, useCoengageUIDefaultProps } from '@coengageui/styles';
+import { useUncontrolled } from 'coengageui_hooks';
+import { DefaultProps, useCoengageUIDefaultProps } from 'coengageui_styles';
 import { validateJson } from './validate-json/validate-json';
 import { Textarea, TextareaProps } from '../Textarea';
 import { TextInputStylesNames } from '../TextInput';
@@ -10,7 +10,7 @@ export type JsonInputStylesNames = TextInputStylesNames;
 
 export interface JsonInputProps
   extends DefaultProps<JsonInputStylesNames>,
-    Omit<TextareaProps, 'onChange'> {
+  Omit<TextareaProps, 'onChange'> {
   /** Value for controlled input */
   value?: string;
 
@@ -91,4 +91,4 @@ export const JsonInput = forwardRef<HTMLTextAreaElement, JsonInputProps>(
   }
 );
 
-JsonInput.displayName = '@coengageui/core/JsonInput';
+JsonInput.displayName = 'coengageui_core/JsonInput';

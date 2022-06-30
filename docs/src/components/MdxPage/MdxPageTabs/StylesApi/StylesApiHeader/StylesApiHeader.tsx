@@ -1,6 +1,6 @@
 import React from 'react';
-import { Title, Text } from '@coengageui/core';
-import { Prism } from '@coengageui/prism';
+import { Title, Text } from 'coengageui_core';
+import { Prism } from 'coengageui_prism';
 import { generateRootCode } from '../generate-styles-code';
 import GatsbyLink from '../../../MdxProvider/GatsbyLink/GatsbyLink';
 

@@ -1,4 +1,4 @@
-import { ColorInputStylesNames } from '@coengageui/core';
+import { ColorInputStylesNames } from 'coengageui_core';
 import { Input } from './Input.styles-api';
 import { InputWrapper } from './InputWrapper.styles-api';
 import { ColorPicker } from './ColorPicker.styles-api';

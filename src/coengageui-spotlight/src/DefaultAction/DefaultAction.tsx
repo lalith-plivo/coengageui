@@ -9,7 +9,7 @@ import {
   Text,
   CoengageUINumberSize,
   CoengageUIColor,
-} from '@coengageui/core';
+} from 'coengageui_core';
 import type { SpotlightAction } from '../types';
 import useStyles from './DefaultAction.styles';
 
@@ -17,7 +17,7 @@ export type DefaultActionStylesNames = Selectors<typeof useStyles>;
 
 export interface DefaultActionProps
   extends DefaultProps<DefaultActionStylesNames>,
-    React.ComponentPropsWithoutRef<'button'> {
+  React.ComponentPropsWithoutRef<'button'> {
   action: SpotlightAction;
   hovered: boolean;
   onTrigger(): void;
@@ -68,4 +68,4 @@ export function DefaultAction({
   );
 }
 
-DefaultAction.displayName = '@coengageui/spotlight/DefaultAction';
+DefaultAction.displayName = 'coengageui_spotlight/DefaultAction';

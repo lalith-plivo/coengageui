@@ -1,5 +1,5 @@
 import React from 'react';
-import { itSupportsSystemProps } from '@coengageui/tests';
+import { itSupportsSystemProps } from 'coengageui_tests';
 import { SliderRoot, SliderRootProps } from './SliderRoot';
 
 const defaultProps: SliderRootProps = {
@@ -8,11 +8,11 @@ const defaultProps: SliderRootProps = {
   disabled: false,
 };
 
-describe('@coengageui/core/SliderRoot', () => {
+describe('coengageui_core/SliderRoot', () => {
   itSupportsSystemProps({
     component: SliderRoot,
     props: defaultProps,
-    displayName: '@coengageui/core/SliderRoot',
+    displayName: 'coengageui_core/SliderRoot',
     refType: HTMLDivElement,
   });
 });

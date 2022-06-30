@@ -1,5 +1,5 @@
 import React from 'react';
-import { Button, Group } from '@coengageui/core';
+import { Button, Group } from 'coengageui_core';
 
 function Demo() {
   return (

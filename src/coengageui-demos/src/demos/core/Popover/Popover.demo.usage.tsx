@@ -1,9 +1,9 @@
 import React, { useState } from 'react';
-import { Popover, Text, Button, Group, Image } from '@coengageui/core';
+import { Popover, Text, Button, Group, Image } from 'coengageui_core';
 
 const code = `
 import { useState } from 'react';
-import { Popover, Text, Button, Image } from '@coengageui/core';
+import { Popover, Text, Button, Image } from 'coengageui_core';
 
 function Demo() {
   const [opened, setOpened] = useState(false);

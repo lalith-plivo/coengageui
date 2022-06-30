@@ -1,10 +1,10 @@
 import React from 'react';
-import { Group, useCoengageUITheme } from '@coengageui/core';
-import { Calendar } from '@coengageui/dates';
+import { Group, useCoengageUITheme } from 'coengageui_core';
+import { Calendar } from 'coengageui_dates';
 
 const code = `
-import { useCoengageUITheme } from '@coengageui/core';
-import { Calendar } from '@coengageui/dates';
+import { useCoengageUITheme } from 'coengageui_core';
+import { Calendar } from 'coengageui_dates';
 
 function Demo() {
   const theme = useCoengageUITheme();

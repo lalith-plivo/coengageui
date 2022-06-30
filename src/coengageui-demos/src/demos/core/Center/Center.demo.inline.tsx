@@ -1,9 +1,9 @@
 import React from 'react';
 import { ArrowLeft, ArrowRight } from 'tabler-icons-react';
-import { Center, useCoengageUITheme, Anchor, Box } from '@coengageui/core';
+import { Center, useCoengageUITheme, Anchor, Box } from 'coengageui_core';
 
 const code = `
-import { Center, Anchor, Box } from '@coengageui/core';
+import { Center, Anchor, Box } from 'coengageui_core';
 import { ArrowLeft } from 'tabler-icons-react';
 
 function Demo() {

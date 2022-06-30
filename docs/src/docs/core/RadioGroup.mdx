@@ -1,19 +1,19 @@
 ---
 group: 'coengageui-core'
-package: '@coengageui/core'
+package: 'coengageui_core'
 title: RadioGroup
 order: 1
 slug: /core/radio-group/
 category: 'inputs'
 description: 'Capture user feedback limited to small set of options'
 props: ['RadioGroup']
-import: "import { RadioGroup, Radio } from '@coengageui/core';"
+import: "import { RadioGroup, Radio } from 'coengageui_core';"
 source: 'coengageui-core/src/components/RadioGroup/RadioGroup.tsx'
 docs: 'core/RadioGroup.mdx'
 styles: ['RadioGroup']
 ---
 
-import { RadioGroupDemos } from '@coengageui/demos';
+import { RadioGroupDemos } from 'coengageui_demos';
 
 ## Usage
 
@@ -23,7 +23,7 @@ import { RadioGroupDemos } from '@coengageui/demos';
 
 ```tsx
 import { useState } from 'react';
-import { RadioGroup, Radio } from '@coengageui/core';
+import { RadioGroup, Radio } from 'coengageui_core';
 
 function Demo() {
   const [value, setValue] = useState('react');
@@ -53,7 +53,7 @@ function Demo() {
 
 ```tsx
 import { useRef } from 'react';
-import { RadioGroup, Radio } from '@coengageui/core';
+import { RadioGroup, Radio } from 'coengageui_core';
 
 function Demo() {
   const ref = useRef<HTMLInputElement>();

@@ -1,5 +1,5 @@
 import React from 'react';
-import { Blockquote, BlockquoteProps } from '@coengageui/core';
+import { Blockquote, BlockquoteProps } from 'coengageui_core';
 
 function Wrapper(props: BlockquoteProps) {
   return (
@@ -10,7 +10,7 @@ function Wrapper(props: BlockquoteProps) {
 }
 
 const codeTemplate = (props: string, children: string) => `
-import { Blockquote } from '@coengageui/core';
+import { Blockquote } from 'coengageui_core';
 
 function Demo() {
   return (

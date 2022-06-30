@@ -1,8 +1,8 @@
 import React from 'react';
-import { ColorInput } from '@coengageui/core';
+import { ColorInput } from 'coengageui_core';
 
 const code = `
-import { ColorInput } from '@coengageui/core';
+import { ColorInput } from 'coengageui_core';
 
 function Demo() {
   return <ColorInput placeholder="Pick color" label="Your favorite color" />;

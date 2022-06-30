@@ -3,8 +3,8 @@ import {
   DefaultProps,
   ForwardRefWithStaticComponents,
   useCoengageUIDefaultProps,
-} from '@coengageui/styles';
-import { useUuid, mergeRefs } from '@coengageui/hooks';
+} from 'coengageui_styles';
+import { useUuid, mergeRefs } from 'coengageui_hooks';
 import { Box } from '../Box';
 import { filterChildrenByType } from '../../utils';
 import {
@@ -17,7 +17,7 @@ import { useAccordionFocus } from './use-accordion-focus/use-accordion-focus';
 
 export interface AccordionProps
   extends DefaultProps<AccordionItemStylesNames>,
-    Omit<React.ComponentPropsWithRef<'div'>, 'onChange'> {
+  Omit<React.ComponentPropsWithRef<'div'>, 'onChange'> {
   /** <AccordionItem /> components only */
   children: React.ReactNode;
 
@@ -141,4 +141,4 @@ export const Accordion: AccordionComponent = forwardRef<HTMLDivElement, Accordio
 ) as any;
 
 Accordion.Item = AccordionItem;
-Accordion.displayName = '@coengageui/core/Accordion';
+Accordion.displayName = 'coengageui_core/Accordion';

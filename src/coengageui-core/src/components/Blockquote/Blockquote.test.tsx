@@ -1,6 +1,6 @@
 import React from 'react';
 import { render, screen } from '@testing-library/react';
-import { checkAccessibility, itRendersChildren, itSupportsSystemProps } from '@coengageui/tests';
+import { checkAccessibility, itRendersChildren, itSupportsSystemProps } from 'coengageui_tests';
 import { Blockquote, BlockquoteProps } from './Blockquote';
 
 const defaultProps: BlockquoteProps = {
@@ -8,13 +8,13 @@ const defaultProps: BlockquoteProps = {
   cite: 'test-cite',
 };
 
-describe('@coengageui/core/Blockquote', () => {
+describe('coengageui_core/Blockquote', () => {
   checkAccessibility([<Blockquote {...defaultProps} />]);
   itRendersChildren(Blockquote, defaultProps);
   itSupportsSystemProps({
     component: Blockquote,
     props: defaultProps,
-    displayName: '@coengageui/core/Blockquote',
+    displayName: 'coengageui_core/Blockquote',
     refType: HTMLQuoteElement,
   });
 

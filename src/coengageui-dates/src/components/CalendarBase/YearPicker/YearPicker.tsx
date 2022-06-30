@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { DefaultProps, Selectors, UnstyledButton, CoengageUISize } from '@coengageui/core';
+import { DefaultProps, Selectors, UnstyledButton, CoengageUISize } from 'coengageui_core';
 import { getDecadeRange } from './get-decade-range/get-decade-range';
 import { CalendarHeader, CalendarHeaderStylesNames } from '../CalendarHeader/CalendarHeader';
 import useStyles from './YearPicker.styles';
@@ -8,7 +8,7 @@ export type YearPickerStylesNames = Selectors<typeof useStyles> | CalendarHeader
 
 export interface YearPickerProps
   extends DefaultProps<YearPickerStylesNames>,
-    Omit<React.ComponentPropsWithoutRef<'div'>, 'onChange'> {
+  Omit<React.ComponentPropsWithoutRef<'div'>, 'onChange'> {
   value: number;
   onChange(value: number): void;
   minYear?: number;
@@ -75,4 +75,4 @@ export function YearPicker({
   );
 }
 
-YearPicker.displayName = '@coengageui/dates/YearPicker';
+YearPicker.displayName = 'coengageui_dates/YearPicker';

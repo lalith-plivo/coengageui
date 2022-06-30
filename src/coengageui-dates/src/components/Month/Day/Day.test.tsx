@@ -7,7 +7,7 @@ import {
   itSupportsRef,
   itSupportsStyle,
   itSupportsOthers,
-} from '@coengageui/tests';
+} from 'coengageui_tests';
 import { Day, DayProps } from './Day';
 
 const defaultProps: DayProps = {
@@ -23,11 +23,11 @@ const defaultProps: DayProps = {
   fullWidth: false,
   firstInMonth: false,
   size: 'sm' as const,
-  onKeyDown: () => {},
-  onMouseEnter: () => {},
+  onKeyDown: () => { },
+  onMouseEnter: () => { },
 };
 
-describe('@coengageui/core/Month/Day', () => {
+describe('coengageui_core/Month/Day', () => {
   checkAccessibility([<Day {...defaultProps} />]);
   itSupportsClassName(Day, defaultProps);
   itSupportsStyle(Day, defaultProps);
@@ -53,7 +53,7 @@ describe('@coengageui/core/Month/Day', () => {
   });
 
   it('has correct displayName', () => {
-    expect(Day.displayName).toStrictEqual('@coengageui/core/Day');
+    expect(Day.displayName).toStrictEqual('coengageui_core/Day');
   });
 
   it('renders correctly with a renderDay function', () => {

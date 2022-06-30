@@ -1,10 +1,10 @@
 import React from 'react';
-import { Paper, createStyles } from '@coengageui/core';
-import { Prism } from '@coengageui/prism';
-import { NotificationsDemos, Demo } from '@coengageui/demos';
+import { Paper, createStyles } from 'coengageui_core';
+import { Prism } from 'coengageui_prism';
+import { NotificationsDemos, Demo } from 'coengageui_demos';
 
-const code = `import { Button } from '@coengageui/core';
-import { useNotifications } from '@coengageui/notifications';
+const code = `import { Button } from 'coengageui_core';
+import { useNotifications } from 'coengageui_notifications';
 
 function Demo() {
   const notifications = useNotifications();
@@ -23,9 +23,8 @@ function Demo() {
 const useStyles = createStyles((theme) => ({
   prism: {
     '& pre': {
-      backgroundColor: `${
-        theme.colorScheme === 'dark' ? theme.colors.dark[7] : theme.white
-      } !important`,
+      backgroundColor: `${theme.colorScheme === 'dark' ? theme.colors.dark[7] : theme.white
+        } !important`,
       borderRadius: theme.radius.md,
       padding: 14,
       paddingTop: 0,

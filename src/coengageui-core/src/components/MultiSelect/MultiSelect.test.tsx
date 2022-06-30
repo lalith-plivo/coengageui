@@ -8,7 +8,7 @@ import {
   itConnectsLabelAndInput,
   itSupportsFocusEvents,
   itSupportsInputWrapperProps,
-} from '@coengageui/tests';
+} from 'coengageui_tests';
 import { MultiSelect, MultiSelectProps } from './MultiSelect';
 
 const defaultProps: MultiSelectProps = {
@@ -20,7 +20,7 @@ const defaultProps: MultiSelectProps = {
   id: 'test-multi-select',
 };
 
-describe('@coengageui/core/MultiSelect', () => {
+describe('coengageui_core/MultiSelect', () => {
   checkAccessibility([<MultiSelect {...defaultProps} initiallyOpened />]);
   itSupportsFocusEvents(MultiSelect, defaultProps, '#test-multi-select');
   itSupportsInputIcon(MultiSelect, defaultProps);
@@ -31,7 +31,7 @@ describe('@coengageui/core/MultiSelect', () => {
   itSupportsSystemProps({
     component: MultiSelect,
     props: defaultProps,
-    displayName: '@coengageui/core/MultiSelect',
+    displayName: 'coengageui_core/MultiSelect',
     refType: HTMLInputElement,
     excludeOthers: true,
   });

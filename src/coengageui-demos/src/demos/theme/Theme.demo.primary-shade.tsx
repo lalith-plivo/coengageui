@@ -1,5 +1,5 @@
 import React from 'react';
-import { CoengageUIProvider, Group, Button, CoengageUITheme } from '@coengageui/core';
+import { CoengageUIProvider, Group, Button, CoengageUITheme } from 'coengageui_core';
 
 function Wrapper({ primaryShade }: { primaryShade: CoengageUITheme['primaryShade'] }) {
   return (
@@ -14,13 +14,13 @@ function Wrapper({ primaryShade }: { primaryShade: CoengageUITheme['primaryShade
 }
 
 const codeTemplate = (props: string) => `
-import { CoengageUIProvider, Group, Button } from '@coengageui/core';
+import { CoengageUIProvider, Group, Button } from 'coengageui_core';
 
 function Demo() {
   return (
     <CoengageUIProvider theme={{ primaryShade: ${props
-      .replace(' primaryShade={', '')
-      .replace('}', '')} }}>
+    .replace(' primaryShade={', '')
+    .replace('}', '')} }}>
       <Group position="center">
         <Button variant="filled">Filled button</Button>
         <Button variant="light">Light button</Button>

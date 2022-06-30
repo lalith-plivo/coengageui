@@ -1,8 +1,8 @@
 import React from 'react';
-import { List } from '@coengageui/core';
+import { List } from 'coengageui_core';
 
 const code = `
-import { List } from '@coengageui/core';
+import { List } from 'coengageui_core';
 
 function Demo() {
   return (

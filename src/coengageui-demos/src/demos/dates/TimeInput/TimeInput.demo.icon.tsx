@@ -1,9 +1,9 @@
 import React from 'react';
 import { Clock } from 'tabler-icons-react';
-import { TimeInput } from '@coengageui/dates';
+import { TimeInput } from 'coengageui_dates';
 
 const code = `
-import { TimeInput } from '@coengageui/dates';
+import { TimeInput } from 'coengageui_dates';
 import { Clock } from 'tabler-icons-react';
 
 function Demo() {

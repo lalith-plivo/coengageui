@@ -1,9 +1,9 @@
 import React, { useState } from 'react';
-import { Stepper, StepperProps, createStyles } from '@coengageui/core';
+import { Stepper, StepperProps, createStyles } from 'coengageui_core';
 
 const code = `
 import { useState } from 'react';
-import { Stepper, StepperProps, createStyles } from '@coengageui/core';
+import { Stepper, StepperProps, createStyles } from 'coengageui_core';
 
 const useStyles = createStyles((theme, params, getRef) => ({
   root: {
@@ -74,9 +74,8 @@ const useStyles = createStyles((theme, params, getRef) => ({
 
   separator: {
     height: 2,
-    borderTop: `2px dashed ${
-      theme.colorScheme === 'dark' ? theme.colors.dark[3] : theme.colors.gray[4]
-    }`,
+    borderTop: `2px dashed ${theme.colorScheme === 'dark' ? theme.colors.dark[3] : theme.colors.gray[4]
+      }`,
     borderRadius: theme.radius.xl,
     backgroundColor: 'transparent',
   },

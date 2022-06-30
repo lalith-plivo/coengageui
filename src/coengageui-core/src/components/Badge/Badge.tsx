@@ -9,7 +9,7 @@ import {
   PolymorphicComponentProps,
   PolymorphicRef,
   useCoengageUIDefaultProps,
-} from '@coengageui/styles';
+} from 'coengageui_styles';
 import { Box } from '../Box';
 import useStyles from './Badge.styles';
 
@@ -105,4 +105,4 @@ export const Badge: BadgeComponent = forwardRef(
   }
 ) as any;
 
-Badge.displayName = '@coengageui/core/Badge';
+Badge.displayName = 'coengageui_core/Badge';

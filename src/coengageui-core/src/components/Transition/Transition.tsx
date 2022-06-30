@@ -76,4 +76,4 @@ export function Transition({
   );
 }
 
-Transition.displayName = '@coengageui/core/Transition';
+Transition.displayName = 'coengageui_core/Transition';

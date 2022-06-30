@@ -1,8 +1,8 @@
 import React from 'react';
-import { CloseButton, Group } from '@coengageui/core';
+import { CloseButton, Group } from 'coengageui_core';
 
 const code = `
-import { CloseButton, Group } from '@coengageui/core';
+import { CloseButton, Group } from 'coengageui_core';
 
 function Demo() {
   return (

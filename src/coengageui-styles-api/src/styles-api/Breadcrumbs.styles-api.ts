@@ -1,4 +1,4 @@
-import { BreadcrumbsStylesNames } from '@coengageui/core';
+import { BreadcrumbsStylesNames } from 'coengageui_core';
 
 export const Breadcrumbs: Record<BreadcrumbsStylesNames, string> = {
   root: 'Root element',

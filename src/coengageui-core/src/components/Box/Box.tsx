@@ -4,10 +4,10 @@ import {
   PolymorphicComponentProps,
   PolymorphicRef,
   extractSystemStyles,
-} from '@coengageui/styles';
+} from 'coengageui_styles';
 import { useSx } from './use-sx/use-sx';
 
-interface _BoxProps extends DefaultProps {}
+interface _BoxProps extends DefaultProps { }
 
 export type BoxProps<C> = PolymorphicComponentProps<C, _BoxProps>;
 
@@ -25,4 +25,4 @@ export const Box: BoxComponent = forwardRef(
   }
 ) as any;
 
-Box.displayName = '@coengageui/core/Box';
+Box.displayName = 'coengageui_core/Box';

@@ -11,18 +11,18 @@ search: 'General approach to SSR'
 This guide covers server side rendering with custom server, [Next.js](/theming/next/) and [Gatsby](/theming/gatsby/)
 usage guides are available separately.
 
-1. Install `@coengageui/ssr` package
+1. Install `coengageui_ssr` package
 
 ```bash
-yarn add @coengageui/ssr
+yarn add coengageui_ssr
 
-npm install @coengageui/ssr
+npm install coengageui_ssr
 ```
 
 2. Create `App` component with `CoengageUIProvider`
 
 ```tsx
-import { Button, CoengageUIProvider } from '@coengageui/core';
+import { Button, CoengageUIProvider } from 'coengageui_core';
 
 export function App() {
   return (
@@ -61,7 +61,7 @@ export function Html({ children, styles }) {
 ```tsx
 import { renderToStaticMarkup, renderToString } from 'react-dom/server';
 import express from 'express';
-import { createStylesServer, ServerStyles } from '@coengageui/ssr';
+import { createStylesServer, ServerStyles } from 'coengageui_ssr';
 import { App } from './App';
 import { Html } from './Html';
 

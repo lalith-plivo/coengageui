@@ -8,10 +8,10 @@ Experimental CoengageUI components, use at your own risk
 
 ```sh
 # With yarn
-yarn add @coengageui/hooks @coengageui/core @coengageui/labs
+yarn add coengageui_hooks coengageui_core coengageui_labs
 
 # With npm
-npm install @coengageui/hooks @coengageui/core @coengageui/labs
+npm install coengageui_hooks coengageui_core coengageui_labs
 ```
 
 ## License

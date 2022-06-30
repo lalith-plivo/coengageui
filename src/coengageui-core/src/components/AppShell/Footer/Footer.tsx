@@ -1,10 +1,10 @@
 import React, { forwardRef } from 'react';
-import { getDefaultZIndex, useCoengageUIDefaultProps } from '@coengageui/styles';
+import { getDefaultZIndex, useCoengageUIDefaultProps } from 'coengageui_styles';
 import { VerticalSection, VerticalSectionSharedProps } from '../VerticalSection/VerticalSection';
 
 export interface FooterProps
   extends VerticalSectionSharedProps,
-    React.ComponentPropsWithoutRef<'nav'> {
+  React.ComponentPropsWithoutRef<'nav'> {
   /** Footer content */
   children: React.ReactNode;
 }
@@ -20,4 +20,4 @@ export const Footer = forwardRef<HTMLElement, FooterProps>((props: FooterProps, 
   return <VerticalSection section="footer" __staticSelector="Footer" {...others} ref={ref} />;
 });
 
-Footer.displayName = '@coengageui/core/Footer';
+Footer.displayName = 'coengageui_core/Footer';

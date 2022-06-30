@@ -4,21 +4,21 @@ import {
   itSupportsSystemProps,
   itSupportsWrapperProps,
   itSupportsInputProps,
-} from '@coengageui/tests';
+} from 'coengageui_tests';
 import { ColorInput, ColorInputProps } from './ColorInput';
 
 const defaultProps: ColorInputProps = {
   label: 'test-label',
 };
 
-describe('@coengageui/core/ColorInput', () => {
+describe('coengageui_core/ColorInput', () => {
   checkAccessibility([<ColorInput label="Color input" />, <ColorInput aria-label="Color input" />]);
   itSupportsWrapperProps(ColorInput, defaultProps);
   itSupportsInputProps(ColorInput, defaultProps, 'ColorInput');
   itSupportsSystemProps({
     component: ColorInput,
     props: defaultProps,
-    displayName: '@coengageui/core/ColorInput',
+    displayName: 'coengageui_core/ColorInput',
     refType: HTMLInputElement,
     excludeOthers: true,
   });

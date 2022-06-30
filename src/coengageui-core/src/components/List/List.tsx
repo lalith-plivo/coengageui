@@ -5,7 +5,7 @@ import {
   Selectors,
   ForwardRefWithStaticComponents,
   useCoengageUIDefaultProps,
-} from '@coengageui/styles';
+} from 'coengageui_styles';
 import { Box } from '../Box';
 import { ListItem, ListItemStylesNames } from './ListItem/ListItem';
 import { ListContext } from './List.context';
@@ -15,7 +15,7 @@ export type ListStylesNames = ListItemStylesNames | Selectors<typeof useStyles>;
 
 export interface ListProps
   extends DefaultProps<ListStylesNames>,
-    React.ComponentPropsWithoutRef<'ul'> {
+  React.ComponentPropsWithoutRef<'ul'> {
   /** <List.Item /> components only */
   children: React.ReactNode;
 
@@ -87,4 +87,4 @@ export const List: ListComponent = forwardRef<HTMLUListElement, ListProps>(
 ) as any;
 
 List.Item = ListItem;
-List.displayName = '@coengageui/core/List';
+List.displayName = 'coengageui_core/List';

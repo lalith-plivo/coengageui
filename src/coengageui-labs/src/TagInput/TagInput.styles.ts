@@ -1,4 +1,4 @@
-import { createStyles, CoengageUISize, INPUT_SIZES } from '@coengageui/core';
+import { createStyles, CoengageUISize, INPUT_SIZES } from 'coengageui_core';
 
 interface TagInputStyles {
   size: CoengageUISize;
@@ -48,8 +48,8 @@ export default createStyles((theme, { size, invalid }: TagInputStyles) => ({
       color: invalid
         ? theme.colors.red[theme.colorScheme === 'dark' ? 6 : 7]
         : theme.colorScheme === 'dark'
-        ? theme.colors.dark[3]
-        : theme.colors.gray[5],
+          ? theme.colors.dark[3]
+          : theme.colors.gray[5],
     },
 
     '&:disabled': {

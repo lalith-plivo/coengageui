@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Drawer, Button, Group } from '@coengageui/core';
+import { Drawer, Button, Group } from 'coengageui_core';
 import { AuthenticationForm } from '../../../shared/AuthenticationForm/AuthenticationForm';
 
 const code = `

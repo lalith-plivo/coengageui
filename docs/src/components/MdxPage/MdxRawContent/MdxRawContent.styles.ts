@@ -1,4 +1,4 @@
-import { createStyles } from '@coengageui/core';
+import { createStyles } from 'coengageui_core';
 import { BREAKPOINT, TABLE_OF_CONTENTS_WIDTH, CONTENT_WIDTH } from '../settings';
 
 export default createStyles((theme) => ({

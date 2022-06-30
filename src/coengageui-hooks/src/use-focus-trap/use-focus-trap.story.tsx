@@ -1,6 +1,6 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
-import { Stack, Title, Text, Select, TextInput, NumberInput } from '@coengageui/core';
+import { Stack, Title, Text, Select, TextInput, NumberInput } from 'coengageui_core';
 import { useFocusTrap } from './use-focus-trap';
 
 const Usage = () => {

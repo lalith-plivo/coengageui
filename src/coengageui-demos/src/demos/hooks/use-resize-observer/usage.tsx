@@ -1,10 +1,10 @@
 import React from 'react';
-import { useCoengageUITheme, Text, Group, Code } from '@coengageui/core';
-import { useResizeObserver } from '@coengageui/hooks';
+import { useCoengageUITheme, Text, Group, Code } from 'coengageui_core';
+import { useResizeObserver } from 'coengageui_hooks';
 
 const code = `
-import { Text, Code } from '@coengageui/core';
-import { useResizeObserver } from '@coengageui/hooks';
+import { Text, Code } from 'coengageui_core';
+import { useResizeObserver } from 'coengageui_hooks';
 
 function Demo() {
   const [ref, rect] = useResizeObserver();

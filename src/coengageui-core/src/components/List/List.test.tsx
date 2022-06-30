@@ -1,6 +1,6 @@
 import React from 'react';
 import { render } from '@testing-library/react';
-import { itSupportsSystemProps } from '@coengageui/tests';
+import { itSupportsSystemProps } from 'coengageui_tests';
 import { ListItem } from './ListItem/ListItem';
 import { List, ListProps } from './List';
 
@@ -12,11 +12,11 @@ const defaultProps: ListProps = {
   ],
 };
 
-describe('@coengageui/core/List', () => {
+describe('coengageui_core/List', () => {
   itSupportsSystemProps({
     component: List,
     props: defaultProps,
-    displayName: '@coengageui/core/List',
+    displayName: 'coengageui_core/List',
     refType: HTMLUListElement,
   });
 

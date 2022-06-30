@@ -1,15 +1,14 @@
 import React, { useState } from 'react';
-import { useScrollLock, useClickOutside } from '@coengageui/hooks';
-import { Title, Button, Paper, Center, createStyles, useCoengageUITheme } from '@coengageui/core';
-import { Prism } from '@coengageui/prism';
+import { useScrollLock, useClickOutside } from 'coengageui_hooks';
+import { Title, Button, Paper, Center, createStyles, useCoengageUITheme } from 'coengageui_core';
+import { Prism } from 'coengageui_prism';
 import { LockClosedIcon, LockOpen2Icon } from '@modulz/radix-icons';
 
 const useStyles = createStyles((theme) => ({
   prism: {
     '& pre': {
-      backgroundColor: `${
-        theme.colorScheme === 'dark' ? theme.colors.dark[8] : theme.white
-      } !important`,
+      backgroundColor: `${theme.colorScheme === 'dark' ? theme.colors.dark[8] : theme.white
+        } !important`,
       borderRadius: theme.radius.md,
       padding: 14,
       paddingTop: 30,
@@ -28,8 +27,8 @@ const useStyles = createStyles((theme) => ({
 }));
 
 const lockCode = `
-import { useScrollLock } from '@coengageui/hooks';
-import { Button } from '@coengageui/core';
+import { useScrollLock } from 'coengageui_hooks';
+import { Button } from 'coengageui_core';
 
 function Demo() {
   const [scrollLocked, setScrollLocked] = useScrollLock();
@@ -40,8 +39,8 @@ function Demo() {
 
 const clickOutsideCode = `
 import { useState } from 'react';
-import { Paper, Button } from '@coengageui/core';
-import { useClickOutside } from '@coengageui/hooks';
+import { Paper, Button } from 'coengageui_core';
+import { useClickOutside } from 'coengageui_hooks';
 
 function Demo() {
   const [opened, setOpened] = useState(false);

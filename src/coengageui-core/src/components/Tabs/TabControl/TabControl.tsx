@@ -1,6 +1,6 @@
 import React, { forwardRef } from 'react';
-import { DefaultProps, CoengageUIColor, Selectors } from '@coengageui/styles';
-import { mergeRefs } from '@coengageui/hooks';
+import { DefaultProps, CoengageUIColor, Selectors } from 'coengageui_styles';
+import { mergeRefs } from 'coengageui_hooks';
 import { Box } from '../../Box';
 import type { TabsVariant } from '../Tabs';
 import useStyles from './TabControl.styles';
@@ -9,7 +9,7 @@ export type TabControlStylesNames = Exclude<Selectors<typeof useStyles>, TabsVar
 
 export interface TabControlProps
   extends DefaultProps<TabControlStylesNames>,
-    React.ComponentPropsWithRef<'button'> {
+  React.ComponentPropsWithRef<'button'> {
   active?: boolean;
   color?: CoengageUIColor;
   variant?: TabsVariant;
@@ -71,4 +71,4 @@ export const TabControl = forwardRef<HTMLButtonElement, TabControlProps>(
   }
 );
 
-TabControl.displayName = '@coengageui/core/TabControl';
+TabControl.displayName = 'coengageui_core/TabControl';

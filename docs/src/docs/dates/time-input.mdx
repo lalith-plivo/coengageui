@@ -1,18 +1,18 @@
 ---
 group: 'coengageui-dates'
-package: '@coengageui/dates'
+package: 'coengageui_dates'
 title: TimeInput
 order: 1
 slug: /dates/time-input/
 description: 'Capture time or time range from user'
 props: ['TimeInput', 'TimeRangeInput']
-import: "import { TimeInput, TimeRangeInput } from '@coengageui/dates';"
+import: "import { TimeInput, TimeRangeInput } from 'coengageui_dates';"
 source: 'coengageui-dates/src/components/TimeInput/TimeInput.tsx'
 docs: 'dates/TimeInput.mdx'
 styles: ['TimeInput', 'TimeRangeInput']
 ---
 
-import { TimeInputDemos, TimeRangeInputDemos } from '@coengageui/demos';
+import { TimeInputDemos, TimeRangeInputDemos } from 'coengageui_demos';
 
 ## Usage
 
@@ -28,7 +28,7 @@ TimeRangeInput component (supports the same props as TimeInput component):
 
 ```tsx
 import { useState } from 'react';
-import { TimeInput } from '@coengageui/dates';
+import { TimeInput } from 'coengageui_dates';
 
 function Demo() {
   const [value, onChange] = useState(new Date());
@@ -72,7 +72,7 @@ You can get hours input ref with `ref` prop:
 
 ```tsx
 import { useRef } from 'react';
-import { TimeInput } from '@coengageui/dates';
+import { TimeInput } from 'coengageui_dates';
 
 function Demo() {
   const inputRef = useRef<HTMLInputElement>();

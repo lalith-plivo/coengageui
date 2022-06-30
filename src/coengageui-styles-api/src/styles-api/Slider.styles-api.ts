@@ -1,4 +1,4 @@
-import type { SliderStylesNames } from '@coengageui/core';
+import type { SliderStylesNames } from 'coengageui_core';
 
 export const Slider: Record<SliderStylesNames, string> = {
   root: 'Root element',

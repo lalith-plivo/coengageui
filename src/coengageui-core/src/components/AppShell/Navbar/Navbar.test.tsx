@@ -1,15 +1,15 @@
-import { itRendersChildren, itSupportsSystemProps } from '@coengageui/tests';
+import { itRendersChildren, itSupportsSystemProps } from 'coengageui_tests';
 import { Navbar, NavbarProps } from './Navbar';
 import { HorizontalSection } from '../HorizontalSection/HorizontalSection';
 
 const defaultProps: NavbarProps = { children: 'test-navbar' };
 
-describe('@coengageui/core/Navbar', () => {
+describe('coengageui_core/Navbar', () => {
   itRendersChildren(Navbar, defaultProps);
   itSupportsSystemProps({
     component: Navbar,
     props: defaultProps,
-    displayName: '@coengageui/core/Navbar',
+    displayName: 'coengageui_core/Navbar',
     refType: HTMLElement,
   });
 

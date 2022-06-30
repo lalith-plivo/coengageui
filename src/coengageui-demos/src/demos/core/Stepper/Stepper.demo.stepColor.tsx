@@ -1,9 +1,9 @@
 import React from 'react';
 import { CircleX } from 'tabler-icons-react';
-import { Stepper } from '@coengageui/core';
+import { Stepper } from 'coengageui_core';
 
 const code = `
-import { Stepper } from '@coengageui/core';
+import { Stepper } from 'coengageui_core';
 import { CircleX } from 'tabler-icons-react';
 
 function Demo() {

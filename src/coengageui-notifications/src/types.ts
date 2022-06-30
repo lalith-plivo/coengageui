@@ -1,4 +1,4 @@
-import type { NotificationProps as NotificationComponentProps } from '@coengageui/core';
+import type { NotificationProps as NotificationComponentProps } from 'coengageui_core';
 
 export interface NotificationProps extends Omit<NotificationComponentProps, 'onClose'> {
   id?: string;

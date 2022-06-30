@@ -1,19 +1,19 @@
 ---
 group: 'coengageui-core'
-package: '@coengageui/core'
+package: 'coengageui_core'
 title: Pagination
 order: 1
 slug: /core/pagination/
 category: 'navigation'
 description: 'Display active page and navigate between multiple pages'
 props: ['Pagination']
-import: "import { Pagination } from '@coengageui/core';"
+import: "import { Pagination } from 'coengageui_core';"
 source: 'coengageui-core/src/components/Pagination/Pagination.tsx'
 docs: 'core/Pagination.mdx'
 styles: ['Pagination']
 ---
 
-import { PaginationDemos } from '@coengageui/demos';
+import { PaginationDemos } from 'coengageui_demos';
 
 ## Usage
 
@@ -25,7 +25,7 @@ To control component state provide `page` and `onChange` props:
 
 ```tsx
 import { useState } from 'react';
-import { Pagination } from '@coengageui/core';
+import { Pagination } from 'coengageui_core';
 
 function Demo() {
   const [activePage, setPage] = useState(1);
@@ -77,5 +77,5 @@ The current active page will have the attribute `aria-current="page"`.
 
 ## use-pagination hook
 
-If you need more flexibility @coengageui/hooks exports [use-pagination](/hooks/use-pagination/) hook,
+If you need more flexibility coengageui_hooks exports [use-pagination](/hooks/use-pagination/) hook,
 you can use it to create your own pagination component.

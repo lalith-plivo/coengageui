@@ -1,7 +1,7 @@
-import { TextInput } from '@coengageui/core';
+import { TextInput } from 'coengageui_core';
 
 const codeTemplate = (props: string) => `
-import { TextInput } from '@coengageui/core';
+import { TextInput } from 'coengageui_core';
 
 function Demo() {
   return (

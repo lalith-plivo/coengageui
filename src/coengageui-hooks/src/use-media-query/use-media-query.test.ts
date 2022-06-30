@@ -2,18 +2,18 @@ import { renderHook } from '@testing-library/react-hooks';
 import { renderHook as renderHookSSR } from '@testing-library/react-hooks/server';
 import { useMediaQuery } from './use-media-query';
 
-describe('@coengageui/hooks/use-media-query', () => {
+describe('coengageui_hooks/use-media-query', () => {
   beforeEach(() => {
     const mediaMatches = {
       '(min-width: 500px)': true,
       '(min-width: 1000px)': false,
     };
     window.matchMedia = (query) =>
-      ({
-        matches: mediaMatches[query] ?? false,
-        addListener: jest.fn(),
-        removeListener: jest.fn(),
-      } as any);
+    ({
+      matches: mediaMatches[query] ?? false,
+      addListener: jest.fn(),
+      removeListener: jest.fn(),
+    } as any);
   });
   it('should return true if media query matches', () => {
     const { result } = renderHook(() => useMediaQuery('(min-width: 500px)'));

@@ -1,4 +1,4 @@
-import { createStyles, CoengageUINumberSize } from '@coengageui/core';
+import { createStyles, CoengageUINumberSize } from 'coengageui_core';
 
 export interface DefaultActionStylesParams {
   radius: CoengageUINumberSize;

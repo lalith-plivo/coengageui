@@ -1,5 +1,5 @@
 import React from 'react';
-import { Global } from '@coengageui/core';
+import { Global } from 'coengageui_core';
 import regular from './Inter-Regular.woff2';
 import medium from './Inter-Medium.woff2';
 import semibold from './Inter-SemiBold.woff2';

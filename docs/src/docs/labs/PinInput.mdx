@@ -1,18 +1,18 @@
 ---
 group: 'coengageui-labs'
-package: '@coengageui/labs'
+package: 'coengageui_labs'
 title: PinInput
 slug: /labs/pin-input/
 category: 'inputs'
 description: 'Capture pin code from the user'
 props: ['PinInput']
-import: "import { PinInput } from '@coengageui/labs';"
+import: "import { PinInput } from 'coengageui_labs';"
 source: 'coengageui-labs/src/components/PinInput/PinInput.tsx'
 docs: 'labs/PinInput.mdx'
 styles: ['PinInput']
 ---
 
-import { PinInputDemos } from '@coengageui/demos';
+import { PinInputDemos } from 'coengageui_demos';
 
 ## Usage
 
@@ -38,7 +38,7 @@ RegExp validators `alphanumeric` and `number` but if that does not fit your need
 By default, `alphanumeric` symbols are allowed.
 
 ```tsx
-import { PinInput } from '@coengageui/core';
+import { PinInput } from 'coengageui_core';
 
 function PinInputDemo() {
   return <PinInput type="number" />;
@@ -52,7 +52,7 @@ To customize the default input placeholder `●`, pass the placeholder prop and 
 <Demo data={PinInputDemos.placeholder} />
 
 ```tsx
-import { PinInput } from '@coengageui/core';
+import { PinInput } from 'coengageui_core';
 
 function PinInputDemo() {
   return <PinInput placeholder="⭐️" />;
@@ -73,7 +73,7 @@ If the current form input asks for this code, your keyboard adapts and proposes 
 Prop `oneTimeCode` makes your input setting `autocomplete="one-time-code"` what allows using that feature.
 
 ```tsx
-import { PinInput } from '@coengageui/core';
+import { PinInput } from 'coengageui_core';
 
 function OneTimeCodeInput() {
   return <PinInput oneTimeCode />;

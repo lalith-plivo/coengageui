@@ -1,4 +1,4 @@
-import { createStyles, CoengageUITheme } from '@coengageui/styles';
+import { createStyles, CoengageUITheme } from 'coengageui_styles';
 
 interface PopperStyles {
   arrowSize: number;

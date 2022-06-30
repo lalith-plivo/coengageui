@@ -1,6 +1,6 @@
 import { getCurveProps } from './get-curve-props';
 
-describe('@coengageui/core/RingProgress/get-curve-props', () => {
+describe('coengageui_core/RingProgress/get-curve-props', () => {
   it('returns correct props data', () => {
     expect(
       getCurveProps({

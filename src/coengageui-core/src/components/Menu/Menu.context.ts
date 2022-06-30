@@ -1,4 +1,4 @@
-import { CoengageUINumberSize, CoengageUITheme, CSSObject } from '@coengageui/styles';
+import { CoengageUINumberSize, CoengageUITheme, CSSObject } from 'coengageui_styles';
 import { createUseContext } from '../../utils';
 import type { MenuStylesNames } from './Menu';
 
@@ -7,8 +7,8 @@ interface MenuContextValue {
   radius: CoengageUINumberSize;
   classNames: Partial<Record<MenuStylesNames, string>>;
   styles:
-    | Partial<Record<MenuStylesNames, CSSObject>>
-    | ((theme: CoengageUITheme) => Partial<Record<MenuStylesNames, CSSObject>>);
+  | Partial<Record<MenuStylesNames, CSSObject>>
+  | ((theme: CoengageUITheme) => Partial<Record<MenuStylesNames, CSSObject>>);
   onItemHover(index: number): void;
   onItemKeyDown(event: React.KeyboardEvent<HTMLElement>): void;
   onItemClick(): void;

@@ -1,9 +1,9 @@
 import React, { useState } from 'react';
-import { MultiSelect } from '@coengageui/core';
+import { MultiSelect } from 'coengageui_core';
 
 const code = `
 import { useState } from 'react';
-import { MultiSelect } from '@coengageui/core';
+import { MultiSelect } from 'coengageui_core';
 
 function Demo() {
   const [data, setData] = useState(['React', 'Angular', 'Svelte', 'Vue']);

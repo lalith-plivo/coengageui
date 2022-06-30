@@ -1,5 +1,5 @@
 import React from 'react';
-import { COENGAGEUI_COLORS } from '@coengageui/styles';
+import { COENGAGEUI_COLORS } from 'coengageui_styles';
 import { Button } from './Button';
 import { Group } from '../Group';
 

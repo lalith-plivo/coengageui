@@ -1,14 +1,14 @@
 import React from 'react';
 import { render } from '@testing-library/react';
-import { itRendersChildren, itSupportsClassName } from '@coengageui/tests';
+import { itRendersChildren, itSupportsClassName } from 'coengageui_tests';
 import { PopperContainer } from './PopperContainer';
 
-describe('@coengageui/core/PopperContainer', () => {
+describe('coengageui_core/PopperContainer', () => {
   itRendersChildren(PopperContainer, { withinPortal: false, children: undefined });
   itSupportsClassName(PopperContainer, { withinPortal: false, children: undefined });
 
   it('has correct displayName', () => {
-    expect(PopperContainer.displayName).toStrictEqual('@coengageui/core/PopperContainer');
+    expect(PopperContainer.displayName).toStrictEqual('coengageui_core/PopperContainer');
   });
 
   it('adds z-index styles from prop', () => {

@@ -1,6 +1,6 @@
 import React from 'react';
 import dayjs from 'dayjs';
-import { DefaultProps } from '@coengageui/core';
+import { DefaultProps } from 'coengageui_core';
 import { formatMonthLabel } from './format-month-label/format-month-label';
 import { isMonthInRange } from '../MonthPicker/is-month-in-range/is-month-in-range';
 import { CalendarHeader, CalendarHeaderStylesNames } from '../CalendarHeader/CalendarHeader';
@@ -10,7 +10,7 @@ export type MonthsListStylesNames = CalendarHeaderStylesNames | MonthStylesNames
 
 export interface MonthsListProps
   extends DefaultProps<MonthsListStylesNames>,
-    Omit<MonthProps, 'styles' | 'classNames' | 'daysRefs' | 'onDayKeyDown'> {
+  Omit<MonthProps, 'styles' | 'classNames' | 'daysRefs' | 'onDayKeyDown'> {
   amountOfMonths: number;
   month: Date;
   locale: string;
@@ -109,4 +109,4 @@ export function MonthsList({
   return <>{months}</>;
 }
 
-MonthsList.displayName = '@coengageui/dates/MonthsList';
+MonthsList.displayName = 'coengageui_dates/MonthsList';

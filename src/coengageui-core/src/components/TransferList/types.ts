@@ -1,4 +1,4 @@
-import { CoengageUINumberSize } from '@coengageui/styles';
+import { CoengageUINumberSize } from 'coengageui_styles';
 
 export interface TransferListItem {
   value: string;

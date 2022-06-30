@@ -18,7 +18,7 @@ You can use theme functions wherever CoengageUI theme is available. There are 4 
 - [createStyles](/theming/create-styles) function
 
 ```tsx
-import { createStyles } from '@coengageui/core';
+import { createStyles } from 'coengageui_core';
 
 const useStyles = createStyles((theme) => ({
   myCustomButton: {
@@ -30,7 +30,7 @@ const useStyles = createStyles((theme) => ({
 - `sx` component prop
 
 ```tsx
-import { Box } from '@coengageui/core';
+import { Box } from 'coengageui_core';
 
 function Demo() {
   return (
@@ -46,7 +46,7 @@ function Demo() {
 - `styles` component prop
 
 ```tsx
-import { Slider } from '@coengageui/core';
+import { Slider } from 'coengageui_core';
 
 function Demo() {
   return (
@@ -64,7 +64,7 @@ function Demo() {
 - `useCoengageUITheme` hook
 
 ```tsx
-import { useCoengageUITheme } from '@coengageui/core';
+import { useCoengageUITheme } from 'coengageui_core';
 
 function Demo() {
   const theme = useCoengageUITheme();
@@ -80,7 +80,7 @@ include CoengageUI focus styles to your custom interactive elements. `focusStyle
 without providing any additional parameters:
 
 ```tsx
-import { createStyles } from '@coengageui/core';
+import { createStyles } from 'coengageui_core';
 
 const useStyles = createStyles((theme) => ({
   myCustomButton: {
@@ -104,7 +104,7 @@ With `fontStyles` function you can add font styles from your CoengageUI theme to
 Function returns font-family and font-smoothing styles:
 
 ```tsx
-import { createStyles } from '@coengageui/core';
+import { createStyles } from 'coengageui_core';
 
 const useStyles = createStyles((theme) => ({
   myCustomText: {
@@ -133,7 +133,7 @@ theme.fn.largerThan(700); // -> `@media (min-width: 701px)`
 You can use both functions as a replacement for regular media query syntax in `createStyles` function, `styles` and `sx` props:
 
 ```tsx
-import { createStyles } from '@coengageui/core';
+import { createStyles } from 'coengageui_core';
 
 const useStyles = createStyles((theme) => ({
   myResponsiveText: {

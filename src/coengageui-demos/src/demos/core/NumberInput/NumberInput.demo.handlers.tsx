@@ -5,11 +5,11 @@ import {
   ActionIcon,
   NumberInputHandlers,
   useCoengageUITheme,
-} from '@coengageui/core';
+} from 'coengageui_core';
 
 const code = `
 import { useState, useRef } from 'react';
-import { NumberInput, Group, ActionIcon, NumberInputHandlers } from '@coengageui/core';
+import { NumberInput, Group, ActionIcon, NumberInputHandlers } from 'coengageui_core';
 
 function Demo() {
   const [value, setValue] = useState(0);

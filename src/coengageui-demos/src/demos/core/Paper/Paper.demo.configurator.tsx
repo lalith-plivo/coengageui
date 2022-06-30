@@ -1,5 +1,5 @@
 import React from 'react';
-import { Text, Paper, DEFAULT_THEME } from '@coengageui/core';
+import { Text, Paper, DEFAULT_THEME } from 'coengageui_core';
 
 function Wrapper(props: any) {
   return (
@@ -16,7 +16,7 @@ function Wrapper(props: any) {
 }
 
 const codeTemplate = (props: string) => `
-import { Text, Paper } from '@coengageui/core';
+import { Text, Paper } from 'coengageui_core';
 
 function Demo() {
   return (

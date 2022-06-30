@@ -6,8 +6,8 @@ import {
   CoengageUISize,
   Selectors,
   useCoengageUIDefaultProps,
-} from '@coengageui/core';
-import { upperFirst } from '@coengageui/hooks';
+} from 'coengageui_core';
+import { upperFirst } from 'coengageui_hooks';
 import dayjs from 'dayjs';
 import { FirstDayOfWeek } from '../../types';
 import { getMonthDays, getWeekdaysNames, isSameDate } from '../../utils';
@@ -73,8 +73,8 @@ export type MonthStylesNames = Selectors<typeof useStyles> | DayStylesNames;
 
 export interface MonthProps
   extends DefaultProps<MonthStylesNames>,
-    MonthSettings,
-    Omit<React.ComponentPropsWithoutRef<'table'>, 'onChange' | 'value'> {
+  MonthSettings,
+  Omit<React.ComponentPropsWithoutRef<'table'>, 'onChange' | 'value'> {
   /** Date at which month should be shown */
   month: Date;
 
@@ -267,4 +267,4 @@ export const Month = forwardRef<HTMLTableElement, MonthProps>((props: MonthProps
   );
 });
 
-Month.displayName = '@coengageui/dates/Month';
+Month.displayName = 'coengageui_dates/Month';

@@ -1,12 +1,12 @@
 import React, { useState, forwardRef, useRef } from 'react';
-import { useUncontrolled, useDidUpdate, useMergedRef, useUuid } from '@coengageui/hooks';
+import { useUncontrolled, useDidUpdate, useMergedRef, useUuid } from 'coengageui_hooks';
 import {
   DefaultProps,
   Selectors,
   extractSystemStyles,
   getDefaultZIndex,
   useCoengageUIDefaultProps,
-} from '@coengageui/styles';
+} from 'coengageui_styles';
 import { InputWrapper, InputWrapperBaseProps, InputWrapperStylesNames } from '../InputWrapper';
 import { Input, InputBaseProps, InputStylesNames } from '../Input';
 import { SelectDropdown, SelectDropdownStylesNames } from '../Select/SelectDropdown/SelectDropdown';
@@ -30,10 +30,10 @@ export interface AutocompleteItem {
 
 export interface AutocompleteProps
   extends DefaultProps<AutocompleteStylesNames>,
-    InputBaseProps,
-    InputWrapperBaseProps,
-    SelectSharedProps<AutocompleteItem, string>,
-    Omit<React.ComponentPropsWithoutRef<'input'>, 'size' | 'onChange' | 'value' | 'defaultValue'> {
+  InputBaseProps,
+  InputWrapperBaseProps,
+  SelectSharedProps<AutocompleteItem, string>,
+  Omit<React.ComponentPropsWithoutRef<'input'>, 'size' | 'onChange' | 'value' | 'defaultValue'> {
   /** Maximum dropdown height */
   maxDropdownHeight?: number | string;
 
@@ -307,4 +307,4 @@ export const Autocomplete = forwardRef<HTMLInputElement, AutocompleteProps>(
   }
 );
 
-Autocomplete.displayName = '@coengageui/core/Autocomplete';
+Autocomplete.displayName = 'coengageui_core/Autocomplete';

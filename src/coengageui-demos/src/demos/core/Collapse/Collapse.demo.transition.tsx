@@ -1,9 +1,9 @@
 import React, { useState } from 'react';
-import { Button, Group, Text, Collapse } from '@coengageui/core';
+import { Button, Group, Text, Collapse } from 'coengageui_core';
 
 const code = `
 import { useState } from 'react';
-import { Button, Collapse } from '@coengageui/core';
+import { Button, Collapse } from 'coengageui_core';
 
 function Demo() {
   const [opened, setOpen] = useState(false);

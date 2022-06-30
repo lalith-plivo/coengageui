@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { useForm } from '@coengageui/hooks';
+import { useForm } from 'coengageui_hooks';
 import { EnvelopeClosedIcon, LockClosedIcon } from '@modulz/radix-icons';
 import {
   TextInput,
@@ -12,7 +12,7 @@ import {
   LoadingOverlay,
   Anchor,
   useCoengageUITheme,
-} from '@coengageui/core';
+} from 'coengageui_core';
 
 export interface AuthenticationFormProps {
   noShadow?: boolean;

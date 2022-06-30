@@ -1,6 +1,6 @@
 import React from 'react';
 import { render, screen } from '@testing-library/react';
-import { itSupportsSystemProps } from '@coengageui/tests';
+import { itSupportsSystemProps } from 'coengageui_tests';
 import { Text } from '../Text/Text';
 import { Breadcrumbs, BreadcrumbsProps } from './Breadcrumbs';
 
@@ -16,11 +16,11 @@ const defaultProps: BreadcrumbsProps = {
   )),
 };
 
-describe('@coengageui/core/Breadcrumbs', () => {
+describe('coengageui_core/Breadcrumbs', () => {
   itSupportsSystemProps({
     component: Breadcrumbs,
     props: defaultProps,
-    displayName: '@coengageui/core/Breadcrumbs',
+    displayName: 'coengageui_core/Breadcrumbs',
     refType: HTMLDivElement,
   });
 

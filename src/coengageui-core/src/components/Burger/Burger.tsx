@@ -6,7 +6,7 @@ import {
   CoengageUIColor,
   Selectors,
   useCoengageUIDefaultProps,
-} from '@coengageui/styles';
+} from 'coengageui_styles';
 import { UnstyledButton } from '../Button';
 import useStyles from './Burger.styles';
 
@@ -14,7 +14,7 @@ export type BurgerStylesNames = Exclude<Selectors<typeof useStyles>, 'opened'>;
 
 export interface BurgerProps
   extends DefaultProps<BurgerStylesNames>,
-    React.ComponentPropsWithoutRef<'button'> {
+  React.ComponentPropsWithoutRef<'button'> {
   /** Burger state: true for cross, false for burger */
   opened: boolean;
 
@@ -53,4 +53,4 @@ export const Burger = forwardRef<HTMLButtonElement, BurgerProps>((props: BurgerP
   );
 });
 
-Burger.displayName = '@coengageui/core/Burger';
+Burger.displayName = 'coengageui_core/Burger';

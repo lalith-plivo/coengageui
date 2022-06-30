@@ -21,8 +21,8 @@
     "composite": true,
     "declarationDir": "lib",
     "paths": {
-      "@coengageui/core": ["../coengageui-core/src"],
-      "@coengageui/hooks": ["../coengageui-hooks/src"]
+      "coengageui_core": ["../coengageui-core/src"],
+      "coengageui_hooks": ["../coengageui-hooks/src"]
     }
   },
   "references": [{ "path": "../coengageui-core" }, { "path": "../coengageui-hooks" }]

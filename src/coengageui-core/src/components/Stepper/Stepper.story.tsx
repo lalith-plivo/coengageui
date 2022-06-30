@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { storiesOf } from '@storybook/react';
-import { COENGAGEUI_SIZES } from '@coengageui/styles';
+import { COENGAGEUI_SIZES } from 'coengageui_styles';
 import { Button } from '../Button';
 import { Group } from '../Group';
 import { Stepper, StepperProps } from './Stepper';

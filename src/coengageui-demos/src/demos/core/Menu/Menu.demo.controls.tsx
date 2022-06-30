@@ -1,9 +1,9 @@
 import React from 'react';
-import { Menu, Group, Button } from '@coengageui/core';
+import { Menu, Group, Button } from 'coengageui_core';
 import { menuItems } from './_menu-items';
 
 const code = `
-import { Menu, Button } from '@coengageui/core';
+import { Menu, Button } from 'coengageui_core';
 
 function Demo() {
   return (

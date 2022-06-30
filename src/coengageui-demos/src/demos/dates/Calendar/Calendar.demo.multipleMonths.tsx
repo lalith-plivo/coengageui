@@ -1,9 +1,9 @@
 import React, { useState } from 'react';
-import { Group, MediaQuery, Text } from '@coengageui/core';
-import { Calendar } from '@coengageui/dates';
+import { Group, MediaQuery, Text } from 'coengageui_core';
+import { Calendar } from 'coengageui_dates';
 
 const code = `
-import { Calendar } from '@coengageui/dates';
+import { Calendar } from 'coengageui_dates';
 
 function Demo() {
   return <Calendar amountOfMonths={2} />;

@@ -5,8 +5,8 @@ import {
   getDefaultZIndex,
   CoengageUINumberSize,
   useCoengageUIDefaultProps,
-} from '@coengageui/styles';
-import { useMergedRef } from '@coengageui/hooks';
+} from 'coengageui_styles';
+import { useMergedRef } from 'coengageui_hooks';
 import { Box } from '../Box';
 import { Popper, SharedPopperProps } from '../Popper';
 import useStyles from './Tooltip.styles';
@@ -15,8 +15,8 @@ export type TooltipStylesNames = Selectors<typeof useStyles>;
 
 export interface TooltipProps
   extends DefaultProps<TooltipStylesNames>,
-    SharedPopperProps,
-    React.ComponentPropsWithoutRef<'div'> {
+  SharedPopperProps,
+  React.ComponentPropsWithoutRef<'div'> {
   /** Tooltip content */
   label: React.ReactNode;
 
@@ -209,4 +209,4 @@ export const Tooltip = forwardRef<HTMLDivElement, TooltipProps>((props: TooltipP
   );
 });
 
-Tooltip.displayName = '@coengageui/core/Tooltip';
+Tooltip.displayName = 'coengageui_core/Tooltip';

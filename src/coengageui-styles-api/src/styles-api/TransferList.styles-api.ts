@@ -1,4 +1,4 @@
-import type { TransferListStylesNames } from '@coengageui/core';
+import type { TransferListStylesNames } from 'coengageui_core';
 
 export const TransferList: Record<TransferListStylesNames, string> = {
   transferList: 'One of list',

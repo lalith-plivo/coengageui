@@ -1,5 +1,5 @@
 import React from 'react';
-import { ActionIcon, ActionIconProps } from '@coengageui/core';
+import { ActionIcon, ActionIconProps } from 'coengageui_core';
 import useStyles from './ToolbarButton.styles';
 
 interface ToolbarButtonProps extends ActionIconProps<'button'> {
@@ -38,4 +38,4 @@ export function ToolbarButton({
   );
 }
 
-ToolbarButton.displayName = '@coengageui/rte/ToolbarButton';
+ToolbarButton.displayName = 'coengageui_rte/ToolbarButton';

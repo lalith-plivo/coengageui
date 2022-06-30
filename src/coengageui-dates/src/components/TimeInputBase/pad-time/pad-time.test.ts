@@ -1,6 +1,6 @@
 import { padTime } from './pad-time';
 
-describe('@coengageui/dates/pad-time', () => {
+describe('coengageui_dates/pad-time', () => {
   it('correctly pads time', () => {
     expect(padTime('20')).toBe('20');
     expect(padTime('59')).toBe('59');

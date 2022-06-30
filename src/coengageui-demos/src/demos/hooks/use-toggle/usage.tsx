@@ -1,10 +1,10 @@
 import React from 'react';
-import { Button, Group } from '@coengageui/core';
-import { useToggle, upperFirst } from '@coengageui/hooks';
+import { Button, Group } from 'coengageui_core';
+import { useToggle, upperFirst } from 'coengageui_hooks';
 
 const code = `
-import { Button } from '@coengageui/core';
-import { useToggle } from '@coengageui/hooks';
+import { Button } from 'coengageui_core';
+import { useToggle } from 'coengageui_hooks';
 
 function Demo() {
   const [value, toggle] = useToggle('blue', ['blue', 'orange']);

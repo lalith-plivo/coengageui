@@ -1,5 +1,5 @@
 import React, { useRef, useState, useEffect, forwardRef } from 'react';
-import { DefaultProps, Selectors, useCoengageUIDefaultProps } from '@coengageui/styles';
+import { DefaultProps, Selectors, useCoengageUIDefaultProps } from 'coengageui_styles';
 import { Anchor } from '../Anchor';
 import { Box } from '../Box';
 import useStyles from './Spoiler.styles';
@@ -8,7 +8,7 @@ export type SpoilerStylesNames = Selectors<typeof useStyles>;
 
 export interface SpoilerProps
   extends DefaultProps<SpoilerStylesNames>,
-    React.ComponentPropsWithoutRef<'div'> {
+  React.ComponentPropsWithoutRef<'div'> {
   /** Max height of visible content, when this point is reached spoiler appears */
   maxHeight: number;
 
@@ -89,4 +89,4 @@ export const Spoiler = forwardRef<HTMLDivElement, SpoilerProps>((props: SpoilerP
   );
 });
 
-Spoiler.displayName = '@coengageui/core/Spoiler';
+Spoiler.displayName = 'coengageui_core/Spoiler';

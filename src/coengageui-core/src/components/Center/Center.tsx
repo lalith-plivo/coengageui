@@ -4,7 +4,7 @@ import {
   PolymorphicComponentProps,
   PolymorphicRef,
   useCoengageUIDefaultProps,
-} from '@coengageui/styles';
+} from 'coengageui_styles';
 import { Box } from '../Box';
 
 export interface _CenterProps extends DefaultProps {
@@ -41,4 +41,4 @@ export const Center: CenterComponent = forwardRef(
   }
 ) as any;
 
-Center.displayName = '@coengageui/core/Center';
+Center.displayName = 'coengageui_core/Center';

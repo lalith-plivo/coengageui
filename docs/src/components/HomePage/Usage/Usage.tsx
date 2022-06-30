@@ -1,5 +1,5 @@
 import React from 'react';
-import { Text, SimpleGrid } from '@coengageui/core';
+import { Text, SimpleGrid } from 'coengageui_core';
 import { Link } from 'gatsby';
 import { GUIDES_DATA } from '../../GettingStarted/Guides/data';
 import { PageSection } from '../PageSection/PageSection';

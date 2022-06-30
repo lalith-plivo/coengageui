@@ -1,5 +1,5 @@
 import React from 'react';
-import { RingProgress, Group, RingProgressProps } from '@coengageui/core';
+import { RingProgress, Group, RingProgressProps } from 'coengageui_core';
 
 function Wrapper(props: RingProgressProps) {
   return (
@@ -17,7 +17,7 @@ function Wrapper(props: RingProgressProps) {
 }
 
 const codeTemplate = (props: string) => `
-import { RingProgress } from '@coengageui/core';
+import { RingProgress } from 'coengageui_core';
 
 function Demo() {
   return (

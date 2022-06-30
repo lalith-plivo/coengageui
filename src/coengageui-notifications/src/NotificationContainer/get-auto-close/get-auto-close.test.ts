@@ -1,6 +1,6 @@
 import getAutoClose from './get-auto-close';
 
-describe('@coengageui/notifications/get-auto-close', () => {
+describe('coengageui_notifications/get-auto-close', () => {
   it('prioritizes notification autoClose prop', () => {
     expect(getAutoClose(false, 10)).toBe(10);
     expect(getAutoClose(400, 10)).toBe(10);

@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { storiesOf } from '@storybook/react';
-import { CoengageUIProvider, COENGAGEUI_SIZES } from '@coengageui/styles';
+import { CoengageUIProvider, COENGAGEUI_SIZES } from 'coengageui_styles';
 import { PasswordInput, PasswordInputProps } from './PasswordInput';
 
 const sizes = COENGAGEUI_SIZES.map((size) => (

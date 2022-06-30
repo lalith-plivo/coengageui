@@ -1,5 +1,5 @@
 import React, { forwardRef } from 'react';
-import { useUuid } from '@coengageui/hooks';
+import { useUuid } from 'coengageui_hooks';
 import {
   DefaultProps,
   CoengageUINumberSize,
@@ -8,7 +8,7 @@ import {
   Selectors,
   extractSystemStyles,
   useCoengageUIDefaultProps,
-} from '@coengageui/styles';
+} from 'coengageui_styles';
 import { Box } from '../Box';
 import useStyles from './Switch.styles';
 
@@ -16,7 +16,7 @@ export type SwitchStylesNames = Selectors<typeof useStyles>;
 
 export interface SwitchProps
   extends DefaultProps<SwitchStylesNames>,
-    Omit<React.ComponentPropsWithoutRef<'input'>, 'type' | 'size'> {
+  Omit<React.ComponentPropsWithoutRef<'input'>, 'type' | 'size'> {
   /** Id is used to bind input and label, if not passed unique id will be generated for each input */
   id?: string;
 
@@ -95,4 +95,4 @@ export const Switch = forwardRef<HTMLInputElement, SwitchProps>((props: SwitchPr
   );
 });
 
-Switch.displayName = '@coengageui/core/Switch';
+Switch.displayName = 'coengageui_core/Switch';

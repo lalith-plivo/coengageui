@@ -1,5 +1,5 @@
 import React, { forwardRef } from 'react';
-import { DefaultProps, CoengageUINumberSize, useCoengageUIDefaultProps } from '@coengageui/styles';
+import { DefaultProps, CoengageUINumberSize, useCoengageUIDefaultProps } from 'coengageui_styles';
 import { RenderList, RenderListStylesNames } from './RenderList/RenderList';
 import { SelectScrollArea } from '../Select/SelectScrollArea/SelectScrollArea';
 import { DefaultItem } from './DefaultItem/DefaultItem';
@@ -11,7 +11,7 @@ export type TransferListStylesNames = RenderListStylesNames;
 
 export interface TransferListProps
   extends DefaultProps<TransferListStylesNames>,
-    Omit<React.ComponentPropsWithoutRef<'div'>, 'value' | 'onChange'> {
+  Omit<React.ComponentPropsWithoutRef<'div'>, 'value' | 'onChange'> {
   /** Current value */
   value: TransferListData;
 
@@ -164,4 +164,4 @@ export const TransferList = forwardRef<HTMLDivElement, TransferListProps>(
   }
 );
 
-TransferList.displayName = '@coengageui/core/TransferList';
+TransferList.displayName = 'coengageui_core/TransferList';

@@ -1,4 +1,4 @@
-import type { CoengageUINumberSize } from '@coengageui/styles';
+import type { CoengageUINumberSize } from 'coengageui_styles';
 import { createUseContext } from '../../utils';
 
 interface GridContextValue {

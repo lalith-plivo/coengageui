@@ -1,6 +1,6 @@
 import React from 'react';
 import { render } from '@testing-library/react';
-import { itRendersChildren, itSupportsSystemProps } from '@coengageui/tests';
+import { itRendersChildren, itSupportsSystemProps } from 'coengageui_tests';
 import { Header } from './Header/Header';
 import { Navbar } from './Navbar/Navbar';
 import { AppShell, AppShellProps } from './AppShell';
@@ -9,12 +9,12 @@ const defaultProps: AppShellProps = {
   children: 'test-app-shell',
 };
 
-describe('@coengageui/core/AppShell', () => {
+describe('coengageui_core/AppShell', () => {
   itRendersChildren(AppShell, defaultProps);
   itSupportsSystemProps({
     component: AppShell,
     props: defaultProps,
-    displayName: '@coengageui/core/AppShell',
+    displayName: 'coengageui_core/AppShell',
     refType: HTMLDivElement,
   });
 

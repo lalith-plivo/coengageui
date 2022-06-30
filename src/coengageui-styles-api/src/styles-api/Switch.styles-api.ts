@@ -1,4 +1,4 @@
-import type { SwitchStylesNames } from '@coengageui/core';
+import type { SwitchStylesNames } from 'coengageui_core';
 
 export const Switch: Record<SwitchStylesNames, string> = {
   root: 'Root element',

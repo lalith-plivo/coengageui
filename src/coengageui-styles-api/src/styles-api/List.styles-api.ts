@@ -1,4 +1,4 @@
-import type { ListStylesNames } from '@coengageui/core';
+import type { ListStylesNames } from 'coengageui_core';
 
 export const List: Record<ListStylesNames, string> = {
   root: 'Root element (ul or ol)',

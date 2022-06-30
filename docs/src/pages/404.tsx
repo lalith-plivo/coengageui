@@ -1,6 +1,6 @@
 /* eslint-disable react/no-unescaped-entities */
 import React from 'react';
-import { Button, Container, Group } from '@coengageui/core';
+import { Button, Container, Group } from 'coengageui_core';
 import { StarFilledIcon, TwitterLogoIcon } from '@modulz/radix-icons';
 import GatsbyLink from '../components/MdxPage/MdxProvider/GatsbyLink/GatsbyLink';
 import Head from '../components/Head/Head';

@@ -1,8 +1,8 @@
 import React from 'react';
-import { AspectRatio, Image } from '@coengageui/core';
+import { AspectRatio, Image } from 'coengageui_core';
 
 const code = `
-import { AspectRatio, Image } from '@coengageui/core';
+import { AspectRatio, Image } from 'coengageui_core';
 
 function Demo() {
   return (

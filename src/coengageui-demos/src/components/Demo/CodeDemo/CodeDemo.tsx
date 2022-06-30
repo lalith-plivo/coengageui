@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
 import { Language } from 'prism-react-renderer';
 import { CodeIcon } from '@modulz/radix-icons';
-import { useCoengageUITheme, Paper, Group, ActionIcon, Tooltip } from '@coengageui/core';
-import { Prism } from '@coengageui/prism';
+import { useCoengageUITheme, Paper, Group, ActionIcon, Tooltip } from 'coengageui_core';
+import { Prism } from 'coengageui_prism';
 import useStyles from './CodeDemo.styles';
 
 interface CodeDemoProps {

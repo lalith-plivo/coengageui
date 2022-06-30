@@ -1,5 +1,5 @@
 import React from 'react';
-import { Text } from '@coengageui/core';
+import { Text } from 'coengageui_core';
 
 export function Content() {
   return (

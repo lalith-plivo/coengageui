@@ -1,7 +1,7 @@
 import { renderHook } from '@testing-library/react-hooks';
 import { useDidUpdate } from './use-did-update';
 
-describe('@coengageui/hooks/use-did-update', () => {
+describe('coengageui_hooks/use-did-update', () => {
   afterAll(() => {
     jest.clearAllMocks();
   });

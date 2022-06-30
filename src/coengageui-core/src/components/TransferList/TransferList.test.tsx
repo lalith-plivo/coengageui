@@ -1,8 +1,8 @@
-import { itSupportsSystemProps } from '@coengageui/tests';
+import { itSupportsSystemProps } from 'coengageui_tests';
 import { TransferList, TransferListProps } from './TransferList';
 
 const defaultProps: TransferListProps = {
-  onChange: () => {},
+  onChange: () => { },
   titles: ['test-1', 'test-2'],
   value: [
     [
@@ -17,11 +17,11 @@ const defaultProps: TransferListProps = {
   ],
 };
 
-describe('@coengageui/core/TransferList', () => {
+describe('coengageui_core/TransferList', () => {
   itSupportsSystemProps({
     component: TransferList,
     props: defaultProps,
-    displayName: '@coengageui/core/TransferList',
+    displayName: 'coengageui_core/TransferList',
     refType: HTMLDivElement,
   });
 });

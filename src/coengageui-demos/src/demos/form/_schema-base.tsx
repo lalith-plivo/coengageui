@@ -1,8 +1,8 @@
 /* eslint-disable no-console */
 import React from 'react';
 import { z } from 'zod';
-import { useForm, zodResolver } from '@coengageui/form';
-import { NumberInput, TextInput, Button, Box, Group } from '@coengageui/core';
+import { useForm, zodResolver } from 'coengageui_form';
+import { NumberInput, TextInput, Button, Box, Group } from 'coengageui_core';
 
 const schema = z.object({
   name: z.string().min(2, { message: 'Name should have at least 2 letters' }),

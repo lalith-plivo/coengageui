@@ -1,5 +1,5 @@
 import React from 'react';
-import { DefaultProps, Selectors } from '@coengageui/styles';
+import { DefaultProps, Selectors } from 'coengageui_styles';
 import { Box } from '../../Box';
 import { useListContext } from '../List.context';
 import useStyles from './ListItem.styles';
@@ -8,7 +8,7 @@ export type ListItemStylesNames = Selectors<typeof useStyles>;
 
 export interface ListItemProps
   extends DefaultProps<ListItemStylesNames>,
-    React.ComponentPropsWithoutRef<'li'> {
+  React.ComponentPropsWithoutRef<'li'> {
   /** Icon to replace bullet */
   icon?: React.ReactNode;
 
@@ -35,4 +35,4 @@ export function ListItem({ className, children, icon, ...others }: ListItemProps
   );
 }
 
-ListItem.displayName = '@coengageui/core/ListItem';
+ListItem.displayName = 'coengageui_core/ListItem';

@@ -1,4 +1,4 @@
-import { createStyles, CoengageUISize } from '@coengageui/styles';
+import { createStyles, CoengageUISize } from 'coengageui_styles';
 
 import { THUMB_SIZES } from '../Thumb/Thumb.styles';
 
@@ -24,11 +24,9 @@ export default createStyles((theme, { size }: ColorSliderStyles, getRef) => {
         outline: 'none',
         boxShadow:
           theme.focusRing === 'always' || theme.focusRing === 'auto'
-            ? `0 0 0 2px ${
-                theme.colorScheme === 'dark' ? theme.colors.dark[9] : theme.white
-              }, 0 0 0 4px ${
-                theme.colors[theme.primaryColor][theme.colorScheme === 'dark' ? 7 : 5]
-              }`
+            ? `0 0 0 2px ${theme.colorScheme === 'dark' ? theme.colors.dark[9] : theme.white
+            }, 0 0 0 4px ${theme.colors[theme.primaryColor][theme.colorScheme === 'dark' ? 7 : 5]
+            }`
             : undefined,
       },
 

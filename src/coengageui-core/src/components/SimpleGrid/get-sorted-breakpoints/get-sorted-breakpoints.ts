@@ -1,4 +1,4 @@
-import { CoengageUITheme } from '@coengageui/styles';
+import { CoengageUITheme } from 'coengageui_styles';
 import type { SimpleGridBreakpoint } from '../SimpleGrid.styles';
 
 export function getSortedBreakpoints(theme: CoengageUITheme, breakpoints: SimpleGridBreakpoint[]) {

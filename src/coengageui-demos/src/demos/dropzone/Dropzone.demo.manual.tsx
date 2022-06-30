@@ -1,11 +1,11 @@
 import React, { useRef } from 'react';
-import { Button, Group } from '@coengageui/core';
+import { Button, Group } from 'coengageui_core';
 import { BaseDemo } from './_base';
 
 const code = `
 import { useRef } from 'react';
-import { Button, Group } from '@coengageui/core';
-import { Dropzone } from '@coengageui/dropzone';
+import { Button, Group } from 'coengageui_core';
+import { Dropzone } from 'coengageui_dropzone';
 
 function Demo() {
   const openRef = useRef<() => void>();

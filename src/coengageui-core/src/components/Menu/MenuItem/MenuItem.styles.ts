@@ -1,4 +1,4 @@
-import { createStyles, CoengageUINumberSize, CoengageUIColor } from '@coengageui/styles';
+import { createStyles, CoengageUINumberSize, CoengageUIColor } from 'coengageui_styles';
 
 export interface MenuItemStylesParams {
   radius: CoengageUINumberSize;
@@ -24,8 +24,8 @@ export default createStyles((theme, { radius, color }: MenuItemStylesParams) => 
     color: color
       ? theme.fn.themeColor(color, theme.colorScheme === 'dark' ? 5 : 7)
       : theme.colorScheme === 'dark'
-      ? theme.colors.dark[0]
-      : theme.black,
+        ? theme.colors.dark[0]
+        : theme.black,
 
     '&:disabled': {
       color: theme.colorScheme === 'dark' ? theme.colors.dark[3] : theme.colors.gray[5],
@@ -37,8 +37,8 @@ export default createStyles((theme, { radius, color }: MenuItemStylesParams) => 
     backgroundColor: color
       ? theme.fn.variant({ variant: 'light', color }).background
       : theme.colorScheme === 'dark'
-      ? theme.fn.rgba(theme.colors.dark[3], 0.35)
-      : theme.colors.gray[0],
+        ? theme.fn.rgba(theme.colors.dark[3], 0.35)
+        : theme.colors.gray[0],
   },
 
   itemInner: {

@@ -1,4 +1,4 @@
-import { createStyles, CoengageUISize } from '@coengageui/styles';
+import { createStyles, CoengageUISize } from 'coengageui_styles';
 import { THUMB_SIZES } from '../Thumb/Thumb.styles';
 
 interface SaturationStyles {
@@ -30,9 +30,8 @@ export default createStyles((theme, { size }: SaturationStyles, getRef) => {
 
       [`&:focus .${saturationThumb.ref}`]: {
         outline: 'none',
-        boxShadow: `0 0 0 1px ${
-          theme.colorScheme === 'dark' ? theme.colors.dark[9] : theme.white
-        }, 0 0 0 3px ${theme.colors[theme.primaryColor][theme.colorScheme === 'dark' ? 7 : 5]}`,
+        boxShadow: `0 0 0 1px ${theme.colorScheme === 'dark' ? theme.colors.dark[9] : theme.white
+          }, 0 0 0 3px ${theme.colors[theme.primaryColor][theme.colorScheme === 'dark' ? 7 : 5]}`,
       },
 
       [`&:focus:not(:focus-visible) .${saturationThumb.ref}`]: {

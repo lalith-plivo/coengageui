@@ -7,7 +7,7 @@ import {
   itSupportsSystemProps,
   renderWithAct,
   actAsync,
-} from '@coengageui/tests';
+} from 'coengageui_tests';
 import { Tooltip, TooltipProps } from './Tooltip';
 
 const defaultProps: TooltipProps = {
@@ -17,7 +17,7 @@ const defaultProps: TooltipProps = {
   transitionDuration: 0,
 };
 
-describe('@coengageui/core/Tooltip', () => {
+describe('coengageui_core/Tooltip', () => {
   afterEach(() => jest.useRealTimers());
 
   itRendersChildren(Tooltip, defaultProps);
@@ -25,7 +25,7 @@ describe('@coengageui/core/Tooltip', () => {
   itSupportsSystemProps({
     component: Tooltip,
     props: defaultProps,
-    displayName: '@coengageui/core/Tooltip',
+    displayName: 'coengageui_core/Tooltip',
     refType: HTMLDivElement,
   });
 

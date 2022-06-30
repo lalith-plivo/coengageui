@@ -1,4 +1,4 @@
-import type { PopoverStylesNames } from '@coengageui/core';
+import type { PopoverStylesNames } from 'coengageui_core';
 
 export const Popover: Record<PopoverStylesNames, string> = {
   root: 'Root element',

@@ -1,7 +1,7 @@
 import React from 'react';
-import { Tooltip } from '@coengageui/core';
-import { useClipboard, useMediaQuery } from '@coengageui/hooks';
-import { Prism } from '@coengageui/prism';
+import { Tooltip } from 'coengageui_core';
+import { useClipboard, useMediaQuery } from 'coengageui_hooks';
+import { Prism } from 'coengageui_prism';
 import { Language } from 'prism-react-renderer';
 import useStyles from './HeaderCode.styles';
 

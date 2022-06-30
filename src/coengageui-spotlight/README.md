@@ -8,10 +8,10 @@ Overlay command center for your application
 
 ```sh
 # With yarn
-yarn add @coengageui/spotlight @coengageui/core @coengageui/hooks
+yarn add coengageui_spotlight coengageui_core coengageui_hooks
 
 # With npm
-npm install @coengageui/spotlight @coengageui/core @coengageui/hooks
+npm install coengageui_spotlight coengageui_core coengageui_hooks
 ```
 
 ## License

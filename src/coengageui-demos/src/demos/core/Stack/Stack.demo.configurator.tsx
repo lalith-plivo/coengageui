@@ -1,5 +1,5 @@
 import React from 'react';
-import { Stack, StackProps, Button } from '@coengageui/core';
+import { Stack, StackProps, Button } from 'coengageui_core';
 
 function Wrapper(props: StackProps) {
   return (
@@ -18,7 +18,7 @@ function Wrapper(props: StackProps) {
 }
 
 const codeTemplate = (props: string) => `
-import { Stack, Button } from '@coengageui/core';
+import { Stack, Button } from 'coengageui_core';
 
 function Demo() {
   return (

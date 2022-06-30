@@ -1,9 +1,9 @@
 import React from 'react';
-import { useHover } from '@coengageui/hooks';
-import { useCoengageUITheme, Text } from '@coengageui/core';
+import { useHover } from 'coengageui_hooks';
+import { useCoengageUITheme, Text } from 'coengageui_core';
 
 const code = `
-import { useHover } from '@coengageui/hooks';
+import { useHover } from 'coengageui_hooks';
 
 function Demo() {
   const { hovered, ref } = useHover();

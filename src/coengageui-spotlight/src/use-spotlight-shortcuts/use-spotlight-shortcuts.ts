@@ -1,4 +1,4 @@
-import { useHotkeys, HotkeyItem } from '@coengageui/hooks';
+import { useHotkeys, HotkeyItem } from 'coengageui_hooks';
 
 export function getHotkeysPayload(
   shortcuts: string | string[],

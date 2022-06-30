@@ -1,7 +1,7 @@
 import { renderHook } from '@testing-library/react-hooks';
 import { useId } from './use-id';
 
-describe('@coengageui/hooks/use-id', () => {
+describe('coengageui_hooks/use-id', () => {
   it('returns id from hook call', () => {
     const hook = renderHook(() => useId('test-id'));
     expect(hook.result.current).toBe('test-id');

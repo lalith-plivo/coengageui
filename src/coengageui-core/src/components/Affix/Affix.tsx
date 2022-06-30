@@ -4,13 +4,13 @@ import {
   CoengageUIStyleSystemSize,
   getDefaultZIndex,
   useCoengageUIDefaultProps,
-} from '@coengageui/styles';
+} from 'coengageui_styles';
 import { Box } from '../Box';
 import { Portal } from '../Portal/Portal';
 
 export interface AffixProps
   extends Omit<DefaultProps, CoengageUIStyleSystemSize>,
-    React.ComponentPropsWithoutRef<'div'> {
+  React.ComponentPropsWithoutRef<'div'> {
   /** Element where portal should be rendered, by default new div element is created and appended to document.body */
   target?: HTMLDivElement;
 
@@ -48,4 +48,4 @@ export const Affix = forwardRef<HTMLDivElement, AffixProps>((props: AffixProps, 
   );
 });
 
-Affix.displayName = '@coengageui/core/Affix';
+Affix.displayName = 'coengageui_core/Affix';

@@ -1,5 +1,5 @@
 import React, { useState, useRef, forwardRef } from 'react';
-import { useUncontrolled, useMergedRef, useUuid } from '@coengageui/hooks';
+import { useUncontrolled, useMergedRef, useUuid } from 'coengageui_hooks';
 import {
   DefaultProps,
   CoengageUISize,
@@ -10,17 +10,17 @@ import {
   InputStylesNames,
   CloseButton,
   extractSystemStyles,
-} from '@coengageui/core';
-import { BaseSelectProps } from '@coengageui/core/src/components/Select/types';
+} from 'coengageui_core';
+import { BaseSelectProps } from 'coengageui_core/src/components/Select/types';
 import useStyles, { RIGHT_SECTION_WIDTH } from './TagInput.styles';
 import { DefaultValue, DefaultValueStylesNames } from './DefaultValue/DefaultValue';
 
 export type TagInputStylesNames =
   | DefaultValueStylesNames
   | Exclude<
-      Selectors<typeof useStyles>,
-      'tagInputEmpty' | 'tagInputInputHidden' | 'tagInputPointer'
-    >
+    Selectors<typeof useStyles>,
+    'tagInputEmpty' | 'tagInputInputHidden' | 'tagInputPointer'
+  >
   | InputStylesNames
   | InputWrapperStylesNames;
 export interface TagInputProps extends DefaultProps<TagInputStylesNames>, BaseSelectProps {
@@ -119,7 +119,7 @@ export const TagInput = forwardRef<HTMLInputElement, TagInputProps>(
       wrapperProps,
       value,
       defaultValue,
-      onChange = () => {},
+      onChange = () => { },
       valueComponent: Value = DefaultValue,
       id,
       onFocus,
@@ -141,7 +141,7 @@ export const TagInput = forwardRef<HTMLInputElement, TagInputProps>(
       addOnPaste = true,
       pasteSplit = defaultPasteSplit,
       validationRegex = /.*/,
-      onValidationReject = () => {},
+      onValidationReject = () => { },
       onlyUnique = false,
       ...others
     }: TagInputProps,
@@ -386,4 +386,4 @@ export const TagInput = forwardRef<HTMLInputElement, TagInputProps>(
   }
 );
 
-TagInput.displayName = '@coengageui/labs/TagInput';
+TagInput.displayName = 'coengageui_labs/TagInput';

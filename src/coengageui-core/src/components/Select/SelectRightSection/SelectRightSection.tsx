@@ -1,5 +1,5 @@
 import React from 'react';
-import { CoengageUISize } from '@coengageui/styles';
+import { CoengageUISize } from 'coengageui_styles';
 import { CloseButton } from '../../ActionIcon/CloseButton/CloseButton';
 import { ChevronIcon } from './ChevronIcon';
 
@@ -35,4 +35,4 @@ export function SelectRightSection({
   );
 }
 
-SelectRightSection.displayName = '@coengageui/core/SelectRightSection';
+SelectRightSection.displayName = 'coengageui_core/SelectRightSection';

@@ -6,7 +6,7 @@ const classes = {
   title: 'title-1',
 };
 
-describe('@coengageui/tss/merge-class-names', () => {
+describe('coengageui_tss/merge-class-names', () => {
   it('merges classNames correctly', () => {
     expect(
       mergeClassNames(

@@ -7,7 +7,7 @@ async function writeVersionToPackageJson(filePath: string, version: string) {
 
   if (current.peerDependencies) {
     Object.keys(current.peerDependencies).forEach((packageName) => {
-      if (packageName.includes('@coengageui/')) {
+      if (packageName.includes('coengageui_')) {
         current.peerDependencies[packageName] = version;
       }
     });
@@ -15,7 +15,7 @@ async function writeVersionToPackageJson(filePath: string, version: string) {
 
   if (current.dependencies) {
     Object.keys(current.dependencies).forEach((packageName) => {
-      if (packageName.includes('@coengageui/')) {
+      if (packageName.includes('coengageui_')) {
         current.dependencies[packageName] = version;
       }
     });

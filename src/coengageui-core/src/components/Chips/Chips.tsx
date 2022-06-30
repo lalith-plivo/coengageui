@@ -1,19 +1,19 @@
 import React from 'react';
-import { useUncontrolled, useUuid } from '@coengageui/hooks';
+import { useUncontrolled, useUuid } from 'coengageui_hooks';
 import {
   DefaultProps,
   CoengageUINumberSize,
   CoengageUISize,
   CoengageUIColor,
   useCoengageUIDefaultProps,
-} from '@coengageui/styles';
+} from 'coengageui_styles';
 import { filterChildrenByType } from '../../utils';
 import { Group, GroupProps } from '../Group/Group';
 import { Chip, ChipStylesNames } from './Chip/Chip';
 
 export interface ChipsProps<T extends boolean = false>
   extends DefaultProps<ChipStylesNames>,
-    Omit<GroupProps, 'value' | 'defaultValue' | 'onChange' | 'classNames' | 'styles'> {
+  Omit<GroupProps, 'value' | 'defaultValue' | 'onChange' | 'classNames' | 'styles'> {
   /** Spacing between chips from theme or number to set value in px */
   spacing?: CoengageUINumberSize;
 
@@ -119,4 +119,4 @@ export function Chips<T extends boolean>(props: ChipsProps<T>) {
   );
 }
 
-Chips.displayName = '@coengageui/core/Chips';
+Chips.displayName = 'coengageui_core/Chips';

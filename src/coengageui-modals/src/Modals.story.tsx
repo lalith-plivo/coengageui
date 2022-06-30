@@ -1,7 +1,7 @@
 /* eslint-disable no-console */
 import React from 'react';
 import { storiesOf } from '@storybook/react';
-import { Button, Text, Group } from '@coengageui/core';
+import { Button, Text, Group } from 'coengageui_core';
 import { ModalsProvider, useModals, ContextModalProps } from './index';
 
 function DemoWithoutLabels() {

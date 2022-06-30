@@ -1,8 +1,8 @@
 import React from 'react';
-import { Checkbox, CheckboxProps } from '@coengageui/core';
+import { Checkbox, CheckboxProps } from 'coengageui_core';
 
 const codeTemplate = (props: string) => `
-import { Checkbox } from '@coengageui/core';
+import { Checkbox } from 'coengageui_core';
 
 function Demo() {
   return (

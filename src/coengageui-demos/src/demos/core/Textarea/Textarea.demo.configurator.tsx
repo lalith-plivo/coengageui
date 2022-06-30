@@ -1,7 +1,7 @@
-import { Textarea } from '@coengageui/core';
+import { Textarea } from 'coengageui_core';
 
 const codeTemplate = (props: string) => `
-import { Textarea } from '@coengageui/core';
+import { Textarea } from 'coengageui_core';
 
 function Demo() {
   return (

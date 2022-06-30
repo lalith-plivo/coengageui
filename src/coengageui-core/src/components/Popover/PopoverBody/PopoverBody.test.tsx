@@ -5,11 +5,11 @@ import {
   itSupportsOthers,
   itSupportsRef,
   checkAccessibility,
-} from '@coengageui/tests';
+} from 'coengageui_tests';
 import { PopoverBody, PopoverBodyProps } from './PopoverBody';
 
 const defaultProps: PopoverBodyProps = {
-  onClose: () => {},
+  onClose: () => { },
   withCloseButton: true,
   children: 'test-content',
   closeButtonLabel: 'test-label',
@@ -21,7 +21,7 @@ const defaultProps: PopoverBodyProps = {
   bodyId: 'test-body-id',
 };
 
-describe('@coengageui/core/PopoverBody', () => {
+describe('coengageui_core/PopoverBody', () => {
   checkAccessibility([<PopoverBody {...defaultProps} />]);
   itRendersChildren(PopoverBody, defaultProps);
   itSupportsOthers(PopoverBody, defaultProps);
@@ -45,6 +45,6 @@ describe('@coengageui/core/PopoverBody', () => {
   });
 
   it('has correct displayName', () => {
-    expect(PopoverBody.displayName).toStrictEqual('@coengageui/core/PopoverBody');
+    expect(PopoverBody.displayName).toStrictEqual('coengageui_core/PopoverBody');
   });
 });

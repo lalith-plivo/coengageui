@@ -1,16 +1,16 @@
-import { itIsPolymorphic, itSupportsSystemProps } from '@coengageui/tests';
+import { itIsPolymorphic, itSupportsSystemProps } from 'coengageui_tests';
 import { ColorSwatch, ColorSwatchProps } from './ColorSwatch';
 
 const defaultProps: ColorSwatchProps<'div'> = {
   color: '#fff',
 };
 
-describe('@coengageui/core/ColorSwatch', () => {
+describe('coengageui_core/ColorSwatch', () => {
   itIsPolymorphic(ColorSwatch, defaultProps);
   itSupportsSystemProps({
     component: ColorSwatch,
     props: defaultProps,
-    displayName: '@coengageui/core/ColorSwatch',
+    displayName: 'coengageui_core/ColorSwatch',
     refType: HTMLDivElement,
   });
 });

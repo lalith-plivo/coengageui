@@ -1,5 +1,5 @@
 import React from 'react';
-import { DefaultProps, Selectors } from '@coengageui/styles';
+import { DefaultProps, Selectors } from 'coengageui_styles';
 import { ColorSwatch } from '../../ColorSwatch/ColorSwatch';
 import { parseColor } from '../converters/parsers';
 import { HsvaColor } from '../types';
@@ -9,7 +9,7 @@ export type SwatchesStylesNames = Selectors<typeof useStyles>;
 
 export interface SwatchesProps
   extends DefaultProps<SwatchesStylesNames>,
-    Omit<React.ComponentPropsWithoutRef<'div'>, 'onSelect'> {
+  Omit<React.ComponentPropsWithoutRef<'div'>, 'onSelect'> {
   data: string[];
   onSelect(color: HsvaColor): void;
   swatchesPerRow?: number;
@@ -51,4 +51,4 @@ export function Swatches({
   );
 }
 
-Swatches.displayName = '@coengageui/core/Swatches';
+Swatches.displayName = 'coengageui_core/Swatches';

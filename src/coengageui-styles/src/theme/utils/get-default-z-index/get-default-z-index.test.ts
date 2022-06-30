@@ -1,6 +1,6 @@
 import { getDefaultZIndex } from './get-default-z-index';
 
-describe('@coengageui/styles/get-default-z-index', () => {
+describe('coengageui_styles/get-default-z-index', () => {
   it('returns correct z-index value', () => {
     expect(getDefaultZIndex('app')).toBe(100);
     expect(getDefaultZIndex('modal')).toBe(200);

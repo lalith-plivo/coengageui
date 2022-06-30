@@ -1,5 +1,5 @@
 import React from 'react';
-import { DatePicker } from '@coengageui/dates';
+import { DatePicker } from 'coengageui_dates';
 
 const code = `
 // Error as boolean – red border color

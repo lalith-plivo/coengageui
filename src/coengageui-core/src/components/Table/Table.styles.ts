@@ -1,4 +1,4 @@
-import { createStyles, CoengageUINumberSize } from '@coengageui/styles';
+import { createStyles, CoengageUINumberSize } from 'coengageui_styles';
 
 export interface TableStylesParams {
   captionSide: 'top' | 'bottom';
@@ -47,15 +47,13 @@ export default createStyles(
         },
 
         '& thead tr th': {
-          borderBottom: `1px solid ${
-            theme.colorScheme === 'dark' ? theme.colors.dark[4] : theme.colors.gray[3]
-          }`,
+          borderBottom: `1px solid ${theme.colorScheme === 'dark' ? theme.colors.dark[4] : theme.colors.gray[3]
+            }`,
         },
 
         '& tfoot tr th': {
-          borderTop: `1px solid ${
-            theme.colorScheme === 'dark' ? theme.colors.dark[4] : theme.colors.gray[3]
-          }`,
+          borderTop: `1px solid ${theme.colorScheme === 'dark' ? theme.colors.dark[4] : theme.colors.gray[3]
+            }`,
         },
 
         '& tbody tr td': {
@@ -63,9 +61,8 @@ export default createStyles(
             size: verticalSpacing,
             sizes: theme.spacing,
           })}px ${theme.fn.size({ size: horizontalSpacing, sizes: theme.spacing })}px`,
-          borderBottom: `1px solid ${
-            theme.colorScheme === 'dark' ? theme.colors.dark[4] : theme.colors.gray[3]
-          }`,
+          borderBottom: `1px solid ${theme.colorScheme === 'dark' ? theme.colors.dark[4] : theme.colors.gray[3]
+            }`,
           fontSize: theme.fn.size({ size: fontSize, sizes: theme.fontSizes }),
         },
 

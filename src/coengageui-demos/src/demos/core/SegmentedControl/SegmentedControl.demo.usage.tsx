@@ -2,7 +2,7 @@ import React from 'react';
 import { SegmentedControlWrapper } from './Wrapper';
 
 const code = `
-import { SegmentedControl } from '@coengageui/core';
+import { SegmentedControl } from 'coengageui_core';
 
 function Demo() {
   return (

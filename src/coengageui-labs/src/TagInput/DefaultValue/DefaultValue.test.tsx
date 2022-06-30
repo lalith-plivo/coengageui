@@ -6,18 +6,18 @@ import {
   itSupportsStyle,
   itSupportsOthers,
   checkAccessibility,
-} from '@coengageui/tests';
+} from 'coengageui_tests';
 import { DefaultValue, TagInputValueProps } from './DefaultValue';
 
 const defaultProps: TagInputValueProps = {
   label: 'test-label',
-  onRemove: () => {},
+  onRemove: () => { },
   disabled: false,
   size: 'sm',
   radius: 'sm',
 };
 
-describe('@coengageui/labs/TagInput/DefaultValue', () => {
+describe('coengageui_labs/TagInput/DefaultValue', () => {
   checkAccessibility([<DefaultValue {...defaultProps} />]);
   itSupportsClassName(DefaultValue, defaultProps);
   itSupportsStyle(DefaultValue, defaultProps);
@@ -43,6 +43,6 @@ describe('@coengageui/labs/TagInput/DefaultValue', () => {
   });
 
   it('has correct displayName', () => {
-    expect(DefaultValue.displayName).toEqual('@coengageui/labs/TagInput/DefaultValue');
+    expect(DefaultValue.displayName).toEqual('coengageui_labs/TagInput/DefaultValue');
   });
 });

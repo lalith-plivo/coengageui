@@ -1,5 +1,5 @@
 import React from 'react';
-import { Button, useCoengageUITheme } from '@coengageui/core';
+import { Button, useCoengageUITheme } from 'coengageui_core';
 import { MarkGithubIcon } from '@primer/octicons-react';
 import { TwitterIcon } from './TwitterIcon';
 import { DiscordIcon } from './DiscordIcon';

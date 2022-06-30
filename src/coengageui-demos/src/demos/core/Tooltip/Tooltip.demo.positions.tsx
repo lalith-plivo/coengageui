@@ -1,5 +1,5 @@
 import React from 'react';
-import { Tooltip, Badge, Group } from '@coengageui/core';
+import { Tooltip, Badge, Group } from 'coengageui_core';
 
 function Demo() {
   const tooltips = (['top', 'right', 'bottom', 'left'] as const).map((position, index) => {

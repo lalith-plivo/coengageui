@@ -1,9 +1,9 @@
 import React from 'react';
 import { Eye, Code, ExternalLink } from 'tabler-icons-react';
-import { Center, SegmentedControl, Box, Group } from '@coengageui/core';
+import { Center, SegmentedControl, Box, Group } from 'coengageui_core';
 
 const code = `
-import { Center, SegmentedControl, Box } from '@coengageui/core';
+import { Center, SegmentedControl, Box } from 'coengageui_core';
 import { Eye, Code, ExternalLink } from 'tabler-icons-react';
 
 function Demo() {

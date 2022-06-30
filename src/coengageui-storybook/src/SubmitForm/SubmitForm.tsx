@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Box, Button } from '@coengageui/core';
+import { Box, Button } from 'coengageui_core';
 
 interface SubmitFormProps {
   children: React.ReactNode;

@@ -1,4 +1,4 @@
-import { createStyles, CoengageUIColor, CoengageUINumberSize } from '@coengageui/styles';
+import { createStyles, CoengageUIColor, CoengageUINumberSize } from 'coengageui_styles';
 
 export interface AlertStylesParams {
   color: CoengageUIColor;

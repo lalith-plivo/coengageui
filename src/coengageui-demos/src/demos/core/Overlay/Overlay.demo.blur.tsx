@@ -1,9 +1,9 @@
 import React, { useState } from 'react';
-import { Button, Group, Box, Overlay } from '@coengageui/core';
+import { Button, Group, Box, Overlay } from 'coengageui_core';
 
 const code = `
 import { useState } from 'react';
-import { Button, Group, Box, Overlay } from '@coengageui/core';
+import { Button, Group, Box, Overlay } from 'coengageui_core';
 
 function Demo() {
   const [visible, setVisible] = useState(false);

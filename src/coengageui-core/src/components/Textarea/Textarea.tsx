@@ -1,12 +1,12 @@
 import React, { forwardRef } from 'react';
 import TextareaAutosize from 'react-textarea-autosize';
-import { useUuid } from '@coengageui/hooks';
+import { useUuid } from 'coengageui_hooks';
 import {
   DefaultProps,
   CoengageUISize,
   extractSystemStyles,
   useCoengageUIDefaultProps,
-} from '@coengageui/styles';
+} from 'coengageui_styles';
 import { InputWrapperBaseProps, InputWrapper } from '../InputWrapper/InputWrapper';
 import { TextInputStylesNames } from '../TextInput/TextInput';
 import { Input, InputBaseProps, InputProps } from '../Input/Input';
@@ -14,9 +14,9 @@ import useStyles from './Textarea.styles';
 
 export interface TextareaProps
   extends DefaultProps<TextInputStylesNames>,
-    InputWrapperBaseProps,
-    InputBaseProps,
-    React.ComponentPropsWithoutRef<'textarea'> {
+  InputWrapperBaseProps,
+  InputBaseProps,
+  React.ComponentPropsWithoutRef<'textarea'> {
   /** Id is used to bind input and label, if not passed unique id will be generated for each input */
   id?: string;
 
@@ -121,4 +121,4 @@ export const Textarea = forwardRef<HTMLTextAreaElement, TextareaProps>(
   }
 );
 
-Textarea.displayName = '@coengageui/core/Textarea';
+Textarea.displayName = 'coengageui_core/Textarea';

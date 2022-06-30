@@ -1,7 +1,7 @@
 import { focusStyles } from './focus-styles';
 import { DEFAULT_THEME } from '../../../default-theme';
 
-describe('@coengageui/styles/focus-styles', () => {
+describe('coengageui_styles/focus-styles', () => {
   it('uses primaryColor from given theme', () => {
     expect(
       (focusStyles({ ...DEFAULT_THEME, primaryColor: 'red' })()['&:focus'] as any).outline.includes(

@@ -1,13 +1,13 @@
 import React, { useState } from 'react';
-import { getHotkeyHandler, useHotkeys } from '@coengageui/hooks';
-import { useNotifications } from '@coengageui/notifications';
-import { TextInput } from '@coengageui/core';
+import { getHotkeyHandler, useHotkeys } from 'coengageui_hooks';
+import { useNotifications } from 'coengageui_notifications';
+import { TextInput } from 'coengageui_core';
 
 const code = `
 import { useState } from 'react';
-import { getHotkeyHandler } from '@coengageui/hooks';
-import { useNotifications } from '@coengageui/notifications';
-import { TextInput } from '@coengageui/core';
+import { getHotkeyHandler } from 'coengageui_hooks';
+import { useNotifications } from 'coengageui_notifications';
+import { TextInput } from 'coengageui_core';
 
 function Demo() {
   const [value, setValue] = useState("I've just used a hotkey to send a message");

@@ -1,4 +1,4 @@
-import { createStyles, CoengageUINumberSize, CoengageUISize } from '@coengageui/styles';
+import { createStyles, CoengageUINumberSize, CoengageUISize } from 'coengageui_styles';
 
 export type InputVariant = 'default' | 'filled' | 'unstyled' | 'headless';
 
@@ -39,11 +39,11 @@ export default createStyles(
     const sizeStyles =
       variant === 'default' || variant === 'filled'
         ? {
-            minHeight: theme.fn.size({ size, sizes }),
-            paddingLeft: theme.fn.size({ size, sizes }) / 3,
-            paddingRight: withRightSection ? rightSectionWidth : theme.fn.size({ size, sizes }) / 3,
-            borderRadius: theme.fn.radius(radius),
-          }
+          minHeight: theme.fn.size({ size, sizes }),
+          paddingLeft: theme.fn.size({ size, sizes }) / 3,
+          paddingRight: withRightSection ? rightSectionWidth : theme.fn.size({ size, sizes }) / 3,
+          borderRadius: theme.fn.radius(radius),
+        }
         : null;
 
     return {
@@ -55,56 +55,55 @@ export default createStyles(
         variant === 'headless'
           ? {}
           : {
-              ...theme.fn.fontStyles(),
-              height: multiline
-                ? variant === 'unstyled'
-                  ? undefined
-                  : 'auto'
-                : theme.fn.size({ size, sizes }),
-              WebkitTapHighlightColor: 'transparent',
-              lineHeight: multiline ? theme.lineHeight : `${theme.fn.size({ size, sizes }) - 2}px`,
-              appearance: 'none',
-              resize: 'none',
-              boxSizing: 'border-box',
-              fontSize: theme.fn.size({ size: 'sm', sizes: theme.fontSizes }),
-              width: '100%',
-              color: theme.colorScheme === 'dark' ? theme.black : theme.black,
-              display: 'block',
-              textAlign: 'left',
-              ...sizeStyles,
+            ...theme.fn.fontStyles(),
+            height: multiline
+              ? variant === 'unstyled'
+                ? undefined
+                : 'auto'
+              : theme.fn.size({ size, sizes }),
+            WebkitTapHighlightColor: 'transparent',
+            lineHeight: multiline ? theme.lineHeight : `${theme.fn.size({ size, sizes }) - 2}px`,
+            appearance: 'none',
+            resize: 'none',
+            boxSizing: 'border-box',
+            fontSize: theme.fn.size({ size: 'sm', sizes: theme.fontSizes }),
+            width: '100%',
+            color: theme.colorScheme === 'dark' ? theme.black : theme.black,
+            display: 'block',
+            textAlign: 'left',
+            ...sizeStyles,
 
-              '&:disabled': {
-                backgroundColor:
-                  theme.colorScheme === 'dark' ? theme.colors.neutral[8] : theme.colors.neutral[8],
-                color: theme.colors.neutral[5],
-                opacity: 0.6,
-                cursor: 'not-allowed',
+            '&:disabled': {
+              backgroundColor:
+                theme.colorScheme === 'dark' ? theme.colors.neutral[8] : theme.colors.neutral[8],
+              color: theme.colors.neutral[5],
+              opacity: 0.6,
+              cursor: 'not-allowed',
 
-                '&::placeholder': {
-                  color: theme.typography_light,
-                },
-              },
               '&::placeholder': {
-                opacity: 1,
-                userSelect: 'none',
-                color:
-                  theme.colorScheme === 'dark' ? theme.typography_light : theme.typography_light,
-              },
-
-              '&::-webkit-inner-spin-button, &::-webkit-outer-spin-button, &::-webkit-search-decoration, &::-webkit-search-cancel-button, &::-webkit-search-results-button, &::-webkit-search-results-decoration':
-                {
-                  appearance: 'none',
-                },
-
-              '&[type=number]': {
-                MozAppearance: 'textfield',
+                color: theme.typography_light,
               },
             },
+            '&::placeholder': {
+              opacity: 1,
+              userSelect: 'none',
+              color:
+                theme.colorScheme === 'dark' ? theme.typography_light : theme.typography_light,
+            },
+
+            '&::-webkit-inner-spin-button, &::-webkit-outer-spin-button, &::-webkit-search-decoration, &::-webkit-search-cancel-button, &::-webkit-search-results-button, &::-webkit-search-results-decoration':
+            {
+              appearance: 'none',
+            },
+
+            '&[type=number]': {
+              MozAppearance: 'textfield',
+            },
+          },
 
       defaultVariant: {
-        border: `1px solid ${
-          theme.colorScheme === 'dark' ? theme.colors.neutral[6] : theme.colors.neutral[6]
-        }`,
+        border: `1px solid ${theme.colorScheme === 'dark' ? theme.colors.neutral[6] : theme.colors.neutral[6]
+          }`,
         backgroundColor: theme.colorScheme === 'dark' ? theme.white : theme.white,
         transition: 'border-color 100ms ease',
 
@@ -120,9 +119,8 @@ export default createStyles(
 
         '&:focus, &:focus-within': {
           outline: 'none',
-          borderColor: `${
-            theme.colors[theme.primaryColor][theme.colorScheme === 'dark' ? 8 : 5]
-          } !important`,
+          borderColor: `${theme.colors[theme.primaryColor][theme.colorScheme === 'dark' ? 8 : 5]
+            } !important`,
         },
       },
 
@@ -187,8 +185,8 @@ export default createStyles(
         color: invalid
           ? theme.colors.danger[theme.colorScheme === 'dark' ? 1 : 1]
           : theme.colorScheme === 'dark'
-          ? theme.colors.neutral[5]
-          : theme.colors.neutral[5],
+            ? theme.colors.neutral[5]
+            : theme.colors.neutral[5],
       },
 
       rightSection: {

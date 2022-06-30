@@ -1,10 +1,10 @@
 import React from 'react';
-import { TextInput, Button, Group } from '@coengageui/core';
-import { useModals } from '@coengageui/modals';
+import { TextInput, Button, Group } from 'coengageui_core';
+import { useModals } from 'coengageui_modals';
 
 const code = `
-import { TextInput, Button } from '@coengageui/core';
-import { useModals } from '@coengageui/modals';
+import { TextInput, Button } from 'coengageui_core';
+import { useModals } from 'coengageui_modals';
 
 function Demo() {
   const modals = useModals();

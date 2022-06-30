@@ -2,7 +2,7 @@ import 'dayjs/locale/ru';
 import React from 'react';
 import { render, screen } from '@testing-library/react';
 import userEvent from '@testing-library/user-event';
-import { itSupportsSystemProps } from '@coengageui/tests';
+import { itSupportsSystemProps } from 'coengageui_tests';
 import { Month, MonthProps } from './Month';
 
 const defaultProps: MonthProps = {
@@ -10,11 +10,11 @@ const defaultProps: MonthProps = {
   value: new Date(2021, 11, 5),
 };
 
-describe('@coengageui/dates/Month', () => {
+describe('coengageui_dates/Month', () => {
   itSupportsSystemProps({
     component: Month,
     props: defaultProps,
-    displayName: '@coengageui/dates/Month',
+    displayName: 'coengageui_dates/Month',
     refType: HTMLTableElement,
   });
 

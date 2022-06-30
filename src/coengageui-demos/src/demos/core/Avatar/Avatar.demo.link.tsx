@@ -1,9 +1,9 @@
 import React from 'react';
-import { Avatar, Group } from '@coengageui/core';
+import { Avatar, Group } from 'coengageui_core';
 import { avatars } from './_mockdata';
 
 const code = `
-import { Avatar } from '@coengageui/core';
+import { Avatar } from 'coengageui_core';
 
 function Demo() {
   return (

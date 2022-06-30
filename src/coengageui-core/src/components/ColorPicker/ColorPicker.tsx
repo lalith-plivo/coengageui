@@ -1,11 +1,11 @@
 import React, { useState, useEffect, useRef, forwardRef } from 'react';
-import { useUncontrolled, useDidUpdate } from '@coengageui/hooks';
+import { useUncontrolled, useDidUpdate } from 'coengageui_hooks';
 import {
   DefaultProps,
   CoengageUISize,
   Selectors,
   useCoengageUIDefaultProps,
-} from '@coengageui/styles';
+} from 'coengageui_styles';
 import { Box } from '../Box';
 import { ColorSwatch } from '../ColorSwatch/ColorSwatch';
 import { convertHsvaTo, isColorValid, parseColor } from './converters';
@@ -53,8 +53,8 @@ export interface ColorPickerBaseProps {
 
 export interface ColorPickerProps
   extends DefaultProps<ColorPickerStylesNames>,
-    ColorPickerBaseProps,
-    Omit<React.ComponentPropsWithoutRef<'div'>, 'onChange' | 'value' | 'defaultValue'> {
+  ColorPickerBaseProps,
+  Omit<React.ComponentPropsWithoutRef<'div'>, 'onChange' | 'value' | 'defaultValue'> {
   /** Force picker to take 100% width of its container */
   fullWidth?: boolean;
 
@@ -232,4 +232,4 @@ export const ColorPicker = forwardRef<HTMLDivElement, ColorPickerProps>(
   }
 );
 
-ColorPicker.displayName = '@coengageui/core/ColorPicker';
+ColorPicker.displayName = 'coengageui_core/ColorPicker';

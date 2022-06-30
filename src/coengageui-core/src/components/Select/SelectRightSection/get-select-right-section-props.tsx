@@ -1,5 +1,5 @@
 import React from 'react';
-import { CoengageUITheme } from '@coengageui/styles';
+import { CoengageUITheme } from 'coengageui_styles';
 import { SelectRightSection, SelectRightSectionProps } from './SelectRightSection';
 
 interface GetRightSectionProps extends SelectRightSectionProps {

@@ -10,11 +10,11 @@ import {
   SimpleGrid,
   Accordion,
   useAccordionState,
-} from '@coengageui/core';
+} from 'coengageui_core';
 
 const code = `
 import { User, MapPin, CircleCheck } from 'tabler-icons-react';
-import { TextInput, Textarea, Group, Button, Text, SimpleGrid, Accordion, useAccordionState, useCoengageUITheme } from '@coengageui/core';
+import { TextInput, Textarea, Group, Button, Text, SimpleGrid, Accordion, useAccordionState, useCoengageUITheme } from 'coengageui_core';
 
 function Demo() {
   const [state, handlers] = useAccordionState({ total: 3, initialItem: 0 });

@@ -1,9 +1,9 @@
 import React, { useState } from 'react';
-import { Modal, Group, Button } from '@coengageui/core';
+import { Modal, Group, Button } from 'coengageui_core';
 import { AuthenticationForm } from '../../../shared/AuthenticationForm/AuthenticationForm';
 
 const code = `
-import { Modal } from '@coengageui/core';
+import { Modal } from 'coengageui_core';
 
 function Demo() {
   return <Modal centered /* ...other props */ />;

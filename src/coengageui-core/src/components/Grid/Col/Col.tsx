@@ -1,5 +1,5 @@
 import React, { forwardRef } from 'react';
-import { DefaultProps, useCoengageUIDefaultProps } from '@coengageui/styles';
+import { DefaultProps, useCoengageUIDefaultProps } from 'coengageui_styles';
 import { Box } from '../../Box';
 import { useGridContext } from '../Grid.context';
 import useStyles from './Col.styles';
@@ -111,4 +111,4 @@ export const Col = forwardRef<HTMLDivElement, ColProps>((props: ColProps, ref) =
   );
 });
 
-Col.displayName = '@coengageui/core/Col';
+Col.displayName = 'coengageui_core/Col';

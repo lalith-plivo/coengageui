@@ -1,4 +1,4 @@
-import type { MultiSelectStylesNames } from '@coengageui/core';
+import type { MultiSelectStylesNames } from 'coengageui_core';
 import { Input } from './Input.styles-api';
 import { InputWrapper } from './InputWrapper.styles-api';
 

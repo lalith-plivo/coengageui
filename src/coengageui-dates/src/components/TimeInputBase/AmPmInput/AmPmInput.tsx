@@ -1,6 +1,6 @@
 import React, { useRef, forwardRef } from 'react';
-import { useMergedRef } from '@coengageui/hooks';
-import { CoengageUISize } from '@coengageui/core';
+import { useMergedRef } from 'coengageui_hooks';
+import { CoengageUISize } from 'coengageui_core';
 import useStyles from '../TimeInputBase.styles';
 
 interface AmPmSelectProps
@@ -86,4 +86,4 @@ export const AmPmInput = forwardRef<HTMLInputElement, AmPmSelectProps>(
   }
 );
 
-AmPmInput.displayName = '@coengageui/dates/AmPmInput';
+AmPmInput.displayName = 'coengageui_dates/AmPmInput';

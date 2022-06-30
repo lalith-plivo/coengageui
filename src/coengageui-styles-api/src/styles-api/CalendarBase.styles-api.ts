@@ -1,4 +1,4 @@
-import type { CalendarBaseStylesNames } from '@coengageui/dates';
+import type { CalendarBaseStylesNames } from 'coengageui_dates';
 import { Month } from './Month.styles-api';
 
 export const CalendarBase: Record<CalendarBaseStylesNames, string> = {

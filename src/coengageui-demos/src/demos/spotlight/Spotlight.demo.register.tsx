@@ -1,14 +1,14 @@
 /* eslint-disable no-console */
 import React, { useState } from 'react';
-import { Group, Button } from '@coengageui/core';
-import { SpotlightProvider, useSpotlight } from '@coengageui/spotlight';
+import { Group, Button } from 'coengageui_core';
+import { SpotlightProvider, useSpotlight } from 'coengageui_spotlight';
 import { Alien, Search } from 'tabler-icons-react';
 import { actions } from './_actions';
 
 const code = `
 import { useState } from 'react';
-import { Group, Button } from '@coengageui/core';
-import { SpotlightProvider, useSpotlight } from '@coengageui/spotlight';
+import { Group, Button } from 'coengageui_core';
+import { SpotlightProvider, useSpotlight } from 'coengageui_spotlight';
 import { Alien, Search } from 'tabler-icons-react';
 
 function SpotlightControls() {

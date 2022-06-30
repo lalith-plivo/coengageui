@@ -1,8 +1,8 @@
 import React from 'react';
-import { Prism } from '@coengageui/prism';
+import { Prism } from 'coengageui_prism';
 
 const demoCode = `
-import { Button } from '@coengageui/core';
+import { Button } from 'coengageui_core';
 
 function Demo() {
   return <Button>Hello</Button>
@@ -14,7 +14,7 @@ function Usage() {
 `;
 
 const code = `
-import { Prism } from '@coengageui/prism';
+import { Prism } from 'coengageui_prism';
 
 const deleted = { color: 'red', label: '-' };
 const added = { color: 'green', label: '+' };

@@ -6,7 +6,7 @@ import {
   CoengageUITheme,
   useCoengageUITheme,
   useCoengageUIDefaultProps,
-} from '@coengageui/styles';
+} from 'coengageui_styles';
 import { Box } from '../Box';
 import { Bars } from './loaders/Bars';
 import { Oval } from './loaders/Oval';
@@ -61,9 +61,9 @@ export function Loader(props: LoaderProps) {
       color={
         _color in theme.colors
           ? theme.fn.themeColor(
-              _color,
-              theme.colorScheme === 'dark' ? 4 : theme.fn.primaryShade('light')
-            )
+            _color,
+            theme.colorScheme === 'dark' ? 4 : theme.fn.primaryShade('light')
+          )
           : color
       }
       {...others}
@@ -71,4 +71,4 @@ export function Loader(props: LoaderProps) {
   );
 }
 
-Loader.displayName = '@coengageui/core/Loader';
+Loader.displayName = 'coengageui_core/Loader';

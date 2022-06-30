@@ -1,5 +1,5 @@
 import React from 'react';
-import { Chips, Chip, ChipsProps } from '@coengageui/core';
+import { Chips, Chip, ChipsProps } from 'coengageui_core';
 
 function Wrapper(props: ChipsProps) {
   return (
@@ -13,7 +13,7 @@ function Wrapper(props: ChipsProps) {
 }
 
 const codeTemplate = (props: string) => `
-import { Chips, Chip } from '@coengageui/core';
+import { Chips, Chip } from 'coengageui_core';
 
 function Demo() {
   return (

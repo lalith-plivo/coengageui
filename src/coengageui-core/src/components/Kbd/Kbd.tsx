@@ -1,5 +1,5 @@
 import React, { forwardRef } from 'react';
-import { DefaultProps, useCoengageUIDefaultProps } from '@coengageui/styles';
+import { DefaultProps, useCoengageUIDefaultProps } from 'coengageui_styles';
 import { Box } from '../Box';
 import useStyles from './Kbd.styles';
 
@@ -19,4 +19,4 @@ export const Kbd = forwardRef<HTMLElement, KbdProps>((props: KbdProps, ref) => {
   );
 });
 
-Kbd.displayName = '@coengageui/core/Kbd';
+Kbd.displayName = 'coengageui_core/Kbd';

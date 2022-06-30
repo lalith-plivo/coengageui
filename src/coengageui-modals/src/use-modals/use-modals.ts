@@ -6,7 +6,7 @@ export function useModals() {
 
   if (!ctx) {
     throw new Error(
-      '[@coengageui/modals] useModals hook was called outside of context, wrap your app with ModalsProvider component'
+      '[coengageui_modals] useModals hook was called outside of context, wrap your app with ModalsProvider component'
     );
   }
 

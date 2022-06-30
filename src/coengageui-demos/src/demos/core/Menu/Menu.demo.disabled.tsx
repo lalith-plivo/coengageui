@@ -1,10 +1,10 @@
 import React from 'react';
 import { Search } from 'tabler-icons-react';
-import { Menu, Group } from '@coengageui/core';
+import { Menu, Group } from 'coengageui_core';
 import { menuItems } from './_menu-items';
 
 const code = `
-import { Menu } from '@coengageui/core';
+import { Menu } from 'coengageui_core';
 import { Search } from 'tabler-icons-react';
 
 function Demo() {

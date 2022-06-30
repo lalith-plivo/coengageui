@@ -13,8 +13,8 @@ import {
   getGroupedOptions,
   CoengageUINumberSize,
   CoengageUIColor,
-} from '@coengageui/core';
-import { useScrollLock, useFocusTrap, useDidUpdate, useFocusReturn } from '@coengageui/hooks';
+} from 'coengageui_core';
+import { useScrollLock, useFocusTrap, useDidUpdate, useFocusReturn } from 'coengageui_hooks';
 import { DefaultAction, DefaultActionProps } from '../DefaultAction/DefaultAction';
 import { ActionsList, ActionsListStylesNames } from '../ActionsList/ActionsList';
 import type { SpotlightAction } from '../types';
@@ -25,7 +25,7 @@ export type SpotlightStylesNames = Selectors<typeof useStyles> | ActionsListStyl
 
 export interface InnerSpotlightProps
   extends DefaultProps<SpotlightStylesNames>,
-    React.ComponentPropsWithoutRef<'div'> {
+  React.ComponentPropsWithoutRef<'div'> {
   /** Should spotlight be rendered within Portal */
   withinPortal?: boolean;
 
@@ -279,4 +279,4 @@ export function Spotlight({
   );
 }
 
-Spotlight.displayName = '@coengageui/spotlight/Spotlight';
+Spotlight.displayName = 'coengageui_spotlight/Spotlight';

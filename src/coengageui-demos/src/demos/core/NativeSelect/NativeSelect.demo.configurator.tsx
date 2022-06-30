@@ -1,8 +1,8 @@
 import React from 'react';
-import { NativeSelect } from '@coengageui/core';
+import { NativeSelect } from 'coengageui_core';
 
 const codeTemplate = (props: string) => `
-import { NativeSelect } from '@coengageui/core';
+import { NativeSelect } from 'coengageui_core';
 
 function Demo() {
   return (

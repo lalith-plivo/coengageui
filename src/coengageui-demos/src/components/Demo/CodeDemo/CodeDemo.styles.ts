@@ -1,11 +1,10 @@
-import { createStyles, CoengageUITheme } from '@coengageui/core';
+import { createStyles, CoengageUITheme } from 'coengageui_core';
 
 export default createStyles((theme: CoengageUITheme) => ({
   demo: {
     maxWidth: '100%',
-    border: `1px solid ${
-      theme.colorScheme === 'dark' ? theme.colors.dark[6] : theme.colors.gray[1]
-    }`,
+    border: `1px solid ${theme.colorScheme === 'dark' ? theme.colors.dark[6] : theme.colors.gray[1]
+      }`,
     position: 'relative',
 
     '&:not(:only-child)': {
@@ -19,9 +18,8 @@ export default createStyles((theme: CoengageUITheme) => ({
     borderBottomRightRadius: theme.radius.sm,
     borderBottomLeftRadius: theme.radius.sm,
     marginTop: 0,
-    border: `1px solid ${
-      theme.colorScheme === 'dark' ? theme.colors.dark[6] : theme.colors.gray[1]
-    }`,
+    border: `1px solid ${theme.colorScheme === 'dark' ? theme.colors.dark[6] : theme.colors.gray[1]
+      }`,
   },
 
   code: {

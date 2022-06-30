@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { storiesOf } from '@storybook/react';
-import { DEFAULT_THEME, COENGAGEUI_SIZES, CoengageUIProvider } from '@coengageui/styles';
+import { DEFAULT_THEME, COENGAGEUI_SIZES, CoengageUIProvider } from 'coengageui_styles';
 import { ColorPicker } from './ColorPicker';
 import { HueSlider, HueSliderProps } from './HueSlider/HueSlider';
 import { AlphaSlider, AlphaSliderProps } from './AlphaSlider/AlphaSlider';

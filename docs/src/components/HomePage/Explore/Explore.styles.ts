@@ -1,4 +1,4 @@
-import { createStyles } from '@coengageui/core';
+import { createStyles } from 'coengageui_core';
 
 const BREAKPOINT = '@media (max-width: 960px)';
 

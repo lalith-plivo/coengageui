@@ -1,5 +1,5 @@
 import React from 'react';
-import { Text, useCoengageUITheme } from '@coengageui/core';
+import { Text, useCoengageUITheme } from 'coengageui_core';
 
 export function GridItem(props: React.ComponentPropsWithoutRef<'div'>) {
   const theme = useCoengageUITheme();

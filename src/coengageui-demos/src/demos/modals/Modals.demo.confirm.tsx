@@ -1,11 +1,11 @@
 import React from 'react';
-import { Group, Button, Text } from '@coengageui/core';
-import { useModals } from '@coengageui/modals';
-import { useNotifications } from '@coengageui/notifications';
+import { Group, Button, Text } from 'coengageui_core';
+import { useModals } from 'coengageui_modals';
+import { useNotifications } from 'coengageui_notifications';
 
 const code = `
-import { Button, Text } from '@coengageui/core';
-import { useModals } from '@coengageui/modals';
+import { Button, Text } from 'coengageui_core';
+import { useModals } from 'coengageui_modals';
 
 function Demo() {
   const modals = useModals();

@@ -1,6 +1,6 @@
 import React from 'react';
 import { render, screen } from '@testing-library/react';
-import { itSupportsSystemProps } from '@coengageui/tests';
+import { itSupportsSystemProps } from 'coengageui_tests';
 import { RingProgress, RingProgressProps } from './RingProgress';
 
 const defaultProps: RingProgressProps = {
@@ -8,11 +8,11 @@ const defaultProps: RingProgressProps = {
   label: 'test',
 };
 
-describe('@coengageui/core/RingProgress', () => {
+describe('coengageui_core/RingProgress', () => {
   itSupportsSystemProps({
     component: RingProgress,
     props: defaultProps,
-    displayName: '@coengageui/core/RingProgress',
+    displayName: 'coengageui_core/RingProgress',
     refType: HTMLDivElement,
   });
 

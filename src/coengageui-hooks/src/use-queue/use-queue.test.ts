@@ -1,7 +1,7 @@
 import { renderHook, act } from '@testing-library/react-hooks';
 import { useQueue } from './use-queue';
 
-describe('@coengageui/hooks/use-queue', () => {
+describe('coengageui_hooks/use-queue', () => {
   it('correctly distributes initial values when limit is not reached', () => {
     const hook = renderHook(() => useQueue({ initialValues: [1], limit: 2 }));
     expect(hook.result.current.state).toStrictEqual([1]);

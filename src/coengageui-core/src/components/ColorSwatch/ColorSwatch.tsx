@@ -6,7 +6,7 @@ import {
   PolymorphicRef,
   useCoengageUIDefaultProps,
   Selectors,
-} from '@coengageui/styles';
+} from 'coengageui_styles';
 import { Box } from '../Box';
 import useStyles from './ColorSwatch.styles';
 
@@ -63,4 +63,4 @@ export const ColorSwatch: ColorSwatchComponent = forwardRef(
   }
 ) as any;
 
-ColorSwatch.displayName = '@coengageui/core/ColorSwatch';
+ColorSwatch.displayName = 'coengageui_core/ColorSwatch';

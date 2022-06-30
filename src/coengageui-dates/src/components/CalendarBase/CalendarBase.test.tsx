@@ -1,7 +1,7 @@
 import React from 'react';
 import { render } from '@testing-library/react';
 import userEvent from '@testing-library/user-event';
-import { itSupportsSystemProps, checkAccessibility } from '@coengageui/tests';
+import { itSupportsSystemProps, checkAccessibility } from 'coengageui_tests';
 import { CalendarBase, CalendarBaseProps } from './CalendarBase';
 
 const labelsProps = {
@@ -15,11 +15,11 @@ const labelsProps = {
 
 const defaultProps: CalendarBaseProps = {};
 
-describe('@coengageui/core/CalendarBase', () => {
+describe('coengageui_core/CalendarBase', () => {
   itSupportsSystemProps({
     component: CalendarBase,
     props: defaultProps,
-    displayName: '@coengageui/dates/CalendarBase',
+    displayName: 'coengageui_dates/CalendarBase',
     refType: HTMLDivElement,
   });
 

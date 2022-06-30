@@ -1,6 +1,6 @@
 import React from 'react';
 import { render } from '@testing-library/react';
-import { itSupportsRef, checkAccessibility } from '@coengageui/tests';
+import { itSupportsRef, checkAccessibility } from 'coengageui_tests';
 import { Thumb, ThumbProps } from './Thumb';
 
 const defaultProps: ThumbProps = {
@@ -10,7 +10,7 @@ const defaultProps: ThumbProps = {
   position: 10,
   label: 'test-label',
   dragging: false,
-  onMouseDown: () => {},
+  onMouseDown: () => { },
   color: 'blue',
   size: 10,
   labelTransition: 'skew-up' as const,
@@ -21,7 +21,7 @@ const defaultProps: ThumbProps = {
   disabled: false,
 };
 
-describe('@coengageui/core/Thumb', () => {
+describe('coengageui_core/Thumb', () => {
   checkAccessibility([<Thumb {...defaultProps} />]);
   itSupportsRef(Thumb, defaultProps, HTMLDivElement);
 
@@ -47,6 +47,6 @@ describe('@coengageui/core/Thumb', () => {
   });
 
   it('has correct displayName', () => {
-    expect(Thumb.displayName).toStrictEqual('@coengageui/core/SliderThumb');
+    expect(Thumb.displayName).toStrictEqual('coengageui_core/SliderThumb');
   });
 });

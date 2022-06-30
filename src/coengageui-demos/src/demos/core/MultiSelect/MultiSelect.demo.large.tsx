@@ -1,8 +1,8 @@
 import React from 'react';
-import { MultiSelect } from '@coengageui/core';
+import { MultiSelect } from 'coengageui_core';
 
 const code = `
-import { MultiSelect } from '@coengageui/core';
+import { MultiSelect } from 'coengageui_core';
 
 const data = Array(50).fill(0).map((_, index) => \`Item \${index}\`);
 

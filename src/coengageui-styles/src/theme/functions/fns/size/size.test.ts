@@ -8,7 +8,7 @@ const sizes = {
   xl: 18,
 };
 
-describe('@coengageui/styles/size', () => {
+describe('coengageui_styles/size', () => {
   it('returns given value if value type is number', () => {
     expect(size({ size: 20, sizes })).toBe(20);
     expect(size({ size: 0, sizes })).toBe(0);

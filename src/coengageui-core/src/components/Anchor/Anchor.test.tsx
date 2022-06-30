@@ -1,17 +1,17 @@
 import React from 'react';
 import { render } from '@testing-library/react';
-import { itRendersChildren, itIsPolymorphic, itSupportsSystemProps } from '@coengageui/tests';
+import { itRendersChildren, itIsPolymorphic, itSupportsSystemProps } from 'coengageui_tests';
 import { Anchor, AnchorProps } from './Anchor';
 
 const defaultProps: AnchorProps<'a'> = {};
 
-describe('@coengageui/core/Anchor', () => {
+describe('coengageui_core/Anchor', () => {
   itRendersChildren(Anchor, defaultProps);
   itIsPolymorphic(Anchor, defaultProps);
   itSupportsSystemProps({
     component: Anchor,
     props: defaultProps,
-    displayName: '@coengageui/core/Anchor',
+    displayName: 'coengageui_core/Anchor',
     refType: HTMLAnchorElement,
   });
 

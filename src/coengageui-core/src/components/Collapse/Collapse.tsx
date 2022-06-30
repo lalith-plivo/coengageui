@@ -1,6 +1,6 @@
 import React from 'react';
-import { useReducedMotion } from '@coengageui/hooks';
-import { extractSystemStyles, DefaultProps, useCoengageUIDefaultProps } from '@coengageui/styles';
+import { useReducedMotion } from 'coengageui_hooks';
+import { extractSystemStyles, DefaultProps, useCoengageUIDefaultProps } from 'coengageui_styles';
 import { Box } from '../Box';
 import { useCollapse } from './use-collapse';
 
@@ -70,4 +70,4 @@ export function Collapse(props: CollapseProps) {
   );
 }
 
-Collapse.displayName = '@coengageui/core/Collapse';
+Collapse.displayName = 'coengageui_core/Collapse';

@@ -1,8 +1,8 @@
 import React from 'react';
-import { DatePicker } from '@coengageui/dates';
+import { DatePicker } from 'coengageui_dates';
 
 const code = `
-import { DatePicker } from '@coengageui/dates';
+import { DatePicker } from 'coengageui_dates';
 
 function Demo() {
   return <DatePicker clearable={false} placeholder="Pick date" label="Event date" />;

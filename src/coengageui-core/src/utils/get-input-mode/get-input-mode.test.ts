@@ -1,6 +1,6 @@
 import { getInputMode } from './get-input-mode';
 
-describe('@coengageui/core/utils/get-input-mode', () => {
+describe('coengageui_core/utils/get-input-mode', () => {
   it('gets input mode', () => {
     expect(getInputMode(0.1, 0.1, 'android')).toBe('decimal');
     expect(getInputMode(1, 0, 'android')).toBe('numeric');

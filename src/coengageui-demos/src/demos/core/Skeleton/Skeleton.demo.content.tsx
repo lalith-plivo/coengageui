@@ -1,9 +1,9 @@
 import React, { useState } from 'react';
-import { Group, Button, Text, Skeleton } from '@coengageui/core';
+import { Group, Button, Text, Skeleton } from 'coengageui_core';
 
 const code = `
 import { useState } from 'react';
-import { Skeleton, Button } from '@coengageui/core';
+import { Skeleton, Button } from 'coengageui_core';
 
 function Demo() {
   const [loading, setLoading] = useState(true);

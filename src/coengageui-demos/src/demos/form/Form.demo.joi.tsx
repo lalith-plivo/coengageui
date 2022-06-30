@@ -3,8 +3,8 @@ import { SchemaBase } from './_schema-base';
 
 const code = `
 import Joi from 'joi';
-import { useForm, joiResolver } from '@coengageui/form';
-import { NumberInput, TextInput, Button, Box, Group } from '@coengageui/core';
+import { useForm, joiResolver } from 'coengageui_form';
+import { NumberInput, TextInput, Button, Box, Group } from 'coengageui_core';
 
 const schema = Joi.object({
   name: Joi.string().min(2).message('Name should have at least 2 letters'),

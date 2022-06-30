@@ -1,5 +1,5 @@
 import React, { forwardRef } from 'react';
-import { useCoengageUITheme } from '@coengageui/styles';
+import { useCoengageUITheme } from 'coengageui_styles';
 import { ActionIcon, ActionIconProps } from '../ActionIcon';
 import { CloseIcon } from './CloseIcon';
 
@@ -29,4 +29,4 @@ export const CloseButton = forwardRef<HTMLButtonElement, CloseButtonProps>(
   }
 );
 
-CloseButton.displayName = '@coengageui/core/CloseButton';
+CloseButton.displayName = 'coengageui_core/CloseButton';

@@ -1,5 +1,5 @@
 import { TransitionStatus } from 'react-transition-group';
-import { CSSObject } from '@coengageui/core';
+import { CSSObject } from 'coengageui_core';
 import { NotificationsProviderPositioning } from '../../types';
 
 interface NotificationStateStylesProps {

@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
-import { Modal, Group, Button } from '@coengageui/core';
+import { Modal, Group, Button } from 'coengageui_core';
 
 const code = `
-import { Modal } from '@coengageui/core';
+import { Modal } from 'coengageui_core';
 
 function Demo() {
   return (

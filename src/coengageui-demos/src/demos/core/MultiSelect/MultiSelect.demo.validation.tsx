@@ -1,5 +1,5 @@
 import React from 'react';
-import { MultiSelect } from '@coengageui/core';
+import { MultiSelect } from 'coengageui_core';
 import { data } from './_data';
 
 const code = `

@@ -1,5 +1,5 @@
 import React, { forwardRef } from 'react';
-import { DefaultProps, PolymorphicComponentProps, PolymorphicRef } from '@coengageui/styles';
+import { DefaultProps, PolymorphicComponentProps, PolymorphicRef } from 'coengageui_styles';
 import { Box } from '../../../Box';
 
 interface _SectionProps extends DefaultProps {
@@ -30,4 +30,4 @@ export const Section: SectionComponent & { displayName?: string } = forwardRef(
   )
 ) as any;
 
-Section.displayName = '@coengageui/core/Section';
+Section.displayName = 'coengageui_core/Section';

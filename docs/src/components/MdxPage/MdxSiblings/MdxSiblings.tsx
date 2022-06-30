@@ -1,5 +1,5 @@
 import React from 'react';
-import { SimpleGrid } from '@coengageui/core';
+import { SimpleGrid } from 'coengageui_core';
 import { MdxPageProps } from '../../../types';
 import { MdxSibling } from './MdxSibling/MdxSibling';
 

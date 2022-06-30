@@ -7,7 +7,7 @@ import {
   itSupportsSystemProps,
   itSupportsInputProps,
   itSupportsFocusEvents,
-} from '@coengageui/tests';
+} from 'coengageui_tests';
 import { NumberInput, NumberInputHandlers, NumberInputProps } from './NumberInput';
 
 const defaultProps: NumberInputProps = {};
@@ -26,7 +26,7 @@ const enterText = (text: string) => userEvent.type(getInput(), text);
 const expectValue = (value: string) => expect(getInput()).toHaveValue(value);
 const blurInput = () => fireEvent.blur(getInput());
 
-describe('@coengageui/core/NumberInput', () => {
+describe('coengageui_core/NumberInput', () => {
   checkAccessibility([
     <NumberInput {...defaultProps} label="test" />,
     <NumberInput {...defaultProps} aria-label="test" />,
@@ -35,7 +35,7 @@ describe('@coengageui/core/NumberInput', () => {
   itSupportsSystemProps({
     component: NumberInput,
     props: defaultProps,
-    displayName: '@coengageui/core/NumberInput',
+    displayName: 'coengageui_core/NumberInput',
     refType: HTMLInputElement,
     excludeOthers: true,
   });

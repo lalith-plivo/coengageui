@@ -36,7 +36,7 @@ export function useSpotlight() {
   const ctx = useContext(SpotlightContext);
 
   if (!ctx) {
-    throw new Error('[@coengageui/spotlight] SpotlightProvider was not found in tree');
+    throw new Error('[coengageui_spotlight] SpotlightProvider was not found in tree');
   }
 
   return ctx;

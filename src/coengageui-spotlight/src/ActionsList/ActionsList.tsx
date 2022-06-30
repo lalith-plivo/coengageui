@@ -5,7 +5,7 @@ import {
   Text,
   CoengageUINumberSize,
   CoengageUIColor,
-} from '@coengageui/core';
+} from 'coengageui_core';
 import type { SpotlightAction } from '../types';
 import type { DefaultActionProps, DefaultActionStylesNames } from '../DefaultAction/DefaultAction';
 import useStyles from './ActionsList.styles';
@@ -89,4 +89,4 @@ export function ActionsList({
   );
 }
 
-ActionsList.displayName = '@coengageui/spotlight/ActionsList';
+ActionsList.displayName = 'coengageui_spotlight/ActionsList';

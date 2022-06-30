@@ -1,4 +1,4 @@
-name: Report an issue with @coengageui/ scoped package
+name: Report an issue with coengageui_ scoped package
 description: Tell us if something is not working as expected
 labels: 'bug'
 body:
@@ -6,22 +6,22 @@ body:
     attributes:
       value: |
         ## Thanks for reaching out!
-        Before submitting an issue please make sure that you use latest version of all @coengageui/ packages.
+        Before submitting an issue please make sure that you use latest version of all coengageui_ packages.
   - type: dropdown
     id: version
     attributes:
       label: What package has an issue
       options:
-        - '@coengageui/core'
-        - '@coengageui/dates'
-        - '@coengageui/hooks'
-        - '@coengageui/form'
-        - '@coengageui/notifications'
-        - '@coengageui/rte'
-        - '@coengageui/prism'
-        - '@coengageui/modals'
-        - '@coengageui/dropzone'
-        - '@coengageui/spotlight'
+        - 'coengageui_core'
+        - 'coengageui_dates'
+        - 'coengageui_hooks'
+        - 'coengageui_form'
+        - 'coengageui_notifications'
+        - 'coengageui_rte'
+        - 'coengageui_prism'
+        - 'coengageui_modals'
+        - 'coengageui_dropzone'
+        - 'coengageui_spotlight'
     validations:
       required: true
   - type: textarea

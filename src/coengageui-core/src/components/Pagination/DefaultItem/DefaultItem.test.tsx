@@ -1,13 +1,13 @@
 import React from 'react';
 import { screen, render } from '@testing-library/react';
-import { itSupportsClassName, itSupportsOthers, itSupportsStyle } from '@coengageui/tests';
+import { itSupportsClassName, itSupportsOthers, itSupportsStyle } from 'coengageui_tests';
 import { DefaultItem, PaginationItemProps } from './DefaultItem';
 
 const defaultProps: PaginationItemProps = {
   page: 1,
 };
 
-describe('@coengageui/core/Pagination/DefaultItem', () => {
+describe('coengageui_core/Pagination/DefaultItem', () => {
   itSupportsClassName(DefaultItem, defaultProps);
   itSupportsOthers(DefaultItem, defaultProps);
   itSupportsStyle(DefaultItem, defaultProps);
@@ -18,6 +18,6 @@ describe('@coengageui/core/Pagination/DefaultItem', () => {
   });
 
   it('has correct displayName', () => {
-    expect(DefaultItem.displayName).toStrictEqual('@coengageui/core/Pagination/DefaultItem');
+    expect(DefaultItem.displayName).toStrictEqual('coengageui_core/Pagination/DefaultItem');
   });
 });

@@ -1,10 +1,10 @@
 import React from 'react';
 import { ChevronDown } from 'tabler-icons-react';
-import { MultiSelect } from '@coengageui/core';
+import { MultiSelect } from 'coengageui_core';
 import { data } from './_data';
 
 const code = `
-import { MultiSelect } from '@coengageui/core';
+import { MultiSelect } from 'coengageui_core';
 import { ChevronDown } from 'tabler-icons-react';
 
 function Demo() {

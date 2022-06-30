@@ -1,9 +1,9 @@
 import React from 'react';
-import { SimpleGrid } from '@coengageui/core';
+import { SimpleGrid } from 'coengageui_core';
 import { defaultItems } from './_Item';
 
 const code = `
-import { SimpleGrid } from '@coengageui/core';
+import { SimpleGrid } from 'coengageui_core';
 
 function Demo() {
   return (

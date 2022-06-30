@@ -5,8 +5,8 @@ import {
   useDidUpdate,
   UseMovePosition,
   useMergedRef,
-} from '@coengageui/hooks';
-import { DefaultProps, CoengageUISize, Selectors } from '@coengageui/styles';
+} from 'coengageui_hooks';
+import { DefaultProps, CoengageUISize, Selectors } from 'coengageui_styles';
 import { Box } from '../../Box';
 import { Thumb, ThumbStylesNames } from '../Thumb/Thumb';
 import useStyles from './ColorSlider.styles';
@@ -17,7 +17,7 @@ export type ColorSliderStylesNames =
 
 export interface BaseColorSliderProps
   extends DefaultProps<ColorSliderStylesNames>,
-    Omit<React.ComponentPropsWithoutRef<'div'>, 'value' | 'onChange'> {
+  Omit<React.ComponentPropsWithoutRef<'div'>, 'value' | 'onChange'> {
   value: number;
   onChange(value: number): void;
   size?: CoengageUISize;
@@ -112,4 +112,4 @@ export const ColorSlider = forwardRef<HTMLDivElement, ColorSliderProps>(
   }
 );
 
-ColorSlider.displayName = '@coengageui/core/ColorSlider';
+ColorSlider.displayName = 'coengageui_core/ColorSlider';

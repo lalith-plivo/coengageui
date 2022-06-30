@@ -4,7 +4,7 @@ import {
   CoengageUINumberSize,
   useCoengageUIDefaultProps,
   CoengageUISize,
-} from '@coengageui/styles';
+} from 'coengageui_styles';
 import { Box } from '../Box';
 import useStyles from './Container.styles';
 
@@ -43,4 +43,4 @@ export const Container = forwardRef<HTMLDivElement, ContainerProps>(
   }
 );
 
-Container.displayName = '@coengageui/core/Container';
+Container.displayName = 'coengageui_core/Container';

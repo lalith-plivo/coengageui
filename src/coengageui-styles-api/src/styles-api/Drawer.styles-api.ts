@@ -1,4 +1,4 @@
-import { DrawerStylesNames } from '@coengageui/core';
+import { DrawerStylesNames } from 'coengageui_core';
 
 export const Drawer: Record<DrawerStylesNames, string> = {
   root: 'Root element',

@@ -1,5 +1,5 @@
 import React, { useRef, forwardRef, Children } from 'react';
-import { useUncontrolled, clamp } from '@coengageui/hooks';
+import { useUncontrolled, clamp } from 'coengageui_hooks';
 import {
   DefaultProps,
   CoengageUINumberSize,
@@ -7,7 +7,7 @@ import {
   Selectors,
   ForwardRefWithStaticComponents,
   useCoengageUIDefaultProps,
-} from '@coengageui/styles';
+} from 'coengageui_styles';
 import { Box } from '../Box';
 import { Group, GroupPosition } from '../Group';
 import { TabControl, TabControlStylesNames } from './TabControl/TabControl';
@@ -20,7 +20,7 @@ export type TabsStylesNames =
 
 export interface TabsProps
   extends DefaultProps<TabsStylesNames>,
-    React.ComponentPropsWithRef<'div'> {
+  React.ComponentPropsWithRef<'div'> {
   /** <Tab /> components only */
   children: React.ReactNode;
 
@@ -205,5 +205,5 @@ export const Tabs: TabsComponent = forwardRef<HTMLDivElement, TabsProps>(
   }
 ) as any;
 
-Tabs.displayName = '@coengageui/core/Tabs';
+Tabs.displayName = 'coengageui_core/Tabs';
 Tabs.Tab = TabControl;

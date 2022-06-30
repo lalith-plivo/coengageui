@@ -1,5 +1,5 @@
 import React from 'react';
-import { TagInput } from '@coengageui/labs';
+import { TagInput } from 'coengageui_labs';
 
 const code = `
 <TagInput
@@ -19,7 +19,7 @@ function Demo() {
         placeholder="Add react related packages"
         defaultValue={['react', 'react-router']}
         validationRegex={/react.*/}
-        onValidationReject={() => {}}
+        onValidationReject={() => { }}
       />
     </div>
   );

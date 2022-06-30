@@ -2,7 +2,7 @@ import React from 'react';
 import { TimelineBase } from './_base';
 
 const code = `
-import { Timeline, Text } from '@coengageui/core';
+import { Timeline, Text } from 'coengageui_core';
 import { GitBranch, GitPullRequest, GitCommit, MessageDots } from 'tabler-icons-react';
 
 function Demo() {

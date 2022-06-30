@@ -1,4 +1,4 @@
-import type { PasswordInputStylesNames } from '@coengageui/core';
+import type { PasswordInputStylesNames } from 'coengageui_core';
 import { TextInput } from './TextInput.styles-api';
 
 export const PasswordInput: Record<PasswordInputStylesNames, string> = {

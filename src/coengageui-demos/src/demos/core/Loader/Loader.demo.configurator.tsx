@@ -1,5 +1,5 @@
 import React from 'react';
-import { Loader, LoaderProps, Group } from '@coengageui/core';
+import { Loader, LoaderProps, Group } from 'coengageui_core';
 
 function Wrapper(props: LoaderProps) {
   return (
@@ -10,7 +10,7 @@ function Wrapper(props: LoaderProps) {
 }
 
 const codeTemplate = (props: string) => `
-import { Loader } from '@coengageui/core';
+import { Loader } from 'coengageui_core';
 
 function Demo() {
   return <Loader${props} />;

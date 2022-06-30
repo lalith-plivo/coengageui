@@ -1,19 +1,19 @@
 ---
 group: 'coengageui-core'
-package: '@coengageui/core'
+package: 'coengageui_core'
 title: JsonInput
 order: 1
 slug: /core/json-input/
 category: 'inputs'
 description: 'Capture json data from user'
 props: ['JsonInput']
-import: "import { JsonInput } from '@coengageui/core';"
+import: "import { JsonInput } from 'coengageui_core';"
 source: 'coengageui-core/src/components/JsonInput/JsonInput.tsx'
 docs: 'core/JsonInput.mdx'
 styles: ['JsonInput']
 ---
 
-import { JsonInputDemos } from '@coengageui/demos';
+import { JsonInputDemos } from 'coengageui_demos';
 
 ## Usage
 
@@ -26,7 +26,7 @@ it includes json validation logic and option to format input value on blur:
 
 ```tsx
 import { useState } from 'react';
-import { JsonInput } from '@coengageui/core';
+import { JsonInput } from 'coengageui_core';
 
 function Demo() {
   const [value, setValue] = useState('');
@@ -44,7 +44,7 @@ Component supports all props from [Input](/core/input/) and [InputWrapper](/core
 
 ```tsx
 import { useRef } from 'react';
-import { JsonInput } from '@coengageui/core';
+import { JsonInput } from 'coengageui_core';
 
 function Demo() {
   const ref = useRef<HTMLTextAreaElement>();

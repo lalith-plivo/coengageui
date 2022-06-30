@@ -1,11 +1,11 @@
 import React, { forwardRef } from 'react';
-import { useUuid } from '@coengageui/hooks';
+import { useUuid } from 'coengageui_hooks';
 import {
   DefaultProps,
   CoengageUISize,
   extractSystemStyles,
   useCoengageUIDefaultProps,
-} from '@coengageui/styles';
+} from 'coengageui_styles';
 import { Input, InputBaseProps, InputStylesNames } from '../Input/Input';
 import {
   InputWrapperBaseProps,
@@ -17,9 +17,9 @@ export type TextInputStylesNames = InputStylesNames | InputWrapperStylesNames;
 
 export interface TextInputProps
   extends DefaultProps<TextInputStylesNames>,
-    InputBaseProps,
-    InputWrapperBaseProps,
-    Omit<React.ComponentPropsWithoutRef<'input'>, 'size'> {
+  InputBaseProps,
+  InputWrapperBaseProps,
+  Omit<React.ComponentPropsWithoutRef<'input'>, 'size'> {
   /** id is used to bind input and label, if not passed unique id will be generated for each input */
   id?: string;
 
@@ -110,4 +110,4 @@ export const TextInput = forwardRef<HTMLInputElement, TextInputProps>(
   }
 );
 
-TextInput.displayName = '@coengageui/core/TextInput';
+TextInput.displayName = 'coengageui_core/TextInput';

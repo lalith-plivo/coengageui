@@ -1,10 +1,10 @@
 import React from 'react';
 import { Paint } from 'tabler-icons-react';
-import { ColorInput } from '@coengageui/core';
+import { ColorInput } from 'coengageui_core';
 
 const code = `
 import { Paint } from 'tabler-icons-react';
-import { ColorInput } from '@coengageui/core';
+import { ColorInput } from 'coengageui_core';
 
 function Demo() {
   return (

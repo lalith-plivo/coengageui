@@ -1,15 +1,15 @@
-import { itSupportsSystemProps } from '@coengageui/tests';
+import { itSupportsSystemProps } from 'coengageui_tests';
 import { RichTextEditor, RichTextEditorProps } from './RichTextEditor';
 
 const defaultProps: RichTextEditorProps = {
   value: '',
-  onChange: () => {},
+  onChange: () => { },
 };
 
-describe('@coengageui/core/RichTextEditor', () => {
+describe('coengageui_core/RichTextEditor', () => {
   itSupportsSystemProps({
     component: RichTextEditor,
     props: defaultProps,
-    displayName: '@coengageui/rte/RichTextEditor',
+    displayName: 'coengageui_rte/RichTextEditor',
   });
 });

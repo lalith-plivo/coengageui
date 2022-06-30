@@ -1,4 +1,4 @@
-import type { RadioGroupStylesNames } from '@coengageui/core';
+import type { RadioGroupStylesNames } from 'coengageui_core';
 import { InputWrapper } from './InputWrapper.styles-api';
 
 export const RadioGroup: Record<RadioGroupStylesNames, string> = {

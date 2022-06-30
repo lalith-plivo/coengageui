@@ -1,17 +1,17 @@
 import React from 'react';
 import { render } from '@testing-library/react';
-import { itSupportsSystemProps } from '@coengageui/tests';
+import { itSupportsSystemProps } from 'coengageui_tests';
 import { LoadingOverlay, LoadingOverlayProps } from './LoadingOverlay';
 
 const defaultProps: LoadingOverlayProps = {
   visible: true,
 };
 
-describe('@coengageui/core/LoadingOverlay', () => {
+describe('coengageui_core/LoadingOverlay', () => {
   itSupportsSystemProps({
     component: LoadingOverlay,
     props: defaultProps,
-    displayName: '@coengageui/core/LoadingOverlay',
+    displayName: 'coengageui_core/LoadingOverlay',
     refType: HTMLDivElement,
   });
 

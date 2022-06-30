@@ -20,4 +20,4 @@ export function CloseIcon(props: React.ComponentPropsWithoutRef<'svg'>) {
   );
 }
 
-CloseIcon.displayName = '@coengageui/core/CloseIcon';
+CloseIcon.displayName = 'coengageui_core/CloseIcon';

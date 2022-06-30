@@ -1,6 +1,6 @@
 import React from 'react';
-import { Text } from '@coengageui/core';
-import { DEFAULT_CONTROLS, DEFAULT_LABELS, Toolbar } from '@coengageui/rte';
+import { Text } from 'coengageui_core';
+import { DEFAULT_CONTROLS, DEFAULT_LABELS, Toolbar } from 'coengageui_rte';
 
 const code = `
 <RichTextEditor

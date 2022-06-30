@@ -3,7 +3,7 @@ import {
   CoengageUINumberSize,
   CoengageUIColor,
   CoengageUISize,
-} from '@coengageui/styles';
+} from 'coengageui_styles';
 import { iconSizes } from './Step/Step.styles';
 
 export interface StepperStylesParams {

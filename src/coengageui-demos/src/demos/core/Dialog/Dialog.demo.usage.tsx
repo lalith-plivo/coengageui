@@ -1,9 +1,9 @@
 import React, { useState } from 'react';
-import { Dialog, Group, Button, TextInput, Text } from '@coengageui/core';
+import { Dialog, Group, Button, TextInput, Text } from 'coengageui_core';
 
 const code = `
 import { useState } from 'react';
-import { Dialog, Group, Button, TextInput, Text } from '@coengageui/core';
+import { Dialog, Group, Button, TextInput, Text } from 'coengageui_core';
 
 function Demo() {
   const [opened, setOpened] = useState(false);

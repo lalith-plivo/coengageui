@@ -1,21 +1,21 @@
 ---
 group: 'coengageui-core'
-package: '@coengageui/core'
+package: 'coengageui_core'
 title: AppShell
 order: 1
 slug: /core/app-shell/
 category: 'layout'
 description: 'Responsive shell for your application with header and navbar'
 props: ['AppShell', 'Navbar', 'Header', 'Aside', 'Footer']
-import: "import { AppShell, Navbar, Header, Aside, Footer } from '@coengageui/core';"
+import: "import { AppShell, Navbar, Header, Aside, Footer } from 'coengageui_core';"
 source: 'coengageui-core/src/components/AppShell/AppShell.tsx'
 docs: 'core/AppShell.mdx'
 styles: ['AppShell', 'Navbar']
 ---
 
 import { ExternalLinkIcon } from '@modulz/radix-icons';
-import { Anchor, Center } from '@coengageui/core';
-import { AppShellDemos } from '@coengageui/demos';
+import { Anchor, Center } from 'coengageui_core';
+import { AppShellDemos } from 'coengageui_demos';
 
 ## Usage
 
@@ -45,7 +45,7 @@ import {
   MediaQuery,
   Burger,
   useCoengageUITheme,
-} from '@coengageui/core';
+} from 'coengageui_core';
 
 export default function AppShellDemo() {
   const theme = useCoengageUITheme();
@@ -110,7 +110,7 @@ Navbar and Aside components can be used outside of AppShell context ([View full 
 ### Navbar.Section and Aside.Section
 
 ```tsx
-import { Navbar } from '@coengageui/core';
+import { Navbar } from 'coengageui_core';
 
 function Demo() {
   // Same can be applied to Aside component with Aside.Section component
@@ -132,7 +132,7 @@ function Demo() {
 ### Responsive width
 
 ```tsx
-import { Navbar } from '@coengageui/core';
+import { Navbar } from 'coengageui_core';
 
 function Demo() {
   // Same can be applied to Aside component
@@ -158,7 +158,7 @@ function Demo() {
 To make Navbar or Aside fixed (like in CoengageUI docs) set `fixed` and `position` props:
 
 ```tsx
-import { Navbar } from '@coengageui/core';
+import { Navbar } from 'coengageui_core';
 
 function Demo() {
   return <Navbar fixed position={{ top: 0, left: 0 }} />;

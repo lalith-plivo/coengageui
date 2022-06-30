@@ -1,5 +1,5 @@
 import React from 'react';
-import { Progress, ProgressProps } from '@coengageui/core';
+import { Progress, ProgressProps } from 'coengageui_core';
 
 function Wrapper(props: ProgressProps) {
   return (
@@ -10,7 +10,7 @@ function Wrapper(props: ProgressProps) {
 }
 
 const codeTemplate = (props: string) => `
-import { Progress } from '@coengageui/core';
+import { Progress } from 'coengageui_core';
 
 function Demo() {
   return <Progress${props} />;

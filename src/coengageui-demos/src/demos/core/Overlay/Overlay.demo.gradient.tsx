@@ -1,8 +1,8 @@
 import React from 'react';
-import { useCoengageUITheme, Button, Box, Overlay } from '@coengageui/core';
+import { useCoengageUITheme, Button, Box, Overlay } from 'coengageui_core';
 
 const code = `
-import { Overlay, Button, Box, useCoengageUITheme } from '@coengageui/core';
+import { Overlay, Button, Box, useCoengageUITheme } from 'coengageui_core';
 
 function Demo() {
   const theme = useCoengageUITheme();

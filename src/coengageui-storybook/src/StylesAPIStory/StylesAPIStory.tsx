@@ -1,6 +1,6 @@
 import React from 'react';
-import { Text, Container, Divider, createStyles, CoengageUIProvider } from '@coengageui/core';
-import * as StylesAPI from '@coengageui/styles-api';
+import { Text, Container, Divider, createStyles, CoengageUIProvider } from 'coengageui_core';
+import * as StylesAPI from 'coengageui_styles-api';
 import { generateBorderStyles } from '../generate-border-styles';
 
 interface SectionProps {

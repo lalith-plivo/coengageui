@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { useForm, useMediaQuery } from '@coengageui/hooks';
+import { useForm, useMediaQuery } from 'coengageui_hooks';
 import { Edit } from 'tabler-icons-react';
 import {
   Popover,
@@ -11,7 +11,7 @@ import {
   ActionIcon,
   useCoengageUITheme,
   Anchor,
-} from '@coengageui/core';
+} from 'coengageui_core';
 
 const code = `
 import { useState } from 'react';
@@ -25,8 +25,8 @@ import {
   Text,
   ActionIcon,
   useCoengageUITheme,
-} from '@coengageui/core';
-import { useForm, useMediaQuery } from '@coengageui/hooks';
+} from 'coengageui_core';
+import { useForm, useMediaQuery } from 'coengageui_hooks';
 import { Edit } from 'tabler-icons-react';
 
 interface UserEditFormProps {

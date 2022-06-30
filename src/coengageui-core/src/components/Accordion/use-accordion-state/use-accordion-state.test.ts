@@ -6,11 +6,11 @@ const defaultProps = {
   total: 3,
   initialItem: null,
   state: null,
-  onChange: () => {},
+  onChange: () => { },
   multiple: false,
 };
 
-describe('@coengageui/core/Accordion/use-accordion-state', () => {
+describe('coengageui_core/Accordion/use-accordion-state', () => {
   it('creates initial state based on state value', () => {
     const hook = renderHook(() =>
       useAccordionState({ ...defaultProps, state: createAccordionState(2) })

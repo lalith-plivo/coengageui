@@ -1,10 +1,10 @@
 import React, { useState } from 'react';
 import { graphql, useStaticQuery, navigate } from 'gatsby';
-import { useMediaQuery } from '@coengageui/hooks';
-import { NotificationsProvider } from '@coengageui/notifications';
-import { ModalsProvider, ContextModalProps } from '@coengageui/modals';
-import { SpotlightProvider, SpotlightAction } from '@coengageui/spotlight';
-import { Text, Button } from '@coengageui/core';
+import { useMediaQuery } from 'coengageui_hooks';
+import { NotificationsProvider } from 'coengageui_notifications';
+import { ModalsProvider, ContextModalProps } from 'coengageui_modals';
+import { SpotlightProvider, SpotlightAction } from 'coengageui_spotlight';
+import { Text, Button } from 'coengageui_core';
 import { Search } from 'tabler-icons-react';
 import MdxProvider from '../MdxPage/MdxProvider/MdxProvider';
 import Navbar from './Navbar/Navbar';

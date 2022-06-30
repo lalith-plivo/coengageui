@@ -1,5 +1,5 @@
 import React from 'react';
-import { Tooltip, Badge, Group, AVAILABLE_TRANSITIONS } from '@coengageui/core';
+import { Tooltip, Badge, Group, AVAILABLE_TRANSITIONS } from 'coengageui_core';
 
 export function Demo() {
   const transitions = AVAILABLE_TRANSITIONS.map((transition) => (

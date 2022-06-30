@@ -1,5 +1,5 @@
 import React, { forwardRef } from 'react';
-import { DefaultProps, CoengageUINumberSize, useCoengageUIDefaultProps } from '@coengageui/styles';
+import { DefaultProps, CoengageUINumberSize, useCoengageUIDefaultProps } from 'coengageui_styles';
 import { Box } from '../Box';
 import useStyles from './Table.styles';
 
@@ -66,4 +66,4 @@ export const Table = forwardRef<HTMLTableElement, TableProps>((props: TableProps
   );
 });
 
-Table.displayName = '@coengageui/core/Table';
+Table.displayName = 'coengageui_core/Table';

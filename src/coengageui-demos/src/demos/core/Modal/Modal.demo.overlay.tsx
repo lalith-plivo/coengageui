@@ -1,9 +1,9 @@
 import React, { useState } from 'react';
-import { Modal, Group, Button, useCoengageUITheme } from '@coengageui/core';
+import { Modal, Group, Button, useCoengageUITheme } from 'coengageui_core';
 import { AuthenticationForm } from '../../../shared/AuthenticationForm/AuthenticationForm';
 
 const code = `
-import { Modal, useCoengageUITheme } from '@coengageui/core';
+import { Modal, useCoengageUITheme } from 'coengageui_core';
 
 function Demo() {
   const theme = useCoengageUITheme();

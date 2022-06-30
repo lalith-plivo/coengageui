@@ -1,14 +1,14 @@
-import { itRendersChildren, itSupportsSystemProps } from '@coengageui/tests';
+import { itRendersChildren, itSupportsSystemProps } from 'coengageui_tests';
 import { Kbd, KbdProps } from './Kbd';
 
 const defaultProps: KbdProps = { children: 'test' };
 
-describe('@coengageui/core/Kbd', () => {
+describe('coengageui_core/Kbd', () => {
   itRendersChildren(Kbd, defaultProps);
   itSupportsSystemProps({
     component: Kbd,
     props: defaultProps,
-    displayName: '@coengageui/core/Kbd',
+    displayName: 'coengageui_core/Kbd',
     refType: HTMLElement,
   });
 });

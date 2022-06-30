@@ -1,5 +1,5 @@
 import React, { forwardRef } from 'react';
-import { DefaultProps, CoengageUINumberSize, useCoengageUIDefaultProps } from '@coengageui/styles';
+import { DefaultProps, CoengageUINumberSize, useCoengageUIDefaultProps } from 'coengageui_styles';
 import { filterFalsyChildren } from '../../utils';
 import { Box } from '../Box';
 import useStyles, { GroupPosition } from './Group.styles';
@@ -76,4 +76,4 @@ export const Group = forwardRef<HTMLDivElement, GroupProps>((props: GroupProps, 
   );
 });
 
-Group.displayName = '@coengageui/core/Group';
+Group.displayName = 'coengageui_core/Group';

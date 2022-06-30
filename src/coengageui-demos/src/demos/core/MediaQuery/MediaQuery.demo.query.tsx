@@ -1,8 +1,8 @@
 import React from 'react';
-import { MediaQuery, Text } from '@coengageui/core';
+import { MediaQuery, Text } from 'coengageui_core';
 
 const code = `
-import { MediaQuery, Text } from '@coengageui/core';
+import { MediaQuery, Text } from 'coengageui_core';
 
 function Demo() {
   return (

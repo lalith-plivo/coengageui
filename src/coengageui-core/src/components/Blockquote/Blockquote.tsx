@@ -4,7 +4,7 @@ import {
   CoengageUIColor,
   Selectors,
   useCoengageUIDefaultProps,
-} from '@coengageui/styles';
+} from 'coengageui_styles';
 import { Box } from '../Box';
 import { QuoteIcon } from './QuoteIcon';
 import useStyles from './Blockquote.styles';
@@ -13,7 +13,7 @@ export type BlockquoteStylesNames = Selectors<typeof useStyles>;
 
 export interface BlockquoteProps
   extends DefaultProps<BlockquoteStylesNames>,
-    Omit<React.ComponentPropsWithoutRef<'blockquote'>, 'cite'> {
+  Omit<React.ComponentPropsWithoutRef<'blockquote'>, 'cite'> {
   /** Icon color from theme */
   color?: CoengageUIColor;
 
@@ -49,4 +49,4 @@ export const Blockquote = forwardRef<HTMLQuoteElement, BlockquoteProps>(
   }
 );
 
-Blockquote.displayName = '@coengageui/core/Blockquote';
+Blockquote.displayName = 'coengageui_core/Blockquote';

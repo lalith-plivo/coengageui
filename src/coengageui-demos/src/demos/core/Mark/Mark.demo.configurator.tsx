@@ -1,5 +1,5 @@
 import React from 'react';
-import { Mark, MarkProps, Text } from '@coengageui/core';
+import { Mark, MarkProps, Text } from 'coengageui_core';
 
 function Wrapper(props: MarkProps) {
   return (
@@ -10,7 +10,7 @@ function Wrapper(props: MarkProps) {
 }
 
 const codeTemplate = (props: string) => `
-import { Text, Mark } from '@coengageui/core';
+import { Text, Mark } from 'coengageui_core';
 
 function Demo() {
   return (

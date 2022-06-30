@@ -1,4 +1,4 @@
-import { ColorPickerStylesNames } from '@coengageui/core';
+import { ColorPickerStylesNames } from 'coengageui_core';
 
 export const ColorPicker: Record<ColorPickerStylesNames, string> = {
   wrapper: 'Root element',

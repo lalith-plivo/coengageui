@@ -1,9 +1,9 @@
 import React from 'react';
-import { Card, Image, Text } from '@coengageui/core';
+import { Card, Image, Text } from 'coengageui_core';
 import { demoBase } from './_demo-base';
 
 const code = `
-import { Card, Image, Text } from '@coengageui/core';
+import { Card, Image, Text } from 'coengageui_core';
 
 function Demo() {
   return (

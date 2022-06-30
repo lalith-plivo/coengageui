@@ -3,7 +3,7 @@ import { render, screen } from '@testing-library/react';
 import userEvent from '@testing-library/user-event';
 import { SelectRightSection } from './SelectRightSection';
 
-describe('@coengageui/core/SelectRightSection', () => {
+describe('coengageui_core/SelectRightSection', () => {
   it('renders ChevronIcon when shouldClear is false', () => {
     const { container } = render(<SelectRightSection shouldClear={false} size="sm" />);
     expect(container.querySelector('[data-chevron]')).toBeInTheDocument();
@@ -29,6 +29,6 @@ describe('@coengageui/core/SelectRightSection', () => {
   });
 
   it('has correct displayName', () => {
-    expect(SelectRightSection.displayName).toStrictEqual('@coengageui/core/SelectRightSection');
+    expect(SelectRightSection.displayName).toStrictEqual('coengageui_core/SelectRightSection');
   });
 });

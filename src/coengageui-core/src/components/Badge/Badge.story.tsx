@@ -1,7 +1,7 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
-import { StylesAPIStory } from '@coengageui/storybook';
-import { CoengageUIProvider } from '@coengageui/styles';
+import { StylesAPIStory } from 'coengageui_storybook';
+import { CoengageUIProvider } from 'coengageui_styles';
 import { Badge } from './Badge';
 
 storiesOf('Badge', module)

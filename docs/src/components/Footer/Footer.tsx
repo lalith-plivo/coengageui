@@ -1,5 +1,5 @@
 import React from 'react';
-import { Container, Text, Group } from '@coengageui/core';
+import { Container, Text, Group } from 'coengageui_core';
 import { Logo } from '../Logo/Logo';
 import { SocialButton } from '../SocialButton/SocialButton';
 import { LinksGroup } from './LinksGroup/LinksGroup';

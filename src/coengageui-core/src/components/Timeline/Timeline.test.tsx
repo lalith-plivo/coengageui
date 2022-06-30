@@ -1,6 +1,6 @@
 import React from 'react';
 import { render } from '@testing-library/react';
-import { itFiltersChildren, itSupportsSystemProps } from '@coengageui/tests';
+import { itFiltersChildren, itSupportsSystemProps } from 'coengageui_tests';
 import { Timeline } from './Timeline';
 import { TimelineItem } from './TimelineItem/TimelineItem';
 
@@ -14,12 +14,12 @@ const defaultProps = {
   ],
 };
 
-describe('@coengageui/core/Timeline', () => {
+describe('coengageui_core/Timeline', () => {
   itSupportsSystemProps({
     component: Timeline,
     props: defaultProps,
     excludePadding: true,
-    displayName: '@coengageui/core/Timeline',
+    displayName: 'coengageui_core/Timeline',
     refType: HTMLDivElement,
   });
 

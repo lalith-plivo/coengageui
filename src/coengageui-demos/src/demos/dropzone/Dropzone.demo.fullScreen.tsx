@@ -1,13 +1,13 @@
 /* eslint-disable no-console */
 import React, { useState } from 'react';
-import { Button, Group, useCoengageUITheme } from '@coengageui/core';
-import { FullScreenDropzone, IMAGE_MIME_TYPE } from '@coengageui/dropzone';
+import { Button, Group, useCoengageUITheme } from 'coengageui_core';
+import { FullScreenDropzone, IMAGE_MIME_TYPE } from 'coengageui_dropzone';
 import { dropzoneChildren } from './_base';
 
 const code = `
 import { useState } from 'react';
-import { Button } from '@coengageui/core';
-import { FullScreenDropzone, IMAGE_MIME_TYPE } from '@coengageui/dropzone';
+import { Button } from 'coengageui_core';
+import { FullScreenDropzone, IMAGE_MIME_TYPE } from 'coengageui_dropzone';
 
 function Demo() {
   const [disabled, setDisabled] = useState(true);

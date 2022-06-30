@@ -1,11 +1,11 @@
 import React from 'react';
-import { SpotlightAction, SpotlightActionProps } from '@coengageui/spotlight';
-import { createStyles, UnstyledButton, Group, Text, Image, Center, Badge } from '@coengageui/core';
+import { SpotlightAction, SpotlightActionProps } from 'coengageui_spotlight';
+import { createStyles, UnstyledButton, Group, Text, Image, Center, Badge } from 'coengageui_core';
 import { Wrapper } from './_wrapper';
 
 const code = `
-import { createStyles, UnstyledButton, Group, Text, Image, Center, Badge } from '@coengageui/core';
-import { SpotlightProvider, SpotlightAction, SpotlightActionProps } from '@coengageui/spotlight';
+import { createStyles, UnstyledButton, Group, Text, Image, Center, Badge } from 'coengageui_core';
+import { SpotlightProvider, SpotlightAction, SpotlightActionProps } from 'coengageui_spotlight';
 
 const actions: SpotlightAction[] = [
   {
@@ -118,7 +118,7 @@ const actions: SpotlightAction[] = [
     title: 'Bender Bending Rodríguez',
     description: 'Fascinated with cooking, though has no sense of taste',
     new: true,
-    onTrigger: () => {},
+    onTrigger: () => { },
   },
 
   {
@@ -126,21 +126,21 @@ const actions: SpotlightAction[] = [
     title: 'Carol Miller',
     description: 'One of the richest people on Earth',
     new: false,
-    onTrigger: () => {},
+    onTrigger: () => { },
   },
   {
     image: 'https://img.icons8.com/clouds/256/000000/homer-simpson.png',
     title: 'Homer Simpson',
     description: 'Overweight, lazy, and often ignorant',
     new: false,
-    onTrigger: () => {},
+    onTrigger: () => { },
   },
   {
     image: 'https://img.icons8.com/clouds/256/000000/spongebob-squarepants.png',
     title: 'Spongebob Squarepants',
     description: 'Not just a sponge',
     new: false,
-    onTrigger: () => {},
+    onTrigger: () => { },
   },
 ];
 

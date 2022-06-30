@@ -1,5 +1,5 @@
 import React, { forwardRef } from 'react';
-import { DefaultProps, getDefaultZIndex, Global } from '@coengageui/styles';
+import { DefaultProps, getDefaultZIndex, Global } from 'coengageui_styles';
 import { Box } from '../../Box';
 import { useAppShellContext } from '../AppShell.context';
 import useStyles, { VerticalSectionPosition } from './VerticalSection.styles';
@@ -23,7 +23,7 @@ export interface VerticalSectionSharedProps extends DefaultProps {
 
 interface VerticalSectionProps
   extends VerticalSectionSharedProps,
-    Omit<React.ComponentPropsWithoutRef<'div'>, 'children'> {
+  Omit<React.ComponentPropsWithoutRef<'div'>, 'children'> {
   section: 'header' | 'footer';
   __staticSelector: string;
 }
@@ -78,4 +78,4 @@ export const VerticalSection = forwardRef<HTMLElement, VerticalSectionProps>(
   }
 );
 
-VerticalSection.displayName = '@coengageui/core/VerticalSection';
+VerticalSection.displayName = 'coengageui_core/VerticalSection';

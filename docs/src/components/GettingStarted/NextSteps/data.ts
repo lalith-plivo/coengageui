@@ -1,6 +1,6 @@
 import { BlendingModeIcon, StarFilledIcon } from '@modulz/radix-icons';
 import { MarkGithubIcon } from '@primer/octicons-react';
-import { DEFAULT_THEME } from '@coengageui/core';
+import { DEFAULT_THEME } from 'coengageui_core';
 
 export const NEXT_STEPS_DATA = [
   {

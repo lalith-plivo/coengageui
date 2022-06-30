@@ -1,9 +1,9 @@
 import React from 'react';
 import { Check } from 'tabler-icons-react';
-import { ThemeIcon, RingProgress, Group, Text, Center } from '@coengageui/core';
+import { ThemeIcon, RingProgress, Group, Text, Center } from 'coengageui_core';
 
 const code = `
-import { ThemeIcon, RingProgress, Text, Center } from '@coengageui/core';
+import { ThemeIcon, RingProgress, Text, Center } from 'coengageui_core';
 import { Check } from 'tabler-icons-react';
 
 function Demo() {

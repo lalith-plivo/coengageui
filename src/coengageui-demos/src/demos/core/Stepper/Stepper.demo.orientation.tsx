@@ -1,9 +1,9 @@
 import React, { useState } from 'react';
-import { Stepper } from '@coengageui/core';
+import { Stepper } from 'coengageui_core';
 
 const code = `
 import { useState } from 'react';
-import { Stepper } from '@coengageui/core';
+import { Stepper } from 'coengageui_core';
 
 function Demo() {
   const [active, setActive] = useState(1);

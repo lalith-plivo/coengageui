@@ -8,10 +8,10 @@ CoengageUI core components library.
 
 ```sh
 # With yarn
-yarn add @coengageui/core @coengageui/hooks
+yarn add coengageui_core coengageui_hooks
 
 # With npm
-npm install @coengageui/core @coengageui/hooks
+npm install coengageui_core coengageui_hooks
 ```
 
 ## License

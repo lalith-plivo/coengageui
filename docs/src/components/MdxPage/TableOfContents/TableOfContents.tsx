@@ -2,7 +2,7 @@ import React, { useRef, useEffect, useState } from 'react';
 import Slugger from 'github-slugger';
 import { navigate } from 'gatsby';
 import { useLocation } from '@reach/router';
-import { Text, useCoengageUITheme } from '@coengageui/core';
+import { Text, useCoengageUITheme } from 'coengageui_core';
 import { ActivityLogIcon } from '@modulz/radix-icons';
 import useStyles from './TableOfContents.styles';
 

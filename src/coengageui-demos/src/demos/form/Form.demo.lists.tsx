@@ -1,13 +1,13 @@
 import React from 'react';
-import { useForm, formList } from '@coengageui/form';
-import { TextInput, Switch, Group, ActionIcon, Box, Text, Button, Code } from '@coengageui/core';
-import { randomId } from '@coengageui/hooks';
+import { useForm, formList } from 'coengageui_form';
+import { TextInput, Switch, Group, ActionIcon, Box, Text, Button, Code } from 'coengageui_core';
+import { randomId } from 'coengageui_hooks';
 import { Trash } from 'tabler-icons-react';
 
 const code = `
-import { useForm, formList } from '@coengageui/form';
-import { TextInput, Switch, Group, ActionIcon, Box, Text, Button, Code } from '@coengageui/core';
-import { randomId } from '@coengageui/hooks';
+import { useForm, formList } from 'coengageui_form';
+import { TextInput, Switch, Group, ActionIcon, Box, Text, Button, Code } from 'coengageui_core';
+import { randomId } from 'coengageui_hooks';
 import { Trash } from 'tabler-icons-react';
 
 function Demo() {

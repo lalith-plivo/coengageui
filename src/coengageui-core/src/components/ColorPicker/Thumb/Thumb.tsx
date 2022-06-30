@@ -1,5 +1,5 @@
 import React from 'react';
-import { DefaultProps, CoengageUISize, Selectors } from '@coengageui/styles';
+import { DefaultProps, CoengageUISize, Selectors } from 'coengageui_styles';
 import useStyles, { THUMB_SIZES } from './Thumb.styles';
 
 export type ThumbStylesNames = Selectors<typeof useStyles>;
@@ -38,4 +38,4 @@ export function Thumb({
   );
 }
 
-Thumb.displayName = '@coengageui/core/Thumb';
+Thumb.displayName = 'coengageui_core/Thumb';

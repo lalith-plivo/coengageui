@@ -3,8 +3,8 @@ import { SchemaBase } from './_schema-base';
 
 const code = `
 import * as Yup from 'yup';
-import { useForm, yupResolver } from '@coengageui/form';
-import { NumberInput, TextInput, Button, Box, Group } from '@coengageui/core';
+import { useForm, yupResolver } from 'coengageui_form';
+import { NumberInput, TextInput, Button, Box, Group } from 'coengageui_core';
 
 const schema = Yup.object().shape({
   name: Yup.string().min(2, 'Name should have at least 2 letters'),

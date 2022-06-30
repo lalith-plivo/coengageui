@@ -1,10 +1,10 @@
 import React from 'react';
-import { Group, createStyles } from '@coengageui/core';
-import { Month } from '@coengageui/dates';
+import { Group, createStyles } from 'coengageui_core';
+import { Month } from 'coengageui_dates';
 
 const code = `
-import { createStyles } from '@coengageui/core';
-import { Month } from '@coengageui/dates';
+import { createStyles } from 'coengageui_core';
+import { Month } from 'coengageui_dates';
 
 const useStyles = createStyles((theme) => ({
   outside: {

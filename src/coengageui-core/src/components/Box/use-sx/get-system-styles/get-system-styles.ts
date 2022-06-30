@@ -1,4 +1,4 @@
-import { CoengageUIStyleSystemProps, CoengageUITheme, CSSObject } from '@coengageui/styles';
+import { CoengageUIStyleSystemProps, CoengageUITheme, CSSObject } from 'coengageui_styles';
 
 const SYSTEM_PROPS = {
   mt: 'marginTop',

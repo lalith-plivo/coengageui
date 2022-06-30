@@ -1,5 +1,5 @@
 import React from 'react';
-import { Prism } from '@coengageui/prism';
+import { Prism } from 'coengageui_prism';
 import {
   Group,
   Button,
@@ -7,10 +7,10 @@ import {
   CoengageUIProvider,
   useCoengageUITheme,
   createStyles,
-} from '@coengageui/core';
+} from 'coengageui_core';
 
 const code = `
-import { Badge, Button, CoengageUIProvider } from '@coengageui/core';
+import { Badge, Button, CoengageUIProvider } from 'coengageui_core';
 
 function Demo() {
   return (
@@ -31,9 +31,8 @@ function Demo() {
 const useStyles = createStyles((theme) => ({
   prism: {
     '& pre': {
-      backgroundColor: `${
-        theme.colorScheme === 'dark' ? theme.colors.dark[8] : theme.white
-      } !important`,
+      backgroundColor: `${theme.colorScheme === 'dark' ? theme.colors.dark[8] : theme.white
+        } !important`,
       borderRadius: theme.radius.md,
       padding: 14,
       paddingTop: 30,

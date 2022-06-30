@@ -6,7 +6,7 @@ order: 2
 search: 'cx function, media queries, responsive styles, keyframes'
 ---
 
-import { TabsDemos, CreateStylesDemos } from '@coengageui/demos';
+import { TabsDemos, CreateStylesDemos } from 'coengageui_demos';
 
 # createStyles
 
@@ -76,20 +76,20 @@ the same way as with `createStyles`:
 
 <Demo data={TabsDemos.stylesApi} />
 
-## Using createStyles without @coengageui/core
+## Using createStyles without coengageui_core
 
 You can use `createStyles` and `CoengageUIProvider` without any other CoengageUI packages:
 
 ```bash
-yarn add @coengageui/styles
+yarn add coengageui_styles
 
-npm install @coengageui/styles
+npm install coengageui_styles
 ```
 
-After installation you can import `createStyles` and other function from `@coengageui/styles` instead of `@coengageui/core` and use it separately:
+After installation you can import `createStyles` and other function from `coengageui_styles` instead of `coengageui_core` and use it separately:
 
 ```tsx
-import { createStyles, CoengageUIProvider, useCoengageUITheme } from '@coengageui/styles';
+import { createStyles, CoengageUIProvider, useCoengageUITheme } from 'coengageui_styles';
 ```
 
 ## Can I use other css-in-js libraries or SCSS with CoengageUI?

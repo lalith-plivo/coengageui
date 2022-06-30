@@ -2,7 +2,7 @@ import { z } from 'zod';
 import { zodResolver } from './zod-resolver';
 import { testResolver, RESOLVER_ERROR_MESSAGES } from '../test-resolver';
 
-describe('@coengageui/form zod resolver', () => {
+describe('coengageui_form zod resolver', () => {
   testResolver(
     zodResolver(
       z.object({

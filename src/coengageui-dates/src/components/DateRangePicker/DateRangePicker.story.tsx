@@ -1,7 +1,7 @@
 /* eslint-disable no-console */
 import React, { useState } from 'react';
 import { storiesOf } from '@storybook/react';
-import { CoengageUIProvider, TextInput } from '@coengageui/core';
+import { CoengageUIProvider, TextInput } from 'coengageui_core';
 import { DateRangePicker } from './DateRangePicker';
 
 function Controlled() {

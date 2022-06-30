@@ -1,9 +1,9 @@
 import React, { forwardRef } from 'react';
-import { DefaultProps, PolymorphicComponentProps, PolymorphicRef } from '@coengageui/styles';
+import { DefaultProps, PolymorphicComponentProps, PolymorphicRef } from 'coengageui_styles';
 import { Box } from '../../Box';
 import useStyles from './UnstyledButton.styles';
 
-interface _UnstyledButtonProps extends DefaultProps {}
+interface _UnstyledButtonProps extends DefaultProps { }
 
 export type UnstyledButtonProps<C> = PolymorphicComponentProps<C, _UnstyledButtonProps>;
 
@@ -31,4 +31,4 @@ export const UnstyledButton: UnstyledButtonComponent = forwardRef(
   }
 ) as any;
 
-UnstyledButton.displayName = '@coengageui/core/UnstyledButton';
+UnstyledButton.displayName = 'coengageui_core/UnstyledButton';

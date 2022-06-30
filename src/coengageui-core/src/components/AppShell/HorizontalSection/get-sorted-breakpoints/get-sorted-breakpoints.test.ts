@@ -1,7 +1,7 @@
-import { DEFAULT_THEME } from '@coengageui/styles';
+import { DEFAULT_THEME } from 'coengageui_styles';
 import { getSortedBreakpoints } from './get-sorted-breakpoints';
 
-describe('@coengageui/core/AppShell/get-sorted-breakpoints', () => {
+describe('coengageui_core/AppShell/get-sorted-breakpoints', () => {
   it('returns sorted breakpoints with theme values', () => {
     expect(getSortedBreakpoints({ lg: 500, sm: 400, xs: 300 }, DEFAULT_THEME)).toStrictEqual([
       [DEFAULT_THEME.breakpoints.xs, 300],

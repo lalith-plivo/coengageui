@@ -4,7 +4,7 @@ import {
   CoengageUISize,
   Selectors,
   useCoengageUIDefaultProps,
-} from '@coengageui/styles';
+} from 'coengageui_styles';
 import { Text } from '../Text';
 import { Box } from '../Box';
 import useStyles from './InputWrapper.styles';
@@ -36,8 +36,8 @@ export interface InputWrapperBaseProps {
 
 export interface InputWrapperProps
   extends DefaultProps<InputWrapperStylesNames>,
-    InputWrapperBaseProps,
-    React.ComponentPropsWithoutRef<'div'> {
+  InputWrapperBaseProps,
+  React.ComponentPropsWithoutRef<'div'> {
   /** Input that should be wrapped */
   children: React.ReactNode;
 
@@ -120,4 +120,4 @@ export const InputWrapper = forwardRef<HTMLDivElement, InputWrapperProps>(
   }
 );
 
-InputWrapper.displayName = '@coengageui/core/InputWrapper';
+InputWrapper.displayName = 'coengageui_core/InputWrapper';

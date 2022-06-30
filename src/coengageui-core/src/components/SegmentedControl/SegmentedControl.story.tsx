@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { storiesOf } from '@storybook/react';
-import { CoengageUIProvider } from '@coengageui/styles';
+import { CoengageUIProvider } from 'coengageui_styles';
 import { Button } from '../Button/Button';
 import { SegmentedControl, SegmentedControlProps } from './SegmentedControl';
 

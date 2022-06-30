@@ -1,9 +1,9 @@
 import React from 'react';
 import { X } from 'tabler-icons-react';
-import { Group, Badge, ActionIcon, Avatar } from '@coengageui/core';
+import { Group, Badge, ActionIcon, Avatar } from 'coengageui_core';
 
 const code = `
-import { ActionIcon, Avatar, Badge, Group } from '@coengageui/core';
+import { ActionIcon, Avatar, Badge, Group } from 'coengageui_core';
 import { X } from 'tabler-icons-react';
 
 function Demo() {

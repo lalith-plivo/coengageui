@@ -1,6 +1,6 @@
 import { getDate } from './get-date';
 
-describe('@coengageui/dates/get-date', () => {
+describe('coengageui_dates/get-date', () => {
   it('returns correct dates', () => {
     const format24 = getDate('20', '12', '30', '24', 'pm');
 

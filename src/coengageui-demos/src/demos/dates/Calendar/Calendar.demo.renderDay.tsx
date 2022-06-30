@@ -1,11 +1,11 @@
 import React, { useState } from 'react';
-import { Group, Indicator } from '@coengageui/core';
-import { Calendar } from '@coengageui/dates';
+import { Group, Indicator } from 'coengageui_core';
+import { Calendar } from 'coengageui_dates';
 
 const code = `
 import { useState } from 'react';
-import { Calendar } from '@coengageui/dates';
-import { Indicator } from '@coengageui/core';
+import { Calendar } from 'coengageui_dates';
+import { Indicator } from 'coengageui_core';
 
 function Demo() {
   const [value, setValue] = useState(null);

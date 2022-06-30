@@ -5,7 +5,7 @@ import {
   checkAccessibility,
   itSupportsFocusEvents,
   renderWithAct,
-} from '@coengageui/tests';
+} from 'coengageui_tests';
 import { Autocomplete, AutocompleteProps } from './Autocomplete';
 
 const defaultProps: AutocompleteProps = {
@@ -26,14 +26,14 @@ const queries = {
   getItems: (container: HTMLElement) => container.querySelectorAll('.coengageui-Autocomplete-item'),
 };
 
-describe('@coengageui/core/Autocomplete', () => {
+describe('coengageui_core/Autocomplete', () => {
   checkAccessibility([<Autocomplete {...defaultProps} />]);
   itSupportsInputProps(Autocomplete, defaultProps, 'Autocomplete');
   itSupportsFocusEvents(Autocomplete, defaultProps, '.coengageui-Autocomplete-input');
   itSupportsSystemProps({
     component: Autocomplete,
     props: defaultProps,
-    displayName: '@coengageui/core/Autocomplete',
+    displayName: 'coengageui_core/Autocomplete',
     refType: HTMLInputElement,
     excludeOthers: true,
   });

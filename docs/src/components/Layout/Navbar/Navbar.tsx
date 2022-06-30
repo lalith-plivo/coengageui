@@ -1,5 +1,5 @@
 import React from 'react';
-import { ScrollArea } from '@coengageui/core';
+import { ScrollArea } from 'coengageui_core';
 import NavbarMainLink from './NavbarMainLink/NavbarMainLink';
 import NavbarDocsCategory from './NavbarDocsCategory/NavbarDocsCategory';
 import { getDocsData } from '../get-docs-data';

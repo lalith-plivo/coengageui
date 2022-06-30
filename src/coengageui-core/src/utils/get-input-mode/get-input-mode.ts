@@ -1,4 +1,4 @@
-import { OS } from '@coengageui/hooks';
+import { OS } from 'coengageui_hooks';
 
 export const getInputMode = (
   step: number,

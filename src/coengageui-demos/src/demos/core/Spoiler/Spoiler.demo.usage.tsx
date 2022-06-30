@@ -2,7 +2,7 @@ import React from 'react';
 import { Wrapper } from './_wrapper';
 
 const code = `
-import { Spoiler } from '@coengageui/core';
+import { Spoiler } from 'coengageui_core';
 
 function Demo() {
   return (

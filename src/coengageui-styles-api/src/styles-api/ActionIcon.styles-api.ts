@@ -1,4 +1,4 @@
-import type { ActionIconStylesNames } from '@coengageui/core';
+import type { ActionIconStylesNames } from 'coengageui_core';
 
 export const ActionIcon: Record<ActionIconStylesNames, string> = {
   root: 'Root element, shared styles for all variants',

@@ -5,7 +5,7 @@ import {
   useCoengageUIDefaultProps,
   PolymorphicComponentProps,
   PolymorphicRef,
-} from '@coengageui/styles';
+} from 'coengageui_styles';
 import { Box } from '../../Box';
 
 interface _BackgroundImageProps extends DefaultProps, React.ComponentPropsWithoutRef<'div'> {
@@ -59,4 +59,4 @@ export const BackgroundImage: BackgroundImageComponent = forwardRef(
   }
 ) as any;
 
-BackgroundImage.displayName = '@coengageui/core/BackgroundImage';
+BackgroundImage.displayName = 'coengageui_core/BackgroundImage';

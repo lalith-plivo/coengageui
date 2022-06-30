@@ -1,5 +1,5 @@
 import React, { forwardRef } from 'react';
-import { useUncontrolled, useUuid } from '@coengageui/hooks';
+import { useUncontrolled, useUuid } from 'coengageui_hooks';
 import {
   DefaultProps,
   CoengageUINumberSize,
@@ -8,7 +8,7 @@ import {
   Selectors,
   extractSystemStyles,
   useCoengageUIDefaultProps,
-} from '@coengageui/styles';
+} from 'coengageui_styles';
 import { Box } from '../../Box';
 import { CheckboxIcon } from '../../Checkbox';
 import useStyles from './Chip.styles';
@@ -17,7 +17,7 @@ export type ChipStylesNames = Selectors<typeof useStyles>;
 
 export interface ChipProps
   extends DefaultProps<ChipStylesNames>,
-    Omit<React.ComponentPropsWithoutRef<'input'>, 'size' | 'onChange'> {
+  Omit<React.ComponentPropsWithoutRef<'input'>, 'size' | 'onChange'> {
   /** Chip radius from theme or number to set value in px */
   radius?: CoengageUINumberSize;
 
@@ -139,4 +139,4 @@ export const Chip = forwardRef<HTMLInputElement, ChipProps>((props: ChipProps, r
   );
 });
 
-Chip.displayName = '@coengageui/core/Chip';
+Chip.displayName = 'coengageui_core/Chip';

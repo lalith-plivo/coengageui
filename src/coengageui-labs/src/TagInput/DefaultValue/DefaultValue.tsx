@@ -5,14 +5,14 @@ import {
   CoengageUISize,
   CoengageUINumberSize,
   Selectors,
-} from '@coengageui/core';
+} from 'coengageui_core';
 import useStyles from './DefaultValue.styles';
 
 export type DefaultValueStylesNames = Selectors<typeof useStyles>;
 
 export interface TagInputValueProps
   extends DefaultProps<DefaultValueStylesNames>,
-    React.ComponentPropsWithoutRef<'div'> {
+  React.ComponentPropsWithoutRef<'div'> {
   label: string;
   onRemove(): void;
   disabled: boolean;
@@ -65,4 +65,4 @@ export function DefaultValue({
   );
 }
 
-DefaultValue.displayName = '@coengageui/labs/TagInput/DefaultValue';
+DefaultValue.displayName = 'coengageui_labs/TagInput/DefaultValue';

@@ -1,11 +1,11 @@
 import React, { useState } from 'react';
 import { Refresh } from 'tabler-icons-react';
-import { ActionIcon, ColorInput } from '@coengageui/core';
+import { ActionIcon, ColorInput } from 'coengageui_core';
 
 const code = `
 import { useState } from 'react';
 import { Refresh } from 'tabler-icons-react';
-import { ActionIcon, ColorInput } from '@coengageui/core';
+import { ActionIcon, ColorInput } from 'coengageui_core';
 
 const randomColor = () => \`#\${Math.floor(Math.random() * 16777215).toString(16)}\`;
 

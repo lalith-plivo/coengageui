@@ -1,6 +1,6 @@
 import { getContextItemIndex } from './get-context-item-index';
 
-describe('@coengageui/core/utils/get-context-item-index', () => {
+describe('coengageui_core/utils/get-context-item-index', () => {
   it('returns correct item index based on DOM structure', () => {
     const parent = document.createElement('div');
     parent.classList.add('parent');

@@ -4,8 +4,8 @@ import {
   PolymorphicComponentProps,
   DefaultProps,
   CoengageUIColor,
-} from '@coengageui/styles';
-import { mergeRefs } from '@coengageui/hooks';
+} from 'coengageui_styles';
+import { mergeRefs } from 'coengageui_hooks';
 import { Box } from '../../Box';
 import { useMenuContext } from '../Menu.context';
 import { getContextItemIndex } from '../../../utils';
@@ -32,7 +32,7 @@ export interface SharedMenuItemProps extends DefaultProps {
 
 interface _MenuItemProps
   extends SharedMenuItemProps,
-    Omit<React.ComponentPropsWithoutRef<'button'>, keyof SharedMenuItemProps> {
+  Omit<React.ComponentPropsWithoutRef<'button'>, keyof SharedMenuItemProps> {
   component: any;
 }
 
@@ -95,4 +95,4 @@ type MenuItemComponent = <C = 'button'>(props: MenuItemProps<C>) => React.ReactE
 
 export const MenuItem: MenuItemComponent & { displayName?: string } = _MenuItem as any;
 
-MenuItem.displayName = '@coengageui/core/MenuItem';
+MenuItem.displayName = 'coengageui_core/MenuItem';

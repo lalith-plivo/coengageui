@@ -1,4 +1,4 @@
-import { createStyles, CoengageUINumberSize, CoengageUIColor } from '@coengageui/styles';
+import { createStyles, CoengageUINumberSize, CoengageUIColor } from 'coengageui_styles';
 
 export interface BurgerStylesParams {
   size: CoengageUINumberSize;

@@ -1,10 +1,10 @@
 import React, { useState } from 'react';
-import { Modal, Group, Button } from '@coengageui/core';
+import { Modal, Group, Button } from 'coengageui_core';
 import { AuthenticationForm } from '../../../shared/AuthenticationForm/AuthenticationForm';
 
 const code = `
 import { useState } from 'react';
-import { Modal, Button, Group } from '@coengageui/core';
+import { Modal, Button, Group } from 'coengageui_core';
 
 function Demo() {
   const [opened, setOpened] = useState(false);

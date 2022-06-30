@@ -1,6 +1,6 @@
 import { getMonthDays } from './get-month-days';
 
-describe('@coengageui/dates/get-month-days', () => {
+describe('coengageui_dates/get-month-days', () => {
   it('returns all month days for given date', () => {
     // February 2021 is ideal month (4 weeks, month starts on monday and ends on sunday)
     const monthDays = getMonthDays(new Date(2021, 1, 2));

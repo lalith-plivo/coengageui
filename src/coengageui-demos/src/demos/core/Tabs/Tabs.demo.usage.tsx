@@ -1,8 +1,8 @@
 import React from 'react';
-import { Tabs } from '@coengageui/core';
+import { Tabs } from 'coengageui_core';
 
 const code = `
-import { Tabs } from '@coengageui/core';
+import { Tabs } from 'coengageui_core';
 
 function Demo() {
   return (

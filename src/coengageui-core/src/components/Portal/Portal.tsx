@@ -1,7 +1,7 @@
 import React, { ReactPortal, useRef, useState } from 'react';
 import { createPortal } from 'react-dom';
-import { useIsomorphicEffect } from '@coengageui/hooks';
-import { useCoengageUITheme, useCoengageUIDefaultProps } from '@coengageui/styles';
+import { useIsomorphicEffect } from 'coengageui_hooks';
+import { useCoengageUITheme, useCoengageUIDefaultProps } from 'coengageui_styles';
 
 export interface PortalProps {
   /** Portal children, for example, modal or popover */
@@ -41,8 +41,8 @@ export function Portal(props: PortalProps): ReactPortal {
     ref.current = !target
       ? document.createElement('div')
       : typeof target === 'string'
-      ? document.querySelector(target)
-      : target;
+        ? document.querySelector(target)
+        : target;
 
     if (!target) {
       document.body.appendChild(ref.current);
@@ -65,4 +65,4 @@ export function Portal(props: PortalProps): ReactPortal {
   );
 }
 
-Portal.displayName = '@coengageui/core/Portal';
+Portal.displayName = 'coengageui_core/Portal';

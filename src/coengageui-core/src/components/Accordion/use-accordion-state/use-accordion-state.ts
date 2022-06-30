@@ -1,4 +1,4 @@
-import { useUncontrolled, useDidUpdate } from '@coengageui/hooks';
+import { useUncontrolled, useDidUpdate } from 'coengageui_hooks';
 
 export function createAccordionState(length: number, initialItem = -1) {
   return Array.from({ length }).reduce((acc, _item, index) => {

@@ -1,8 +1,8 @@
 import React from 'react';
-import { Checkbox, Group } from '@coengageui/core';
+import { Checkbox, Group } from 'coengageui_core';
 
 const code = `
-import { Checkbox } from '@coengageui/core';
+import { Checkbox } from 'coengageui_core';
 
 function Demo() {
   return (

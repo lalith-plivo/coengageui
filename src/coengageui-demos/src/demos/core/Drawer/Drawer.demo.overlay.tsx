@@ -1,9 +1,9 @@
 import React, { useState } from 'react';
-import { Drawer, Group, Button, useCoengageUITheme } from '@coengageui/core';
+import { Drawer, Group, Button, useCoengageUITheme } from 'coengageui_core';
 import { AuthenticationForm } from '../../../shared/AuthenticationForm/AuthenticationForm';
 
 const code = `
-import { Drawer, useCoengageUITheme } from '@coengageui/core';
+import { Drawer, useCoengageUITheme } from 'coengageui_core';
 
 function Demo() {
   const theme = useCoengageUITheme();

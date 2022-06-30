@@ -1,5 +1,5 @@
 import React from 'react';
-import { useCoengageUITheme, Center } from '@coengageui/core';
+import { useCoengageUITheme, Center } from 'coengageui_core';
 
 export function RemixIcon() {
   const theme = useCoengageUITheme();

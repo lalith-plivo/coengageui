@@ -1,11 +1,11 @@
 /* eslint-disable no-console */
 import React from 'react';
-import type { SpotlightAction } from '@coengageui/spotlight';
+import type { SpotlightAction } from 'coengageui_spotlight';
 import { Wrapper } from './_wrapper';
 
 const code = `
-import { SpotlightProvider } from '@coengageui/spotlight';
-import type { SpotlightAction } from '@coengageui/spotlight';
+import { SpotlightProvider } from 'coengageui_spotlight';
+import type { SpotlightAction } from 'coengageui_spotlight';
 
 const actions: SpotlightAction[] = Array(100)
   .fill(0)

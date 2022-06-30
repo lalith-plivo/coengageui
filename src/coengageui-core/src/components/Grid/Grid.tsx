@@ -4,7 +4,7 @@ import {
   CoengageUINumberSize,
   ForwardRefWithStaticComponents,
   useCoengageUIDefaultProps,
-} from '@coengageui/styles';
+} from 'coengageui_styles';
 import { Box } from '../Box';
 import { Col } from './Col/Col';
 import { GridProvider } from './Grid.context';
@@ -71,4 +71,4 @@ export const Grid: GridComponent = forwardRef<HTMLDivElement, GridProps>(
 ) as any;
 
 Grid.Col = Col;
-Grid.displayName = '@coengageui/core/Grid';
+Grid.displayName = 'coengageui_core/Grid';

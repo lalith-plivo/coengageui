@@ -1,6 +1,6 @@
 import React from 'react';
-import { NativeSelect } from '@coengageui/core';
-import { upperFirst } from '@coengageui/hooks';
+import { NativeSelect } from 'coengageui_core';
+import { upperFirst } from 'coengageui_hooks';
 
 interface SelectControlProps {
   value: string;

@@ -1,11 +1,11 @@
 import React, { useState } from 'react';
-import { useLogger } from '@coengageui/hooks';
-import { Button, Group } from '@coengageui/core';
+import { useLogger } from 'coengageui_hooks';
+import { Button, Group } from 'coengageui_core';
 
 const code = `
 import { useState } from 'react';
-import { useLogger } from '@coengageui/hooks';
-import { Button } from '@coengageui/core';
+import { useLogger } from 'coengageui_hooks';
+import { Button } from 'coengageui_core';
 
 function Demo() {
   const [count, setCount] = useState(0);

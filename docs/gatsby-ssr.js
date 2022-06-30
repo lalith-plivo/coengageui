@@ -1,7 +1,7 @@
 /* eslint-disable react/jsx-filename-extension */
 import React from 'react';
 import { renderToString } from 'react-dom/server';
-import { createStylesServer, ServerStyles } from '@coengageui/ssr';
+import { createStylesServer, ServerStyles } from 'coengageui_ssr';
 
 const stylesServer = createStylesServer();
 

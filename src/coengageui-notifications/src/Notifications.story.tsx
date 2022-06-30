@@ -1,7 +1,7 @@
 import React from 'react';
 import { CheckIcon } from '@modulz/radix-icons';
 import { storiesOf } from '@storybook/react';
-import { Button, Group, CoengageUIProvider } from '@coengageui/core';
+import { Button, Group, CoengageUIProvider } from 'coengageui_core';
 import { showNotification, updateNotification } from './events';
 import { NotificationsProvider } from './NotificationsProvider/NotificationsProvider';
 

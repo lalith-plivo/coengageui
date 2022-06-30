@@ -1,7 +1,7 @@
-import { DEFAULT_THEME } from '@coengageui/styles';
+import { DEFAULT_THEME } from 'coengageui_styles';
 import { getSystemStyles } from './get-system-styles';
 
-describe('@coengageui/core/Box/get-system-styles', () => {
+describe('coengageui_core/Box/get-system-styles', () => {
   it('extracts margins and paddings with theme.spacing values', () => {
     expect(getSystemStyles({ mt: 'xl', mb: 'sm' }, DEFAULT_THEME)).toStrictEqual({
       marginTop: DEFAULT_THEME.spacing.xl,

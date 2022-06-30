@@ -1,4 +1,4 @@
-import type { ProgressStylesNames } from '@coengageui/core';
+import type { ProgressStylesNames } from 'coengageui_core';
 
 export const Progress: Record<ProgressStylesNames, string> = {
   root: 'Root element',

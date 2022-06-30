@@ -14,7 +14,7 @@ function Wrapper(props: UseFocusWithinOptions) {
   );
 }
 
-describe('@coengageui/hooks/use-focus-within', () => {
+describe('coengageui_hooks/use-focus-within', () => {
   it('detects focus on child elements as expected', () => {
     const onBlur = jest.fn();
     const onFocus = jest.fn();

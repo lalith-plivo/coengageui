@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
-import { useMove, clampUseMovePosition, UseMovePosition } from '@coengageui/hooks';
-import { DefaultProps, CoengageUISize, Selectors } from '@coengageui/styles';
+import { useMove, clampUseMovePosition, UseMovePosition } from 'coengageui_hooks';
+import { DefaultProps, CoengageUISize, Selectors } from 'coengageui_styles';
 import { HsvaColor } from '../types';
 import { Thumb, ThumbStylesNames } from '../Thumb/Thumb';
 import useStyles from './Saturation.styles';
@@ -111,4 +111,4 @@ export function Saturation({
   );
 }
 
-Saturation.displayName = '@coengageui/core/Saturation';
+Saturation.displayName = 'coengageui_core/Saturation';

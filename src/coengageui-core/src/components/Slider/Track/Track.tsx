@@ -1,5 +1,5 @@
 import React from 'react';
-import { DefaultProps, CoengageUINumberSize, CoengageUIColor, Selectors } from '@coengageui/styles';
+import { DefaultProps, CoengageUINumberSize, CoengageUIColor, Selectors } from 'coengageui_styles';
 import { Box } from '../../Box';
 import { Marks, MarksStylesNames } from '../Marks/Marks';
 import { sizes } from '../SliderRoot/SliderRoot.styles';
@@ -70,4 +70,4 @@ export function Track({
   );
 }
 
-Track.displayName = '@coengageui/core/SliderTrack';
+Track.displayName = 'coengageui_core/SliderTrack';

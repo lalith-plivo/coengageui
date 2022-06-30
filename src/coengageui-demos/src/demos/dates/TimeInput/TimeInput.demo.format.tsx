@@ -1,8 +1,8 @@
 import React from 'react';
-import { TimeInput } from '@coengageui/dates';
+import { TimeInput } from 'coengageui_dates';
 
 const code = `
-import { TimeInput } from '@coengageui/dates';
+import { TimeInput } from 'coengageui_dates';
 
 function Demo() {
   return <TimeInput label="Pick time" format="12" defaultValue={new Date()} />;

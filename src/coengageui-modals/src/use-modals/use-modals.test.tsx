@@ -1,13 +1,13 @@
 import React, { useEffect, PropsWithChildren } from 'react';
 import ReactDOM from 'react-dom';
 import { renderHook, WrapperComponent } from '@testing-library/react-hooks';
-import { CoengageUIProvider } from '@coengageui/core';
+import { CoengageUIProvider } from 'coengageui_core';
 import { render, screen } from '@testing-library/react';
 import { useModals } from './use-modals';
 import { ModalsProvider } from '../ModalsProvider';
 import { ContextModalProps } from '../context';
 
-describe('@coengageui/modals/use-modals', () => {
+describe('coengageui_modals/use-modals', () => {
   beforeAll(() => {
     // @ts-ignore
     ReactDOM.createPortal = jest.fn((element) => element);
@@ -23,7 +23,7 @@ describe('@coengageui/modals/use-modals', () => {
 
     expect(hook.result.error).toStrictEqual(
       Error(
-        '[@coengageui/modals] useModals hook was called outside of context, wrap your app with ModalsProvider component'
+        '[coengageui_modals] useModals hook was called outside of context, wrap your app with ModalsProvider component'
       )
     );
   });

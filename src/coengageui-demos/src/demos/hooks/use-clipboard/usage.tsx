@@ -1,10 +1,10 @@
 import React from 'react';
-import { Group, Button } from '@coengageui/core';
-import { useClipboard } from '@coengageui/hooks';
+import { Group, Button } from 'coengageui_core';
+import { useClipboard } from 'coengageui_hooks';
 
 const code = `
-import { Button } from '@coengageui/core';
-import { useClipboard } from '@coengageui/hooks';
+import { Button } from 'coengageui_core';
+import { useClipboard } from 'coengageui_hooks';
 
 function Demo() {
   const clipboard = useClipboard({ timeout: 500 });

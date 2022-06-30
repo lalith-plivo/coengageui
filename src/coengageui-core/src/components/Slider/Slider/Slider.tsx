@@ -1,12 +1,12 @@
 import React, { forwardRef, useRef, useState, useCallback } from 'react';
-import { clamp, useMergedRef, useMove, useUncontrolled } from '@coengageui/hooks';
+import { clamp, useMergedRef, useMove, useUncontrolled } from 'coengageui_hooks';
 import {
   DefaultProps,
   CoengageUIColor,
   CoengageUINumberSize,
   useCoengageUIDefaultProps,
   useCoengageUITheme,
-} from '@coengageui/styles';
+} from 'coengageui_styles';
 import { CoengageUITransition } from '../../Transition';
 import { getPosition } from '../utils/get-position/get-position';
 import { getChangeValue } from '../utils/get-change-value/get-change-value';
@@ -23,7 +23,7 @@ export type SliderStylesNames =
 
 export interface SliderProps
   extends DefaultProps<SliderStylesNames>,
-    Omit<React.ComponentPropsWithoutRef<'div'>, 'value' | 'onChange'> {
+  Omit<React.ComponentPropsWithoutRef<'div'>, 'value' | 'onChange'> {
   /** Color from theme.colors */
   color?: CoengageUIColor;
 
@@ -288,4 +288,4 @@ export const Slider = forwardRef<HTMLDivElement, SliderProps>((props: SliderProp
   );
 });
 
-Slider.displayName = '@coengageui/core/Slider';
+Slider.displayName = 'coengageui_core/Slider';

@@ -1,8 +1,8 @@
 import React from 'react';
-import { Group, Badge } from '@coengageui/core';
+import { Group, Badge } from 'coengageui_core';
 
 const code = `
-import { Badge } from '@coengageui/core';
+import { Badge } from 'coengageui_core';
 
 const CustomComponent = ({ pads, children, ...others }: { pads: string; children: React.ReactNode; }) => (
   <div {...others}>

@@ -1,6 +1,6 @@
 /* eslint-disable jsx-a11y/click-events-have-key-events, jsx-a11y/no-static-element-interactions */
 import React, { useEffect } from 'react';
-import { useScrollLock, useFocusTrap, useFocusReturn, useUuid } from '@coengageui/hooks';
+import { useScrollLock, useFocusTrap, useFocusReturn, useUuid } from 'coengageui_hooks';
 import {
   DefaultProps,
   CoengageUINumberSize,
@@ -9,7 +9,7 @@ import {
   CoengageUIStyleSystemSize,
   getDefaultZIndex,
   useCoengageUIDefaultProps,
-} from '@coengageui/styles';
+} from 'coengageui_styles';
 import { CloseButton } from '../ActionIcon';
 import { Text } from '../Text';
 import { Paper } from '../Paper';
@@ -23,7 +23,7 @@ export type ModalStylesNames = Selectors<typeof useStyles>;
 
 export interface ModalProps
   extends Omit<DefaultProps<ModalStylesNames>, CoengageUIStyleSystemSize>,
-    Omit<React.ComponentPropsWithoutRef<'div'>, 'title'> {
+  Omit<React.ComponentPropsWithoutRef<'div'>, 'title'> {
   /** Mounts modal if true */
   opened: boolean;
 
@@ -157,8 +157,8 @@ export function Modal(props: ModalProps) {
     typeof overlayOpacity === 'number'
       ? overlayOpacity
       : theme.colorScheme === 'dark'
-      ? 0.85
-      : 0.75;
+        ? 0.85
+        : 0.75;
 
   const [, lockScroll] = useScrollLock();
 
@@ -264,4 +264,4 @@ export function Modal(props: ModalProps) {
   );
 }
 
-Modal.displayName = '@coengageui/core/Modal';
+Modal.displayName = 'coengageui_core/Modal';

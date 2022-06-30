@@ -1,8 +1,8 @@
 import React from 'react';
-import { Center, useCoengageUITheme } from '@coengageui/core';
+import { Center, useCoengageUITheme } from 'coengageui_core';
 
 const code = `
-import { Center } from '@coengageui/core';
+import { Center } from 'coengageui_core';
 
 function Demo() {
   return (

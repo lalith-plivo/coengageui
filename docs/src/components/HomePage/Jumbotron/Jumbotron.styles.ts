@@ -1,4 +1,4 @@
-import { createStyles } from '@coengageui/core';
+import { createStyles } from 'coengageui_core';
 
 const BREAKPOINT = '@media (max-width: 960px)';
 
@@ -55,9 +55,8 @@ export default createStyles((theme) => ({
 
   controlPrimary: {
     border: 0,
-    backgroundImage: `linear-gradient(52deg, ${
-      theme.colors.blue[theme.colorScheme === 'dark' ? 5 : 7]
-    } 3%, ${theme.colors.cyan[theme.colorScheme === 'dark' ? 4 : 5]} 97%)`,
+    backgroundImage: `linear-gradient(52deg, ${theme.colors.blue[theme.colorScheme === 'dark' ? 5 : 7]
+      } 3%, ${theme.colors.cyan[theme.colorScheme === 'dark' ? 4 : 5]} 97%)`,
   },
 
   githubControl: {
@@ -66,9 +65,8 @@ export default createStyles((theme) => ({
     backgroundColor: 'transparent',
 
     '&:hover': {
-      backgroundColor: `${
-        theme.colorScheme === 'dark' ? theme.colors.dark[6] : theme.colors.gray[0]
-      } !important`,
+      backgroundColor: `${theme.colorScheme === 'dark' ? theme.colors.dark[6] : theme.colors.gray[0]
+        } !important`,
     },
   },
 
@@ -103,9 +101,8 @@ export default createStyles((theme) => ({
     alignItems: 'center',
     minWidth: 50,
     height: 50,
-    backgroundImage: `linear-gradient(52deg, ${
-      theme.colors.blue[theme.colorScheme === 'dark' ? 5 : 7]
-    } 3%, ${theme.colors.cyan[theme.colorScheme === 'dark' ? 4 : 5]} 97%)`,
+    backgroundImage: `linear-gradient(52deg, ${theme.colors.blue[theme.colorScheme === 'dark' ? 5 : 7]
+      } 3%, ${theme.colors.cyan[theme.colorScheme === 'dark' ? 4 : 5]} 97%)`,
 
     '& svg': {
       display: 'block',

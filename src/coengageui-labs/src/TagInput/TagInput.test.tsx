@@ -7,7 +7,7 @@ import {
   itSupportsWrapperProps,
   itConnectsLabelAndInput,
   itSupportsFocusEvents,
-} from '@coengageui/tests';
+} from 'coengageui_tests';
 import { TagInput, TagInputProps } from './TagInput';
 
 const defaultProps: TagInputProps = {
@@ -17,7 +17,7 @@ const defaultProps: TagInputProps = {
   id: 'test-tag-input',
 };
 
-describe('@coengageui/labs/TagInput', () => {
+describe('coengageui_labs/TagInput', () => {
   checkAccessibility([<TagInput {...defaultProps} />]);
   itSupportsFocusEvents(TagInput, defaultProps, '#test-tag-input');
   itSupportsInputIcon(TagInput, defaultProps);
@@ -27,7 +27,7 @@ describe('@coengageui/labs/TagInput', () => {
   itSupportsSystemProps({
     component: TagInput,
     props: defaultProps,
-    displayName: '@coengageui/labs/TagInput',
+    displayName: 'coengageui_labs/TagInput',
     refType: HTMLInputElement,
     excludeOthers: true,
   });

@@ -3,7 +3,7 @@ import { Wrapper } from './_wrapper';
 
 const code = `
 import { useState } from 'react';
-import { TransferList, TransferListData } from '@coengageui/core';
+import { TransferList, TransferListData } from 'coengageui_core';
 
 const initialValues: TransferListData = [
   [

@@ -1,4 +1,4 @@
-import { createStyles, CoengageUINumberSize, CoengageUITheme, CSSObject } from '@coengageui/styles';
+import { createStyles, CoengageUINumberSize, CoengageUITheme, CSSObject } from 'coengageui_styles';
 
 export interface AppShellStylesParams {
   padding: CoengageUINumberSize;

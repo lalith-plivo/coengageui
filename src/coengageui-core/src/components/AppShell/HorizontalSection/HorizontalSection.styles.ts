@@ -1,4 +1,4 @@
-import { createStyles, CoengageUINumberSize } from '@coengageui/styles';
+import { createStyles, CoengageUINumberSize } from 'coengageui_styles';
 import { getSortedBreakpoints } from './get-sorted-breakpoints/get-sorted-breakpoints';
 
 export type HorizontalSectionWidth = Partial<Record<string, string | number>>;
@@ -28,13 +28,13 @@ export default createStyles(
     const breakpoints =
       typeof width === 'object' && width !== null
         ? getSortedBreakpoints(width, theme).reduce((acc, [breakpoint, breakpointSize]) => {
-            acc[`@media (min-width: ${breakpoint + 1}px)`] = {
-              width: breakpointSize,
-              minWidth: breakpointSize,
-            };
+          acc[`@media (min-width: ${breakpoint + 1}px)`] = {
+            width: breakpointSize,
+            minWidth: breakpointSize,
+          };
 
-            return acc;
-          }, {})
+          return acc;
+        }, {})
         : null;
 
     return {
@@ -52,9 +52,8 @@ export default createStyles(
         display: 'flex',
         flexDirection: 'column',
         backgroundColor: theme.colorScheme === 'dark' ? theme.colors.dark[7] : theme.white,
-        [section === 'navbar' ? 'borderRight' : 'borderLeft']: `1px solid ${
-          theme.colorScheme === 'dark' ? theme.colors.dark[5] : theme.colors.gray[2]
-        }`,
+        [section === 'navbar' ? 'borderRight' : 'borderLeft']: `1px solid ${theme.colorScheme === 'dark' ? theme.colors.dark[5] : theme.colors.gray[2]
+          }`,
         ...breakpoints,
       },
 

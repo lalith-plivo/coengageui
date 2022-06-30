@@ -1,9 +1,9 @@
 import React from 'react';
 import { Hash } from 'tabler-icons-react';
-import { Select } from '@coengageui/core';
+import { Select } from 'coengageui_core';
 
 const code = `
-import { Select } from '@coengageui/core';
+import { Select } from 'coengageui_core';
 import { Hash } from 'tabler-icons-react';
 
 function Demo() {

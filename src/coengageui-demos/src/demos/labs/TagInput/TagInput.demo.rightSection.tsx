@@ -1,6 +1,6 @@
 import React from 'react';
 import { EnvelopeOpenIcon } from '@modulz/radix-icons';
-import { TagInput } from '@coengageui/labs';
+import { TagInput } from 'coengageui_labs';
 
 const code = `
 <TagInput

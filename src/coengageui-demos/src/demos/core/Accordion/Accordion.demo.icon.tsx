@@ -3,7 +3,7 @@ import { CirclePlus } from 'tabler-icons-react';
 import { BaseDemo } from './_base';
 
 const code = `
-import { Accordion } from '@coengageui/core';
+import { Accordion } from 'coengageui_core';
 import { CirclePlus } from 'tabler-icons-react';
 
 function Demo() {

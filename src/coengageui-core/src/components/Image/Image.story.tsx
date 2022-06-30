@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { storiesOf } from '@storybook/react';
-import { useInterval } from '@coengageui/hooks';
+import { useInterval } from 'coengageui_hooks';
 import { Image } from './Image';
 import { BackgroundImage } from './BackgroundImage/BackgroundImage';
 

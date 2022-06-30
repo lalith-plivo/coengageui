@@ -1,4 +1,4 @@
-import { createStyles, CoengageUITheme } from '@coengageui/core';
+import { createStyles, CoengageUITheme } from 'coengageui_core';
 
 export default createStyles((theme: CoengageUITheme) => ({
   mainLink: {

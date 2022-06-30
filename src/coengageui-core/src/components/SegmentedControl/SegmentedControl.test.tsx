@@ -1,7 +1,7 @@
 import React from 'react';
 import { render, screen } from '@testing-library/react';
 import userEvent from '@testing-library/user-event';
-import { checkAccessibility, itSupportsSystemProps } from '@coengageui/tests';
+import { checkAccessibility, itSupportsSystemProps } from 'coengageui_tests';
 import { SegmentedControl, SegmentedControlProps } from './SegmentedControl';
 
 const defaultProps: SegmentedControlProps = {
@@ -13,12 +13,12 @@ const defaultProps: SegmentedControlProps = {
   ],
 };
 
-describe('@coengageui/core/SegmentedControl', () => {
+describe('coengageui_core/SegmentedControl', () => {
   checkAccessibility([<SegmentedControl {...defaultProps} />]);
   itSupportsSystemProps({
     component: SegmentedControl,
     props: defaultProps,
-    displayName: '@coengageui/core/SegmentedControl',
+    displayName: 'coengageui_core/SegmentedControl',
     refType: HTMLDivElement,
   });
 

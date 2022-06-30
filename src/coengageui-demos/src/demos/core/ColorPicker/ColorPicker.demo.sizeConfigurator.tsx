@@ -1,5 +1,5 @@
 import React from 'react';
-import { DEFAULT_THEME, ColorPicker, ColorPickerProps } from '@coengageui/core';
+import { DEFAULT_THEME, ColorPicker, ColorPickerProps } from 'coengageui_core';
 
 function Wrapper(props: ColorPickerProps) {
   return (
@@ -14,7 +14,7 @@ function Wrapper(props: ColorPickerProps) {
 }
 
 const codeTemplate = (props: string) => `
-import { ColorPicker } from '@coengageui/core';
+import { ColorPicker } from 'coengageui_core';
 
 function Demo() {
   return <ColorPicker${props} />;

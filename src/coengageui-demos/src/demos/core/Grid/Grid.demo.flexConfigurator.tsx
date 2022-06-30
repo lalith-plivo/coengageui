@@ -1,5 +1,5 @@
 import React from 'react';
-import { Grid, GridProps } from '@coengageui/core';
+import { Grid, GridProps } from 'coengageui_core';
 import { ColWrapper as Col } from './_col-wrapper';
 
 function Wrapper(props: GridProps) {
@@ -17,7 +17,7 @@ function Wrapper(props: GridProps) {
 }
 
 const codeTemplate = (props: string) => `
-import { Grid } from '@coengageui/core';
+import { Grid } from 'coengageui_core';
 
 function Demo() {
   return (

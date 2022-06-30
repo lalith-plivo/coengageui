@@ -4,18 +4,18 @@ import {
   checkAccessibility,
   itSupportsSystemProps,
   itSupportsFocusEvents,
-} from '@coengageui/tests';
+} from 'coengageui_tests';
 import { CloseButton, CloseButtonProps } from './CloseButton';
 
 const defaultProps: CloseButtonProps = {};
 
-describe('@coengageui/core/CloseButton', () => {
+describe('coengageui_core/CloseButton', () => {
   checkAccessibility([<CloseButton aria-label="test" />, <CloseButton title="test" />]);
   itSupportsFocusEvents(CloseButton, defaultProps, '.coengageui-ActionIcon-root');
   itSupportsSystemProps({
     component: CloseButton as any,
     props: defaultProps,
-    displayName: '@coengageui/core/CloseButton',
+    displayName: 'coengageui_core/CloseButton',
     refType: HTMLButtonElement,
   });
 

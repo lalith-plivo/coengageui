@@ -1,4 +1,4 @@
-import { createStyles, CoengageUINumberSize, CoengageUIColor } from '@coengageui/styles';
+import { createStyles, CoengageUINumberSize, CoengageUIColor } from 'coengageui_styles';
 
 export interface PaginationStylesParams {
   size: CoengageUINumberSize;
@@ -26,9 +26,8 @@ export default createStyles((theme, { size, radius, color }: PaginationStylesPar
       alignItems: 'center',
       justifyContent: 'center',
       fontWeight: 500,
-      border: `1px solid ${
-        theme.colorScheme === 'dark' ? theme.colors.dark[5] : theme.colors.gray[3]
-      }`,
+      border: `1px solid ${theme.colorScheme === 'dark' ? theme.colors.dark[5] : theme.colors.gray[3]
+        }`,
       color: theme.colorScheme === 'dark' ? theme.colors.dark[0] : theme.black,
       height: theme.fn.size({ size, sizes }),
       minWidth: theme.fn.size({ size, sizes }),

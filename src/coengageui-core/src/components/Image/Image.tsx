@@ -4,8 +4,8 @@ import {
   CoengageUINumberSize,
   Selectors,
   useCoengageUIDefaultProps,
-} from '@coengageui/styles';
-import { useDidUpdate } from '@coengageui/hooks';
+} from 'coengageui_styles';
+import { useDidUpdate } from 'coengageui_hooks';
 import { Text } from '../Text';
 import { Box } from '../Box';
 import { ImageIcon } from './ImageIcon';
@@ -15,7 +15,7 @@ export type ImageStylesNames = Selectors<typeof useStyles>;
 
 export interface ImageProps
   extends DefaultProps<ImageStylesNames>,
-    Omit<React.ComponentPropsWithoutRef<'div'>, 'placeholder'> {
+  Omit<React.ComponentPropsWithoutRef<'div'>, 'placeholder'> {
   /** Image src */
   src?: string;
 
@@ -123,4 +123,4 @@ export const Image = forwardRef<HTMLDivElement, ImageProps>((props: ImageProps, 
   );
 });
 
-Image.displayName = '@coengageui/core/Image';
+Image.displayName = 'coengageui_core/Image';

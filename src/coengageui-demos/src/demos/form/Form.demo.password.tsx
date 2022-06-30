@@ -1,11 +1,11 @@
 /* eslint-disable no-console */
 import React from 'react';
-import { PasswordInput, Group, Button, Box } from '@coengageui/core';
-import { useForm } from '@coengageui/form';
+import { PasswordInput, Group, Button, Box } from 'coengageui_core';
+import { useForm } from 'coengageui_form';
 
 const code = `
-import { useForm } from '@coengageui/form';
-import { PasswordInput, Group, Button, Box } from '@coengageui/core';
+import { useForm } from 'coengageui_form';
+import { PasswordInput, Group, Button, Box } from 'coengageui_core';
 
 function Demo() {
   const form = useForm({

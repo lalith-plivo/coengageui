@@ -3,9 +3,9 @@ import { Search } from 'tabler-icons-react';
 import { Wrapper } from './_wrapper';
 
 const code = `
-import { Button, Group } from '@coengageui/core';
-import { SpotlightProvider, openSpotlight } from '@coengageui/spotlight';
-import type { SpotlightAction } from '@coengageui/spotlight';
+import { Button, Group } from 'coengageui_core';
+import { SpotlightProvider, openSpotlight } from 'coengageui_spotlight';
+import type { SpotlightAction } from 'coengageui_spotlight';
 import { Home, Dashboard, FileText, Search } from 'tabler-icons-react';
 
 function SpotlightControl() {

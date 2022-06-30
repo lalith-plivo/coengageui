@@ -1,5 +1,5 @@
 import React from 'react';
-import { Selectors, DefaultProps } from '@coengageui/styles';
+import { Selectors, DefaultProps } from 'coengageui_styles';
 import { SharedTextProps, Text } from '../../Text/Text';
 import { useMenuContext } from '../Menu.context';
 import useStyles from './MenuLabel.styles';
@@ -8,8 +8,8 @@ export type MenuLabelStylesNames = Selectors<typeof useStyles>;
 
 export interface MenuLabelProps
   extends DefaultProps,
-    SharedTextProps,
-    Omit<React.ComponentPropsWithoutRef<'div'>, 'color'> {
+  SharedTextProps,
+  Omit<React.ComponentPropsWithoutRef<'div'>, 'color'> {
   /** Label content */
   children: React.ReactNode;
 }
@@ -26,4 +26,4 @@ export function MenuLabel(props: MenuLabelProps) {
   return <Text className={classes.label} {...props} />;
 }
 
-MenuLabel.displayName = '@coengageui/core/MenuLabel';
+MenuLabel.displayName = 'coengageui_core/MenuLabel';

@@ -5,7 +5,7 @@ import {
   CoengageUIColor,
   Selectors,
   useCoengageUIDefaultProps,
-} from '@coengageui/styles';
+} from 'coengageui_styles';
 import { Box } from '../Box';
 import useStyles from './Progress.styles';
 import { Text } from '../Text';
@@ -14,7 +14,7 @@ export type ProgressStylesNames = Selectors<typeof useStyles>;
 
 export interface ProgressProps
   extends DefaultProps<ProgressStylesNames>,
-    React.ComponentPropsWithoutRef<'div'> {
+  React.ComponentPropsWithoutRef<'div'> {
   /** Percent of filled bar (0-100) */
   value?: number;
 
@@ -85,18 +85,18 @@ export const Progress = forwardRef<HTMLDivElement, ProgressProps>((props: Progre
 
   const segments = Array.isArray(sections)
     ? getCumulativeSections(sections).map((section, index) => (
-        <Box
-          key={index}
-          className={classes.bar}
-          sx={{
-            width: `${section.value}%`,
-            left: `${section.accumulated}%`,
-            backgroundColor: theme.fn.themeColor(section.color, theme.fn.primaryShade(), false),
-          }}
-        >
-          {section.label && <Text className={classes.label}>{section.label}</Text>}
-        </Box>
-      ))
+      <Box
+        key={index}
+        className={classes.bar}
+        sx={{
+          width: `${section.value}%`,
+          left: `${section.accumulated}%`,
+          backgroundColor: theme.fn.themeColor(section.color, theme.fn.primaryShade(), false),
+        }}
+      >
+        {section.label && <Text className={classes.label}>{section.label}</Text>}
+      </Box>
+    ))
     : null;
 
   return (
@@ -119,4 +119,4 @@ export const Progress = forwardRef<HTMLDivElement, ProgressProps>((props: Progre
   );
 });
 
-Progress.displayName = '@coengageui/core/Progress';
+Progress.displayName = 'coengageui_core/Progress';

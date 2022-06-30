@@ -1,4 +1,4 @@
-import { itRendersChildren, itSupportsSystemProps } from '@coengageui/tests';
+import { itRendersChildren, itSupportsSystemProps } from 'coengageui_tests';
 import {
   TypographyStylesProvider,
   TypographyStylesProviderProps,
@@ -8,12 +8,12 @@ const defaultProps: TypographyStylesProviderProps = {
   children: 'test-children',
 };
 
-describe('@coengageui/core/TypographyStylesProvider', () => {
+describe('coengageui_core/TypographyStylesProvider', () => {
   itRendersChildren(TypographyStylesProvider, defaultProps);
   itSupportsSystemProps({
     component: TypographyStylesProvider,
     props: defaultProps,
-    displayName: '@coengageui/core/TypographyStylesProvider',
+    displayName: 'coengageui_core/TypographyStylesProvider',
     refType: HTMLDivElement,
   });
 });

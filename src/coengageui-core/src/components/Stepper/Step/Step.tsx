@@ -5,7 +5,7 @@ import {
   Selectors,
   CoengageUISize,
   CoengageUINumberSize,
-} from '@coengageui/styles';
+} from 'coengageui_styles';
 import { Text } from '../../Text';
 import { Loader } from '../../Loader';
 import { CheckboxIcon } from '../../Checkbox';
@@ -17,7 +17,7 @@ export type StepStylesNames = Selectors<typeof useStyles>;
 
 export interface StepProps
   extends DefaultProps<StepStylesNames>,
-    React.ComponentPropsWithoutRef<'button'> {
+  React.ComponentPropsWithoutRef<'button'> {
   /** Step state, controlled by Steps component */
   state?: 'stepInactive' | 'stepProgress' | 'stepCompleted';
 
@@ -157,4 +157,4 @@ export const Step = forwardRef<HTMLButtonElement, StepProps>(
   }
 );
 
-Step.displayName = '@coengageui/core/Step';
+Step.displayName = 'coengageui_core/Step';

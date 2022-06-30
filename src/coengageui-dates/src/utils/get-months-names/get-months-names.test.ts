@@ -1,7 +1,7 @@
 import { getMonthsNames } from './get-months-names';
 import 'dayjs/locale/ru';
 
-describe('@coengageui/dates/get-months-names', () => {
+describe('coengageui_dates/get-months-names', () => {
   it('returns months names with given locale and format', () => {
     expect(getMonthsNames('en', 'MMMM')).toStrictEqual([
       'January',

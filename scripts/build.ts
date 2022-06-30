@@ -34,7 +34,7 @@ const { argv }: { argv: any } = yargs(hideBin(process.argv))
   .example([
     ['$0 all --formats umd cjs', 'Bundle packages to umd and cjs.'],
     [
-      '$0 @coengageui/core --analyze',
+      '$0 coengageui_core --analyze',
       'Bundle coengageui-core package and generate bundle analytics.',
     ],
   ]);

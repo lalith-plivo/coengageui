@@ -1,4 +1,4 @@
-import { createStyles, CoengageUINumberSize, CoengageUIColor } from '@coengageui/styles';
+import { createStyles, CoengageUINumberSize, CoengageUIColor } from 'coengageui_styles';
 import { sizes } from '../SliderRoot/SliderRoot.styles';
 
 interface MarksStyles {
@@ -16,9 +16,8 @@ export default createStyles((theme, { size, color, disabled }: MarksStyles) => (
 
   mark: {
     boxSizing: 'border-box',
-    border: `${theme.fn.size({ size, sizes }) >= 8 ? '2px' : '1px'} solid ${
-      theme.colorScheme === 'dark' ? theme.colors.dark[4] : theme.colors.gray[2]
-    }`,
+    border: `${theme.fn.size({ size, sizes }) >= 8 ? '2px' : '1px'} solid ${theme.colorScheme === 'dark' ? theme.colors.dark[4] : theme.colors.gray[2]
+      }`,
     height: theme.fn.size({ sizes, size }),
     width: theme.fn.size({ sizes, size }),
     borderRadius: 1000,

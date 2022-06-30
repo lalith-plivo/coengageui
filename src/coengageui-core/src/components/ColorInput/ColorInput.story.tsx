@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { storiesOf } from '@storybook/react';
-import { DEFAULT_THEME, COENGAGEUI_SIZES, CoengageUIProvider } from '@coengageui/styles';
-import { WithinOverlays } from '@coengageui/storybook';
+import { DEFAULT_THEME, COENGAGEUI_SIZES, CoengageUIProvider } from 'coengageui_styles';
+import { WithinOverlays } from 'coengageui_storybook';
 import { ColorInput } from './ColorInput';
 
 const sizes = COENGAGEUI_SIZES.map((size) => (

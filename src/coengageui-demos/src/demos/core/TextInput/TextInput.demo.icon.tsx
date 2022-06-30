@@ -1,9 +1,9 @@
 import React from 'react';
 import { At } from 'tabler-icons-react';
-import { TextInput } from '@coengageui/core';
+import { TextInput } from 'coengageui_core';
 
 const code = `
-import { TextInput } from '@coengageui/core';
+import { TextInput } from 'coengageui_core';
 import { At } from 'tabler-icons-react';
 
 function Demo() {

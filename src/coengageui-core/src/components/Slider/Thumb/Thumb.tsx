@@ -1,5 +1,5 @@
 import React, { useState, forwardRef } from 'react';
-import { DefaultProps, CoengageUINumberSize, CoengageUIColor, Selectors } from '@coengageui/styles';
+import { DefaultProps, CoengageUINumberSize, CoengageUIColor, Selectors } from 'coengageui_styles';
 import { Box } from '../../Box';
 import { Transition, CoengageUITransition } from '../../Transition';
 import useStyles from './Thumb.styles';
@@ -103,4 +103,4 @@ export const Thumb = forwardRef<HTMLDivElement, ThumbProps>(
   }
 );
 
-Thumb.displayName = '@coengageui/core/SliderThumb';
+Thumb.displayName = 'coengageui_core/SliderThumb';

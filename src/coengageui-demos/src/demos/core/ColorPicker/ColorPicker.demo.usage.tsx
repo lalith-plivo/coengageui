@@ -1,9 +1,9 @@
 import React, { useState } from 'react';
-import { ColorPicker, Text, Group } from '@coengageui/core';
+import { ColorPicker, Text, Group } from 'coengageui_core';
 
 const code = `
 import { useState } from 'react';
-import { ColorPicker, Group, Text } from '@coengageui/core';
+import { ColorPicker, Group, Text } from 'coengageui_core';
 
 function Demo() {
   const [value, onChange] = useState('rgba(47, 119, 150, 0.7)');

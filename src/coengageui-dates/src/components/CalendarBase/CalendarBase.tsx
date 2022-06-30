@@ -1,6 +1,6 @@
 import React, { useRef, useState, forwardRef } from 'react';
-import { useUncontrolled } from '@coengageui/hooks';
-import { Box, CoengageUISize, Selectors, DefaultProps } from '@coengageui/core';
+import { useUncontrolled } from 'coengageui_hooks';
+import { Box, CoengageUISize, Selectors, DefaultProps } from 'coengageui_core';
 import { MonthSettings, DayKeydownPayload } from '../Month';
 import { YearPicker, YearPickerStylesNames } from './YearPicker/YearPicker';
 import { MonthPicker, MonthPickerStylesNames } from './MonthPicker/MonthPicker';
@@ -83,7 +83,7 @@ export interface CalendarSharedProps extends DefaultProps<CalendarBaseStylesName
 
 export interface CalendarBaseProps
   extends CalendarSharedProps,
-    Omit<React.ComponentPropsWithoutRef<'div'>, 'value' | 'onChange'> {}
+  Omit<React.ComponentPropsWithoutRef<'div'>, 'value' | 'onChange'> { }
 
 export const CalendarBase = forwardRef<HTMLDivElement, CalendarBaseProps>(
   (
@@ -298,4 +298,4 @@ export const CalendarBase = forwardRef<HTMLDivElement, CalendarBaseProps>(
   }
 );
 
-CalendarBase.displayName = '@coengageui/dates/CalendarBase';
+CalendarBase.displayName = 'coengageui_dates/CalendarBase';

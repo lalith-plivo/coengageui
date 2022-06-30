@@ -1,10 +1,10 @@
 import React from 'react';
-import { useFocusWithin } from '@coengageui/hooks';
-import { TextInput, Button, Box, Text } from '@coengageui/core';
+import { useFocusWithin } from 'coengageui_hooks';
+import { TextInput, Button, Box, Text } from 'coengageui_core';
 
 const code = `
-import { useFocusWithin } from '@coengageui/hooks';
-import { TextInput, Button, Box, Text } from '@coengageui/core';
+import { useFocusWithin } from 'coengageui_hooks';
+import { TextInput, Button, Box, Text } from 'coengageui_core';
 
 function Demo() {
   const { ref, focused } = useFocusWithin();

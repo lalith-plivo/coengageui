@@ -7,13 +7,13 @@ import {
   itSupportsInputIcon,
   itConnectsLabelAndInput,
   itSupportsInputWrapperProps,
-} from '@coengageui/tests';
+} from 'coengageui_tests';
 import userEvent from '@testing-library/user-event';
 import { PasswordInput, PasswordInputProps } from './PasswordInput';
 
 const defaultProps: PasswordInputProps = {};
 
-describe('@coengageui/core/PasswordInput', () => {
+describe('coengageui_core/PasswordInput', () => {
   itSupportsFocusEvents(PasswordInput, defaultProps, 'input');
   itSupportsInputWrapperProps(PasswordInput, defaultProps, 'PasswordInput');
   itSupportsInputIcon(PasswordInput, defaultProps);
@@ -23,7 +23,7 @@ describe('@coengageui/core/PasswordInput', () => {
   itSupportsSystemProps({
     component: PasswordInput,
     props: defaultProps,
-    displayName: '@coengageui/core/PasswordInput',
+    displayName: 'coengageui_core/PasswordInput',
     excludeOthers: true,
     refType: HTMLInputElement,
   });

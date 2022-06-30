@@ -1,4 +1,4 @@
-import { createStyles } from '@coengageui/styles';
+import { createStyles } from 'coengageui_styles';
 
 export const sizes = {
   xs: 320,

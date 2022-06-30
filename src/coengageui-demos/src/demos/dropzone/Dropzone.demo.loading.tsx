@@ -2,7 +2,7 @@ import React from 'react';
 import { BaseDemo } from './_base';
 
 const code = `
-import { Dropzone } from '@coengageui/dropzone';
+import { Dropzone } from 'coengageui_dropzone';
 
 function Demo() {
   return (

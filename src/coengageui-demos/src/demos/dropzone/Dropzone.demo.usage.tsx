@@ -1,9 +1,9 @@
 import { BaseDemo } from './_base';
 
 const code = `
-import { Group, Text, useCoengageUITheme, CoengageUITheme } from '@coengageui/core';
+import { Group, Text, useCoengageUITheme, CoengageUITheme } from 'coengageui_core';
 import { Upload, Photo, X, Icon as TablerIcon } from 'tabler-icons-react';
-import { Dropzone, DropzoneStatus, IMAGE_MIME_TYPE } from '@coengageui/dropzone';
+import { Dropzone, DropzoneStatus, IMAGE_MIME_TYPE } from 'coengageui_dropzone';
 
 function getIconColor(status: DropzoneStatus, theme: CoengageUITheme) {
   return status.accepted

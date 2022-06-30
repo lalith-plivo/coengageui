@@ -1,19 +1,19 @@
 ---
 group: 'coengageui-core'
-package: '@coengageui/core'
+package: 'coengageui_core'
 title: NativeSelect
 order: 1
 slug: /core/native-select/
 category: 'inputs'
 description: 'Capture user feedback limited to large set of options'
 props: ['NativeSelect']
-import: "import { NativeSelect } from '@coengageui/core';"
+import: "import { NativeSelect } from 'coengageui_core';"
 source: 'coengageui-core/src/components/NativeSelect/NativeSelect.tsx'
 docs: 'core/NativeSelect.mdx'
 styles: ['NativeSelect']
 ---
 
-import { NativeSelectDemos } from '@coengageui/demos';
+import { NativeSelectDemos } from 'coengageui_demos';
 
 ## Usage
 
@@ -23,7 +23,7 @@ import { NativeSelectDemos } from '@coengageui/demos';
 
 ```tsx
 import { useState } from 'react';
-import { NativeSelect } from '@coengageui/core';
+import { NativeSelect } from 'coengageui_core';
 
 function Demo() {
   const [value, setValue] = useState('');
@@ -61,7 +61,7 @@ Note that in this case `clearable` option will not work and will need to handle 
 
 ```tsx
 import { useRef } from 'react';
-import { NativeSelect } from '@coengageui/core';
+import { NativeSelect } from 'coengageui_core';
 
 function Demo() {
   const ref = useRef<HTMLSelectElement>();

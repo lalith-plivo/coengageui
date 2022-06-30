@@ -1,5 +1,5 @@
 import React from 'react';
-import { TextInput } from '@coengageui/core';
+import { TextInput } from 'coengageui_core';
 
 const code = `
 // Error as boolean – red border color

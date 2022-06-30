@@ -5,7 +5,7 @@ import {
   useMergedRef,
   useFocusReturn,
   useUuid,
-} from '@coengageui/hooks';
+} from 'coengageui_hooks';
 import {
   DefaultProps,
   CoengageUINumberSize,
@@ -13,7 +13,7 @@ import {
   Selectors,
   getDefaultZIndex,
   useCoengageUIDefaultProps,
-} from '@coengageui/styles';
+} from 'coengageui_styles';
 import { Box } from '../Box';
 import { Popper, SharedPopperProps } from '../Popper';
 import { PopoverBody, PopoverBodyStylesNames } from './PopoverBody/PopoverBody';
@@ -23,8 +23,8 @@ export type PopoverStylesNames = Selectors<typeof useStyles> | PopoverBodyStyles
 
 export interface PopoverProps
   extends DefaultProps<PopoverStylesNames>,
-    SharedPopperProps,
-    Omit<React.ComponentPropsWithoutRef<'div'>, 'title'> {
+  SharedPopperProps,
+  Omit<React.ComponentPropsWithoutRef<'div'>, 'title'> {
   /** Defines whether Popover can be closed with outside click, defaults to true */
   closeOnClickOutside?: boolean;
 
@@ -211,4 +211,4 @@ export function Popover(props: PopoverProps) {
   );
 }
 
-Popover.displayName = '@coengageui/core/Popover';
+Popover.displayName = 'coengageui_core/Popover';

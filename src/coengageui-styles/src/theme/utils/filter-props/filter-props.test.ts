@@ -1,6 +1,6 @@
 import { filterProps } from './filter-props';
 
-describe('@coengageui/styles filterProps', () => {
+describe('coengageui_styles filterProps', () => {
   it('filters out props with undefined value', () => {
     expect(
       filterProps({

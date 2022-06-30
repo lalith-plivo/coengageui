@@ -1,10 +1,10 @@
 import React from 'react';
 import dayjs from 'dayjs';
-import { DatePicker } from '@coengageui/dates';
+import { DatePicker } from 'coengageui_dates';
 
 const code = `
 import dayjs from 'dayjs';
-import { DatePicker } from '@coengageui/dates';
+import { DatePicker } from 'coengageui_dates';
 
 function Demo() {
   return (

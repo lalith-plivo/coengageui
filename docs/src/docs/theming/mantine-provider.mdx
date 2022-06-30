@@ -6,14 +6,14 @@ order: 0
 search: 'Theme object, useCoengageUITheme, default props, normalize.css, emotionOptions'
 ---
 
-import { ThemeDemos } from '@coengageui/demos';
+import { ThemeDemos } from 'coengageui_demos';
 
 # CoengageUIProvider
 
 CoengageUIProvider component can be used to change theme globally. It is not required if you decide to use default theme:
 
 ```tsx
-import { CoengageUIProvider, Button } from '@coengageui/core';
+import { CoengageUIProvider, Button } from 'coengageui_core';
 
 function App() {
   return <Button>My app button</Button>;
@@ -110,7 +110,7 @@ interface CoengageUITheme {
   // Add your own custom properties on CoengageUI theme
   other: Record<string, any>;
 
-  // Default dates formatting locale used in every @coengageui/dates component
+  // Default dates formatting locale used in every coengageui_dates component
   datesLocale: string;
 }
 ```
@@ -118,7 +118,7 @@ interface CoengageUITheme {
 Pass theme object to CoengageUIProvider to change global styles:
 
 ```tsx
-import { CoengageUIProvider } from '@coengageui/core';
+import { CoengageUIProvider } from 'coengageui_core';
 
 function App() {
   return (
@@ -160,7 +160,7 @@ function App() {
 To store theme override object in a variable use `CoengageUIThemeOverride` type:
 
 ```tsx
-import { CoengageUIThemeOverride, CoengageUIProvider } from '@coengageui/core';
+import { CoengageUIThemeOverride, CoengageUIProvider } from 'coengageui_core';
 
 const myTheme: CoengageUIThemeOverride = {
   colorScheme: 'light',
@@ -183,7 +183,7 @@ Hook returns theme from CoengageUIProvider context or default theme
 if you did not wrap application with CoengageUIProvider.
 
 ```tsx
-import { useCoengageUITheme } from '@coengageui/core';
+import { useCoengageUITheme } from 'coengageui_core';
 
 function Demo() {
   const theme = useCoengageUITheme();
@@ -201,7 +201,7 @@ Nested CoengageUIProviders will inherit `theme` override, `emotionOptions`, `def
 parent provider if `inherit` prop is set:
 
 ```tsx
-import { CoengageUIProvider, Button } from '@coengageui/core';
+import { CoengageUIProvider, Button } from 'coengageui_core';
 
 function App() {
   return (
@@ -239,7 +239,7 @@ All components that are rendered inside CoengageUIProvider will inherit those st
 If component does not specify Styles API selectors, then in most cases you can add styles using `root` selector:
 
 ```tsx
-import { CoengageUIProvider, Text } from '@coengageui/core';
+import { CoengageUIProvider, Text } from 'coengageui_core';
 
 function App() {
   return (
@@ -259,7 +259,7 @@ function App() {
 Same as with `styles` you can add classes to all components with `classNames` prop on CoengageUIProvider:
 
 ```tsx
-import { CoengageUIProvider, Button } from '@coengageui/core';
+import { CoengageUIProvider, Button } from 'coengageui_core';
 
 function App() {
   return (
@@ -282,7 +282,7 @@ If you prefer to style components with CSS/SCSS or other styling solutions that 
 context, then you can use CoengageUI CSS variables. To add css variables set `withCSSVariables` prop on CoengageUIProvider:
 
 ```tsx
-import { CoengageUIProvider } from '@coengageui/core';
+import { CoengageUIProvider } from 'coengageui_core';
 
 function App() {
   return (
@@ -326,7 +326,7 @@ CoengageUI exposes the following CSS variables based on `theme` you provide:
 All CoengageUI components support default props on CoengageUIProvider:
 
 ```tsx
-import { CoengageUIProvider, Button, Badge } from '@coengageui/core';
+import { CoengageUIProvider, Button, Badge } from 'coengageui_core';
 
 function App() {
   return (
@@ -364,7 +364,7 @@ CoengageUIProvider includes [normalize.css](https://necolas.github.io/normalize.
 To enable these global styles, set `withNormalizeCSS` and `withGlobalStyles` props:
 
 ```tsx
-import { CoengageUIProvider } from '@coengageui/core';
+import { CoengageUIProvider } from 'coengageui_core';
 
 function App() {
   return (
@@ -385,7 +385,7 @@ You can provide [emotion options](https://emotion.sh/docs/@emotion/cache#options
 - `stylisPlugins` – an array of Stylis plugins that will be run by Stylis during preprocessing, for example [stylis-plugin-rtl](https://www.npmjs.com/package/stylis-plugin-rtl) can be used to add [RTL](/theming/rtl) support
 
 ```tsx
-import { CoengageUIProvider } from '@coengageui/core';
+import { CoengageUIProvider } from 'coengageui_core';
 
 function App() {
   return (
@@ -403,7 +403,7 @@ To make CoengageUI styles override other styles, set `prepend` to `false`.
 With this option styles will be added at the end of `head` element:
 
 ```tsx
-import { CoengageUIProvider } from '@coengageui/core';
+import { CoengageUIProvider } from 'coengageui_core';
 
 function App() {
   return (
@@ -423,7 +423,7 @@ function App() {
 To change classes prefix set `emotionOptions.key` property:
 
 ```tsx
-import { CoengageUIProvider } from '@coengageui/core';
+import { CoengageUIProvider } from 'coengageui_core';
 
 function App() {
   return (

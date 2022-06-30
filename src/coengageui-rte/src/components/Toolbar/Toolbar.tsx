@@ -1,5 +1,5 @@
 import React from 'react';
-import { DefaultProps, Selectors } from '@coengageui/core';
+import { DefaultProps, Selectors } from 'coengageui_core';
 import type { RichTextEditorLabels } from '../RichTextEditor/default-labels';
 import { ToolbarButton } from './ToolbarButton/ToolbarButton';
 import { CONTROLS, ToolbarControl } from './controls';
@@ -74,4 +74,4 @@ export function Toolbar({
   );
 }
 
-Toolbar.displayName = '@coengageui/rte/Toolbar';
+Toolbar.displayName = 'coengageui_rte/Toolbar';

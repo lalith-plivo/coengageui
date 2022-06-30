@@ -1,19 +1,19 @@
 ---
 group: 'coengageui-core'
-package: '@coengageui/core'
+package: 'coengageui_core'
 title: Tabs
 order: 1
 slug: /core/tabs/
 category: 'navigation'
 description: 'Switch between different views'
 props: ['Tabs']
-import: "import { Tabs } from '@coengageui/core';"
+import: "import { Tabs } from 'coengageui_core';"
 source: 'coengageui-core/src/components/Tabs/Tabs.tsx'
 docs: 'core/Tabs.mdx'
 styles: ['Tabs']
 ---
 
-import { TabsDemos } from '@coengageui/demos';
+import { TabsDemos } from 'coengageui_demos';
 
 ## Usage
 
@@ -23,7 +23,7 @@ import { TabsDemos } from '@coengageui/demos';
 
 ```tsx
 import { useState } from 'react';
-import { Tabs } from '@coengageui/core';
+import { Tabs } from 'coengageui_core';
 
 function Demo() {
   const [activeTab, setActiveTab] = useState(1);
@@ -42,7 +42,7 @@ function Demo() {
 
 ```tsx
 import { useState } from 'react';
-import { Tabs } from '@coengageui/core';
+import { Tabs } from 'coengageui_core';
 
 function Demo() {
   const [activeTab, setActiveTab] = useState(1);
@@ -109,7 +109,7 @@ To remove all default styles set `variant` prop to `unstyled`:
 
 ```tsx
 import { useRef } from 'react';
-import { Tabs } from '@coengageui/core';
+import { Tabs } from 'coengageui_core';
 
 function Demo() {
   const secondTabRef = useRef<HTMLButtonElement>();

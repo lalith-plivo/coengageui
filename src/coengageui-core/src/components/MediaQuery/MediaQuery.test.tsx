@@ -1,5 +1,5 @@
 import React from 'react';
-import { itSupportsClassName } from '@coengageui/tests';
+import { itSupportsClassName } from 'coengageui_tests';
 import { MediaQuery, MediaQueryProps } from './MediaQuery';
 
 const defaultProps: MediaQueryProps = {
@@ -7,10 +7,10 @@ const defaultProps: MediaQueryProps = {
   children: <span>test-children</span>,
 };
 
-describe('@coengageui/core/MediaQuery', () => {
+describe('coengageui_core/MediaQuery', () => {
   itSupportsClassName(MediaQuery, defaultProps);
 
   it('has correct displayName', () => {
-    expect(MediaQuery.displayName).toStrictEqual('@coengageui/core/MediaQuery');
+    expect(MediaQuery.displayName).toStrictEqual('coengageui_core/MediaQuery');
   });
 });

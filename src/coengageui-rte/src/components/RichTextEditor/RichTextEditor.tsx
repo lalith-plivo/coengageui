@@ -8,8 +8,8 @@ import {
   Box,
   CoengageUINumberSize,
   useCoengageUIDefaultProps,
-} from '@coengageui/core';
-import { useUuid, mergeRefs } from '@coengageui/hooks';
+} from 'coengageui_core';
+import { useUuid, mergeRefs } from 'coengageui_hooks';
 import { Toolbar, ToolbarStylesNames } from '../Toolbar/Toolbar';
 import { DEFAULT_CONTROLS } from './default-control';
 import useStyles from './RichTextEditor.styles';
@@ -43,7 +43,7 @@ function defaultImageUpload(file: File): Promise<string> {
 
 export interface RichTextEditorProps
   extends DefaultProps<RichTextEditorStylesNames>,
-    Omit<React.ComponentPropsWithoutRef<'div'>, 'onChange'> {
+  Omit<React.ComponentPropsWithoutRef<'div'>, 'onChange'> {
   /** HTML content, value not forced as quill works in uncontrolled mode */
   value: string | Delta;
 
@@ -168,4 +168,4 @@ export const RichTextEditor = forwardRef<Editor, RichTextEditorProps>(
   }
 );
 
-RichTextEditor.displayName = '@coengageui/rte/RichTextEditor';
+RichTextEditor.displayName = 'coengageui_rte/RichTextEditor';

@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react';
-import { useScrollLock, useFocusTrap, useFocusReturn } from '@coengageui/hooks';
+import { useScrollLock, useFocusTrap, useFocusReturn } from 'coengageui_hooks';
 import {
   DefaultProps,
   CoengageUINumberSize,
@@ -8,7 +8,7 @@ import {
   CoengageUIStyleSystemSize,
   getDefaultZIndex,
   useCoengageUIDefaultProps,
-} from '@coengageui/styles';
+} from 'coengageui_styles';
 import { Paper } from '../Paper';
 import { Overlay } from '../Overlay';
 import { OptionalPortal } from '../Portal';
@@ -22,7 +22,7 @@ export type DrawerStylesNames = Exclude<Selectors<typeof useStyles>, 'withOverla
 
 export interface DrawerProps
   extends Omit<DefaultProps<DrawerStylesNames>, CoengageUIStyleSystemSize>,
-    Omit<React.ComponentPropsWithoutRef<'div'>, 'title'> {
+  Omit<React.ComponentPropsWithoutRef<'div'>, 'title'> {
   /** If true drawer is mounted to the dom */
   opened: boolean;
 
@@ -172,8 +172,8 @@ export function Drawer(props: DrawerProps) {
     typeof overlayOpacity === 'number'
       ? overlayOpacity
       : theme.colorScheme === 'dark'
-      ? 0.85
-      : 0.75;
+        ? 0.85
+        : 0.75;
 
   const _closeOnEscape = (event: KeyboardEvent) => {
     if (event.code === 'Escape' && closeOnEscape) {
@@ -270,4 +270,4 @@ export function Drawer(props: DrawerProps) {
   );
 }
 
-Drawer.displayName = '@coengageui/core/Drawer';
+Drawer.displayName = 'coengageui_core/Drawer';

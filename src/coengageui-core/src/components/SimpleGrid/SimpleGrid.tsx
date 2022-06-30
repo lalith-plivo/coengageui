@@ -1,5 +1,5 @@
 import React, { forwardRef } from 'react';
-import { DefaultProps, CoengageUINumberSize, useCoengageUIDefaultProps } from '@coengageui/styles';
+import { DefaultProps, CoengageUINumberSize, useCoengageUIDefaultProps } from 'coengageui_styles';
 import { Box } from '../Box';
 import useStyles, { SimpleGridBreakpoint } from './SimpleGrid.styles';
 
@@ -38,4 +38,4 @@ export const SimpleGrid = forwardRef<HTMLDivElement, SimpleGridProps>(
   }
 );
 
-SimpleGrid.displayName = '@coengageui/core/SimpleGrid';
+SimpleGrid.displayName = 'coengageui_core/SimpleGrid';

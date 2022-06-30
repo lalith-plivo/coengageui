@@ -1,5 +1,5 @@
 import React from 'react';
-import { Skeleton, SkeletonProps } from '@coengageui/core';
+import { Skeleton, SkeletonProps } from 'coengageui_core';
 
 function Wrapper(props: Partial<SkeletonProps>) {
   return (
@@ -13,7 +13,7 @@ function Wrapper(props: Partial<SkeletonProps>) {
 }
 
 const codeTemplate = (props: string) => `
-import { Skeleton } from '@coengageui/core';
+import { Skeleton } from 'coengageui_core';
 
 function Demo() {
   return (

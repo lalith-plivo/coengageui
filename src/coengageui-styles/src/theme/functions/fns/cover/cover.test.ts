@@ -1,6 +1,6 @@
 import { cover } from './cover';
 
-describe('@coengageui/styles/cover', () => {
+describe('coengageui_styles/cover', () => {
   it('returns correct styles', () => {
     expect(cover(10)).toStrictEqual({
       position: 'absolute',

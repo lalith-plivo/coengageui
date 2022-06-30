@@ -3,7 +3,7 @@ import {
   CoengageUINumberSize,
   CoengageUIColor,
   CoengageUITheme,
-} from '@coengageui/styles';
+} from 'coengageui_styles';
 
 export type ActionIconVariant =
   | 'hover'
@@ -43,9 +43,9 @@ function getVariantStyles({ variant, theme, color }: GetVariantStyles) {
         variant === 'transparent'
           ? {}
           : {
-              backgroundColor:
-                theme.colorScheme === 'dark' ? theme.colors.dark[8] : theme.fn.themeColor(color, 0),
-            }
+            backgroundColor:
+              theme.colorScheme === 'dark' ? theme.colors.dark[8] : theme.fn.themeColor(color, 0),
+          }
       ),
     };
   }

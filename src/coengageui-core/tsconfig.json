@@ -11,10 +11,10 @@
     "declarationDir": "lib",
     "composite": true,
     "paths": {
-      "@coengageui/hooks": ["../coengageui-hooks/src"],
-      "@coengageui/styles": ["../coengageui-styles/src"],
-      "@coengageui/tests": ["../coengageui-tests/src"],
-      "@coengageui/storybook": ["../coengageui-storybook/src"]
+      "coengageui_hooks": ["../coengageui-hooks/src"],
+      "coengageui_styles": ["../coengageui-styles/src"],
+      "coengageui_tests": ["../coengageui-tests/src"],
+      "coengageui_storybook": ["../coengageui-storybook/src"]
     }
   },
   "references": [

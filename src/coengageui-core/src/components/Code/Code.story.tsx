@@ -1,6 +1,6 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
-import { CoengageUIProvider } from '@coengageui/styles';
+import { CoengageUIProvider } from 'coengageui_styles';
 import { Code } from './Code';
 
 storiesOf('Code', module).add('Default props on CoengageUIProvider', () => (

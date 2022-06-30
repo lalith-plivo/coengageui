@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { DEFAULT_THEME, Tuple } from '@coengageui/core';
+import { DEFAULT_THEME, Tuple } from 'coengageui_core';
 
 let counter = 1;
 

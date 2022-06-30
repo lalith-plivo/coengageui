@@ -1,5 +1,5 @@
 import React from 'react';
-import { COENGAGEUI_SIZES } from '@coengageui/core';
+import { COENGAGEUI_SIZES } from 'coengageui_core';
 import { SegmentedControlWrapper } from './Wrapper';
 
 function Demo() {

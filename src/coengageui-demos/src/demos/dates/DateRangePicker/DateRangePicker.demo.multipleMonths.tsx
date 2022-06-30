@@ -1,8 +1,8 @@
 import React from 'react';
-import { DateRangePicker } from '@coengageui/dates';
+import { DateRangePicker } from 'coengageui_dates';
 
 const code = `
-import { DateRangePicker } from '@coengageui/dates';
+import { DateRangePicker } from 'coengageui_dates';
 
 function Demo() {
   return (

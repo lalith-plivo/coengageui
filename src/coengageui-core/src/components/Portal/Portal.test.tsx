@@ -2,7 +2,7 @@ import React from 'react';
 import { render } from '@testing-library/react';
 import { Portal } from './Portal';
 
-describe('@coengageui/core/Portal', () => {
+describe('coengageui_core/Portal', () => {
   it('renders content inside portal', () => {
     render(<Portal className="test-portal">test-portal</Portal>);
     const portal = document.querySelector('.test-portal');
@@ -60,6 +60,6 @@ describe('@coengageui/core/Portal', () => {
   });
 
   it('has correct displayName', () => {
-    expect(Portal.displayName).toStrictEqual('@coengageui/core/Portal');
+    expect(Portal.displayName).toStrictEqual('coengageui_core/Portal');
   });
 });

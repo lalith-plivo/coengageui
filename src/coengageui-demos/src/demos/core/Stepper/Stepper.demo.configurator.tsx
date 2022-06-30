@@ -1,5 +1,5 @@
 import React from 'react';
-import { Stepper, StepperProps } from '@coengageui/core';
+import { Stepper, StepperProps } from 'coengageui_core';
 
 function Wrapper(props: Partial<StepperProps>) {
   return (
@@ -11,7 +11,7 @@ function Wrapper(props: Partial<StepperProps>) {
 }
 
 const codeTemplate = (props: string) => `
-import { Stepper } from '@coengageui/core';
+import { Stepper } from 'coengageui_core';
 
 function Demo() {
   return (

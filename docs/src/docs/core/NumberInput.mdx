@@ -1,19 +1,19 @@
 ---
 group: 'coengageui-core'
-package: '@coengageui/core'
+package: 'coengageui_core'
 title: NumberInput
 order: 1
 slug: /core/number-input/
 category: 'inputs'
 description: 'Capture number input from user'
 props: ['NumberInput']
-import: "import { NumberInput } from '@coengageui/core';"
+import: "import { NumberInput } from 'coengageui_core';"
 source: 'coengageui-core/src/components/NumberInput/NumberInput.tsx'
 docs: 'core/NumberInput.mdx'
 styles: ['NumberInput']
 ---
 
-import { NumberInputDemos } from '@coengageui/demos';
+import { NumberInputDemos } from 'coengageui_demos';
 
 ## Usage
 
@@ -23,7 +23,7 @@ import { NumberInputDemos } from '@coengageui/demos';
 
 ```tsx
 import { useState } from 'react';
-import { NumberInput } from '@coengageui/core';
+import { NumberInput } from 'coengageui_core';
 
 function Demo() {
   const [value, setValue] = useState(0);
@@ -113,7 +113,7 @@ Controls to increment/decrement value are not displayed when input is disabled:
 
 ```tsx
 import { useRef } from 'react';
-import { NumberInput } from '@coengageui/core';
+import { NumberInput } from 'coengageui_core';
 
 function Demo() {
   const ref = useRef<HTMLInputElement>();

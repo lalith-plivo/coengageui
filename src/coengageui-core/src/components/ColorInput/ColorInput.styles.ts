@@ -1,4 +1,4 @@
-import { createStyles } from '@coengageui/styles';
+import { createStyles } from 'coengageui_styles';
 
 export interface ColorInputStylesParams {
   disallowInput: boolean;
@@ -7,9 +7,8 @@ export interface ColorInputStylesParams {
 export default createStyles((theme, { disallowInput }: ColorInputStylesParams) => ({
   dropdownBody: {
     backgroundColor: theme.colorScheme === 'dark' ? theme.colors.dark[6] : theme.white,
-    border: `1px solid ${
-      theme.colorScheme === 'dark' ? theme.colors.dark[6] : theme.colors.gray[2]
-    }`,
+    border: `1px solid ${theme.colorScheme === 'dark' ? theme.colors.dark[6] : theme.colors.gray[2]
+      }`,
   },
 
   input: {

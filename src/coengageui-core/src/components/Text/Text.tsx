@@ -7,7 +7,7 @@ import {
   PolymorphicRef,
   useCoengageUIDefaultProps,
   CoengageUIColor,
-} from '@coengageui/styles';
+} from 'coengageui_styles';
 import { Box } from '../Box';
 import useStyles from './Text.styles';
 
@@ -111,4 +111,4 @@ export const Text: TextComponent = forwardRef(
   }
 ) as any;
 
-Text.displayName = '@coengageui/core/Text';
+Text.displayName = 'coengageui_core/Text';

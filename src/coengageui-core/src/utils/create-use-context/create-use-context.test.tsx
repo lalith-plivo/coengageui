@@ -7,7 +7,7 @@ interface ContextType {
   bar: number;
 }
 
-describe('@coengageui/core/utils/create-use-context', () => {
+describe('coengageui_core/utils/create-use-context', () => {
   it('throws error if hook was rendered outside of context without default value (null)', () => {
     const [, useContext] = createUseContext<ContextType>(null);
     const hook = renderHook(() => useContext('Test.Item'));

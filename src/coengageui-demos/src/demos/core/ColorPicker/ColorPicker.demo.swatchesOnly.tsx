@@ -1,9 +1,9 @@
 import React, { useState } from 'react';
-import { DEFAULT_THEME, Text, ColorPicker } from '@coengageui/core';
+import { DEFAULT_THEME, Text, ColorPicker } from 'coengageui_core';
 
 const code = `
 import { useState } from 'react';
-import { DEFAULT_THEME, ColorPicker, Text } from '@coengageui/core';
+import { DEFAULT_THEME, ColorPicker, Text } from 'coengageui_core';
 
 function Demo() {
   const [value, onChange] = useState(null);

@@ -7,7 +7,7 @@ import {
   PolymorphicRef,
   Selectors,
   useCoengageUIDefaultProps,
-} from '@coengageui/styles';
+} from 'coengageui_styles';
 import { Box } from '../Box';
 import useStyles, { sizes, ActionIconVariant } from './ActionIcon.styles';
 import { Loader, LoaderProps } from '../Loader';
@@ -94,4 +94,4 @@ export const ActionIcon: ActionIconComponent = forwardRef(
   }
 ) as any;
 
-ActionIcon.displayName = '@coengageui/core/ActionIcon';
+ActionIcon.displayName = 'coengageui_core/ActionIcon';

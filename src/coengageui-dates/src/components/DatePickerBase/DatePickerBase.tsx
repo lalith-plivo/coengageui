@@ -17,14 +17,14 @@ import {
   Selectors,
   extractSystemStyles,
   getDefaultZIndex,
-} from '@coengageui/core';
+} from 'coengageui_core';
 import {
   useClickOutside,
   useFocusTrap,
   useMergedRef,
   useWindowEvent,
   useUuid,
-} from '@coengageui/hooks';
+} from 'coengageui_hooks';
 import { CalendarBaseStylesNames } from '../CalendarBase/CalendarBase';
 import useStyles from './DatePickerBase.styles';
 
@@ -36,12 +36,12 @@ export type DatePickerStylesNames =
 
 export interface DatePickerBaseSharedProps
   extends InputBaseProps,
-    InputWrapperBaseProps,
-    DefaultProps<DatePickerStylesNames>,
-    Omit<
-      React.ComponentPropsWithoutRef<'input'>,
-      'value' | 'defaultValue' | 'placeholder' | 'size'
-    > {
+  InputWrapperBaseProps,
+  DefaultProps<DatePickerStylesNames>,
+  Omit<
+  React.ComponentPropsWithoutRef<'input'>,
+  'value' | 'defaultValue' | 'placeholder' | 'size'
+  > {
   /** Props spread to root element (InputWrapper) */
   wrapperProps?: React.ComponentPropsWithoutRef<'div'>;
 
@@ -375,4 +375,4 @@ export const DatePickerBase = forwardRef<HTMLInputElement, DatePickerBaseProps>(
   }
 );
 
-DatePickerBase.displayName = '@coengageui/dates/DatePickerBase';
+DatePickerBase.displayName = 'coengageui_dates/DatePickerBase';

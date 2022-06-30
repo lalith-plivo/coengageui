@@ -1,6 +1,6 @@
 import React from 'react';
 import { Sun } from 'tabler-icons-react';
-import { Group, COENGAGEUI_COLORS, ActionIcon, ActionIconProps } from '@coengageui/core';
+import { Group, COENGAGEUI_COLORS, ActionIcon, ActionIconProps } from 'coengageui_core';
 
 const getColors = (props: Omit<ActionIconProps<'button'>, 'children'>) =>
   COENGAGEUI_COLORS.slice(1).map((color) => (

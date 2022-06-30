@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
 import { usePopper, StrictModifier } from 'react-popper';
-import { getDefaultZIndex } from '@coengageui/styles';
+import { getDefaultZIndex } from 'coengageui_styles';
 import type { Placement } from '@popperjs/core';
-import { useDidUpdate } from '@coengageui/hooks';
+import { useDidUpdate } from 'coengageui_hooks';
 import { Transition, CoengageUITransition } from '../Transition';
 import { parsePopperPosition } from './parse-popper-position/parse-popper-position';
 import { PopperContainer } from './PopperContainer/PopperContainer';
@@ -196,4 +196,4 @@ export function Popper<T extends HTMLElement = HTMLDivElement>({
   );
 }
 
-Popper.displayName = '@coengageui/core/Popper';
+Popper.displayName = 'coengageui_core/Popper';

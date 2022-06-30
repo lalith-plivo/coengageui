@@ -8,10 +8,10 @@ General purpose utilities for CoengageUI server side rendering
 
 ```sh
 # With yarn
-yarn add @coengageui/hooks @coengageui/core @coengageui/ssr
+yarn add coengageui_hooks coengageui_core coengageui_ssr
 
 # With npm
-npm install @coengageui/hooks @coengageui/core @coengageui/ssr
+npm install coengageui_hooks coengageui_core coengageui_ssr
 ```
 
 ## License

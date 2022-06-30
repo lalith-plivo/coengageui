@@ -1,6 +1,6 @@
 import React from 'react';
 import { render, screen } from '@testing-library/react';
-import { itSupportsClassName, checkAccessibility } from '@coengageui/tests';
+import { itSupportsClassName, checkAccessibility } from 'coengageui_tests';
 import userEvent from '@testing-library/user-event';
 import { MonthPicker, MonthPickerProps } from './MonthPicker';
 
@@ -11,14 +11,14 @@ const HEADER_CONTROL_SELECTOR = '.coengageui-MonthPicker-calendarHeaderControl';
 
 const defaultProps: MonthPickerProps = {
   value: { year: 2021, month: 11 },
-  onChange: () => {},
+  onChange: () => { },
   locale: 'en',
   year: 2021,
-  onYearChange: () => {},
-  onNextLevel: () => {},
+  onYearChange: () => { },
+  onNextLevel: () => { },
 };
 
-describe('@coengageui/core/MonthPicker', () => {
+describe('coengageui_core/MonthPicker', () => {
   itSupportsClassName(MonthPicker, defaultProps);
   checkAccessibility([
     <MonthPicker {...defaultProps} nextYearLabel="Next" previousYearLabel="Previous" />,
@@ -110,6 +110,6 @@ describe('@coengageui/core/MonthPicker', () => {
   });
 
   it('has correct displayName', () => {
-    expect(MonthPicker.displayName).toStrictEqual('@coengageui/dates/MonthPicker');
+    expect(MonthPicker.displayName).toStrictEqual('coengageui_dates/MonthPicker');
   });
 });

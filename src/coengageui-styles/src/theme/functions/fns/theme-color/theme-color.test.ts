@@ -1,7 +1,7 @@
 import { themeColor } from './theme-color';
 import { DEFAULT_THEME } from '../../../default-theme';
 
-describe('@coengageui/styles/theme-color', () => {
+describe('coengageui_styles/theme-color', () => {
   it('returns correct shade of given color', () => {
     expect(themeColor(DEFAULT_THEME)('red', 3)).toBe(DEFAULT_THEME.colors.red[3]);
   });

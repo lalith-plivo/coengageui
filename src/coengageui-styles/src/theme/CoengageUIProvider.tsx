@@ -111,4 +111,4 @@ export function CoengageUIProvider({
   );
 }
 
-CoengageUIProvider.displayName = '@coengageui/core/CoengageUIProvider';
+CoengageUIProvider.displayName = 'coengageui_core/CoengageUIProvider';

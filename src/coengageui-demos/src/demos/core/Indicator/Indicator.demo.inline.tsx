@@ -1,8 +1,8 @@
 import React from 'react';
-import { Avatar, Indicator } from '@coengageui/core';
+import { Avatar, Indicator } from 'coengageui_core';
 
 const code = `
-import { Avatar, Indicator } from '@coengageui/core';
+import { Avatar, Indicator } from 'coengageui_core';
 
 function Demo() {
   return (

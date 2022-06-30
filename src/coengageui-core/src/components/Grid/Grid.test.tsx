@@ -1,6 +1,6 @@
 import React from 'react';
 import { render } from '@testing-library/react';
-import { itSupportsSystemProps } from '@coengageui/tests';
+import { itSupportsSystemProps } from 'coengageui_tests';
 import { Grid, GridProps } from './Grid';
 import { Col } from './Col/Col';
 
@@ -8,11 +8,11 @@ const defaultProps: GridProps = {
   children: [<Col key={1}>1</Col>, <Col key={2}>2</Col>],
 };
 
-describe('@coengageui/core/Grid', () => {
+describe('coengageui_core/Grid', () => {
   itSupportsSystemProps({
     component: Grid,
     props: defaultProps,
-    displayName: '@coengageui/core/Grid',
+    displayName: 'coengageui_core/Grid',
     refType: HTMLDivElement,
   });
 

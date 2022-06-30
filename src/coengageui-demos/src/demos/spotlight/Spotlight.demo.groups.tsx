@@ -1,9 +1,9 @@
 import React from 'react';
-import type { SpotlightAction } from '@coengageui/spotlight';
+import type { SpotlightAction } from 'coengageui_spotlight';
 import { Wrapper } from './_wrapper';
 
 const code = `
-import { SpotlightProvider, SpotlightAction } from '@coengageui/spotlight';
+import { SpotlightProvider, SpotlightAction } from 'coengageui_spotlight';
 
 const onTrigger = () => {};
 
@@ -29,7 +29,7 @@ function Demo() {
 }
 `;
 
-const onTrigger = () => {};
+const onTrigger = () => { };
 
 const actions: SpotlightAction[] = [
   { title: 'Home', group: 'main', onTrigger },

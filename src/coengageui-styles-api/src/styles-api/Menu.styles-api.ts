@@ -1,4 +1,4 @@
-import type { MenuStylesNames } from '@coengageui/core';
+import type { MenuStylesNames } from 'coengageui_core';
 
 export const Menu: Record<MenuStylesNames, string> = {
   root: 'Root element',

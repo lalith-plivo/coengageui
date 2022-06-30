@@ -1,4 +1,4 @@
-import type { TabsStylesNames } from '@coengageui/core';
+import type { TabsStylesNames } from 'coengageui_core';
 
 export const Tabs: Record<TabsStylesNames, string> = {
   root: 'Root element',

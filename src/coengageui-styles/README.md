@@ -8,10 +8,10 @@ CoengageUI CSS-in-JS library built on top of emotion
 
 ```sh
 # With yarn
-yarn add @coengageui/styles
+yarn add coengageui_styles
 
 # With npm
-npm install @coengageui/styles
+npm install coengageui_styles
 ```
 
 ## License

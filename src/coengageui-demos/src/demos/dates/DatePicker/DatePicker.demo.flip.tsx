@@ -1,8 +1,8 @@
-import { DatePicker } from '@coengageui/dates';
+import { DatePicker } from 'coengageui_dates';
 import React from 'react';
 
 const codeTemplate = (props: string) => `
-import { Autocomplete } from '@coengageui/core';
+import { Autocomplete } from 'coengageui_core';
 
 function Demo() {
   return <DatePicker placeholder="Pick date" label="Event date"${props} />;

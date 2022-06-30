@@ -1,4 +1,4 @@
-import type { AlertStylesNames } from '@coengageui/core';
+import type { AlertStylesNames } from 'coengageui_core';
 
 export const Alert: Record<AlertStylesNames, string> = {
   root: 'Root element',

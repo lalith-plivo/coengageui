@@ -6,7 +6,7 @@ import {
   PolymorphicComponentProps,
   PolymorphicRef,
   useCoengageUIDefaultProps,
-} from '@coengageui/styles';
+} from 'coengageui_styles';
 import { Box } from '../Box';
 import useStyles from './Paper.styles';
 
@@ -51,4 +51,4 @@ export const Paper: PaperComponent = forwardRef(
   }
 ) as any;
 
-Paper.displayName = '@coengageui/core/Paper';
+Paper.displayName = 'coengageui_core/Paper';

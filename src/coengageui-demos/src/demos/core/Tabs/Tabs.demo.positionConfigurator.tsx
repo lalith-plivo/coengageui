@@ -1,5 +1,5 @@
 import React from 'react';
-import { Tabs, TabsProps } from '@coengageui/core';
+import { Tabs, TabsProps } from 'coengageui_core';
 
 function Wrapper(props: TabsProps) {
   return (
@@ -12,7 +12,7 @@ function Wrapper(props: TabsProps) {
 }
 
 const codeTemplate = (props: string) => `
-import { Tabs } from '@coengageui/core';
+import { Tabs } from 'coengageui_core';
 
 function Demo() {
   return (

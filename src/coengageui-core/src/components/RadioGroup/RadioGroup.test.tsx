@@ -6,7 +6,7 @@ import {
   itSupportsInputWrapperProps,
   itSupportsSystemProps,
   itFiltersChildren,
-} from '@coengageui/tests';
+} from 'coengageui_tests';
 import { RadioGroup, Radio, RadioGroupProps } from './index';
 
 const defaultProps: RadioGroupProps = {
@@ -17,12 +17,12 @@ const defaultProps: RadioGroupProps = {
   ],
 };
 
-describe('@coengageui/core/RadioGroup', () => {
+describe('coengageui_core/RadioGroup', () => {
   itSupportsInputWrapperProps(RadioGroup, defaultProps, 'RadioGroup');
   itSupportsSystemProps({
     component: RadioGroup,
     props: defaultProps,
-    displayName: '@coengageui/core/RadioGroup',
+    displayName: 'coengageui_core/RadioGroup',
     excludeOthers: true,
     refType: HTMLDivElement,
   });

@@ -1,12 +1,12 @@
 import React, { forwardRef } from 'react';
-import { useBooleanToggle, useUuid } from '@coengageui/hooks';
+import { useBooleanToggle, useUuid } from 'coengageui_hooks';
 import {
   Selectors,
   DefaultProps,
   extractSystemStyles,
   useCoengageUITheme,
   useCoengageUIDefaultProps,
-} from '@coengageui/styles';
+} from 'coengageui_styles';
 import { ActionIcon } from '../ActionIcon';
 import { TextInputProps, TextInputStylesNames } from '../TextInput';
 import { Input } from '../Input';
@@ -18,7 +18,7 @@ export type PasswordInputStylesNames = Selectors<typeof useStyles> | TextInputSt
 
 export interface PasswordInputProps
   extends DefaultProps<PasswordInputStylesNames>,
-    Omit<TextInputProps, 'classNames' | 'styles'> {
+  Omit<TextInputProps, 'classNames' | 'styles'> {
   /** Toggle button tabIndex, set to 0 to make button focusable with tab key */
   toggleTabIndex?: -1 | 0;
 
@@ -173,4 +173,4 @@ export const PasswordInput = forwardRef<HTMLInputElement, PasswordInputProps>(
   }
 );
 
-PasswordInput.displayName = '@coengageui/core/PasswordInput';
+PasswordInput.displayName = 'coengageui_core/PasswordInput';

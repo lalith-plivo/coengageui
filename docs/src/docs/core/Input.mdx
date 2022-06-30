@@ -1,19 +1,19 @@
 ---
 group: 'coengageui-core'
-package: '@coengageui/core'
+package: 'coengageui_core'
 title: Input
 order: 1
 slug: /core/input/
 category: 'inputs'
 description: 'Base component to create custom inputs'
 props: ['Input']
-import: "import { Input } from '@coengageui/core';"
+import: "import { Input } from 'coengageui_core';"
 source: 'coengageui-core/src/components/Input/Input.tsx'
 docs: 'core/Input.mdx'
 styles: ['Input']
 ---
 
-import { InputDemos } from '@coengageui/demos';
+import { InputDemos } from 'coengageui_demos';
 
 ## Disclaimer
 
@@ -81,7 +81,7 @@ You can get input ref by passing `ref` prop to Input component:
 
 ```tsx
 import { useRef } from 'react';
-import { Input } from '@coengageui/core';
+import { Input } from 'coengageui_core';
 
 function Demo() {
   const ref = useRef<HTMLInputElement>();

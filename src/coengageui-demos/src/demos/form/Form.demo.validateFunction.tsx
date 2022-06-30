@@ -1,11 +1,11 @@
 /* eslint-disable no-console */
 import React from 'react';
-import { useForm } from '@coengageui/form';
-import { Box, TextInput, NumberInput, Button, Group } from '@coengageui/core';
+import { useForm } from 'coengageui_form';
+import { Box, TextInput, NumberInput, Button, Group } from 'coengageui_core';
 
 const code = `
-import { useForm } from '@coengageui/form';
-import { Box, TextInput, NumberInput, Button, Group } from '@coengageui/core';
+import { useForm } from 'coengageui_form';
+import { Box, TextInput, NumberInput, Button, Group } from 'coengageui_core';
 
 function Demo() {
   const form = useForm<{ name: string; age: number | undefined }>({
@@ -45,8 +45,8 @@ function Demo() {
         values.age === undefined
           ? 'Age is required'
           : values.age < 18
-          ? 'You must be at least 18'
-          : null,
+            ? 'You must be at least 18'
+            : null,
     }),
   });
 

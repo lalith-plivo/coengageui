@@ -1,9 +1,9 @@
 import React from 'react';
-import { Grid } from '@coengageui/core';
+import { Grid } from 'coengageui_core';
 import { ColWrapper as Col } from './_col-wrapper';
 
 const code = `
-import { Grid } from '@coengageui/core';
+import { Grid } from 'coengageui_core';
 
 function Demo() {
   return (

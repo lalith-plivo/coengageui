@@ -1,6 +1,6 @@
 import React from 'react';
-import { useCoengageUITheme } from '@coengageui/core';
-import { RichTextEditorDemos } from '@coengageui/demos';
+import { useCoengageUITheme } from 'coengageui_core';
+import { RichTextEditorDemos } from 'coengageui_demos';
 
 export function RichTextDemo() {
   const theme = useCoengageUITheme();

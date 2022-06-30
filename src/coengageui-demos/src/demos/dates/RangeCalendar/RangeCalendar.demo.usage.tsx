@@ -1,10 +1,10 @@
 import React, { useState } from 'react';
-import { Group } from '@coengageui/core';
-import { RangeCalendar } from '@coengageui/dates';
+import { Group } from 'coengageui_core';
+import { RangeCalendar } from 'coengageui_dates';
 
 const code = `
 import { useState } from 'react';
-import { RangeCalendar } from '@coengageui/dates';
+import { RangeCalendar } from 'coengageui_dates';
 
 function Demo() {
   const [value, setValue] = useState<[Date | null, Date | null]>([

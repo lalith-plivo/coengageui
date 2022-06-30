@@ -11,16 +11,16 @@
     "declarationDir": "lib",
     "composite": true,
     "paths": {
-      "@coengageui/core": ["../coengageui-core/src"],
-      "@coengageui/dates": ["../coengageui-dates/src"],
-      "@coengageui/hooks": ["../coengageui-hooks/src"],
-      "@coengageui/prism": ["../coengageui-prism/src"],
-      "@coengageui/dropzone": ["../coengageui-dropzone/src"],
-      "@coengageui/spotlight": ["../coengageui-spotlight/src"],
-      "@coengageui/notifications": ["../coengageui-notifications/src"],
-      "@coengageui/modals": ["../coengageui-modals/src"],
-      "@coengageui/rte": ["../coengageui-rte/src"],
-      "@coengageui/storybook": ["../coengageui-storybook/src"]
+      "coengageui_core": ["../coengageui-core/src"],
+      "coengageui_dates": ["../coengageui-dates/src"],
+      "coengageui_hooks": ["../coengageui-hooks/src"],
+      "coengageui_prism": ["../coengageui-prism/src"],
+      "coengageui_dropzone": ["../coengageui-dropzone/src"],
+      "coengageui_spotlight": ["../coengageui-spotlight/src"],
+      "coengageui_notifications": ["../coengageui-notifications/src"],
+      "coengageui_modals": ["../coengageui-modals/src"],
+      "coengageui_rte": ["../coengageui-rte/src"],
+      "coengageui_storybook": ["../coengageui-storybook/src"]
     }
   },
   "references": [

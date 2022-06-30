@@ -1,9 +1,9 @@
 import React, { useState } from 'react';
-import { Stepper, StepperProps } from '@coengageui/core';
+import { Stepper, StepperProps } from 'coengageui_core';
 
 const code = `
 import { useState } from 'react';
-import { Stepper, StepperProps } from '@coengageui/core';
+import { Stepper, StepperProps } from 'coengageui_core';
 
 function StyledStepper(props: StepperProps) {
   return (

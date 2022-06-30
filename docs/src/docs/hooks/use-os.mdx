@@ -1,17 +1,17 @@
 ---
 group: 'coengageui-hooks'
-package: '@coengageui/hooks'
+package: 'coengageui_hooks'
 category: 'utils'
 title: 'use-os'
 order: 1
 slug: /hooks/use-os/
 description: 'Get user os'
-import: "import { useOs } from '@coengageui/hooks';"
+import: "import { useOs } from 'coengageui_hooks';"
 docs: 'hooks/use-os.mdx'
 source: 'coengageui-hooks/src/use-os/use-os.ts'
 ---
 
-import { HooksDemos } from '@coengageui/demos';
+import { HooksDemos } from 'coengageui_demos';
 
 ## Usage
 
@@ -22,10 +22,10 @@ If os cannot be identified, for example, during server side rendering `undetermi
 
 ## TypeScript
 
-You can import `OS` union type from `@coengageui/hooks`:
+You can import `OS` union type from `coengageui_hooks`:
 
 ```tsx
-import type { OS } from '@coengageui/hooks';
+import type { OS } from 'coengageui_hooks';
 // OS type is 'undetermined' | 'macos' | 'ios' | 'windows' | 'android' | 'linux'
 ```
 

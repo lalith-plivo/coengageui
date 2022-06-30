@@ -1,7 +1,7 @@
 import { renderHook } from '@testing-library/react-hooks';
 import { useDocumentTitle } from './use-document-title';
 
-describe('@coengageui/hooks/use-scroll-lock', () => {
+describe('coengageui_hooks/use-scroll-lock', () => {
   it('sets given value as document.title', () => {
     renderHook(() => useDocumentTitle('test-title'));
     expect(document.title).toBe('test-title');

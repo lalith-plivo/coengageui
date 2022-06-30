@@ -1,16 +1,16 @@
 import React from 'react';
 import { render, screen } from '@testing-library/react';
 import userEvent from '@testing-library/user-event';
-import { checkAccessibility, itSupportsSystemProps } from '@coengageui/tests';
+import { checkAccessibility, itSupportsSystemProps } from 'coengageui_tests';
 import { Drawer, DrawerProps } from './Drawer';
 
 const defaultProps: DrawerProps = {
   opened: true,
-  onClose: () => {},
+  onClose: () => { },
   withinPortal: false,
 };
 
-describe('@coengageui/core/Drawer', () => {
+describe('coengageui_core/Drawer', () => {
   itSupportsSystemProps({ component: Drawer, props: defaultProps });
   checkAccessibility([
     <Drawer
@@ -47,6 +47,6 @@ describe('@coengageui/core/Drawer', () => {
   });
 
   it('has correct displayName', () => {
-    expect(Drawer.displayName).toStrictEqual('@coengageui/core/Drawer');
+    expect(Drawer.displayName).toStrictEqual('coengageui_core/Drawer');
   });
 });

@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
-import { CoengageUIProvider, ColorSchemeProvider, ColorScheme, Global } from '@coengageui/core';
-import { useHotkeys, useLocalStorage } from '@coengageui/hooks';
+import { CoengageUIProvider, ColorSchemeProvider, ColorScheme, Global } from 'coengageui_core';
+import { useHotkeys, useLocalStorage } from 'coengageui_hooks';
 import rtlPlugin from 'stylis-plugin-rtl';
 import { LayoutInner, LayoutProps } from './LayoutInner';
 import { DirectionContext } from './DirectionContext';

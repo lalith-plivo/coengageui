@@ -1,17 +1,17 @@
 /* eslint-disable no-console */
 import React from 'react';
-import { Group, Text, useCoengageUITheme, CoengageUITheme } from '@coengageui/core';
+import { Group, Text, useCoengageUITheme, CoengageUITheme } from 'coengageui_core';
 import { Upload, Photo, X, Icon as TablerIcon } from 'tabler-icons-react';
-import { Dropzone, DropzoneStatus, DropzoneProps, IMAGE_MIME_TYPE } from '@coengageui/dropzone';
+import { Dropzone, DropzoneStatus, DropzoneProps, IMAGE_MIME_TYPE } from 'coengageui_dropzone';
 
 function getIconColor(status: DropzoneStatus, theme: CoengageUITheme) {
   return status.accepted
     ? theme.colors[theme.primaryColor][theme.colorScheme === 'dark' ? 4 : 6]
     : status.rejected
-    ? theme.colors.red[theme.colorScheme === 'dark' ? 4 : 6]
-    : theme.colorScheme === 'dark'
-    ? theme.colors.dark[0]
-    : theme.colors.gray[7];
+      ? theme.colors.red[theme.colorScheme === 'dark' ? 4 : 6]
+      : theme.colorScheme === 'dark'
+        ? theme.colors.dark[0]
+        : theme.colors.gray[7];
 }
 
 function ImageUploadIcon({

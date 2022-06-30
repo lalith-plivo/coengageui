@@ -7,7 +7,7 @@ module.exports = {
   testMatch: ['**/__tests__/**/*.ts?(x)', '**/?(*.)+(spec|test).ts?(x)'],
   setupFilesAfterEnv: ['./configuration/jest/jsdom.mocks.js'],
   moduleNameMapper: {
-    '@coengageui/core/src/styles.api': '<rootDir>/src/coengageui-core/src/styles.api',
-    '@coengageui/(.*)': '<rootDir>/src/coengageui-$1/src',
+    'coengageui_core/src/styles.api': '<rootDir>/src/coengageui-core/src/styles.api',
+    'coengageui_(.*)': '<rootDir>/src/coengageui-$1/src',
   },
 };

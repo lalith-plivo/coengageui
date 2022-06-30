@@ -1,4 +1,4 @@
-import { CoengageUISize, CoengageUITheme } from '@coengageui/styles';
+import { CoengageUISize, CoengageUITheme } from 'coengageui_styles';
 
 type Breakpoints<T> = Partial<Record<CoengageUISize | (string & {}), T>>;
 

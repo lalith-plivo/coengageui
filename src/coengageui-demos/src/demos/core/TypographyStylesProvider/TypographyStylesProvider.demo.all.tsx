@@ -1,5 +1,5 @@
 import React from 'react';
-import { TypographyStylesProvider } from '@coengageui/core';
+import { TypographyStylesProvider } from 'coengageui_core';
 
 const html = `<h1>Heading 1</h1>
 <h2>Heading 2</h2>
@@ -33,7 +33,7 @@ const html = `<h1>Heading 1</h1>
 <p>This is <code>Code</code> inside paragraph</p>
 
 <pre>import React from 'react';
-import { Avatar } from '@coengageui/core';
+import { Avatar } from 'coengageui_core';
 import image from './image.png';
 
 export function AvatarDemo() {

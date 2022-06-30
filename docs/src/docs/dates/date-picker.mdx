@@ -1,18 +1,18 @@
 ---
 group: 'coengageui-dates'
-package: '@coengageui/dates'
+package: 'coengageui_dates'
 title: DatePicker
 order: 1
 slug: /dates/date-picker/
 description: 'Capture date or dates range from user'
 props: ['DatePicker', 'DateRangePicker']
-import: "import { DatePicker, DateRangePicker } from '@coengageui/dates';"
+import: "import { DatePicker, DateRangePicker } from 'coengageui_dates';"
 source: 'coengageui-dates/src/components/DatePicker/DatePicker.tsx'
 docs: 'dates/DatePicker.mdx'
 styles: ['DatePicker', 'DateRangePicker']
 ---
 
-import { DatePickerDemos, DateRangePickerDemos } from '@coengageui/demos';
+import { DatePickerDemos, DateRangePickerDemos } from 'coengageui_demos';
 
 ## Usage
 
@@ -28,7 +28,7 @@ DateRangePicker component (supports the same props as DatePicker component):
 
 ```tsx
 import { useState } from 'react';
-import { DatePicker } from '@coengageui/dates';
+import { DatePicker } from 'coengageui_dates';
 
 function Demo() {
   const [value, onChange] = useState(new Date());
@@ -38,7 +38,7 @@ function Demo() {
 
 ## Localization
 
-All @coengageui/dates components are built with [dayjs](https://day.js.org/) library.
+All coengageui_dates components are built with [dayjs](https://day.js.org/) library.
 Default locale is `en`, to change this follow [dayjs localization guide](https://day.js.org/docs/en/i18n/loading-into-nodejs):
 
 ```tsx
@@ -81,8 +81,8 @@ In most cases, you would want to switch to modal when a certain breakpoint is re
 To implement this use [use-media-query](/hooks/use-media-query/) hook:
 
 ```tsx
-import { useMediaQuery } from '@coengageui/hooks';
-import { DatePicker } from '@coengageui/dates';
+import { useMediaQuery } from 'coengageui_hooks';
+import { DatePicker } from 'coengageui_dates';
 
 function Demo() {
   const isMobile = useMediaQuery('(max-width: 755px)');
@@ -108,7 +108,7 @@ By default, DatePicker will try to parse date using dayjs with given `inputForma
 to change that provide `dateParser` function:
 
 ```tsx
-import { DatePicker } from '@coengageui/dates';
+import { DatePicker } from 'coengageui_dates';
 
 function Demo() {
   return (
@@ -234,7 +234,7 @@ To change this behavior, set `dropdownPosition` prop:
 
 ```tsx
 import { useRef } from 'react';
-import { DatePicker } from '@coengageui/dates';
+import { DatePicker } from 'coengageui_dates';
 
 function Demo() {
   const ref = useRef<HTMLInputElement>();

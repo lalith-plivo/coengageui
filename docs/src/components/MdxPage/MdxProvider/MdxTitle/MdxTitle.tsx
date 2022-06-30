@@ -1,5 +1,5 @@
 import React from 'react';
-import { Title } from '@coengageui/core';
+import { Title } from 'coengageui_core';
 import useStyles from './MdxTitle.styles';
 
 export default function MdxTitle({

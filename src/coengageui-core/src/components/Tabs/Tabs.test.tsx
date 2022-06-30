@@ -1,7 +1,7 @@
 import React from 'react';
 import { render, screen } from '@testing-library/react';
 import userEvent from '@testing-library/user-event';
-import { checkAccessibility, itSupportsSystemProps } from '@coengageui/tests';
+import { checkAccessibility, itSupportsSystemProps } from 'coengageui_tests';
 import { Tabs, TabsProps } from './Tabs';
 
 const content = [
@@ -41,12 +41,12 @@ const activateTab = (index: number) => userEvent.click(screen.getAllByRole('tab'
 const tabKeydown = (index: number, payload: string) =>
   userEvent.type(screen.getAllByRole('tab')[index], payload);
 
-describe('@coengageui/core/Tabs', () => {
+describe('coengageui_core/Tabs', () => {
   checkAccessibility([<Tabs>{content}</Tabs>, <Tabs initialTab={2}>{content}</Tabs>]);
   itSupportsSystemProps({
     component: Tabs,
     props: defaultProps,
-    displayName: '@coengageui/core/Tabs',
+    displayName: 'coengageui_core/Tabs',
     refType: HTMLDivElement,
   });
 

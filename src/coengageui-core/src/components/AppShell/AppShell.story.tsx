@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { storiesOf } from '@storybook/react';
-import { DEFAULT_THEME, useCoengageUITheme, CoengageUIProvider } from '@coengageui/styles';
-import { StylesAPIStory } from '@coengageui/storybook';
+import { DEFAULT_THEME, useCoengageUITheme, CoengageUIProvider } from 'coengageui_styles';
+import { StylesAPIStory } from 'coengageui_storybook';
 import { Burger } from '../Burger';
 import { Text } from '../Text';
 import { MediaQuery } from '../MediaQuery';

@@ -7,12 +7,12 @@ import {
   itSupportsWrapperProps,
   itSupportsInputIcon,
   itSupportsInputRightSection,
-} from '@coengageui/tests';
+} from 'coengageui_tests';
 import { Input, InputProps } from './Input';
 
 const defaultProps: InputProps<'input'> = {};
 
-describe('@coengageui/core/Input', () => {
+describe('coengageui_core/Input', () => {
   itIsPolymorphic(Input, defaultProps, '.coengageui-Input-input');
   itSupportsWrapperProps(Input, defaultProps);
   itSupportsInputIcon(Input, defaultProps);
@@ -26,7 +26,7 @@ describe('@coengageui/core/Input', () => {
   itSupportsSystemProps({
     component: Input,
     props: defaultProps,
-    displayName: '@coengageui/core/Input',
+    displayName: 'coengageui_core/Input',
     refType: HTMLInputElement,
     excludeOthers: true,
   });

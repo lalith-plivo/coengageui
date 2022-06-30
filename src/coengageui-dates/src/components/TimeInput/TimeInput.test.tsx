@@ -9,7 +9,7 @@ import {
   itConnectsLabelAndInput,
   itSupportsFocusEvents,
   itSupportsInputWrapperProps,
-} from '@coengageui/tests';
+} from 'coengageui_tests';
 import { TimeInput, TimeInputProps } from './TimeInput';
 
 const defaultProps: TimeInputProps = {
@@ -19,7 +19,7 @@ const defaultProps: TimeInputProps = {
   secondsLabel: 'test-seconds',
 };
 
-describe('@coengageui/dates/TimeInput', () => {
+describe('coengageui_dates/TimeInput', () => {
   itSupportsInputRightSection(TimeInput, defaultProps);
   itSupportsInputWrapperProps(TimeInput, defaultProps, 'TimeInput');
   itSupportsInputIcon(TimeInput, defaultProps);
@@ -28,7 +28,7 @@ describe('@coengageui/dates/TimeInput', () => {
   itSupportsSystemProps({
     component: TimeInput,
     props: defaultProps,
-    displayName: '@coengageui/dates/TimeInput',
+    displayName: 'coengageui_dates/TimeInput',
     refType: HTMLInputElement,
     excludeOthers: true,
   });

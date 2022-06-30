@@ -1,10 +1,10 @@
 import React from 'react';
 import { Palette, CircleDashed, Bulb } from 'tabler-icons-react';
-import { ThemeIcon, Accordion, AccordionProps } from '@coengageui/core';
+import { ThemeIcon, Accordion, AccordionProps } from 'coengageui_core';
 import { baseAccordionMockdata } from './_mockdata';
 
 const code = `
-import { ThemeIcon, Accordion } from '@coengageui/core';
+import { ThemeIcon, Accordion } from 'coengageui_core';
 import { Palette } from 'tabler-icons-react';
 
 function Demo() {

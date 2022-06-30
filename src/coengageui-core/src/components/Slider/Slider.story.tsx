@@ -2,7 +2,7 @@
 import React, { useState } from 'react';
 import { storiesOf } from '@storybook/react';
 import { Heart } from 'tabler-icons-react';
-import { useDisclosure } from '@coengageui/hooks';
+import { useDisclosure } from 'coengageui_hooks';
 import { Slider } from './Slider/Slider';
 import { RangeSlider } from './RangeSlider/RangeSlider';
 import { Button } from '../Button';

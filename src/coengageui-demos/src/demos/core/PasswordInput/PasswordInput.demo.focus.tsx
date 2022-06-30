@@ -1,8 +1,8 @@
 import React from 'react';
-import { PasswordInput } from '@coengageui/core';
+import { PasswordInput } from 'coengageui_core';
 
 const code = `
-import { PasswordInput } from '@coengageui/core';
+import { PasswordInput } from 'coengageui_core';
 
 function Demo() {
   return (

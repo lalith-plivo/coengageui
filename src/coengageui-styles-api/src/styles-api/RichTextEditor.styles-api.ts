@@ -1,4 +1,4 @@
-import type { RichTextEditorStylesNames } from '@coengageui/rte';
+import type { RichTextEditorStylesNames } from 'coengageui_rte';
 
 export const RichTextEditor: Record<RichTextEditorStylesNames, string> = {
   root: 'Root element',

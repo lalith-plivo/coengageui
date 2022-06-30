@@ -1,10 +1,10 @@
 import React, { useState } from 'react';
-import { Stepper, Button, Group } from '@coengageui/core';
+import { Stepper, Button, Group } from 'coengageui_core';
 import { Content } from './_content';
 
 const code = `
 import { useState } from 'react';
-import { Stepper, Button, Group } from '@coengageui/core';
+import { Stepper, Button, Group } from 'coengageui_core';
 
 function Demo() {
   const [active, setActive] = useState(1);

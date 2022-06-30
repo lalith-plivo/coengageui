@@ -5,20 +5,20 @@ import {
   itSupportsSystemProps,
   itSupportsInputProps,
   itSupportsFocusEvents,
-} from '@coengageui/tests';
+} from 'coengageui_tests';
 import { NativeSelect, NativeSelectProps } from './NativeSelect';
 
 const defaultProps: NativeSelectProps = {
   data: ['test-item-1', 'test-item-2', 'test-item-3'],
 };
 
-describe('@coengageui/core/NativeSelect', () => {
+describe('coengageui_core/NativeSelect', () => {
   itSupportsInputProps(NativeSelect, defaultProps, 'NativeSelect');
   itSupportsFocusEvents(NativeSelect, defaultProps, 'select');
   itSupportsSystemProps({
     component: NativeSelect,
     props: defaultProps,
-    displayName: '@coengageui/core/NativeSelect',
+    displayName: 'coengageui_core/NativeSelect',
     excludeOthers: true,
     refType: HTMLSelectElement,
   });

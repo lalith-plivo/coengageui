@@ -1,6 +1,6 @@
 import React from 'react';
 import { Database } from 'tabler-icons-react';
-import { Button, Group, ButtonProps } from '@coengageui/core';
+import { Button, Group, ButtonProps } from 'coengageui_core';
 
 function Wrapper(props: ButtonProps<'button'>) {
   return (
@@ -14,7 +14,7 @@ function Wrapper(props: ButtonProps<'button'>) {
 
 const codeTemplate = (props: string) => `
 import { Database } from 'tabler-icons-react';
-import { Button } from '@coengageui/core';
+import { Button } from 'coengageui_core';
 
 function Demo() {
   return (

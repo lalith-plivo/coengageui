@@ -7,7 +7,7 @@ import {
   itSupportsFocusEvents,
   renderWithAct,
   actAsync,
-} from '@coengageui/tests';
+} from 'coengageui_tests';
 import { Divider } from '../Divider';
 import { MenuItem } from './MenuItem/MenuItem';
 import { MenuLabel } from './MenuLabel/MenuLabel';
@@ -26,7 +26,7 @@ const defaultProps: MenuProps = {
   ],
 };
 
-describe('@coengageui/core/Menu', () => {
+describe('coengageui_core/Menu', () => {
   checkAccessibility([
     <Menu opened {...defaultProps} />,
     <Menu opened={false} {...defaultProps} />,
@@ -35,7 +35,7 @@ describe('@coengageui/core/Menu', () => {
   itSupportsSystemProps({
     component: Menu,
     props: defaultProps,
-    displayName: '@coengageui/core/Menu',
+    displayName: 'coengageui_core/Menu',
     refType: HTMLButtonElement,
   });
 

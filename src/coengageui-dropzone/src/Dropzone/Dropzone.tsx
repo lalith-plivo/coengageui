@@ -7,8 +7,8 @@ import {
   LoadingOverlay,
   Box,
   useCoengageUIDefaultProps,
-} from '@coengageui/core';
-import { assignRef } from '@coengageui/hooks';
+} from 'coengageui_core';
+import { assignRef } from 'coengageui_hooks';
 import useStyles from './Dropzone.styles';
 
 export type DropzoneStylesNames = Selectors<typeof useStyles>;
@@ -117,4 +117,4 @@ export const Dropzone = forwardRef<HTMLDivElement, DropzoneProps>((props: Dropzo
   );
 });
 
-Dropzone.displayName = '@coengageui/dropzone/Dropzone';
+Dropzone.displayName = 'coengageui_dropzone/Dropzone';

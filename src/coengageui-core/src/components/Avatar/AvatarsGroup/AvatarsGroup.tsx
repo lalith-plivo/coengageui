@@ -4,7 +4,7 @@ import {
   CoengageUINumberSize,
   Selectors,
   useCoengageUIDefaultProps,
-} from '@coengageui/styles';
+} from 'coengageui_styles';
 import { filterChildrenByType } from '../../../utils';
 import { Avatar } from '../Avatar';
 import { Box } from '../../Box';
@@ -15,7 +15,7 @@ export type AvatarsGroupStylesNames = Selectors<typeof useStyles>;
 
 export interface AvatarsGroupProps
   extends DefaultProps<AvatarsGroupStylesNames>,
-    React.ComponentPropsWithoutRef<'div'> {
+  React.ComponentPropsWithoutRef<'div'> {
   /** <Avatar /> components only */
   children?: React.ReactNode;
 
@@ -93,4 +93,4 @@ export const AvatarsGroup = forwardRef<HTMLDivElement, AvatarsGroupProps>(
   }
 );
 
-AvatarsGroup.displayName = '@coengageui/core/AvatarsGroup';
+AvatarsGroup.displayName = 'coengageui_core/AvatarsGroup';

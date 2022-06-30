@@ -1,6 +1,6 @@
 import React from 'react';
-import { NumberInput } from '@coengageui/core';
-import { upperFirst } from '@coengageui/hooks';
+import { NumberInput } from 'coengageui_core';
+import { upperFirst } from 'coengageui_hooks';
 
 interface NumberControlProps {
   value: number;

@@ -1,5 +1,5 @@
 import React, { forwardRef } from 'react';
-import { DefaultProps, CoengageUINumberSize, useCoengageUIDefaultProps } from '@coengageui/styles';
+import { DefaultProps, CoengageUINumberSize, useCoengageUIDefaultProps } from 'coengageui_styles';
 import { Box } from '../Box';
 import useStyles from './Skeleton.styles';
 
@@ -58,4 +58,4 @@ export const Skeleton = forwardRef<HTMLDivElement, SkeletonProps>((props: Skelet
   );
 });
 
-Skeleton.displayName = '@coengageui/core/Skeleton';
+Skeleton.displayName = 'coengageui_core/Skeleton';

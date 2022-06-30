@@ -1,9 +1,9 @@
 import React from 'react';
-import { Group, ActionIcon, useCoengageUIColorScheme } from '@coengageui/core';
+import { Group, ActionIcon, useCoengageUIColorScheme } from 'coengageui_core';
 import { Sun, MoonStars } from 'tabler-icons-react';
 
 const code = `
-import { ActionIcon, useCoengageUIColorScheme } from '@coengageui/core';
+import { ActionIcon, useCoengageUIColorScheme } from 'coengageui_core';
 import { Sun, MoonStars } from 'tabler-icons-react';
 
 function Demo() {

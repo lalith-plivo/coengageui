@@ -1,8 +1,8 @@
 import React from 'react';
-import { Switch, Group } from '@coengageui/core';
+import { Switch, Group } from 'coengageui_core';
 
 const code = `
-import { Switch } from '@coengageui/core';
+import { Switch } from 'coengageui_core';
 
 function Demo() {
   return <Switch onLabel="ON" offLabel="OFF" />;

@@ -1,17 +1,17 @@
 ---
 group: 'coengageui-hooks'
-package: '@coengageui/hooks'
+package: 'coengageui_hooks'
 title: 'use-media-query'
 category: 'dom'
 order: 1
 slug: /hooks/use-media-query/
 description: 'Subscribe to media queries with window.matchMedia'
-import: "import { useMediaQuery } from '@coengageui/hooks';"
+import: "import { useMediaQuery } from 'coengageui_hooks';"
 docs: 'hooks/use-media-query.mdx'
 source: 'coengageui-hooks/src/use-media-query/use-media-query.ts'
 ---
 
-import { HooksDemos } from '@coengageui/demos';
+import { HooksDemos } from 'coengageui_demos';
 
 ## Usage
 
@@ -33,8 +33,8 @@ For example, the server will generate the html for clients using a smaller devic
 After the hydration, the hook will render again and return the result of the media query:
 
 ```tsx
-import { Badge } from '@coengageui/core';
-import { useMediaQuery } from '@coengageui/hooks';
+import { Badge } from 'coengageui_core';
+import { useMediaQuery } from 'coengageui_hooks';
 
 function Demo() {
   const matches = useMediaQuery('(min-width: 900px)', false);

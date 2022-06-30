@@ -1,7 +1,7 @@
 import React from 'react';
 import { render, screen } from '@testing-library/react';
 import userEvent from '@testing-library/user-event';
-import { checkAccessibility, itSupportsSystemProps } from '@coengageui/tests';
+import { checkAccessibility, itSupportsSystemProps } from 'coengageui_tests';
 import { Chips } from './Chips';
 import { Chip } from './Chip/Chip';
 
@@ -19,12 +19,12 @@ const queries = {
     userEvent.click(queries.getChip(index, type)),
 };
 
-describe('@coengageui/core/Chips', () => {
+describe('coengageui_core/Chips', () => {
   checkAccessibility([<Chips {...defaultProps} />]);
   itSupportsSystemProps({
     component: Chips,
     props: defaultProps,
-    displayName: '@coengageui/core/Chips',
+    displayName: 'coengageui_core/Chips',
     excludeOthers: true,
   });
 

@@ -1,4 +1,4 @@
-import type { NotificationStylesNames } from '@coengageui/core';
+import type { NotificationStylesNames } from 'coengageui_core';
 
 export const Notification: Record<NotificationStylesNames, string> = {
   root: 'Root element',

@@ -1,15 +1,15 @@
 import React from 'react';
 import { render, screen } from '@testing-library/react';
-import { itSupportsSystemProps } from '@coengageui/tests';
+import { itSupportsSystemProps } from 'coengageui_tests';
 import { Divider, DividerProps } from './Divider';
 
 const defaultProps: DividerProps = {};
 
-describe('@coengageui/core/Divider', () => {
+describe('coengageui_core/Divider', () => {
   itSupportsSystemProps({
     component: Divider,
     props: defaultProps,
-    displayName: '@coengageui/core/Divider',
+    displayName: 'coengageui_core/Divider',
     refType: HTMLDivElement,
   });
 

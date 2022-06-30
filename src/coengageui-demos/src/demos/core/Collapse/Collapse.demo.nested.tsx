@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Button, Text, Collapse, CollapseProps } from '@coengageui/core';
+import { Button, Text, Collapse, CollapseProps } from 'coengageui_core';
 
 export function CollapsedDemo({
   children,

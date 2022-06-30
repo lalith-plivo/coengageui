@@ -1,8 +1,8 @@
 import React from 'react';
-import { TextInput } from '@coengageui/core';
+import { TextInput } from 'coengageui_core';
 
 const code = `
-import { TextInput } from '@coengageui/core';
+import { TextInput } from 'coengageui_core';
 
 function Demo() {
   return <TextInput disabled />

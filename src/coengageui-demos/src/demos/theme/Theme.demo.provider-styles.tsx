@@ -6,10 +6,10 @@ import {
   Group,
   useCoengageUIColorScheme,
   ButtonStylesParams,
-} from '@coengageui/core';
+} from 'coengageui_core';
 
 const code = `
-import { CoengageUIProvider, Button, Badge, ButtonStylesParams } from '@coengageui/core';
+import { CoengageUIProvider, Button, Badge, ButtonStylesParams } from 'coengageui_core';
 
 function Demo() {
   return (

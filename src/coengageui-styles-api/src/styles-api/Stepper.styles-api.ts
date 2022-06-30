@@ -1,4 +1,4 @@
-import type { StepperStylesNames } from '@coengageui/core';
+import type { StepperStylesNames } from 'coengageui_core';
 
 export const Stepper: Record<StepperStylesNames, string> = {
   root: 'Root element',

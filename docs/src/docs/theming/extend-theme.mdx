@@ -6,8 +6,8 @@ order: 0
 search: 'Extends colors, typography, shadows, spacing, breakpoints'
 ---
 
-import { DEFAULT_THEME } from '@coengageui/core';
-import { ThemeDemos } from '@coengageui/demos';
+import { DEFAULT_THEME } from 'coengageui_core';
+import { ThemeDemos } from 'coengageui_demos';
 import { ThemeColors } from '../../components/ThemeColors/ThemeColors';
 
 # Theme object
@@ -73,7 +73,7 @@ For example, [Button](/core/button/) Component by default will use `theme.primar
 it should only reference value from `theme.colors`:
 
 ```tsx
-import { CoengageUIProvider } from '@coengageui/core';
+import { CoengageUIProvider } from 'coengageui_core';
 
 function App() {
   return (
@@ -101,7 +101,7 @@ Note that for some variants with dark color scheme `primaryShade` will not be us
 `primaryShade` can also be customized for dark and light color scheme separately:
 
 ```tsx
-import { CoengageUIProvider } from '@coengageui/core';
+import { CoengageUIProvider } from 'coengageui_core';
 
 function Demo() {
   return (
@@ -132,7 +132,7 @@ You can change size values by setting corresponding properties. In the following
 - sm, md and lg values will be used from default theme
 
 ```tsx
-import { Button, Code, CoengageUIProvider, Title } from '@coengageui/core';
+import { Button, Code, CoengageUIProvider, Title } from 'coengageui_core';
 
 function YourApp() {
   return (
@@ -165,7 +165,7 @@ In this example:
 - xs, md and xl values will be used from default theme
 
 ```tsx
-import { CoengageUIProvider } from '@coengageui/core';
+import { CoengageUIProvider } from 'coengageui_core';
 
 function YourApp() {
   return (
@@ -200,7 +200,7 @@ CoengageUI uses Bootstrap's breakpoint values as defaults:
 You can add any amount of properties using `other`:
 
 ```tsx
-import { CoengageUIProvider, Box } from '@coengageui/core';
+import { CoengageUIProvider, Box } from 'coengageui_core';
 
 function App() {
   return (
@@ -236,22 +236,22 @@ function App() {
 TypeScript will only autocomplete CoengageUI's default colors when accessing the theme. To add your custom colors to the CoengageUIColor type, you can use TypeScript module declaration:
 
 ```ts
-import { Tuple } from '@coengageui/core';
+import { Tuple } from 'coengageui_core';
 
 type CustomColors = 'primaryColorName' | 'secondaryColorName';
 
-declare module '@coengageui/core' {
+declare module 'coengageui_core' {
   export interface CoengageUIThemeColorsOverride {
     colors: Record<CustomColors, Tuple<string, 10>>;
   }
 }
 
 // or if you want to "extend" standard colors
-import { Tuple, DefaultCoengageUIColor } from '@coengageui/core';
+import { Tuple, DefaultCoengageUIColor } from 'coengageui_core';
 
 type ExtendedCustomColors = 'primaryColorName' | 'secondaryColorName' | DefaultCoengageUIColor;
 
-declare module '@coengageui/core' {
+declare module 'coengageui_core' {
   export interface CoengageUIThemeColorsOverride {
     colors: Record<ExtendedCustomColors, Tuple<string, 10>>;
   }
@@ -263,7 +263,7 @@ declare module '@coengageui/core' {
 Similar to how you can extend/set custom colors, you can add your own properties to the `theme.other` type using TypeScript module declaration:
 
 ```ts
-declare module '@coengageui/core' {
+declare module 'coengageui_core' {
   export interface CoengageUIThemeOther {
     myCustomProperty: string;
     myCustomFunction: () => void;

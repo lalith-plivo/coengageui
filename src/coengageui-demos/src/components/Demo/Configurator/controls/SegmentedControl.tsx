@@ -1,6 +1,6 @@
 import React from 'react';
-import { InputWrapper, SegmentedControl as CoengageUISegmentedControl } from '@coengageui/core';
-import { upperFirst } from '@coengageui/hooks';
+import { InputWrapper, SegmentedControl as CoengageUISegmentedControl } from 'coengageui_core';
+import { upperFirst } from 'coengageui_hooks';
 
 interface SizeControlProps {
   value: string;

@@ -1,4 +1,4 @@
-import { BadgeStylesNames } from '@coengageui/core';
+import { BadgeStylesNames } from 'coengageui_core';
 
 export const Badge: Record<BadgeStylesNames, string> = {
   root: 'Root element',

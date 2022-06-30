@@ -1,12 +1,12 @@
 import React, { forwardRef } from 'react';
 import { ChevronRight } from 'tabler-icons-react';
-import { Group, Avatar, Text, UnstyledButton, Menu } from '@coengageui/core';
+import { Group, Avatar, Text, UnstyledButton, Menu } from 'coengageui_core';
 import { menuItems } from './_menu-items';
 
 const code = `
 import { forwardRef } from 'react';
 import { ChevronRight } from 'tabler-icons-react';
-import { Group, Avatar, Text, Menu, UnstyledButton } from '@coengageui/core';
+import { Group, Avatar, Text, Menu, UnstyledButton } from 'coengageui_core';
 
 interface UserButtonProps extends React.ComponentPropsWithoutRef<'button'> {
   image: string;

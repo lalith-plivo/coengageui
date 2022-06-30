@@ -1,4 +1,4 @@
-import { createStyles } from '@coengageui/core';
+import { createStyles } from 'coengageui_core';
 import {
   BREAKPOINT,
   TABLE_OF_CONTENTS_WIDTH,
@@ -10,9 +10,8 @@ import {
 export default createStyles((theme) => ({
   tabsWrapper: {
     background: theme.colorScheme === 'dark' ? theme.colors.dark[8] : theme.colors.gray[0],
-    borderBottomColor: `${
-      theme.colorScheme === 'dark' ? theme.colors.dark[8] : theme.colors.gray[2]
-    } !important`,
+    borderBottomColor: `${theme.colorScheme === 'dark' ? theme.colors.dark[8] : theme.colors.gray[2]
+      } !important`,
     paddingLeft: theme.spacing.xl * 2,
 
     [`@media (max-width: ${BREAKPOINT}px)`]: {
@@ -28,9 +27,8 @@ export default createStyles((theme) => ({
     maxWidth: 1082,
     marginLeft: 'auto',
     marginRight: 'auto',
-    borderBottom: `1px solid ${
-      theme.colorScheme === 'dark' ? theme.colors.dark[8] : theme.colors.gray[2]
-    }`,
+    borderBottom: `1px solid ${theme.colorScheme === 'dark' ? theme.colors.dark[8] : theme.colors.gray[2]
+      }`,
 
     [`@media (max-width: ${BREAKPOINT}px)`]: {
       maxWidth: '100%',

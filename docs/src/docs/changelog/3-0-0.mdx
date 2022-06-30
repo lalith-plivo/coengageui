@@ -16,12 +16,12 @@ import {
   DropzoneDemos,
   HooksDemos,
   CreateStylesDemos,
-} from '@coengageui/demos';
+} from 'coengageui_demos';
 
 ## Breaking changes
 
 - CoengageUI was migrated to [emotion](https://emotion.sh/) from react-jss and no longer supports react-jss
-- `@coengageui/core` package no longer exports react-jss `theming` context, use [createStyles](https://coengage.dev/theming/create-styles/) instead
+- `coengageui_core` package no longer exports react-jss `theming` context, use [createStyles](https://coengage.dev/theming/create-styles/) instead
 - All components no longer support `themeOverride` prop due to performance reasons
 - `elementRef` prop was replaced with `ref` in all components
 - Default line-height (`theme.lineHeight`) was increased from 1.4 to 1.55
@@ -32,7 +32,7 @@ import {
 ## Migration to emotion
 
 CoengageUI no longer uses react-jss, all components were migrated to [emotion](https://emotion.sh/) based css-in-js library
-exposed as separate `@coengageui/styles` package and as a part of `@coengageui/core`. This means that you will have to:
+exposed as separate `coengageui_styles` package and as a part of `coengageui_core`. This means that you will have to:
 
 - migrate all of your custom styles built with react-jss to new `createStyles` hook creator
 - setup new strategy for server side rendering
@@ -59,8 +59,8 @@ Basic `createStyles` usage example:
 Since CoengageUI now uses emotion instead of react-jss you will need to change server side rendering strategy.
 CoengageUI now has 3 new packages to help you setup server side rendering:
 
-- `@coengageui/ssr` – general server side rendering utilities
-- `@coengageui/next` – Next.js specific ssr configurations
+- `coengageui_ssr` – general server side rendering utilities
+- `coengageui_next` – Next.js specific ssr configurations
 - `gatsby-plugin-coengage` – enable ssr in Gatsby
 
 Follow these guides to get started with ssr:
@@ -92,7 +92,7 @@ if you wrap your application in CoengageUIProvider.
 `ColorSchemeProvider` is a new component that will help you manage color scheme ([read full docs](https://coengage.dev/theming/dark-theme/)):
 
 ```tsx
-import { CoengageUIProvider, ColorSchemeProvider, ColorScheme } from '@coengageui/core';
+import { CoengageUIProvider, ColorSchemeProvider, ColorScheme } from 'coengageui_core';
 
 export default function Demo() {
   const [colorScheme, setColorScheme] = useState('light');
@@ -109,7 +109,7 @@ export default function Demo() {
 }
 
 // ...later in other component
-import { ActionIcon, useCoengageUIColorScheme } from '@coengageui/core';
+import { ActionIcon, useCoengageUIColorScheme } from 'coengageui_core';
 import { SunIcon, MoonIcon } from '@modulz/radix-icons';
 
 function Demo() {
@@ -146,7 +146,7 @@ All components now support setting following props to control margins:
 - `mr` – sets `margin-right` property on root element
 
 ```tsx
-import { Button, TextInput } from '@coengageui/core';
+import { Button, TextInput } from 'coengageui_core';
 
 function Demo() {
   return (
@@ -158,9 +158,9 @@ function Demo() {
 }
 ```
 
-## @coengageui/dropzone package
+## coengageui_dropzone package
 
-[@coengageui/dropzone](https://coengage.dev/others/dropzone/) is a new package that includes Dropzone and FullScreenDropzone components.
+[coengageui_dropzone](https://coengage.dev/others/dropzone/) is a new package that includes Dropzone and FullScreenDropzone components.
 
 Dropzone components lets you capture files from user with drag 'n' drop:
 

@@ -1,4 +1,4 @@
-import type { DropzoneStylesNames, FullScreenDropzoneStylesNames } from '@coengageui/dropzone';
+import type { DropzoneStylesNames, FullScreenDropzoneStylesNames } from 'coengageui_dropzone';
 
 export const Dropzone: Record<DropzoneStylesNames, string> = {
   root: 'Root element',

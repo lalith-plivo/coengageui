@@ -1,12 +1,12 @@
 import React from 'react';
 import { render, screen } from '@testing-library/react';
 import userEvent from '@testing-library/user-event';
-import { itSupportsClassName, checkAccessibility } from '@coengageui/tests';
+import { itSupportsClassName, checkAccessibility } from 'coengageui_tests';
 import { YearPicker, YearPickerProps } from './YearPicker';
 
 const defaultProps: YearPickerProps = {
   value: 2021,
-  onChange: () => {},
+  onChange: () => { },
   nextDecadeLabel: 'test-next',
   previousDecadeLabel: 'test-previous',
 };
@@ -14,7 +14,7 @@ const defaultProps: YearPickerProps = {
 const CONTROL_SELECTOR = '.coengageui-YearPicker-yearPickerControl';
 const ACTIVE_CONTROL_SELECTOR = '.coengageui-YearPicker-yearPickerControlActive';
 
-describe('@coengageui/dates/YearPicker', () => {
+describe('coengageui_dates/YearPicker', () => {
   itSupportsClassName(YearPicker, defaultProps);
   checkAccessibility([<YearPicker {...defaultProps} />]);
 
@@ -61,6 +61,6 @@ describe('@coengageui/dates/YearPicker', () => {
   });
 
   it('has correct displayName', () => {
-    expect(YearPicker.displayName).toStrictEqual('@coengageui/dates/YearPicker');
+    expect(YearPicker.displayName).toStrictEqual('coengageui_dates/YearPicker');
   });
 });

@@ -1,9 +1,9 @@
 import React from 'react';
 import { ChevronDownIcon } from '@modulz/radix-icons';
-import { Input } from '@coengageui/core';
+import { Input } from 'coengageui_core';
 
 const code = `
-import { Input } from '@coengageui/core';
+import { Input } from 'coengageui_core';
 
 function Demo() {
   return (

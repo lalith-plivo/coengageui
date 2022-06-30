@@ -1,5 +1,5 @@
 import React from 'react';
-import { Textarea } from '@coengageui/core';
+import { Textarea } from 'coengageui_core';
 
 const code = `
 // Error as boolean – red border color

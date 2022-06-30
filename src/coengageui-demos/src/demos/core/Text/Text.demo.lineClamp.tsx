@@ -1,8 +1,8 @@
 import React from 'react';
-import { TypographyStylesProvider, Text } from '@coengageui/core';
+import { TypographyStylesProvider, Text } from 'coengageui_core';
 
 const code = `
-import { TypographyStylesProvider, Text } from '@coengageui/core';
+import { TypographyStylesProvider, Text } from 'coengageui_core';
 
 function Demo() {
   return (

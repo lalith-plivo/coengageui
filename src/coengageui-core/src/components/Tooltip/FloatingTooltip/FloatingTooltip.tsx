@@ -6,8 +6,8 @@ import {
   getDefaultZIndex,
   CoengageUINumberSize,
   useCoengageUIDefaultProps,
-} from '@coengageui/styles';
-import { useMergedRef, useMouse } from '@coengageui/hooks';
+} from 'coengageui_styles';
+import { useMergedRef, useMouse } from 'coengageui_hooks';
 import { Box } from '../../Box';
 import { CoengageUITransition, Transition } from '../../Transition';
 import useStyles from './FloatingTooltip.styles';
@@ -16,7 +16,7 @@ export type FloatingTooltipStylesNames = Selectors<typeof useStyles>;
 
 export interface FloatingTooltipProps
   extends DefaultProps<FloatingTooltipStylesNames>,
-    React.ComponentPropsWithoutRef<'div'> {
+  React.ComponentPropsWithoutRef<'div'> {
   /** Tooltip content */
   label: React.ReactNode;
 
@@ -240,4 +240,4 @@ export const FloatingTooltip = forwardRef<HTMLDivElement, FloatingTooltipProps>(
   }
 );
 
-FloatingTooltip.displayName = '@coengageui/core/FloatingTooltip';
+FloatingTooltip.displayName = 'coengageui_core/FloatingTooltip';

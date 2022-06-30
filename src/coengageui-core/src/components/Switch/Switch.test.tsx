@@ -7,14 +7,14 @@ import {
   itConnectsLabelAndInput,
   itSupportsWrapperProps,
   itSupportsFocusEvents,
-} from '@coengageui/tests';
+} from 'coengageui_tests';
 import { Switch, SwitchProps } from './Switch';
 
 const defaultProps: SwitchProps = {
   label: 'test-label',
 };
 
-describe('@coengageui/core/Switch', () => {
+describe('coengageui_core/Switch', () => {
   checkAccessibility([<Switch aria-label="Switch without label" />, <Switch label="With label" />]);
   itHandlesBooleanState(Switch, defaultProps);
   itConnectsLabelAndInput(Switch, defaultProps);
@@ -23,7 +23,7 @@ describe('@coengageui/core/Switch', () => {
   itSupportsSystemProps({
     component: Switch,
     props: defaultProps,
-    displayName: '@coengageui/core/Switch',
+    displayName: 'coengageui_core/Switch',
     refType: HTMLInputElement,
     excludeOthers: true,
   });

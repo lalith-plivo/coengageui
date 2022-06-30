@@ -7,7 +7,7 @@ import {
   CoengageUIStyleSystemSize,
   getDefaultZIndex,
   useCoengageUIDefaultProps,
-} from '@coengageui/styles';
+} from 'coengageui_styles';
 import { Transition, CoengageUITransition } from '../Transition';
 import { CloseButton } from '../ActionIcon';
 import { Affix } from '../Affix';
@@ -18,7 +18,7 @@ export type DialogStylesNames = Selectors<typeof useStyles>;
 
 export interface DialogProps
   extends Omit<DefaultProps<DialogStylesNames>, CoengageUIStyleSystemSize>,
-    Omit<PaperProps<'div'>, 'classNames' | 'styles'> {
+  Omit<PaperProps<'div'>, 'classNames' | 'styles'> {
   /** Display close button at the top right corner */
   withCloseButton?: boolean;
 
@@ -128,4 +128,4 @@ export const Dialog: DialogComponent & { displayName?: string } = forwardRef<
   );
 });
 
-Dialog.displayName = '@coengageui/core/Dialog';
+Dialog.displayName = 'coengageui_core/Dialog';

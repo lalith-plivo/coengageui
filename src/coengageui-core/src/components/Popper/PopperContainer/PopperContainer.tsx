@@ -1,5 +1,5 @@
 import React from 'react';
-import { getDefaultZIndex } from '@coengageui/styles';
+import { getDefaultZIndex } from 'coengageui_styles';
 import { Portal } from '../../Portal';
 
 export interface PopperContainerProps {
@@ -37,4 +37,4 @@ export function PopperContainer({
   );
 }
 
-PopperContainer.displayName = '@coengageui/core/PopperContainer';
+PopperContainer.displayName = 'coengageui_core/PopperContainer';

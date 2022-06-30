@@ -7,7 +7,7 @@ import {
   itSupportsSystemProps,
   itSupportsInputProps,
   renderWithAct,
-} from '@coengageui/tests';
+} from 'coengageui_tests';
 import { Select, SelectProps } from './Select';
 
 const defaultProps: SelectProps = {
@@ -24,14 +24,14 @@ const data = Array(50)
   .fill(0)
   .map((_, index) => ({ value: index.toString(), label: index.toString() }));
 
-describe('@coengageui/core/Select', () => {
+describe('coengageui_core/Select', () => {
   checkAccessibility([<Select {...defaultProps} />]);
   itSupportsFocusEvents(Select, defaultProps, 'input[type="search"]');
   itSupportsInputProps(Select, defaultProps, 'Select');
   itSupportsSystemProps({
     component: Select,
     props: defaultProps,
-    displayName: '@coengageui/core/Select',
+    displayName: 'coengageui_core/Select',
     refType: HTMLInputElement,
     excludeOthers: true,
   });

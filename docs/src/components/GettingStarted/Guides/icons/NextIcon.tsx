@@ -1,5 +1,5 @@
 import React from 'react';
-import { useCoengageUITheme } from '@coengageui/core';
+import { useCoengageUITheme } from 'coengageui_core';
 
 export function NextIcon() {
   const theme = useCoengageUITheme();

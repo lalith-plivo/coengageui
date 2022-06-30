@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Title, SimpleGrid, useCoengageUITheme } from '@coengageui/core';
+import { Title, SimpleGrid, useCoengageUITheme } from 'coengageui_core';
 import { PACKAGES_DATA } from './data';
 import { CheckboxCard } from './CheckboxCard';
 
@@ -11,13 +11,13 @@ export function Installation({ setDependencies }: InstallationProps) {
   const theme = useCoengageUITheme();
 
   const [values, setValues] = useState({
-    '@coengageui/hooks': true,
-    '@coengageui/core': true,
-    '@coengageui/dates': false,
-    '@coengageui/notifications': false,
-    '@coengageui/prism': false,
-    '@coengageui/rte': false,
-    '@coengageui/dropzone': false,
+    'coengageui_hooks': true,
+    'coengageui_core': true,
+    'coengageui_dates': false,
+    'coengageui_notifications': false,
+    'coengageui_prism': false,
+    'coengageui_rte': false,
+    'coengageui_dropzone': false,
   });
 
   const items = PACKAGES_DATA.map((item) => (

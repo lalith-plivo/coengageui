@@ -1,10 +1,10 @@
 import React, { useState } from 'react';
 import { X } from 'tabler-icons-react';
-import { Tooltip, Button, ActionIcon, Text, Box, useCoengageUITheme } from '@coengageui/core';
+import { Tooltip, Button, ActionIcon, Text, Box, useCoengageUITheme } from 'coengageui_core';
 
 const code = `
 import { useState } from 'react';
-import { Tooltip, Button, ActionIcon, Text, useCoengageUITheme } from '@coengageui/core';
+import { Tooltip, Button, ActionIcon, Text, useCoengageUITheme } from 'coengageui_core';
 import { X } from 'tabler-icons-react';
 
 function Demo() {

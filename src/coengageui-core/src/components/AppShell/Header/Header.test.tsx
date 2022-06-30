@@ -1,4 +1,4 @@
-import { itRendersChildren, itSupportsSystemProps } from '@coengageui/tests';
+import { itRendersChildren, itSupportsSystemProps } from 'coengageui_tests';
 import { Header, HeaderProps } from './Header';
 
 const defaultProps: HeaderProps = {
@@ -6,12 +6,12 @@ const defaultProps: HeaderProps = {
   children: 'test-header',
 };
 
-describe('@coengageui/core/Header', () => {
+describe('coengageui_core/Header', () => {
   itRendersChildren(Header, defaultProps);
   itSupportsSystemProps({
     component: Header,
     props: defaultProps,
-    displayName: '@coengageui/core/Header',
+    displayName: 'coengageui_core/Header',
     refType: HTMLElement,
   });
 });

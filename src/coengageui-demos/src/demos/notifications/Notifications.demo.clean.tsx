@@ -1,14 +1,14 @@
 import React from 'react';
-import { Group, Button } from '@coengageui/core';
+import { Group, Button } from 'coengageui_core';
 import {
   showNotification,
   cleanNotificationsQueue,
   cleanNotifications,
-} from '@coengageui/notifications';
+} from 'coengageui_notifications';
 
 const code = `
-import { Group, Button } from '@coengageui/core';
-import { showNotification, cleanNotificationsQueue, cleanNotifications } from '@coengageui/notifications';
+import { Group, Button } from 'coengageui_core';
+import { showNotification, cleanNotificationsQueue, cleanNotifications } from 'coengageui_notifications';
 
 function Demo() {
   return (

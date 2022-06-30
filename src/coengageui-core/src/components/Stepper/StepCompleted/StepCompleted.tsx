@@ -13,4 +13,4 @@ export function StepCompleted(
   return null;
 }
 
-StepCompleted.displayName = '@coengageui/core/StepCompleted';
+StepCompleted.displayName = 'coengageui_core/StepCompleted';

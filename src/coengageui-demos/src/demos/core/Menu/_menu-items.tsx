@@ -1,6 +1,6 @@
 import React from 'react';
 import { Settings, Search, Photo, MessageCircle, Trash, ArrowsLeftRight } from 'tabler-icons-react';
-import { Menu, Divider, Text } from '@coengageui/core';
+import { Menu, Divider, Text } from 'coengageui_core';
 
 export const menuItems = [
   <Menu.Label key="1">Application</Menu.Label>,

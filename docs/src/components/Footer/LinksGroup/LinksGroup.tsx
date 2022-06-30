@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'gatsby';
-import { Text } from '@coengageui/core';
+import { Text } from 'coengageui_core';
 import useStyles from './LinksGroup.styles';
 
 export interface LinksGroupProps {

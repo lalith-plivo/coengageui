@@ -6,7 +6,7 @@ import {
   CoengageUISize,
   Selectors,
   DefaultProps,
-} from '@coengageui/core';
+} from 'coengageui_core';
 import { ArrowIcon } from './ArrowIcon';
 import useStyles from './CalendarHeader.styles';
 
@@ -14,7 +14,7 @@ export type CalendarHeaderStylesNames = Selectors<typeof useStyles>;
 
 export interface CalendarHeaderProps
   extends DefaultProps<CalendarHeaderStylesNames>,
-    React.ComponentPropsWithoutRef<'div'> {
+  React.ComponentPropsWithoutRef<'div'> {
   hasPrevious: boolean;
   hasNext: boolean;
   onNext?(): void;
@@ -106,4 +106,4 @@ export function CalendarHeader({
   );
 }
 
-CalendarHeader.displayName = '@coengageui/dates/CalendarHeader';
+CalendarHeader.displayName = 'coengageui_dates/CalendarHeader';

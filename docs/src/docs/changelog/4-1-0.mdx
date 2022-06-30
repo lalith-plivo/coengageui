@@ -7,11 +7,11 @@ release: https://github.com/coengagedev/coengage/releases/tag/4.1.0
 date: 'March 29th, 2022'
 ---
 
-import { NotificationsDemos, StackDemos, SliderDemos, TooltipDemos } from '@coengageui/demos';
+import { NotificationsDemos, StackDemos, SliderDemos, TooltipDemos } from 'coengageui_demos';
 import { ExternalLinkIcon } from '@modulz/radix-icons';
-import { Anchor, Center } from '@coengageui/core';
+import { Anchor, Center } from 'coengageui_core';
 
-## @coengageui/notifications improvements
+## coengageui_notifications improvements
 
 ### Events based functions
 
@@ -20,7 +20,7 @@ import { Anchor, Center } from '@coengageui/core';
 they are no longer depend on context and can be called in any part of application.
 Old way with `useNotifications` hook will work until version 5.0 release.
 
-`@coengageui/notifications` now exports the following functions:
+`coengageui_notifications` now exports the following functions:
 
 - `showNotification` – adds given notification to notifications list or queue depending on current state and limit
 - `updateNotification` – updates notification that was previously added to the state or queue
@@ -42,7 +42,7 @@ Same as with `styles` you can now add classes to all components with `classNames
 This approach is useful when you want to styles components with utility based CSS libraries.
 
 ```tsx
-import { CoengageUIProvider, Button } from '@coengageui/core';
+import { CoengageUIProvider, Button } from 'coengageui_core';
 
 function App() {
   return (
@@ -60,7 +60,7 @@ You can now set `withCSSVariables` prop on [CoengageUIProvider](https://coengage
 This option is useful when you want to use CoengageUI theme values with CSS/SCSS or css-in-js libraries that do not have CoengageUI theme context.
 
 ```tsx
-import { CoengageUIProvider } from '@coengageui/core';
+import { CoengageUIProvider } from 'coengageui_core';
 
 function App() {
   return (
@@ -86,7 +86,7 @@ Then you will be able to use variables anywhere in your CSS:
 All components now support arrays in [sx prop](https://coengage.dev/theming/sx/). It can be to simultaneously use `sx` prop and add it from props:
 
 ```tsx
-import { Button, Sx } from '@coengageui/core';
+import { Button, Sx } from 'coengageui_core';
 
 interface MyButtonProps {
   sx?: Sx;
@@ -133,7 +133,7 @@ import {
   MediaQuery,
   Burger,
   useCoengageUITheme,
-} from '@coengageui/core';
+} from 'coengageui_core';
 
 export default function AppShellDemo() {
   const theme = useCoengageUITheme();
@@ -197,12 +197,12 @@ export default function AppShellDemo() {
 
 ## Other changes
 
-- [@coengageui/spotlight](https://coengage.dev/others/spotlight/) now exports event based functions to open/close spotlight and perform other actions from anywhere in your application (not only in components)
+- [coengageui_spotlight](https://coengage.dev/others/spotlight/) now exports event based functions to open/close spotlight and perform other actions from anywhere in your application (not only in components)
 - [Button](https://coengage.dev/core/button/), [Badge](https://coengage.dev/core/badge/), [ThemeIcon](https://coengage.dev/core/theme-icon/) and [Text](https://coengage.dev/core/text/) components now support hex color values in `gradient` prop
 - [Radio](https://coengage.dev/core/radio-group/) now supports setting transition duration and icon customization via props
 - [Slider and RangeSlider](https://coengage.dev/core/slider/) components now support `precision` prop
 - [Menu](https://coengage.dev/core/menu/), [List](https://coengage.dev/core/list/) and [Grid](https://coengage.dev/core/grid/) components were migrated to context, associated components (`Menu.Item`, `List.Item`, `Grid.Col`, etc.) can now be wrapper with other components and fragments
-- `useLocalStorageValue` hook was renamed to `useLocalStorage` (old hook is still exported from `@coengageui/hooks`)
+- `useLocalStorageValue` hook was renamed to `useLocalStorage` (old hook is still exported from `coengageui_hooks`)
 - [AppShell](https://coengage.dev/core/app-shell/) no longer parses props of Navbar and Header components, AppShell positioning logic was migrated to context and CSS variables, Navbar and Header components can now be wrapped with other components
-- NextLink component was added to `@coengageui/next` package to simplify Next.js Link usage with [Menu](https://coengage.dev/core/menu/#menuitem-as-nextjs-link)
+- NextLink component was added to `coengageui_next` package to simplify Next.js Link usage with [Menu](https://coengage.dev/core/menu/#menuitem-as-nextjs-link)
 - [Global](https://coengage.dev/theming/global-styles/#global-component) component now supports array syntax for `styles`

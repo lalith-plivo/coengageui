@@ -1,4 +1,4 @@
-import type { InputWrapperStylesNames } from '@coengageui/core';
+import type { InputWrapperStylesNames } from 'coengageui_core';
 
 export const InputWrapper: Record<InputWrapperStylesNames, string> = {
   root: 'Root element',

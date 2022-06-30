@@ -1,19 +1,19 @@
 ---
 group: 'coengageui-core'
-package: '@coengageui/core'
+package: 'coengageui_core'
 title: Loader
 order: 1
 slug: /core/loader/
 category: 'feedback'
 description: 'Indicate loading state'
 props: ['Loader']
-import: "import { Loader } from '@coengageui/core';"
+import: "import { Loader } from 'coengageui_core';"
 source: 'coengageui-core/src/components/Loader/Loader.tsx'
 docs: 'core/Loader.mdx'
 styles: ['Loader', 'single-node']
 ---
 
-import { LoaderDemos } from '@coengageui/demos';
+import { LoaderDemos } from 'coengageui_demos';
 
 ## Usage
 
@@ -28,7 +28,7 @@ You can configure default loader in [CoengageUIProvider](/theming/coengageui-pro
 it will be used in Loader and [LoadingOverlay](/core/loading-overlay/) components by default:
 
 ```tsx
-import { CoengageUIProvider } from '@coengageui/core';
+import { CoengageUIProvider } from 'coengageui_core';
 
 function Demo() {
   return (

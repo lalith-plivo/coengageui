@@ -1,11 +1,11 @@
 import React, { useState } from 'react';
 import dayjs from 'dayjs';
-import { TimeRangeInput } from '@coengageui/dates';
+import { TimeRangeInput } from 'coengageui_dates';
 
 const code = `
 import dayjs from 'dayjs';
 import { useState } from 'react';
-import { TimeRangeInput } from '@coengageui/dates';
+import { TimeRangeInput } from 'coengageui_dates';
 
 function Demo() {
   const now = new Date();

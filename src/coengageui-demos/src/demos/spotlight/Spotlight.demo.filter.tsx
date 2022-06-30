@@ -3,7 +3,7 @@ import { Search } from 'tabler-icons-react';
 import { Wrapper } from './_wrapper';
 
 const code = `
-import { SpotlightProvider } from '@coengageui/spotlight';
+import { SpotlightProvider } from 'coengageui_spotlight';
 
 function Demo() {
   return (

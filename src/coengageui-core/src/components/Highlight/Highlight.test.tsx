@@ -1,16 +1,16 @@
 import React from 'react';
 import { render } from '@testing-library/react';
-import { itIsPolymorphic, itSupportsSystemProps } from '@coengageui/tests';
+import { itIsPolymorphic, itSupportsSystemProps } from 'coengageui_tests';
 import { Highlight, HighlightProps } from './Highlight';
 
 const defaultProps: HighlightProps<'div'> = { children: 'Hello', highlight: 'He' };
 
-describe('@coengageui/core/Highlight', () => {
+describe('coengageui_core/Highlight', () => {
   itIsPolymorphic(Highlight, defaultProps);
   itSupportsSystemProps({
     component: Highlight,
     props: defaultProps,
-    displayName: '@coengageui/core/Highlight',
+    displayName: 'coengageui_core/Highlight',
     refType: HTMLDivElement,
   });
 

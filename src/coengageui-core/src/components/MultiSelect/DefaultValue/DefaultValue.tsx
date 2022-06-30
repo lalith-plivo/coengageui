@@ -1,5 +1,5 @@
 import React from 'react';
-import { DefaultProps, CoengageUISize, CoengageUINumberSize, Selectors } from '@coengageui/styles';
+import { DefaultProps, CoengageUISize, CoengageUINumberSize, Selectors } from 'coengageui_styles';
 import { CloseButton } from '../../ActionIcon/CloseButton/CloseButton';
 import useStyles from './DefaultValue.styles';
 
@@ -7,7 +7,7 @@ export type DefaultValueStylesNames = Selectors<typeof useStyles>;
 
 export interface MultiSelectValueProps
   extends DefaultProps<DefaultValueStylesNames>,
-    React.ComponentPropsWithoutRef<'div'> {
+  React.ComponentPropsWithoutRef<'div'> {
   label: string;
   onRemove(): void;
   disabled: boolean;
@@ -60,4 +60,4 @@ export function DefaultValue({
   );
 }
 
-DefaultValue.displayName = '@coengageui/core/MultiSelect/DefaultValue';
+DefaultValue.displayName = 'coengageui_core/MultiSelect/DefaultValue';

@@ -1,10 +1,10 @@
 import React, { useRef } from 'react';
-import { ScrollArea, Button, Group } from '@coengageui/core';
+import { ScrollArea, Button, Group } from 'coengageui_core';
 import { Content } from './_content';
 
 const code = `
 import { useRef } from 'react';
-import { ScrollArea, Button, Group } from '@coengageui/core';
+import { ScrollArea, Button, Group } from 'coengageui_core';
 
 function Demo() {
   const viewport = useRef<HTMLDivElement>();

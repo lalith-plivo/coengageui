@@ -7,14 +7,14 @@ import {
   itConnectsLabelAndInput,
   itSupportsFocusEvents,
   itHandlesBooleanState,
-} from '@coengageui/tests';
+} from 'coengageui_tests';
 import { Checkbox, CheckboxProps } from './Checkbox';
 
 const defaultProps: CheckboxProps = {
   label: 'test-label',
 };
 
-describe('@coengageui/core/Checkbox', () => {
+describe('coengageui_core/Checkbox', () => {
   itSupportsWrapperProps(Checkbox, defaultProps);
   itConnectsLabelAndInput(Checkbox, defaultProps);
   itHandlesBooleanState(Checkbox, defaultProps);
@@ -28,7 +28,7 @@ describe('@coengageui/core/Checkbox', () => {
   itSupportsSystemProps({
     component: Checkbox,
     props: defaultProps,
-    displayName: '@coengageui/core/Checkbox',
+    displayName: 'coengageui_core/Checkbox',
     refType: HTMLInputElement,
     excludeOthers: true,
   });
@@ -47,7 +47,7 @@ describe('@coengageui/core/Checkbox', () => {
   });
 
   it('sets checked state based on indeterminate prop', () => {
-    render(<Checkbox indeterminate checked={false} onChange={() => {}} />);
+    render(<Checkbox indeterminate checked={false} onChange={() => { }} />);
     expect(screen.getByRole('checkbox')).toBeChecked();
   });
 });

@@ -6,7 +6,7 @@ import {
   CoengageUISize,
   Selectors,
   useCoengageUIDefaultProps,
-} from '@coengageui/styles';
+} from 'coengageui_styles';
 import { findChildByType, filterChildrenByType } from '../../utils';
 import { Box } from '../Box';
 import { Step, StepStylesNames } from './Step/Step';
@@ -17,7 +17,7 @@ export type StepperStylesNames = Selectors<typeof useStyles> | StepStylesNames;
 
 export interface StepperProps
   extends DefaultProps<StepperStylesNames>,
-    React.ComponentPropsWithRef<'div'> {
+  React.ComponentPropsWithRef<'div'> {
   /** <Stepper.Step /> components only */
   children: React.ReactNode;
 
@@ -160,4 +160,4 @@ export const Stepper: StepperComponent = forwardRef<HTMLDivElement, StepperProps
 
 Stepper.Step = Step;
 Stepper.Completed = StepCompleted;
-Stepper.displayName = '@coengageui/core/Stepper';
+Stepper.displayName = 'coengageui_core/Stepper';

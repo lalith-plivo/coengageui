@@ -1,6 +1,6 @@
 import { getDayTabIndex } from './get-day-tab-index';
 
-describe('@coengageui/dates/Day/get-day-tab-index', () => {
+describe('coengageui_dates/Day/get-day-tab-index', () => {
   it('returns -1 if day is not focusable', () => {
     expect(
       getDayTabIndex({ focusable: false, hasValue: false, selected: false, firstInMonth: false })

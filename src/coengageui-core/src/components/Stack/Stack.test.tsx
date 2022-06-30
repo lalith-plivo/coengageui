@@ -1,14 +1,14 @@
-import { itRendersChildren, itSupportsSystemProps } from '@coengageui/tests';
+import { itRendersChildren, itSupportsSystemProps } from 'coengageui_tests';
 import { Stack, StackProps } from './Stack';
 
 const defaultProps: StackProps = {};
 
-describe('@coengageui/core/Stack', () => {
+describe('coengageui_core/Stack', () => {
   itRendersChildren(Stack, defaultProps);
   itSupportsSystemProps({
     component: Stack,
     props: defaultProps,
-    displayName: '@coengageui/core/Stack',
+    displayName: 'coengageui_core/Stack',
     refType: HTMLDivElement,
   });
 });

@@ -1,4 +1,4 @@
-import { createStyles, CoengageUINumberSize, CoengageUISize } from '@coengageui/core';
+import { createStyles, CoengageUINumberSize, CoengageUISize } from 'coengageui_core';
 
 interface DefaultLabelStyles {
   size: CoengageUISize;
@@ -31,15 +31,15 @@ export default createStyles((theme, { size, disabled, radius }: DefaultLabelStyl
         ? theme.colors.dark[5]
         : theme.colors.gray[3]
       : theme.colorScheme === 'dark'
-      ? theme.colors.dark[7]
-      : theme.colors.gray[1],
+        ? theme.colors.dark[7]
+        : theme.colors.gray[1],
     color: disabled
       ? theme.colorScheme === 'dark'
         ? theme.colors.dark[1]
         : theme.colors.gray[7]
       : theme.colorScheme === 'dark'
-      ? theme.colors.dark[0]
-      : theme.colors.gray[7],
+        ? theme.colors.dark[0]
+        : theme.colors.gray[7],
     lineHeight: 1,
     height: theme.fn.size({ size, sizes }),
     paddingLeft: theme.fn.size({ size, sizes: theme.spacing }),

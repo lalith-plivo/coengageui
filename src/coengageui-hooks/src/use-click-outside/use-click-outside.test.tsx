@@ -15,7 +15,7 @@ const Target: React.FunctionComponent<IuseClickOutsideProps> = ({ handler, event
   return <div data-testid="target" ref={ref} />;
 };
 
-describe('@coengageui/hooks/use-click-outside', () => {
+describe('coengageui_hooks/use-click-outside', () => {
   afterAll(() => {
     jest.clearAllMocks();
   });

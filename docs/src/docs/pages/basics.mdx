@@ -2,7 +2,7 @@
 title: Learn the basics
 ---
 
-import { SliderDemos, CreateStylesDemos } from '@coengageui/demos';
+import { SliderDemos, CreateStylesDemos } from 'coengageui_demos';
 
 # Learn the basics
 
@@ -26,17 +26,17 @@ CoengageUI documentation includes more than 150 pages, to use it efficiently rem
 
 ## CoengageUI packages
 
-- `@coengageui/hooks` – collection of 30+ react hooks for state and UI management.
-- `@coengageui/styles` – [emotion](https://emotion.sh/) based css-in-js library that is used in all CoengageUI components. Usually this package is installed automatically and exported from `@coengageui/core` – there is no need to install it separately, [learn more about createStyles here](/theming/create-styles/).
-- `@coengageui/core` – core components library – 100+ components, exports everything from `@coengageui/styles`.
-- `@coengageui/notifications` – a fully featured [notifications system](/others/notifications/).
-- `@coengageui/prism` – [code highlight](/others/prism/) built with [prism-react-renderer](https://github.com/FormidableLabs/prism-react-renderer).
-- `@coengageui/rte` – a Quill based [rich text editor](/others/rte/).
-- `@coengageui/dropzone` – manages [files drag 'n' drop](/others/dropzone/) of files to an area or the entire screen.
-- `@coengageui/ssr` – [server side rendering](/theming/ssr/) utilities.
-- `@coengageui/next` – components and ssr utils for [Next.js integration](/theming/next/).
+- `coengageui_hooks` – collection of 30+ react hooks for state and UI management.
+- `coengageui_styles` – [emotion](https://emotion.sh/) based css-in-js library that is used in all CoengageUI components. Usually this package is installed automatically and exported from `coengageui_core` – there is no need to install it separately, [learn more about createStyles here](/theming/create-styles/).
+- `coengageui_core` – core components library – 100+ components, exports everything from `coengageui_styles`.
+- `coengageui_notifications` – a fully featured [notifications system](/others/notifications/).
+- `coengageui_prism` – [code highlight](/others/prism/) built with [prism-react-renderer](https://github.com/FormidableLabs/prism-react-renderer).
+- `coengageui_rte` – a Quill based [rich text editor](/others/rte/).
+- `coengageui_dropzone` – manages [files drag 'n' drop](/others/dropzone/) of files to an area or the entire screen.
+- `coengageui_ssr` – [server side rendering](/theming/ssr/) utilities.
+- `coengageui_next` – components and ssr utils for [Next.js integration](/theming/next/).
 - `gatsby-plugin-coengage` – [Gatsby plugin](/theming/gatsby/) to setup ssr.
-- `@coengageui/eslint-config` – ESLint and Prettier configuration that the CoengageUI project uses.
+- `coengageui_eslint-config` – ESLint and Prettier configuration that the CoengageUI project uses.
 
 ## Theming
 
@@ -44,7 +44,7 @@ CoengageUI theming supports changing colors, spacing, box-shadows, font families
 To configure theme, wrap your app with a [CoengageUIProvider](/theming/coengageui-provider/) component:
 
 ```tsx
-import { CoengageUIProvider } from '@coengageui/core';
+import { CoengageUIProvider } from 'coengageui_core';
 
 function App() {
   return (
@@ -69,7 +69,7 @@ All CoengageUI components support light and dark color scheme out of the box.
 You can edit the details of each color scheme via [CoengageUIProvider](/theming/coengageui-provider/):
 
 ```tsx
-import { CoengageUIProvider } from '@coengageui/core';
+import { CoengageUIProvider } from 'coengageui_core';
 
 function App() {
   return (
@@ -126,7 +126,7 @@ All CoengageUI components support these props:
   - `pr` – sets `padding-right` property on root element
 
 ```tsx
-import { Button } from '@coengageui/core';
+import { Button } from 'coengageui_core';
 
 function Demo() {
   return (
@@ -165,7 +165,7 @@ CoengageUI components work with colors defined in [theme.colors](/theming/extend
 You can [extend theme](/theming/extend-theme/) with any amount of your colors:
 
 ```tsx
-import { CoengageUIProvider } from '@coengageui/core';
+import { CoengageUIProvider } from 'coengageui_core';
 
 function App() {
   return (
@@ -217,7 +217,7 @@ default values are:
 To change these values set `spacing` property on [theme](/theming/extend-theme/):
 
 ```tsx
-import { CoengageUIProvider } from '@coengageui/core';
+import { CoengageUIProvider } from 'coengageui_core';
 
 function App() {
   return (
@@ -253,7 +253,7 @@ default values are:
 To change these values set the `shadows` property on [theme](/theming/extend-theme/):
 
 ```tsx
-import { CoengageUIProvider } from '@coengageui/core';
+import { CoengageUIProvider } from 'coengageui_core';
 
 function App() {
   return (
@@ -287,7 +287,7 @@ Some CoengageUI components support changing root element with `component` prop,
 you can pass html element or React component to the prop:
 
 ```tsx
-import { Text, Button } from '@coengageui/core';
+import { Text, Button } from 'coengageui_core';
 import { Link } from 'react-router-dom';
 
 function Demo() {
@@ -313,7 +313,7 @@ To use CoengageUI components with Next.js Link:
 - wrap it with Link
 
 ```tsx
-import { Button } from '@coengageui/core';
+import { Button } from 'coengageui_core';
 import Link from 'next/link';
 
 function Demo() {
@@ -329,7 +329,7 @@ If you use polymorphic with TypeScript you will also need to set type for full t
 otherwise you will have untyped event handlers and ref props:
 
 ```tsx
-import { Button } from '@coengageui/core';
+import { Button } from 'coengageui_core';
 import { Link } from 'react-router-dom';
 
 function Demo() {
@@ -353,7 +353,7 @@ You can get ref of most components with their `ref` prop:
 
 ```tsx
 import { useRef } from 'react';
-import { Button, Paper, TextInput } from '@coengageui/core';
+import { Button, Paper, TextInput } from 'coengageui_core';
 
 function Demo() {
   const buttonRef = useRef<HTMLButtonElement>();
@@ -382,7 +382,7 @@ To setup server side rendering follow one of these guides
 
 ### Exported types
 
-@coengageui/core package export types to help you build components and styles with TypeScript:
+coengageui_core package export types to help you build components and styles with TypeScript:
 
 - `CoengageUITheme` – theme interface defined in CoengageUIProvider.
 - `ColorScheme` – union of `'light' | 'dark'`.
@@ -397,17 +397,17 @@ To setup server side rendering follow one of these guides
 You can import props type of any component by adding `Props` to the component name:
 
 ```tsx
-import type { ButtonProps } from '@coengageui/core';
+import type { ButtonProps } from 'coengageui_core';
 ```
 
 ### Polymorphic components types
 
-@coengageui/core package exports `PolymorphicRef` and `PolymorphicComponentProps` types to help you build
+coengageui_core package exports `PolymorphicRef` and `PolymorphicComponentProps` types to help you build
 custom components with ref forwarding:
 
 ```tsx
 import { forwardRef } from 'react';
-import { PolymorphicRef, PolymorphicComponentProps } from '@coengageui/core';
+import { PolymorphicRef, PolymorphicComponentProps } from 'coengageui_core';
 import { Link } from 'react-router-dom';
 
 // Define all component specific props here

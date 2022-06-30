@@ -1,5 +1,5 @@
 import { useRef } from 'react';
-import { useDidUpdate } from '@coengageui/hooks';
+import { useDidUpdate } from 'coengageui_hooks';
 
 export function useAccordionFocus(itemsCount: number) {
   const controlsRefs = useRef<HTMLButtonElement[]>([]);

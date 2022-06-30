@@ -1,5 +1,5 @@
 import React from 'react';
-import { Popover, Image, Badge, Text, PopoverProps } from '@coengageui/core';
+import { Popover, Image, Badge, Text, PopoverProps } from 'coengageui_core';
 
 function Wrapper(props: PopoverProps) {
   return (
@@ -33,7 +33,7 @@ function Wrapper(props: PopoverProps) {
 }
 
 const codeTemplate = (props: string) => `
-import { Popover, Image, Badge, Text } from '@coengageui/core';
+import { Popover, Image, Badge, Text } from 'coengageui_core';
 
 function Demo() {
   return (

@@ -1,34 +1,34 @@
 ---
 group: 'Other packages'
-package: '@coengageui/modals'
+package: 'coengageui_modals'
 title: 'Modals manager'
 order: 1
 slug: /others/modals/
 description: 'Centralized modals manager with option to handle state of multi-step modals'
 props: ['ModalsProvider']
-import: "import { ModalsProvider } from '@coengageui/modals';"
+import: "import { ModalsProvider } from 'coengageui_modals';"
 source: 'coengageui-modals/src'
 docs: 'others/modals.mdx'
-installation: '@coengageui/modals'
+installation: 'coengageui_modals'
 license: MIT
 ---
 
-import { ModalsDemos } from '@coengageui/demos';
+import { ModalsDemos } from 'coengageui_demos';
 
 ## Installation
 
-Package depends on @coengageui/core and @coengageui/hooks.
+Package depends on coengageui_core and coengageui_hooks.
 
 Install with npm:
 
 ```sh
-npm install @coengageui/modals @coengageui/core @coengageui/hooks
+npm install coengageui_modals coengageui_core coengageui_hooks
 ```
 
 Install with yarn:
 
 ```sh
-yarn add @coengageui/modals @coengageui/core @coengageui/hooks
+yarn add coengageui_modals coengageui_core coengageui_hooks
 ```
 
 ## Setup ModalsProvider
@@ -36,8 +36,8 @@ yarn add @coengageui/modals @coengageui/core @coengageui/hooks
 Wrap your app with `ModalsProvider` component:
 
 ```tsx
-import { CoengageUIProvider } from '@coengageui/core';
-import { ModalsProvider } from '@coengageui/modals';
+import { CoengageUIProvider } from 'coengageui_core';
+import { ModalsProvider } from 'coengageui_modals';
 
 function App() {
   return (
@@ -52,7 +52,7 @@ function App() {
 
 ## Confirm modal
 
-@coengageui/modals package includes special modal that can be used for confirmations.
+coengageui_modals package includes special modal that can be used for confirmations.
 Component includes confirm and cancel buttons and supports children to display additional
 information about action. Use `openConfirmModal` function to open a confirm modal:
 
@@ -78,7 +78,7 @@ Using this properties you can customize confirm modal to match current context r
 To setup shared labels for confirm modals set `labels` on `ModalsProvider`:
 
 ```tsx
-import { ModalsProvider } from '@coengageui/modals';
+import { ModalsProvider } from 'coengageui_modals';
 
 function Demo() {
   return (
@@ -94,8 +94,8 @@ function Demo() {
 You can define any amount of modals in ModalsProvider context:
 
 ```tsx
-import { ContextModalProps, ModalsProvider } from '@coengageui/modals';
-import { Text, Button } from '@coengageui/core';
+import { ContextModalProps, ModalsProvider } from 'coengageui_modals';
+import { Text, Button } from 'coengageui_core';
 
 const TestModal = ({ context, id, innerProps }: ContextModalProps<{ modalBody: string }>) => (
   <>

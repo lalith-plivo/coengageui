@@ -1,7 +1,7 @@
 import React from 'react';
-import { useBooleanToggle } from '@coengageui/hooks';
+import { useBooleanToggle } from 'coengageui_hooks';
 import { storiesOf } from '@storybook/react';
-import { COENGAGEUI_SIZES, CoengageUIProvider } from '@coengageui/styles';
+import { COENGAGEUI_SIZES, CoengageUIProvider } from 'coengageui_styles';
 import { MagnifyingGlassIcon } from '@modulz/radix-icons';
 import Textarea from 'react-textarea-autosize';
 import { ActionIcon } from '../ActionIcon/ActionIcon';

@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
-import { useCoengageUITheme } from '@coengageui/core';
-import { Prism } from '@coengageui/prism';
+import { useCoengageUITheme } from 'coengageui_core';
+import { Prism } from 'coengageui_prism';
 import controls, { ControlProps } from './controls';
 import { propsToString } from './props-to-string';
 import useStyles from './Configurator.styles';

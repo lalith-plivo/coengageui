@@ -1,9 +1,9 @@
 # CoengageUI
 
-[![NPM](https://img.shields.io/npm/l/@coengageui/core)](https://github.com/coengagedev/coengage/blob/master/LICENSE)
+[![NPM](https://img.shields.io/npm/l/coengageui_core)](https://github.com/coengagedev/coengage/blob/master/LICENSE)
 [![GitHub contributors](https://img.shields.io/github/contributors/coengagedev/coengage)](https://github.com/coengagedev/coengage/graphs/contributors)
-[![npm](https://img.shields.io/npm/v/@coengageui/core)](https://www.npmjs.com/package/@coengageui/core)
-[![npm](https://img.shields.io/npm/dm/@coengageui/hooks)](https://www.npmjs.com/package/@coengageui/hooks)
+[![npm](https://img.shields.io/npm/v/coengageui_core)](https://www.npmjs.com/package/coengageui_core)
+[![npm](https://img.shields.io/npm/dm/coengageui_hooks)](https://www.npmjs.com/package/coengageui_hooks)
 [![Help wanted](https://img.shields.io/github/labels/coengagedev/coengage/help%20wanted?label=Contribute)](https://github.com/coengagedev/coengage/labels/help%20wanted)
 [![Discord](https://img.shields.io/badge/Chat%20on-Discord-%235865f2)](https://discord.gg/eUZpPbpxb4)
 [![Twitter Follow](https://img.shields.io/twitter/follow/coengagedev?style=social)](https://twitter.com/coengagedev)
@@ -19,18 +19,18 @@
 
 ## Packages
 
-- `@coengageui/hooks` – collection of 40+ hooks for state and UI management
-- [`@coengageui/styles`](https://coengage.dev/theming/create-styles/) – [emotion](https://emotion.sh/) based css-in-js library that is used in all CoengageUI components
-- `@coengageui/core` – core components library – 100+ components, exports everything from `@coengageui/styles`
-- [`@coengageui/form`](https://coengage.dev/form/use-form/) – forms management library
-- [`@coengageui/notifications`](https://coengage.dev/others/notifications/) – a fully featured notifications system
-- [`@coengageui/spotlight`](https://coengage.dev/others/spotlight/) – `Ctrl + K` command center for your application
-- [`@coengageui/prism`](https://coengage.dev/others/prism/) – code highlight built with [prism-react-renderer](https://github.com/FormidableLabs/prism-react-renderer)
-- [`@coengageui/rte`](https://coengage.dev/others/rte/) – a Quill based rich text editor
-- [`@coengageui/dropzone`](https://coengage.dev/others/dropzone/) – manages files drag 'n' drop to an area or entire screen
-- [`@coengageui/modals`](https://coengage.dev/others/modals/) – centralized modals manager
-- [`@coengageui/ssr`](https://coengage.dev/theming/ssr/) – server side rendering utilities
-- [`@coengageui/next`](https://coengage.dev/theming/next/) – server side rendering utilities for Next.js
+- `coengageui_hooks` – collection of 40+ hooks for state and UI management
+- [`coengageui_styles`](https://coengage.dev/theming/create-styles/) – [emotion](https://emotion.sh/) based css-in-js library that is used in all CoengageUI components
+- `coengageui_core` – core components library – 100+ components, exports everything from `coengageui_styles`
+- [`coengageui_form`](https://coengage.dev/form/use-form/) – forms management library
+- [`coengageui_notifications`](https://coengage.dev/others/notifications/) – a fully featured notifications system
+- [`coengageui_spotlight`](https://coengage.dev/others/spotlight/) – `Ctrl + K` command center for your application
+- [`coengageui_prism`](https://coengage.dev/others/prism/) – code highlight built with [prism-react-renderer](https://github.com/FormidableLabs/prism-react-renderer)
+- [`coengageui_rte`](https://coengage.dev/others/rte/) – a Quill based rich text editor
+- [`coengageui_dropzone`](https://coengage.dev/others/dropzone/) – manages files drag 'n' drop to an area or entire screen
+- [`coengageui_modals`](https://coengage.dev/others/modals/) – centralized modals manager
+- [`coengageui_ssr`](https://coengage.dev/theming/ssr/) – server side rendering utilities
+- [`coengageui_next`](https://coengage.dev/theming/next/) – server side rendering utilities for Next.js
 - [`gatsby-plugin-coengage`](https://coengage.dev/theming/gatsby/) – Gatsby plugin to setup server side rendering
 - [`eslint-config-mantine`](https://www.npmjs.com/package/eslint-config-mantine) – ESLint and Prettier configuration that is used in all CoengageUI projects
 

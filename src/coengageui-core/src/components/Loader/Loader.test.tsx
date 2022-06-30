@@ -1,16 +1,16 @@
 import React from 'react';
 import { render } from '@testing-library/react';
-import { itSupportsSystemProps } from '@coengageui/tests';
-import { DEFAULT_THEME } from '@coengageui/styles';
+import { itSupportsSystemProps } from 'coengageui_tests';
+import { DEFAULT_THEME } from 'coengageui_styles';
 import { Loader, LoaderProps } from './Loader';
 
 const defaultProps: LoaderProps = {};
 
-describe('@coengageui/core/Loader', () => {
+describe('coengageui_core/Loader', () => {
   itSupportsSystemProps({
     component: Loader,
     props: defaultProps,
-    displayName: '@coengageui/core/Loader',
+    displayName: 'coengageui_core/Loader',
   });
 
   it('sets svg width based on size prop', () => {

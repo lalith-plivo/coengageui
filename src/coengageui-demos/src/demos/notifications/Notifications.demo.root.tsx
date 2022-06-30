@@ -1,7 +1,7 @@
 import React from 'react';
 import { CheckIcon } from '@modulz/radix-icons';
-import { Group, Button } from '@coengageui/core';
-import { showNotification, updateNotification } from '@coengageui/notifications';
+import { Group, Button } from 'coengageui_core';
+import { showNotification, updateNotification } from 'coengageui_notifications';
 
 function Demo() {
   return (

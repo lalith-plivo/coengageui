@@ -1,6 +1,6 @@
 import React from 'react';
-import { upperFirst } from '@coengageui/hooks';
-import { Tooltip, Badge, Group, COENGAGEUI_COLORS } from '@coengageui/core';
+import { upperFirst } from 'coengageui_hooks';
+import { Tooltip, Badge, Group, COENGAGEUI_COLORS } from 'coengageui_core';
 
 export function Demo() {
   const colors = COENGAGEUI_COLORS.map((color) => (

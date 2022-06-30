@@ -1,11 +1,11 @@
 import React, { useState } from 'react';
-import { Text, Group, Button, Modal, Drawer, Divider, CloseButton, Paper } from '@coengageui/core';
-import { Prism } from '@coengageui/prism';
-import { AuthenticationForm, PopoverDemos } from '@coengageui/demos';
+import { Text, Group, Button, Modal, Drawer, Divider, CloseButton, Paper } from 'coengageui_core';
+import { Prism } from 'coengageui_prism';
+import { AuthenticationForm, PopoverDemos } from 'coengageui_demos';
 
 const code = `
 import { useState } from 'react';
-import { Modal, Button } from '@coengageui/core';
+import { Modal, Button } from 'coengageui_core';
 
 function Demo() {
   const [opened, setOpened] = useState(false);

@@ -1,4 +1,4 @@
-import type { SpotlightStylesNames } from '@coengageui/spotlight';
+import type { SpotlightStylesNames } from 'coengageui_spotlight';
 
 export const SpotlightProvider: Record<SpotlightStylesNames, string> = {
   root: 'Root element',

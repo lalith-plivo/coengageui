@@ -4,7 +4,7 @@ import {
   Sx,
   useCss,
   useCoengageUITheme,
-} from '@coengageui/styles';
+} from 'coengageui_styles';
 import { getSystemStyles } from './get-system-styles/get-system-styles';
 
 function extractSx(sx: Sx, theme: CoengageUITheme) {

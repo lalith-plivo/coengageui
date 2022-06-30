@@ -1,4 +1,4 @@
-import type { TimeInputStylesNames } from '@coengageui/dates';
+import type { TimeInputStylesNames } from 'coengageui_dates';
 import { Input } from './Input.styles-api';
 import { InputWrapper } from './InputWrapper.styles-api';
 

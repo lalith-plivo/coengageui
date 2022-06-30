@@ -1,4 +1,4 @@
-import type { SelectStylesNames } from '@coengageui/core';
+import type { SelectStylesNames } from 'coengageui_core';
 import { Input } from './Input.styles-api';
 import { InputWrapper } from './InputWrapper.styles-api';
 

@@ -1,8 +1,8 @@
 import React from 'react';
-import { Image } from '@coengageui/core';
+import { Image } from 'coengageui_core';
 
 const code = `
-import { Image } from '@coengageui/core';
+import { Image } from 'coengageui_core';
 
 function Demo() {
   return (

@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useRef, forwardRef } from 'react';
-import { useMergedRef, assignRef, clamp, useOs } from '@coengageui/hooks';
-import { DefaultProps, Selectors, useCoengageUIDefaultProps } from '@coengageui/styles';
+import { useMergedRef, assignRef, clamp, useOs } from 'coengageui_hooks';
+import { DefaultProps, Selectors, useCoengageUIDefaultProps } from 'coengageui_styles';
 import { getInputMode } from '../../utils';
 import { TextInput } from '../TextInput/TextInput';
 import { InputStylesNames } from '../Input/Input';
@@ -23,10 +23,10 @@ type Parser = (value: string | undefined) => string | undefined;
 
 export interface NumberInputProps
   extends DefaultProps<NumberInputStylesNames>,
-    Omit<
-      React.ComponentPropsWithoutRef<typeof TextInput>,
-      'onChange' | 'value' | 'classNames' | 'styles' | 'type'
-    > {
+  Omit<
+  React.ComponentPropsWithoutRef<typeof TextInput>,
+  'onChange' | 'value' | 'classNames' | 'styles' | 'type'
+  > {
   /** onChange input handler for controlled variant, note that input event is not exposed. It will return undefined if the input is empty, otherwise it'll return a number */
   onChange?(value: number | undefined): void;
 
@@ -145,8 +145,8 @@ export const NumberInput = forwardRef<HTMLInputElement, NumberInputProps>(
       typeof value === 'number'
         ? value
         : typeof defaultValue === 'number'
-        ? defaultValue
-        : undefined
+          ? defaultValue
+          : undefined
     );
     const finalValue = typeof value === 'number' ? value : _value;
     const [tempValue, setTempValue] = useState(
@@ -398,4 +398,4 @@ export const NumberInput = forwardRef<HTMLInputElement, NumberInputProps>(
   }
 );
 
-NumberInput.displayName = '@coengageui/core/NumberInput';
+NumberInput.displayName = 'coengageui_core/NumberInput';

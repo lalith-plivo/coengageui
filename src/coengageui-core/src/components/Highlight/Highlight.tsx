@@ -6,7 +6,7 @@ import {
   CoengageUITheme,
   CSSObject,
   useCoengageUIDefaultProps,
-} from '@coengageui/styles';
+} from 'coengageui_styles';
 import { Text, SharedTextProps } from '../Text/Text';
 import { Mark } from '../Mark/Mark';
 import { highlighter } from './highlighter/highlighter';
@@ -57,4 +57,4 @@ export const Highlight: HighlightComponent = forwardRef(
   }
 ) as any;
 
-Highlight.displayName = '@coengageui/core/Highlight';
+Highlight.displayName = 'coengageui_core/Highlight';

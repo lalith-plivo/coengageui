@@ -1,5 +1,5 @@
 import React from 'react';
-import { Input, COENGAGEUI_SIZES } from '@coengageui/core';
+import { Input, COENGAGEUI_SIZES } from 'coengageui_core';
 
 function Demo() {
   const inputs = COENGAGEUI_SIZES.map((size, index) => (

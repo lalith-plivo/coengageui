@@ -6,7 +6,7 @@ export function useNotifications() {
 
   if (!context) {
     throw new Error(
-      '@coengageui/notifications: use-notifications hook was called outside of NotificationsProvider context'
+      'coengageui_notifications: use-notifications hook was called outside of NotificationsProvider context'
     );
   }
 

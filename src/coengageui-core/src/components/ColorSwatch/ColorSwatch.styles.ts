@@ -1,4 +1,4 @@
-import { createStyles, CoengageUINumberSize } from '@coengageui/styles';
+import { createStyles, CoengageUINumberSize } from 'coengageui_styles';
 
 export interface ColorSwatchStylesParams {
   radius: CoengageUINumberSize;
@@ -44,9 +44,8 @@ export default createStyles((theme, { size, radius }: ColorSwatchStylesParams) =
     },
 
     alphaOverlay: {
-      backgroundImage: `linear-gradient(45deg, ${overlayColor} 25%, transparent 25%), linear-gradient(-45deg, ${overlayColor} 25%, transparent 25%), linear-gradient(45deg, transparent 75%, ${overlayColor} 75%), linear-gradient(-45deg, ${
-        theme.colorScheme === 'dark' ? theme.colors.dark[7] : theme.white
-      } 75%, ${overlayColor} 75%)`,
+      backgroundImage: `linear-gradient(45deg, ${overlayColor} 25%, transparent 25%), linear-gradient(-45deg, ${overlayColor} 25%, transparent 25%), linear-gradient(45deg, transparent 75%, ${overlayColor} 75%), linear-gradient(-45deg, ${theme.colorScheme === 'dark' ? theme.colors.dark[7] : theme.white
+        } 75%, ${overlayColor} 75%)`,
       backgroundSize: '8px 8px',
       backgroundPosition: '0 0, 0 4px, 4px -4px, -4px 0px',
     },
