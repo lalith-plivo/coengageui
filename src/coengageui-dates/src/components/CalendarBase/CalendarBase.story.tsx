@@ -1,6 +1,6 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
-import { coengage_SIZES } from '@coengageui/core';
+import { COENGAGEUI_SIZES } from '@coengageui/core';
 import { CalendarBase, CalendarBaseProps } from './CalendarBase';
 
 function Wrapper(props: Partial<CalendarBaseProps>) {
@@ -12,7 +12,7 @@ function Wrapper(props: Partial<CalendarBaseProps>) {
 }
 
 const getSizes = (props: Partial<CalendarBaseProps>) =>
-  coengage_SIZES.map((size) => (
+  COENGAGEUI_SIZES.map((size) => (
     <div style={{ marginTop: 30 }} key={size}>
       <CalendarBase size={size} {...props} />
     </div>

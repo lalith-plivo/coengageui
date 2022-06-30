@@ -2,7 +2,7 @@
 import React, { useState } from 'react';
 import { storiesOf } from '@storybook/react';
 import { useDisclosure } from '@coengageui/hooks';
-import { coengage_SIZES, CoengageUIProvider, TextInput, Modal, Button } from '@coengageui/core';
+import { COENGAGEUI_SIZES, CoengageUIProvider, TextInput, Modal, Button } from '@coengageui/core';
 import { WithinOverlays, SubmitForm } from '@coengageui/storybook';
 import { DatePicker } from './DatePicker';
 
@@ -58,7 +58,7 @@ function WithinModal() {
   );
 }
 
-const sizes = coengage_SIZES.map((size) => (
+const sizes = COENGAGEUI_SIZES.map((size) => (
   <DatePicker
     placeholder={`${size} placeholder`}
     size={size}

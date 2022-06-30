@@ -66,10 +66,10 @@ export default createStyles((theme, { size, variant, color }: DividerStylesParam
       color === 'dark'
         ? theme.colors.dark[1]
         : theme.fn.themeColor(
-          color,
-          theme.colorScheme === 'dark' ? 5 : theme.fn.primaryShade(),
-          false
-        ),
+            color,
+            theme.colorScheme === 'dark' ? 5 : theme.fn.primaryShade(),
+            false
+          ),
   },
 
   horizontal: {

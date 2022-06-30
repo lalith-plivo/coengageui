@@ -10,7 +10,7 @@ export type JsonInputStylesNames = TextInputStylesNames;
 
 export interface JsonInputProps
   extends DefaultProps<JsonInputStylesNames>,
-  Omit<TextareaProps, 'onChange'> {
+    Omit<TextareaProps, 'onChange'> {
   /** Value for controlled input */
   value?: string;
 

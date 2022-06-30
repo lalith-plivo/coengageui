@@ -10,7 +10,7 @@ import { Portal } from '../Portal/Portal';
 
 export interface AffixProps
   extends Omit<DefaultProps, CoengageUIStyleSystemSize>,
-  React.ComponentPropsWithoutRef<'div'> {
+    React.ComponentPropsWithoutRef<'div'> {
   /** Element where portal should be rendered, by default new div element is created and appended to document.body */
   target?: HTMLDivElement;
 

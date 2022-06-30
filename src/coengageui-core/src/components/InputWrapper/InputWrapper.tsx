@@ -1,5 +1,10 @@
 import React, { createElement, forwardRef } from 'react';
-import { DefaultProps, CoengageUISize, Selectors, useCoengageUIDefaultProps } from '@coengageui/styles';
+import {
+  DefaultProps,
+  CoengageUISize,
+  Selectors,
+  useCoengageUIDefaultProps,
+} from '@coengageui/styles';
 import { Text } from '../Text';
 import { Box } from '../Box';
 import useStyles from './InputWrapper.styles';
@@ -31,8 +36,8 @@ export interface InputWrapperBaseProps {
 
 export interface InputWrapperProps
   extends DefaultProps<InputWrapperStylesNames>,
-  InputWrapperBaseProps,
-  React.ComponentPropsWithoutRef<'div'> {
+    InputWrapperBaseProps,
+    React.ComponentPropsWithoutRef<'div'> {
   /** Input that should be wrapped */
   children: React.ReactNode;
 

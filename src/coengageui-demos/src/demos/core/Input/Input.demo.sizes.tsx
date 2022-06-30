@@ -1,8 +1,8 @@
 import React from 'react';
-import { Input, coengage_SIZES } from '@coengageui/core';
+import { Input, COENGAGEUI_SIZES } from '@coengageui/core';
 
 function Demo() {
-  const inputs = coengage_SIZES.map((size, index) => (
+  const inputs = COENGAGEUI_SIZES.map((size, index) => (
     <Input
       style={{ marginTop: index === 0 ? 0 : 15 }}
       size={size}

@@ -2,7 +2,11 @@ import 'dayjs/locale/ru';
 import React from 'react';
 import { CoengageUIProvider } from '@coengageui/core';
 import { render, screen } from '@testing-library/react';
-import { itSupportsSystemProps, itSupportsInputProps, itSupportsFocusEvents } from '@coengageui/tests';
+import {
+  itSupportsSystemProps,
+  itSupportsInputProps,
+  itSupportsFocusEvents,
+} from '@coengageui/tests';
 import { DateRangePicker, DateRangePickerProps } from './DateRangePicker';
 
 const defaultProps: DateRangePickerProps = {};

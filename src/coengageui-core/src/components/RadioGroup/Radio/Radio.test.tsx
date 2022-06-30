@@ -1,5 +1,9 @@
 import React from 'react';
-import { checkAccessibility, itConnectsLabelAndInput, itSupportsSystemProps } from '@coengageui/tests';
+import {
+  checkAccessibility,
+  itConnectsLabelAndInput,
+  itSupportsSystemProps,
+} from '@coengageui/tests';
 import { Radio, RadioProps } from './Radio';
 
 const defaultProps: RadioProps = {

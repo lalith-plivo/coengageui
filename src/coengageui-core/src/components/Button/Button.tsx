@@ -135,7 +135,7 @@ export const Button: ButtonComponent = forwardRef(
         type={type}
         disabled={disabled || loading}
         ref={ref}
-        onTouchStart={() => { }}
+        onTouchStart={() => {}}
         {...others}
       >
         <div className={classes.inner}>

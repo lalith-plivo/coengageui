@@ -7,7 +7,7 @@ import { parseColor } from '../converters';
 
 const defaultProps: SwatchesProps = {
   data: [...DEFAULT_THEME.colors.red],
-  onSelect: () => { },
+  onSelect: () => {},
 };
 
 describe('@coengageui/core/Swatches', () => {

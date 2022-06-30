@@ -49,8 +49,9 @@ export default createStyles((theme, { reversed, native, radius }: RenderListStyl
     flex: 1,
     borderRadius: theme.fn.radius(radius),
     backgroundColor: theme.colorScheme === 'dark' ? theme.colors.dark[7] : theme.white,
-    border: `1px solid ${theme.colorScheme === 'dark' ? theme.colors.dark[4] : theme.colors.gray[4]
-      }`,
+    border: `1px solid ${
+      theme.colorScheme === 'dark' ? theme.colors.dark[4] : theme.colors.gray[4]
+    }`,
   },
 
   transferListTitle: {

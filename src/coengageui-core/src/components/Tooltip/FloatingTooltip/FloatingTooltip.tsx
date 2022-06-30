@@ -16,7 +16,7 @@ export type FloatingTooltipStylesNames = Selectors<typeof useStyles>;
 
 export interface FloatingTooltipProps
   extends DefaultProps<FloatingTooltipStylesNames>,
-  React.ComponentPropsWithoutRef<'div'> {
+    React.ComponentPropsWithoutRef<'div'> {
   /** Tooltip content */
   label: React.ReactNode;
 

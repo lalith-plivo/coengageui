@@ -23,8 +23,8 @@ export type PopoverStylesNames = Selectors<typeof useStyles> | PopoverBodyStyles
 
 export interface PopoverProps
   extends DefaultProps<PopoverStylesNames>,
-  SharedPopperProps,
-  Omit<React.ComponentPropsWithoutRef<'div'>, 'title'> {
+    SharedPopperProps,
+    Omit<React.ComponentPropsWithoutRef<'div'>, 'title'> {
   /** Defines whether Popover can be closed with outside click, defaults to true */
   closeOnClickOutside?: boolean;
 

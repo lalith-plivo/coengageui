@@ -6,7 +6,7 @@ import { Drawer, DrawerProps } from './Drawer';
 
 const defaultProps: DrawerProps = {
   opened: true,
-  onClose: () => { },
+  onClose: () => {},
   withinPortal: false,
 };
 

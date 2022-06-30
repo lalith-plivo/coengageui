@@ -62,8 +62,9 @@ export default createStyles((theme, { size, fullWidth, hideOutsideDates }: DaySt
 
       [`&.${outside.ref}`]: {
         display: hideOutsideDates ? 'none' : undefined,
-        color: `${theme.colorScheme === 'dark' ? theme.colors.dark[3] : theme.colors.gray[4]
-          } !important`,
+        color: `${
+          theme.colorScheme === 'dark' ? theme.colors.dark[3] : theme.colors.gray[4]
+        } !important`,
       },
 
       [`&.${inRange.ref}:not(:disabled)`]: {

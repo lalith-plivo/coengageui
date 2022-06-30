@@ -182,4 +182,21 @@ export const DEFAULT_COLORS = {
     '#e8590c',
     '#d9480f',
   ],
-} as Record<string, Tuple<string, 10>>;
+  neutral: [
+    '#0a0c0b',
+    '#2c303a',
+    '#51566b',
+    '#7f8393',
+    '#a3a6b2',
+    '#c2c5ce',
+    '#d7dae2',
+    '#ebedf2',
+    '#F9FAFB',
+    '#000000',
+  ],
+  brand: ['#cccfff', '#c0c3ff', '#27079B', '#4E41F2'],
+  info: ['#EEEFFF', '#4E41F2', '#27079B'],
+  warning: ['#FBF2E5', '#F9AA38'],
+  success: ['#EDFCF0', '#07AB77'],
+  danger: ['#FDE8E8', '#F05252'],
+} as unknown as Record<string, Tuple<string, 10>>;

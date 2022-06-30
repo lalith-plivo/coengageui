@@ -4,16 +4,30 @@ import { themeColor } from '../theme-color/theme-color';
 import { primaryShade } from '../primary-shade/primary-shade';
 
 export interface VariantInput {
-  variant: 'filled' | 'light' | 'outline' | 'default' | 'gradient' | 'white' | 'subtle';
+  variant:
+    | 'filled'
+    | 'light'
+    | 'outline'
+    | 'default'
+    | 'gradient'
+    | 'white'
+    | 'subtle'
+    | 'info'
+    | 'danger'
+    | 'warning'
+    | 'success';
   color?: CoengageUIColor;
   gradient?: CoengageUIGradient;
 }
 
 export interface VariantOutput {
-  border: string;
-  background: string;
-  color: string;
-  hover: string;
+  border?: string;
+  background?: string;
+  color?: string;
+  hover?: string;
+  dark?: string;
+  light?: string;
+  regular?: string;
 }
 
 const DEFAULT_GRADIENT = {
@@ -28,6 +42,38 @@ export function variant(theme: CoengageUIThemeBase) {
 
   // eslint-disable-next-line @typescript-eslint/no-shadow
   return ({ variant, color, gradient }: VariantInput): VariantOutput => {
+    if (variant === 'info') {
+      return {
+        dark: rgba(getThemeColor(color, theme.colorScheme === 'dark' ? 2 : 2), 1),
+        regular: rgba(getThemeColor(color, theme.colorScheme === 'dark' ? 1 : 1), 1),
+        light: rgba(getThemeColor(color, theme.colorScheme === 'dark' ? 0 : 0), 1),
+      };
+    }
+
+    if (variant === 'success') {
+      return {
+        dark: rgba(getThemeColor(color, theme.colorScheme === 'dark' ? 1 : 1), 1),
+        regular: rgba(getThemeColor(color, theme.colorScheme === 'dark' ? 1 : 1), 1),
+        light: rgba(getThemeColor(color, theme.colorScheme === 'dark' ? 0 : 0), 1),
+      };
+    }
+
+    if (variant === 'warning') {
+      return {
+        dark: rgba(getThemeColor(color, theme.colorScheme === 'dark' ? 1 : 1), 1),
+        regular: rgba(getThemeColor(color, theme.colorScheme === 'dark' ? 1 : 1), 1),
+        light: rgba(getThemeColor(color, theme.colorScheme === 'dark' ? 0 : 0), 1),
+      };
+    }
+
+    if (variant === 'danger') {
+      return {
+        dark: rgba(getThemeColor(color, theme.colorScheme === 'dark' ? 1 : 1), 1),
+        regular: rgba(getThemeColor(color, theme.colorScheme === 'dark' ? 1 : 1), 1),
+        light: rgba(getThemeColor(color, theme.colorScheme === 'dark' ? 0 : 0), 1),
+      };
+    }
+
     if (variant === 'light') {
       return {
         border: 'transparent',

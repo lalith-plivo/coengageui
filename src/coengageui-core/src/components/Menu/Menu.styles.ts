@@ -29,8 +29,9 @@ export default createStyles((theme, { size }: MenuStylesParams) => ({
     width: theme.fn.size({ size, sizes }),
     overflow: 'hidden',
     pointerEvents: 'all',
-    border: `1px solid ${theme.colorScheme === 'dark' ? theme.colors.dark[6] : theme.colors.gray[2]
-      }`,
+    border: `1px solid ${
+      theme.colorScheme === 'dark' ? theme.colors.dark[6] : theme.colors.gray[2]
+    }`,
     backgroundColor: theme.colorScheme === 'dark' ? theme.colors.dark[6] : theme.white,
     padding: MENU_PADDING,
 

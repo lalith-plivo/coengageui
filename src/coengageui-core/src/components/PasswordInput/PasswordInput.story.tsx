@@ -1,9 +1,9 @@
 import React, { useState } from 'react';
 import { storiesOf } from '@storybook/react';
-import { CoengageUIProvider, coengage_SIZES } from '@coengageui/styles';
+import { CoengageUIProvider, COENGAGEUI_SIZES } from '@coengageui/styles';
 import { PasswordInput, PasswordInputProps } from './PasswordInput';
 
-const sizes = coengage_SIZES.map((size) => (
+const sizes = COENGAGEUI_SIZES.map((size) => (
   <PasswordInput placeholder={size} key={size} size={size} mt={20} />
 ));
 

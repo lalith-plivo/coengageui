@@ -15,10 +15,11 @@ export default function PageNotFound() {
       <Container size={1100}>
         <P>
           <H1>Congratulations!</H1>
-          You've found a completely secret place on CoengageUI website. Unfortunately, this is only a
-          404 page. If you've landed on this page from a link on the CoengageUI website, please{' '}
-          <A href="https://github.com/coengagedev/coengage/issues/new">create an issue</A>. Otherwise,
-          here are some learning materials that will help you get started with CoengageUI:
+          You've found a completely secret place on CoengageUI website. Unfortunately, this is only
+          a 404 page. If you've landed on this page from a link on the CoengageUI website, please{' '}
+          <A href="https://github.com/coengagedev/coengage/issues/new">create an issue</A>.
+          Otherwise, here are some learning materials that will help you get started with
+          CoengageUI:
         </P>
         <Ul>
           <Li>
@@ -44,7 +45,8 @@ export default function PageNotFound() {
           </Li>
         </Ul>
         <P>
-          And since you are here, what about following CoengageUI on Twitter and a star on GitHub 😉?
+          And since you are here, what about following CoengageUI on Twitter and a star on GitHub
+          😉?
         </P>
 
         <Group>

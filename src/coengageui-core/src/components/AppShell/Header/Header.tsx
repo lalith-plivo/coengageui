@@ -4,7 +4,7 @@ import { VerticalSection, VerticalSectionSharedProps } from '../VerticalSection/
 
 export interface HeaderProps
   extends VerticalSectionSharedProps,
-  React.ComponentPropsWithoutRef<'nav'> {
+    React.ComponentPropsWithoutRef<'nav'> {
   /** Header content */
   children: React.ReactNode;
 }

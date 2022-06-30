@@ -1,6 +1,10 @@
 import React from 'react';
 import { render } from '@testing-library/react';
-import { checkAccessibility, itSupportsFocusEvents, itSupportsSystemProps } from '@coengageui/tests';
+import {
+  checkAccessibility,
+  itSupportsFocusEvents,
+  itSupportsSystemProps,
+} from '@coengageui/tests';
 import { Burger, BurgerProps } from './Burger';
 
 const defaultProps: BurgerProps = {

@@ -8,7 +8,7 @@ export type BreadcrumbsStylesNames = Selectors<typeof useStyles>;
 
 export interface BreadcrumbsProps
   extends DefaultProps<BreadcrumbsStylesNames>,
-  React.ComponentPropsWithoutRef<'div'> {
+    React.ComponentPropsWithoutRef<'div'> {
   /** Separator between breadcrumbs */
   separator?: React.ReactNode;
 

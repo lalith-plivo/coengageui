@@ -9,7 +9,7 @@ export type TabControlStylesNames = Exclude<Selectors<typeof useStyles>, TabsVar
 
 export interface TabControlProps
   extends DefaultProps<TabControlStylesNames>,
-  React.ComponentPropsWithRef<'button'> {
+    React.ComponentPropsWithRef<'button'> {
   active?: boolean;
   color?: CoengageUIColor;
   variant?: TabsVariant;

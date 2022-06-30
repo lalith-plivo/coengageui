@@ -8,7 +8,7 @@ export type DayStylesNames = Selectors<typeof useStyles>;
 
 export interface DayProps
   extends DefaultProps<DayStylesNames>,
-  Omit<React.ComponentPropsWithoutRef<'button'>, 'value' | 'onMouseEnter'> {
+    Omit<React.ComponentPropsWithoutRef<'button'>, 'value' | 'onMouseEnter'> {
   value: Date;
   selected: boolean;
   weekend: boolean;

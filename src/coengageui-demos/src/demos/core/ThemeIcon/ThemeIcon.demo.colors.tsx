@@ -1,9 +1,9 @@
 import React from 'react';
 import { Photo } from 'tabler-icons-react';
-import { coengage_COLORS, Group, ThemeIcon, ThemeIconProps } from '@coengageui/core';
+import { COENGAGEUI_COLORS, Group, ThemeIcon, ThemeIconProps } from '@coengageui/core';
 
 const getThemes = (props?: ThemeIconProps) =>
-  coengage_COLORS.map((color) => <ThemeIcon key={color} color={color} {...props} />);
+  COENGAGEUI_COLORS.map((color) => <ThemeIcon key={color} color={color} {...props} />);
 
 function Demo() {
   return (

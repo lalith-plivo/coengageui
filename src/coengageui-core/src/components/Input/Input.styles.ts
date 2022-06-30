@@ -39,11 +39,11 @@ export default createStyles(
     const sizeStyles =
       variant === 'default' || variant === 'filled'
         ? {
-          minHeight: theme.fn.size({ size, sizes }),
-          paddingLeft: theme.fn.size({ size, sizes }) / 3,
-          paddingRight: withRightSection ? rightSectionWidth : theme.fn.size({ size, sizes }) / 3,
-          borderRadius: theme.fn.radius(radius),
-        }
+            minHeight: theme.fn.size({ size, sizes }),
+            paddingLeft: theme.fn.size({ size, sizes }) / 3,
+            paddingRight: withRightSection ? rightSectionWidth : theme.fn.size({ size, sizes }) / 3,
+            borderRadius: theme.fn.radius(radius),
+          }
         : null;
 
     return {
@@ -55,55 +55,56 @@ export default createStyles(
         variant === 'headless'
           ? {}
           : {
-            ...theme.fn.fontStyles(),
-            height: multiline
-              ? variant === 'unstyled'
-                ? undefined
-                : 'auto'
-              : theme.fn.size({ size, sizes }),
-            WebkitTapHighlightColor: 'transparent',
-            lineHeight: multiline ? theme.lineHeight : `${theme.fn.size({ size, sizes }) - 2}px`,
-            appearance: 'none',
-            resize: 'none',
-            boxSizing: 'border-box',
-            fontSize: theme.fn.size({ size, sizes: theme.fontSizes }),
-            width: '100%',
-            color: theme.colorScheme === 'dark' ? theme.colors.dark[0] : theme.black,
-            display: 'block',
-            textAlign: 'left',
-            ...sizeStyles,
+              ...theme.fn.fontStyles(),
+              height: multiline
+                ? variant === 'unstyled'
+                  ? undefined
+                  : 'auto'
+                : theme.fn.size({ size, sizes }),
+              WebkitTapHighlightColor: 'transparent',
+              lineHeight: multiline ? theme.lineHeight : `${theme.fn.size({ size, sizes }) - 2}px`,
+              appearance: 'none',
+              resize: 'none',
+              boxSizing: 'border-box',
+              fontSize: theme.fn.size({ size, sizes: theme.fontSizes }),
+              width: '100%',
+              color: theme.colorScheme === 'dark' ? theme.colors.dark[0] : theme.black,
+              display: 'block',
+              textAlign: 'left',
+              ...sizeStyles,
 
-            '&:disabled': {
-              backgroundColor:
-                theme.colorScheme === 'dark' ? theme.colors.dark[6] : theme.colors.gray[1],
-              color: theme.colors.dark[2],
-              opacity: 0.6,
-              cursor: 'not-allowed',
+              '&:disabled': {
+                backgroundColor:
+                  theme.colorScheme === 'dark' ? theme.colors.dark[6] : theme.colors.gray[1],
+                color: theme.colors.dark[2],
+                opacity: 0.6,
+                cursor: 'not-allowed',
+
+                '&::placeholder': {
+                  color: theme.colors.dark[2],
+                },
+              },
 
               '&::placeholder': {
-                color: theme.colors.dark[2],
+                opacity: 1,
+                userSelect: 'none',
+                color: theme.colorScheme === 'dark' ? theme.colors.dark[3] : theme.colors.gray[5],
+              },
+
+              '&::-webkit-inner-spin-button, &::-webkit-outer-spin-button, &::-webkit-search-decoration, &::-webkit-search-cancel-button, &::-webkit-search-results-button, &::-webkit-search-results-decoration':
+                {
+                  appearance: 'none',
+                },
+
+              '&[type=number]': {
+                MozAppearance: 'textfield',
               },
             },
 
-            '&::placeholder': {
-              opacity: 1,
-              userSelect: 'none',
-              color: theme.colorScheme === 'dark' ? theme.colors.dark[3] : theme.colors.gray[5],
-            },
-
-            '&::-webkit-inner-spin-button, &::-webkit-outer-spin-button, &::-webkit-search-decoration, &::-webkit-search-cancel-button, &::-webkit-search-results-button, &::-webkit-search-results-decoration':
-            {
-              appearance: 'none',
-            },
-
-            '&[type=number]': {
-              MozAppearance: 'textfield',
-            },
-          },
-
       defaultVariant: {
-        border: `1px solid ${theme.colorScheme === 'dark' ? theme.colors.dark[5] : theme.colors.gray[4]
-          }`,
+        border: `1px solid ${
+          theme.colorScheme === 'dark' ? theme.colors.dark[5] : theme.colors.gray[4]
+        }`,
         backgroundColor: theme.colorScheme === 'dark' ? theme.colors.dark[8] : theme.white,
         transition: 'border-color 100ms ease',
 
@@ -119,8 +120,9 @@ export default createStyles(
 
         '&:focus, &:focus-within': {
           outline: 'none',
-          borderColor: `${theme.colors[theme.primaryColor][theme.colorScheme === 'dark' ? 8 : 5]
-            } !important`,
+          borderColor: `${
+            theme.colors[theme.primaryColor][theme.colorScheme === 'dark' ? 8 : 5]
+          } !important`,
         },
       },
 
@@ -185,8 +187,8 @@ export default createStyles(
         color: invalid
           ? theme.colors.red[theme.colorScheme === 'dark' ? 6 : 7]
           : theme.colorScheme === 'dark'
-            ? theme.colors.dark[2]
-            : theme.colors.gray[5],
+          ? theme.colors.dark[2]
+          : theme.colors.gray[5],
       },
 
       rightSection: {

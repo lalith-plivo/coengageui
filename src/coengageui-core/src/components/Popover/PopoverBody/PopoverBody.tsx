@@ -1,5 +1,10 @@
 import React, { forwardRef } from 'react';
-import { DefaultProps, CoengageUINumberSize, CoengageUIShadow, Selectors } from '@coengageui/styles';
+import {
+  DefaultProps,
+  CoengageUINumberSize,
+  CoengageUIShadow,
+  Selectors,
+} from '@coengageui/styles';
 import { Text } from '../../Text/Text';
 import { CloseButton } from '../../ActionIcon/CloseButton/CloseButton';
 import useStyles from './PopoverBody.styles';
@@ -8,7 +13,7 @@ export type PopoverBodyStylesNames = Selectors<typeof useStyles>;
 
 export interface PopoverBodyProps
   extends DefaultProps<PopoverBodyStylesNames>,
-  Omit<React.ComponentPropsWithoutRef<'div'>, 'title'> {
+    Omit<React.ComponentPropsWithoutRef<'div'>, 'title'> {
   shadow: CoengageUIShadow;
   radius: CoengageUINumberSize;
   spacing: CoengageUINumberSize;

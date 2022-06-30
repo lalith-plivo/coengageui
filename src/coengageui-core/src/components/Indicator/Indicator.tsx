@@ -16,7 +16,7 @@ export type IndicatorStylesNames = Selectors<typeof useStyles>;
 
 export interface IndicatorProps
   extends DefaultProps<IndicatorStylesNames>,
-  React.ComponentPropsWithoutRef<'div'> {
+    React.ComponentPropsWithoutRef<'div'> {
   /** Element that should have an indicator */
   children: React.ReactNode;
 

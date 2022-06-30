@@ -58,6 +58,7 @@ export interface CoengageUITheme {
   primaryColor: keyof CoengageUIThemeColors;
 
   fontSizes: CoengageUISizes;
+  btnFontSizes: CoengageUISizes;
   radius: CoengageUISizes;
   spacing: CoengageUISizes;
   breakpoints: CoengageUISizes;
@@ -80,6 +81,9 @@ export interface CoengageUITheme {
   other: CoengageUIThemeOther;
 
   datesLocale: string;
+  typography_light: string;
+  typograhy_regular: string;
+  typograhy_dark: string;
 }
 
 export type CoengageUIThemeBase = Omit<CoengageUITheme, 'fn'>;

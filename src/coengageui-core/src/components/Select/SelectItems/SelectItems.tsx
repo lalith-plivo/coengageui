@@ -70,9 +70,9 @@ export function SelectItems({
         onMouseDown={
           !item.disabled
             ? (event: React.MouseEvent<HTMLDivElement>) => {
-              event.preventDefault();
-              onItemSelect(item);
-            }
+                event.preventDefault();
+                onItemSelect(item);
+              }
             : null
         }
         disabled={item.disabled}

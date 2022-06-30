@@ -11,7 +11,7 @@ import {
 
 export interface NavbarProps
   extends HorizontalSectionSharedProps,
-  React.ComponentPropsWithRef<'nav'> {
+    React.ComponentPropsWithRef<'nav'> {
   /** Navbar content */
   children: React.ReactNode;
 }

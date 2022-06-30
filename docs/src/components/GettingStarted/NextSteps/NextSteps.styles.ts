@@ -14,8 +14,9 @@ export default createStyles((theme) => ({
     display: 'block',
     padding: theme.spacing.xl,
     borderRadius: theme.radius.md,
-    border: `1px solid ${theme.colorScheme === 'dark' ? theme.colors.dark[8] : theme.colors.gray[3]
-      }`,
+    border: `1px solid ${
+      theme.colorScheme === 'dark' ? theme.colors.dark[8] : theme.colors.gray[3]
+    }`,
     textDecoration: 'none',
     backgroundColor: theme.colorScheme === 'dark' ? theme.colors.dark[8] : theme.white,
     color: theme.colorScheme === 'dark' ? theme.colors.dark[0] : theme.black,

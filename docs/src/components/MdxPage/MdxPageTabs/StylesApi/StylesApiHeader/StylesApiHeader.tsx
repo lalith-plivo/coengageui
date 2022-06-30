@@ -22,8 +22,8 @@ export function StylesApiHeader({ component, singleNode }: StylesApiHeaderProps)
         </Text>
       ) : (
         <Text sx={{ maxWidth: 600 }} mb={30}>
-          CoengageUI components support styling of individual elements by adding your classes or inline
-          styles to any element inside component. For more information see{' '}
+          CoengageUI components support styling of individual elements by adding your classes or
+          inline styles to any element inside component. For more information see{' '}
           <GatsbyLink to="/theming/styles-api/">styles API guide</GatsbyLink>.
         </Text>
       )}

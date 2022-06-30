@@ -1,11 +1,11 @@
 import React, { useState } from 'react';
 import { storiesOf } from '@storybook/react';
-import { DEFAULT_THEME, coengage_SIZES, CoengageUIProvider } from '@coengageui/styles';
+import { DEFAULT_THEME, COENGAGEUI_SIZES, CoengageUIProvider } from '@coengageui/styles';
 import { ColorPicker } from './ColorPicker';
 import { HueSlider, HueSliderProps } from './HueSlider/HueSlider';
 import { AlphaSlider, AlphaSliderProps } from './AlphaSlider/AlphaSlider';
 
-const sizes = coengage_SIZES.map((size) => (
+const sizes = COENGAGEUI_SIZES.map((size) => (
   <div style={{ marginTop: 40 }}>
     <ColorPicker
       key={size}

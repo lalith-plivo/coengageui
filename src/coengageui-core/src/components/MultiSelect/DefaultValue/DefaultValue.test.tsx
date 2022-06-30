@@ -11,7 +11,7 @@ import { DefaultValue, MultiSelectValueProps } from './DefaultValue';
 
 const defaultProps: MultiSelectValueProps = {
   label: 'test-label',
-  onRemove: () => { },
+  onRemove: () => {},
   disabled: false,
   size: 'sm',
   radius: 'sm',

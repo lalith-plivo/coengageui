@@ -41,8 +41,9 @@ export default createStyles(
 
     item: {
       color: theme.colorScheme === 'dark' ? theme.colors.dark[0] : theme.black,
-      borderBottom: `1px solid ${theme.colorScheme === 'dark' ? theme.colors.dark[4] : theme.colors.gray[3]
-        }`,
+      borderBottom: `1px solid ${
+        theme.colorScheme === 'dark' ? theme.colors.dark[4] : theme.colors.gray[3]
+      }`,
     },
 
     itemOpened: {

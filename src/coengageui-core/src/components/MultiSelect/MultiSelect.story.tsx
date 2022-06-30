@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { storiesOf } from '@storybook/react';
-import { coengage_SIZES, CoengageUIProvider } from '@coengageui/styles';
+import { COENGAGEUI_SIZES, CoengageUIProvider } from '@coengageui/styles';
 import { WithinOverlays, SubmitForm } from '@coengageui/storybook';
 import { Group } from '../Group/Group';
 import { TextInput } from '../TextInput/TextInput';
@@ -94,7 +94,7 @@ function DynamicLabels() {
   );
 }
 
-const sizes = coengage_SIZES.map((size) => (
+const sizes = COENGAGEUI_SIZES.map((size) => (
   <Group grow key={size} style={{ marginTop: 30 }} direction="column">
     <MultiSelect
       size={size}

@@ -4,7 +4,7 @@ import { itSupportsSystemProps } from '@coengageui/tests';
 import { Dropzone, DropzoneProps } from './Dropzone';
 
 const defaultProps: DropzoneProps = {
-  onDrop: () => { },
+  onDrop: () => {},
   children: () => null,
 };
 

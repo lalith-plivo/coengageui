@@ -23,7 +23,7 @@ export type ModalStylesNames = Selectors<typeof useStyles>;
 
 export interface ModalProps
   extends Omit<DefaultProps<ModalStylesNames>, CoengageUIStyleSystemSize>,
-  Omit<React.ComponentPropsWithoutRef<'div'>, 'title'> {
+    Omit<React.ComponentPropsWithoutRef<'div'>, 'title'> {
   /** Mounts modal if true */
   opened: boolean;
 
@@ -157,8 +157,8 @@ export function Modal(props: ModalProps) {
     typeof overlayOpacity === 'number'
       ? overlayOpacity
       : theme.colorScheme === 'dark'
-        ? 0.85
-        : 0.75;
+      ? 0.85
+      : 0.75;
 
   const [, lockScroll] = useScrollLock();
 
@@ -203,7 +203,8 @@ export function Modal(props: ModalProps) {
               className={classes.inner}
               onKeyDownCapture={(event) => {
                 const shouldTrigger =
-                  (event.target as any)?.getAttribute('data-coengageui-stop-propagation') !== 'true';
+                  (event.target as any)?.getAttribute('data-coengageui-stop-propagation') !==
+                  'true';
                 shouldTrigger && event.nativeEvent.code === 'Escape' && closeOnEscape && onClose();
               }}
               ref={focusTrapRef}

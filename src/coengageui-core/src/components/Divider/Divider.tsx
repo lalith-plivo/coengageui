@@ -14,7 +14,7 @@ export type DividerStylesNames = 'label';
 
 export interface DividerProps
   extends DefaultProps<DividerStylesNames>,
-  React.ComponentPropsWithoutRef<'div'> {
+    React.ComponentPropsWithoutRef<'div'> {
   /** Line color from theme, defaults to gray in light color scheme and to dark in dark color scheme */
   color?: CoengageUIColor;
 

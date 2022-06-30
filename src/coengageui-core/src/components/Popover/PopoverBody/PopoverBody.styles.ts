@@ -21,8 +21,9 @@ export default createStyles((theme, { radius, shadow, spacing, width }: PopoverB
   },
 
   body: {
-    border: `1px solid ${theme.colorScheme === 'dark' ? theme.colors.dark[6] : theme.colors.gray[2]
-      }`,
+    border: `1px solid ${
+      theme.colorScheme === 'dark' ? theme.colors.dark[6] : theme.colors.gray[2]
+    }`,
     boxShadow: shadow in theme.shadows ? theme.shadows[shadow] : shadow,
     borderRadius: theme.fn.size({ size: radius, sizes: theme.radius }),
   },
@@ -32,8 +33,9 @@ export default createStyles((theme, { radius, shadow, spacing, width }: PopoverB
   },
 
   header: {
-    borderBottom: `1px solid ${theme.colorScheme === 'dark' ? theme.colors.dark[7] : theme.colors.gray[2]
-      }`,
+    borderBottom: `1px solid ${
+      theme.colorScheme === 'dark' ? theme.colors.dark[7] : theme.colors.gray[2]
+    }`,
     padding: `${theme.spacing.xs / 1.5}px ${theme.fn.size({
       size: spacing,
       sizes: theme.spacing,

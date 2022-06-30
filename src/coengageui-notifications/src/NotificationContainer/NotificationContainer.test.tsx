@@ -3,7 +3,7 @@ import NotificationContainer from './NotificationContainer';
 
 const defaultProps = {
   notification: { id: 'test', message: 'test-message' },
-  onHide: () => { },
+  onHide: () => {},
   autoClose: false,
   innerRef: undefined,
 } as const;

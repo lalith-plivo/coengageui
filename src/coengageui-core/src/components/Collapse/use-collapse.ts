@@ -36,7 +36,7 @@ interface GetCollapseProps {
 export function useCollapse({
   transitionDuration,
   transitionTimingFunction = 'ease',
-  onTransitionEnd = () => { },
+  onTransitionEnd = () => {},
   opened,
 }: UseCollapse): (props: GetCollapseProps) => Record<string, any> {
   const el = useRef<HTMLElement | null>(null);

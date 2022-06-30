@@ -1,6 +1,13 @@
 import React from 'react';
 import { Sun, MoonStars } from 'tabler-icons-react';
-import { AppShell, Navbar, Header, Group, ActionIcon, useCoengageUIColorScheme } from '@coengageui/core';
+import {
+  AppShell,
+  Navbar,
+  Header,
+  Group,
+  ActionIcon,
+  useCoengageUIColorScheme,
+} from '@coengageui/core';
 import { MainLinks } from './_mainLinks';
 import { User } from './_user';
 import { Logo } from './_logo';

@@ -23,8 +23,8 @@ const defaultProps: DayProps = {
   fullWidth: false,
   firstInMonth: false,
   size: 'sm' as const,
-  onKeyDown: () => { },
-  onMouseEnter: () => { },
+  onKeyDown: () => {},
+  onMouseEnter: () => {},
 };
 
 describe('@coengageui/core/Month/Day', () => {

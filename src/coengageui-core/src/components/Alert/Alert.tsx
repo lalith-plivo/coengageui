@@ -11,14 +11,20 @@ import { CloseButton } from '../ActionIcon';
 import { Box } from '../Box';
 import useStyles from './Alert.styles';
 
-export type AlertVariant = 'filled' | 'outline' | 'light';
+export type AlertStyleType = 'filled' | 'outline' | 'light';
+
+export type AlertVariant = 'info' | 'success' | 'warning' | 'danger';
+
 export type AlertStylesNames = Selectors<typeof useStyles>;
 
 export interface AlertProps
   extends DefaultProps<AlertStylesNames>,
-  Omit<React.ComponentPropsWithoutRef<'div'>, 'title'> {
+    Omit<React.ComponentPropsWithoutRef<'div'>, 'title'> {
   /** Alert title */
   title?: React.ReactNode;
+
+  /** Controls Alert style light */
+  type?: AlertStyleType;
 
   /** Controls Alert background, color and border styles, defaults to light */
   variant?: AlertVariant;
@@ -46,7 +52,8 @@ export interface AlertProps
 }
 
 const defaultProps: Partial<AlertProps> = {
-  variant: 'light',
+  type: 'light',
+  variant: 'info',
 };
 
 export const Alert = forwardRef<HTMLDivElement, AlertProps>((props: AlertProps, ref) => {
@@ -64,11 +71,12 @@ export const Alert = forwardRef<HTMLDivElement, AlertProps>((props: AlertProps, 
     radius,
     withCloseButton,
     closeButtonLabel,
+    type,
     ...others
   } = useCoengageUIDefaultProps('Alert', defaultProps, props);
 
   const { classes, cx } = useStyles(
-    { color, radius, variant },
+    { color, radius, variant, type },
     { classNames, styles, name: 'Alert' }
   );
 
@@ -83,33 +91,34 @@ export const Alert = forwardRef<HTMLDivElement, AlertProps>((props: AlertProps, 
       role="alert"
       aria-labelledby={titleId}
       aria-describedby={bodyId}
-      className={cx(classes.root, classes[variant], className)}
+      className={cx(classes.root, classes[`${variant}__${type}`], className)}
       ref={ref}
       {...others}
     >
       <div className={classes.wrapper}>
-        {icon && <div className={classes.icon}>{icon}</div>}
-
-        <div className={classes.body}>
-          {title && (
-            <div className={classes.title}>
-              <span id={titleId} className={classes.label}>
-                {title}
-              </span>
-
-              {withCloseButton && (
-                <CloseButton
-                  className={classes.closeButton}
-                  onClick={() => onClose?.()}
-                  variant="transparent"
-                  size={16}
-                  iconSize={16}
-                  aria-label={closeButtonLabel}
-                />
-              )}
-            </div>
+        <div className={classes.header}>
+          <div className={classes.titlewrapper}>
+            {icon && <div className={classes.icon}>{icon}</div>}
+            {title && (
+              <div className={classes.title}>
+                <span id={titleId} className={classes.label}>
+                  {title}
+                </span>
+              </div>
+            )}
+          </div>
+          {withCloseButton && (
+            <CloseButton
+              className={classes.closeButton}
+              onClick={() => onClose?.()}
+              variant="transparent"
+              size={20}
+              iconSize={20}
+              aria-label={closeButtonLabel}
+            />
           )}
-
+        </div>
+        <div className={classes.body}>
           <div id={bodyId} className={classes.message}>
             {children}
           </div>

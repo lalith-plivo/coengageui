@@ -6,7 +6,7 @@ export function themeColor(theme: CoengageUIThemeBase) {
     return color in theme.colors
       ? theme.colors[color][shade]
       : primaryFallback
-        ? primaryShades[shade]
-        : color;
+      ? primaryShades[shade]
+      : color;
   };
 }

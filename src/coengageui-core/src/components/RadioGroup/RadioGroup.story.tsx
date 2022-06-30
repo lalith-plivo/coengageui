@@ -1,9 +1,9 @@
 import React, { useState } from 'react';
 import { storiesOf } from '@storybook/react';
-import { coengage_SIZES } from '@coengageui/styles';
+import { COENGAGEUI_SIZES } from '@coengageui/styles';
 import { RadioGroup, Radio } from './index';
 
-const sizes = coengage_SIZES.map((size) => (
+const sizes = COENGAGEUI_SIZES.map((size) => (
   <RadioGroup
     style={{ padding: 20 }}
     defaultValue="1"

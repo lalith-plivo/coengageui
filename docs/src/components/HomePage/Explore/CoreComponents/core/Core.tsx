@@ -11,10 +11,12 @@ const useStyles = createStyles((theme) => ({
   },
 
   tabControl: {
-    border: `1px solid ${theme.colorScheme === 'dark' ? theme.colors.dark[8] : theme.colors.gray[2]
-      }`,
-    backgroundColor: `${theme.colorScheme === 'dark' ? theme.colors.dark[8] : theme.white
-      } !important`,
+    border: `1px solid ${
+      theme.colorScheme === 'dark' ? theme.colors.dark[8] : theme.colors.gray[2]
+    }`,
+    backgroundColor: `${
+      theme.colorScheme === 'dark' ? theme.colors.dark[8] : theme.white
+    } !important`,
 
     '@media (max-width: 755px)': {
       fontSize: theme.fontSizes.xs,

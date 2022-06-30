@@ -46,7 +46,9 @@ describe('@coengageui/core/Notification', () => {
   it('renders given title', () => {
     const { container: withTitle } = render(<Notification {...defaultProps} title="test-title" />);
     const { container: withoutTitle } = render(<Notification {...defaultProps} title={null} />);
-    expect(withTitle.querySelector('.coengageui-Notification-title').textContent).toBe('test-title');
+    expect(withTitle.querySelector('.coengageui-Notification-title').textContent).toBe(
+      'test-title'
+    );
     expect(withoutTitle.querySelectorAll('.coengageui-Notification-title')).toHaveLength(0);
   });
 });

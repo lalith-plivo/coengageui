@@ -7,7 +7,7 @@ export type SliderRootStylesNames = Selectors<typeof useStyles>;
 
 export interface SliderRootProps
   extends DefaultProps<SliderRootStylesNames>,
-  React.ComponentPropsWithoutRef<'div'> {
+    React.ComponentPropsWithoutRef<'div'> {
   size: CoengageUINumberSize;
   children: React.ReactNode;
   disabled: boolean;

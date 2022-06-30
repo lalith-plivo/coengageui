@@ -1,8 +1,8 @@
 import React from 'react';
-import { Checkbox, coengage_SIZES, Group } from '@coengageui/core';
+import { Checkbox, COENGAGEUI_SIZES, Group } from '@coengageui/core';
 
 function Demo() {
-  const items = coengage_SIZES.map((size) => (
+  const items = COENGAGEUI_SIZES.map((size) => (
     <Checkbox key={size} size={size} defaultChecked label={`${size} checkbox`} />
   ));
 

@@ -52,9 +52,13 @@ describe('@coengageui/core/CalendarBase', () => {
     const { container } = render(
       <CalendarBase onMonthChange={spy} month={new Date(2021, 11, 1)} />
     );
-    userEvent.click(container.querySelectorAll('.coengageui-CalendarBase-calendarHeaderControl')[0]);
+    userEvent.click(
+      container.querySelectorAll('.coengageui-CalendarBase-calendarHeaderControl')[0]
+    );
     expect(spy).toHaveBeenLastCalledWith(new Date(2021, 10, 1));
-    userEvent.click(container.querySelectorAll('.coengageui-CalendarBase-calendarHeaderControl')[1]);
+    userEvent.click(
+      container.querySelectorAll('.coengageui-CalendarBase-calendarHeaderControl')[1]
+    );
     expect(spy).toHaveBeenLastCalledWith(new Date(2022, 0, 1));
   });
 });

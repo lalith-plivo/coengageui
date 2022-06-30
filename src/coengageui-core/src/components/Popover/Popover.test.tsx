@@ -4,7 +4,7 @@ import { Popover, PopoverProps } from './Popover';
 
 const defaultProps: PopoverProps = {
   opened: true,
-  onClose: () => { },
+  onClose: () => {},
   withinPortal: false,
   target: <div>target</div>,
   children: 'test-content',

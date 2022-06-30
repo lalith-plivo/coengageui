@@ -1,4 +1,9 @@
-import { createStyles, CoengageUISize, CoengageUIColor, CoengageUINumberSize } from '@coengageui/styles';
+import {
+  createStyles,
+  CoengageUISize,
+  CoengageUIColor,
+  CoengageUINumberSize,
+} from '@coengageui/styles';
 
 export const sizes = {
   xs: 16,
@@ -76,8 +81,9 @@ export default createStyles(
         ...theme.fn.focusStyles(),
         appearance: 'none',
         backgroundColor: theme.colorScheme === 'dark' ? theme.colors.dark[4] : theme.white,
-        border: `1px solid ${theme.colorScheme === 'dark' ? theme.colors.dark[4] : theme.colors.gray[4]
-          }`,
+        border: `1px solid ${
+          theme.colorScheme === 'dark' ? theme.colors.dark[4] : theme.colors.gray[4]
+        }`,
         width: _size,
         height: _size,
         borderRadius: theme.fn.radius(radius),

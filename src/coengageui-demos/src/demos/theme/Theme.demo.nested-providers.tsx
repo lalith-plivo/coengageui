@@ -1,5 +1,11 @@
 import React from 'react';
-import { Group, Button, Text, CoengageUIProvider, useCoengageUIColorScheme } from '@coengageui/core';
+import {
+  Group,
+  Button,
+  Text,
+  CoengageUIProvider,
+  useCoengageUIColorScheme,
+} from '@coengageui/core';
 
 const code = `import { Button, CoengageUIProvider, Text } from '@coengageui/core';
 

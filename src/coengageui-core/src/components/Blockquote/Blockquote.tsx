@@ -1,5 +1,10 @@
 import React, { forwardRef } from 'react';
-import { DefaultProps, CoengageUIColor, Selectors, useCoengageUIDefaultProps } from '@coengageui/styles';
+import {
+  DefaultProps,
+  CoengageUIColor,
+  Selectors,
+  useCoengageUIDefaultProps,
+} from '@coengageui/styles';
 import { Box } from '../Box';
 import { QuoteIcon } from './QuoteIcon';
 import useStyles from './Blockquote.styles';
@@ -8,7 +13,7 @@ export type BlockquoteStylesNames = Selectors<typeof useStyles>;
 
 export interface BlockquoteProps
   extends DefaultProps<BlockquoteStylesNames>,
-  Omit<React.ComponentPropsWithoutRef<'blockquote'>, 'cite'> {
+    Omit<React.ComponentPropsWithoutRef<'blockquote'>, 'cite'> {
   /** Icon color from theme */
   color?: CoengageUIColor;
 

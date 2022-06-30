@@ -130,7 +130,9 @@ describe('@coengageui/core/Tooltip', () => {
     );
 
     expect(allow.querySelector('.coengageui-Tooltip-body')).toHaveStyle({ pointerEvents: 'all' });
-    expect(disallow.querySelector('.coengageui-Tooltip-body')).toHaveStyle({ pointerEvents: 'none' });
+    expect(disallow.querySelector('.coengageui-Tooltip-body')).toHaveStyle({
+      pointerEvents: 'none',
+    });
   });
 
   it('sets body white-space style based on wrapLines prop', async () => {

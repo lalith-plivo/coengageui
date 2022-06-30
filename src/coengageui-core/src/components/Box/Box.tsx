@@ -7,7 +7,7 @@ import {
 } from '@coengageui/styles';
 import { useSx } from './use-sx/use-sx';
 
-interface _BoxProps extends DefaultProps { }
+interface _BoxProps extends DefaultProps {}
 
 export type BoxProps<C> = PolymorphicComponentProps<C, _BoxProps>;
 

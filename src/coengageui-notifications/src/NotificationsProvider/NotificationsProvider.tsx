@@ -1,6 +1,12 @@
 import React, { useRef } from 'react';
 import { Transition, TransitionGroup } from 'react-transition-group';
-import { DefaultProps, Portal, CoengageUIStyleSystemSize, getDefaultZIndex, Box } from '@coengageui/core';
+import {
+  DefaultProps,
+  Portal,
+  CoengageUIStyleSystemSize,
+  getDefaultZIndex,
+  Box,
+} from '@coengageui/core';
 import { useReducedMotion, useForceUpdate, useDidUpdate } from '@coengageui/hooks';
 import { NotificationsContext } from '../Notifications.context';
 import { NotificationsProviderPositioning } from '../types';
@@ -22,15 +28,15 @@ const POSITIONS = [
 
 export interface NotificationProviderProps
   extends Omit<DefaultProps, CoengageUIStyleSystemSize>,
-  React.ComponentPropsWithoutRef<'div'> {
+    React.ComponentPropsWithoutRef<'div'> {
   /** Notifications position */
   position?:
-  | 'top-left'
-  | 'top-right'
-  | 'top-center'
-  | 'bottom-left'
-  | 'bottom-right'
-  | 'bottom-center';
+    | 'top-left'
+    | 'top-right'
+    | 'top-center'
+    | 'bottom-left'
+    | 'bottom-right'
+    | 'bottom-center';
 
   /** Auto close timeout for all notifications, false to disable auto close, can be overwritten for individual notifications by showNotification function */
   autoClose?: number | false;

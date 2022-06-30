@@ -26,8 +26,9 @@ const scaleY = {
 const useStyles = createStyles((theme) => ({
   prism: {
     '& pre': {
-      backgroundColor: `${theme.colorScheme === 'dark' ? theme.colors.dark[7] : theme.white
-        } !important`,
+      backgroundColor: `${
+        theme.colorScheme === 'dark' ? theme.colors.dark[7] : theme.white
+      } !important`,
       borderRadius: theme.radius.md,
       padding: 14,
       paddingTop: 0,

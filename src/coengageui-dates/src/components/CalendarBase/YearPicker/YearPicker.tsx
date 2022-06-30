@@ -8,7 +8,7 @@ export type YearPickerStylesNames = Selectors<typeof useStyles> | CalendarHeader
 
 export interface YearPickerProps
   extends DefaultProps<YearPickerStylesNames>,
-  Omit<React.ComponentPropsWithoutRef<'div'>, 'onChange'> {
+    Omit<React.ComponentPropsWithoutRef<'div'>, 'onChange'> {
   value: number;
   onChange(value: number): void;
   minYear?: number;

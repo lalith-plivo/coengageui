@@ -1,10 +1,10 @@
 import React, { useState } from 'react';
 import { storiesOf } from '@storybook/react';
-import { DEFAULT_THEME, coengage_SIZES, CoengageUIProvider } from '@coengageui/styles';
+import { DEFAULT_THEME, COENGAGEUI_SIZES, CoengageUIProvider } from '@coengageui/styles';
 import { WithinOverlays } from '@coengageui/storybook';
 import { ColorInput } from './ColorInput';
 
-const sizes = coengage_SIZES.map((size) => (
+const sizes = COENGAGEUI_SIZES.map((size) => (
   <ColorInput
     size={size}
     label="Color input"

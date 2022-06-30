@@ -1,12 +1,12 @@
 import React from 'react';
-import { coengage_COLORS } from '@coengageui/styles';
+import { COENGAGEUI_COLORS } from '@coengageui/styles';
 import { Button } from './Button';
 import { Group } from '../Group';
 
 export default { title: 'Button' };
 
 export const Colors = () => {
-  const items = coengage_COLORS.map((color) => (
+  const items = COENGAGEUI_COLORS.map((color) => (
     <Group mt="xl" key={color}>
       <Button color={color}>Filled button</Button>
       <Button color={color} variant="light">

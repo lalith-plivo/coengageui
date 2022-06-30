@@ -8,8 +8,8 @@ export type MenuLabelStylesNames = Selectors<typeof useStyles>;
 
 export interface MenuLabelProps
   extends DefaultProps,
-  SharedTextProps,
-  Omit<React.ComponentPropsWithoutRef<'div'>, 'color'> {
+    SharedTextProps,
+    Omit<React.ComponentPropsWithoutRef<'div'>, 'color'> {
   /** Label content */
   children: React.ReactNode;
 }

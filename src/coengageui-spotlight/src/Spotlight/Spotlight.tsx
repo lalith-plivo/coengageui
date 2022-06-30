@@ -25,7 +25,7 @@ export type SpotlightStylesNames = Selectors<typeof useStyles> | ActionsListStyl
 
 export interface InnerSpotlightProps
   extends DefaultProps<SpotlightStylesNames>,
-  React.ComponentPropsWithoutRef<'div'> {
+    React.ComponentPropsWithoutRef<'div'> {
   /** Should spotlight be rendered within Portal */
   withinPortal?: boolean;
 

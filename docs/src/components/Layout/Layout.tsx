@@ -39,7 +39,9 @@ export default function Layout({ children, location }: LayoutProps) {
             headings: { fontFamily: 'Inter, sans serif' },
           }}
           emotionOptions={
-            dir === 'rtl' ? { key: 'coengageui-rtl', stylisPlugins: [rtlPlugin] } : { key: 'coengage' }
+            dir === 'rtl'
+              ? { key: 'coengageui-rtl', stylisPlugins: [rtlPlugin] }
+              : { key: 'coengage' }
           }
         >
           <Global

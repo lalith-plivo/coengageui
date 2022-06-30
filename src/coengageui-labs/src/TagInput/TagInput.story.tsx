@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { storiesOf } from '@storybook/react';
-import { coengage_SIZES, Group, TextInput } from '@coengageui/core';
+import { COENGAGEUI_SIZES, Group, TextInput } from '@coengageui/core';
 import { SubmitForm } from '@coengageui/storybook';
 import { TagInput } from './TagInput';
 
@@ -16,7 +16,7 @@ function Controlled() {
   );
 }
 
-const sizes = coengage_SIZES.map((size) => (
+const sizes = COENGAGEUI_SIZES.map((size) => (
   <Group grow key={size} style={{ marginTop: 30 }} direction="column">
     <TagInput
       size={size}

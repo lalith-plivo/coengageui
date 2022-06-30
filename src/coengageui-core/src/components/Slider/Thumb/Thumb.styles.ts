@@ -31,10 +31,11 @@ export default createStyles((theme, { color, size, disabled }: ThumbStyles) => (
       theme.colorScheme === 'dark'
         ? theme.fn.themeColor(color, theme.fn.primaryShade())
         : theme.white,
-    border: `4px solid ${theme.colorScheme === 'dark'
-      ? theme.white
-      : theme.fn.themeColor(color, theme.fn.primaryShade())
-      }`,
+    border: `4px solid ${
+      theme.colorScheme === 'dark'
+        ? theme.white
+        : theme.fn.themeColor(color, theme.fn.primaryShade())
+    }`,
     color:
       theme.colorScheme === 'dark'
         ? theme.white

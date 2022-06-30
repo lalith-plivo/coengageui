@@ -3,7 +3,7 @@ import { RichTextEditor, RichTextEditorProps } from './RichTextEditor';
 
 const defaultProps: RichTextEditorProps = {
   value: '',
-  onChange: () => { },
+  onChange: () => {},
 };
 
 describe('@coengageui/core/RichTextEditor', () => {

@@ -7,7 +7,10 @@ export type {
   CoengageUIThemeColorsOverride,
 } from './CoengageUIColor';
 export type { CoengageUIGradient } from './CoengageUIGradient';
-export type { CoengageUIStyleSystemProps, CoengageUIStyleSystemSize } from './CoengageUIStyleSystem';
+export type {
+  CoengageUIStyleSystemProps,
+  CoengageUIStyleSystemSize,
+} from './CoengageUIStyleSystem';
 export type { CoengageUIShadow } from './CoengageUIShadow';
 export type { CoengageUINumberSize, CoengageUISize, CoengageUISizes } from './CoengageUISize';
 export type {

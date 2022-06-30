@@ -1,5 +1,11 @@
 import React from 'react';
-import { DefaultProps, Selectors, Text, CoengageUINumberSize, CoengageUIColor } from '@coengageui/core';
+import {
+  DefaultProps,
+  Selectors,
+  Text,
+  CoengageUINumberSize,
+  CoengageUIColor,
+} from '@coengageui/core';
 import type { SpotlightAction } from '../types';
 import type { DefaultActionProps, DefaultActionStylesNames } from '../DefaultAction/DefaultAction';
 import useStyles from './ActionsList.styles';

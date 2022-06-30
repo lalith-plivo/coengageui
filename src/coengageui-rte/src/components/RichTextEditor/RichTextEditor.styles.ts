@@ -17,8 +17,9 @@ export default createStyles(
     root: {
       ...theme.fn.fontStyles(),
       fontSize: theme.fontSizes.sm,
-      border: `1px solid ${theme.colorScheme === 'dark' ? theme.colors.dark[5] : theme.colors.gray[4]
-        }`,
+      border: `1px solid ${
+        theme.colorScheme === 'dark' ? theme.colors.dark[5] : theme.colors.gray[4]
+      }`,
       backgroundColor: theme.colorScheme === 'dark' ? theme.colors.dark[6] : theme.white,
       borderRadius: theme.fn.radius(radius),
       position: 'relative',
@@ -52,8 +53,9 @@ export default createStyles(
         zIndex: 1,
         backgroundColor: theme.colorScheme === 'dark' ? theme.colors.dark[5] : theme.white,
         padding: `${theme.spacing.xs}px ${theme.spacing.md}px`,
-        border: `1px solid ${theme.colorScheme === 'dark' ? theme.colors.dark[5] : theme.colors.gray[2]
-          }`,
+        border: `1px solid ${
+          theme.colorScheme === 'dark' ? theme.colors.dark[5] : theme.colors.gray[2]
+        }`,
         boxShadow: theme.shadows.sm,
         borderRadius: theme.radius.sm,
         display: 'flex',
@@ -117,8 +119,9 @@ export default createStyles(
 
       '& .ql-tooltip input': {
         display: 'none',
-        border: `1px solid ${theme.colorScheme === 'dark' ? theme.colors.dark[4] : theme.colors.gray[4]
-          }`,
+        border: `1px solid ${
+          theme.colorScheme === 'dark' ? theme.colors.dark[4] : theme.colors.gray[4]
+        }`,
         WebkitTapHighlightColor: 'transparent',
         height: 34,
         appearance: 'none',
@@ -163,8 +166,9 @@ export default createStyles(
       },
 
       '& .ql-mention-list-container': {
-        border: `1px solid ${theme.colorScheme === 'dark' ? theme.colors.dark[5] : theme.colors.gray[4]
-          }`,
+        border: `1px solid ${
+          theme.colorScheme === 'dark' ? theme.colors.dark[5] : theme.colors.gray[4]
+        }`,
         backgroundColor: theme.colorScheme === 'dark' ? theme.colors.dark[6] : theme.white,
         borderRadius: theme.radius.sm,
         overflow: 'hidden',
@@ -301,8 +305,9 @@ export default createStyles(
         marginBottom: theme.spacing.sm,
         paddingLeft: theme.spacing.md,
         color: theme.colorScheme === 'dark' ? theme.colors.dark[2] : theme.colors.gray[7],
-        borderLeft: `4px solid ${theme.colorScheme === 'dark' ? theme.colors.dark[4] : theme.colors.gray[4]
-          }`,
+        borderLeft: `4px solid ${
+          theme.colorScheme === 'dark' ? theme.colors.dark[4] : theme.colors.gray[4]
+        }`,
       },
 
       '& img': {

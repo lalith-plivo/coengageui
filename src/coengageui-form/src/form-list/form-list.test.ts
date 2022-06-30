@@ -32,6 +32,6 @@ describe('@coengageui/form form-list', () => {
     expect(isFormList(NaN as any)).toBe(false);
     expect(isFormList(String as any)).toBe(false);
     expect(isFormList(false as any)).toBe(false);
-    expect(isFormList((() => { }) as any)).toBe(false);
+    expect(isFormList((() => {}) as any)).toBe(false);
   });
 });

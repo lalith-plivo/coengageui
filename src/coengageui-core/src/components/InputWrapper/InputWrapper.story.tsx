@@ -1,10 +1,10 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
-import { coengage_SIZES } from '@coengageui/styles';
+import { COENGAGEUI_SIZES } from '@coengageui/styles';
 import { InputWrapper } from './InputWrapper';
 import { Text } from '../Text/Text';
 
-const sizes = coengage_SIZES.map((size) => (
+const sizes = COENGAGEUI_SIZES.map((size) => (
   <InputWrapper
     size={size}
     key={size}

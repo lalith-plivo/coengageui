@@ -10,7 +10,7 @@ const defaultProps: ThumbProps = {
   position: 10,
   label: 'test-label',
   dragging: false,
-  onMouseDown: () => { },
+  onMouseDown: () => {},
   color: 'blue',
   size: 10,
   labelTransition: 'skew-up' as const,

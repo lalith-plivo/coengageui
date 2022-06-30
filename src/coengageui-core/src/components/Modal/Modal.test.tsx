@@ -7,7 +7,7 @@ import { Modal, ModalProps } from './Modal';
 const defaultProps: ModalProps = {
   opened: true,
   withinPortal: false,
-  onClose: () => { },
+  onClose: () => {},
   title: 'test-modal',
   closeButtonLabel: 'test-close',
   children: 'test-modal',

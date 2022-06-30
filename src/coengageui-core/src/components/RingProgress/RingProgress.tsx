@@ -1,5 +1,10 @@
 import React, { forwardRef } from 'react';
-import { DefaultProps, CoengageUIColor, Selectors, useCoengageUIDefaultProps } from '@coengageui/styles';
+import {
+  DefaultProps,
+  CoengageUIColor,
+  Selectors,
+  useCoengageUIDefaultProps,
+} from '@coengageui/styles';
 import { Box } from '../Box';
 import { Curve } from './Curve/Curve';
 import { getCurves } from './get-curves/get-curves';
@@ -9,7 +14,7 @@ export type RingProgressStylesNames = Selectors<typeof useStyles>;
 
 export interface RingProgressProps
   extends DefaultProps<RingProgressStylesNames>,
-  React.ComponentPropsWithoutRef<'div'> {
+    React.ComponentPropsWithoutRef<'div'> {
   /** Label displayed in the center of the ring */
   label?: React.ReactNode;
 

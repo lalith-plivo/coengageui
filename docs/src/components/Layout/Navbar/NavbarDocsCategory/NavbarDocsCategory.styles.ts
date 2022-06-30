@@ -50,8 +50,9 @@ export default createStyles((theme) => ({
     paddingLeft: 23,
     marginLeft: 7,
     marginBottom: 5,
-    borderLeft: `1px solid ${theme.colorScheme === 'dark' ? theme.colors.dark[6] : theme.colors.gray[3]
-      }`,
+    borderLeft: `1px solid ${
+      theme.colorScheme === 'dark' ? theme.colors.dark[6] : theme.colors.gray[3]
+    }`,
     height: 34,
     display: 'flex',
     alignItems: 'center',
@@ -75,8 +76,9 @@ export default createStyles((theme) => ({
   link: {
     ...theme.fn.focusStyles(),
     WebkitTapHighlightColor: 'transparent',
-    borderLeft: `1px solid ${theme.colorScheme === 'dark' ? theme.colors.dark[6] : theme.colors.gray[3]
-      }`,
+    borderLeft: `1px solid ${
+      theme.colorScheme === 'dark' ? theme.colors.dark[6] : theme.colors.gray[3]
+    }`,
     outline: 0,
     display: 'block',
     textDecoration: 'none',

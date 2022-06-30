@@ -1,10 +1,10 @@
 import dayjs from 'dayjs';
 import React, { useState } from 'react';
 import { storiesOf } from '@storybook/react';
-import { coengage_SIZES } from '@coengageui/core';
+import { COENGAGEUI_SIZES } from '@coengageui/core';
 import { TimeRangeInput } from './TimeRangeInput';
 
-const sizes = coengage_SIZES.map((size) => (
+const sizes = COENGAGEUI_SIZES.map((size) => (
   <TimeRangeInput label={size} size={size} key={size} style={{ marginTop: 30 }} />
 ));
 

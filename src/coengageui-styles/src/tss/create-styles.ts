@@ -8,18 +8,18 @@ import { mergeClassNames } from './utils/merge-class-names/merge-class-names';
 export interface UseStylesOptions<Key extends string> {
   classNames?: Partial<Record<Key, string>>;
   styles?:
-  | Partial<Record<Key, CSSObject>>
-  | ((theme: CoengageUITheme) => Partial<Record<Key, CSSObject>>);
+    | Partial<Record<Key, CSSObject>>
+    | ((theme: CoengageUITheme) => Partial<Record<Key, CSSObject>>);
   name: string;
 }
 
 export function createStyles<Key extends string = string, Params = void>(
   getCssObjectOrCssObject:
     | ((
-      theme: CoengageUITheme,
-      params: Params,
-      createRef: (refName: string) => string
-    ) => Record<Key, CSSObject>)
+        theme: CoengageUITheme,
+        params: Params,
+        createRef: (refName: string) => string
+      ) => Record<Key, CSSObject>)
     | Record<Key, CSSObject>
 ) {
   const getCssObject =

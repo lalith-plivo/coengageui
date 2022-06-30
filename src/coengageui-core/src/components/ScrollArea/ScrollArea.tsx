@@ -1,6 +1,11 @@
 import React, { useState, forwardRef } from 'react';
 import * as RadixScrollArea from '@radix-ui/react-scroll-area';
-import { DefaultProps, Selectors, useCoengageUITheme, useCoengageUIDefaultProps } from '@coengageui/styles';
+import {
+  DefaultProps,
+  Selectors,
+  useCoengageUITheme,
+  useCoengageUIDefaultProps,
+} from '@coengageui/styles';
 import { Box } from '../Box';
 import useStyles from './ScrollArea.styles';
 
@@ -8,7 +13,7 @@ export type ScrollAreaStylesNames = Selectors<typeof useStyles>;
 
 export interface ScrollAreaProps
   extends DefaultProps<ScrollAreaStylesNames>,
-  React.ComponentPropsWithoutRef<'div'> {
+    React.ComponentPropsWithoutRef<'div'> {
   /** Scrollbar size in px */
   scrollbarSize?: number;
 
@@ -77,10 +82,10 @@ export const ScrollArea = forwardRef<HTMLDivElement, ScrollAreaProps>(
             onScroll={
               typeof onScrollPositionChange === 'function'
                 ? ({ currentTarget }) =>
-                  onScrollPositionChange({
-                    x: currentTarget.scrollLeft,
-                    y: currentTarget.scrollTop,
-                  })
+                    onScrollPositionChange({
+                      x: currentTarget.scrollLeft,
+                      y: currentTarget.scrollTop,
+                    })
                 : undefined
             }
           >

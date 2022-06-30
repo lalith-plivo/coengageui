@@ -20,7 +20,7 @@ export type DefaultCoengageUIColor =
 export type CoengageUIThemeColorsOverride = {};
 
 export type CoengageUIThemeColors = CoengageUIThemeColorsOverride extends {
-  colors: Record<infer CustomColors, Tuple<string, 10>>;
+  colors: Record<infer CustomColors, Tuple<string, number>>;
 }
   ? Record<CustomColors, Tuple<string, 10>>
   : Record<DefaultCoengageUIColor, Tuple<string, 10>>;

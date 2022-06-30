@@ -101,9 +101,9 @@ function DynamicActions() {
       actions={(query) =>
         query.trim().length > 0
           ? [
-            { title: `Search docs: ${query}`, onTrigger: () => console.log('Search') },
-            { title: `Create new ticket: ${query}`, onTrigger: () => console.log('Search') },
-          ]
+              { title: `Search docs: ${query}`, onTrigger: () => console.log('Search') },
+              { title: `Create new ticket: ${query}`, onTrigger: () => console.log('Search') },
+            ]
           : []
       }
     >

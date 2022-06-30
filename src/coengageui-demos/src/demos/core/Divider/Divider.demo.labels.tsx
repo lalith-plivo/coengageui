@@ -53,7 +53,12 @@ function Demo() {
       <Divider
         my="xs"
         label="Link label"
-        labelProps={{ component: 'a', href: 'https://coengage.dev', variant: 'link', color: 'blue' }}
+        labelProps={{
+          component: 'a',
+          href: 'https://coengage.dev',
+          variant: 'link',
+          color: 'blue',
+        }}
       />
     </>
   );

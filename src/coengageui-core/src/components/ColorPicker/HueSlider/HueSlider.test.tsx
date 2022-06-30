@@ -4,7 +4,7 @@ import { HueSlider, HueSliderProps } from './HueSlider';
 
 const defaultProps: HueSliderProps = {
   value: 150,
-  onChange: () => { },
+  onChange: () => {},
   size: 'sm',
 };
 

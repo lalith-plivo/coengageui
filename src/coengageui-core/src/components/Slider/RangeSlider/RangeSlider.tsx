@@ -26,7 +26,7 @@ type Value = [number, number];
 
 export interface RangeSliderProps
   extends DefaultProps<RangeSliderStylesNames>,
-  Omit<React.ComponentPropsWithoutRef<'div'>, 'value' | 'onChange' | 'defaultValue'> {
+    Omit<React.ComponentPropsWithoutRef<'div'>, 'value' | 'onChange' | 'defaultValue'> {
   /** Color from theme.colors */
   color?: CoengageUIColor;
 

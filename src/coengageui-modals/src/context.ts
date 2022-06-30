@@ -6,7 +6,7 @@ export type ModalSettings = Partial<Omit<ModalProps, 'opened'>>;
 
 export type ConfirmLabels = Record<'confirm' | 'cancel', ReactNode>;
 
-export interface OpenConfirmModal extends ModalSettings, ConfirmModalProps { }
+export interface OpenConfirmModal extends ModalSettings, ConfirmModalProps {}
 export interface OpenContextModal<CustomProps extends Record<string, unknown> = {}>
   extends ModalSettings {
   innerProps: CustomProps;

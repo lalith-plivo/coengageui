@@ -1,5 +1,9 @@
 import React, { forwardRef } from 'react';
-import { PolymorphicComponentProps, PolymorphicRef, useCoengageUIDefaultProps } from '@coengageui/styles';
+import {
+  PolymorphicComponentProps,
+  PolymorphicRef,
+  useCoengageUIDefaultProps,
+} from '@coengageui/styles';
 import { Text, SharedTextProps } from '../Text/Text';
 import useStyles from './Anchor.styles';
 

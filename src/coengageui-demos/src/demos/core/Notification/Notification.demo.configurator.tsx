@@ -6,8 +6,8 @@ import { demoBase } from './_demo-base';
 function Wrapper(props: NotificationProps) {
   return (
     <div style={{ maxWidth: 400, margin: 'auto' }}>
-      <Notification onClose={() => { }} {...props} />
-      <Notification mt="md" icon={<Check size={20} />} onClose={() => { }} {...props} />
+      <Notification onClose={() => {}} {...props} />
+      <Notification mt="md" icon={<Check size={20} />} onClose={() => {}} {...props} />
     </div>
   );
 }

@@ -55,8 +55,9 @@ function ActionsWrapper({ children }: { children: React.ReactNode }) {
         px={15}
         py="xs"
         sx={(theme) => ({
-          borderTop: `1px solid ${theme.colorScheme === 'dark' ? theme.colors.dark[4] : theme.colors.gray[2]
-            }`,
+          borderTop: `1px solid ${
+            theme.colorScheme === 'dark' ? theme.colors.dark[4] : theme.colors.gray[2]
+          }`,
         })}
       >
         <Text size="xs" color="dimmed">

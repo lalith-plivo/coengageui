@@ -1,7 +1,7 @@
 import React from 'react';
 import { useBooleanToggle } from '@coengageui/hooks';
 import { storiesOf } from '@storybook/react';
-import { coengage_SIZES, CoengageUIProvider } from '@coengageui/styles';
+import { COENGAGEUI_SIZES, CoengageUIProvider } from '@coengageui/styles';
 import { MagnifyingGlassIcon } from '@modulz/radix-icons';
 import Textarea from 'react-textarea-autosize';
 import { ActionIcon } from '../ActionIcon/ActionIcon';
@@ -27,7 +27,7 @@ const actionIcon = (
   </ActionIcon>
 );
 
-const sizes = coengage_SIZES.map((size) => (
+const sizes = COENGAGEUI_SIZES.map((size) => (
   <Input placeholder={`${size} input`} key={size} style={{ marginTop: 15 }} size={size} />
 ));
 

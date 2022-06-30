@@ -16,8 +16,8 @@ export type TooltipStylesNames = Selectors<typeof useStyles>;
 
 export interface TooltipProps
   extends DefaultProps<TooltipStylesNames>,
-  SharedPopperProps,
-  React.ComponentPropsWithoutRef<'div'> {
+    SharedPopperProps,
+    React.ComponentPropsWithoutRef<'div'> {
   /** Tooltip content */
   label: React.ReactNode;
 

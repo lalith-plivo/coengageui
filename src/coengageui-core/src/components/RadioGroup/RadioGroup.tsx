@@ -20,8 +20,8 @@ export type RadioGroupStylesNames = InputWrapperStylesNames | RadioStylesNames;
 
 export interface RadioGroupProps
   extends DefaultProps<RadioGroupStylesNames>,
-  InputWrapperBaseProps,
-  Omit<React.ComponentPropsWithoutRef<'div'>, 'onChange'> {
+    InputWrapperBaseProps,
+    Omit<React.ComponentPropsWithoutRef<'div'>, 'onChange'> {
   /** <Radio /> components only */
   children: React.ReactNode;
 

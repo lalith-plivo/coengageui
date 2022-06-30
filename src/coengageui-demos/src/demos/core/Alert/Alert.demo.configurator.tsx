@@ -35,11 +35,10 @@ export const configurator: CoengageUIDemo = {
       initialValue:
         'Something terrible happened! You made a mistake and there is no going back, your data was lost forever!',
     },
-    { name: 'color', type: 'color', initialValue: 'red', defaultValue: 'blue' },
     { name: 'radius', type: 'size', initialValue: 'sm', defaultValue: 'sm' },
     { name: 'withCloseButton', type: 'boolean', initialValue: false, defaultValue: false },
     {
-      name: 'variant',
+      name: 'type',
       type: 'segmented',
       data: [
         { label: 'light', value: 'light' },
@@ -48,6 +47,18 @@ export const configurator: CoengageUIDemo = {
       ],
       initialValue: 'light',
       defaultValue: 'light',
+    },
+    {
+      name: 'variant',
+      type: 'select',
+      data: [
+        { label: 'info', value: 'info' },
+        { label: 'warning', value: 'warning' },
+        { label: 'success', value: 'success' },
+        { label: 'danger', value: 'danger' },
+      ],
+      initialValue: 'info',
+      defaultValue: 'info',
     },
   ],
 };

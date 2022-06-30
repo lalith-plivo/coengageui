@@ -24,8 +24,8 @@ export type PrismStylesNames = Selectors<typeof useStyles>;
 
 export interface PrismProps
   extends DefaultProps<PrismStylesNames>,
-  PrismSharedProps,
-  Omit<React.ComponentPropsWithRef<'div'>, 'children'> { }
+    PrismSharedProps,
+    Omit<React.ComponentPropsWithRef<'div'>, 'children'> {}
 
 type PrismComponent = ((props: PrismProps) => React.ReactElement) & {
   displayName: string;
@@ -133,9 +133,9 @@ export const Prism: PrismComponent = forwardRef<HTMLDivElement, PrismProps>(
                     const lineColor =
                       theme.colorScheme === 'dark'
                         ? theme.fn.rgba(
-                          theme.fn.themeColor(highlightLines[lineNumber]?.color, 9),
-                          0.25
-                        )
+                            theme.fn.themeColor(highlightLines[lineNumber]?.color, 9),
+                            0.25
+                          )
                         : theme.fn.themeColor(highlightLines[lineNumber]?.color, 0);
 
                     return (
@@ -150,9 +150,9 @@ export const Prism: PrismComponent = forwardRef<HTMLDivElement, PrismProps>(
                             style={{
                               color: shouldHighlight
                                 ? theme.fn.themeColor(
-                                  highlightLines[lineNumber]?.color,
-                                  theme.colorScheme === 'dark' ? 5 : 8
-                                )
+                                    highlightLines[lineNumber]?.color,
+                                    theme.colorScheme === 'dark' ? 5 : 8
+                                  )
                                 : undefined,
                             }}
                           >
@@ -170,9 +170,9 @@ export const Prism: PrismComponent = forwardRef<HTMLDivElement, PrismProps>(
                                   ...tokenProps.style,
                                   color: shouldHighlight
                                     ? theme.fn.themeColor(
-                                      highlightLines[lineNumber]?.color,
-                                      theme.colorScheme === 'dark' ? 5 : 8
-                                    )
+                                        highlightLines[lineNumber]?.color,
+                                        theme.colorScheme === 'dark' ? 5 : 8
+                                      )
                                     : (tokenProps?.style?.color as string),
                                 }}
                               />
@@ -192,7 +192,7 @@ export const Prism: PrismComponent = forwardRef<HTMLDivElement, PrismProps>(
   }
 ) as any;
 
-export interface PrismTabProps extends PrismSharedProps, Omit<TabProps, 'children'> { }
+export interface PrismTabProps extends PrismSharedProps, Omit<TabProps, 'children'> {}
 
 // eslint-disable-next-line @typescript-eslint/no-unused-vars
 export function PrismTab(_props: PrismTabProps) {
@@ -202,7 +202,7 @@ export function PrismTab(_props: PrismTabProps) {
 export type PrismTabsStylesNames = Selectors<typeof useTabsStyles> | PrismStylesNames;
 export interface PrismTabsProps
   extends DefaultProps<PrismTabsStylesNames>,
-  Omit<TabsProps, 'classNames' | 'styles'> { }
+    Omit<TabsProps, 'classNames' | 'styles'> {}
 
 export const PrismTabs = forwardRef<HTMLDivElement, PrismTabsProps>(
   (props: PrismTabsProps, ref) => {

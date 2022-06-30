@@ -10,9 +10,9 @@ const defaultProps: MonthsListProps = {
   locale: 'en',
   allowLevelChange: true,
   daysRefs: { current: [[]] } as any,
-  onMonthChange: () => { },
-  onNextLevel: () => { },
-  onDayKeyDown: () => { },
+  onMonthChange: () => {},
+  onNextLevel: () => {},
+  onDayKeyDown: () => {},
   nextMonthLabel: 'test-next-month',
   previousMonthLabel: 'test-previous-month',
 };

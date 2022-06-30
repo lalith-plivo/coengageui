@@ -14,8 +14,9 @@ export default createStyles((theme) => ({
     zIndex: 6,
     position: 'fixed',
     backgroundColor: theme.colorScheme === 'dark' ? theme.colors.dark[7] : theme.white,
-    borderBottom: `1px solid ${theme.colorScheme === 'dark' ? theme.colors.dark[8] : theme.colors.gray[2]
-      }`,
+    borderBottom: `1px solid ${
+      theme.colorScheme === 'dark' ? theme.colors.dark[8] : theme.colors.gray[2]
+    }`,
     display: 'flex',
     alignItems: 'center',
     justifyContent: 'space-between',

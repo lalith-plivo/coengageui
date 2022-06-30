@@ -23,7 +23,7 @@ export type SliderStylesNames =
 
 export interface SliderProps
   extends DefaultProps<SliderStylesNames>,
-  Omit<React.ComponentPropsWithoutRef<'div'>, 'value' | 'onChange'> {
+    Omit<React.ComponentPropsWithoutRef<'div'>, 'value' | 'onChange'> {
   /** Color from theme.colors */
   color?: CoengageUIColor;
 

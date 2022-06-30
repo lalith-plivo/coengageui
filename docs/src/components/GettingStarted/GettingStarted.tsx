@@ -5,7 +5,7 @@ import Head from '../Head/Head';
 import { Installation } from './Installation/Installation';
 import { Guides } from './Guides/Guides';
 import { NextSteps } from './NextSteps/NextSteps';
-import { CoengageUIUiBanner } from '../CoengageUIBanner/CoengageUI';
+import { CoengageUIBanner } from '../CoengageUIBanner/CoengageUI';
 import useStyles from './GettingStarted.styles';
 
 export function GettingStarted() {
@@ -21,7 +21,7 @@ export function GettingStarted() {
           <Installation setDependencies={setDependencies} />
           <Guides dependencies={dependencies} />
           <NextSteps />
-          <CoengageUIUiBanner />
+          <CoengageUIBanner />
         </Container>
       </div>
 

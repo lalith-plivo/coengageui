@@ -3,7 +3,7 @@ import { useCoengageUITheme, Container, Box } from '@coengageui/core';
 import Head from '../Head/Head';
 import { Jumbotron } from './Jumbotron/Jumbotron';
 import { Footer } from '../Footer/Footer';
-import { CoengageUIUiBanner } from '../CoengageUIBanner/CoengageUI';
+import { CoengageUIBanner } from '../CoengageUIBanner/CoengageUI';
 import { Community } from './Community/Community';
 import { Customize } from './Customize/Customize';
 import { Usage } from './Usage/Usage';
@@ -25,7 +25,7 @@ export function HomePage() {
           }}
         >
           <Container size={1100}>
-            <CoengageUIUiBanner />
+            <CoengageUIBanner />
           </Container>
         </Box>
         <Customize />

@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { storiesOf } from '@storybook/react';
-import { coengage_SIZES } from '@coengageui/styles';
+import { COENGAGEUI_SIZES } from '@coengageui/styles';
 import { Button } from '../Button';
 import { Group } from '../Group';
 import { Stepper, StepperProps } from './Stepper';
@@ -70,11 +70,11 @@ function DynamicChildren() {
   );
 }
 
-const sizes = coengage_SIZES.map((size, index) => (
+const sizes = COENGAGEUI_SIZES.map((size, index) => (
   <Wrapper key={size} size={size} mt={index !== 0 ? 60 : 0} />
 ));
 
-const verticalSizes = coengage_SIZES.map((size, index) => (
+const verticalSizes = COENGAGEUI_SIZES.map((size, index) => (
   <Wrapper key={size} size={size} mt={index !== 0 ? 60 : 0} orientation="vertical" />
 ));
 

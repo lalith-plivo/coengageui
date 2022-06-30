@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { storiesOf } from '@storybook/react';
-import { coengage_COLORS, CoengageUIProvider } from '@coengageui/styles';
+import { COENGAGEUI_COLORS, CoengageUIProvider } from '@coengageui/styles';
 import { Checkbox, CheckboxProps } from './Checkbox';
 import { CheckboxGroup } from './CheckboxGroup/CheckboxGroup';
 
@@ -33,7 +33,7 @@ function CheckboxGroupControlled() {
 }
 
 const getThemes = (props?: Partial<CheckboxProps>) =>
-  coengage_COLORS.map((color) => (
+  COENGAGEUI_COLORS.map((color) => (
     <Checkbox key={color} color={color} {...props} label={color} mt={15} />
   ));
 

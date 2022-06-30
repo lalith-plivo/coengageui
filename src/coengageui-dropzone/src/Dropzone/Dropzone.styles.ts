@@ -15,8 +15,9 @@ export default createStyles((theme, { padding, radius }: DropzoneStylesParams) =
       ...theme.fn.focusStyles(),
       boxSizing: 'border-box',
       backgroundColor: theme.colorScheme === 'dark' ? theme.colors.dark[7] : theme.white,
-      border: `2px dashed ${theme.colorScheme === 'dark' ? theme.colors.dark[3] : theme.colors.gray[4]
-        }`,
+      border: `2px dashed ${
+        theme.colorScheme === 'dark' ? theme.colors.dark[3] : theme.colors.gray[4]
+      }`,
       padding: theme.fn.size({ size: padding, sizes: theme.spacing }),
       borderRadius: theme.fn.radius(radius),
       cursor: 'pointer',

@@ -31,11 +31,8 @@ const defaultProps: Partial<ContainerProps> = {
 
 export const Container = forwardRef<HTMLDivElement, ContainerProps>(
   (props: ContainerProps, ref) => {
-    const { className, fluid, size, styles, classNames, sizes, ...others } = useCoengageUIDefaultProps(
-      'Container',
-      defaultProps,
-      props
-    );
+    const { className, fluid, size, styles, classNames, sizes, ...others } =
+      useCoengageUIDefaultProps('Container', defaultProps, props);
 
     const { classes, cx } = useStyles(
       { fluid, size, sizes },

@@ -16,7 +16,7 @@ export type NotificationStylesNames = Exclude<Selectors<typeof useStyles>, 'with
 
 export interface NotificationProps
   extends DefaultProps<NotificationStylesNames>,
-  Omit<React.ComponentPropsWithoutRef<'div'>, 'title'> {
+    Omit<React.ComponentPropsWithoutRef<'div'>, 'title'> {
   /** Called when close button is clicked */
   onClose?(): void;
 

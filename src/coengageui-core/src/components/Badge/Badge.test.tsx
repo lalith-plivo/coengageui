@@ -21,7 +21,9 @@ describe('@coengageui/core/Badge', () => {
         test
       </Badge>
     );
-    expect(container.querySelector('.coengageui-Badge-rightSection').textContent).toBe('test-right');
+    expect(container.querySelector('.coengageui-Badge-rightSection').textContent).toBe(
+      'test-right'
+    );
     expect(container.querySelector('.coengageui-Badge-leftSection').textContent).toBe('test-left');
   });
 });

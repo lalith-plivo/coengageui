@@ -1,9 +1,9 @@
 import React, { useState } from 'react';
 import { storiesOf } from '@storybook/react';
-import { coengage_SIZES } from '@coengageui/styles';
+import { COENGAGEUI_SIZES } from '@coengageui/styles';
 import { NumberInput } from './NumberInput';
 
-const sizes = coengage_SIZES.map((size) => (
+const sizes = COENGAGEUI_SIZES.map((size) => (
   <NumberInput defaultValue={0} label={size} size={size} key={size} mt="xl" />
 ));
 

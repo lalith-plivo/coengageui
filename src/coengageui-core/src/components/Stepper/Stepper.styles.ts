@@ -1,4 +1,9 @@
-import { createStyles, CoengageUINumberSize, CoengageUIColor, CoengageUISize } from '@coengageui/styles';
+import {
+  createStyles,
+  CoengageUINumberSize,
+  CoengageUIColor,
+  CoengageUISize,
+} from '@coengageui/styles';
 import { iconSizes } from './Step/Step.styles';
 
 export interface StepperStylesParams {

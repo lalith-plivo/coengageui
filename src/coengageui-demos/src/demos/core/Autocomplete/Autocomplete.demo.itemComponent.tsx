@@ -1,5 +1,12 @@
 import React, { forwardRef } from 'react';
-import { Group, Avatar, Text, CoengageUIColor, SelectItemProps, Autocomplete } from '@coengageui/core';
+import {
+  Group,
+  Avatar,
+  Text,
+  CoengageUIColor,
+  SelectItemProps,
+  Autocomplete,
+} from '@coengageui/core';
 
 const code = `
 import { forwardRef } from 'react';

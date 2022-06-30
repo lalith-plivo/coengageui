@@ -5,8 +5,8 @@ import type { ListItemStylesNames } from './ListItem/ListItem';
 interface ListContextValue {
   classNames?: Partial<Record<ListItemStylesNames, string>>;
   styles?:
-  | Partial<Record<ListItemStylesNames, CSSObject>>
-  | ((theme: CoengageUITheme) => Partial<Record<ListItemStylesNames, CSSObject>>);
+    | Partial<Record<ListItemStylesNames, CSSObject>>
+    | ((theme: CoengageUITheme) => Partial<Record<ListItemStylesNames, CSSObject>>);
   spacing?: CoengageUINumberSize;
   center?: boolean;
   icon?: React.ReactNode;

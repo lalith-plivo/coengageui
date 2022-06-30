@@ -127,8 +127,8 @@ export const TimeField = forwardRef<HTMLInputElement, TimeFieldProps>(
               color: value
                 ? 'inherit'
                 : theme.colorScheme === 'dark'
-                  ? theme.colors.dark[2]
-                  : theme.colors.gray[7],
+                ? theme.colors.dark[2]
+                : theme.colors.gray[7],
             }}
           >
             :

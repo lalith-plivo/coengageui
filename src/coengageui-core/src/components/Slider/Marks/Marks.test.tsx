@@ -13,7 +13,7 @@ const defaultProps: MarksProps = {
   min: 0,
   max: 100,
   value: 80,
-  onChange: () => { },
+  onChange: () => {},
   disabled: false,
 };
 

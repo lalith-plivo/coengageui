@@ -47,8 +47,9 @@ export default createStyles((theme, { color, radius }: NotificationStylesParams,
       borderRadius: _radius,
       backgroundColor: theme.colorScheme === 'dark' ? theme.colors.dark[6] : theme.white,
       boxShadow: theme.shadows.lg,
-      border: `1px solid ${theme.colorScheme === 'dark' ? theme.colors.dark[6] : theme.colors.gray[2]
-        }`,
+      border: `1px solid ${
+        theme.colorScheme === 'dark' ? theme.colors.dark[6] : theme.colors.gray[2]
+      }`,
 
       '&::before': {
         content: "''",

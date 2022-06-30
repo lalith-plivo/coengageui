@@ -8,7 +8,7 @@ export type SpoilerStylesNames = Selectors<typeof useStyles>;
 
 export interface SpoilerProps
   extends DefaultProps<SpoilerStylesNames>,
-  React.ComponentPropsWithoutRef<'div'> {
+    React.ComponentPropsWithoutRef<'div'> {
   /** Max height of visible content, when this point is reached spoiler appears */
   maxHeight: number;
 

@@ -1,6 +1,10 @@
 import React from 'react';
 import { render } from '@testing-library/react';
-import { checkAccessibility, itSupportsSystemProps, itSupportsFocusEvents } from '@coengageui/tests';
+import {
+  checkAccessibility,
+  itSupportsSystemProps,
+  itSupportsFocusEvents,
+} from '@coengageui/tests';
 import { CloseButton, CloseButtonProps } from './CloseButton';
 
 const defaultProps: CloseButtonProps = {};

@@ -1,5 +1,9 @@
 import React, { Children, cloneElement, forwardRef } from 'react';
-import { PolymorphicComponentProps, PolymorphicRef, useCoengageUIDefaultProps } from '@coengageui/styles';
+import {
+  PolymorphicComponentProps,
+  PolymorphicRef,
+  useCoengageUIDefaultProps,
+} from '@coengageui/styles';
 import { Paper, SharedPaperProps } from '../Paper/Paper';
 import { CardSection } from './CardSection/CardSection';
 import useStyles from './Card.styles';

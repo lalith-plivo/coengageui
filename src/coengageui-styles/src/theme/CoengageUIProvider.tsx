@@ -43,7 +43,9 @@ export function useCoengageUIThemeStyles(component: string) {
 }
 
 export function useCoengageUIEmotionOptions(): EmotionCacheOptions {
-  return useContext(CoengageUIProviderContext)?.emotionOptions || { key: 'coengage', prepend: true };
+  return (
+    useContext(CoengageUIProviderContext)?.emotionOptions || { key: 'coengage', prepend: true }
+  );
 }
 
 export function useCoengageUIDefaultProps<T extends Record<string, any>>(

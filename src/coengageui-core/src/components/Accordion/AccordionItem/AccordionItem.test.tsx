@@ -7,7 +7,7 @@ import { AccordionItem, AccordionItemProps } from './AccordionItem';
 const defaultProps: AccordionItemProps = {
   label: 'test-label',
   opened: true,
-  onToggle: () => { },
+  onToggle: () => {},
   transitionDuration: 200,
   id: 'test-id',
 };

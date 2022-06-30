@@ -50,8 +50,9 @@ function Demo() {
       theme.colorScheme === 'dark'
         ? theme.fn.rgba(theme.colors.blue[7], 0.25)
         : theme.colors.blue[0],
-    border: `1px solid ${theme.colorScheme === 'dark' ? theme.colors.blue[6] : theme.colors.blue[3]
-      }`,
+    border: `1px solid ${
+      theme.colorScheme === 'dark' ? theme.colors.blue[6] : theme.colors.blue[3]
+    }`,
   };
 
   const boxStyles = {

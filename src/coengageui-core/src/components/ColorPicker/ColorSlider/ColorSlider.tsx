@@ -17,7 +17,7 @@ export type ColorSliderStylesNames =
 
 export interface BaseColorSliderProps
   extends DefaultProps<ColorSliderStylesNames>,
-  Omit<React.ComponentPropsWithoutRef<'div'>, 'value' | 'onChange'> {
+    Omit<React.ComponentPropsWithoutRef<'div'>, 'value' | 'onChange'> {
   value: number;
   onChange(value: number): void;
   size?: CoengageUISize;

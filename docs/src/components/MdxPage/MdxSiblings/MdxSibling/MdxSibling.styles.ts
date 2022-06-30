@@ -11,8 +11,9 @@ export default createStyles((theme, _params, getRef) => ({
     padding: theme.spacing.md,
     borderRadius: theme.radius.md,
     backgroundColor: theme.colorScheme === 'dark' ? theme.colors.dark[8] : theme.white,
-    border: `1px solid ${theme.colorScheme === 'dark' ? theme.colors.dark[8] : theme.colors.gray[3]
-      }`,
+    border: `1px solid ${
+      theme.colorScheme === 'dark' ? theme.colors.dark[8] : theme.colors.gray[3]
+    }`,
 
     '&:hover': {
       backgroundColor: theme.colorScheme === 'dark' ? theme.colors.dark[9] : theme.colors.gray[0],

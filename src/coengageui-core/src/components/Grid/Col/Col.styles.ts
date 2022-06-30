@@ -1,7 +1,7 @@
 import {
   createStyles,
   CoengageUINumberSize,
-  coengage_SIZES,
+  COENGAGEUI_SIZES,
   CoengageUISize,
   CoengageUITheme,
 } from '@coengageui/styles';
@@ -41,7 +41,7 @@ function getBreakpointsStyles({
   theme: CoengageUITheme;
   columns: number;
 }) {
-  return coengage_SIZES.reduce((acc, size) => {
+  return COENGAGEUI_SIZES.reduce((acc, size) => {
     if (typeof sizes[size] === 'number') {
       acc[`@media (min-width: ${theme.breakpoints[size] + 1}px)`] = {
         flexBasis: getColumnWidth(sizes[size], columns),

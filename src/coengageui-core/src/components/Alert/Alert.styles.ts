@@ -3,21 +3,23 @@ import { createStyles, CoengageUIColor, CoengageUINumberSize } from '@coengageui
 export interface AlertStylesParams {
   color: CoengageUIColor;
   radius: CoengageUINumberSize;
-  variant: 'filled' | 'outline' | 'light';
+  type: 'filled' | 'outline' | 'light';
+  variant: 'info' | 'success' | 'warning' | 'danger';
 }
 
-export default createStyles((theme, { color, radius, variant }: AlertStylesParams, getRef) => ({
+export default createStyles((theme, { radius, variant }: AlertStylesParams, getRef) => ({
   root: {
     ...theme.fn.fontStyles(),
     position: 'relative',
     overflow: 'hidden',
-    padding: `${theme.spacing.sm}px ${theme.spacing.md}px`,
+    padding: `${theme.spacing.md}px ${theme.spacing.md}px`,
     borderRadius: theme.fn.radius(radius),
     border: '1px solid transparent',
   },
 
   wrapper: {
     display: 'flex',
+    flexDirection: 'column',
   },
 
   body: {
@@ -27,13 +29,12 @@ export default createStyles((theme, { color, radius, variant }: AlertStylesParam
   title: {
     boxSizing: 'border-box',
     margin: 0,
-    marginBottom: 7,
     display: 'flex',
     alignItems: 'center',
     justifyContent: 'space-between',
     lineHeight: theme.lineHeight,
     fontSize: theme.fontSizes.sm,
-    fontWeight: 700,
+    fontWeight: 600,
   },
 
   label: {
@@ -42,23 +43,78 @@ export default createStyles((theme, { color, radius, variant }: AlertStylesParam
     textOverflow: 'ellipsis',
   },
 
-  light: {
-    backgroundColor: theme.fn.variant({ variant: 'light', color }).background,
-    color: theme.fn.variant({ variant: 'light', color }).color,
-  },
+  // Alert Styles
 
-  filled: {
-    backgroundColor: theme.fn.variant({ variant: 'filled', color }).background,
+  info__filled: {
+    backgroundColor: theme.fn.variant({ variant: 'info', color: variant }).dark,
     color: theme.white,
-
     [`& .${getRef('closeButton')}`]: {
       color: theme.white,
     },
   },
 
-  outline: {
-    color: theme.fn.variant({ variant: 'outline', color }).color,
-    borderColor: theme.fn.variant({ variant: 'outline', color }).border,
+  info__light: {
+    backgroundColor: theme.fn.variant({ variant: 'info', color: variant }).light,
+    color: theme.fn.variant({ variant: 'info', color: variant }).dark,
+  },
+  info__outline: {
+    backgroundColor: theme.white,
+    color: theme.fn.variant({ variant: 'info', color: variant }).dark,
+    borderColor: theme.fn.variant({ variant: 'info', color: variant }).dark,
+  },
+
+  warning__filled: {
+    backgroundColor: theme.fn.variant({ variant: 'warning', color: variant }).dark,
+    color: theme.white,
+    [`& .${getRef('closeButton')}`]: {
+      color: theme.white,
+    },
+  },
+
+  warning__light: {
+    backgroundColor: theme.fn.variant({ variant: 'warning', color: variant }).light,
+    color: theme.fn.variant({ variant: 'warning', color: variant }).dark,
+  },
+  warning__outline: {
+    backgroundColor: theme.white,
+    color: theme.fn.variant({ variant: 'warning', color: variant }).dark,
+    borderColor: theme.fn.variant({ variant: 'warning', color: variant }).dark,
+  },
+
+  success__filled: {
+    backgroundColor: theme.fn.variant({ variant: 'success', color: variant }).dark,
+    color: theme.white,
+    [`& .${getRef('closeButton')}`]: {
+      color: theme.white,
+    },
+  },
+
+  success__light: {
+    backgroundColor: theme.fn.variant({ variant: 'success', color: variant }).light,
+    color: theme.fn.variant({ variant: 'success', color: variant }).dark,
+  },
+  success__outline: {
+    backgroundColor: theme.white,
+    color: theme.fn.variant({ variant: 'success', color: variant }).dark,
+    borderColor: theme.fn.variant({ variant: 'success', color: variant }).dark,
+  },
+
+  danger__filled: {
+    backgroundColor: theme.fn.variant({ variant: 'danger', color: variant }).dark,
+    color: theme.white,
+    [`& .${getRef('closeButton')}`]: {
+      color: theme.white,
+    },
+  },
+
+  danger__light: {
+    backgroundColor: theme.fn.variant({ variant: 'danger', color: variant }).light,
+    color: theme.fn.variant({ variant: 'danger', color: variant }).dark,
+  },
+  danger__outline: {
+    backgroundColor: theme.white,
+    color: theme.fn.variant({ variant: 'danger', color: variant }).dark,
+    borderColor: theme.fn.variant({ variant: 'danger', color: variant }).dark,
   },
 
   icon: {
@@ -78,18 +134,22 @@ export default createStyles((theme, { color, radius, variant }: AlertStylesParam
     textOverflow: 'ellipsis',
     overflow: 'hidden',
     fontSize: theme.fontSizes.sm,
-    color:
-      variant === 'filled'
-        ? theme.white
-        : theme.colorScheme === 'dark'
-          ? variant === 'light'
-            ? theme.white
-            : theme.colors.dark[0]
-          : theme.black,
   },
 
   closeButton: {
     ref: getRef('closeButton'),
     marginTop: 2,
+    color: theme.fn.variant({ variant, color: variant }).dark,
+  },
+
+  titlewrapper: {
+    display: 'flex',
+    alignItems: 'center',
+  },
+
+  header: {
+    display: 'flex',
+    justifyContent: 'space-between',
+    marginBottom: 6,
   },
 }));

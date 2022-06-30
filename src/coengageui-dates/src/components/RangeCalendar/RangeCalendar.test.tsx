@@ -4,7 +4,7 @@ import { RangeCalendar, RangeCalendarProps } from './RangeCalendar';
 const defaultProps: RangeCalendarProps = {
   month: new Date(),
   value: [new Date(), new Date()] as [Date, Date],
-  onChange: () => { },
+  onChange: () => {},
 };
 
 describe('@coengageui/dates/RangeCalendar', () => {

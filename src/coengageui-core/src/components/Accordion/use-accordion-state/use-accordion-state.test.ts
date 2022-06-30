@@ -6,7 +6,7 @@ const defaultProps = {
   total: 3,
   initialItem: null,
   state: null,
-  onChange: () => { },
+  onChange: () => {},
   multiple: false,
 };
 

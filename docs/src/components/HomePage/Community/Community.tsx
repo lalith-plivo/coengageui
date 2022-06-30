@@ -19,9 +19,9 @@ export function Community() {
             </Title>
 
             <Text sx={{ maxWidth: 600 }} className={classes.description}>
-              CoengageUI has a very friendly community, we are always open to new ideas and feedback.
-              Join us on Discord or GitHub Discussions to get any kind of help or on Twitter to get
-              notified about releases.
+              CoengageUI has a very friendly community, we are always open to new ideas and
+              feedback. Join us on Discord or GitHub Discussions to get any kind of help or on
+              Twitter to get notified about releases.
             </Text>
 
             <Group mt={30}>

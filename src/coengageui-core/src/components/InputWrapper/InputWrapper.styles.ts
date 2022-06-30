@@ -31,8 +31,9 @@ export default createStyles((theme, { size }: InputWrapperStylesParams) => ({
     marginTop: -3,
     marginBottom: 7,
     wordBreak: 'break-word',
-    color: `${theme.colorScheme === 'dark' ? theme.colors.dark[2] : theme.colors.gray[6]
-      } !important`,
+    color: `${
+      theme.colorScheme === 'dark' ? theme.colors.dark[2] : theme.colors.gray[6]
+    } !important`,
     fontSize: theme.fn.size({ size, sizes: theme.fontSizes }) - 2,
     lineHeight: 1.2,
   },

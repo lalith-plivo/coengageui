@@ -10,5 +10,7 @@ export interface DefaultProps<T extends string = never> extends CoengageUIStyleS
   style?: CSSProperties;
   sx?: Sx | (Sx | undefined)[];
   classNames?: Partial<Record<T, string>>;
-  styles?: Partial<Record<T, CSSObject>> | ((theme: CoengageUITheme) => Partial<Record<T, CSSObject>>);
+  styles?:
+    | Partial<Record<T, CSSObject>>
+    | ((theme: CoengageUITheme) => Partial<Record<T, CSSObject>>);
 }

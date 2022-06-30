@@ -54,7 +54,9 @@ function Guide({ dependencies, initScript, children, action, actionLink, withDon
         With yarn
       </Text>
 
-      <Prism language="bash">{`yarn add ${dependencies || '@coengageui/core @coengageui/hooks'}`}</Prism>
+      <Prism language="bash">{`yarn add ${
+        dependencies || '@coengageui/core @coengageui/hooks'
+      }`}</Prism>
 
       <Text mb={5} mt={15} size="sm">
         With npm

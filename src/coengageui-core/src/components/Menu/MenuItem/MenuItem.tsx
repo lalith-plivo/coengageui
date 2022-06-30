@@ -1,5 +1,10 @@
 import React, { forwardRef, useRef } from 'react';
-import { Selectors, PolymorphicComponentProps, DefaultProps, CoengageUIColor } from '@coengageui/styles';
+import {
+  Selectors,
+  PolymorphicComponentProps,
+  DefaultProps,
+  CoengageUIColor,
+} from '@coengageui/styles';
 import { mergeRefs } from '@coengageui/hooks';
 import { Box } from '../../Box';
 import { useMenuContext } from '../Menu.context';
@@ -27,7 +32,7 @@ export interface SharedMenuItemProps extends DefaultProps {
 
 interface _MenuItemProps
   extends SharedMenuItemProps,
-  Omit<React.ComponentPropsWithoutRef<'button'>, keyof SharedMenuItemProps> {
+    Omit<React.ComponentPropsWithoutRef<'button'>, keyof SharedMenuItemProps> {
   component: any;
 }
 
