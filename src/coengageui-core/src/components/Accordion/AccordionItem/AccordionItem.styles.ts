@@ -37,13 +37,15 @@ export default createStyles(
       flex: 1,
       overflow: 'hidden',
       textOverflow: 'ellipsis',
+      fontSize: theme.fontSizes.sm,
     },
 
     item: {
-      color: theme.colorScheme === 'dark' ? theme.colors.dark[0] : theme.black,
-      borderBottom: `1px solid ${
-        theme.colorScheme === 'dark' ? theme.colors.dark[4] : theme.colors.gray[3]
-      }`,
+      color: theme.colorScheme === 'dark' ? theme.black : theme.black,
+      // borderBottom: `1px solid ${theme.colorScheme === 'dark' ? theme.colors.dark[4] : theme.colors.gray[3]
+      //   }`,
+      boxShadow: theme.shadows.sm,
+      marginBottom: 8,
     },
 
     itemOpened: {
@@ -67,15 +69,16 @@ export default createStyles(
       display: 'flex',
       alignItems: 'center',
       flexDirection: iconPosition === 'right' ? 'row-reverse' : 'row',
-      padding: `${theme.spacing.md}px ${theme.spacing.md / 2}px`,
+      padding: '20px',
       paddingLeft: iconPosition === 'right' ? theme.spacing.sm + 4 : null,
       fontWeight: 500,
       textAlign: 'left',
-      color: theme.colorScheme === 'dark' ? theme.colors.dark[0] : theme.black,
+      color: theme.colorScheme === 'dark' ? theme.black : theme.black,
 
-      ...theme.fn.hover({
-        backgroundColor: theme.colorScheme === 'dark' ? theme.colors.dark[5] : theme.colors.gray[0],
-      }),
+      // ...theme.fn.hover({
+      //   backgroundColor: theme.colorScheme === 'dark' ? theme.colors.dark[5] : theme.colors.gray[0],
+      // }),
+      backgroundColor: theme.colors.info[0],
     },
 
     content: {

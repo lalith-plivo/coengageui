@@ -23,7 +23,7 @@ export default createStyles((theme, { size, rightSectionWidth }: PasswordInputSt
     display: 'block',
     width: `calc(100% - ${rightSectionWidth}px)`,
     paddingLeft: theme.fn.size({ size, sizes: INPUT_SIZES }) / 3,
-    fontSize: theme.fn.size({ size, sizes: theme.fontSizes }),
+    fontSize: theme.fn.size({ size: 'sm', sizes: theme.fontSizes }),
     height: theme.fn.size({ size, sizes: INPUT_SIZES }) - 2,
     lineHeight: `${theme.fn.size({ size, sizes: INPUT_SIZES }) - 2}px`,
     color: theme.colorScheme === 'dark' ? theme.colors.dark[0] : theme.black,

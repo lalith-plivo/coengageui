@@ -51,7 +51,7 @@ export const Radio = forwardRef<HTMLInputElement, RadioProps>((props: RadioProps
     style,
     id,
     label,
-    size,
+    size = 'md',
     title,
     disabled,
     color,

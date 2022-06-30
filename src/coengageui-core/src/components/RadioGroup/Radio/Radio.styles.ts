@@ -9,7 +9,7 @@ export interface RadioStylesParams {
 export const sizes = {
   xs: 12,
   sm: 16,
-  md: 20,
+  md: 18,
   lg: 24,
   xl: 36,
 };

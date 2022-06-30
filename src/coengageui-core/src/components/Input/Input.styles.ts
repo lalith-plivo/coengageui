@@ -66,7 +66,7 @@ export default createStyles(
               appearance: 'none',
               resize: 'none',
               boxSizing: 'border-box',
-              fontSize: theme.fn.size({ size, sizes: theme.fontSizes }),
+              fontSize: theme.fn.size({ size: 'sm', sizes: theme.fontSizes }),
               width: '100%',
               color: theme.colorScheme === 'dark' ? theme.black : theme.black,
               display: 'block',

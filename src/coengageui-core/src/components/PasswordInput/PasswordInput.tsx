@@ -45,7 +45,7 @@ const iconSizes = {
 const rightSectionSizes = {
   xs: 28,
   sm: 34,
-  md: 34,
+  md: 54,
   lg: 44,
   xl: 54,
 };

@@ -41,7 +41,7 @@ export interface TextInputProps
 
 const defaultProps: Partial<TextInputProps> = {
   type: 'text',
-  size: 'sm',
+  size: 'md',
   __staticSelector: 'TextInput',
 };
 
