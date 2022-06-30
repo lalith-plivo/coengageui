@@ -14,7 +14,7 @@ export default createStyles((theme, { radius }: DefaultActionStylesParams) => ({
   },
 
   actionHovered: {
-    backgroundColor: theme.colorScheme === 'dark' ? theme.colors.info[1] : theme.colors.info[1],
+    backgroundColor: theme.colorScheme === 'dark' ? theme.colors.info[0] : theme.colors.info[0],
   },
 
   actionIcon: {
