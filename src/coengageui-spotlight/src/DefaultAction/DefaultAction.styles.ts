@@ -18,7 +18,7 @@ export default createStyles((theme, { radius }: DefaultActionStylesParams) => ({
   },
 
   actionIcon: {
-    color: theme.colorScheme === 'dark' ? theme.dark : theme.dark,
+    color: theme.colorScheme === 'dark' ? theme.typograhy_dark : theme.typograhy_dark,
   },
 
   actionBody: {
