@@ -1,8 +1,8 @@
 import React from 'react';
 import { MDXProvider } from '@mdx-js/react';
-import { Code, Text } from '@mantine/core';
-import { Prism } from '@mantine/prism';
-import { Demo } from '@mantine/demos';
+import { Code, Text } from '@coengageui/core';
+import { Prism } from '@coengageui/prism';
+import { Demo } from '@coengageui/demos';
 import GatsbyLink from './GatsbyLink/GatsbyLink';
 import DataTable from './DataTable/DataTable';
 import MdxTitle from './MdxTitle/MdxTitle';
@@ -21,10 +21,10 @@ export const components = {
   h6: h(6),
   inlineCode: (props: any) => <Code {...props} />,
   a: ({ href, children }: { href: string; children: string }) => {
-    const replaced = href.replace('https://mantine.dev', '');
+    const replaced = href.replace('https://coengage.dev', '');
 
     if (!replaced.startsWith('http') && replaced.trim().length > 0) {
-      return <GatsbyLink to={href.replace('https://mantine.dev', '')}>{children}</GatsbyLink>;
+      return <GatsbyLink to={href.replace('https://coengage.dev', '')}>{children}</GatsbyLink>;
     }
 
     return (

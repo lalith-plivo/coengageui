@@ -1,14 +1,14 @@
 ---
-group: 'mantine-hooks'
-package: '@mantine/hooks'
+group: 'coengageui-hooks'
+package: '@coengageui/hooks'
 title: 'use-window-event'
 category: 'utils'
 order: 1
 slug: /hooks/use-window-event/
 description: 'Adds event listener to window on component mount and removes it on unmount'
-import: "import { useWindowEvent } from '@mantine/hooks';"
+import: "import { useWindowEvent } from '@coengageui/hooks';"
 docs: 'hooks/use-window-event.mdx'
-source: 'mantine-hooks/src/use-window-event/use-window-event.ts'
+source: 'coengageui-hooks/src/use-window-event/use-window-event.ts'
 ---
 
 ## Usage
@@ -17,7 +17,7 @@ use-window-event adds event listener to `window` object on component mount and r
 
 ```tsx
 import { useEffect } from 'react';
-import { useWindowEvent } from '@mantine/hooks';
+import { useWindowEvent } from '@coengageui/hooks';
 
 const handler = (event) => console.log(event);
 
@@ -33,11 +33,11 @@ useWindowEvent('keydown', handler);
 
 ## Example
 
-Search focus with `⌘ + K` on mac or `Ctrl + K` on windows and linux on Mantine docs website:
+Search focus with `⌘ + K` on mac or `Ctrl + K` on windows and linux on CoengageUI docs website:
 
 ```tsx
 import { useRef } from 'react';
-import { useWindowEvent } from '@mantine/hooks';
+import { useWindowEvent } from '@coengageui/hooks';
 
 function Demo() {
   const inputRef = useRef<HTMLInputElement>();

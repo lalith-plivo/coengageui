@@ -1,5 +1,5 @@
 import React from 'react';
-import { Image, createStyles } from '@mantine/core';
+import { Image, createStyles } from '@coengageui/core';
 import image from './dark-theme-image.png';
 
 const useStyles = createStyles((theme) => ({
@@ -11,6 +11,6 @@ const useStyles = createStyles((theme) => ({
 export function DarkThemeDemo() {
   const { classes } = useStyles();
   return (
-    <Image src={image as any} radius="md" className={classes.image} alt="Mantine dark theme" />
+    <Image src={image as any} radius="md" className={classes.image} alt="CoengageUI dark theme" />
   );
 }

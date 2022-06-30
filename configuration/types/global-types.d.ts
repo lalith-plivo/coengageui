@@ -1,4 +1,4 @@
-type MantineDemoControlType =
+type CoengageUIDemoControlType =
   | 'boolean'
   | 'color'
   | 'select'
@@ -7,8 +7,8 @@ type MantineDemoControlType =
   | 'number'
   | 'segmented';
 
-interface MantineDemoControlProps {
-  type: MantineDemoControlType;
+interface CoengageUIDemoControlProps {
+  type: CoengageUIDemoControlType;
   name: string;
   label?: string;
   initialValue?: any;
@@ -20,14 +20,14 @@ interface MantineDemoControlProps {
   step?: number;
 }
 
-interface MantineDemoBase {
+interface CoengageUIDemoBase {
   component?: React.FC;
   wrapper?: React.FC;
   code?: string;
   background?: (colorScheme: 'light' | 'dark') => string;
 }
 
-interface MantineCodeDemo extends MantineDemoBase {
+interface CoengageUICodeDemo extends CoengageUIDemoBase {
   type: 'demo';
   demoProps?: {
     spacing?: boolean;
@@ -38,10 +38,10 @@ interface MantineCodeDemo extends MantineDemoBase {
   };
 }
 
-interface MantineConfiguratorDemo extends MantineDemoBase {
+interface CoengageUIConfiguratorDemo extends CoengageUIDemoBase {
   type: 'configurator';
   codeTemplate(props: string, children?: string): string;
-  configurator?: MantineDemoControlProps[];
+  configurator?: CoengageUIDemoControlProps[];
   configuratorProps?: {
     previewBackground?: string;
     multiline?: boolean | number;
@@ -51,4 +51,4 @@ interface MantineConfiguratorDemo extends MantineDemoBase {
   };
 }
 
-type MantineDemo = MantineCodeDemo | MantineConfiguratorDemo;
+type CoengageUIDemo = CoengageUICodeDemo | CoengageUIConfiguratorDemo;

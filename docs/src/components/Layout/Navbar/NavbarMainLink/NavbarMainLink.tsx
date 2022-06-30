@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'gatsby';
-import { ThemeIcon, useMantineTheme } from '@mantine/core';
+import { ThemeIcon, useCoengageUITheme } from '@coengageui/core';
 import useStyles from './NavbarMainLink.styles';
 
 interface NavbarMainLinkProps {
@@ -21,7 +21,7 @@ export default function NavbarMainLink({
   onClick,
 }: NavbarMainLinkProps) {
   const { classes, cx } = useStyles();
-  const theme = useMantineTheme();
+  const theme = useCoengageUITheme();
 
   return (
     <Link

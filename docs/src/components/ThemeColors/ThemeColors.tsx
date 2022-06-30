@@ -1,9 +1,9 @@
 import React from 'react';
-import { useMantineTheme } from '@mantine/core';
+import { useCoengageUITheme } from '@coengageui/core';
 import { ColorsGroup } from './ColorsGroup';
 
 export function ThemeColors() {
-  const theme = useMantineTheme();
+  const theme = useCoengageUITheme();
   const swatches = Object.keys(theme.colors).map((group) => (
     <ColorsGroup group={group} key={group} />
   ));

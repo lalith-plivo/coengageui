@@ -1,20 +1,20 @@
 import React from 'react';
-import { Prism } from '@mantine/prism';
+import { Prism } from '@coengageui/prism';
 import {
   Group,
   Button,
   Badge,
-  MantineProvider,
-  useMantineTheme,
+  CoengageUIProvider,
+  useCoengageUITheme,
   createStyles,
-} from '@mantine/core';
+} from '@coengageui/core';
 
 const code = `
-import { Badge, Button, MantineProvider } from '@mantine/core';
+import { Badge, Button, CoengageUIProvider } from '@coengageui/core';
 
 function Demo() {
   return (
-    <MantineProvider theme={{
+    <CoengageUIProvider theme={{
       fontFamily: 'Greycliff CF, sans-serif',
       colors: {
         'ocean-blue': ['#7AD1DD', '#5FCCDB', '#44CADC', '#2AC9DE', '#1AC2D9', '#11B7CD', '#09ADC3', '#0E99AC', '#128797', '#147885'],
@@ -23,7 +23,7 @@ function Demo() {
     }}>
       <Button color="ocean-blue">Ocean blue button</Button>
       <Badge color="bright-pink" variant="filled">Bright pink badge</Badge>
-    </MantineProvider>
+    </CoengageUIProvider>
   );
 }
 `;
@@ -31,20 +31,19 @@ function Demo() {
 const useStyles = createStyles((theme) => ({
   prism: {
     '& pre': {
-      backgroundColor: `${
-        theme.colorScheme === 'dark' ? theme.colors.dark[8] : theme.white
-      } !important`,
+      backgroundColor: `${theme.colorScheme === 'dark' ? theme.colors.dark[8] : theme.white
+        } !important`,
       borderRadius: theme.radius.md,
       padding: 14,
       paddingTop: 30,
       paddingBottom: 30,
     },
 
-    '& .mantine-ScrollArea-viewport': {
+    '& .coengageui-ScrollArea-viewport': {
       borderRadius: theme.radius.md,
     },
 
-    '& .mantine-ScrollArea-root': {
+    '& .coengageui-ScrollArea-root': {
       marginTop: theme.spacing.xl,
       borderRadius: theme.radius.md,
       boxShadow: theme.shadows.md,
@@ -53,12 +52,12 @@ const useStyles = createStyles((theme) => ({
 }));
 
 export function ThemingDemo() {
-  const theme = useMantineTheme();
+  const theme = useCoengageUITheme();
   const { classes } = useStyles();
 
   return (
     <>
-      <MantineProvider
+      <CoengageUIProvider
         theme={{
           colorScheme: theme.colorScheme,
           fontFamily: 'Greycliff CF, sans-serif',
@@ -96,7 +95,7 @@ export function ThemingDemo() {
             Bright pink badge
           </Badge>
         </Group>
-      </MantineProvider>
+      </CoengageUIProvider>
 
       <Prism noCopy language="tsx" className={classes.prism}>
         {code}

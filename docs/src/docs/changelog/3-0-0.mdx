@@ -3,7 +3,7 @@ group: 'changelog'
 title: 'Version 3.0.0'
 order: 1
 slug: /changelog/3-0-0/
-release: https://github.com/mantinedev/mantine/releases/tag/3.0.0
+release: https://github.com/coengagedev/coengage/releases/tag/3.0.0
 date: 'October 11th, 2021'
 ---
 
@@ -16,36 +16,36 @@ import {
   DropzoneDemos,
   HooksDemos,
   CreateStylesDemos,
-} from '@mantine/demos';
+} from '@coengageui/demos';
 
 ## Breaking changes
 
-- Mantine was migrated to [emotion](https://emotion.sh/) from react-jss and no longer supports react-jss
-- `@mantine/core` package no longer exports react-jss `theming` context, use [createStyles](https://mantine.dev/theming/create-styles/) instead
+- CoengageUI was migrated to [emotion](https://emotion.sh/) from react-jss and no longer supports react-jss
+- `@coengageui/core` package no longer exports react-jss `theming` context, use [createStyles](https://coengage.dev/theming/create-styles/) instead
 - All components no longer support `themeOverride` prop due to performance reasons
 - `elementRef` prop was replaced with `ref` in all components
 - Default line-height (`theme.lineHeight`) was increased from 1.4 to 1.55
-- Default [Container](https://mantine.dev/core/container/) sizes were changed
-- [Divider](https://mantine.dev/core/divider/) component no longer supports `margins` prop, use `mx` or `my` instead
+- Default [Container](https://coengage.dev/core/container/) sizes were changed
+- [Divider](https://coengage.dev/core/divider/) component no longer supports `margins` prop, use `mx` or `my` instead
 - `createStyles` function now returns an object of `{ classes, cx }` instead of just `classes`
 
 ## Migration to emotion
 
-Mantine no longer uses react-jss, all components were migrated to [emotion](https://emotion.sh/) based css-in-js library
-exposed as separate `@mantine/styles` package and as a part of `@mantine/core`. This means that you will have to:
+CoengageUI no longer uses react-jss, all components were migrated to [emotion](https://emotion.sh/) based css-in-js library
+exposed as separate `@coengageui/styles` package and as a part of `@coengageui/core`. This means that you will have to:
 
 - migrate all of your custom styles built with react-jss to new `createStyles` hook creator
 - setup new strategy for server side rendering
 
 ### createStyles
 
-[Read createStyles documentation](https://mantine.dev/theming/create-styles/)
+[Read createStyles documentation](https://coengage.dev/theming/create-styles/)
 
-From version 3.0 [createStyles](https://mantine.dev/theming/create-styles/) is the main way to add styles to Mantine components. Core features:
+From version 3.0 [createStyles](https://coengage.dev/theming/create-styles/) is the main way to add styles to CoengageUI components. Core features:
 
 - API is similar to react-jss
 - As fast and lightweight as emotion: `createStyles` extends [@emotion/react](https://emotion.sh/docs/@emotion/react)
-- Subscribes to your Mantine theming context
+- Subscribes to your CoengageUI theming context
 - Supports all emotion features: automatic critical css extraction during server side rendering, lazy evaluation, dynamic theming, etc.
 - Server side rendering support: Next.js, Gatsby or any other environment
 - Fully featured TypeScript support
@@ -56,18 +56,18 @@ Basic `createStyles` usage example:
 
 ### Server side rendering
 
-Since Mantine now uses emotion instead of react-jss you will need to change server side rendering strategy.
-Mantine now has 3 new packages to help you setup server side rendering:
+Since CoengageUI now uses emotion instead of react-jss you will need to change server side rendering strategy.
+CoengageUI now has 3 new packages to help you setup server side rendering:
 
-- `@mantine/ssr` – general server side rendering utilities
-- `@mantine/next` – Next.js specific ssr configurations
-- `gatsby-plugin-mantine` – enable ssr in Gatsby
+- `@coengageui/ssr` – general server side rendering utilities
+- `@coengageui/next` – Next.js specific ssr configurations
+- `gatsby-plugin-coengage` – enable ssr in Gatsby
 
 Follow these guides to get started with ssr:
 
-- [SSR with Next.js](https://mantine.dev/theming/next/)
-- [SSR with Gatsby.js](https://mantine.dev/theming/gatsby/)
-- [General approach to SSR](https://mantine.dev/theming/ssr/)
+- [SSR with Next.js](https://coengage.dev/theming/next/)
+- [SSR with Gatsby.js](https://coengage.dev/theming/gatsby/)
+- [General approach to SSR](https://coengage.dev/theming/ssr/)
 
 ## Ref forwarding
 
@@ -79,8 +79,8 @@ All components that previously used `elementRef` were rebuilt with `React.forwar
 
 ## Unique ids during ssr
 
-It's no longer required to set static ids on [Grid](https://mantine.dev/core/grid/), [Menu](https://mantine.dev/core/menu/), all inputs and some other components
-if you wrap your application in MantineProvider.
+It's no longer required to set static ids on [Grid](https://coengage.dev/core/grid/), [Menu](https://coengage.dev/core/menu/), all inputs and some other components
+if you wrap your application in CoengageUIProvider.
 
 ```tsx
 <TextInput /> // -> will render fine during ssr
@@ -89,10 +89,10 @@ if you wrap your application in MantineProvider.
 
 ## ColorSchemeProvider
 
-`ColorSchemeProvider` is a new component that will help you manage color scheme ([read full docs](https://mantine.dev/theming/dark-theme/)):
+`ColorSchemeProvider` is a new component that will help you manage color scheme ([read full docs](https://coengage.dev/theming/dark-theme/)):
 
 ```tsx
-import { MantineProvider, ColorSchemeProvider, ColorScheme } from '@mantine/core';
+import { CoengageUIProvider, ColorSchemeProvider, ColorScheme } from '@coengageui/core';
 
 export default function Demo() {
   const [colorScheme, setColorScheme] = useState('light');
@@ -101,19 +101,19 @@ export default function Demo() {
 
   return (
     <ColorSchemeProvider colorScheme={colorScheme} toggleColorScheme={toggleColorScheme}>
-      <MantineProvider theme={{ colorScheme }}>
+      <CoengageUIProvider theme={{ colorScheme }}>
         <App />
-      </MantineProvider>
+      </CoengageUIProvider>
     </ColorSchemeProvider>
   );
 }
 
 // ...later in other component
-import { ActionIcon, useMantineColorScheme } from '@mantine/core';
+import { ActionIcon, useCoengageUIColorScheme } from '@coengageui/core';
 import { SunIcon, MoonIcon } from '@modulz/radix-icons';
 
 function Demo() {
-  const { colorScheme, toggleColorScheme } = useMantineColorScheme();
+  const { colorScheme, toggleColorScheme } = useCoengageUIColorScheme();
   const dark = colorScheme === 'dark';
 
   return (
@@ -146,7 +146,7 @@ All components now support setting following props to control margins:
 - `mr` – sets `margin-right` property on root element
 
 ```tsx
-import { Button, TextInput } from '@mantine/core';
+import { Button, TextInput } from '@coengageui/core';
 
 function Demo() {
   return (
@@ -158,9 +158,9 @@ function Demo() {
 }
 ```
 
-## @mantine/dropzone package
+## @coengageui/dropzone package
 
-[@mantine/dropzone](https://mantine.dev/others/dropzone/) is a new package that includes Dropzone and FullScreenDropzone components.
+[@coengageui/dropzone](https://coengage.dev/others/dropzone/) is a new package that includes Dropzone and FullScreenDropzone components.
 
 Dropzone components lets you capture files from user with drag 'n' drop:
 
@@ -173,13 +173,13 @@ uses browser window as dropzone:
 
 ## New components
 
-[MediaQuery](https://mantine.dev/core/media-query/) component provides a simple API to manage breakpoints in jsx:
+[MediaQuery](https://coengage.dev/core/media-query/) component provides a simple API to manage breakpoints in jsx:
 
 <Demo data={MediaQueryDemos.usage} />
 
 ## New features
 
-[Select](https://mantine.dev/core/select/) and [MultiSelect](https://mantine.dev/core/multi-select/) components now support creating new items, items grouping and disabling:
+[Select](https://coengage.dev/core/select/) and [MultiSelect](https://coengage.dev/core/multi-select/) components now support creating new items, items grouping and disabling:
 
 <Demo data={MultiSelectDemos.creatable} demoProps={{ toggle: true, zIndex: 6 }} />
 
@@ -187,41 +187,41 @@ uses browser window as dropzone:
 
 <Demo data={MultiSelectDemos.groups} demoProps={{ toggle: true, zIndex: 4 }} />
 
-[Accordion](https://mantine.dev/core/accordion/) component now supports more options to customize icons and labels:
+[Accordion](https://coengage.dev/core/accordion/) component now supports more options to customize icons and labels:
 
 - `iconPosition` prop let's you choose where chevron icon will be rendered: right or left
 - with `icon` prop on Accordion and Accordion.Item components you can replace icons of all items at once or of each item individually
 
 <Demo data={AccordionDemos.label} demoProps={{ toggle: true }} />
 
-[Avatar](https://mantine.dev/core/avatar/) component now supports stacking with [AvatarsGroup](https://mantine.dev/core/avatar/#avatars-group):
+[Avatar](https://coengage.dev/core/avatar/) component now supports stacking with [AvatarsGroup](https://coengage.dev/core/avatar/#avatars-group):
 
 <Demo data={AvatarDemos.avatarsGroup} demoProps={{ toggle: true }} />
 
 ## New hooks
 
-[use-resize-observer](https://mantine.dev/hooks/use-resize-observer/) lets you subscribe to element size and position changes with [ResizeObserver](https://developer.mozilla.org/en-US/docs/Web/API/ResizeObserver):
+[use-resize-observer](https://coengage.dev/hooks/use-resize-observer/) lets you subscribe to element size and position changes with [ResizeObserver](https://developer.mozilla.org/en-US/docs/Web/API/ResizeObserver):
 
 <Demo data={HooksDemos.useResizeObserverDemo} demoProps={{ toggle: true }} />
 
-[use-viewport-size](https://mantine.dev/hooks/use-viewport-size/) hook returns viewport width and height:
+[use-viewport-size](https://coengage.dev/hooks/use-viewport-size/) hook returns viewport width and height:
 
 <Demo data={HooksDemos.useViewportSizeDemo} demoProps={{ toggle: true }} />
 
-[use-mouse](https://mantine.dev/hooks/use-mouse/) hook tracks mouse position over given element:
+[use-mouse](https://coengage.dev/hooks/use-mouse/) hook tracks mouse position over given element:
 
 <Demo data={HooksDemos.useMouseRef} demoProps={{ toggle: true }} />
 
-[use-hover](https://mantine.dev/hooks/use-hover/) hook detects if mouse is over given element:
+[use-hover](https://coengage.dev/hooks/use-hover/) hook detects if mouse is over given element:
 
 <Demo data={HooksDemos.useHoverDemo} demoProps={{ toggle: true }} />
 
 ## Other changes
 
-- [ActionIcon](https://mantine.dev/core/action-icon/) and [Button](https://mantine.dev/core/button/) components now support new `default` variant
-- [Pagination](https://mantine.dev/core/pagination/) component now supports adding first and last controls and removing next/prev buttons
-- [SimpleGrid](https://mantine.dev/core/simple-grid/) component now supports `theme.breakpoints` usage in `breakpoints` prop
-- [SimpleGrid](https://mantine.dev/core/simple-grid/) was migrated to use CSS Grid Layout instead of flexbox
-- [Group](https://mantine.dev/core/group/) component no longer supports Styles API, you can add styles directly to element and children instead
-- New [Space](https://mantine.dev/core/space/) component lets you add spacing between elements without directly subscribing to theme
-- [Overlay](https://mantine.dev/core/overlay/) and [LoadingOverlay](https://mantine.dev/core/loading-overlay/) components now support `radius` prop
+- [ActionIcon](https://coengage.dev/core/action-icon/) and [Button](https://coengage.dev/core/button/) components now support new `default` variant
+- [Pagination](https://coengage.dev/core/pagination/) component now supports adding first and last controls and removing next/prev buttons
+- [SimpleGrid](https://coengage.dev/core/simple-grid/) component now supports `theme.breakpoints` usage in `breakpoints` prop
+- [SimpleGrid](https://coengage.dev/core/simple-grid/) was migrated to use CSS Grid Layout instead of flexbox
+- [Group](https://coengage.dev/core/group/) component no longer supports Styles API, you can add styles directly to element and children instead
+- New [Space](https://coengage.dev/core/space/) component lets you add spacing between elements without directly subscribing to theme
+- [Overlay](https://coengage.dev/core/overlay/) and [LoadingOverlay](https://coengage.dev/core/loading-overlay/) components now support `radius` prop

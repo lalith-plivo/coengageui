@@ -1,5 +1,5 @@
 import { RocketIcon, GitHubLogoIcon, /* BlendingModeIcon, */ StarIcon } from '@modulz/radix-icons';
-import { DEFAULT_THEME } from '@mantine/core';
+import { DEFAULT_THEME } from '@coengageui/core';
 
 export default [
   {

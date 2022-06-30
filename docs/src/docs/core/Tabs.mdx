@@ -1,19 +1,19 @@
 ---
-group: 'mantine-core'
-package: '@mantine/core'
+group: 'coengageui-core'
+package: '@coengageui/core'
 title: Tabs
 order: 1
 slug: /core/tabs/
 category: 'navigation'
 description: 'Switch between different views'
 props: ['Tabs']
-import: "import { Tabs } from '@mantine/core';"
-source: 'mantine-core/src/components/Tabs/Tabs.tsx'
+import: "import { Tabs } from '@coengageui/core';"
+source: 'coengageui-core/src/components/Tabs/Tabs.tsx'
 docs: 'core/Tabs.mdx'
 styles: ['Tabs']
 ---
 
-import { TabsDemos } from '@mantine/demos';
+import { TabsDemos } from '@coengageui/demos';
 
 ## Usage
 
@@ -23,7 +23,7 @@ import { TabsDemos } from '@mantine/demos';
 
 ```tsx
 import { useState } from 'react';
-import { Tabs } from '@mantine/core';
+import { Tabs } from '@coengageui/core';
 
 function Demo() {
   const [activeTab, setActiveTab] = useState(1);
@@ -42,7 +42,7 @@ function Demo() {
 
 ```tsx
 import { useState } from 'react';
-import { Tabs } from '@mantine/core';
+import { Tabs } from '@coengageui/core';
 
 function Demo() {
   const [activeTab, setActiveTab] = useState(1);
@@ -109,7 +109,7 @@ To remove all default styles set `variant` prop to `unstyled`:
 
 ```tsx
 import { useRef } from 'react';
-import { Tabs } from '@mantine/core';
+import { Tabs } from '@coengageui/core';
 
 function Demo() {
   const secondTabRef = useRef<HTMLButtonElement>();

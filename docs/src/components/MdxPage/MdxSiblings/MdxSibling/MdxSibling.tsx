@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'gatsby';
-import { Text } from '@mantine/core';
-import { upperFirst } from '@mantine/hooks';
+import { Text } from '@coengageui/core';
+import { upperFirst } from '@coengageui/hooks';
 import { ArrowLeftIcon, ArrowRightIcon } from '@modulz/radix-icons';
 import { Frontmatter } from '../../../../types';
 import useStyles from './MdxSibling.styles';

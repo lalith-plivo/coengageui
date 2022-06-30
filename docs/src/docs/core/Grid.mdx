@@ -1,19 +1,19 @@
 ---
-group: 'mantine-core'
-package: '@mantine/core'
+group: 'coengageui-core'
+package: '@coengageui/core'
 title: Grid
 order: 1
 slug: /core/grid/
 category: 'layout'
 description: 'Flexbox grid system with variable amount of columns'
 props: ['Grid']
-import: "import { Grid } from '@mantine/core';"
-source: 'mantine-core/src/components/Grid/Grid.tsx'
+import: "import { Grid } from '@coengageui/core';"
+source: 'coengageui-core/src/components/Grid/Grid.tsx'
 docs: 'core/Grid.mdx'
 styles: ['Grid', 'single-node']
 ---
 
-import { GridDemos } from '@mantine/demos';
+import { GridDemos } from '@coengageui/demos';
 
 ## Usage
 
@@ -58,7 +58,7 @@ Since grid is a flexbox container, you can control `justify-content` and `align-
 ## Responsive columns
 
 Use breakpoint props (`xs`, `sm`, `md`, `lg`, `xl`) to make columns respond to viewport changes.
-You can configure breakpoint values in [MantineProvider](/theming/extend-theme/#breakpoints).
+You can configure breakpoint values in [CoengageUIProvider](/theming/extend-theme/#breakpoints).
 
 In this example up to `md` there will be 1 column, from `md` to `lg` there will be 2 columns and from `lg` and up, there will be 4 columns:
 

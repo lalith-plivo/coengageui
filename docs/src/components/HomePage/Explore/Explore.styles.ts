@@ -1,4 +1,4 @@
-import { createStyles } from '@mantine/core';
+import { createStyles } from '@coengageui/core';
 
 const BREAKPOINT = '@media (max-width: 960px)';
 

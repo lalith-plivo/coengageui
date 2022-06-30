@@ -1,5 +1,5 @@
 import React from 'react';
-import { Title } from '@mantine/core';
+import { Title } from '@coengageui/core';
 import useStyles from './MdxTitle.styles';
 
 export default function MdxTitle({

@@ -7,7 +7,7 @@ export function Logo() {
   const { classes } = useStyles();
 
   return (
-    <Link to="/" className={classes.logo} aria-label="Mantine">
+    <Link to="/" className={classes.logo} aria-label="CoengageUI">
       <LogoImage className={classes.image} />
     </Link>
   );

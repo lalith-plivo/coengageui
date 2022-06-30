@@ -6,7 +6,7 @@ export function Animations() {
   return (
     <Section
       title="Transitions API"
-      description="Animate presence with premade transition or build your own animation with simple API, all Mantine components support custom transitions"
+      description="Animate presence with premade transition or build your own animation with simple API, all CoengageUI components support custom transitions"
       link="/core/transition/"
       label="Learn more about Transition component"
     >

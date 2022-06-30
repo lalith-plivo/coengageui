@@ -1,5 +1,5 @@
 import React from 'react';
-import { Container, Title } from '@mantine/core';
+import { Container, Title } from '@coengageui/core';
 import Head from '../Head/Head';
 import { Footer } from '../Footer/Footer';
 import { Logos } from './Logos';
@@ -16,7 +16,7 @@ export function AssetsPage() {
       <div className={classes.wrapper}>
         <Container className={classes.container} size={1100}>
           <Title order={2} mb="md">
-            Mantine logo
+            CoengageUI logo
           </Title>
           <Logos />
 

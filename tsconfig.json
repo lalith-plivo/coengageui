@@ -1,8 +1,8 @@
 {
   "extends": "./tsconfig.base.json",
   "include": [
-    "src/mantine-*/src",
-    "src/mantine-*/demos",
+    "src/coengageui-*/src",
+    "src/coengageui-*/demos",
     "./types",
     "./docs/src",
     "./scripts",
@@ -16,14 +16,14 @@
     "configuration/jest",
     "configuration/storybook/main.js",
     "node_modules",
-    "src/mantine-*/esm/**/*",
-    "src/mantine-*/lib/**/*",
-    "src/mantine-*/cjs/**/*"
+    "src/coengageui-*/esm/**/*",
+    "src/coengageui-*/lib/**/*",
+    "src/coengageui-*/cjs/**/*"
   ],
   "compilerOptions": {
     "paths": {
-      "@mantine/*": ["src/mantine-*/src"],
-      "@demos/*": ["src/mantine-*/src/demos"]
+      "@coengageui/*": ["src/coengageui-*/src"],
+      "@demos/*": ["src/coengageui-*/src/demos"]
     }
   }
 }

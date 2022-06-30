@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'gatsby';
-import { Container, Group, Button, Text, useMantineTheme, SimpleGrid } from '@mantine/core';
+import { Container, Group, Button, Text, useCoengageUITheme, SimpleGrid } from '@coengageui/core';
 import { MarkGithubIcon } from '@primer/octicons-react';
 import { Hero } from './Hero';
 import { FEATURES_DATA } from './features';
@@ -8,7 +8,7 @@ import useStyles from './Jumbotron.styles';
 
 export function Jumbotron() {
   const { classes, cx } = useStyles();
-  const theme = useMantineTheme();
+  const theme = useCoengageUITheme();
 
   const features = FEATURES_DATA.map((feature) => (
     <div className={classes.feature} key={feature.title}>
@@ -33,7 +33,7 @@ export function Jumbotron() {
         <Hero />
 
         <Text className={classes.description}>
-          Build fully functional accessible web applications faster than ever – Mantine includes
+          Build fully functional accessible web applications faster than ever – CoengageUI includes
           more than 120 customizable components and hooks to cover you in any situation
         </Text>
 
@@ -61,7 +61,7 @@ export function Jumbotron() {
 
           <Button
             component="a"
-            href="https://github.com/mantinedev/mantine"
+            href="https://github.com/coengagedev/coengage"
             size="xl"
             variant="outline"
             radius="md"

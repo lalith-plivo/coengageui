@@ -1,12 +1,12 @@
 import React from 'react';
-import { Container, Group, Text, Title, useMantineTheme } from '@mantine/core';
+import { Container, Group, Text, Title, useCoengageUITheme } from '@coengageui/core';
 import { SocialButton } from '../../SocialButton/SocialButton';
 import { Blobs } from './Blobs';
 import useStyles from './Community.styles';
 
 export function Community() {
   const { classes } = useStyles();
-  const theme = useMantineTheme();
+  const theme = useCoengageUITheme();
 
   return (
     <div className={classes.wrapper}>
@@ -19,7 +19,7 @@ export function Community() {
             </Title>
 
             <Text sx={{ maxWidth: 600 }} className={classes.description}>
-              Mantine has a very friendly community, we are always open to new ideas and feedback.
+              CoengageUI has a very friendly community, we are always open to new ideas and feedback.
               Join us on Discord or GitHub Discussions to get any kind of help or on Twitter to get
               notified about releases.
             </Text>

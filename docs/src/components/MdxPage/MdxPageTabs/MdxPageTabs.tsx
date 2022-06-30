@@ -1,9 +1,9 @@
 import React, { useState } from 'react';
 import { useLocation } from '@reach/router';
 import { navigate } from 'gatsby';
-import { Tabs, Tab, Title, TextInput } from '@mantine/core';
+import { Tabs, Tab, Title, TextInput } from '@coengageui/core';
 import { MagnifyingGlassIcon } from '@modulz/radix-icons';
-import { useMediaQuery } from '@mantine/hooks';
+import { useMediaQuery } from '@coengageui/hooks';
 import { MDXRenderer } from 'gatsby-plugin-mdx';
 import { MdxSiblings } from '../MdxSiblings/MdxSiblings';
 import TableOfContents from '../TableOfContents/TableOfContents';
@@ -56,13 +56,13 @@ export function MdxPageTabs({ body, frontmatter, headings, siblings }: MdxPagePr
 
   const propsTables = hasProps
     ? frontmatter.props.map((component) => (
-        <div key={component}>
-          <Title order={2} sx={{ fontWeight: 600 }} mb={20}>
-            {component} component props
-          </Title>
-          <PropsTable key={component} component={component} query={query} />
-        </div>
-      ))
+      <div key={component}>
+        <Title order={2} sx={{ fontWeight: 600 }} mb={20}>
+          {component} component props
+        </Title>
+        <PropsTable key={component} component={component} query={query} />
+      </div>
+    ))
     : null;
 
   return (

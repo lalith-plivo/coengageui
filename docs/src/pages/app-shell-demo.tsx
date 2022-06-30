@@ -8,12 +8,12 @@ import {
   Text,
   MediaQuery,
   Burger,
-  useMantineTheme,
-} from '@mantine/core';
+  useCoengageUITheme,
+} from '@coengageui/core';
 import Head from '../components/Head/Head';
 
 export default function AppShellDemo() {
-  const theme = useMantineTheme();
+  const theme = useCoengageUITheme();
   const [opened, setOpened] = useState(false);
   return (
     <>

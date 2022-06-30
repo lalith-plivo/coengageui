@@ -1,19 +1,19 @@
 ---
-group: 'mantine-core'
-package: '@mantine/core'
+group: 'coengageui-core'
+package: '@coengageui/core'
 title: Pagination
 order: 1
 slug: /core/pagination/
 category: 'navigation'
 description: 'Display active page and navigate between multiple pages'
 props: ['Pagination']
-import: "import { Pagination } from '@mantine/core';"
-source: 'mantine-core/src/components/Pagination/Pagination.tsx'
+import: "import { Pagination } from '@coengageui/core';"
+source: 'coengageui-core/src/components/Pagination/Pagination.tsx'
 docs: 'core/Pagination.mdx'
 styles: ['Pagination']
 ---
 
-import { PaginationDemos } from '@mantine/demos';
+import { PaginationDemos } from '@coengageui/demos';
 
 ## Usage
 
@@ -25,7 +25,7 @@ To control component state provide `page` and `onChange` props:
 
 ```tsx
 import { useState } from 'react';
-import { Pagination } from '@mantine/core';
+import { Pagination } from '@coengageui/core';
 
 function Demo() {
   const [activePage, setPage] = useState(1);
@@ -77,5 +77,5 @@ The current active page will have the attribute `aria-current="page"`.
 
 ## use-pagination hook
 
-If you need more flexibility @mantine/hooks exports [use-pagination](/hooks/use-pagination/) hook,
+If you need more flexibility @coengageui/hooks exports [use-pagination](/hooks/use-pagination/) hook,
 you can use it to create your own pagination component.

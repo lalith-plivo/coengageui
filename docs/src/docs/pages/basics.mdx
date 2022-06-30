@@ -2,53 +2,53 @@
 title: Learn the basics
 ---
 
-import { SliderDemos, CreateStylesDemos } from '@mantine/demos';
+import { SliderDemos, CreateStylesDemos } from '@coengageui/demos';
 
 # Learn the basics
 
-This guide will help you get familiar with core Mantine concepts.
+This guide will help you get familiar with core CoengageUI concepts.
 Please read this guide and **theming** section before starting development
 to learn about all available theming features and components props.
 
 ## Getting help
 
-Mantine has a very friendly community, we are always happy to help you get started:
+CoengageUI has a very friendly community, we are always happy to help you get started:
 
 - [Join the Discord community](https://discord.gg/eUZpPbpxb4) – it is the easiest way to get help, all questions are usually answered in about 30 minutes.
-- [GitHub Discussions](https://github.com/mantinedev/mantine/discussions) – ask anything about the project or give feedback.
+- [GitHub Discussions](https://github.com/coengagedev/coengage/discussions) – ask anything about the project or give feedback.
 
 ## Using documentation
 
-Mantine documentation includes more than 150 pages, to use it efficiently remember 2 keyboard shortcuts:
+CoengageUI documentation includes more than 150 pages, to use it efficiently remember 2 keyboard shortcuts:
 
 - `⌘ + K` or `Ctrl + K` – focus search field, searching components and hooks is the best way to jump straight to the page you are looking for.
 - `⌘ + J` or `Ctrl + J` – toggle color scheme (light/dark). All components support both light and dark color schemes, using this shortcut is the easiest way to preview both color schemes.
 
-## Mantine packages
+## CoengageUI packages
 
-- `@mantine/hooks` – collection of 30+ react hooks for state and UI management.
-- `@mantine/styles` – [emotion](https://emotion.sh/) based css-in-js library that is used in all Mantine components. Usually this package is installed automatically and exported from `@mantine/core` – there is no need to install it separately, [learn more about createStyles here](/theming/create-styles/).
-- `@mantine/core` – core components library – 100+ components, exports everything from `@mantine/styles`.
-- `@mantine/notifications` – a fully featured [notifications system](/others/notifications/).
-- `@mantine/prism` – [code highlight](/others/prism/) built with [prism-react-renderer](https://github.com/FormidableLabs/prism-react-renderer).
-- `@mantine/rte` – a Quill based [rich text editor](/others/rte/).
-- `@mantine/dropzone` – manages [files drag 'n' drop](/others/dropzone/) of files to an area or the entire screen.
-- `@mantine/ssr` – [server side rendering](/theming/ssr/) utilities.
-- `@mantine/next` – components and ssr utils for [Next.js integration](/theming/next/).
-- `gatsby-plugin-mantine` – [Gatsby plugin](/theming/gatsby/) to setup ssr.
-- `@mantine/eslint-config` – ESLint and Prettier configuration that the Mantine project uses.
+- `@coengageui/hooks` – collection of 30+ react hooks for state and UI management.
+- `@coengageui/styles` – [emotion](https://emotion.sh/) based css-in-js library that is used in all CoengageUI components. Usually this package is installed automatically and exported from `@coengageui/core` – there is no need to install it separately, [learn more about createStyles here](/theming/create-styles/).
+- `@coengageui/core` – core components library – 100+ components, exports everything from `@coengageui/styles`.
+- `@coengageui/notifications` – a fully featured [notifications system](/others/notifications/).
+- `@coengageui/prism` – [code highlight](/others/prism/) built with [prism-react-renderer](https://github.com/FormidableLabs/prism-react-renderer).
+- `@coengageui/rte` – a Quill based [rich text editor](/others/rte/).
+- `@coengageui/dropzone` – manages [files drag 'n' drop](/others/dropzone/) of files to an area or the entire screen.
+- `@coengageui/ssr` – [server side rendering](/theming/ssr/) utilities.
+- `@coengageui/next` – components and ssr utils for [Next.js integration](/theming/next/).
+- `gatsby-plugin-coengage` – [Gatsby plugin](/theming/gatsby/) to setup ssr.
+- `@coengageui/eslint-config` – ESLint and Prettier configuration that the CoengageUI project uses.
 
 ## Theming
 
-Mantine theming supports changing colors, spacing, box-shadows, font families, font sizes and many other properties.
-To configure theme, wrap your app with a [MantineProvider](/theming/mantine-provider/) component:
+CoengageUI theming supports changing colors, spacing, box-shadows, font families, font sizes and many other properties.
+To configure theme, wrap your app with a [CoengageUIProvider](/theming/coengageui-provider/) component:
 
 ```tsx
-import { MantineProvider } from '@mantine/core';
+import { CoengageUIProvider } from '@coengageui/core';
 
 function App() {
   return (
-    <MantineProvider
+    <CoengageUIProvider
       theme={{
         // Override any other properties from default theme
         fontFamily: 'Open Sans, sans serif',
@@ -56,26 +56,26 @@ function App() {
       }}
     >
       <YourApp />
-    </MantineProvider>
+    </CoengageUIProvider>
   );
 }
 ```
 
-Learn more about [MantineProvider](/theming/mantine-provider/) and [extending theme](/theming/extend-theme/).
+Learn more about [CoengageUIProvider](/theming/coengageui-provider/) and [extending theme](/theming/extend-theme/).
 
 ## Dark color scheme
 
-All Mantine components support light and dark color scheme out of the box.
-You can edit the details of each color scheme via [MantineProvider](/theming/mantine-provider/):
+All CoengageUI components support light and dark color scheme out of the box.
+You can edit the details of each color scheme via [CoengageUIProvider](/theming/coengageui-provider/):
 
 ```tsx
-import { MantineProvider } from '@mantine/core';
+import { CoengageUIProvider } from '@coengageui/core';
 
 function App() {
   return (
-    <MantineProvider theme={{ colorScheme: 'dark' }}>
+    <CoengageUIProvider theme={{ colorScheme: 'dark' }}>
       <YourApp />
-    </MantineProvider>
+    </CoengageUIProvider>
   );
 }
 ```
@@ -86,7 +86,7 @@ To learn how to implement color scheme changes via context follow [dark theme gu
 
 ### createStyles
 
-Mantine is built with a css-in-js library based on [emotion](https://emotion.sh/).
+CoengageUI is built with a css-in-js library based on [emotion](https://emotion.sh/).
 You can use any other styling solution but we recommend working with [createStyles](/theming/create-styles/)
 to avoid styles collisions.
 
@@ -104,7 +104,7 @@ to avoid styles collisions.
 
 ### Shared props
 
-All Mantine components support these props:
+All CoengageUI components support these props:
 
 - `className` – adds class to root element.
 - `style` – adds style to root element.
@@ -126,7 +126,7 @@ All Mantine components support these props:
   - `pr` – sets `padding-right` property on root element
 
 ```tsx
-import { Button } from '@mantine/core';
+import { Button } from '@coengageui/core';
 
 function Demo() {
   return (
@@ -154,7 +154,7 @@ Same is applied to padding props:
 
 ### Color prop
 
-Mantine components work with colors defined in [theme.colors](/theming/extend-theme/#default-colors).
+CoengageUI components work with colors defined in [theme.colors](/theming/extend-theme/#default-colors).
 `theme.colors` is an object that contains an array of 10 shades per each color. To use predefined colors in components set `color` prop:
 
 ```tsx
@@ -165,11 +165,11 @@ Mantine components work with colors defined in [theme.colors](/theming/extend-th
 You can [extend theme](/theming/extend-theme/) with any amount of your colors:
 
 ```tsx
-import { MantineProvider } from '@mantine/core';
+import { CoengageUIProvider } from '@coengageui/core';
 
 function App() {
   return (
-    <MantineProvider
+    <CoengageUIProvider
       theme={{
         // Theme is deeply merged with default theme
         colors: {
@@ -181,7 +181,7 @@ function App() {
       }}
     >
       <YourApp />
-    </MantineProvider>
+    </CoengageUIProvider>
   );
 }
 ```
@@ -190,7 +190,7 @@ Note that component appearance usually depends on `variant` prop and current `th
 
 ### Sizes
 
-Most Mantine components support `size` prop with xs, sm, md, lg and xl values:
+Most CoengageUI components support `size` prop with xs, sm, md, lg and xl values:
 
 ```tsx
 <Button size="xl" />
@@ -217,18 +217,18 @@ default values are:
 To change these values set `spacing` property on [theme](/theming/extend-theme/):
 
 ```tsx
-import { MantineProvider } from '@mantine/core';
+import { CoengageUIProvider } from '@coengageui/core';
 
 function App() {
   return (
-    <MantineProvider theme={{ spacing: { xs: 15, sm: 20, md: 25, lg: 30, xl: 40 } }}>
+    <CoengageUIProvider theme={{ spacing: { xs: 15, sm: 20, md: 25, lg: 30, xl: 40 } }}>
       <YourApp />
-    </MantineProvider>
+    </CoengageUIProvider>
   );
 }
 ```
 
-Later when you use Mantine components you can reference these values in `spacing` or other similar props or set the spacing in px:
+Later when you use CoengageUI components you can reference these values in `spacing` or other similar props or set the spacing in px:
 
 ```tsx
 <Group spacing="md" /> // -> md spacing from theme.spacing
@@ -253,11 +253,11 @@ default values are:
 To change these values set the `shadows` property on [theme](/theming/extend-theme/):
 
 ```tsx
-import { MantineProvider } from '@mantine/core';
+import { CoengageUIProvider } from '@coengageui/core';
 
 function App() {
   return (
-    <MantineProvider
+    <CoengageUIProvider
       theme={{
         shadows: {
           xs: '1px 1px 1px rgba(0, 0, 0, 0.3)',
@@ -269,12 +269,12 @@ function App() {
       }}
     >
       <YourApp />
-    </MantineProvider>
+    </CoengageUIProvider>
   );
 }
 ```
 
-Later when you use Mantine components you can reference these values in `shadow` prop or define your own shadow:
+Later when you use CoengageUI components you can reference these values in `shadow` prop or define your own shadow:
 
 ```tsx
 <Paper shadow="xl" /> // -> xl shadow from theme.shadows
@@ -283,18 +283,18 @@ Later when you use Mantine components you can reference these values in `shadow`
 
 ## Polymorphic components
 
-Some Mantine components support changing root element with `component` prop,
+Some CoengageUI components support changing root element with `component` prop,
 you can pass html element or React component to the prop:
 
 ```tsx
-import { Text, Button } from '@mantine/core';
+import { Text, Button } from '@coengageui/core';
 import { Link } from 'react-router-dom';
 
 function Demo() {
   return (
     <>
       {/* with html element */}
-      <Text component="a" href="https://mantine.dev">
+      <Text component="a" href="https://coengage.dev">
         My link text
       </Text>
 
@@ -307,13 +307,13 @@ function Demo() {
 }
 ```
 
-To use Mantine components with Next.js Link:
+To use CoengageUI components with Next.js Link:
 
 - set `component` prop to `a`
 - wrap it with Link
 
 ```tsx
-import { Button } from '@mantine/core';
+import { Button } from '@coengageui/core';
 import Link from 'next/link';
 
 function Demo() {
@@ -329,7 +329,7 @@ If you use polymorphic with TypeScript you will also need to set type for full t
 otherwise you will have untyped event handlers and ref props:
 
 ```tsx
-import { Button } from '@mantine/core';
+import { Button } from '@coengageui/core';
 import { Link } from 'react-router-dom';
 
 function Demo() {
@@ -353,7 +353,7 @@ You can get ref of most components with their `ref` prop:
 
 ```tsx
 import { useRef } from 'react';
-import { Button, Paper, TextInput } from '@mantine/core';
+import { Button, Paper, TextInput } from '@coengageui/core';
 
 function Demo() {
   const buttonRef = useRef<HTMLButtonElement>();
@@ -382,32 +382,32 @@ To setup server side rendering follow one of these guides
 
 ### Exported types
 
-@mantine/core package export types to help you build components and styles with TypeScript:
+@coengageui/core package export types to help you build components and styles with TypeScript:
 
-- `MantineTheme` – theme interface defined in MantineProvider.
+- `CoengageUITheme` – theme interface defined in CoengageUIProvider.
 - `ColorScheme` – union of `'light' | 'dark'`.
-- `MantineColor` – union of all default colors, also accepts any string.
-- `MantineGradient` – gradient interface used in [Button](/core/button/), [ThemeIcon](/core/theme-icon/) and other components.
-- `MantineShadow` – union of all default shadows.
-- `MantineSize` – union of `'xs' | 'sm' | 'md' | 'lg' | 'xl'`.
-- `MantineNumberSize` – union of `MantineSize | number`.
+- `CoengageUIColor` – union of all default colors, also accepts any string.
+- `CoengageUIGradient` – gradient interface used in [Button](/core/button/), [ThemeIcon](/core/theme-icon/) and other components.
+- `CoengageUIShadow` – union of all default shadows.
+- `CoengageUISize` – union of `'xs' | 'sm' | 'md' | 'lg' | 'xl'`.
+- `CoengageUINumberSize` – union of `CoengageUISize | number`.
 
 ### Components props
 
 You can import props type of any component by adding `Props` to the component name:
 
 ```tsx
-import type { ButtonProps } from '@mantine/core';
+import type { ButtonProps } from '@coengageui/core';
 ```
 
 ### Polymorphic components types
 
-@mantine/core package exports `PolymorphicRef` and `PolymorphicComponentProps` types to help you build
+@coengageui/core package exports `PolymorphicRef` and `PolymorphicComponentProps` types to help you build
 custom components with ref forwarding:
 
 ```tsx
 import { forwardRef } from 'react';
-import { PolymorphicRef, PolymorphicComponentProps } from '@mantine/core';
+import { PolymorphicRef, PolymorphicComponentProps } from '@coengageui/core';
 import { Link } from 'react-router-dom';
 
 // Define all component specific props here
@@ -438,8 +438,8 @@ function Demo() {
       <Text bold>Bold text</Text>
 
       {/* Text as an anchor, props will have type React.ComponentPropsWithoutRef<'a'> & _TextProps */}
-      <Text<'a'> component="a" href="https://mantine.dev">
-        Mantine website
+      <Text<'a'> component="a" href="https://coengage.dev">
+        CoengageUI website
       </Text>
 
       {/* Text as component, props will have type React.ComponentPropsWithoutRef<typeof Link> & _TextProps */}

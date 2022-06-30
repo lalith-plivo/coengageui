@@ -1,17 +1,17 @@
 ---
-group: 'mantine-hooks'
-package: '@mantine/hooks'
+group: 'coengageui-hooks'
+package: '@coengageui/hooks'
 category: 'dom'
 title: 'use-click-outside'
 order: 1
 slug: /hooks/use-click-outside/
 description: 'Detect click and touch events outside of specified element'
-import: "import { useClickOutside } from '@mantine/hooks';"
+import: "import { useClickOutside } from '@coengageui/hooks';"
 docs: 'hooks/use-click-outside.mdx'
-source: 'mantine-hooks/src/use-click-outside/use-click-outside.ts'
+source: 'coengageui-hooks/src/use-click-outside/use-click-outside.ts'
 ---
 
-import { HooksDemos } from '@mantine/demos';
+import { HooksDemos } from '@coengageui/demos';
 
 ## Usage
 
@@ -28,7 +28,7 @@ Hook accepts 3 arguments:
 Hook returns React `ref` object that should be passed to element on which outside clicks should be captured.
 
 ```tsx
-import { useClickOutside } from '@mantine/hooks';
+import { useClickOutside } from '@coengageui/hooks';
 
 function Example() {
   const handleClickOutside = () => console.log('Clicked outside of div');
@@ -52,8 +52,8 @@ To do so provide third argument with an array of nodes which should not trigger 
 ```tsx
 // Will work only with useState, not useRef
 import { useState } from 'react';
-import { useClickOutside } from '@mantine/hooks';
-import { Portal } from '@mantine/core';
+import { useClickOutside } from '@coengageui/hooks';
+import { Portal } from '@coengageui/core';
 
 function Demo() {
   const [dropdown, setDropdown] = useState(null);

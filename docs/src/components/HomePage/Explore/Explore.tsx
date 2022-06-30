@@ -1,4 +1,4 @@
-import { Container } from '@mantine/core';
+import { Container } from '@coengageui/core';
 import React from 'react';
 import { SectionTitle } from '../SectionTitle/SectionTitle';
 import { CoreComponents } from './CoreComponents/CoreComponents';

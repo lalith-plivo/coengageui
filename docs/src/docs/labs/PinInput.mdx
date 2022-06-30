@@ -1,18 +1,18 @@
 ---
-group: 'mantine-labs'
-package: '@mantine/labs'
+group: 'coengageui-labs'
+package: '@coengageui/labs'
 title: PinInput
 slug: /labs/pin-input/
 category: 'inputs'
 description: 'Capture pin code from the user'
 props: ['PinInput']
-import: "import { PinInput } from '@mantine/labs';"
-source: 'mantine-labs/src/components/PinInput/PinInput.tsx'
+import: "import { PinInput } from '@coengageui/labs';"
+source: 'coengageui-labs/src/components/PinInput/PinInput.tsx'
 docs: 'labs/PinInput.mdx'
 styles: ['PinInput']
 ---
 
-import { PinInputDemos } from '@mantine/demos';
+import { PinInputDemos } from '@coengageui/demos';
 
 ## Usage
 
@@ -33,12 +33,12 @@ To disable this behavior, set `manageFocus` to false
 
 ## Type
 
-You can control input format with `type` prop. Mantine provides 2
+You can control input format with `type` prop. CoengageUI provides 2
 RegExp validators `alphanumeric` and `number` but if that does not fit your need you can pass your own RegExp validation.
 By default, `alphanumeric` symbols are allowed.
 
 ```tsx
-import { PinInput } from '@mantine/core';
+import { PinInput } from '@coengageui/core';
 
 function PinInputDemo() {
   return <PinInput type="number" />;
@@ -52,7 +52,7 @@ To customize the default input placeholder `●`, pass the placeholder prop and 
 <Demo data={PinInputDemos.placeholder} />
 
 ```tsx
-import { PinInput } from '@mantine/core';
+import { PinInput } from '@coengageui/core';
 
 function PinInputDemo() {
   return <PinInput placeholder="⭐️" />;
@@ -73,7 +73,7 @@ If the current form input asks for this code, your keyboard adapts and proposes 
 Prop `oneTimeCode` makes your input setting `autocomplete="one-time-code"` what allows using that feature.
 
 ```tsx
-import { PinInput } from '@mantine/core';
+import { PinInput } from '@coengageui/core';
 
 function OneTimeCodeInput() {
   return <PinInput oneTimeCode />;

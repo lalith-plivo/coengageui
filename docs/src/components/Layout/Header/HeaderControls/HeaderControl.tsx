@@ -1,6 +1,6 @@
 import React from 'react';
-import { UnstyledButton, Tooltip } from '@mantine/core';
-import { useMediaQuery } from '@mantine/hooks';
+import { UnstyledButton, Tooltip } from '@coengageui/core';
+import { useMediaQuery } from '@coengageui/hooks';
 import useStyles from './HeaderControl.styles';
 
 interface HeaderControlProps extends React.ComponentPropsWithoutRef<'button'> {

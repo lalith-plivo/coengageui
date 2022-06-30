@@ -1,17 +1,17 @@
 ---
-group: 'mantine-hooks'
-package: '@mantine/hooks'
+group: 'coengageui-hooks'
+package: '@coengageui/hooks'
 category: 'dom'
 title: 'use-hotkeys'
 order: 1
 slug: /hooks/use-hotkeys/
 description: 'Listen for keys combinations on document element'
-import: "import { useHotkeys } from '@mantine/hooks';"
+import: "import { useHotkeys } from '@coengageui/hooks';"
 docs: 'hooks/use-hotkeys.mdx'
-source: 'mantine-hooks/src/use-hotkeys/use-hotkeys.ts'
+source: 'coengageui-hooks/src/use-hotkeys/use-hotkeys.ts'
 ---
 
-import { HooksDemos } from '@mantine/demos';
+import { HooksDemos } from '@coengageui/demos';
 
 ## Usage
 
@@ -21,7 +21,7 @@ use-hotkeys accepts an array of hotkeys and handler tuples:
 - `handler` - event handler called when given combination was pressed
 
 ```tsx
-import { useHotkeys } from '@mantine/hooks';
+import { useHotkeys } from '@coengageui/hooks';
 
 function Demo() {
   // ctrl + J and ⌘ + J to toggle color scheme
@@ -54,5 +54,7 @@ which should be used with `onKeyDown`:
 ## Definition
 
 ```tsx
-function useHotkeys(hotKeyItem: Array<[hotkey: string, handler: (event: KeyboardEvent) => void]>): void;
+function useHotkeys(
+  hotKeyItem: Array<[hotkey: string, handler: (event: KeyboardEvent) => void]>
+): void;
 ```

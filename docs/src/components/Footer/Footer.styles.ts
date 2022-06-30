@@ -1,4 +1,4 @@
-import { createStyles } from '@mantine/core';
+import { createStyles } from '@coengageui/core';
 import { NAVBAR_WIDTH, NAVBAR_BREAKPOINT } from '../Layout/Navbar/Navbar.styles';
 import { BREAKPOINT as MDX_PAGE_BREAKPOINT } from '../MdxPage/settings';
 
@@ -89,9 +89,8 @@ export default createStyles((theme) => ({
   },
 
   afterFooter: {
-    borderTop: `1px solid ${
-      theme.colorScheme === 'dark' ? theme.colors.dark[4] : theme.colors.gray[2]
-    }`,
+    borderTop: `1px solid ${theme.colorScheme === 'dark' ? theme.colors.dark[4] : theme.colors.gray[2]
+      }`,
     paddingTop: theme.spacing.md,
   },
 

@@ -6,9 +6,9 @@ export function RichText() {
   return (
     <Section
       title="Rich text editor"
-      description="A Quill.js based rich text editor: handles images uploads, supports embedded video, integrates seamlessly with your Mantine theme"
+      description="A Quill.js based rich text editor: handles images uploads, supports embedded video, integrates seamlessly with your CoengageUI theme"
       link="/others/rte/"
-      label="Get started with @mantine/rte"
+      label="Get started with @coengageui/rte"
     >
       <RichTextDemo />
     </Section>

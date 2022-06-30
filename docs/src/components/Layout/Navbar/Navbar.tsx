@@ -1,5 +1,5 @@
 import React from 'react';
-import { ScrollArea } from '@mantine/core';
+import { ScrollArea } from '@coengageui/core';
 import NavbarMainLink from './NavbarMainLink/NavbarMainLink';
 import NavbarDocsCategory from './NavbarDocsCategory/NavbarDocsCategory';
 import { getDocsData } from '../get-docs-data';

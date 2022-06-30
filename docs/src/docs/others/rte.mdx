@@ -1,35 +1,35 @@
 ---
 group: 'Other packages'
-package: '@mantine/rte'
+package: '@coengageui/rte'
 title: 'Rich text editor'
 order: 1
 slug: /others/rte/
 description: 'Quill based rich text editor'
 props: ['RichTextEditor']
-import: "import { RichTextEditor } from '@mantine/rte';"
-source: 'mantine-rte/src'
+import: "import { RichTextEditor } from '@coengageui/rte';"
+source: 'coengageui-rte/src'
 docs: 'others/rte.mdx'
-installation: '@mantine/rte'
+installation: '@coengageui/rte'
 license: MIT
 styles: ['RichTextEditor']
 ---
 
-import { RichTextEditorDemos } from '@mantine/demos';
+import { RichTextEditorDemos } from '@coengageui/demos';
 
 ## Installation
 
-Package has peer dependencies: [react](https://www.npmjs.com/package/react), [react-dom](https://www.npmjs.com/package/react-dom), [@mantine/hooks](https://www.npmjs.com/package/@mantine/hooks) and [@mantine/core](https://www.npmjs.com/package/@mantine/core):.
+Package has peer dependencies: [react](https://www.npmjs.com/package/react), [react-dom](https://www.npmjs.com/package/react-dom), [@coengageui/hooks](https://www.npmjs.com/package/@coengageui/hooks) and [@coengageui/core](https://www.npmjs.com/package/@coengageui/core):.
 
 Install with npm:
 
 ```sh
-npm install @mantine/rte @mantine/core @mantine/hooks
+npm install @coengageui/rte @coengageui/core @coengageui/hooks
 ```
 
 Install with yarn:
 
 ```sh
-yarn add @mantine/rte @mantine/core @mantine/hooks
+yarn add @coengageui/rte @coengageui/core @coengageui/hooks
 ```
 
 ## Demo
@@ -65,7 +65,7 @@ You can add, remove and configure controls arrangement in toolbar with `controls
 To configure sticky toolbar properties set following props:
 
 - `sticky` – set to false to make toolbar stay at the top
-- `stickyOffset` – top property, used with sticky position, use it to offset elements with fixed position, for example, Mantine docs website has 60px header, in this case you should set stickyOffset to 60
+- `stickyOffset` – top property, used with sticky position, use it to offset elements with fixed position, for example, CoengageUI docs website has 60px header, in this case you should set stickyOffset to 60
 
 ```tsx
 // Toolbar stays at the top
@@ -91,7 +91,7 @@ To set up images upload add `onImageUpload` function:
 
 ```tsx
 import { useState } from 'react';
-import { RichTextEditor } from '@mantine/rte';
+import { RichTextEditor } from '@coengageui/rte';
 
 // Example with imgbb.com, usually you would use similar logic to upload to S3 like storages
 // Function must return a promise that resolves with uploaded image url
@@ -133,7 +133,7 @@ You can provide any amount of extra modules. Note that it is required to memoize
 
 ```tsx
 import { useMemo } from 'react';
-import { RichTextEditor } from '@mantine/rte';
+import { RichTextEditor } from '@coengageui/rte';
 
 function Demo() {
   const modules = useMemo(
@@ -165,7 +165,7 @@ When editor is readonly state, user cannot edit content, toolbar is hidden:
 
 ```tsx
 import { useRef, useEffect } from 'react';
-import { RichTextEditor, Editor } from '@mantine/rte';
+import { RichTextEditor, Editor } from '@coengageui/rte';
 
 function Demo() {
   const editorRef = useRef<Editor>();
@@ -188,12 +188,12 @@ General strategy:
 ```tsx
 // Create a separate component which will load RichTextEditor only in browser
 import React from 'react';
-import type { RichTextEditorProps } from '@mantine/rte';
+import type { RichTextEditorProps } from '@coengageui/rte';
 
 export function RichText(props: RichTextEditorProps) {
   if (typeof window !== 'undefined') {
     // eslint-disable-next-line import/extensions, global-require
-    const { RichTextEditor } = require('@mantine/rte');
+    const { RichTextEditor } = require('@coengageui/rte');
     return <RichTextEditor {...props} />;
   }
 
@@ -210,7 +210,7 @@ To make component work with Next.js use [dynamic module](https://nextjs.org/docs
 // RichText.tsx in your components folder
 import dynamic from 'next/dynamic';
 
-export default dynamic(() => import('@mantine/rte'), {
+export default dynamic(() => import('@coengageui/rte'), {
   // Disable during server side rendering
   ssr: false,
 

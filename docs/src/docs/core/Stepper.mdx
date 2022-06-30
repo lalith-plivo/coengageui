@@ -1,19 +1,19 @@
 ---
-group: 'mantine-core'
-package: '@mantine/core'
+group: 'coengageui-core'
+package: '@coengageui/core'
 title: Stepper
 order: 1
 slug: /core/stepper/
 category: 'navigation'
 description: 'Display content divided into a steps sequence'
 props: ['Stepper', 'Step']
-import: "import { Stepper, Step } from '@mantine/core';"
-source: 'mantine-core/src/components/Stepper/Stepper.tsx'
+import: "import { Stepper, Step } from '@coengageui/core';"
+source: 'coengageui-core/src/components/Stepper/Stepper.tsx'
 docs: 'core/Stepper.mdx'
 styles: ['Stepper']
 ---
 
-import { StepperDemos } from '@mantine/demos';
+import { StepperDemos } from '@coengageui/demos';
 
 ## Usage
 
@@ -69,7 +69,7 @@ than `theme.breakpoints.md`:
 <Stepper breakpoint="md">{/* ...steps */}</Stepper>
 ```
 
-You can [configure breakpoints](/theming/extend-theme/#breakpoints) in MantineProvider or use
+You can [configure breakpoints](/theming/extend-theme/#breakpoints) in CoengageUIProvider or use
 number to set breakpoint in px:
 
 ```tsx
@@ -86,7 +86,7 @@ this option is most useful for RTL:
 ## Loading state
 
 To indicate loading state set `loading` prop on Step component,
-Loader will replace step icon. You can configure default loader in [MantineProvider](/theming/mantine-provider/).
+Loader will replace step icon. You can configure default loader in [CoengageUIProvider](/theming/coengageui-provider/).
 
 <Demo data={StepperDemos.loading} />
 
@@ -104,7 +104,7 @@ You can get refs of step button and stepper root element (div):
 
 ```tsx
 import { useRef } from 'react';
-import { Stepper } from '@mantine/core';
+import { Stepper } from '@coengageui/core';
 
 function MyStepper() {
   const firstStep = useRef<HTMLButtonElement>();

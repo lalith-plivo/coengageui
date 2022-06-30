@@ -1,8 +1,8 @@
-import { createStyles, MantineTheme } from '@mantine/core';
+import { createStyles, CoengageUITheme } from '@coengageui/core';
 
 const BREAKPOINT = 765;
 
-export default createStyles((theme: MantineTheme) => ({
+export default createStyles((theme: CoengageUITheme) => ({
   wrapper: {
     '& + &': {
       marginTop: theme.spacing.xl,

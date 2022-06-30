@@ -17,7 +17,7 @@ export default function Head({ title, description, disableTitleTemplate }: HeadP
       defer={false}
       htmlAttributes={{ lang: 'en' }}
       title={title}
-      titleTemplate={disableTitleTemplate ? undefined : '%s | Mantine'}
+      titleTemplate={disableTitleTemplate ? undefined : '%s | CoengageUI'}
       meta={[
         {
           name: 'viewport',
@@ -33,7 +33,7 @@ export default function Head({ title, description, disableTitleTemplate }: HeadP
         },
         {
           property: 'og:image',
-          content: 'https://raw.githubusercontent.com/mantinedev/mantine/master/.demo/Hero.png',
+          content: 'https://raw.githubusercontent.com/coengagedev/coengage/master/.demo/Hero.png',
         },
         {
           property: 'og:image:width',
@@ -57,7 +57,7 @@ export default function Head({ title, description, disableTitleTemplate }: HeadP
         },
         {
           name: 'twitter:creator',
-          content: '@mantinedev',
+          content: '@coengageuidev',
         },
         {
           name: 'twitter:title',

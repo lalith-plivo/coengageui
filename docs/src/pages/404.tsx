@@ -1,6 +1,6 @@
 /* eslint-disable react/no-unescaped-entities */
 import React from 'react';
-import { Button, Container, Group } from '@mantine/core';
+import { Button, Container, Group } from '@coengageui/core';
 import { StarFilledIcon, TwitterLogoIcon } from '@modulz/radix-icons';
 import GatsbyLink from '../components/MdxPage/MdxProvider/GatsbyLink/GatsbyLink';
 import Head from '../components/Head/Head';
@@ -15,26 +15,26 @@ export default function PageNotFound() {
       <Container size={1100}>
         <P>
           <H1>Congratulations!</H1>
-          You've found a completely secret place on Mantine website. Unfortunately, this is only a
-          404 page. If you've landed on this page from a link on the Mantine website, please{' '}
-          <A href="https://github.com/mantinedev/mantine/issues/new">create an issue</A>. Otherwise,
-          here are some learning materials that will help you get started with Mantine:
+          You've found a completely secret place on CoengageUI website. Unfortunately, this is only a
+          404 page. If you've landed on this page from a link on the CoengageUI website, please{' '}
+          <A href="https://github.com/coengagedev/coengage/issues/new">create an issue</A>. Otherwise,
+          here are some learning materials that will help you get started with CoengageUI:
         </P>
         <Ul>
           <Li>
-            <GatsbyLink to="/pages/contributing/">Mantine contributions guideline</GatsbyLink>
+            <GatsbyLink to="/pages/contributing/">CoengageUI contributions guideline</GatsbyLink>
           </Li>
           <Li>
             <GatsbyLink to="/theming/ssr/">
-              Learn how to setup server side rendering with Mantine
+              Learn how to setup server side rendering with CoengageUI
             </GatsbyLink>
           </Li>
           <Li>
-            <GatsbyLink to="/others/notifications/">Mantine notifications system</GatsbyLink>
+            <GatsbyLink to="/others/notifications/">CoengageUI notifications system</GatsbyLink>
           </Li>
           <Li>
-            <GatsbyLink to="/theming/mantine-provider/">
-              Learn how to customize Mantine theme
+            <GatsbyLink to="/theming/coengageui-provider/">
+              Learn how to customize CoengageUI theme
             </GatsbyLink>
           </Li>
           <Li>
@@ -44,27 +44,27 @@ export default function PageNotFound() {
           </Li>
         </Ul>
         <P>
-          And since you are here, what about following Mantine on Twitter and a star on GitHub 😉?
+          And since you are here, what about following CoengageUI on Twitter and a star on GitHub 😉?
         </P>
 
         <Group>
           <Button
             component="a"
-            href="https://github.com/mantinedev/mantine"
+            href="https://github.com/coengagedev/coengage"
             leftIcon={<StarFilledIcon />}
             color="gray"
             variant="outline"
           >
-            Star mantine on GitHub
+            Star coengage on GitHub
           </Button>
           <Button
             component="a"
-            href="https://twitter.com/mantinedev"
+            href="https://twitter.com/coengagedev"
             leftIcon={<TwitterLogoIcon />}
             color="blue"
             variant="outline"
           >
-            Follow Mantine on Twitter
+            Follow CoengageUI on Twitter
           </Button>
         </Group>
       </Container>

@@ -1,5 +1,5 @@
 import React from 'react';
-import { Container, Text } from '@mantine/core';
+import { Container, Text } from '@coengageui/core';
 import { SectionTitle } from '../SectionTitle/SectionTitle';
 import useStyles from './PageSection.styles';
 

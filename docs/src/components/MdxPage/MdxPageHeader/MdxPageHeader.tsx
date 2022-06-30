@@ -1,5 +1,5 @@
 import React from 'react';
-import { Title, Text } from '@mantine/core';
+import { Title, Text } from '@coengageui/core';
 import { MarkGithubIcon, PencilIcon, LawIcon, CalendarIcon } from '@primer/octicons-react';
 import { ImportStatement } from './ImportStatement/ImportStatement';
 import { NpmIcon } from './NpmIcon';
@@ -7,7 +7,7 @@ import { LinkItem } from './LinkItem/LinkItem';
 import { MdxPageProps } from '../../../types';
 import useStyles from './MdxPageHeader.styles';
 
-const REPO_BASE = 'https://github.com/mantinedev/mantine/blob/master';
+const REPO_BASE = 'https://github.com/coengagedev/coengage/blob/master';
 const DOCS_BASE = `${REPO_BASE}/docs/src/docs`;
 const SOURCE_BASE = `${REPO_BASE}/src`;
 
@@ -77,11 +77,11 @@ export function MdxPageHeader({ frontmatter }: MdxPageProps) {
             label="Package"
             icon={<NpmIcon />}
             link={`https://www.npmjs.com/package/${frontmatter.package.replace(
-              'mantine-',
-              '@mantine/'
+              'coengageui-',
+              '@coengageui/'
             )}`}
           >
-            {frontmatter.package.replace('mantine-', '@mantine/')}
+            {frontmatter.package.replace('coengageui-', '@coengageui/')}
           </LinkItem>
         )}
 
@@ -89,7 +89,7 @@ export function MdxPageHeader({ frontmatter }: MdxPageProps) {
           <LinkItem
             label="License"
             icon={<LawIcon size={14} />}
-            link="https://github.com/mantinedev/mantine/blob/master/LICENSE"
+            link="https://github.com/coengagedev/coengage/blob/master/LICENSE"
           >
             MIT
           </LinkItem>

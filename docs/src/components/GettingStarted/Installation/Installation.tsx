@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Title, SimpleGrid, useMantineTheme } from '@mantine/core';
+import { Title, SimpleGrid, useCoengageUITheme } from '@coengageui/core';
 import { PACKAGES_DATA } from './data';
 import { CheckboxCard } from './CheckboxCard';
 
@@ -8,16 +8,16 @@ interface InstallationProps {
 }
 
 export function Installation({ setDependencies }: InstallationProps) {
-  const theme = useMantineTheme();
+  const theme = useCoengageUITheme();
 
   const [values, setValues] = useState({
-    '@mantine/hooks': true,
-    '@mantine/core': true,
-    '@mantine/dates': false,
-    '@mantine/notifications': false,
-    '@mantine/prism': false,
-    '@mantine/rte': false,
-    '@mantine/dropzone': false,
+    '@coengageui/hooks': true,
+    '@coengageui/core': true,
+    '@coengageui/dates': false,
+    '@coengageui/notifications': false,
+    '@coengageui/prism': false,
+    '@coengageui/rte': false,
+    '@coengageui/dropzone': false,
   });
 
   const items = PACKAGES_DATA.map((item) => (

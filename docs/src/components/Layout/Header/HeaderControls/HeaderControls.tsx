@@ -1,5 +1,5 @@
 import React from 'react';
-import { Box, Group, useMantineColorScheme } from '@mantine/core';
+import { Box, Group, useCoengageUIColorScheme } from '@coengageui/core';
 import { TextDirectionRtl, TextDirectionLtr, Sun, Moon } from 'tabler-icons-react';
 import { MarkGithubIcon } from '@primer/octicons-react';
 import { DiscordIcon } from './DiscordIcon';
@@ -9,7 +9,7 @@ import { useDirectionContext } from '../../DirectionContext';
 
 export function HeaderControls() {
   const { dir, toggleDirection } = useDirectionContext();
-  const { colorScheme, toggleColorScheme } = useMantineColorScheme();
+  const { colorScheme, toggleColorScheme } = useCoengageUIColorScheme();
 
   return (
     <Box sx={{ position: 'relative' }}>
@@ -26,7 +26,7 @@ export function HeaderControls() {
         </HeaderControl>
 
         <HeaderControl
-          link="https://github.com/mantinedev/mantine/"
+          link="https://github.com/coengagedev/coengage/"
           tooltip="Source code"
           hideOnMobile
         >

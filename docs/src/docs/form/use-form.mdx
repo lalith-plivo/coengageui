@@ -1,32 +1,32 @@
 ---
-group: 'mantine-form'
-package: '@mantine/form'
+group: 'coengageui-form'
+package: '@coengageui/form'
 title: 'use-form'
 order: 0
 slug: /form/use-form/
 description: 'Manage form state'
-import: "import { useForm } from '@mantine/form';"
+import: "import { useForm } from '@coengageui/form';"
 docs: 'form/use-form.mdx'
-source: 'mantine-form/src'
+source: 'coengageui-form/src'
 license: MIT
 ---
 
-import { FormDemos } from '@mantine/demos';
+import { FormDemos } from '@coengageui/demos';
 
 ## Installation
 
-`@mantine/form` package does not depend on any other libraries, you can use it with or without `@mantine/core` inputs:
+`@coengageui/form` package does not depend on any other libraries, you can use it with or without `@coengageui/core` inputs:
 
 Install with npm:
 
 ```sh
-npm install @mantine/form
+npm install @coengageui/form
 ```
 
 Install with yarn:
 
 ```sh
-yarn add @mantine/form
+yarn add @coengageui/form
 ```
 
 ## Usage
@@ -80,11 +80,11 @@ form.setFieldValue('age', 22);
 form.values; // -> { name: 'John', age: 22 }
 ```
 
-`setFieldValue` can be used with all `@mantine/core` inputs, example with [TextInput](/core/text-input/) component:
+`setFieldValue` can be used with all `@coengageui/core` inputs, example with [TextInput](/core/text-input/) component:
 
 ```tsx
-import { TextInput } from '@mantine/core';
-import { useForm } from '@mantine/form';
+import { TextInput } from '@coengageui/core';
+import { useForm } from '@coengageui/form';
 
 function Demo() {
   const form = useForm({ initialValues: { name: '' } });
@@ -275,7 +275,7 @@ form.errors; // -> { name: 'name-error' }, email error is not included in errors
 ## getInputProps handler
 
 `getInputProps` handler is a primary way to add `value`, `error` and `onChange` props
-to Mantine inputs.
+to CoengageUI inputs.
 
 ```tsx
 const form = useForm({
@@ -286,7 +286,7 @@ const form = useForm({
 
 form.getInputProps('name'); // -> returns object with the following properties:
 // value – input value
-// onChange – input onChange function, works with all Mantine and regular inputs
+// onChange – input onChange function, works with all CoengageUI and regular inputs
 // error – error message if input is invalid
 
 // returns object with the same properties as above example but without error
@@ -294,7 +294,7 @@ form.getInputProps('name', { withError: false });
 
 form.getInputProps('termsOfService', { type: 'checkbox' }); // -> returns object with the following properties:
 // checked – input[type="checkbox"] checked value
-// onChange – input onChange event, works with Mantine Checkbox, Switch and regular input[type="checkbox"]
+// onChange – input onChange event, works with CoengageUI Checkbox, Switch and regular input[type="checkbox"]
 // error – error message if input is invalid
 ```
 
@@ -307,7 +307,7 @@ form.getInputProps('termsOfService', { type: 'checkbox' }); // -> returns object
 - call provided function with form values when form is submitted if all fields are valid
 
 ```tsx
-import { useForm } from '@mantine/form';
+import { useForm } from '@coengageui/form';
 
 function Demo() {
   const form = useForm({ initialValues: { name: '', age: 0 } });
@@ -324,7 +324,7 @@ function Demo() {
 ### Get form values type
 
 ```tsx
-import { useForm } from '@mantine/form';
+import { useForm } from '@coengageui/form';
 
 function Demo() {
   const form = useForm({ initialValues: { name: '', age: 0 } });
@@ -344,7 +344,7 @@ To avoid that, you can pass type to `useForm` hook, this approach is useful when
 types cannot be inferred or when you want to provide more specific types:
 
 ```tsx
-import { useForm } from '@mantine/form';
+import { useForm } from '@coengageui/form';
 
 interface FormValues {
   name: string; // regular field, same as inferred type

@@ -1,10 +1,10 @@
 import React, { useState } from 'react';
 import { graphql, useStaticQuery, navigate } from 'gatsby';
-import { useMediaQuery } from '@mantine/hooks';
-import { NotificationsProvider } from '@mantine/notifications';
-import { ModalsProvider, ContextModalProps } from '@mantine/modals';
-import { SpotlightProvider, SpotlightAction } from '@mantine/spotlight';
-import { Text, Button } from '@mantine/core';
+import { useMediaQuery } from '@coengageui/hooks';
+import { NotificationsProvider } from '@coengageui/notifications';
+import { ModalsProvider, ContextModalProps } from '@coengageui/modals';
+import { SpotlightProvider, SpotlightAction } from '@coengageui/spotlight';
+import { Text, Button } from '@coengageui/core';
 import { Search } from 'tabler-icons-react';
 import MdxProvider from '../MdxPage/MdxProvider/MdxProvider';
 import Navbar from './Navbar/Navbar';

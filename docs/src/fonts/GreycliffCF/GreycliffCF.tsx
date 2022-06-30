@@ -1,5 +1,5 @@
 import React from 'react';
-import { Global } from '@mantine/core';
+import { Global } from '@coengageui/core';
 import bold from './GreycliffCF-Bold.woff2';
 import heavy from './GreycliffCF-Heavy.woff2';
 

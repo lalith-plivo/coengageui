@@ -1,9 +1,9 @@
 import React from 'react';
-import { useMantineTheme } from '@mantine/core';
-import { RichTextEditorDemos } from '@mantine/demos';
+import { useCoengageUITheme } from '@coengageui/core';
+import { RichTextEditorDemos } from '@coengageui/demos';
 
 export function RichTextDemo() {
-  const theme = useMantineTheme();
+  const theme = useCoengageUITheme();
   const Component = RichTextEditorDemos.usage.component as any;
   return (
     <Component

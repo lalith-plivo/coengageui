@@ -1,6 +1,6 @@
 import React from 'react';
-import { Text, Paper } from '@mantine/core';
-import { AccordionDemo, TimelineBase } from '@mantine/demos';
+import { Text, Paper } from '@coengageui/core';
+import { AccordionDemo, TimelineBase } from '@coengageui/demos';
 
 export function ContentDemos() {
   return (

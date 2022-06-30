@@ -4,7 +4,7 @@ export const FEATURES_DATA = [
   {
     icon: LawIcon,
     title: 'Free and open source',
-    description: 'All packages have MIT license, you can use Mantine in any project',
+    description: 'All packages have MIT license, you can use CoengageUI in any project',
   },
 
   {

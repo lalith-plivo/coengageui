@@ -1,12 +1,12 @@
 import React, { useState } from 'react';
-import { MantineProvider, ColorSchemeProvider, ColorScheme, Global } from '@mantine/core';
-import { useHotkeys, useLocalStorage } from '@mantine/hooks';
+import { CoengageUIProvider, ColorSchemeProvider, ColorScheme, Global } from '@coengageui/core';
+import { useHotkeys, useLocalStorage } from '@coengageui/hooks';
 import rtlPlugin from 'stylis-plugin-rtl';
 import { LayoutInner, LayoutProps } from './LayoutInner';
 import { DirectionContext } from './DirectionContext';
 import { GreycliffCF } from '../../fonts/GreycliffCF/GreycliffCF';
 
-const THEME_KEY = 'mantine-color-scheme';
+const THEME_KEY = 'coengageui-color-scheme';
 
 export default function Layout({ children, location }: LayoutProps) {
   const [dir, setDir] = useState<'ltr' | 'rtl'>('ltr');
@@ -30,7 +30,7 @@ export default function Layout({ children, location }: LayoutProps) {
     <DirectionContext.Provider value={{ dir, toggleDirection }}>
       <ColorSchemeProvider colorScheme={colorScheme} toggleColorScheme={toggleColorScheme}>
         <GreycliffCF />
-        <MantineProvider
+        <CoengageUIProvider
           withGlobalStyles
           withNormalizeCSS
           theme={{
@@ -39,7 +39,7 @@ export default function Layout({ children, location }: LayoutProps) {
             headings: { fontFamily: 'Greycliff CF, sans serif' },
           }}
           emotionOptions={
-            dir === 'rtl' ? { key: 'mantine-rtl', stylisPlugins: [rtlPlugin] } : { key: 'mantine' }
+            dir === 'rtl' ? { key: 'coengageui-rtl', stylisPlugins: [rtlPlugin] } : { key: 'coengage' }
           }
         >
           <Global
@@ -53,7 +53,7 @@ export default function Layout({ children, location }: LayoutProps) {
           <div dir={dir}>
             <LayoutInner location={location}>{children}</LayoutInner>
           </div>
-        </MantineProvider>
+        </CoengageUIProvider>
       </ColorSchemeProvider>
     </DirectionContext.Provider>
   );

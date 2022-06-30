@@ -1,0 +1,19 @@
+{
+  "extends": "../../tsconfig.base.json",
+  "include": ["./src", "./types", "../../configuration/types"],
+  "compilerOptions": {
+    "rootDir": "src",
+    "baseUrl": ".",
+    "outDir": "lib",
+    "declaration": true,
+    "declarationMap": true,
+    "declarationDir": "lib",
+    "composite": true,
+    "paths": {
+      "@coengageui/core": ["../coengageui-core/src"],
+      "@coengageui/hooks": ["../coengageui-hooks/src"],
+      "@coengageui/prism": ["../coengageui-prism/src"]
+    }
+  },
+  "references": [{ "path": "../coengageui-hooks" }, { "path": "../coengageui-core" }]
+}

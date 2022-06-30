@@ -1,17 +1,16 @@
 /* eslint-disable import/no-cycle */
-import { createStyles, MantineTheme } from '@mantine/core';
+import { createStyles, CoengageUITheme } from '@coengageui/core';
 import { HEADER_HEIGHT } from '../Header/Header.styles';
 
 export const NAVBAR_WIDTH = 260;
 export const NAVBAR_BREAKPOINT = 760;
 
-export default createStyles((theme: MantineTheme) => ({
+export default createStyles((theme: CoengageUITheme) => ({
   navbar: {
     boxSizing: 'border-box',
     height: '100vh',
-    borderRight: `1px solid ${
-      theme.colorScheme === 'dark' ? theme.colors.dark[7] : theme.colors.gray[2]
-    }`,
+    borderRight: `1px solid ${theme.colorScheme === 'dark' ? theme.colors.dark[7] : theme.colors.gray[2]
+      }`,
     backgroundColor: theme.colorScheme === 'dark' ? theme.colors.dark[8] : theme.white,
     position: 'fixed',
     zIndex: 5,

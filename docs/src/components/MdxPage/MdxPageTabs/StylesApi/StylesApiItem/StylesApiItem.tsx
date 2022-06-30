@@ -1,7 +1,7 @@
 import React from 'react';
-import { Table, Title, Text } from '@mantine/core';
-import { Prism } from '@mantine/prism';
-import * as STYLES_API from '@mantine/styles-api';
+import { Table, Title, Text } from '@coengageui/core';
+import { Prism } from '@coengageui/prism';
+import * as STYLES_API from '@coengageui/styles-api';
 import { generateStylesCode, generateClassNamesCode } from '../generate-styles-code';
 import useStyles from './StylesApiItem.styles';
 
@@ -21,7 +21,7 @@ export function StylesApiItem({ component }: StylesApiItemProps) {
   const rows = CLASS_NAMES.map((name) => (
     <tr key={name}>
       <td>{name}</td>
-      <td>{`.mantine-${component}-${name}`}</td>
+      <td>{`.coengageui-${component}-${name}`}</td>
       <td>{COMPONENT_STYLES[name]}</td>
     </tr>
   ));

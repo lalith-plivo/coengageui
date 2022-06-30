@@ -3,30 +3,30 @@ group: 'theming'
 title: Usage with Gatsby.js
 slug: /theming/gatsby/
 order: 9
-search: 'Setup SSR with Gatsby.js and gatsby-plugin-mantine'
+search: 'Setup SSR with Gatsby.js and gatsby-plugin-coengage'
 ---
 
 # Usage with Gatsby.js
 
-Mantine is fully compatible with Gatsby.js, follow following guide to setup your application
+CoengageUI is fully compatible with Gatsby.js, follow following guide to setup your application
 
 ## Using a plugin
 
-The simplest way to get started with Mantine in Gatsby is to use a plugin:
+The simplest way to get started with CoengageUI in Gatsby is to use a plugin:
 
 1. Install plugin:
 
 ```bash
-yarn add gatsby-plugin-mantine
+yarn add gatsby-plugin-coengage
 
-npm install gatsby-plugin-mantine
+npm install gatsby-plugin-coengage
 ```
 
 2. Add plugin to your `gatsby-config.js`
 
 ```tsx
 module.exports = {
-  plugins: ['gatsby-plugin-mantine' /* ...other plugins */],
+  plugins: ['gatsby-plugin-coengage' /* ...other plugins */],
 };
 ```
 
@@ -34,14 +34,14 @@ module.exports = {
 
 ## Without plugin
 
-To setup server side rendering without `gatsby-plugin-mantine`:
+To setup server side rendering without `gatsby-plugin-coengage`:
 
-1. Install `@mantine/ssr`
+1. Install `@coengageui/ssr`
 
 ```bash
-yarn add @mantine/ssr
+yarn add @coengageui/ssr
 
-npm install @mantine/ssr
+npm install @coengageui/ssr
 ```
 
 2. Create `gatsby-ssr.js` file with following code:
@@ -49,7 +49,7 @@ npm install @mantine/ssr
 ```tsx
 import React from 'react';
 import { renderToString } from 'react-dom/server';
-import { createStylesServer, ServerStyles } from '@mantine/ssr';
+import { createStylesServer, ServerStyles } from '@coengageui/ssr';
 
 const stylesServer = createStylesServer();
 

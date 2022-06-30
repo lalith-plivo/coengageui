@@ -1,7 +1,7 @@
 import React from 'react';
-import { Tooltip } from '@mantine/core';
-import { useClipboard, useMediaQuery } from '@mantine/hooks';
-import { Prism } from '@mantine/prism';
+import { Tooltip } from '@coengageui/core';
+import { useClipboard, useMediaQuery } from '@coengageui/hooks';
+import { Prism } from '@coengageui/prism';
 import { Language } from 'prism-react-renderer';
 import useStyles from './HeaderCode.styles';
 

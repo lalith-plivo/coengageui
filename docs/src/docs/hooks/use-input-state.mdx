@@ -1,25 +1,25 @@
 ---
-group: 'mantine-hooks'
-package: '@mantine/hooks'
+group: 'coengageui-hooks'
+package: '@coengageui/hooks'
 title: 'use-input-state'
 category: 'state'
 order: 1
 slug: /hooks/use-input-state/
 description: 'Manage state of native and custom inputs'
-import: "import { useInputState } from '@mantine/hooks';"
+import: "import { useInputState } from '@coengageui/hooks';"
 docs: 'hooks/use-input-state.mdx'
-source: 'mantine-hooks/src/use-input-state/use-input-state.ts'
+source: 'coengageui-hooks/src/use-input-state/use-input-state.ts'
 ---
 
 ## Usage
 
 use-input-state hook handles state of native inputs (with event in `onChange` handler) and custom inputs (with value in `onChange` handler).
-Hook works with all Mantine and native inputs:
+Hook works with all CoengageUI and native inputs:
 
 ```tsx
 import { useState } from 'react';
-import { useInputState } from '@mantine/hooks';
-import { TextInput, NumberInput } from '@mantine/core';
+import { useInputState } from '@coengageui/hooks';
+import { TextInput, NumberInput } from '@coengageui/core';
 
 function WithUseInputState() {
   const [stringValue, setStringValue] = useInputState('');

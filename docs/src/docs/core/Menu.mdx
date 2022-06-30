@@ -1,19 +1,19 @@
 ---
-group: 'mantine-core'
-package: '@mantine/core'
+group: 'coengageui-core'
+package: '@coengageui/core'
 title: Menu
 order: 1
 slug: /core/menu/
 category: 'overlay'
 description: 'Combine a list of secondary actions into single interactive area'
 props: ['Menu']
-import: "import { Menu } from '@mantine/core';"
-source: 'mantine-core/src/components/Menu/Menu.tsx'
+import: "import { Menu } from '@coengageui/core';"
+source: 'coengageui-core/src/components/Menu/Menu.tsx'
 docs: 'core/Menu.mdx'
 styles: ['Menu']
 ---
 
-import { MenuDemos } from '@mantine/demos';
+import { MenuDemos } from '@coengageui/demos';
 
 ## Usage
 
@@ -22,8 +22,8 @@ import { MenuDemos } from '@mantine/demos';
 ## Controlled
 
 ```tsx
-import { useDisclosure } from '@mantine/hooks';
-import { Menu } from '@mantine/core';
+import { useDisclosure } from '@coengageui/hooks';
+import { Menu } from '@coengageui/core';
 
 function Demo() {
   const [opened, handlers] = useDisclosure(false);
@@ -58,7 +58,7 @@ Menu.Item renders button and accepts following props:
 - `...others` – Menu.Item produces button element, all other props will be spread to it, for example, `onClick`, `style`, `sx`, `className`
 
 ```tsx
-import { Menu, Text } from '@mantine/core';
+import { Menu, Text } from '@coengageui/core';
 import { Settings } from 'tabler-icons-react';
 
 function Demo() {
@@ -142,7 +142,7 @@ By default, menu items render as button, to change that set `component` prop on 
 
 ```tsx
 // Regular anchor as Menu.Item root element
-<Menu.Item component="a" href="https://mantine/dev" target="_blank" />
+<Menu.Item component="a" href="https://coengage/dev" target="_blank" />
 
 // react-router-dom Link as Menu.Item root element
 // !important: This approach cannot be used with Next.js Link component
@@ -154,8 +154,8 @@ By default, menu items render as button, to change that set `component` prop on 
 ## Menu.Item as Next.js Link
 
 ```tsx
-import { Menu } from '@mantine/core';
-import { NextLink } from '@mantine/next';
+import { Menu } from '@coengageui/core';
+import { NextLink } from '@coengageui/next';
 
 function Demo() {
   return (
@@ -179,7 +179,7 @@ for example, change hovered item color:
 
 ```tsx
 import { useRef } from 'react';
-import { Menu } from '@mantine/core';
+import { Menu } from '@coengageui/core';
 
 function Demo() {
   const menuControlRef = useRef<HTMLButtonElement>();

@@ -6,7 +6,7 @@ export function generateDeclarations(paths: DeclarationPath[]) {
   const declarations = getDeclarationsList(paths);
 
   return docgenParser.parse(declarations).reduce((acc, declaration) => {
-    const componentName = declaration.displayName.replace(/@mantine\/([^\s]+)\//, '');
+    const componentName = declaration.displayName.replace(/@coengageui\/([^\s]+)\//, '');
     acc[componentName] = prepareDeclaration(declaration);
     return acc;
   }, {});

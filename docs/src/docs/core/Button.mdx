@@ -1,19 +1,19 @@
 ---
-group: 'mantine-core'
-package: '@mantine/core'
+group: 'coengageui-core'
+package: '@coengageui/core'
 title: Button
 order: 1
 slug: /core/button/
 category: 'inputs'
-description: 'Render button or link with button styles from mantine theme'
+description: 'Render button or link with button styles from coengage theme'
 props: ['Button']
-import: "import { Button } from '@mantine/core';"
-source: 'mantine-core/src/components/Button/Button.tsx'
+import: "import { Button } from '@coengageui/core';"
+source: 'coengageui-core/src/components/Button/Button.tsx'
 docs: 'core/Button.mdx'
 styles: ['Button']
 ---
 
-import { ButtonDemos } from '@mantine/demos';
+import { ButtonDemos } from '@coengageui/demos';
 
 ## Usage
 
@@ -100,7 +100,7 @@ You can use Button component both as `button` and `a` elements:
 ## Unstyled button
 
 To create custom buttons not related to Button component, use UnstyledButton component,
-it renders regular button without default browser styles and with Mantine focus styles:
+it renders regular button without default browser styles and with CoengageUI focus styles:
 
 <Demo data={ButtonDemos.unstyled} />
 
@@ -111,7 +111,7 @@ or other similar libraries by passing `Link` as component to Button:
 
 ```tsx
 import { Link } from 'react-router-dom';
-import { Button } from '@mantine/core';
+import { Button } from '@coengageui/core';
 
 function Demo() {
   return (
@@ -125,7 +125,7 @@ function Demo() {
 Provide type to use custom element with TypeScript:
 
 ```tsx
-import { Button } from '@mantine/core';
+import { Button } from '@coengageui/core';
 import { Link } from 'react-router-dom';
 
 function Demo() {
@@ -142,7 +142,7 @@ function Demo() {
 
 ```tsx
 import { useRef } from 'react';
-import { Button } from '@mantine/core';
+import { Button } from '@coengageui/core';
 
 function Demo() {
   const ref = useRef<HTMLButtonElement>();

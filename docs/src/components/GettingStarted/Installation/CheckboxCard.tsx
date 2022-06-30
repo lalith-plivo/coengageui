@@ -1,14 +1,13 @@
 import React from 'react';
-import { UnstyledButton, Checkbox, Text, createStyles } from '@mantine/core';
-import { useUncontrolled } from '@mantine/hooks';
+import { UnstyledButton, Checkbox, Text, createStyles } from '@coengageui/core';
+import { useUncontrolled } from '@coengageui/hooks';
 
 const useStyles = createStyles((theme) => ({
   button: {
     display: 'flex',
     width: '100%',
-    border: `1px solid ${
-      theme.colorScheme === 'dark' ? theme.colors.dark[8] : theme.colors.gray[3]
-    }`,
+    border: `1px solid ${theme.colorScheme === 'dark' ? theme.colors.dark[8] : theme.colors.gray[3]
+      }`,
     borderRadius: theme.radius.sm,
     padding: theme.spacing.lg,
     backgroundColor: theme.colorScheme === 'dark' ? theme.colors.dark[8] : theme.white,
@@ -54,7 +53,7 @@ export function CheckboxCard({
     >
       <Checkbox
         checked={value}
-        onChange={() => {}}
+        onChange={() => { }}
         tabIndex={-1}
         size="md"
         mr="xl"

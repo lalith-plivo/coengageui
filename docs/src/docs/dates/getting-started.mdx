@@ -1,13 +1,13 @@
 ---
-group: 'mantine-dates'
-package: '@mantine/dates'
+group: 'coengageui-dates'
+package: '@coengageui/dates'
 title: 'Getting started'
-pageTitle: 'Mantine Dates'
+pageTitle: 'CoengageUI Dates'
 description: 'Capture date inputs from user and display calendars'
 order: 0
 slug: /dates/getting-started/
-installation: '@mantine/dates'
-source: 'mantine-dates/'
+installation: '@coengageui/dates'
+source: 'coengageui-dates/'
 license: MIT
 ---
 
@@ -18,7 +18,7 @@ import {
   DatePickerDemos,
   TimeInputDemos,
   DateRangePickerDemos,
-} from '@mantine/demos';
+} from '@coengageui/demos';
 
 ## Installation
 
@@ -27,24 +27,24 @@ Package depends on:
 - [react](https://www.npmjs.com/package/react)
 - [react-dom](https://www.npmjs.com/package/react-dom)
 - [dayjs](https://www.npmjs.com/package/dayjs)
-- [@mantine/hooks](https://www.npmjs.com/package/@mantine/hooks)
-- [@mantine/core](https://www.npmjs.com/package/@mantine/core)
+- [@coengageui/hooks](https://www.npmjs.com/package/@coengageui/hooks)
+- [@coengageui/core](https://www.npmjs.com/package/@coengageui/core)
 
 Install with npm:
 
 ```sh
-npm install dayjs @mantine/core @mantine/hooks @mantine/dates
+npm install dayjs @coengageui/core @coengageui/hooks @coengageui/dates
 ```
 
 Install with yarn:
 
 ```sh
-yarn add dayjs @mantine/core @mantine/hooks @mantine/dates
+yarn add dayjs @coengageui/core @coengageui/hooks @coengageui/dates
 ```
 
 ## Localization
 
-Mantine dates uses [dayjs](https://day.js.org/) library for localization.
+CoengageUI dates uses [dayjs](https://day.js.org/) library for localization.
 Follow [example](https://day.js.org/docs/en/i18n/loading-into-nodejs) to load required locales in your application:
 
 ```tsx
@@ -52,10 +52,10 @@ Follow [example](https://day.js.org/docs/en/i18n/loading-into-nodejs) to load re
 import 'dayjs/locale/de';
 ```
 
-[MantineProvider](/theming/mantine-provider/) allows you to set a `datesLocale` property for all date components, or you can overwrite the locale on a per component basis:
+[CoengageUIProvider](/theming/coengageui-provider/) allows you to set a `datesLocale` property for all date components, or you can overwrite the locale on a per component basis:
 
 ```tsx
-import { DatePicker, Calendar, Month } from '@mantine/dates';
+import { DatePicker, Calendar, Month } from '@coengageui/dates';
 
 function Demo() {
   return (
@@ -92,14 +92,14 @@ function Demo() {
 
 ## Utility functions
 
-Apart from components @mantine/dates package also exports several utility functions.
+Apart from components @coengageui/dates package also exports several utility functions.
 
 **get-month-days**
 
 Returns an array of weeks of current month:
 
 ```tsx
-import { getMonthDays } from '@mantine/dates';
+import { getMonthDays } from '@coengageui/dates';
 
 getMonthDays(new Date()); // -> [[7xDate objects] x amount of weeks in current month]
 ```
@@ -109,14 +109,14 @@ getMonthDays(new Date()); // -> [[7xDate objects] x amount of weeks in current m
 Returns months names for given locale and format:
 
 ```tsx
-import { getMonthsNames } from '@mantine/dates';
+import { getMonthsNames } from '@coengageui/dates';
 
 getMonthsNames('en', 'MMMM');
 // -> [ 'January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December']
 
 // to localize import locale from dayjs package
 import 'dayjs/locale/ru';
-import { getMonthsNames } from '@mantine/dates';
+import { getMonthsNames } from '@coengageui/dates';
 
 getMonthsNames('ru', 'MMMM');
 // -> ['январь','февраль','март','апрель','май','июнь','июль','август','сентябрь','октябрь','ноябрь','декабрь']
@@ -127,7 +127,7 @@ getMonthsNames('ru', 'MMMM');
 Returns an array of short weekdays names for given locale:
 
 ```tsx
-import { getWeekdaysNames } from '@mantine/dates';
+import { getWeekdaysNames } from '@coengageui/dates';
 
 getWeekdaysNames('en');
 // -> ['Mo', 'Tu', 'We', 'Th', 'Fr', 'Sa', 'Su']
@@ -138,7 +138,7 @@ getWeekdaysNames('en');
 Returns an array of years, which fall into given range:
 
 ```tsx
-import { getYearsRange } from '@mantine/dates';
+import { getYearsRange } from '@coengageui/dates';
 
 getYearsRange({ from: 2020, to: 2025 });
 // -> [2020, 2021, 2022, 2023, 2024, 2025]
@@ -149,7 +149,7 @@ getYearsRange({ from: 2020, to: 2025 });
 Returns true if two dates have the same year, month and date, other properties (minutes, seconds, etc.) are ignored:
 
 ```tsx
-import { isSameDate } from '@mantine/dates';
+import { isSameDate } from '@coengageui/dates';
 
 isSameDate(new Date(2020, 7, 21), new Date(2020, 7, 21)); // -> true
 isSameDate(new Date(2020, 7, 21), new Date(2020, 7, 22)); // -> false
@@ -160,7 +160,7 @@ isSameDate(new Date(2020, 7, 21), new Date(2020, 7, 22)); // -> false
 Returns true if two dates have the same year and month, other properties (date, minutes, seconds, etc.) are ignored:
 
 ```tsx
-import { isSameMonth } from '@mantine/dates';
+import { isSameMonth } from '@coengageui/dates';
 
 isSameMonth(new Date(2020, 7, 21), new Date(2020, 7, 22)); // -> true
 isSameMonth(new Date(2020, 7, 21), new Date(2020, 8, 22)); // -> false

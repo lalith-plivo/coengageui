@@ -1,5 +1,5 @@
 import React from 'react';
-import { Container, Text, Group } from '@mantine/core';
+import { Container, Text, Group } from '@coengageui/core';
 import { Logo } from '../Logo/Logo';
 import { SocialButton } from '../SocialButton/SocialButton';
 import { LinksGroup } from './LinksGroup/LinksGroup';
@@ -35,8 +35,8 @@ export function Footer({ withNavbar }: FooterProps) {
           <div className={classes.afterFooter}>
             <Group position="apart">
               <Text size="xs" className={classes.afterFooterNote}>
-                Built by <a href="https://github.com/rtivital">Vitaly Rtishchev</a> and{' '}
-                <a href="https://github.com/mantinedev/mantine/graphs/contributors">
+                Built by <a href="https://github.com/rtivital">Lalith Narayan Kashyap</a> and{' '}
+                <a href="https://github.com/coengagedev/coengage/graphs/contributors">
                   these awesome people
                 </a>
               </Text>

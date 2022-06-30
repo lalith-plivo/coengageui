@@ -1,15 +1,15 @@
 import React from 'react';
 import { Link } from 'gatsby';
-import { Button, Group } from '@mantine/core';
+import { Button, Group } from '@coengageui/core';
 import { ArrowRightIcon } from '@modulz/radix-icons';
-import { Demo, CreateStylesDemos } from '@mantine/demos';
+import { Demo, CreateStylesDemos } from '@coengageui/demos';
 import { PageSection } from '../PageSection/PageSection';
 
 export function Emotion() {
   return (
     <PageSection
       title="Based on emotion 👩‍🎤"
-      description="Mantine is based on emotion, take advantage of core emotion features with createStyles function: auto vendor-prefixing, critical css extraction during server side rendering, lazy evaluation, dynamic theming, type safe styles with TypeScript and more."
+      description="CoengageUI is based on emotion, take advantage of core emotion features with createStyles function: auto vendor-prefixing, critical css extraction during server side rendering, lazy evaluation, dynamic theming, type safe styles with TypeScript and more."
     >
       <div style={{ marginTop: 30 }}>
         <Demo data={CreateStylesDemos.createStylesBasics} />

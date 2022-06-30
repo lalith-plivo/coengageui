@@ -6,19 +6,19 @@ order: 2
 search: 'cx function, media queries, responsive styles, keyframes'
 ---
 
-import { TabsDemos, CreateStylesDemos } from '@mantine/demos';
+import { TabsDemos, CreateStylesDemos } from '@coengageui/demos';
 
 # createStyles
 
-All Mantine components are built with [emotion](https://emotion.sh/) based css-in-js library.
+All CoengageUI components are built with [emotion](https://emotion.sh/) based css-in-js library.
 We recommend using `createStyles` to create styles for the rest of your application
-as it provides the most convenient way to utilize Mantine theme, but it is not required
+as it provides the most convenient way to utilize CoengageUI theme, but it is not required
 – you can use any other styling tools and languages.
 
 ## Features
 
 - As fast and lightweight as emotion: `createStyles` extends [@emotion/react](https://emotion.sh/docs/@emotion/react)
-- Subscribes to your Mantine theming context
+- Subscribes to your CoengageUI theming context
 - Supports all emotion features: automatic critical css extraction during server side rendering, lazy evaluation, dynamic theming, etc.
 - Server side rendering support: Next.js, Gatsby or any other environment
 - Fully featured TypeScript support
@@ -60,7 +60,7 @@ as it will produce styles collisions.
 ## Media queries
 
 You can use nested media queries like in Sass. Within query body you can use `theme.breakpoints`
-defined via [MantineProvider](/theming/extend-theme/#breakpoints) or just static values:
+defined via [CoengageUIProvider](/theming/extend-theme/#breakpoints) or just static values:
 
 <Demo data={CreateStylesDemos.createStylesMedia} />
 
@@ -70,30 +70,30 @@ defined via [MantineProvider](/theming/extend-theme/#breakpoints) or just static
 
 ## Inline styles
 
-Most of Mantine components support [Styles API](/theming/styles-api/).
-You can override default component styles inline or using [MantineProvider](/theming/mantine-provider/)
+Most of CoengageUI components support [Styles API](/theming/styles-api/).
+You can override default component styles inline or using [CoengageUIProvider](/theming/coengageui-provider/)
 the same way as with `createStyles`:
 
 <Demo data={TabsDemos.stylesApi} />
 
-## Using createStyles without @mantine/core
+## Using createStyles without @coengageui/core
 
-You can use `createStyles` and `MantineProvider` without any other Mantine packages:
+You can use `createStyles` and `CoengageUIProvider` without any other CoengageUI packages:
 
 ```bash
-yarn add @mantine/styles
+yarn add @coengageui/styles
 
-npm install @mantine/styles
+npm install @coengageui/styles
 ```
 
-After installation you can import `createStyles` and other function from `@mantine/styles` instead of `@mantine/core` and use it separately:
+After installation you can import `createStyles` and other function from `@coengageui/styles` instead of `@coengageui/core` and use it separately:
 
 ```tsx
-import { createStyles, MantineProvider, useMantineTheme } from '@mantine/styles';
+import { createStyles, CoengageUIProvider, useCoengageUITheme } from '@coengageui/styles';
 ```
 
-## Can I use other css-in-js libraries or SCSS with Mantine?
+## Can I use other css-in-js libraries or SCSS with CoengageUI?
 
-Yes, you can. But please note that Mantine already uses [emotion](https://emotion.sh/) and you may
+Yes, you can. But please note that CoengageUI already uses [emotion](https://emotion.sh/) and you may
 have styles collisions and would have to overwrite styles with `!important`. Please consider
 choosing `createStyle` before picking other libraries.

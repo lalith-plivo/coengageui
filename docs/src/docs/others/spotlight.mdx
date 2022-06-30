@@ -1,35 +1,35 @@
 ---
 group: 'Other packages'
-package: '@mantine/spotlight'
+package: '@coengageui/spotlight'
 title: 'Spotlight'
 order: 1
 slug: /others/spotlight/
 description: 'Command center for your application'
 props: ['SpotlightProvider']
-import: "import { SpotlightProvider } from '@mantine/spotlight';"
-source: 'mantine-spotlight/src'
+import: "import { SpotlightProvider } from '@coengageui/spotlight';"
+source: 'coengageui-spotlight/src'
 docs: 'others/spotlight.mdx'
-installation: '@mantine/spotlight'
+installation: '@coengageui/spotlight'
 license: MIT
 styles: ['SpotlightProvider']
 ---
 
-import { SpotlightDemos } from '@mantine/demos';
+import { SpotlightDemos } from '@coengageui/demos';
 
 ## Installation
 
-Package depends on `@mantine/core` and `@mantine/hooks`.
+Package depends on `@coengageui/core` and `@coengageui/hooks`.
 
 Install with npm:
 
 ```sh
-npm install @mantine/spotlight @mantine/core @mantine/hooks
+npm install @coengageui/spotlight @coengageui/core @coengageui/hooks
 ```
 
 Install with yarn:
 
 ```sh
-yarn add @mantine/spotlight @mantine/core @mantine/hooks
+yarn add @coengageui/spotlight @coengageui/core @coengageui/hooks
 ```
 
 ## Usage
@@ -40,19 +40,19 @@ with `SpotlightProvider` component:
 
 <Demo data={SpotlightDemos.usage} />
 
-Note that if you are using [MantineProvider](/theming/mantine-provider/), `SpotlightProvider` must be used as its child:
+Note that if you are using [CoengageUIProvider](/theming/coengageui-provider/), `SpotlightProvider` must be used as its child:
 
 ```tsx
-import { MantineProvider } from '@mantine/core';
-import { SpotlightProvider } from '@mantine/spotlight';
+import { CoengageUIProvider } from '@coengageui/core';
+import { SpotlightProvider } from '@coengageui/spotlight';
 
 function App() {
   return (
-    <MantineProvider>
+    <CoengageUIProvider>
       <SpotlightProvider>
         <YourApp />
       </SpotlightProvider>
-    </MantineProvider>
+    </CoengageUIProvider>
   );
 }
 ```
@@ -63,10 +63,10 @@ function App() {
 the default shortcut to trigger popup is `mod + K`, it means that it will be shown
 when users press `⌘ + K` on MacOS and `Ctrl + K` on any other os.
 
-You can setup multiple shortcuts, for example, Mantine documentation uses the following setup:
+You can setup multiple shortcuts, for example, CoengageUI documentation uses the following setup:
 
 ```tsx
-import { SpotlightProvider } from '@mantine/spotlight';
+import { SpotlightProvider } from '@coengageui/spotlight';
 
 function App() {
   return (
@@ -95,7 +95,7 @@ Keyboard shortcuts will not work if:
 To disabled keyboard shortcuts set `shortcut={null}`:
 
 ```tsx
-import { SpotlightProvider } from '@mantine/spotlight';
+import { SpotlightProvider } from '@coengageui/spotlight';
 
 function App() {
   return (
@@ -112,8 +112,8 @@ function App() {
 For example, it can be used to open spotlight with button click:
 
 ```tsx
-import { useSpotlight } from '@mantine/spotlight';
-import { Button, Group } from '@mantine/core';
+import { useSpotlight } from '@coengageui/spotlight';
+import { Button, Group } from '@coengageui/core';
 
 function SpotlightControl() {
   const spotlight = useSpotlight();
@@ -160,7 +160,7 @@ interface UseSpotlight {
 
 ## Event based functions
 
-`@mantine/spotlight` exports several functions which can be used to perform certain actions
+`@coengageui/spotlight` exports several functions which can be used to perform certain actions
 from any part of your application:
 
 ```tsx
@@ -172,7 +172,7 @@ import {
   triggerSpotlightAction,
   registerSpotlightActions,
   removeSpotlightActions,
-} from '@mantine/spotlight';
+} from '@coengageui/spotlight';
 
 // Opens spotlight
 openSpotlight();
@@ -238,10 +238,10 @@ interface SpotlightAction {
 }
 ```
 
-You can import `SpotlightAction` type from `@mantine/spotlight` package:
+You can import `SpotlightAction` type from `@coengageui/spotlight` package:
 
 ```tsx
-import type { SpotlightAction } from '@mantine/spotlight';
+import type { SpotlightAction } from '@coengageui/spotlight';
 ```
 
 ## Actions filtering

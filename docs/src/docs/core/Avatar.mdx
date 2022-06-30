@@ -1,19 +1,19 @@
 ---
-group: 'mantine-core'
-package: '@mantine/core'
+group: 'coengageui-core'
+package: '@coengageui/core'
 title: Avatar
 order: 1
 slug: /core/avatar/
 category: 'data-display'
 description: 'Display user profile image, initials or fallback icon'
 props: ['Avatar', 'AvatarsGroup']
-import: "import { Avatar, AvatarsGroup } from '@mantine/core';"
-source: 'mantine-core/src/components/Avatar/Avatar.tsx'
+import: "import { Avatar, AvatarsGroup } from '@coengageui/core';"
+source: 'coengageui-core/src/components/Avatar/Avatar.tsx'
 docs: 'core/Avatar.mdx'
 styles: ['Avatar', 'AvatarsGroup']
 ---
 
-import { AvatarDemos } from '@mantine/demos';
+import { AvatarDemos } from '@coengageui/demos';
 
 ## Usage
 
@@ -50,7 +50,7 @@ With custom component (react router example):
 
 ```tsx
 import { Link } from 'react-router-dom';
-import { Card } from '@mantine/core';
+import { Card } from '@coengageui/core';
 
 function Demo() {
   return <Avatar component={Link} to="/my-route/" src="./avatar.png" />;
@@ -60,7 +60,7 @@ function Demo() {
 To use a custom component with TypeScript, pass an additional type:
 
 ```tsx
-import { Avatar } from '@mantine/core';
+import { Avatar } from '@coengageui/core';
 import { Link } from 'react-router-dom';
 
 function Demo() {

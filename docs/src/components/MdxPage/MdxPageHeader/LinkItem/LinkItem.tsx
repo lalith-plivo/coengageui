@@ -1,5 +1,5 @@
 import React from 'react';
-import { Anchor } from '@mantine/core';
+import { Anchor } from '@coengageui/core';
 import { HeaderItem } from '../HeaderItem/HeaderItem';
 import useStyles from './LinkItem.styles';
 

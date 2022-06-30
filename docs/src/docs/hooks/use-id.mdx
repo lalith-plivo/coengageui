@@ -1,14 +1,14 @@
 ---
-group: 'mantine-hooks'
-package: '@mantine/hooks'
+group: 'coengageui-hooks'
+package: '@coengageui/hooks'
 category: 'state'
 title: 'use-id'
 order: 1
 slug: /hooks/use-id/
 description: 'Generate memoized random id'
-import: "import { useId } from '@mantine/hooks';"
+import: "import { useId } from '@coengageui/hooks';"
 docs: 'hooks/use-id.mdx'
-source: 'mantine-hooks/src/use-id/use-id.ts'
+source: 'coengageui-hooks/src/use-id/use-id.ts'
 ---
 
 ## Usage
@@ -18,7 +18,7 @@ Hook is usually used to bind input elements to labels.
 Generated random id is saved to ref and will not change unless component is unmounted.
 
 ```tsx
-import { useId } from '@mantine/hooks';
+import { useId } from '@coengageui/hooks';
 
 function Input({ id }: { id?: string }) {
   const uuid = useId(id);
@@ -34,7 +34,7 @@ function Input({ id }: { id?: string }) {
 // input and label will have id 'my-id'
 const withId = <Input id="my-id" />;
 
-// input and label will have random id 'mantine-fZMoF'
+// input and label will have random id 'coengageui-fZMoF'
 const withoutId = <Input />;
 ```
 

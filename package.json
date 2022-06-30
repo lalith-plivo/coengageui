@@ -1,14 +1,14 @@
 {
-  "name": "mantine",
+  "name": "coengageui",
   "private": true,
   "workspaces": [
     "src/*"
   ],
   "version": "4.2.11",
-  "description": "Mantine Components Monorepo",
+  "description": "CoengageUI Components Monorepo",
   "main": "index.js",
-  "repository": "https://github.com/mantinedev/mantine.git",
-  "author": "Vitaly Rtishchev <rtivital@gmail.com>",
+  "repository": "https://github.com/coengagedev/coengage.git",
+  "author": "Lalith Narayan Kashyap <rtivital@gmail.com>",
   "license": "MIT",
   "scripts": {
     "sync-branches": "sh scripts/sync-branches.sh",
@@ -18,8 +18,8 @@
     "lint": "eslint src --ext .ts,.tsx",
     "build": "esno scripts/build",
     "build:all": "npm run build all && npm run build:private",
-    "build:demos": "npm run build @mantine/demos",
-    "build:private": "npm run build @mantine/styles-api && npm run build @mantine/demos",
+    "build:demos": "npm run build @coengageui/demos",
+    "build:private": "npm run build @coengageui/styles-api && npm run build @coengageui/demos",
     "jest": "jest",
     "prettier:test": "prettier --check \"**/*.{ts,tsx}\"",
     "prettier:write": "prettier --write \"**/*.{ts,tsx}\"",

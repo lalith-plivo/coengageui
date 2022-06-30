@@ -1,17 +1,17 @@
 ---
-group: 'mantine-hooks'
-package: '@mantine/hooks'
+group: 'coengageui-hooks'
+package: '@coengageui/hooks'
 title: 'use-reduced-motion'
 category: 'dom'
 order: 1
 slug: /hooks/use-reduced-motion/
 description: 'Detect if user prefers to reduce motion'
-import: "import { useReducedMotion } from '@mantine/hooks';"
+import: "import { useReducedMotion } from '@coengageui/hooks';"
 docs: 'hooks/use-reduced-motion.mdx'
-source: 'mantine-hooks/src/use-reduced-motion/use-reduced-motion.ts'
+source: 'coengageui-hooks/src/use-reduced-motion/use-reduced-motion.ts'
 ---
 
-import { HooksDemos } from '@mantine/demos';
+import { HooksDemos } from '@coengageui/demos';
 
 ## Usage
 
@@ -21,7 +21,7 @@ Hook relies on `window.matchMedia()` [API](https://developer.mozilla.org/en-US/d
 and will always return `false` if api is not available (e.g. during server side rendering), unless initial value is provided in the first argument.
 
 Use hook to detect if user prefers to reduce motion (`(prefers-reduced-motion: reduce)` media query) and set animations duration based on this value.
-All Mantine components which use animations support it by default:
+All CoengageUI components which use animations support it by default:
 
 <Demo data={HooksDemos.useReducedMotionDemo} />
 

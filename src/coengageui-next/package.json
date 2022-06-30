@@ -1,0 +1,31 @@
+{
+  "name": "@coengageui/next",
+  "description": "CoengageUI integration for Next.js",
+  "version": "4.2.11",
+  "main": "cjs/index.js",
+  "module": "esm/index.js",
+  "types": "lib/index.d.ts",
+  "license": "MIT",
+  "author": "Lalith Narayan Kashyap <rtivital@gmail.com>",
+  "sideEffects": false,
+  "homepage": "https://coengage.dev",
+  "repository": {
+    "url": "https://github.com/coengagedev/coengage.git",
+    "type": "git",
+    "directory": "src/coengageui-ssr"
+  },
+  "keywords": [
+    "react",
+    "next",
+    "nextjs"
+  ],
+  "peerDependencies": {
+    "react": ">=16.8.0",
+    "react-dom": ">=16.8.0",
+    "next": "*"
+  },
+  "dependencies": {
+    "@coengageui/ssr": "4.2.11"
+  },
+  "devDependencies": {}
+}

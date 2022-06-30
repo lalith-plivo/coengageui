@@ -1,5 +1,5 @@
 import React from 'react';
-import { Text, SimpleGrid } from '@mantine/core';
+import { Text, SimpleGrid } from '@coengageui/core';
 import { Link } from 'gatsby';
 import { GUIDES_DATA } from '../../GettingStarted/Guides/data';
 import { PageSection } from '../PageSection/PageSection';
@@ -20,7 +20,7 @@ export function Usage() {
   return (
     <PageSection
       title="Use anywhere"
-      description="Mantine works in all modern environments – get started instantly with Next.js, Gatsby.js, create-react-app, Vite or Remix by following getting started guide:"
+      description="CoengageUI works in all modern environments – get started instantly with Next.js, Gatsby.js, create-react-app, Vite or Remix by following getting started guide:"
     >
       <SimpleGrid
         cols={5}

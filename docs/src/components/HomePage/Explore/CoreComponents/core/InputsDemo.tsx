@@ -14,9 +14,9 @@ import {
   ColorInput,
   createStyles,
   Paper,
-} from '@mantine/core';
-import { CustomSelectDemo, CountriesSelect } from '@mantine/demos';
-import { DatePicker, DateRangePicker } from '@mantine/dates';
+} from '@coengageui/core';
+import { CustomSelectDemo, CountriesSelect } from '@coengageui/demos';
+import { DatePicker, DateRangePicker } from '@coengageui/dates';
 
 const BREAKPOINT = '@media (max-width: 960px)';
 

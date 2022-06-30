@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
 import { useDarkMode } from 'storybook-dark-mode';
-import { MantineProvider, ColorSchemeProvider, Affix, ActionIcon } from '@mantine/core';
-import { useHotkeys } from '@mantine/hooks';
-import { NotificationsProvider } from '@mantine/notifications';
+import { CoengageUIProvider, ColorSchemeProvider, Affix, ActionIcon } from '@coengageui/core';
+import { useHotkeys } from '@coengageui/hooks';
+import { NotificationsProvider } from '@coengageui/notifications';
 import rtlPlugin from 'stylis-plugin-rtl';
 
 export const parameters = { layout: 'fullscreen' };
@@ -13,15 +13,15 @@ function ThemeWrapper(props: any) {
   useHotkeys([['mod + L', toggleRtl]]);
 
   return (
-    <ColorSchemeProvider colorScheme="light" toggleColorScheme={() => {}}>
-      <MantineProvider
+    <ColorSchemeProvider colorScheme="light" toggleColorScheme={() => { }}>
+      <CoengageUIProvider
         theme={{
           dir: rtl ? 'rtl' : 'ltr',
           colorScheme: useDarkMode() ? 'dark' : 'light',
           headings: { fontFamily: 'Greycliff CF, sans-serif' },
         }}
         emotionOptions={
-          rtl ? { key: 'mantine-rtl', stylisPlugins: [rtlPlugin as any] } : { key: 'mantine' }
+          rtl ? { key: 'coengageui-rtl', stylisPlugins: [rtlPlugin as any] } : { key: 'coengage' }
         }
         withGlobalStyles
         withNormalizeCSS
@@ -46,7 +46,7 @@ function ThemeWrapper(props: any) {
           </Affix>
           <div dir={rtl ? 'rtl' : 'ltr'}>{props.children}</div>
         </NotificationsProvider>
-      </MantineProvider>
+      </CoengageUIProvider>
     </ColorSchemeProvider>
   );
 }

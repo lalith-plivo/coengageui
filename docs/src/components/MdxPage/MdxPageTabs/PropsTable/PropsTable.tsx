@@ -1,5 +1,5 @@
 import React from 'react';
-import { Table, Text, Highlight, useMantineTheme } from '@mantine/core';
+import { Table, Text, Highlight, useCoengageUITheme } from '@coengageui/core';
 import DocsSection from '../../../DocsSection/DocsSection';
 import PROPS_DATA from '../../../../../.docgen/docgen.json';
 
@@ -8,7 +8,7 @@ interface PropsTableProps {
   query: string;
 }
 export default function PropsTable({ component, query }: PropsTableProps) {
-  const theme = useMantineTheme();
+  const theme = useCoengageUITheme();
 
   if (!PROPS_DATA[component]) {
     return null;

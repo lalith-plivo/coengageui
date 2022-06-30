@@ -1,8 +1,8 @@
 import React from 'react';
-import { useMantineTheme, Center } from '@mantine/core';
+import { useCoengageUITheme, Center } from '@coengageui/core';
 
 export function RemixIcon() {
-  const theme = useMantineTheme();
+  const theme = useCoengageUITheme();
   return (
     <Center sx={{ height: 80, width: '100%' }}>
       <svg

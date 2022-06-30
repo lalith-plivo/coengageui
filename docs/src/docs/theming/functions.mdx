@@ -8,17 +8,17 @@ search: 'rgba, lighten, darken, smallerThan, gradient'
 
 # Theme functions
 
-Mantine theme provides several functions that can be used to simplify writing styles.
+CoengageUI theme provides several functions that can be used to simplify writing styles.
 All functions available at fn object: `theme.fn.functionName()`.
 
 ## Accessing theme functions
 
-You can use theme functions wherever Mantine theme is available. There are 4 main ways to work with theme:
+You can use theme functions wherever CoengageUI theme is available. There are 4 main ways to work with theme:
 
 - [createStyles](/theming/create-styles) function
 
 ```tsx
-import { createStyles } from '@mantine/core';
+import { createStyles } from '@coengageui/core';
 
 const useStyles = createStyles((theme) => ({
   myCustomButton: {
@@ -30,7 +30,7 @@ const useStyles = createStyles((theme) => ({
 - `sx` component prop
 
 ```tsx
-import { Box } from '@mantine/core';
+import { Box } from '@coengageui/core';
 
 function Demo() {
   return (
@@ -46,7 +46,7 @@ function Demo() {
 - `styles` component prop
 
 ```tsx
-import { Slider } from '@mantine/core';
+import { Slider } from '@coengageui/core';
 
 function Demo() {
   return (
@@ -61,26 +61,26 @@ function Demo() {
 }
 ```
 
-- `useMantineTheme` hook
+- `useCoengageUITheme` hook
 
 ```tsx
-import { useMantineTheme } from '@mantine/core';
+import { useCoengageUITheme } from '@coengageui/core';
 
 function Demo() {
-  const theme = useMantineTheme();
+  const theme = useCoengageUITheme();
   return <div style={{ background: theme.fn.linearGradient(45, 'red', 'blue') }} />;
 }
 ```
 
 ## focusStyles
 
-All Mantine components have custom focus ring styles which are based on [:focus-visible](https://developer.mozilla.org/en-US/docs/Web/CSS/:focus-visible)
+All CoengageUI components have custom focus ring styles which are based on [:focus-visible](https://developer.mozilla.org/en-US/docs/Web/CSS/:focus-visible)
 pseudo-class. It is important to keep styles consistent across all of your application components and you should
-include Mantine focus styles to your custom interactive elements. `focusStyles` function lets you spread Mantine focus styles
+include CoengageUI focus styles to your custom interactive elements. `focusStyles` function lets you spread CoengageUI focus styles
 without providing any additional parameters:
 
 ```tsx
-import { createStyles } from '@mantine/core';
+import { createStyles } from '@coengageui/core';
 
 const useStyles = createStyles((theme) => ({
   myCustomButton: {
@@ -100,11 +100,11 @@ function MyCustomButton() {
 
 ## fontStyles
 
-With `fontStyles` function you can add font styles from your Mantine theme to any element.
+With `fontStyles` function you can add font styles from your CoengageUI theme to any element.
 Function returns font-family and font-smoothing styles:
 
 ```tsx
-import { createStyles } from '@mantine/core';
+import { createStyles } from '@coengageui/core';
 
 const useStyles = createStyles((theme) => ({
   myCustomText: {
@@ -133,7 +133,7 @@ theme.fn.largerThan(700); // -> `@media (min-width: 701px)`
 You can use both functions as a replacement for regular media query syntax in `createStyles` function, `styles` and `sx` props:
 
 ```tsx
-import { createStyles } from '@mantine/core';
+import { createStyles } from '@coengageui/core';
 
 const useStyles = createStyles((theme) => ({
   myResponsiveText: {

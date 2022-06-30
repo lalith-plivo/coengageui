@@ -1,5 +1,5 @@
 import React from 'react';
-import { Burger, Code } from '@mantine/core';
+import { Burger, Code } from '@coengageui/core';
 import corePackageJson from '../../../../../package.json';
 import { Logo } from '../../Logo/Logo';
 import { HeaderControls } from './HeaderControls/HeaderControls';
@@ -30,7 +30,7 @@ export default function Header({ navbarOpened, toggleNavbar }: HeaderProps) {
             <Logo />
           </div>
 
-          <a href="https://github.com/mantinedev/mantine/releases" className={classes.version}>
+          <a href="https://github.com/coengagedev/coengage/releases" className={classes.version}>
             <Code>v{corePackageJson.version}</Code>
           </a>
         </div>

@@ -1,26 +1,25 @@
 import React, { useState } from 'react';
-import { useScrollLock, useClickOutside } from '@mantine/hooks';
-import { Title, Button, Paper, Center, createStyles, useMantineTheme } from '@mantine/core';
-import { Prism } from '@mantine/prism';
+import { useScrollLock, useClickOutside } from '@coengageui/hooks';
+import { Title, Button, Paper, Center, createStyles, useCoengageUITheme } from '@coengageui/core';
+import { Prism } from '@coengageui/prism';
 import { LockClosedIcon, LockOpen2Icon } from '@modulz/radix-icons';
 
 const useStyles = createStyles((theme) => ({
   prism: {
     '& pre': {
-      backgroundColor: `${
-        theme.colorScheme === 'dark' ? theme.colors.dark[8] : theme.white
-      } !important`,
+      backgroundColor: `${theme.colorScheme === 'dark' ? theme.colors.dark[8] : theme.white
+        } !important`,
       borderRadius: theme.radius.md,
       padding: 14,
       paddingTop: 30,
       paddingBottom: 30,
     },
 
-    '& .mantine-ScrollArea-viewport': {
+    '& .coengageui-ScrollArea-viewport': {
       borderRadius: theme.radius.md,
     },
 
-    '& .mantine-ScrollArea-root': {
+    '& .coengageui-ScrollArea-root': {
       borderRadius: theme.radius.md,
       boxShadow: theme.shadows.md,
     },
@@ -28,8 +27,8 @@ const useStyles = createStyles((theme) => ({
 }));
 
 const lockCode = `
-import { useScrollLock } from '@mantine/hooks';
-import { Button } from '@mantine/core';
+import { useScrollLock } from '@coengageui/hooks';
+import { Button } from '@coengageui/core';
 
 function Demo() {
   const [scrollLocked, setScrollLocked] = useScrollLock();
@@ -40,8 +39,8 @@ function Demo() {
 
 const clickOutsideCode = `
 import { useState } from 'react';
-import { Paper, Button } from '@mantine/core';
-import { useClickOutside } from '@mantine/hooks';
+import { Paper, Button } from '@coengageui/core';
+import { useClickOutside } from '@coengageui/hooks';
 
 function Demo() {
   const [opened, setOpened] = useState(false);
@@ -60,7 +59,7 @@ export function HooksDemo() {
   const [scrollLocked, setScrollLocked] = useScrollLock();
   const [opened, setOpened] = useState(false);
   const ref = useClickOutside(() => setOpened(false));
-  const theme = useMantineTheme();
+  const theme = useCoengageUITheme();
 
   return (
     <>

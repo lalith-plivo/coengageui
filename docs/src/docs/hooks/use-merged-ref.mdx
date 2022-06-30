@@ -1,14 +1,14 @@
 ---
-group: 'mantine-hooks'
-package: '@mantine/hooks'
+group: 'coengageui-hooks'
+package: '@coengageui/hooks'
 title: 'use-merged-ref'
 category: 'utils'
 order: 1
 slug: /hooks/use-merged-ref/
 description: 'Use multiple refs for one dom node'
-import: "import { useMergedRef } from '@mantine/hooks';"
+import: "import { useMergedRef } from '@coengageui/hooks';"
 docs: 'hooks/use-merged-ref.mdx'
-source: 'mantine-hooks/src/use-merged-ref/use-merged-ref.ts'
+source: 'coengageui-hooks/src/use-merged-ref/use-merged-ref.ts'
 ---
 
 ## Usage
@@ -19,7 +19,7 @@ when you want to use [use-click-outside](/hooks/use-click-outside/) and [use-foc
 
 ```tsx
 import { useRef } from 'react';
-import { useClickOutside, useFocusTrap, useMergedRef } from '@mantine/hooks';
+import { useClickOutside, useFocusTrap, useMergedRef } from '@coengageui/hooks';
 
 function Demo() {
   const myRef = useRef();
@@ -40,7 +40,7 @@ across two renders. To fix that issue use `mergeRefs` function instead:
 
 ```tsx
 import { useRef } from 'react';
-import { useClickOutside, mergeRefs } from '@mantine/hooks';
+import { useClickOutside, mergeRefs } from '@coengageui/hooks';
 
 function Demo() {
   const myRef = useRef();

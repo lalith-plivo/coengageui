@@ -1,11 +1,11 @@
 import React from 'react';
 import { Link } from 'gatsby';
-import { Title, ThemeIcon, Text, Group, SimpleGrid, useMantineTheme } from '@mantine/core';
+import { Title, ThemeIcon, Text, Group, SimpleGrid, useCoengageUITheme } from '@coengageui/core';
 import { NEXT_STEPS_DATA } from './data';
 import useStyles from './NextSteps.styles';
 
 export function NextSteps() {
-  const theme = useMantineTheme();
+  const theme = useCoengageUITheme();
   const { classes } = useStyles();
 
   const items = NEXT_STEPS_DATA.map((item, index) => {

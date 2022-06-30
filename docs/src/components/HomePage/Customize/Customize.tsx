@@ -1,9 +1,9 @@
 import React from 'react';
 import { Link } from 'gatsby';
 import { ArrowRightIcon } from '@modulz/radix-icons';
-import { Text, SimpleGrid, Slider, Button } from '@mantine/core';
-import { Prism } from '@mantine/prism';
-import { Slider as SliderStylesApi } from '@mantine/styles-api';
+import { Text, SimpleGrid, Slider, Button } from '@coengageui/core';
+import { Prism } from '@coengageui/prism';
+import { Slider as SliderStylesApi } from '@coengageui/styles-api';
 import DataTable from '../../MdxPage/MdxProvider/DataTable/DataTable';
 import { PageSection } from '../PageSection/PageSection';
 
@@ -33,7 +33,7 @@ export function Customize() {
   return (
     <PageSection
       title="Components customization"
-      description="Each Mantine component supports styles overriding for every internal element inside with classes or inline styles. This feature alongside other customization options allows you to implement any visual modifications to components and adapt them to fit almost any design requirements."
+      description="Each CoengageUI component supports styles overriding for every internal element inside with classes or inline styles. This feature alongside other customization options allows you to implement any visual modifications to components and adapt them to fit almost any design requirements."
     >
       <SimpleGrid cols={2} breakpoints={[{ maxWidth: 960, cols: 1 }]} spacing={30} mt={30}>
         <div>

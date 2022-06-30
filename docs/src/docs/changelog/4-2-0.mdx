@@ -3,7 +3,7 @@ group: 'changelog'
 title: 'Version 4.2.0'
 order: 1
 slug: /changelog/4-2-0/
-release: https://github.com/mantinedev/mantine/releases/tag/4.2.0
+release: https://github.com/coengagedev/coengage/releases/tag/4.2.0
 date: 'April 27th, 2022'
 ---
 
@@ -14,7 +14,7 @@ import {
   ModalDemos,
   HooksDemos,
   SegmentedControlDemos,
-} from '@mantine/demos';
+} from '@coengageui/demos';
 
 ## primaryShade on theme
 
@@ -26,57 +26,57 @@ it defaults to 6. Note that for some variants with dark color scheme `primarySha
 `primaryShade` can also be customized for dark and light color scheme separately:
 
 ```tsx
-import { MantineProvider } from '@mantine/core';
+import { CoengageUIProvider } from '@coengageui/core';
 
 function Demo() {
   return (
-    <MantineProvider theme={{ primaryShade: { light: 6, dark: 8 } }}>
+    <CoengageUIProvider theme={{ primaryShade: { light: 6, dark: 8 } }}>
       <App />
-    </MantineProvider>
+    </CoengageUIProvider>
   );
 }
 ```
 
 ## Indicator component
 
-New [Indicator](https://mantine.dev/core/indicator/) component:
+New [Indicator](https://coengage.dev/core/indicator/) component:
 
 <Demo data={IndicatorDemos.configurator} />
 
 ## use-focus-within hook
 
-New [use-focus-within](https://mantine.dev/hooks/use-focus-within/) hook detects if any element within has focus,
+New [use-focus-within](https://coengage.dev/hooks/use-focus-within/) hook detects if any element within has focus,
 it works the same way as `:focus-within` CSS selector:
 
 <Demo data={HooksDemos.useFocusWithinDemo} />
 
 ## use-network hook
 
-New [use-network](https://mantine.dev/hooks/use-network/) hook returns current connection status:
+New [use-network](https://coengage.dev/hooks/use-network/) hook returns current connection status:
 
 <Demo data={HooksDemos.useNetworkDemo} demoProps={{ toggle: true }} />
 
 ## New features
 
-[Calendar](https://mantine.dev/dates/calendar/) component now supports multiple selected dates:
+[Calendar](https://coengage.dev/dates/calendar/) component now supports multiple selected dates:
 
 <Demo data={CalendarDemos.multiple} />
 
-[Modal](https://mantine.dev/core/modal/) and [Drawer](https://mantine.dev/core/drawer/) components now support setting overlay blur:
+[Modal](https://coengage.dev/core/modal/) and [Drawer](https://coengage.dev/core/drawer/) components now support setting overlay blur:
 
 <Demo data={ModalDemos.overlay} />
 
-[Calendar](https://mantine.dev/dates/calendar/), [Month](https://mantine.dev/dates/month/) and [DatePicker](https://mantine.dev/dates/date-picker/) components
+[Calendar](https://coengage.dev/dates/calendar/), [Month](https://coengage.dev/dates/month/) and [DatePicker](https://coengage.dev/dates/date-picker/) components
 now support custom day renderer with `renderDay` function:
 
 <Demo data={CalendarDemos.renderDay} />
 
-[SegmentedControl](https://mantine.dev/core/segmented-control/) component now supports disabled items:
+[SegmentedControl](https://coengage.dev/core/segmented-control/) component now supports disabled items:
 
 <Demo data={SegmentedControlDemos.disabled} />
 
 ## Other changes
 
-- [use-window-event](https://mantine.dev/hooks/use-window-event/) hook now supports custom events
-- [use-local-storage](https://mantine.dev/hooks/use-local-storage/) hook now supports value sync in the same tab
-- [RichTextEditor](https://mantine.dev/others/rte/) now supports placeholder
+- [use-window-event](https://coengage.dev/hooks/use-window-event/) hook now supports custom events
+- [use-local-storage](https://coengage.dev/hooks/use-local-storage/) hook now supports value sync in the same tab
+- [RichTextEditor](https://coengage.dev/others/rte/) now supports placeholder

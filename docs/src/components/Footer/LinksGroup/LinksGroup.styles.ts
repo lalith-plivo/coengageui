@@ -1,4 +1,4 @@
-import { createStyles } from '@mantine/core';
+import { createStyles } from '@coengageui/core';
 
 export default createStyles((theme) => ({
   wrapper: {

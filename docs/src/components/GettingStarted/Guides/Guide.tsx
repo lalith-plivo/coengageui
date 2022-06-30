@@ -1,6 +1,6 @@
 import React from 'react';
-import { Text, Button, useMantineTheme } from '@mantine/core';
-import { Prism } from '@mantine/prism';
+import { Text, Button, useCoengageUITheme } from '@coengageui/core';
+import { Prism } from '@coengageui/prism';
 import GatsbyLink from '../../MdxPage/MdxProvider/GatsbyLink/GatsbyLink';
 
 /* eslint-disable react/no-unused-prop-types */
@@ -15,7 +15,7 @@ export interface GuideProps {
 /* eslint-enable react/no-unused-prop-types */
 
 const done = `
-import { Button } from '@mantine/core';
+import { Button } from '@coengageui/core';
 
 export function MyApp() {
   return <Button>Hello world!</Button>;
@@ -23,7 +23,7 @@ export function MyApp() {
 `;
 
 function Guide({ dependencies, initScript, children, action, actionLink, withDone }: GuideProps) {
-  const theme = useMantineTheme();
+  const theme = useCoengageUITheme();
   return (
     <>
       {actionLink && (
@@ -54,14 +54,14 @@ function Guide({ dependencies, initScript, children, action, actionLink, withDon
         With yarn
       </Text>
 
-      <Prism language="bash">{`yarn add ${dependencies || '@mantine/core @mantine/hooks'}`}</Prism>
+      <Prism language="bash">{`yarn add ${dependencies || '@coengageui/core @coengageui/hooks'}`}</Prism>
 
       <Text mb={5} mt={15} size="sm">
         With npm
       </Text>
 
       <Prism language="bash">
-        {`npm install ${dependencies || '@mantine/core @mantine/hooks'}`}
+        {`npm install ${dependencies || '@coengageui/core @coengageui/hooks'}`}
       </Prism>
 
       {children}
@@ -93,7 +93,7 @@ function ViteGuide({ dependencies }: GuideProps) {
   return (
     <Guide
       dependencies={dependencies}
-      initScript="yarn create vite mantine-vite --template react-ts"
+      initScript="yarn create vite coengageui-vite --template react-ts"
       withDone
     />
   );
@@ -102,10 +102,10 @@ function ViteGuide({ dependencies }: GuideProps) {
 function NextGuide({ dependencies }: GuideProps) {
   return (
     <Guide
-      dependencies={`${dependencies} @mantine/next`}
+      dependencies={`${dependencies} @coengageui/next`}
       initScript="npx create-next-app --ts"
       action="Get started with Next.js GitHub template"
-      actionLink="https://github.com/mantinedev/mantine-next-template"
+      actionLink="https://github.com/coengagedev/coengageui-next-template"
     >
       <Text weight={500} mt={30} mb={5} size="lg">
         And follow Next.js guide
@@ -119,16 +119,16 @@ function NextGuide({ dependencies }: GuideProps) {
 function GatsbyGuide({ dependencies }: GuideProps) {
   return (
     <Guide
-      dependencies={`${dependencies} gatsby-plugin-mantine`}
+      dependencies={`${dependencies} gatsby-plugin-coengage`}
       initScript="npm init gatsby"
       action="Get started with Gatsby.js GitHub template"
-      actionLink="https://github.com/mantinedev/mantine-gatsby-template"
+      actionLink="https://github.com/coengagedev/coengageui-gatsby-template"
       withDone
     >
       <Text weight={500} mt={30} mb={5} size="lg">
-        Add gatsby-plugin-mantine in your gatsby.config.js file:
+        Add gatsby-plugin-coengage in your gatsby.config.js file:
       </Text>
-      <Prism language="tsx">plugins: [&apos;gatsby-plugin-mantine&apos;]</Prism>
+      <Prism language="tsx">plugins: [&apos;gatsby-plugin-coengage&apos;]</Prism>
     </Guide>
   );
 }
@@ -136,7 +136,7 @@ function GatsbyGuide({ dependencies }: GuideProps) {
 const remixCode = `import { renderToString } from 'react-dom/server';
 import { RemixServer } from '@remix-run/react';
 import type { EntryContext } from '@remix-run/node';
-import { injectStylesIntoStaticMarkup } from '@mantine/ssr';
+import { injectStylesIntoStaticMarkup } from '@coengageui/ssr';
 
 export default function handleRequest(
   request: Request,
@@ -157,10 +157,10 @@ export default function handleRequest(
 function RemixGuide({ dependencies }: GuideProps) {
   return (
     <Guide
-      dependencies={`${dependencies} @mantine/ssr`}
+      dependencies={`${dependencies} @coengageui/ssr`}
       initScript="npx create-remix@latest"
       action="View example setup"
-      actionLink="https://github.com/remix-run/remix/tree/main/examples/mantine"
+      actionLink="https://github.com/remix-run/remix/tree/main/examples/coengage"
       withDone
     >
       <Text weight={500} mt={30} mb={5} size="lg">

@@ -1,23 +1,23 @@
 ---
-group: 'mantine-core'
-package: '@mantine/core'
+group: 'coengageui-core'
+package: '@coengageui/core'
 title: Popper
 order: 1
 slug: /core/popper/
 category: 'misc'
 description: 'Render dropdown in portal with popper.js'
 props: ['Popper']
-import: "import { Popper } from '@mantine/core';"
-source: 'mantine-core/src/components/Popper/Popper.tsx'
+import: "import { Popper } from '@coengageui/core';"
+source: 'coengageui-core/src/components/Popper/Popper.tsx'
 docs: 'core/Popper.mdx'
 ---
 
-import { PopperDemos, TooltipDemos } from '@mantine/demos';
+import { PopperDemos, TooltipDemos } from '@coengageui/demos';
 
 ## Usage
 
 Popper is a utility component used under the hood in [Menu](/core/menu/), [Popover](/core/popover/), [Tooltip](/core/tooltip/)
-and other Mantine components. You can use it to create your own dropdowns and popovers if Mantine components do not meet your requirements.
+and other CoengageUI components. You can use it to create your own dropdowns and popovers if CoengageUI components do not meet your requirements.
 
 To use Popper, add the following required props first:
 
@@ -27,7 +27,7 @@ To use Popper, add the following required props first:
 
 ```tsx
 import { useState } from 'react';
-import { Popper } from '@mantine/core';
+import { Popper } from '@coengageui/core';
 
 function Demo() {
   // useState is required to store element ref, useRef won't work

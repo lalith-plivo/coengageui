@@ -1,17 +1,17 @@
 ---
-group: 'mantine-hooks'
-package: '@mantine/hooks'
+group: 'coengageui-hooks'
+package: '@coengageui/hooks'
 category: 'dom'
 title: 'use-resize-observer'
 order: 1
 slug: /hooks/use-resize-observer/
 description: 'Subscribe to element size and position changes with ResizeObserver'
-import: "import { useResizeObserver } from '@mantine/hooks';"
+import: "import { useResizeObserver } from '@coengageui/hooks';"
 docs: 'hooks/use-resize-observer.mdx'
-source: 'mantine-hooks/src/use-resize-observer/use-resize-observer.ts'
+source: 'coengageui-hooks/src/use-resize-observer/use-resize-observer.ts'
 ---
 
-import { HooksDemos } from '@mantine/demos';
+import { HooksDemos } from '@coengageui/demos';
 
 ## Usage
 
@@ -24,7 +24,7 @@ See [Resize Observer API](https://developer.mozilla.org/en-US/docs/Web/API/Resiz
 On the first render (as well as during SSR), or when no element is being observed, all of the properties are equal to `0`.
 
 ```tsx
-import { useResizeObserver } from '@mantine/hooks';
+import { useResizeObserver } from '@coengageui/hooks';
 
 function Demo() {
   const [ref, rect] = useResizeObserver();
@@ -32,7 +32,7 @@ function Demo() {
 }
 ```
 
-See also [use-element-size](https://mantine.dev/hooks/use-element-size/) hook in case you need to subscribe only to `width` and `height`.
+See also [use-element-size](https://coengage.dev/hooks/use-element-size/) hook in case you need to subscribe only to `width` and `height`.
 
 ## Definition
 

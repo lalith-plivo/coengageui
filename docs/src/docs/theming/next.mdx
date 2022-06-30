@@ -3,33 +3,33 @@ group: 'theming'
 title: Usage with Next.js
 slug: /theming/next/
 order: 8
-search: 'Setup SSR with Next.js using @mantine/next'
+search: 'Setup SSR with Next.js using @coengageui/next'
 ---
 
 # Usage with Next.js
 
-Mantine is fully compatible with Next.js, follow following guide to setup your application
+CoengageUI is fully compatible with Next.js, follow following guide to setup your application
 
 ## Get started with template
 
-If you are starting new project you can skip all configuration steps and use [Next.js template](https://github.com/mantinedev/mantine-next-template).
-To get started [follow this link](https://github.com/mantinedev/mantine-next-template/generate) and create new repository.
-Alternatively you can download or clone [repository](https://github.com/mantinedev/mantine-next-template) to get started on your machine.
+If you are starting new project you can skip all configuration steps and use [Next.js template](https://github.com/coengagedev/coengageui-next-template).
+To get started [follow this link](https://github.com/coengagedev/coengageui-next-template/generate) and create new repository.
+Alternatively you can download or clone [repository](https://github.com/coengagedev/coengageui-next-template) to get started on your machine.
 
 ## Adding to existing Next.js project
 
-1. Install `@mantine/next`
+1. Install `@coengageui/next`
 
 ```bash
-yarn add @mantine/next
+yarn add @coengageui/next
 
-npm install @mantine/next
+npm install @coengageui/next
 ```
 
 1. Create `pages/_document.tsx` file:
 
 ```tsx
-import { createGetInitialProps } from '@mantine/next';
+import { createGetInitialProps } from '@coengageui/next';
 import Document, { Head, Html, Main, NextScript } from 'next/document';
 
 const getInitialProps = createGetInitialProps();
@@ -56,7 +56,7 @@ export default class _Document extends Document {
 ```tsx
 import { AppProps } from 'next/app';
 import Head from 'next/head';
-import { MantineProvider } from '@mantine/core';
+import { CoengageUIProvider } from '@coengageui/core';
 
 export default function App(props: AppProps) {
   const { Component, pageProps } = props;
@@ -68,16 +68,16 @@ export default function App(props: AppProps) {
         <meta name="viewport" content="minimum-scale=1, initial-scale=1, width=device-width" />
       </Head>
 
-      <MantineProvider
+      <CoengageUIProvider
         withGlobalStyles
         withNormalizeCSS
         theme={{
-          /** Put your mantine theme override here */
+          /** Put your coengage theme override here */
           colorScheme: 'light',
         }}
       >
         <Component {...pageProps} />
-      </MantineProvider>
+      </CoengageUIProvider>
     </>
   );
 }
@@ -86,11 +86,11 @@ export default function App(props: AppProps) {
 ## Create your own getInitialProps
 
 In some cases you would want to have access to `getInitialProps` in Next Document,
-to do so you will need to setup Mantine ssr styles extraction on your own:
+to do so you will need to setup CoengageUI ssr styles extraction on your own:
 
 ```tsx
 import Document, { DocumentContext } from 'next/document';
-import { ServerStyles, createStylesServer } from '@mantine/next';
+import { ServerStyles, createStylesServer } from '@coengageui/next';
 
 const stylesServer = createStylesServer();
 
@@ -111,7 +111,7 @@ export default class _Document extends Document {
 }
 ```
 
-## Mantine components with Next Link
+## CoengageUI components with Next Link
 
 You can use polymorphic components (Button, ActionIcon, Anchor, etc.) with Next Link, to do so:
 
@@ -120,7 +120,7 @@ You can use polymorphic components (Button, ActionIcon, Anchor, etc.) with Next 
 
 ```tsx
 import Link from 'next/link';
-import { Button } from '@mantine/core';
+import { Button } from '@coengageui/core';
 
 function Demo() {
   return (

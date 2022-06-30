@@ -1,6 +1,6 @@
 import React from 'react';
-import { Title, Text } from '@mantine/core';
-import { Prism } from '@mantine/prism';
+import { Title, Text } from '@coengageui/core';
+import { Prism } from '@coengageui/prism';
 import { generateRootCode } from '../generate-styles-code';
 import GatsbyLink from '../../../MdxProvider/GatsbyLink/GatsbyLink';
 
@@ -13,7 +13,7 @@ export function StylesApiHeader({ component, singleNode }: StylesApiHeaderProps)
   return (
     <>
       <Title order={2} sx={{ fontWeight: 600 }} mb="md">
-        {singleNode ? `${component} styles API` : 'Mantine styles API'}
+        {singleNode ? `${component} styles API` : 'CoengageUI styles API'}
       </Title>
 
       {singleNode ? (
@@ -22,7 +22,7 @@ export function StylesApiHeader({ component, singleNode }: StylesApiHeaderProps)
         </Text>
       ) : (
         <Text sx={{ maxWidth: 600 }} mb={30}>
-          Mantine components support styling of individual elements by adding your classes or inline
+          CoengageUI components support styling of individual elements by adding your classes or inline
           styles to any element inside component. For more information see{' '}
           <GatsbyLink to="/theming/styles-api/">styles API guide</GatsbyLink>.
         </Text>

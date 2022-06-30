@@ -11,25 +11,25 @@ search: 'General approach to SSR'
 This guide covers server side rendering with custom server, [Next.js](/theming/next/) and [Gatsby](/theming/gatsby/)
 usage guides are available separately.
 
-1. Install `@mantine/ssr` package
+1. Install `@coengageui/ssr` package
 
 ```bash
-yarn add @mantine/ssr
+yarn add @coengageui/ssr
 
-npm install @mantine/ssr
+npm install @coengageui/ssr
 ```
 
-2. Create `App` component with `MantineProvider`
+2. Create `App` component with `CoengageUIProvider`
 
 ```tsx
-import { Button, MantineProvider } from '@mantine/core';
+import { Button, CoengageUIProvider } from '@coengageui/core';
 
 export function App() {
   return (
-    {/* Setup MantineProvider with your theme */}
-    <MantineProvider theme={{ colorScheme: 'dark' }} withGlobalStyles withNormalizeCSS>
+    {/* Setup CoengageUIProvider with your theme */}
+    <CoengageUIProvider theme={{ colorScheme: 'dark' }} withGlobalStyles withNormalizeCSS>
       <Button>My awesome app</Button>
-    </MantineProvider>
+    </CoengageUIProvider>
   );
 }
 ```
@@ -61,7 +61,7 @@ export function Html({ children, styles }) {
 ```tsx
 import { renderToStaticMarkup, renderToString } from 'react-dom/server';
 import express from 'express';
-import { createStylesServer, ServerStyles } from '@mantine/ssr';
+import { createStylesServer, ServerStyles } from '@coengageui/ssr';
 import { App } from './App';
 import { Html } from './Html';
 

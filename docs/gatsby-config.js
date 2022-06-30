@@ -7,10 +7,10 @@ module.exports = {
   },
 
   siteMetadata: {
-    title: 'Mantine Docs',
-    description: 'Mantine documentation',
+    title: 'CoengageUI Docs',
+    description: 'CoengageUI documentation',
     author: '@rtivital',
-    siteUrl: 'https://mantine.dev',
+    siteUrl: 'https://coengage.dev',
   },
 
   plugins: [
@@ -48,8 +48,8 @@ module.exports = {
     {
       resolve: 'gatsby-plugin-manifest',
       options: {
-        name: 'Mantine Docs',
-        short_name: 'mantine',
+        name: 'CoengageUI Docs',
+        short_name: 'coengage',
         start_url: '/',
         background_color: '#228be6',
         theme_color: '#228be6',

@@ -1,5 +1,5 @@
 import React from 'react';
-import { Image, SimpleGrid } from '@mantine/core';
+import { Image, SimpleGrid } from '@coengageui/core';
 
 import darkTheme from './assets/dark-theme.png';
 import notifications from './assets/notifications.gif';
@@ -9,8 +9,8 @@ import socialMedia from './assets/social-media.png';
 const data = [
   { image: socialMedia, title: 'Social media preview' },
   { image: darkTheme, title: 'Dark/light theme' },
-  { image: notifications, title: '@mantine/notifications example' },
-  { image: richTextEditor, title: '@mantine/rte RichTextEditor' },
+  { image: notifications, title: '@coengageui/notifications example' },
+  { image: richTextEditor, title: '@coengageui/rte RichTextEditor' },
 ];
 
 export function Images() {

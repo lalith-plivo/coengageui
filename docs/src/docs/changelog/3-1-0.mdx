@@ -3,7 +3,7 @@ group: 'changelog'
 title: 'Version 3.1.0'
 order: 1
 slug: /changelog/3-1-0/
-release: https://github.com/mantinedev/mantine/releases/tag/3.1.0
+release: https://github.com/coengagedev/coengage/releases/tag/3.1.0
 date: 'October 28th, 2021'
 ---
 
@@ -17,43 +17,43 @@ import {
   HooksDemos,
   CreateStylesDemos,
   ThemeDemos,
-} from '@mantine/demos';
+} from '@coengageui/demos';
 
 ## Breaking changes
 
-- [MediaQuery](https://mantine.dev/core/media-query/) now requires passing `styles` object and does not hide child element by default
-- [Styles API](https://mantine.dev/theming/styles-api/) static selectors no longer use kebab case (was `.mantine-text-input-root`, now `.mantine-TextInput-root`)
+- [MediaQuery](https://coengage.dev/core/media-query/) now requires passing `styles` object and does not hide child element by default
+- [Styles API](https://coengage.dev/theming/styles-api/) static selectors no longer use kebab case (was `.coengageui-text-input-root`, now `.coengageui-TextInput-root`)
 
-## Configure emotion with MantineProvider
+## Configure emotion with CoengageUIProvider
 
-You can now set emotion cache options via MantineProvider:
+You can now set emotion cache options via CoengageUIProvider:
 
 ```tsx
-<MantineProvider emotionOptions={{ key: 'mantine', prepend: false }}>
+<CoengageUIProvider emotionOptions={{ key: 'coengage', prepend: false }}>
   <App />
-</MantineProvider>
+</CoengageUIProvider>
 ```
 
 With these options you can change styles insertion point (from 3.1 styles are prepended to head)
 and configure stylis plugins. For example, you can use [stylis-plugin-rtl](https://github.com/styled-components/stylis-plugin-rtl) to add rtl support:
 
 ```tsx
-import { MantineProvider } from '@mantine/core';
+import { CoengageUIProvider } from '@coengageui/core';
 import rtlPlugin from 'stylis-plugin-rtl';
 
 function Demo() {
   return (
-    <MantineProvider emotionOptions={{ key: 'mantine', stylisPlugins: [rtlPlugin] }}>
+    <CoengageUIProvider emotionOptions={{ key: 'coengage', stylisPlugins: [rtlPlugin] }}>
       <App />
-    </MantineProvider>
+    </CoengageUIProvider>
   );
 }
 ```
 
-## Styles API on MantineProvider
+## Styles API on CoengageUIProvider
 
-You can now add styles to components with MantineProvider.
-Styles will be added to every matching component rendered inside MantineProvider:
+You can now add styles to components with CoengageUIProvider.
+Styles will be added to every matching component rendered inside CoengageUIProvider:
 
 <Demo data={ThemeDemos.providerStyles} />
 
@@ -92,7 +92,7 @@ New use-css hook is a simpler alternative to `createStyles` function.
 Hook returns `css` and `cx` functions. `css` function accepts styles object and returns class name:
 
 ```tsx
-import { useCss, Button } from '@mantine/core';
+import { useCss, Button } from '@coengageui/core';
 
 function Demo({ active }) {
   const { css, cx } = useCss();
@@ -108,46 +108,46 @@ function Demo({ active }) {
 
 ## New components and hooks
 
-New [AppShell](https://mantine.dev/core/app-shell/) component allows you create responsive app shell with fixed or static position:
+New [AppShell](https://coengage.dev/core/app-shell/) component allows you create responsive app shell with fixed or static position:
 
 <Demo data={AppShellDemos.usage} />
 
-With [Skeleton](https://mantine.dev/core/skeleton/) component you can create placeholders to indicate loading state:
+With [Skeleton](https://coengage.dev/core/skeleton/) component you can create placeholders to indicate loading state:
 
 <Demo data={SkeletonDemos.configurator} />
 
-New [use-scroll-into-view](https://mantine.dev/hooks/use-scroll-into-view/) hook lets you scroll given node into view within scrollable container or body element:
+New [use-scroll-into-view](https://coengage.dev/hooks/use-scroll-into-view/) hook lets you scroll given node into view within scrollable container or body element:
 
 <Demo data={HooksDemos.useScrollIntoViewParent} />
 
-[Box](https://mantine.dev/core/box/) component allows you to utilize new `sx` prop to style any component or element:
+[Box](https://coengage.dev/core/box/) component allows you to utilize new `sx` prop to style any component or element:
 
 <Demo data={BoxDemos.usage} />
 
 ## New features
 
-[Collapse](https://mantine.dev/core/collapse/) component now supports dynamic children – you can now use this feature in all components that are built with Collapse:
+[Collapse](https://coengage.dev/core/collapse/) component now supports dynamic children – you can now use this feature in all components that are built with Collapse:
 
 <Demo data={CollapseDemos.nested} />
 
-[MediaQuery](https://mantine.dev/core/media-query/) component now supports adding custom styles and subscribing to custom media queries:
+[MediaQuery](https://coengage.dev/core/media-query/) component now supports adding custom styles and subscribing to custom media queries:
 
 <Demo data={MediaQueryDemos.query} />
 
 ## Other changes
 
-- [use-list-state](https://mantine.dev/hooks/use-list-state/) hook now has new `applyWhere` handler
-- [use-form](https://mantine.dev/hooks/use-form/) hook now supports `values` on validation rule
-- [Slider and RangeSlider](https://mantine.dev/core/slider/) components were migrated to [use-move](https://mantine.dev/hooks/use-move/) hook and now supports showing label on hover (new default behavior)
-- Add better focus management to [Popover](https://mantine.dev/core/popover/) – now focus will be returned to last active element (made with [use-focus-return](https://mantine.dev/hooks/use-focus-return/) hook)
-- [AvatarsGroup](https://mantine.dev/core/avatar/#avatars-group) - now supports `total` prop to explicitly override the truncated length.
-- Add `onDropdownOpen` and `onDropdownClose` handlers support to [Select](https://mantine.dev/core/select/), [MultiSelect](https://mantine.dev/core/multi-select/) and [Autocomplete](https://mantine.dev/core/autocomplete/) components
+- [use-list-state](https://coengage.dev/hooks/use-list-state/) hook now has new `applyWhere` handler
+- [use-form](https://coengage.dev/hooks/use-form/) hook now supports `values` on validation rule
+- [Slider and RangeSlider](https://coengage.dev/core/slider/) components were migrated to [use-move](https://coengage.dev/hooks/use-move/) hook and now supports showing label on hover (new default behavior)
+- Add better focus management to [Popover](https://coengage.dev/core/popover/) – now focus will be returned to last active element (made with [use-focus-return](https://coengage.dev/hooks/use-focus-return/) hook)
+- [AvatarsGroup](https://coengage.dev/core/avatar/#avatars-group) - now supports `total` prop to explicitly override the truncated length.
+- Add `onDropdownOpen` and `onDropdownClose` handlers support to [Select](https://coengage.dev/core/select/), [MultiSelect](https://coengage.dev/core/multi-select/) and [Autocomplete](https://coengage.dev/core/autocomplete/) components
 
 ## Bug fixes
 
-- Fix incorrect focus handling in [Menu](https://mantine.dev/core/menu/), [DatePicker](https://mantine.dev/dates/date-picker/) and [DateRangePicker](https://mantine.dev/dates/date-picker/) which resulted in focus not being shifted to control/input when dropdown was closed
-- Fix incorrect [MultiSelect](https://mantine.dev/core/multi-select/) creatable filtering logic when the same item can be created multiple times
-- Fix layout jumping on Windows and Linux when overlay components with scroll lock are opened ([Modal](https://mantine.dev/core/modal/) and [Drawer](https://mantine.dev/core/drawer)), see [use-scroll-lock](https://mantine.dev/hooks/use-scroll-lock/) documentation to learn how to offset elements with fixed position
-- Fix [DatePicker](https://mantine.dev/dates/date-picker/) dropdown not updating position when used near bottom edge of viewport
+- Fix incorrect focus handling in [Menu](https://coengage.dev/core/menu/), [DatePicker](https://coengage.dev/dates/date-picker/) and [DateRangePicker](https://coengage.dev/dates/date-picker/) which resulted in focus not being shifted to control/input when dropdown was closed
+- Fix incorrect [MultiSelect](https://coengage.dev/core/multi-select/) creatable filtering logic when the same item can be created multiple times
+- Fix layout jumping on Windows and Linux when overlay components with scroll lock are opened ([Modal](https://coengage.dev/core/modal/) and [Drawer](https://coengage.dev/core/drawer)), see [use-scroll-lock](https://coengage.dev/hooks/use-scroll-lock/) documentation to learn how to offset elements with fixed position
+- Fix [DatePicker](https://coengage.dev/dates/date-picker/) dropdown not updating position when used near bottom edge of viewport
 - Fix incorrect random ids generated during server side rendering in Next.js
-- Prevent page from rendering twice in `@mantine/next` package
+- Prevent page from rendering twice in `@coengageui/next` package

@@ -1,19 +1,19 @@
 ---
 group: 'theming'
-title: MantineProvider
-slug: /theming/mantine-provider/
+title: CoengageUIProvider
+slug: /theming/coengageui-provider/
 order: 0
-search: 'Theme object, useMantineTheme, default props, normalize.css, emotionOptions'
+search: 'Theme object, useCoengageUITheme, default props, normalize.css, emotionOptions'
 ---
 
-import { ThemeDemos } from '@mantine/demos';
+import { ThemeDemos } from '@coengageui/demos';
 
-# MantineProvider
+# CoengageUIProvider
 
-MantineProvider component can be used to change theme globally. It is not required if you decide to use default theme:
+CoengageUIProvider component can be used to change theme globally. It is not required if you decide to use default theme:
 
 ```tsx
-import { MantineProvider, Button } from '@mantine/core';
+import { CoengageUIProvider, Button } from '@coengageui/core';
 
 function App() {
   return <Button>My app button</Button>;
@@ -22,19 +22,19 @@ function App() {
 // Custom theme is applied to all components in App
 function WithProvider() {
   return (
-    <MantineProvider theme={{ fontFamily: 'Open Sans' }} withGlobalStyles withNormalizeCSS>
+    <CoengageUIProvider theme={{ fontFamily: 'Open Sans' }} withGlobalStyles withNormalizeCSS>
       <App />
-    </MantineProvider>
+    </CoengageUIProvider>
   );
 }
 ```
 
 ## Theme object
 
-Mantine theme is an object where your application's colors, fonts, spacing, border-radius and other design tokens are stored.
+CoengageUI theme is an object where your application's colors, fonts, spacing, border-radius and other design tokens are stored.
 
 ```tsx
-interface MantineTheme {
+interface CoengageUITheme {
   // Defines color scheme for all components, defaults to "light"
   colorScheme: 'light' | 'dark';
 
@@ -96,7 +96,7 @@ interface MantineTheme {
   };
 
   // theme functions, see in theme functions guide
-  fn: MantineThemeFunctions;
+  fn: CoengageUIThemeFunctions;
 
   // Left to right or right to left direction, see RTL Support guide to learn more
   dir: 'ltr' | 'rtl';
@@ -107,22 +107,22 @@ interface MantineTheme {
   // Default date format used in DatePicker and DateRangePicker components
   dateFormat: string;
 
-  // Add your own custom properties on Mantine theme
+  // Add your own custom properties on CoengageUI theme
   other: Record<string, any>;
 
-  // Default dates formatting locale used in every @mantine/dates component
+  // Default dates formatting locale used in every @coengageui/dates component
   datesLocale: string;
 }
 ```
 
-Pass theme object to MantineProvider to change global styles:
+Pass theme object to CoengageUIProvider to change global styles:
 
 ```tsx
-import { MantineProvider } from '@mantine/core';
+import { CoengageUIProvider } from '@coengageui/core';
 
 function App() {
   return (
-    <MantineProvider
+    <CoengageUIProvider
       withGlobalStyles
       withNormalizeCSS
       theme={{
@@ -150,19 +150,19 @@ function App() {
       }}
     >
       <YourApp />
-    </MantineProvider>
+    </CoengageUIProvider>
   );
 }
 ```
 
 ## Store theme override object in a variable
 
-To store theme override object in a variable use `MantineThemeOverride` type:
+To store theme override object in a variable use `CoengageUIThemeOverride` type:
 
 ```tsx
-import { MantineThemeOverride, MantineProvider } from '@mantine/core';
+import { CoengageUIThemeOverride, CoengageUIProvider } from '@coengageui/core';
 
-const myTheme: MantineThemeOverride = {
+const myTheme: CoengageUIThemeOverride = {
   colorScheme: 'light',
   primaryColor: 'orange',
   defaultRadius: 0,
@@ -170,43 +170,43 @@ const myTheme: MantineThemeOverride = {
 
 function App() {
   return (
-    <MantineProvider theme={myTheme} withGlobalStyles withNormalizeCSS>
+    <CoengageUIProvider theme={myTheme} withGlobalStyles withNormalizeCSS>
       <YourApp />
-    </MantineProvider>
+    </CoengageUIProvider>
   );
 }
 ```
 
-## use-mantine-theme hook
+## use-coengageui-theme hook
 
-Hook returns theme from MantineProvider context or default theme
-if you did not wrap application with MantineProvider.
+Hook returns theme from CoengageUIProvider context or default theme
+if you did not wrap application with CoengageUIProvider.
 
 ```tsx
-import { useMantineTheme } from '@mantine/core';
+import { useCoengageUITheme } from '@coengageui/core';
 
 function Demo() {
-  const theme = useMantineTheme();
+  const theme = useCoengageUITheme();
   return <div style={{ background: theme.colors.blue[5] }} />;
 }
 ```
 
-## Nested MantineProviders
+## Nested CoengageUIProviders
 
-If some parts of your application require different theme settings, you can wrap them with another MantineProvider:
+If some parts of your application require different theme settings, you can wrap them with another CoengageUIProvider:
 
 <Demo data={ThemeDemos.nestedProviders} />
 
-Nested MantineProviders will inherit `theme` override, `emotionOptions`, `defaultProps` and `styles` from
+Nested CoengageUIProviders will inherit `theme` override, `emotionOptions`, `defaultProps` and `styles` from
 parent provider if `inherit` prop is set:
 
 ```tsx
-import { MantineProvider, Button } from '@mantine/core';
+import { CoengageUIProvider, Button } from '@coengageui/core';
 
 function App() {
   return (
-    // Parent MantineProvider
-    <MantineProvider
+    // Parent CoengageUIProvider
+    <CoengageUIProvider
       withGlobalStyles
       withNormalizeCSS
       theme={{ colorScheme: 'dark' }}
@@ -217,78 +217,78 @@ function App() {
       <Button>Affected only by parent provider</Button>
 
       {/*
-        Child MantineProvider, inherits theme, emotionOptions, defaultProps and styles
-        from parent MantineProvider. Other properties specified on child provider will override parent props.
+        Child CoengageUIProvider, inherits theme, emotionOptions, defaultProps and styles
+        from parent CoengageUIProvider. Other properties specified on child provider will override parent props.
         For example, theme override will be: { colorScheme: 'dark', primaryColor: 'red' }
       */}
-      <MantineProvider theme={{ primaryColor: 'red' }} inherit>
+      <CoengageUIProvider theme={{ primaryColor: 'red' }} inherit>
         <Button>Affected only by child provider</Button>
-      </MantineProvider>
-    </MantineProvider>
+      </CoengageUIProvider>
+    </CoengageUIProvider>
   );
 }
 ```
 
-## Styles on MantineProvider
+## Styles on CoengageUIProvider
 
-You can add context styles to components that support [Styles API](/theming/styles-api/) with MantineProvider.
-All components that are rendered inside MantineProvider will inherit those styles:
+You can add context styles to components that support [Styles API](/theming/styles-api/) with CoengageUIProvider.
+All components that are rendered inside CoengageUIProvider will inherit those styles:
 
 <Demo data={ThemeDemos.providerStyles} />
 
 If component does not specify Styles API selectors, then in most cases you can add styles using `root` selector:
 
 ```tsx
-import { MantineProvider, Text } from '@mantine/core';
+import { CoengageUIProvider, Text } from '@coengageui/core';
 
 function App() {
   return (
-    <MantineProvider
+    <CoengageUIProvider
       styles={{ Text: { root: { fontSize: 20 } } }}
       withGlobalStyles
       withNormalizeCSS
     >
       <Text>20px text</Text>
-    </MantineProvider>
+    </CoengageUIProvider>
   );
 }
 ```
 
-## Classes on MantineProvider
+## Classes on CoengageUIProvider
 
-Same as with `styles` you can add classes to all components with `classNames` prop on MantineProvider:
+Same as with `styles` you can add classes to all components with `classNames` prop on CoengageUIProvider:
 
 ```tsx
-import { MantineProvider, Button } from '@mantine/core';
+import { CoengageUIProvider, Button } from '@coengageui/core';
 
 function App() {
   return (
-    <MantineProvider
+    <CoengageUIProvider
       classNames={{ Button: { root: 'button-root', label: 'button-label' } }}
       withGlobalStyles
       withNormalizeCSS
     >
       <Button>All Button components will have the classes above</Button>
-    </MantineProvider>
+    </CoengageUIProvider>
   );
 }
 ```
 
 This approach is useful when you want to styles components with utility based CSS libraries.
 
-## Mantine CSS variables
+## CoengageUI CSS variables
 
-If you prefer to style components with CSS/SCSS or other styling solutions that do not have access to Mantine theme
-context, then you can use Mantine CSS variables. To add css variables set `withCSSVariables` prop on MantineProvider:
+If you prefer to style components with CSS/SCSS or other styling solutions that do not have access to CoengageUI theme
+context, then you can use CoengageUI CSS variables. To add css variables set `withCSSVariables` prop on CoengageUIProvider:
 
 ```tsx
-import { MantineProvider } from '@mantine/core';
+import { CoengageUIProvider } from '@coengageui/core';
 
 function App() {
   return (
-    <MantineProvider withCSSVariables withGlobalStyles withNormalizeCSS>
+    <CoengageUIProvider withCSSVariables withGlobalStyles withNormalizeCSS>
       <YourApp />
-    </MantineProvider>
+    </CoengageUIProvider>
   );
 }
 ```
@@ -297,40 +297,40 @@ Then you will be able to use variables anywhere in your CSS:
 
 ```css
 .my-button {
-  background-color: var(--mantine-color-blue-6);
-  font-family: var(--mantine-font-family);
-  line-height: var(--mantine-line-height);
+  background-color: var(--coengageui-color-blue-6);
+  font-family: var(--coengageui-font-family);
+  line-height: var(--coengageui-line-height);
 }
 ```
 
-Mantine exposes the following CSS variables based on `theme` you provide:
+CoengageUI exposes the following CSS variables based on `theme` you provide:
 
-- `--mantine-color-white`
-- `--mantine-color-black`
-- `--mantine-transition-timing-function`
-- `--mantine-line-height`
-- `--mantine-font-family`
-- `--mantine-font-family-monospace`
-- `--mantine-font-family-headings`
-- `--mantine-heading-font-weight`
-- `--mantine-shadow-{size}`, e.g. `--mantine-shadow-sm`, `--mantine-shadow-xl`
-- `--mantine-radius-{size}`, e.g. `--mantine-radius-sm`, `--mantine-radius-xl`
-- `--mantine-spacing-{size}`, e.g. `--mantine-spacing-sm`, `--mantine-spacing-xl`
-- `--mantine-font-size-{size}`, e.g. `--mantine-font-size-sm`, `--mantine-font-size-xl`
-- `--mantine-color-{color}-{shade}`, e.g. `--mantine-color-blue-6`, `--mantine-color-gray-0`
-- `--mantine-{heading}-font-size`, e.g. `--mantine-h1-font-size`
-- `--mantine-{heading}-line-height`, e.g, `--mantine-h3-line-height`
+- `--coengageui-color-white`
+- `--coengageui-color-black`
+- `--coengageui-transition-timing-function`
+- `--coengageui-line-height`
+- `--coengageui-font-family`
+- `--coengageui-font-family-monospace`
+- `--coengageui-font-family-headings`
+- `--coengageui-heading-font-weight`
+- `--coengageui-shadow-{size}`, e.g. `--coengageui-shadow-sm`, `--coengageui-shadow-xl`
+- `--coengageui-radius-{size}`, e.g. `--coengageui-radius-sm`, `--coengageui-radius-xl`
+- `--coengageui-spacing-{size}`, e.g. `--coengageui-spacing-sm`, `--coengageui-spacing-xl`
+- `--coengageui-font-size-{size}`, e.g. `--coengageui-font-size-sm`, `--coengageui-font-size-xl`
+- `--coengageui-color-{color}-{shade}`, e.g. `--coengageui-color-blue-6`, `--coengageui-color-gray-0`
+- `--coengageui-{heading}-font-size`, e.g. `--coengageui-h1-font-size`
+- `--coengageui-{heading}-line-height`, e.g, `--coengageui-h3-line-height`
 
-## Default props on MantineProvider
+## Default props on CoengageUIProvider
 
-All Mantine components support default props on MantineProvider:
+All CoengageUI components support default props on CoengageUIProvider:
 
 ```tsx
-import { MantineProvider, Button, Badge } from '@mantine/core';
+import { CoengageUIProvider, Button, Badge } from '@coengageui/core';
 
 function App() {
   return (
-    <MantineProvider
+    <CoengageUIProvider
       withNormalizeCSS
       withGlobalStyles
       defaultProps={{
@@ -347,14 +347,14 @@ function App() {
 
       {/* By default, Badge will have xl size and 0 radius */}
       <Badge>Badge</Badge>
-    </MantineProvider>
+    </CoengageUIProvider>
   );
 }
 ```
 
 ## Normalize.css and global styles
 
-MantineProvider includes [normalize.css](https://necolas.github.io/normalize.css/) and some extra global styles added to body element:
+CoengageUIProvider includes [normalize.css](https://necolas.github.io/normalize.css/) and some extra global styles added to body element:
 
 - background-color to `theme.colors.dark[7]` in dark color scheme and `theme.white` in light
 - color to `theme.colors.dark[0]` in dark color scheme and `theme.black` in light
@@ -364,56 +364,56 @@ MantineProvider includes [normalize.css](https://necolas.github.io/normalize.css
 To enable these global styles, set `withNormalizeCSS` and `withGlobalStyles` props:
 
 ```tsx
-import { MantineProvider } from '@mantine/core';
+import { CoengageUIProvider } from '@coengageui/core';
 
 function App() {
   return (
-    <MantineProvider withNormalizeCSS withGlobalStyles>
+    <CoengageUIProvider withNormalizeCSS withGlobalStyles>
       <YourApp />
-    </MantineProvider>
+    </CoengageUIProvider>
   );
 }
 ```
 
 ## Configure emotion
 
-You can provide [emotion options](https://emotion.sh/docs/@emotion/cache#options) to MantineProvider to configure emotion cache:
+You can provide [emotion options](https://emotion.sh/docs/@emotion/cache#options) to CoengageUIProvider to configure emotion cache:
 
-- `key` (required) – the prefix before class names, defaults to `mantine`
+- `key` (required) – the prefix before class names, defaults to `coengage`
 - `container` – a DOM node that emotion will insert all of its style tags into. This is useful for inserting styles into iframes.
 - `prepend` - a boolean representing whether to prepend rather than append style tags into the specified container DOM node
 - `stylisPlugins` – an array of Stylis plugins that will be run by Stylis during preprocessing, for example [stylis-plugin-rtl](https://www.npmjs.com/package/stylis-plugin-rtl) can be used to add [RTL](/theming/rtl) support
 
 ```tsx
-import { MantineProvider } from '@mantine/core';
+import { CoengageUIProvider } from '@coengageui/core';
 
 function App() {
   return (
-    <MantineProvider emotionOptions={{ key: 'mantine' }} withGlobalStyles withNormalizeCSS>
+    <CoengageUIProvider emotionOptions={{ key: 'coengage' }} withGlobalStyles withNormalizeCSS>
       <YourApp />
-    </MantineProvider>
+    </CoengageUIProvider>
   );
 }
 ```
 
 ## Change styles insertion point
 
-By default, Mantine components styles are prepended to head to allow overrides.
-To make Mantine styles override other styles, set `prepend` to `false`.
+By default, CoengageUI components styles are prepended to head to allow overrides.
+To make CoengageUI styles override other styles, set `prepend` to `false`.
 With this option styles will be added at the end of `head` element:
 
 ```tsx
-import { MantineProvider } from '@mantine/core';
+import { CoengageUIProvider } from '@coengageui/core';
 
 function App() {
   return (
-    <MantineProvider
-      emotionOptions={{ key: 'mantine', prepend: false }}
+    <CoengageUIProvider
+      emotionOptions={{ key: 'coengage', prepend: false }}
       withGlobalStyles
       withNormalizeCSS
     >
       <YourApp />
-    </MantineProvider>
+    </CoengageUIProvider>
   );
 }
 ```
@@ -423,13 +423,13 @@ function App() {
 To change classes prefix set `emotionOptions.key` property:
 
 ```tsx
-import { MantineProvider } from '@mantine/core';
+import { CoengageUIProvider } from '@coengageui/core';
 
 function App() {
   return (
-    <MantineProvider emotionOptions={{ key: 'custom-key' }} withGlobalStyles withNormalizeCSS>
+    <CoengageUIProvider emotionOptions={{ key: 'custom-key' }} withGlobalStyles withNormalizeCSS>
       <YourApp />
-    </MantineProvider>
+    </CoengageUIProvider>
   );
 }
 ```

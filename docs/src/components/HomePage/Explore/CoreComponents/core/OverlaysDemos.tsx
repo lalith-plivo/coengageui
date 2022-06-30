@@ -1,11 +1,11 @@
 import React, { useState } from 'react';
-import { Text, Group, Button, Modal, Drawer, Divider, CloseButton, Paper } from '@mantine/core';
-import { Prism } from '@mantine/prism';
-import { AuthenticationForm, PopoverDemos } from '@mantine/demos';
+import { Text, Group, Button, Modal, Drawer, Divider, CloseButton, Paper } from '@coengageui/core';
+import { Prism } from '@coengageui/prism';
+import { AuthenticationForm, PopoverDemos } from '@coengageui/demos';
 
 const code = `
 import { useState } from 'react';
-import { Modal, Button } from '@mantine/core';
+import { Modal, Button } from '@coengageui/core';
 
 function Demo() {
   const [opened, setOpened] = useState(false);

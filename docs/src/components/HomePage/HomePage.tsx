@@ -1,19 +1,19 @@
 import React from 'react';
-import { useMantineTheme, Container, Box } from '@mantine/core';
+import { useCoengageUITheme, Container, Box } from '@coengageui/core';
 import Head from '../Head/Head';
 import { Jumbotron } from './Jumbotron/Jumbotron';
 import { Footer } from '../Footer/Footer';
-import { MantineUiBanner } from '../MantineUiBanner/MantineUiBanner';
+import { CoengageUIUiBanner } from '../CoengageUIBanner/CoengageUI';
 import { Community } from './Community/Community';
 import { Customize } from './Customize/Customize';
 import { Usage } from './Usage/Usage';
 import { Explore } from './Explore/Explore';
 
 export function HomePage() {
-  const theme = useMantineTheme();
+  const theme = useCoengageUITheme();
   return (
     <div>
-      <Head title="Mantine" disableTitleTemplate />
+      <Head title="CoengageUI" disableTitleTemplate />
       <div style={{ position: 'relative', zIndex: 1, boxShadow: theme.shadows.sm }}>
         <Jumbotron />
 
@@ -25,7 +25,7 @@ export function HomePage() {
           }}
         >
           <Container size={1100}>
-            <MantineUiBanner />
+            <CoengageUIUiBanner />
           </Container>
         </Box>
         <Customize />

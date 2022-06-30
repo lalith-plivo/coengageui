@@ -13,12 +13,12 @@ import {
   AccordionDemos,
   CalendarDemos,
   ThemeDemos,
-} from '@mantine/demos';
-import { Slider as SliderStylesApi, Button as ButtonStylesApi } from '@mantine/styles-api';
+} from '@coengageui/demos';
+import { Slider as SliderStylesApi, Button as ButtonStylesApi } from '@coengageui/styles-api';
 
 # Styles API
 
-All Mantine components support styling of each component part with inline styles or by passing classes.
+All CoengageUI components support styling of each component part with inline styles or by passing classes.
 
 ## Styling with classNames
 
@@ -37,7 +37,7 @@ styles names table. The name column will tell you how to target a specific eleme
   head={['Name', 'Static selector', 'Description']}
   data={Object.keys(SliderStylesApi).map((name) => [
     name,
-    `.mantine-Slider-${name}`,
+    `.coengageui-Slider-${name}`,
     SliderStylesApi[name],
   ])}
 />
@@ -56,7 +56,7 @@ Now you can write styles for your component with createStyles function
 or any other styling tools and languages:
 
 ```tsx
-import { Slider, createStyles } from '@mantine/core';
+import { Slider, createStyles } from '@coengageui/core';
 
 const useStyles = createStyles((theme) => ({
   track: {
@@ -111,7 +111,7 @@ Styles names for button component:
   head={['Name', 'Static selector', 'Description']}
   data={Object.keys(ButtonStylesApi).map((name) => [
     name,
-    `.mantine-Button-${name}`,
+    `.coengageui-Button-${name}`,
     ButtonStylesApi[name],
   ])}
 />
@@ -120,9 +120,9 @@ For this button, extra styles are required only for root element and left icon:
 
 <Demo data={ButtonDemos.customize} />
 
-## Styles API with MantineProvider
+## Styles API with CoengageUIProvider
 
-You can also use Styles API in MantineProvider with `styles` prop.
+You can also use Styles API in CoengageUIProvider with `styles` prop.
 All styles defined there will be added to each component rendered inside provider.
 
 <Demo data={ThemeDemos.providerStyles} />

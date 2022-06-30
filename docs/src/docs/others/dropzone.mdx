@@ -1,15 +1,15 @@
 ---
 group: 'Other packages'
-package: '@mantine/dropzone'
+package: '@coengageui/dropzone'
 title: 'Dropzone'
 order: 1
 slug: /others/dropzone/
 description: 'Capture files from user with drag and drop'
 props: ['Dropzone', 'FullScreenDropzone']
-import: "import { Dropzone, FullScreenDropzone } from '@mantine/dropzone';"
-source: 'mantine-dropzone/src'
+import: "import { Dropzone, FullScreenDropzone } from '@coengageui/dropzone';"
+source: 'coengageui-dropzone/src'
 docs: 'others/dropzone.mdx'
-installation: '@mantine/dropzone'
+installation: '@coengageui/dropzone'
 license: MIT
 styles: ['Dropzone', 'FullScreenDropzone']
 ---
@@ -21,23 +21,23 @@ import {
   MS_WORD_MIME_TYPE,
   MS_EXCEL_MIME_TYPE,
   MS_POWERPOINT_MIME_TYPE,
-} from '@mantine/dropzone';
-import { DropzoneDemos } from '@mantine/demos';
+} from '@coengageui/dropzone';
+import { DropzoneDemos } from '@coengageui/demos';
 
 ## Installation
 
-Package depends on @mantine/core and @mantine/hooks.
+Package depends on @coengageui/core and @coengageui/hooks.
 
 Install with npm:
 
 ```sh
-npm install @mantine/dropzone @mantine/core @mantine/hooks
+npm install @coengageui/dropzone @coengageui/core @coengageui/hooks
 ```
 
 Install with yarn:
 
 ```sh
-yarn add @mantine/dropzone @mantine/core @mantine/hooks
+yarn add @coengageui/dropzone @coengageui/core @coengageui/hooks
 ```
 
 ## Usage
@@ -76,7 +76,7 @@ To open files browser from outside of component use `openRef` prop to get functi
 To specify specific file types provide an array of mime types to `accept` prop:
 
 ```tsx
-import { Dropzone } from '@mantine/dropzone';
+import { Dropzone } from '@coengageui/dropzone';
 
 function Demo() {
   return (
@@ -87,10 +87,10 @@ function Demo() {
 }
 ```
 
-To save some research time you can use `MIME_TYPES` variable exported from `@mantine/dropzone`:
+To save some research time you can use `MIME_TYPES` variable exported from `@coengageui/dropzone`:
 
 ```tsx
-import { Dropzone, MIME_TYPES } from '@mantine/dropzone';
+import { Dropzone, MIME_TYPES } from '@coengageui/dropzone';
 
 function Demo() {
   return (
@@ -122,7 +122,7 @@ Additionally you can use grouped mime types:
 />
 
 ```tsx
-import { IMAGE_MIME_TYPE, Dropzone } from '@mantine/dropzone';
+import { IMAGE_MIME_TYPE, Dropzone } from '@coengageui/dropzone';
 
 function Demo() {
   return <Dropzone accept={IMAGE_MIME_TYPE}>{/* children */}</Dropzone>;
@@ -133,7 +133,7 @@ function Demo() {
 
 ```tsx
 import { useRef, useEffect } from 'react';
-import { Dropzone } from '@mantine/dropzone';
+import { Dropzone } from '@coengageui/dropzone';
 
 function Demo() {
   const dropzoneRef = useRef<HTMLDivElement>();

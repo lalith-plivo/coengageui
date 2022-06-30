@@ -6,9 +6,9 @@ export function Notifications() {
   return (
     <Section
       title="Notifications system"
-      description="A fully featured notifications system integrates seamlessly with your Mantine theme."
+      description="A fully featured notifications system integrates seamlessly with your CoengageUI theme."
       link="/others/notifications/"
-      label="Get started with @mantine/notifications"
+      label="Get started with @coengageui/notifications"
     >
       <NotificationsDemo />
     </Section>

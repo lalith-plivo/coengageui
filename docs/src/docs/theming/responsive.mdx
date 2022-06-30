@@ -6,26 +6,26 @@ order: 3
 search: 'Media queries, breakpoints, inline responsive styles'
 ---
 
-import { DEFAULT_THEME } from '@mantine/core';
-import { MediaQueryDemos, CreateStylesDemos } from '@mantine/demos';
+import { DEFAULT_THEME } from '@coengageui/core';
+import { MediaQueryDemos, CreateStylesDemos } from '@coengageui/demos';
 
 # Responsive styles
 
-`@mantine/core` package exports several components that can help you organize responsive styles without writing CSS.
+`@coengageui/core` package exports several components that can help you organize responsive styles without writing CSS.
 Note that in most cases that are not covered in this guide, the best way to make your app responsive is to
 add styles with [createStyles](/theming/create-styles/) function.
 
 ## Configure breakpoints
 
-`theme.breakpoints` are used in all responsive Mantine components. Breakpoints are set in px (rem, em and other values are not supported).
-You can configure these values with [MantineProvider](/theming/mantine-provider/):
+`theme.breakpoints` are used in all responsive CoengageUI components. Breakpoints are set in px (rem, em and other values are not supported).
+You can configure these values with [CoengageUIProvider](/theming/coengageui-provider/):
 
 ```tsx
-import { MantineProvider } from '@mantine/core';
+import { CoengageUIProvider } from '@coengageui/core';
 
 function App() {
   return (
-    <MantineProvider
+    <CoengageUIProvider
       withGlobalStyles
       withNormalizeCSS
       theme={{
@@ -39,7 +39,7 @@ function App() {
       }}
     >
       <YourApp />
-    </MantineProvider>
+    </CoengageUIProvider>
   );
 }
 ```
@@ -69,7 +69,7 @@ Consider using it first before _hacking_ your way out of writing CSS with other 
 
 ## Changing component size based on media query
 
-Most of Mantine components support `size` prop with `xs`, `sm`, `md`, `lg` and `xl` values.
+Most of CoengageUI components support `size` prop with `xs`, `sm`, `md`, `lg` and `xl` values.
 You cannot change these values within component props. Instead you can use [MediaQuery](/core/media-query/) component
 to render different components based on media query:
 
@@ -89,8 +89,8 @@ The approach with [MediaQuery](/core/media-query/) component will work with SSR.
 the more cleaner way to change size is to use [use-media-query](/hooks/use-media-query/) hook:
 
 ```tsx
-import { TextInput } from '@mantine/core';
-import { useMediaQuery } from '@mantine/hooks';
+import { TextInput } from '@coengageui/core';
+import { useMediaQuery } from '@coengageui/hooks';
 
 function Demo() {
   // Will always return false during ssr, use only when you do not have ssr
@@ -101,10 +101,10 @@ function Demo() {
 
 ## Inline media queries with sx
 
-All Mantine components support `sx` prop with which you can add styles (including responsive styles) to root component element:
+All CoengageUI components support `sx` prop with which you can add styles (including responsive styles) to root component element:
 
 ```tsx
-import { TextInput } from '@mantine/core';
+import { TextInput } from '@coengageui/core';
 
 function Demo() {
   return (
@@ -122,12 +122,12 @@ function Demo() {
 }
 ```
 
-If you want to add styles with `sx` prop to non-Mantine component, you can wrap it in [Box](/core/box/):
+If you want to add styles with `sx` prop to non-CoengageUI component, you can wrap it in [Box](/core/box/):
 
 ```tsx
 // Example with react-router-dom Link
 import { Link } from 'react-router-dom';
-import { Box } from '@mantine/core';
+import { Box } from '@coengageui/core';
 
 function Demo() {
   return (

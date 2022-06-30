@@ -1,20 +1,20 @@
 ---
-group: 'mantine-core'
-package: '@mantine/core'
+group: 'coengageui-core'
+package: '@coengageui/core'
 title: MediaQuery
 order: 1
 slug: /core/media-query/
 category: 'layout'
 description: 'Apply styles to children if media query matches'
 props: ['MediaQuery']
-import: "import { MediaQuery } from '@mantine/core';"
-source: 'mantine-core/src/components/MediaQuery/MediaQuery.tsx'
+import: "import { MediaQuery } from '@coengageui/core';"
+source: 'coengageui-core/src/components/MediaQuery/MediaQuery.tsx'
 docs: 'core/MediaQuery.mdx'
 styles: ['MediaQuery', 'single-node']
 ---
 
-import { DEFAULT_THEME } from '@mantine/core';
-import { MediaQueryDemos } from '@mantine/demos';
+import { DEFAULT_THEME } from '@coengageui/core';
+import { MediaQueryDemos } from '@coengageui/demos';
 
 ## Usage
 
@@ -30,7 +30,7 @@ MediaQuery component adds styles to child element if given media query matches:
 
 ### Configure breakpoints
 
-Mantine uses Bootstrap's breakpoint values as defaults:
+CoengageUI uses Bootstrap's breakpoint values as defaults:
 
 <DataTable
   head={['Breakpoint', 'Viewport width']}
@@ -40,14 +40,14 @@ Mantine uses Bootstrap's breakpoint values as defaults:
   ])}
 />
 
-To change these values wrap your application with MantineProvider and set `breakpoints` prop on theme:
+To change these values wrap your application with CoengageUIProvider and set `breakpoints` prop on theme:
 
 ```tsx
-import { MantineProvider } from '@mantine/core';
+import { CoengageUIProvider } from '@coengageui/core';
 
 function YourApp() {
   return (
-    <MantineProvider
+    <CoengageUIProvider
       theme={{
         breakpoints: {
           xs: 500,
@@ -59,7 +59,7 @@ function YourApp() {
       }}
     >
       Hello World
-    </MantineProvider>
+    </CoengageUIProvider>
   );
 }
 ```
@@ -85,7 +85,7 @@ not have correct styles:
 
 ```tsx
 // Invalid MediaQuery usage, do not do this
-import { MediaQuery } from '@mantine/core';
+import { MediaQuery } from '@coengageui/core';
 
 function InvalidDemo() {
   return <MediaQuery>No styles applied</MediaQuery>;

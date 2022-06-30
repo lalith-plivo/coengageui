@@ -3,24 +3,24 @@ group: 'changelog'
 title: 'Version 4.1.0'
 order: 1
 slug: /changelog/4-1-0/
-release: https://github.com/mantinedev/mantine/releases/tag/4.1.0
+release: https://github.com/coengagedev/coengage/releases/tag/4.1.0
 date: 'March 29th, 2022'
 ---
 
-import { NotificationsDemos, StackDemos, SliderDemos, TooltipDemos } from '@mantine/demos';
+import { NotificationsDemos, StackDemos, SliderDemos, TooltipDemos } from '@coengageui/demos';
 import { ExternalLinkIcon } from '@modulz/radix-icons';
-import { Anchor, Center } from '@mantine/core';
+import { Anchor, Center } from '@coengageui/core';
 
-## @mantine/notifications improvements
+## @coengageui/notifications improvements
 
 ### Events based functions
 
-[Notifications system](https://mantine.dev/others/notifications/) functions were migrated to
+[Notifications system](https://coengage.dev/others/notifications/) functions were migrated to
 [custom events](https://developer.mozilla.org/en-US/docs/Web/Events/Creating_and_triggering_events),
 they are no longer depend on context and can be called in any part of application.
 Old way with `useNotifications` hook will work until version 5.0 release.
 
-`@mantine/notifications` now exports the following functions:
+`@coengageui/notifications` now exports the following functions:
 
 - `showNotification` – adds given notification to notifications list or queue depending on current state and limit
 - `updateNotification` – updates notification that was previously added to the state or queue
@@ -36,37 +36,37 @@ You can now use `sx`, `style`, `className`, `classNames` and `styles` props to c
 
 <Demo data={NotificationsDemos.customize} />
 
-## classNames prop on MantineProvider
+## classNames prop on CoengageUIProvider
 
-Same as with `styles` you can now add classes to all components with `classNames` prop on MantineProvider.
+Same as with `styles` you can now add classes to all components with `classNames` prop on CoengageUIProvider.
 This approach is useful when you want to styles components with utility based CSS libraries.
 
 ```tsx
-import { MantineProvider, Button } from '@mantine/core';
+import { CoengageUIProvider, Button } from '@coengageui/core';
 
 function App() {
   return (
-    <MantineProvider classNames={{ Button: { root: 'button-root', label: 'button-label' } }}>
+    <CoengageUIProvider classNames={{ Button: { root: 'button-root', label: 'button-label' } }}>
       <Button>All Button components will have the classes above</Button>
-    </MantineProvider>
+    </CoengageUIProvider>
   );
 }
 ```
 
-## Mantine CSS variables
+## CoengageUI CSS variables
 
-You can now set `withCSSVariables` prop on [MantineProvider](https://mantine.dev/theming/mantine-provider/) to add
-[Mantine CSS variables](https://mantine.dev/theming/mantine-provider/#mantine-css-variables) from theme to `:root`.
-This option is useful when you want to use Mantine theme values with CSS/SCSS or css-in-js libraries that do not have Mantine theme context.
+You can now set `withCSSVariables` prop on [CoengageUIProvider](https://coengage.dev/theming/coengageui-provider/) to add
+[CoengageUI CSS variables](https://coengage.dev/theming/coengageui-provider/#coengageui-css-variables) from theme to `:root`.
+This option is useful when you want to use CoengageUI theme values with CSS/SCSS or css-in-js libraries that do not have CoengageUI theme context.
 
 ```tsx
-import { MantineProvider } from '@mantine/core';
+import { CoengageUIProvider } from '@coengageui/core';
 
 function App() {
   return (
-    <MantineProvider withCSSVariables>
+    <CoengageUIProvider withCSSVariables>
       <YourApp />
-    </MantineProvider>
+    </CoengageUIProvider>
   );
 }
 ```
@@ -75,18 +75,18 @@ Then you will be able to use variables anywhere in your CSS:
 
 ```css
 .my-button {
-  background-color: var(--mantine-color-blue-6);
-  font-family: var(--mantine-font-family);
-  line-height: var(--mantine-line-height);
+  background-color: var(--coengageui-color-blue-6);
+  font-family: var(--coengageui-font-family);
+  line-height: var(--coengageui-line-height);
 }
 ```
 
 ## sx array syntax
 
-All components now support arrays in [sx prop](https://mantine.dev/theming/sx/). It can be to simultaneously use `sx` prop and add it from props:
+All components now support arrays in [sx prop](https://coengage.dev/theming/sx/). It can be to simultaneously use `sx` prop and add it from props:
 
 ```tsx
-import { Button, Sx } from '@mantine/core';
+import { Button, Sx } from '@coengageui/core';
 
 interface MyButtonProps {
   sx?: Sx;
@@ -99,19 +99,19 @@ function MyButton({ sx }) {
 
 ## Stack component
 
-New [Stack](https://mantine.dev/core/stack/) component is a replacement for [Group](https://mantine.dev/core/group/) with vertical direction:
+New [Stack](https://coengage.dev/core/stack/) component is a replacement for [Group](https://coengage.dev/core/group/) with vertical direction:
 
 <Demo data={StackDemos.configurator} />
 
 ## FloatingTooltip component
 
-New [FloatingTooltip](https://mantine.dev/core/tooltip/#floatingtooltip-component) component:
+New [FloatingTooltip](https://coengage.dev/core/tooltip/#floatingtooltip-component) component:
 
 <Demo data={TooltipDemos.floating} />
 
 ## Aside and Footer components
 
-[AppShell](https://mantine.dev/core/app-shell/) now supports `Aside` and `Footer` components,
+[AppShell](https://coengage.dev/core/app-shell/) now supports `Aside` and `Footer` components,
 they work the same way as `Navbar` and `Header` component but render content on the opposite side:
 
 <Anchor href="/app-shell-demo/" target="_blank" mb="xl" style={{ display: 'block' }}>
@@ -132,11 +132,11 @@ import {
   Text,
   MediaQuery,
   Burger,
-  useMantineTheme,
-} from '@mantine/core';
+  useCoengageUITheme,
+} from '@coengageui/core';
 
 export default function AppShellDemo() {
-  const theme = useMantineTheme();
+  const theme = useCoengageUITheme();
   const [opened, setOpened] = useState(false);
   return (
     <AppShell
@@ -191,18 +191,18 @@ export default function AppShellDemo() {
 
 ## New features
 
-[Slider and RangeSlider](https://mantine.dev/core/slider/) components now support disabled state:
+[Slider and RangeSlider](https://coengage.dev/core/slider/) components now support disabled state:
 
 <Demo data={SliderDemos.disabled} />
 
 ## Other changes
 
-- [@mantine/spotlight](https://mantine.dev/others/spotlight/) now exports event based functions to open/close spotlight and perform other actions from anywhere in your application (not only in components)
-- [Button](https://mantine.dev/core/button/), [Badge](https://mantine.dev/core/badge/), [ThemeIcon](https://mantine.dev/core/theme-icon/) and [Text](https://mantine.dev/core/text/) components now support hex color values in `gradient` prop
-- [Radio](https://mantine.dev/core/radio-group/) now supports setting transition duration and icon customization via props
-- [Slider and RangeSlider](https://mantine.dev/core/slider/) components now support `precision` prop
-- [Menu](https://mantine.dev/core/menu/), [List](https://mantine.dev/core/list/) and [Grid](https://mantine.dev/core/grid/) components were migrated to context, associated components (`Menu.Item`, `List.Item`, `Grid.Col`, etc.) can now be wrapper with other components and fragments
-- `useLocalStorageValue` hook was renamed to `useLocalStorage` (old hook is still exported from `@mantine/hooks`)
-- [AppShell](https://mantine.dev/core/app-shell/) no longer parses props of Navbar and Header components, AppShell positioning logic was migrated to context and CSS variables, Navbar and Header components can now be wrapped with other components
-- NextLink component was added to `@mantine/next` package to simplify Next.js Link usage with [Menu](https://mantine.dev/core/menu/#menuitem-as-nextjs-link)
-- [Global](https://mantine.dev/theming/global-styles/#global-component) component now supports array syntax for `styles`
+- [@coengageui/spotlight](https://coengage.dev/others/spotlight/) now exports event based functions to open/close spotlight and perform other actions from anywhere in your application (not only in components)
+- [Button](https://coengage.dev/core/button/), [Badge](https://coengage.dev/core/badge/), [ThemeIcon](https://coengage.dev/core/theme-icon/) and [Text](https://coengage.dev/core/text/) components now support hex color values in `gradient` prop
+- [Radio](https://coengage.dev/core/radio-group/) now supports setting transition duration and icon customization via props
+- [Slider and RangeSlider](https://coengage.dev/core/slider/) components now support `precision` prop
+- [Menu](https://coengage.dev/core/menu/), [List](https://coengage.dev/core/list/) and [Grid](https://coengage.dev/core/grid/) components were migrated to context, associated components (`Menu.Item`, `List.Item`, `Grid.Col`, etc.) can now be wrapper with other components and fragments
+- `useLocalStorageValue` hook was renamed to `useLocalStorage` (old hook is still exported from `@coengageui/hooks`)
+- [AppShell](https://coengage.dev/core/app-shell/) no longer parses props of Navbar and Header components, AppShell positioning logic was migrated to context and CSS variables, Navbar and Header components can now be wrapped with other components
+- NextLink component was added to `@coengageui/next` package to simplify Next.js Link usage with [Menu](https://coengage.dev/core/menu/#menuitem-as-nextjs-link)
+- [Global](https://coengage.dev/theming/global-styles/#global-component) component now supports array syntax for `styles`

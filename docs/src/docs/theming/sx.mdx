@@ -8,16 +8,16 @@ search: 'Inline styles with emotion'
 
 # sx prop
 
-All Mantine components support `sx` prop. With `sx` you can add styles to component **root** element.
+All CoengageUI components support `sx` prop. With `sx` you can add styles to component **root** element.
 If you need to customize other elements within component use [Styles API](/theming/styles-api/).
 
 ## sx object
 
 With `sx` prop, you can add inline styles to any component the same way you would do it as with [createStyles](/theming/create-styles/)
-function. Styles added with `sx` will be parsed by [emotion](https://emotion.sh) and added to page head or specified target container in [MantineProvider](/theming/mantine-provider/).
+function. Styles added with `sx` will be parsed by [emotion](https://emotion.sh) and added to page head or specified target container in [CoengageUIProvider](/theming/coengageui-provider/).
 
 ```tsx
-import { Text } from '@mantine/core';
+import { Text } from '@coengageui/core';
 
 function Demo() {
   return (
@@ -29,7 +29,7 @@ function Demo() {
 You can use pseudo-classes, media queries and all other nested selectors with `sx`:
 
 ```tsx
-import { Text } from '@mantine/core';
+import { Text } from '@coengageui/core';
 
 function Demo() {
   return (
@@ -52,10 +52,10 @@ function Demo() {
 
 ## Subscribe to theme
 
-Use a function instead of an object to subscribe to Mantine theme:
+Use a function instead of an object to subscribe to CoengageUI theme:
 
 ```tsx
-import { Text } from '@mantine/core';
+import { Text } from '@coengageui/core';
 
 function Demo() {
   return (
@@ -81,7 +81,7 @@ function Demo() {
 Array syntax can be used to simultaneously use `sx` prop and add it from props:
 
 ```tsx
-import { Button, Sx } from '@mantine/core';
+import { Button, Sx } from '@coengageui/core';
 
 interface MyButtonProps {
   sx?: Sx;
@@ -94,10 +94,10 @@ function MyButton({ sx }) {
 
 ## Box component
 
-[Box](/core/box/) is an utility polymorphic component that can be used to style non Mantine components or elements with sx:
+[Box](/core/box/) is an utility polymorphic component that can be used to style non CoengageUI components or elements with sx:
 
 ```tsx
-import { Box } from '@mantine/core';
+import { Box } from '@coengageui/core';
 import { Link } from 'react-router-dom';
 
 // Box with custom element
@@ -105,7 +105,7 @@ function BoxWithElement() {
   return (
     <Box
       component="a"
-      href="https://mantine.dev"
+      href="https://coengage.dev"
       target="_blank"
       sx={(theme) => ({
         color: theme.colors.blue[5],
@@ -147,9 +147,9 @@ function BoxWithComponent() {
 To create sharable styles you can store them in a variable:
 
 ```tsx
-import { Text, Box, CSSObject } from '@mantine/core';
+import { Text, Box, CSSObject } from '@coengageui/core';
 
-// styles object is compatible with every Mantine component
+// styles object is compatible with every CoengageUI component
 const styles: CSSObject = {
   border: '1px solid #eee',
   color: '#999',
@@ -169,12 +169,12 @@ function Demo() {
 }
 ```
 
-To store function styles in a variable you will need to use `MantineTheme` type in case you are using TypeScript:
+To store function styles in a variable you will need to use `CoengageUITheme` type in case you are using TypeScript:
 
 ```tsx
-import { Text, Box, CSSObject, MantineTheme } from '@mantine/core';
+import { Text, Box, CSSObject, CoengageUITheme } from '@coengageui/core';
 
-const styles = (theme: MantineTheme): CSSObject => ({
+const styles = (theme: CoengageUITheme): CSSObject => ({
   border: `1px solid ${theme.colors.gray[3]}`,
   color: theme.colors.gray[7],
 

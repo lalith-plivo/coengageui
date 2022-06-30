@@ -1,0 +1,33 @@
+{
+  "name": "@coengageui/dates",
+  "description": "Calendars, date and time pickers based on CoengageUI components",
+  "version": "4.2.11",
+  "main": "cjs/index.js",
+  "module": "esm/index.js",
+  "types": "lib/index.d.ts",
+  "license": "MIT",
+  "author": "Lalith Narayan Kashyap <rtivital@gmail.com>",
+  "homepage": "https://coengage.dev/dates/getting-started/",
+  "keywords": [
+    "react",
+    "next",
+    "nextjs",
+    "ui",
+    "components",
+    "ui-kit",
+    "library",
+    "frontend",
+    "calendar",
+    "date",
+    "time",
+    "picker"
+  ],
+  "peerDependencies": {
+    "@coengageui/core": "4.2.11",
+    "@coengageui/hooks": "4.2.11",
+    "dayjs": "^1.10.5",
+    "react": ">=16.8.0"
+  },
+  "dependencies": {},
+  "devDependencies": {}
+}

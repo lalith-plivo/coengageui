@@ -1,0 +1,24 @@
+{
+  "name": "@coengageui/styles-api",
+  "description": "CoengageUI components styles api descriptions",
+  "private": true,
+  "version": "4.2.11",
+  "main": "cjs/index.js",
+  "module": "esm/index.js",
+  "types": "lib/index.d.ts",
+  "license": "MIT",
+  "author": "Lalith Narayan Kashyap <rtivital@gmail.com>",
+  "sideEffects": false,
+  "homepage": "https://coengage.dev",
+  "repository": {
+    "url": "https://github.com/coengagedev/coengage.git",
+    "type": "git",
+    "directory": "src/coengageui-styles-api"
+  },
+  "peerDependencies": {
+    "@coengageui/core": "4.2.11",
+    "@coengageui/hooks": "4.2.11"
+  },
+  "dependencies": {},
+  "devDependencies": {}
+}

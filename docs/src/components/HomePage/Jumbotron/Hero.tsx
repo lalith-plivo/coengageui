@@ -1,8 +1,8 @@
 import React from 'react';
-import { useMantineTheme } from '@mantine/core';
+import { useCoengageUITheme } from '@coengageui/core';
 
 export function Hero() {
-  const theme = useMantineTheme();
+  const theme = useCoengageUITheme();
   return (
     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 1442 264">
       <path

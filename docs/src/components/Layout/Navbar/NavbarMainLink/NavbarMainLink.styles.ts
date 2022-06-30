@@ -1,6 +1,6 @@
-import { createStyles, MantineTheme } from '@mantine/core';
+import { createStyles, CoengageUITheme } from '@coengageui/core';
 
-export default createStyles((theme: MantineTheme) => ({
+export default createStyles((theme: CoengageUITheme) => ({
   mainLink: {
     ...theme.fn.focusStyles(),
     WebkitTapHighlightColor: 'transparent',

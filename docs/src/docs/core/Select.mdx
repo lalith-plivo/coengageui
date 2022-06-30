@@ -1,19 +1,19 @@
 ---
-group: 'mantine-core'
-package: '@mantine/core'
+group: 'coengageui-core'
+package: '@coengageui/core'
 title: Select
 order: 1
 slug: /core/select/
 category: 'inputs'
 description: 'Custom searchable select'
 props: ['Select']
-import: "import { Select } from '@mantine/core';"
-source: 'mantine-core/src/components/Select/Select.tsx'
+import: "import { Select } from '@coengageui/core';"
+source: 'coengageui-core/src/components/Select/Select.tsx'
 docs: 'core/Select.mdx'
 styles: ['Select']
 ---
 
-import { SelectDemos } from '@mantine/demos';
+import { SelectDemos } from '@coengageui/demos';
 
 ## Usage
 
@@ -30,7 +30,7 @@ Bare minimum usage example:
 
 ```tsx
 import { useState } from 'react';
-import { Select } from '@mantine/core';
+import { Select } from '@coengageui/core';
 
 function Demo() {
   const [value, setValue] = useState('');
@@ -203,7 +203,7 @@ Note that in this case `clearable` option will not work and will need to handle 
 
 ```tsx
 import { useRef } from 'react';
-import { Select } from '@mantine/core';
+import { Select } from '@coengageui/core';
 
 function Demo() {
   const ref = useRef<HTMLInputElement>();

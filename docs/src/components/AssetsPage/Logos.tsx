@@ -1,16 +1,16 @@
 /* eslint-disable import/no-webpack-loader-syntax */
 import React from 'react';
-import { SimpleGrid, Button, Group, createStyles, DEFAULT_THEME } from '@mantine/core';
-import { useClipboard } from '@mantine/hooks';
+import { SimpleGrid, Button, Group, createStyles, DEFAULT_THEME } from '@coengageui/core';
+import { useClipboard } from '@coengageui/hooks';
 
-import fullLogoCode from '!!raw-loader!./assets/mantine-logo-full.svg';
-import fullLogoImage from './assets/mantine-logo-full.svg';
+import fullLogoCode from '!!raw-loader!./assets/coengageui-logo-full.svg';
+import fullLogoImage from './assets/coengageui-logo-full.svg';
 
-import whiteLogoCode from '!!raw-loader!./assets/mantine-logo-white.svg';
-import whiteLogoImage from './assets/mantine-logo-white.svg';
+import whiteLogoCode from '!!raw-loader!./assets/coengageui-logo-white.svg';
+import whiteLogoImage from './assets/coengageui-logo-white.svg';
 
-import logoCode from '!!raw-loader!./assets/mantine-logo.svg';
-import logoImage from './assets/mantine-logo.svg';
+import logoCode from '!!raw-loader!./assets/coengageui-logo.svg';
+import logoImage from './assets/coengageui-logo.svg';
 
 interface LogoAssetProps {
   image: string;
@@ -27,9 +27,8 @@ const useStyles = createStyles((theme) => ({
     display: 'flex',
     alignItems: 'center',
     justifyContent: 'center',
-    border: `1px solid ${
-      theme.colorScheme === 'dark' ? theme.colors.dark[7] : theme.colors.gray[3]
-    }`,
+    border: `1px solid ${theme.colorScheme === 'dark' ? theme.colors.dark[7] : theme.colors.gray[3]
+      }`,
   },
 }));
 
@@ -70,21 +69,21 @@ export function Logos() {
         image={logoImage}
         code={logoCode}
         background="#fff"
-        fileName="mantine-logo.svg"
+        fileName="coengageui-logo.svg"
         imageWidth={47}
       />
       <LogoAsset
         image={fullLogoImage}
         code={fullLogoCode}
         background="#fff"
-        fileName="mantine-logo-full.svg"
+        fileName="coengageui-logo-full.svg"
         imageWidth={180}
       />
       <LogoAsset
         image={whiteLogoImage}
         code={whiteLogoCode}
         background={DEFAULT_THEME.colors.dark[6]}
-        fileName="mantine-logo-full.svg"
+        fileName="coengageui-logo-full.svg"
         imageWidth={180}
       />
     </SimpleGrid>

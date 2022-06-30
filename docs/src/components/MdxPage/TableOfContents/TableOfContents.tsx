@@ -2,7 +2,7 @@ import React, { useRef, useEffect, useState } from 'react';
 import Slugger from 'github-slugger';
 import { navigate } from 'gatsby';
 import { useLocation } from '@reach/router';
-import { Text, useMantineTheme } from '@mantine/core';
+import { Text, useCoengageUITheme } from '@coengageui/core';
 import { ActivityLogIcon } from '@modulz/radix-icons';
 import useStyles from './TableOfContents.styles';
 
@@ -39,7 +39,7 @@ function getActiveElement(rects: DOMRect[]) {
 }
 
 export default function TableOfContents({ headings, withTabs }: TableOfContentsProps) {
-  const theme = useMantineTheme();
+  const theme = useCoengageUITheme();
   const { classes, cx } = useStyles();
   const slugger = new Slugger();
   const [active, setActive] = useState(0);

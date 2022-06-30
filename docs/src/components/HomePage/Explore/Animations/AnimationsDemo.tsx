@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
-import { Prism } from '@mantine/prism';
-import { Title, Modal, Button, Paper, createStyles } from '@mantine/core';
-import { AuthenticationForm, TooltipDemos } from '@mantine/demos';
+import { Prism } from '@coengageui/prism';
+import { Title, Modal, Button, Paper, createStyles } from '@coengageui/core';
+import { AuthenticationForm, TooltipDemos } from '@coengageui/demos';
 
 const scaleY = {
   in: { opacity: 1, transform: 'scaleY(1)' },
@@ -26,9 +26,8 @@ const scaleY = {
 const useStyles = createStyles((theme) => ({
   prism: {
     '& pre': {
-      backgroundColor: `${
-        theme.colorScheme === 'dark' ? theme.colors.dark[7] : theme.white
-      } !important`,
+      backgroundColor: `${theme.colorScheme === 'dark' ? theme.colors.dark[7] : theme.white
+        } !important`,
       borderRadius: theme.radius.md,
       padding: 14,
       paddingTop: 0,

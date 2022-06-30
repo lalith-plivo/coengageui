@@ -1,4 +1,4 @@
-name: Report an issue with @mantine/ scoped package
+name: Report an issue with @coengageui/ scoped package
 description: Tell us if something is not working as expected
 labels: 'bug'
 body:
@@ -6,22 +6,22 @@ body:
     attributes:
       value: |
         ## Thanks for reaching out!
-        Before submitting an issue please make sure that you use latest version of all @mantine/ packages.
+        Before submitting an issue please make sure that you use latest version of all @coengageui/ packages.
   - type: dropdown
     id: version
     attributes:
       label: What package has an issue
       options:
-        - '@mantine/core'
-        - '@mantine/dates'
-        - '@mantine/hooks'
-        - '@mantine/form'
-        - '@mantine/notifications'
-        - '@mantine/rte'
-        - '@mantine/prism'
-        - '@mantine/modals'
-        - '@mantine/dropzone'
-        - '@mantine/spotlight'
+        - '@coengageui/core'
+        - '@coengageui/dates'
+        - '@coengageui/hooks'
+        - '@coengageui/form'
+        - '@coengageui/notifications'
+        - '@coengageui/rte'
+        - '@coengageui/prism'
+        - '@coengageui/modals'
+        - '@coengageui/dropzone'
+        - '@coengageui/spotlight'
     validations:
       required: true
   - type: textarea
@@ -40,7 +40,7 @@ body:
     id: link
     attributes:
       label: If possible, please include a link to a codesandbox with the reproduced problem
-      description: Codesandbox template – https://codesandbox.io/s/mantine-template-9ze89
+      description: Codesandbox template – https://codesandbox.io/s/coengageui-template-9ze89
   - type: dropdown
     id: fix
     attributes:

@@ -1,5 +1,5 @@
 import React from 'react';
-import { Button, useMantineTheme } from '@mantine/core';
+import { Button, useCoengageUITheme } from '@coengageui/core';
 import { MarkGithubIcon } from '@primer/octicons-react';
 import { TwitterIcon } from './TwitterIcon';
 import { DiscordIcon } from './DiscordIcon';
@@ -14,7 +14,7 @@ const baseStyles = {
 type SocialButtonProps = Omit<React.ComponentPropsWithoutRef<'a'>, 'type'>;
 
 function DiscordButton({ style, ...others }: SocialButtonProps) {
-  const theme = useMantineTheme();
+  const theme = useCoengageUITheme();
   return (
     <Button
       component="a"
@@ -35,13 +35,13 @@ function DiscordButton({ style, ...others }: SocialButtonProps) {
 }
 
 function TwitterButton({ style, ...others }: SocialButtonProps) {
-  const theme = useMantineTheme();
+  const theme = useCoengageUITheme();
   return (
     <Button
       component="a"
       target="_blank"
       rel="noopener noreferrer"
-      href="https://twitter.com/mantinedev"
+      href="https://twitter.com/coengagedev"
       leftIcon={<TwitterIcon style={{ width: 14, marginRight: 5 }} />}
       style={{
         ...style,
@@ -50,19 +50,19 @@ function TwitterButton({ style, ...others }: SocialButtonProps) {
       }}
       {...others}
     >
-      Follow Mantine on Twitter
+      Follow CoengageUI on Twitter
     </Button>
   );
 }
 
 function GithubButton({ style, ...others }: SocialButtonProps) {
-  const theme = useMantineTheme();
+  const theme = useCoengageUITheme();
   return (
     <Button
       component="a"
       target="_blank"
       rel="noopener noreferrer"
-      href="https://github.com/mantinedev/mantine/discussions"
+      href="https://github.com/coengagedev/coengage/discussions"
       leftIcon={<MarkGithubIcon size={14} />}
       style={{ ...style, ...baseStyles, color: theme.black, backgroundColor: theme.white }}
       styles={{

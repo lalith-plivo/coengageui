@@ -1,4 +1,4 @@
-import { createStyles } from '@mantine/core';
+import { createStyles } from '@coengageui/core';
 import { BREAKPOINT } from '../settings';
 
 export default createStyles((theme) => ({
