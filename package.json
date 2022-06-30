@@ -1,6 +1,6 @@
 {
   "name": "coengageui",
-  "private": true,
+  "private": false,
   "workspaces": [
     "src/*"
   ],
