@@ -31,26 +31,22 @@ export default createStyles((theme) => ({
   },
 
   items: {
-    borderLeft: `1px solid ${
-      theme.colorScheme === 'dark' ? theme.colors.dark[4] : theme.colors.gray[3]
-    }`,
+    borderLeft: `1px solid ${theme.colorScheme === 'dark' ? theme.info[1] : theme.info[1]}`,
   },
 
   link: {
     display: 'block',
-    color: theme.colorScheme === 'dark' ? theme.colors.dark[1] : theme.colors.gray[7],
+    color: theme.colorScheme === 'dark' ? theme.info[2] : theme.info[2],
     borderLeft: '1px solid transparent',
     padding: `8px ${theme.spacing.md}px`,
     marginLeft: -1,
   },
 
   linkActive: {
-    borderLeftColor: theme.colors.blue[5],
-    backgroundColor:
-      theme.colorScheme === 'dark'
-        ? theme.fn.rgba(theme.colors.blue[9], 0.45)
-        : theme.colors.blue[0],
-    color: theme.colorScheme === 'dark' ? theme.colors.blue[1] : theme.colors.blue[8],
+    borderLeftColor: theme.info[2],
+    backgroundColor: theme.colorScheme === 'dark' ? theme.info[0] : theme.info[0],
+    color: theme.colorScheme === 'dark' ? theme.info[1] : theme.info[1],
+    fontWeight: 600,
   },
 
   header: {
@@ -61,5 +57,7 @@ export default createStyles((theme) => ({
 
   title: {
     marginLeft: theme.spacing.md,
+    fontWeight: 500,
+    fontSize: theme.fontSize.lg,
   },
 }));

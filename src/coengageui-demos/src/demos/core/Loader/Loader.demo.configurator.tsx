@@ -22,7 +22,6 @@ export const configurator: CoengageUIDemo = {
   component: Wrapper,
   codeTemplate,
   configurator: [
-    { name: 'color', type: 'color', initialValue: 'blue', defaultValue: 'blue' },
     { name: 'size', type: 'size', initialValue: 'md', defaultValue: 'md' },
     {
       name: 'variant',

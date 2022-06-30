@@ -37,9 +37,20 @@ export const configurator: CoengageUIDemo = {
   component: Wrapper,
   codeTemplate,
   configurator: [
+    {
+      name: 'variant',
+      type: 'select',
+      data: [
+        { label: 'info', value: 'info' },
+        { label: 'warning', value: 'warning' },
+        { label: 'success', value: 'success' },
+        { label: 'danger', value: 'danger' },
+      ],
+      initialValue: 'info',
+      defaultValue: 'info',
+    },
     { name: 'loading', type: 'boolean', initialValue: false, defaultValue: false },
     { name: 'disallowClose', type: 'boolean', initialValue: false, defaultValue: false },
-    { name: 'color', type: 'color', initialValue: 'blue', defaultValue: 'blue' },
     { name: 'radius', type: 'size', initialValue: 'sm', defaultValue: 'sm' },
     {
       name: 'title',

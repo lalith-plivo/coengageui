@@ -14,6 +14,8 @@ import useStyles from './Notification.styles';
 
 export type NotificationStylesNames = Exclude<Selectors<typeof useStyles>, 'withIcon'>;
 
+export type NotificationVariant = 'info' | 'success' | 'warning' | 'danger';
+
 export interface NotificationProps
   extends DefaultProps<NotificationStylesNames>,
     Omit<React.ComponentPropsWithoutRef<'div'>, 'title'> {
@@ -43,13 +45,16 @@ export interface NotificationProps
 
   /** Props spread to close button */
   closeButtonProps?: React.ComponentPropsWithoutRef<'button'> & { [key: string]: any };
+
+  /** Specifies the style of variant default info*/
+  variant?: NotificationVariant;
 }
 
 export const Notification = forwardRef<HTMLDivElement, NotificationProps>(
   (props: NotificationProps, ref) => {
     const {
       className,
-      color,
+      // color,
       radius,
       loading,
       disallowClose,
@@ -60,11 +65,12 @@ export const Notification = forwardRef<HTMLDivElement, NotificationProps>(
       closeButtonProps,
       classNames,
       styles,
+      variant = 'info',
       ...others
     } = useCoengageUIDefaultProps('Notification', {}, props);
 
     const { classes, cx } = useStyles(
-      { color, radius },
+      { variant, radius },
       { classNames, styles, name: 'Notification' }
     );
     const withIcon = icon || loading;
@@ -77,7 +83,7 @@ export const Notification = forwardRef<HTMLDivElement, NotificationProps>(
         {...others}
       >
         {icon && !loading && <div className={classes.icon}>{icon}</div>}
-        {loading && <Loader size={28} color={color} className={classes.loader} />}
+        {loading && <Loader size={28} className={classes.loader} />}
 
         <div className={classes.body}>
           {title && (

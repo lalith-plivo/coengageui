@@ -59,7 +59,7 @@ const demo = (
       </Notification>
 
       <Notification
-        color="red"
+        variant="danger"
         onClose={() => {}}
         mt="xl"
         title="Danger notification with icon"
@@ -69,7 +69,7 @@ const demo = (
       </Notification>
 
       <Notification
-        color="yellow"
+        variant="warning"
         onClose={() => {}}
         mt="xl"
         title="Warning notification with icon"
@@ -79,7 +79,6 @@ const demo = (
       </Notification>
 
       <Notification
-        color="blue"
         onClose={() => {}}
         mt="xl"
         title="Primary notification with icon"
@@ -93,7 +92,7 @@ const demo = (
       </Notification>
 
       <Notification
-        color="green"
+        variant="success"
         onClose={() => {}}
         mt="xl"
         title="Success notification without icon"
@@ -102,7 +101,7 @@ const demo = (
       </Notification>
 
       <Notification
-        color="orange"
+        variant="warning"
         onClose={() => {}}
         mt="xl"
         title="Danger notification without icon"

@@ -1,14 +1,16 @@
 import { createStyles, CoengageUIColor, CoengageUINumberSize } from '@coengageui/styles';
+type NotificationVariant = 'info' | 'success' | 'warning' | 'danger';
 
 export interface NotificationStylesParams {
-  color: CoengageUIColor;
+  color?: CoengageUIColor;
   radius: CoengageUINumberSize;
+  variant: NotificationVariant;
 }
 
-export default createStyles((theme, { color, radius }: NotificationStylesParams, getRef) => {
+export default createStyles((theme, { variant, radius }: NotificationStylesParams, getRef) => {
   const _radius = theme.fn.radius(radius) as number;
   const topBottom = Math.min(Math.max(_radius / 1.2, 4), 30);
-  const colors = theme.fn.variant({ variant: 'filled', color });
+  const colors = theme.fn.variant({ variant, color: variant });
 
   return {
     closeButton: {},
@@ -45,10 +47,10 @@ export default createStyles((theme, { color, radius }: NotificationStylesParams,
       paddingTop: theme.spacing.xs,
       paddingBottom: theme.spacing.xs,
       borderRadius: _radius,
-      backgroundColor: theme.colorScheme === 'dark' ? theme.colors.dark[6] : theme.white,
+      backgroundColor: theme.colorScheme === 'dark' ? theme.white : theme.white,
       boxShadow: theme.shadows.lg,
       border: `1px solid ${
-        theme.colorScheme === 'dark' ? theme.colors.dark[6] : theme.colors.gray[2]
+        theme.colorScheme === 'dark' ? theme.colors.neutral[6] : theme.colors.neutral[6]
       }`,
 
       '&::before': {
@@ -60,11 +62,11 @@ export default createStyles((theme, { color, radius }: NotificationStylesParams,
         bottom: topBottom,
         left: 4,
         borderRadius: _radius,
-        backgroundColor: colors.background,
+        backgroundColor: colors.dark,
       },
 
       [`& .${getRef('icon')}`]: {
-        backgroundColor: colors.background,
+        backgroundColor: colors.dark,
         color: theme.white,
       },
     },
@@ -80,21 +82,20 @@ export default createStyles((theme, { color, radius }: NotificationStylesParams,
     },
 
     title: {
-      lineHeight: 1.4,
       marginBottom: 2,
       overflow: 'hidden',
       textOverflow: 'ellipsis',
-      color: theme.colorScheme === 'dark' ? theme.white : theme.colors.gray[9],
+      color: theme.colorScheme === 'dark' ? theme.typograhy_dark : theme.typograhy_dark,
+      fontWeight: 500,
     },
 
     description: {
-      color: theme.colorScheme === 'dark' ? theme.colors.dark[2] : theme.colors.gray[6],
-      lineHeight: 1.4,
+      color: theme.colorScheme === 'dark' ? theme.typograhy_regular : theme.typograhy_regular,
       overflow: 'hidden',
       textOverflow: 'ellipsis',
 
       '&:only-child': {
-        color: theme.colorScheme === 'dark' ? theme.colors.dark[0] : theme.black,
+        color: theme.colorScheme === 'dark' ? theme.black : theme.black,
       },
     },
   };
