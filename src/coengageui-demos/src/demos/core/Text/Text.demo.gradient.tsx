@@ -13,7 +13,7 @@ function Demo() {
       gradient={{ from: 'indigo', to: 'cyan', deg: 45 }}
       size="xl"
       weight={700}
-      style={{ fontFamily: 'Greycliff CF, sans-serif' }}
+      style={{ fontFamily: 'Inter, sans-serif' }}
     >
       Indigo cyan gradient
     </Text>
@@ -31,7 +31,7 @@ function Demo() {
         gradient={{ from: 'indigo', to: 'cyan', deg: 45 }}
         size="xl"
         weight={700}
-        style={{ fontFamily: 'Greycliff CF, sans-serif' }}
+        style={{ fontFamily: 'Inter, sans-serif' }}
       >
         Indigo cyan gradient
       </Text>

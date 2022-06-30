@@ -10,10 +10,10 @@ function Demo() {
       theme={{
         fontFamily: 'Verdana, sans-serif',
         fontFamilyMonospace: 'Monaco, Courier, monospace',
-        headings: { fontFamily: 'Greycliff CF, sans-serif' },
+        headings: { fontFamily: 'Inter, sans-serif' },
       }}
     >
-      <Title order={3}>Greycliff CF or sans-serif title</Title>
+      <Title order={3}>Inter or sans-serif title</Title>
       <Button>Verdana button</Button>
       <Code>Monaco, Courier Code</Code>
     </CoengageUIProvider>
@@ -30,11 +30,11 @@ function Demo() {
         colorScheme,
         fontFamily: 'Verdana, sans-serif',
         fontFamilyMonospace: 'Monaco, Courier, monospace',
-        headings: { fontFamily: 'Greycliff CF, sans-serif' },
+        headings: { fontFamily: 'Inter, sans-serif' },
       }}
     >
       <Title style={{ textAlign: 'center', marginBottom: 10 }} order={3}>
-        Greycliff CF or sans-serif title
+        Inter or sans-serif title
       </Title>
 
       <Group position="center">

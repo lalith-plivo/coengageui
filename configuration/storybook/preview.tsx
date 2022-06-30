@@ -18,7 +18,7 @@ function ThemeWrapper(props: any) {
         theme={{
           dir: rtl ? 'rtl' : 'ltr',
           colorScheme: useDarkMode() ? 'dark' : 'light',
-          headings: { fontFamily: 'Greycliff CF, sans-serif' },
+          headings: { fontFamily: 'Inter, sans-serif' },
         }}
         emotionOptions={
           rtl ? { key: 'coengageui-rtl', stylisPlugins: [rtlPlugin as any] } : { key: 'coengage' }

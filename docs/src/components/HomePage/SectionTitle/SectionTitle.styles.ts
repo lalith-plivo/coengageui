@@ -4,7 +4,7 @@ export default createStyles((theme) => ({
   title: {
     display: 'inline-block',
     position: 'relative',
-    fontFamily: `Greycliff CF, ${theme.fontFamily}`,
+    fontFamily: `Inter, ${theme.fontFamily}`,
     fontWeight: 900,
     fontSize: 42,
     lineHeight: 1.1,

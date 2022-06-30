@@ -38,12 +38,12 @@ export function Demo() {
 
 ## Load fonts
 
-To load use array syntax. The following example shows how CoengageUI docs website loads GreycliffCF font:
+To load use array syntax. The following example shows how CoengageUI docs website loads Inter font:
 
 ```tsx
 import { Global } from '@coengageui/core';
-import bold from './GreycliffCF-Bold.woff2';
-import heavy from './GreycliffCF-Heavy.woff2';
+import bold from './Inter-Bold.woff2';
+import heavy from './Inter-Heavy.woff2';
 
 export function Demo() {
   return (
@@ -51,7 +51,7 @@ export function Demo() {
       styles={[
         {
           '@font-face': {
-            fontFamily: 'Greycliff CF',
+            fontFamily: 'Inter',
             src: `url('${bold}') format("woff2")`,
             fontWeight: 700,
             fontStyle: 'normal',
@@ -59,7 +59,7 @@ export function Demo() {
         },
         {
           '@font-face': {
-            fontFamily: 'Greycliff CF',
+            fontFamily: 'Inter',
             src: `url('${heavy}') format("woff2")`,
             fontWeight: 900,
             fontStyle: 'normal',

@@ -8,8 +8,8 @@ function Demo() {
     <CoengageUIProvider theme={{ fontFamily: 'Georgia, serif' }}>
       <Text align="center" mb="xs">Georgia or serif text</Text>
 
-      <CoengageUIProvider theme={{ fontFamily: 'Greycliff CF, sans-serif' }}>
-        <Button>Greycliff CF button</Button>
+      <CoengageUIProvider theme={{ fontFamily: 'Inter, sans-serif' }}>
+        <Button>Inter button</Button>
       </CoengageUIProvider>
     </CoengageUIProvider>
   );
@@ -24,9 +24,9 @@ function Demo() {
         Georgia or serif text
       </Text>
 
-      <CoengageUIProvider theme={{ fontFamily: 'Greycliff CF, sans-serif', colorScheme }}>
+      <CoengageUIProvider theme={{ fontFamily: 'Inter, sans-serif', colorScheme }}>
         <Group position="center">
-          <Button>Greycliff CF button</Button>
+          <Button>Inter button</Button>
         </Group>
       </CoengageUIProvider>
     </CoengageUIProvider>

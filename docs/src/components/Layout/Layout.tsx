@@ -4,7 +4,7 @@ import { useHotkeys, useLocalStorage } from '@coengageui/hooks';
 import rtlPlugin from 'stylis-plugin-rtl';
 import { LayoutInner, LayoutProps } from './LayoutInner';
 import { DirectionContext } from './DirectionContext';
-import { GreycliffCF } from '../../fonts/GreycliffCF/GreycliffCF';
+import { InterFonts } from '../../fonts/Inter/Inter';
 
 const THEME_KEY = 'coengageui-color-scheme';
 
@@ -29,14 +29,14 @@ export default function Layout({ children, location }: LayoutProps) {
   return (
     <DirectionContext.Provider value={{ dir, toggleDirection }}>
       <ColorSchemeProvider colorScheme={colorScheme} toggleColorScheme={toggleColorScheme}>
-        <GreycliffCF />
+        <InterFonts />
         <CoengageUIProvider
           withGlobalStyles
           withNormalizeCSS
           theme={{
             dir,
             colorScheme,
-            headings: { fontFamily: 'Greycliff CF, sans serif' },
+            headings: { fontFamily: 'Inter, sans serif' },
           }}
           emotionOptions={
             dir === 'rtl' ? { key: 'coengageui-rtl', stylisPlugins: [rtlPlugin] } : { key: 'coengage' }

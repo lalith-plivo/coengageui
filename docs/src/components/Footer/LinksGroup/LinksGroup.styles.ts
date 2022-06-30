@@ -28,7 +28,7 @@ export default createStyles((theme) => ({
   title: {
     fontSize: theme.fontSizes.lg,
     fontWeight: 700,
-    fontFamily: `Greycliff CF, ${theme.fontFamily}`,
+    fontFamily: `Inter, ${theme.fontFamily}`,
     marginBottom: theme.spacing.xs / 2,
     color: theme.colorScheme === 'dark' ? theme.white : theme.black,
   },

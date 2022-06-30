@@ -105,7 +105,7 @@ export default createStyles((theme) => ({
   title: {
     userSelect: 'none',
     fontWeight: 700,
-    fontFamily: `Greycliff CF, ${theme.fontFamily}`,
+    fontFamily: `Inter, ${theme.fontFamily}`,
     lineHeight: 1,
     paddingTop: 4,
     color: theme.colorScheme === 'dark' ? theme.white : theme.colors.gray[7],
