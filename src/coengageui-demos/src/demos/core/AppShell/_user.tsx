@@ -9,8 +9,9 @@ export function User() {
     <Box
       sx={{
         paddingTop: theme.spacing.sm,
-        borderTop: `1px solid ${theme.colorScheme === 'dark' ? theme.colors.dark[4] : theme.colors.gray[2]
-          }`,
+        borderTop: `1px solid ${
+          theme.colorScheme === 'dark' ? theme.colors.dark[4] : theme.colors.gray[2]
+        }`,
       }}
     >
       <UnstyledButton

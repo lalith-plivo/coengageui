@@ -2,7 +2,7 @@ import { itSupportsSystemProps } from 'coengageui_tests';
 import { TransferList, TransferListProps } from './TransferList';
 
 const defaultProps: TransferListProps = {
-  onChange: () => { },
+  onChange: () => {},
   titles: ['test-1', 'test-2'],
   value: [
     [

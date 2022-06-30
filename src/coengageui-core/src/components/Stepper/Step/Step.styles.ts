@@ -54,8 +54,9 @@ export default createStyles(
         alignItems: 'center',
         justifyContent: 'center',
         backgroundColor: theme.colorScheme === 'dark' ? theme.colors.dark[5] : theme.colors.gray[1],
-        border: `2px solid ${theme.colorScheme === 'dark' ? theme.colors.dark[5] : theme.colors.gray[1]
-          }`,
+        border: `2px solid ${
+          theme.colorScheme === 'dark' ? theme.colors.dark[5] : theme.colors.gray[1]
+        }`,
         transition: 'background-color 150ms ease, border-color 150ms ease',
         position: 'relative',
         fontWeight: 700,

@@ -14,7 +14,7 @@ export type BurgerStylesNames = Exclude<Selectors<typeof useStyles>, 'opened'>;
 
 export interface BurgerProps
   extends DefaultProps<BurgerStylesNames>,
-  React.ComponentPropsWithoutRef<'button'> {
+    React.ComponentPropsWithoutRef<'button'> {
   /** Burger state: true for cross, false for burger */
   opened: boolean;
 

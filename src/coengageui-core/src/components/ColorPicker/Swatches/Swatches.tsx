@@ -9,7 +9,7 @@ export type SwatchesStylesNames = Selectors<typeof useStyles>;
 
 export interface SwatchesProps
   extends DefaultProps<SwatchesStylesNames>,
-  Omit<React.ComponentPropsWithoutRef<'div'>, 'onSelect'> {
+    Omit<React.ComponentPropsWithoutRef<'div'>, 'onSelect'> {
   data: string[];
   onSelect(color: HsvaColor): void;
   swatchesPerRow?: number;

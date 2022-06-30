@@ -61,10 +61,10 @@ function Demo() {
 
       <Popper
         ${props
-    .split('\n')
-    .map((part) => `      ${part}`)
-    .join('\n')
-    .trim()}
+          .split('\n')
+          .map((part) => `      ${part}`)
+          .join('\n')
+          .trim()}
         mounted={visible}
         referenceElement={referenceElement}
         transition="pop-top-left"

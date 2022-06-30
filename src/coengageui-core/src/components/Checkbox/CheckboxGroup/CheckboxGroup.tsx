@@ -20,8 +20,8 @@ export type CheckboxGroupStylesNames = InputWrapperStylesNames | CheckboxStylesN
 
 export interface CheckboxGroupProps
   extends DefaultProps<CheckboxGroupStylesNames>,
-  InputWrapperBaseProps,
-  Omit<React.ComponentPropsWithoutRef<'div'>, 'onChange'> {
+    InputWrapperBaseProps,
+    Omit<React.ComponentPropsWithoutRef<'div'>, 'onChange'> {
   /** <Checkbox /> components only */
   children: React.ReactNode;
 

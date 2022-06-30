@@ -3,7 +3,7 @@ import { useLogger } from './use-logger';
 
 describe('coengageui_hooks/use-logger', () => {
   it('logs mount and unmount events', () => {
-    const log = jest.spyOn(console, 'log').mockImplementation(() => { });
+    const log = jest.spyOn(console, 'log').mockImplementation(() => {});
     const data = { foo: 'bar' };
     const hook = renderHook(() => useLogger('Test', [data]));
     expect(log).toBeCalledWith('Test mounted', data);
@@ -14,7 +14,7 @@ describe('coengageui_hooks/use-logger', () => {
   });
 
   it('logs mount, unmount and update events', () => {
-    const log = jest.spyOn(console, 'log').mockImplementation(() => { });
+    const log = jest.spyOn(console, 'log').mockImplementation(() => {});
     let data = { foo: 'bar' };
     const hook = renderHook(() => useLogger('Test', [data]));
     expect(log).toBeCalledWith('Test mounted', data);
@@ -28,7 +28,7 @@ describe('coengageui_hooks/use-logger', () => {
   });
 
   it('logs mount, unmount and rerenders without update events', () => {
-    const log = jest.spyOn(console, 'log').mockImplementation(() => { });
+    const log = jest.spyOn(console, 'log').mockImplementation(() => {});
     const data = { foo: 'bar' };
     const hook = renderHook(() => useLogger('Test', [data]));
     expect(log).toBeCalledWith('Test mounted', data);

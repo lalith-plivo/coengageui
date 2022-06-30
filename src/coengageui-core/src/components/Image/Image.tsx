@@ -15,7 +15,7 @@ export type ImageStylesNames = Selectors<typeof useStyles>;
 
 export interface ImageProps
   extends DefaultProps<ImageStylesNames>,
-  Omit<React.ComponentPropsWithoutRef<'div'>, 'placeholder'> {
+    Omit<React.ComponentPropsWithoutRef<'div'>, 'placeholder'> {
   /** Image src */
   src?: string;
 

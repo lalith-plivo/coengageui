@@ -18,7 +18,7 @@ export type PasswordInputStylesNames = Selectors<typeof useStyles> | TextInputSt
 
 export interface PasswordInputProps
   extends DefaultProps<PasswordInputStylesNames>,
-  Omit<TextInputProps, 'classNames' | 'styles'> {
+    Omit<TextInputProps, 'classNames' | 'styles'> {
   /** Toggle button tabIndex, set to 0 to make button focusable with tab key */
   toggleTabIndex?: -1 | 0;
 

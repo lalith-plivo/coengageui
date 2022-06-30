@@ -8,7 +8,7 @@ export type ListItemStylesNames = Selectors<typeof useStyles>;
 
 export interface ListItemProps
   extends DefaultProps<ListItemStylesNames>,
-  React.ComponentPropsWithoutRef<'li'> {
+    React.ComponentPropsWithoutRef<'li'> {
   /** Icon to replace bullet */
   icon?: React.ReactNode;
 

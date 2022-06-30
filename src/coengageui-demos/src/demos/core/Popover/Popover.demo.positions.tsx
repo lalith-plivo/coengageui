@@ -11,7 +11,7 @@ function Wrapper(
   return (
     <Popover
       opened={opened}
-      onClose={() => { }}
+      onClose={() => {}}
       placement={props.placement}
       position={props.position}
       transitionDuration={0}

@@ -19,7 +19,7 @@ export type AlertStylesNames = Selectors<typeof useStyles>;
 
 export interface AlertProps
   extends DefaultProps<AlertStylesNames>,
-  Omit<React.ComponentPropsWithoutRef<'div'>, 'title'> {
+    Omit<React.ComponentPropsWithoutRef<'div'>, 'title'> {
   /** Alert title */
   title?: React.ReactNode;
 

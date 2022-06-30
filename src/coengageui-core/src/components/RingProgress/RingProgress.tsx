@@ -14,7 +14,7 @@ export type RingProgressStylesNames = Selectors<typeof useStyles>;
 
 export interface RingProgressProps
   extends DefaultProps<RingProgressStylesNames>,
-  React.ComponentPropsWithoutRef<'div'> {
+    React.ComponentPropsWithoutRef<'div'> {
   /** Label displayed in the center of the ring */
   label?: React.ReactNode;
 

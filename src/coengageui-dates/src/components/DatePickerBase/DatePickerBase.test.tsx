@@ -9,8 +9,8 @@ const defaultProps: DatePickerBaseProps = {
   label: 'test-label',
   placeholder: 'test-placeholder',
   dropdownOpened: true,
-  setDropdownOpened: () => { },
-  onClear: () => { },
+  setDropdownOpened: () => {},
+  onClear: () => {},
   transitionDuration: 0,
 };
 

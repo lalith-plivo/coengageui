@@ -16,7 +16,7 @@ export function ArrowIcon({ direction, style, ...others }: ArrowIconProps) {
         ...style,
         transform:
           (direction === 'right' && theme.dir === 'ltr') ||
-            (direction === 'left' && theme.dir === 'rtl')
+          (direction === 'left' && theme.dir === 'rtl')
             ? 'rotate(180deg)'
             : 'none',
       }}

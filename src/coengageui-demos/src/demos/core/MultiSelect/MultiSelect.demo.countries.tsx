@@ -114,8 +114,9 @@ function Value({
           cursor: 'default',
           alignItems: 'center',
           backgroundColor: theme.colorScheme === 'dark' ? theme.colors.dark[7] : theme.white,
-          border: `1px solid ${theme.colorScheme === 'dark' ? theme.colors.dark[7] : theme.colors.gray[4]
-            }`,
+          border: `1px solid ${
+            theme.colorScheme === 'dark' ? theme.colors.dark[7] : theme.colors.gray[4]
+          }`,
           paddingLeft: 10,
           borderRadius: 4,
         })}

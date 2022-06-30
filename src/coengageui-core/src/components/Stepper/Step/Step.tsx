@@ -17,7 +17,7 @@ export type StepStylesNames = Selectors<typeof useStyles>;
 
 export interface StepProps
   extends DefaultProps<StepStylesNames>,
-  React.ComponentPropsWithoutRef<'button'> {
+    React.ComponentPropsWithoutRef<'button'> {
   /** Step state, controlled by Steps component */
   state?: 'stepInactive' | 'stepProgress' | 'stepCompleted';
 

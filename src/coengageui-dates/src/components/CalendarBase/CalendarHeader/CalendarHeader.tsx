@@ -14,7 +14,7 @@ export type CalendarHeaderStylesNames = Selectors<typeof useStyles>;
 
 export interface CalendarHeaderProps
   extends DefaultProps<CalendarHeaderStylesNames>,
-  React.ComponentPropsWithoutRef<'div'> {
+    React.ComponentPropsWithoutRef<'div'> {
   hasPrevious: boolean;
   hasNext: boolean;
   onNext?(): void;

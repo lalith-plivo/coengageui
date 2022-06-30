@@ -13,7 +13,7 @@ export type BlockquoteStylesNames = Selectors<typeof useStyles>;
 
 export interface BlockquoteProps
   extends DefaultProps<BlockquoteStylesNames>,
-  Omit<React.ComponentPropsWithoutRef<'blockquote'>, 'cite'> {
+    Omit<React.ComponentPropsWithoutRef<'blockquote'>, 'cite'> {
   /** Icon color from theme */
   color?: CoengageUIColor;
 

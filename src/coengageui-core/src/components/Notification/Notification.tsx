@@ -18,7 +18,7 @@ export type NotificationVariant = 'info' | 'success' | 'warning' | 'danger';
 
 export interface NotificationProps
   extends DefaultProps<NotificationStylesNames>,
-  Omit<React.ComponentPropsWithoutRef<'div'>, 'title'> {
+    Omit<React.ComponentPropsWithoutRef<'div'>, 'title'> {
   /** Called when close button is clicked */
   onClose?(): void;
 

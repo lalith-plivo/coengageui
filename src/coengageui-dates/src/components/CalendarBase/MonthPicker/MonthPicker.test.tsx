@@ -11,11 +11,11 @@ const HEADER_CONTROL_SELECTOR = '.coengageui-MonthPicker-calendarHeaderControl';
 
 const defaultProps: MonthPickerProps = {
   value: { year: 2021, month: 11 },
-  onChange: () => { },
+  onChange: () => {},
   locale: 'en',
   year: 2021,
-  onYearChange: () => { },
-  onNextLevel: () => { },
+  onYearChange: () => {},
+  onNextLevel: () => {},
 };
 
 describe('coengageui_core/MonthPicker', () => {

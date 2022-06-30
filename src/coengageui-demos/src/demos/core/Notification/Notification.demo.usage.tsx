@@ -37,7 +37,7 @@ function Demo() {
 function Demo() {
   return (
     <>
-      <Notification title="Default notification" onClose={() => { }}>
+      <Notification title="Default notification" onClose={() => {}}>
         This is default notification with title and body
       </Notification>
 
@@ -46,12 +46,12 @@ function Demo() {
         icon={<Check size={18} />}
         color="teal"
         title="Teal notification"
-        onClose={() => { }}
+        onClose={() => {}}
       >
         This is teal notification with icon
       </Notification>
 
-      <Notification style={{ marginTop: 15 }} icon={<X size={18} />} color="red" onClose={() => { }}>
+      <Notification style={{ marginTop: 15 }} icon={<X size={18} />} color="red" onClose={() => {}}>
         Bummer! Notification without title
       </Notification>
 
@@ -60,7 +60,7 @@ function Demo() {
         loading
         title="Uploading data to the server"
         disallowClose
-        onClose={() => { }}
+        onClose={() => {}}
       >
         Please wait until data is uploaded, you cannot close this notification yet
       </Notification>

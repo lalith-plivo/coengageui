@@ -18,7 +18,8 @@ export default createStyles(
     } else {
       if (largerThan !== undefined) {
         media[
-          `@media (min-width: ${theme.fn.size({ size: largerThan, sizes: theme.breakpoints }) + 1
+          `@media (min-width: ${
+            theme.fn.size({ size: largerThan, sizes: theme.breakpoints }) + 1
           }px)`
         ] = styles;
       }

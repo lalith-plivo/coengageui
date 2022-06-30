@@ -5,7 +5,7 @@ import useStyles from './TypographyStylesProvider.styles';
 
 export interface TypographyStylesProviderProps
   extends DefaultProps,
-  React.ComponentPropsWithoutRef<'div'> {
+    React.ComponentPropsWithoutRef<'div'> {
   /** Render any content to add CoengageUI typography styles */
   children: React.ReactNode;
 }

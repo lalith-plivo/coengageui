@@ -9,8 +9,8 @@ function DynamicData() {
   const data =
     value.trim().length > 0 && !value.includes('@')
       ? ['gmail.com', 'outlook.com', 'yahoo.com'].map((provider) => ({
-        value: `${value}@${provider}`,
-      }))
+          value: `${value}@${provider}`,
+        }))
       : [];
 
   return (
@@ -42,7 +42,7 @@ storiesOf('Autocomplete', module)
         label="Choose your favorite library/framework"
         placeholder="Choose value"
         value="React"
-        onChange={() => { }}
+        onChange={() => {}}
         data={[{ value: 'React' }, { value: 'Angular' }, { value: 'Svelte' }, { value: 'Vue' }]}
       />
     </div>

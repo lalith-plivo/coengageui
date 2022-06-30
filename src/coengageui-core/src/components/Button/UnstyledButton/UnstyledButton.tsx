@@ -3,7 +3,7 @@ import { DefaultProps, PolymorphicComponentProps, PolymorphicRef } from 'coengag
 import { Box } from '../../Box';
 import useStyles from './UnstyledButton.styles';
 
-interface _UnstyledButtonProps extends DefaultProps { }
+interface _UnstyledButtonProps extends DefaultProps {}
 
 export type UnstyledButtonProps<C> = PolymorphicComponentProps<C, _UnstyledButtonProps>;
 

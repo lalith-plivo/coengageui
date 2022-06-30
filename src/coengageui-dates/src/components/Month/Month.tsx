@@ -73,8 +73,8 @@ export type MonthStylesNames = Selectors<typeof useStyles> | DayStylesNames;
 
 export interface MonthProps
   extends DefaultProps<MonthStylesNames>,
-  MonthSettings,
-  Omit<React.ComponentPropsWithoutRef<'table'>, 'onChange' | 'value'> {
+    MonthSettings,
+    Omit<React.ComponentPropsWithoutRef<'table'>, 'onChange' | 'value'> {
   /** Date at which month should be shown */
   month: Date;
 

@@ -11,7 +11,7 @@ import { DefaultValue, TagInputValueProps } from './DefaultValue';
 
 const defaultProps: TagInputValueProps = {
   label: 'test-label',
-  onRemove: () => { },
+  onRemove: () => {},
   disabled: false,
   size: 'sm',
   radius: 'sm',

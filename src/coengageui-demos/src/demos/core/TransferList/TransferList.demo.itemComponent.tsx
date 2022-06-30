@@ -100,7 +100,7 @@ const ItemComponent: TransferListItemComponent = ({
         {data.description}
       </Text>
     </div>
-    <Checkbox checked={selected} onChange={() => { }} tabIndex={-1} sx={{ pointerEvents: 'none' }} />
+    <Checkbox checked={selected} onChange={() => {}} tabIndex={-1} sx={{ pointerEvents: 'none' }} />
   </Group>
 );
 

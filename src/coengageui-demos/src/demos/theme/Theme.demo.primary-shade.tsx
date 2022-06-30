@@ -19,8 +19,8 @@ import { CoengageUIProvider, Group, Button } from 'coengageui_core';
 function Demo() {
   return (
     <CoengageUIProvider theme={{ primaryShade: ${props
-    .replace(' primaryShade={', '')
-    .replace('}', '')} }}>
+      .replace(' primaryShade={', '')
+      .replace('}', '')} }}>
       <Group position="center">
         <Button variant="filled">Filled button</Button>
         <Button variant="light">Light button</Button>

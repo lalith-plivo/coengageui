@@ -11,7 +11,7 @@ export type TransferListStylesNames = RenderListStylesNames;
 
 export interface TransferListProps
   extends DefaultProps<TransferListStylesNames>,
-  Omit<React.ComponentPropsWithoutRef<'div'>, 'value' | 'onChange'> {
+    Omit<React.ComponentPropsWithoutRef<'div'>, 'value' | 'onChange'> {
   /** Current value */
   value: TransferListData;
 

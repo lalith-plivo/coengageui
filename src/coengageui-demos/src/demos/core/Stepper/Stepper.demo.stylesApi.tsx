@@ -74,8 +74,9 @@ const useStyles = createStyles((theme, params, getRef) => ({
 
   separator: {
     height: 2,
-    borderTop: `2px dashed ${theme.colorScheme === 'dark' ? theme.colors.dark[3] : theme.colors.gray[4]
-      }`,
+    borderTop: `2px dashed ${
+      theme.colorScheme === 'dark' ? theme.colors.dark[3] : theme.colors.gray[4]
+    }`,
     borderRadius: theme.radius.xl,
     backgroundColor: 'transparent',
   },

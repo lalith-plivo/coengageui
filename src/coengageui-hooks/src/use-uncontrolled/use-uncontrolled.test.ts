@@ -8,7 +8,7 @@ describe('coengageui_hooks/use-uncontrolled', () => {
         value: 'test-value',
         defaultValue: null,
         finalValue: null,
-        onChange: () => { },
+        onChange: () => {},
         rule: (f) => !!f,
       })
     );
@@ -50,7 +50,7 @@ describe('coengageui_hooks/use-uncontrolled', () => {
         value: null,
         defaultValue: 'test-default-value',
         finalValue: null,
-        onChange: () => { },
+        onChange: () => {},
         rule: (f) => !!f,
       })
     );
@@ -64,7 +64,7 @@ describe('coengageui_hooks/use-uncontrolled', () => {
         value: null,
         defaultValue: null,
         finalValue: 'test-final-value',
-        onChange: () => { },
+        onChange: () => {},
         rule: (f) => !!f,
       })
     );

@@ -9,11 +9,11 @@ describe('coengageui_hooks/use-media-query', () => {
       '(min-width: 1000px)': false,
     };
     window.matchMedia = (query) =>
-    ({
-      matches: mediaMatches[query] ?? false,
-      addListener: jest.fn(),
-      removeListener: jest.fn(),
-    } as any);
+      ({
+        matches: mediaMatches[query] ?? false,
+        addListener: jest.fn(),
+        removeListener: jest.fn(),
+      } as any);
   });
   it('should return true if media query matches', () => {
     const { result } = renderHook(() => useMediaQuery('(min-width: 500px)'));

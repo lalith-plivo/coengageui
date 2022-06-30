@@ -10,7 +10,7 @@ export type MonthsListStylesNames = CalendarHeaderStylesNames | MonthStylesNames
 
 export interface MonthsListProps
   extends DefaultProps<MonthsListStylesNames>,
-  Omit<MonthProps, 'styles' | 'classNames' | 'daysRefs' | 'onDayKeyDown'> {
+    Omit<MonthProps, 'styles' | 'classNames' | 'daysRefs' | 'onDayKeyDown'> {
   amountOfMonths: number;
   month: Date;
   locale: string;

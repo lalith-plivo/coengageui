@@ -32,8 +32,8 @@ export type MenuStylesNames =
 
 export interface MenuProps
   extends DefaultProps<MenuStylesNames>,
-  SharedPopperProps,
-  React.ComponentPropsWithRef<'div'> {
+    SharedPopperProps,
+    React.ComponentPropsWithRef<'div'> {
   /** <MenuItem /> and <Divider /> components only, children are passed to MenuBody component  */
   children: React.ReactNode;
 

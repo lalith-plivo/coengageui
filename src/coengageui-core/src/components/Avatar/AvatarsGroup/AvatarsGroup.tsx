@@ -15,7 +15,7 @@ export type AvatarsGroupStylesNames = Selectors<typeof useStyles>;
 
 export interface AvatarsGroupProps
   extends DefaultProps<AvatarsGroupStylesNames>,
-  React.ComponentPropsWithoutRef<'div'> {
+    React.ComponentPropsWithoutRef<'div'> {
   /** <Avatar /> components only */
   children?: React.ReactNode;
 

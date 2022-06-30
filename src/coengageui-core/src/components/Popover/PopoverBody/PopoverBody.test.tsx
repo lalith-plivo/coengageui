@@ -9,7 +9,7 @@ import {
 import { PopoverBody, PopoverBodyProps } from './PopoverBody';
 
 const defaultProps: PopoverBodyProps = {
-  onClose: () => { },
+  onClose: () => {},
   withCloseButton: true,
   children: 'test-content',
   closeButtonLabel: 'test-label',

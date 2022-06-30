@@ -8,8 +8,9 @@ export default createStyles((theme) => ({
     justifyContent: 'center',
     alignItems: 'center',
     textDecoration: 'none',
-    border: `1px solid ${theme.colorScheme === 'dark' ? theme.colors.dark[5] : theme.colors.gray[3]
-      }`,
+    border: `1px solid ${
+      theme.colorScheme === 'dark' ? theme.colors.dark[5] : theme.colors.gray[3]
+    }`,
     borderRadius: theme.radius.md,
     padding: theme.spacing.xl,
     backgroundColor: theme.colorScheme === 'dark' ? theme.colors.dark[5] : theme.white,

@@ -13,7 +13,7 @@ function ThemeWrapper(props: any) {
   useHotkeys([['mod + L', toggleRtl]]);
 
   return (
-    <ColorSchemeProvider colorScheme="light" toggleColorScheme={() => { }}>
+    <ColorSchemeProvider colorScheme="light" toggleColorScheme={() => {}}>
       <CoengageUIProvider
         theme={{
           dir: rtl ? 'rtl' : 'ltr',

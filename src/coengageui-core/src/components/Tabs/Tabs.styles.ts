@@ -28,8 +28,9 @@ export default createStyles((theme, { tabPadding, orientation }: TabsStylesParam
     },
 
     default: {
-      [orientation === 'horizontal' ? 'borderBottom' : 'borderRight']: `2px solid ${theme.colorScheme === 'dark' ? theme.colors.dark[4] : theme.colors.gray[2]
-        }`,
+      [orientation === 'horizontal' ? 'borderBottom' : 'borderRight']: `2px solid ${
+        theme.colorScheme === 'dark' ? theme.colors.dark[4] : theme.colors.gray[2]
+      }`,
 
       [`& .${tabsList.ref}`]: {
         [orientation === 'horizontal' ? 'marginBottom' : 'marginRight']: -2,
@@ -37,8 +38,9 @@ export default createStyles((theme, { tabPadding, orientation }: TabsStylesParam
     },
 
     outline: {
-      [orientation === 'horizontal' ? 'borderBottom' : 'borderRight']: `1px solid ${theme.colorScheme === 'dark' ? theme.colors.dark[4] : theme.colors.gray[2]
-        }`,
+      [orientation === 'horizontal' ? 'borderBottom' : 'borderRight']: `1px solid ${
+        theme.colorScheme === 'dark' ? theme.colors.dark[4] : theme.colors.gray[2]
+      }`,
 
       [`& .${tabsList.ref}`]: {
         [orientation === 'horizontal' ? 'marginBottom' : 'marginRight']: -1,

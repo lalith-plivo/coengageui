@@ -29,7 +29,7 @@ function Demo() {
 }
 `;
 
-const onTrigger = () => { };
+const onTrigger = () => {};
 
 const actions: SpotlightAction[] = [
   { title: 'Home', group: 'main', onTrigger },

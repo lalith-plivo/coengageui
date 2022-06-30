@@ -23,7 +23,7 @@ export interface VerticalSectionSharedProps extends DefaultProps {
 
 interface VerticalSectionProps
   extends VerticalSectionSharedProps,
-  Omit<React.ComponentPropsWithoutRef<'div'>, 'children'> {
+    Omit<React.ComponentPropsWithoutRef<'div'>, 'children'> {
   section: 'header' | 'footer';
   __staticSelector: string;
 }

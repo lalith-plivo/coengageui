@@ -63,34 +63,34 @@ export default function NavbarDocsCategory({ group, onLinkClick }: NavbarDocsCat
   const categorized = !Array.isArray(group.groups)
     ? []
     : group.groups.map((part) => {
-      if (!part || !Array.isArray(part.pages)) {
-        return null;
-      }
-      const links = part.pages.map((link) => (
-        <Link
-          key={link.slug}
-          className={classes.link}
-          activeClassName={classes.linkActive}
-          to={link.slug}
-          onClick={onLinkClick}
-          ref={(r) => {
-            itemRefs.current[link.slug] = r;
-          }}
-        >
-          {link.title}
-        </Link>
-      ));
+        if (!part || !Array.isArray(part.pages)) {
+          return null;
+        }
+        const links = part.pages.map((link) => (
+          <Link
+            key={link.slug}
+            className={classes.link}
+            activeClassName={classes.linkActive}
+            to={link.slug}
+            onClick={onLinkClick}
+            ref={(r) => {
+              itemRefs.current[link.slug] = r;
+            }}
+          >
+            {link.title}
+          </Link>
+        ));
 
-      return (
-        <div className={classes.innerCategory} key={part.category.title}>
-          <Text className={classes.innerCategoryTitle}>
-            <part.category.icon className={classes.innerCategoryIcon} />
-            {part.category.title}
-          </Text>
-          {links}
-        </div>
-      );
-    });
+        return (
+          <div className={classes.innerCategory} key={part.category.title}>
+            <Text className={classes.innerCategoryTitle}>
+              <part.category.icon className={classes.innerCategoryIcon} />
+              {part.category.title}
+            </Text>
+            {links}
+          </div>
+        );
+      });
 
   return (
     <div className={cx(classes.category, { [classes.categoryCollapsed]: collapsed })}>

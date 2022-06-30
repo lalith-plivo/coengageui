@@ -9,7 +9,7 @@ export type MonthPickerStylesNames = Selectors<typeof useStyles> | CalendarHeade
 
 export interface MonthPickerProps
   extends DefaultProps<MonthPickerStylesNames>,
-  Omit<React.ComponentPropsWithoutRef<'div'>, 'onChange'> {
+    Omit<React.ComponentPropsWithoutRef<'div'>, 'onChange'> {
   value: { year: number; month: number };
   onChange(value: number): void;
   locale: string;

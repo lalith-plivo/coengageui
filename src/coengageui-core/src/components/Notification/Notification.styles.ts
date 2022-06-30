@@ -50,8 +50,9 @@ export default createStyles((theme, { variant, radius }: NotificationStylesParam
       borderRadius: _radius,
       backgroundColor: theme.colorScheme === 'dark' ? theme.white : theme.white,
       boxShadow: theme.shadows.lg,
-      border: `1px solid ${theme.colorScheme === 'dark' ? theme.colors.neutral[6] : theme.colors.neutral[6]
-        }`,
+      border: `1px solid ${
+        theme.colorScheme === 'dark' ? theme.colors.neutral[6] : theme.colors.neutral[6]
+      }`,
 
       '&::before': {
         content: "''",

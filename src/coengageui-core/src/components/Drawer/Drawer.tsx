@@ -22,7 +22,7 @@ export type DrawerStylesNames = Exclude<Selectors<typeof useStyles>, 'withOverla
 
 export interface DrawerProps
   extends Omit<DefaultProps<DrawerStylesNames>, CoengageUIStyleSystemSize>,
-  Omit<React.ComponentPropsWithoutRef<'div'>, 'title'> {
+    Omit<React.ComponentPropsWithoutRef<'div'>, 'title'> {
   /** If true drawer is mounted to the dom */
   opened: boolean;
 
@@ -172,8 +172,8 @@ export function Drawer(props: DrawerProps) {
     typeof overlayOpacity === 'number'
       ? overlayOpacity
       : theme.colorScheme === 'dark'
-        ? 0.85
-        : 0.75;
+      ? 0.85
+      : 0.75;
 
   const _closeOnEscape = (event: KeyboardEvent) => {
     if (event.code === 'Escape' && closeOnEscape) {

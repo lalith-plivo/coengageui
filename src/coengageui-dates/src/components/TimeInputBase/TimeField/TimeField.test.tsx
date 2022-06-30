@@ -9,8 +9,8 @@ import {
 import { TimeField } from './TimeField';
 
 const defaultProps = {
-  onChange: () => { },
-  setValue: () => { },
+  onChange: () => {},
+  setValue: () => {},
 };
 
 describe('coengageui_dates/TimeField', () => {

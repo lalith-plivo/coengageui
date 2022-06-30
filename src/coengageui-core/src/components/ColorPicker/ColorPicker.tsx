@@ -53,8 +53,8 @@ export interface ColorPickerBaseProps {
 
 export interface ColorPickerProps
   extends DefaultProps<ColorPickerStylesNames>,
-  ColorPickerBaseProps,
-  Omit<React.ComponentPropsWithoutRef<'div'>, 'onChange' | 'value' | 'defaultValue'> {
+    ColorPickerBaseProps,
+    Omit<React.ComponentPropsWithoutRef<'div'>, 'onChange' | 'value' | 'defaultValue'> {
   /** Force picker to take 100% width of its container */
   fullWidth?: boolean;
 

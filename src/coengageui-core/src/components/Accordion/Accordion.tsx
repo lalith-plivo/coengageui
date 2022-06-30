@@ -17,7 +17,7 @@ import { useAccordionFocus } from './use-accordion-focus/use-accordion-focus';
 
 export interface AccordionProps
   extends DefaultProps<AccordionItemStylesNames>,
-  Omit<React.ComponentPropsWithRef<'div'>, 'onChange'> {
+    Omit<React.ComponentPropsWithRef<'div'>, 'onChange'> {
   /** <AccordionItem /> components only */
   children: React.ReactNode;
 

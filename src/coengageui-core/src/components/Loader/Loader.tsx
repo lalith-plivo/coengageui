@@ -61,9 +61,9 @@ export function Loader(props: LoaderProps) {
       color={
         _color in theme.colors
           ? theme.fn.themeColor(
-            _color,
-            theme.colorScheme === 'dark' ? 4 : theme.fn.primaryShade('light')
-          )
+              _color,
+              theme.colorScheme === 'dark' ? 4 : theme.fn.primaryShade('light')
+            )
           : color
       }
       {...others}

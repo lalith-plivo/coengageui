@@ -15,7 +15,7 @@ export type PaginationStylesNames = Selectors<typeof useStyles>;
 
 export interface PaginationProps
   extends DefaultProps<PaginationStylesNames>,
-  Omit<GroupProps, 'classNames' | 'styles' | 'onChange'> {
+    Omit<GroupProps, 'classNames' | 'styles' | 'onChange'> {
   /** Change item component */
   itemComponent?: React.FC<PaginationItemProps>;
 

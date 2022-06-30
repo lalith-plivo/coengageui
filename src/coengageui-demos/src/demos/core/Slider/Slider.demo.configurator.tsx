@@ -24,8 +24,9 @@ import { ${props.includes('range') ? 'RangeSlider' : 'Slider'} } from 'coengageu
 
 function Demo() {
   return (
-    <${props.includes('range') ? 'RangeSlider' : 'Slider'}${props ? `\n      ${props.replace('type="range"', '').trim()}` : '' // please don't judge, this works somehow
-  }
+    <${props.includes('range') ? 'RangeSlider' : 'Slider'}${
+  props ? `\n      ${props.replace('type="range"', '').trim()}` : '' // please don't judge, this works somehow
+}
       marks={[
         { value: 20, label: '20%' },
         { value: 50, label: '50%' },

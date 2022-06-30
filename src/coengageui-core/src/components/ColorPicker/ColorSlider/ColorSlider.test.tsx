@@ -3,7 +3,7 @@ import { ColorSlider, ColorSliderProps } from './ColorSlider';
 
 const defaultProps: ColorSliderProps = {
   value: 25,
-  onChange: () => { },
+  onChange: () => {},
   size: 'sm',
   maxValue: 360,
   overlays: [{ color: 'red' }],

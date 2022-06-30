@@ -37,8 +37,8 @@ function getTextColor({ theme, color, variant }: GetTextColor) {
   return color in theme.colors
     ? theme.colors[color][theme.colorScheme === 'dark' ? 5 : 7]
     : variant === 'link'
-      ? theme.colors[theme.primaryColor][theme.colorScheme === 'dark' ? 4 : 7]
-      : color || 'inherit';
+    ? theme.colors[theme.primaryColor][theme.colorScheme === 'dark' ? 4 : 7]
+    : color || 'inherit';
 }
 
 function getLineClamp(lineClamp: number): CSSObject {
@@ -97,8 +97,8 @@ export default createStyles(
         ...theme.fn.hover(
           variant === 'link' && underline === undefined
             ? {
-              textDecoration: 'underline',
-            }
+                textDecoration: 'underline',
+              }
             : undefined
         ),
       },

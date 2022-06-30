@@ -34,8 +34,9 @@ export default createStyles(
         width: bulletSize,
         height: bulletSize,
         borderRadius: theme.fn.size({ size: radius, sizes: theme.radius }),
-        border: `${lineWidth}px solid ${theme.colorScheme === 'dark' ? theme.colors.dark[4] : theme.colors.gray[3]
-          }`,
+        border: `${lineWidth}px solid ${
+          theme.colorScheme === 'dark' ? theme.colors.dark[4] : theme.colors.gray[3]
+        }`,
         backgroundColor: theme.colorScheme === 'dark' ? theme.colors.dark[7] : theme.white,
         position: 'absolute',
         top: 0,
@@ -70,8 +71,9 @@ export default createStyles(
           left: align === 'left' ? -lineWidth : 'auto',
           right: align === 'right' ? -lineWidth : 'auto',
           bottom: -theme.spacing.xl,
-          borderLeft: `${lineWidth}px ${lineVariant} ${theme.colorScheme === 'dark' ? theme.colors.dark[4] : theme.colors.gray[3]
-            }`,
+          borderLeft: `${lineWidth}px ${lineVariant} ${
+            theme.colorScheme === 'dark' ? theme.colors.dark[4] : theme.colors.gray[3]
+          }`,
           content: '""',
           display: 'none',
         },

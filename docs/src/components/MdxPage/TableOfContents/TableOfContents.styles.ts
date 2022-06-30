@@ -31,8 +31,9 @@ export default createStyles((theme) => ({
   },
 
   items: {
-    borderLeft: `1px solid ${theme.colorScheme === 'dark' ? theme.colors.info[1] : theme.colors.info[1]
-      }`,
+    borderLeft: `1px solid ${
+      theme.colorScheme === 'dark' ? theme.colors.info[1] : theme.colors.info[1]
+    }`,
   },
 
   link: {

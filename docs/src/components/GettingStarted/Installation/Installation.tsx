@@ -11,13 +11,13 @@ export function Installation({ setDependencies }: InstallationProps) {
   const theme = useCoengageUITheme();
 
   const [values, setValues] = useState({
-    'coengageui_hooks': true,
-    'coengageui_core': true,
-    'coengageui_dates': false,
-    'coengageui_notifications': false,
-    'coengageui_prism': false,
-    'coengageui_rte': false,
-    'coengageui_dropzone': false,
+    coengageui_hooks: true,
+    coengageui_core: true,
+    coengageui_dates: false,
+    coengageui_notifications: false,
+    coengageui_prism: false,
+    coengageui_rte: false,
+    coengageui_dropzone: false,
   });
 
   const items = PACKAGES_DATA.map((item) => (

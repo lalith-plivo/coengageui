@@ -15,19 +15,19 @@ export default createStyles((theme, { noActive }: ToolbarButtonStyles) => {
       '&.ql-active': noActive
         ? {}
         : {
-          backgroundColor:
-            theme.colorScheme === 'dark'
-              ? colors.background
-              : theme.colors[theme.primaryColor][0],
-          color: theme.colors[theme.primaryColor][theme.colorScheme === 'dark' ? 2 : 7],
-
-          '&:hover': {
             backgroundColor:
               theme.colorScheme === 'dark'
                 ? colors.background
                 : theme.colors[theme.primaryColor][0],
+            color: theme.colors[theme.primaryColor][theme.colorScheme === 'dark' ? 2 : 7],
+
+            '&:hover': {
+              backgroundColor:
+                theme.colorScheme === 'dark'
+                  ? colors.background
+                  : theme.colors[theme.primaryColor][0],
+            },
           },
-        },
     },
   };
 });

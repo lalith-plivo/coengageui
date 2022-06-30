@@ -79,8 +79,9 @@ export default createStyles((theme, { size, transitionDuration }: CheckboxStyles
       ...theme.fn.focusStyles(),
       appearance: 'none',
       backgroundColor: theme.colorScheme === 'dark' ? theme.white : theme.white,
-      border: `1px solid ${theme.colorScheme === 'dark' ? theme.colors.neutral[5] : theme.colors.neutral[5]
-        }`,
+      border: `1px solid ${
+        theme.colorScheme === 'dark' ? theme.colors.neutral[5] : theme.colors.neutral[5]
+      }`,
       width: _size,
       height: _size,
       borderRadius: theme.fn.radius('sm'),

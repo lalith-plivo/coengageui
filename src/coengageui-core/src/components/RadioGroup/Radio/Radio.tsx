@@ -16,7 +16,7 @@ export type RadioStylesNames = Exclude<Selectors<typeof useStyles>, 'labelDisabl
 
 export interface RadioProps
   extends DefaultProps<RadioStylesNames>,
-  Omit<React.ComponentPropsWithoutRef<'input'>, 'size'> {
+    Omit<React.ComponentPropsWithoutRef<'input'>, 'size'> {
   /** Radio label */
   label?: React.ReactNode;
 

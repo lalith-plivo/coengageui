@@ -13,7 +13,7 @@ import { Chip, ChipStylesNames } from './Chip/Chip';
 
 export interface ChipsProps<T extends boolean = false>
   extends DefaultProps<ChipStylesNames>,
-  Omit<GroupProps, 'value' | 'defaultValue' | 'onChange' | 'classNames' | 'styles'> {
+    Omit<GroupProps, 'value' | 'defaultValue' | 'onChange' | 'classNames' | 'styles'> {
   /** Spacing between chips from theme or number to set value in px */
   spacing?: CoengageUINumberSize;
 

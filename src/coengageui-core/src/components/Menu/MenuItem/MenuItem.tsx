@@ -32,7 +32,7 @@ export interface SharedMenuItemProps extends DefaultProps {
 
 interface _MenuItemProps
   extends SharedMenuItemProps,
-  Omit<React.ComponentPropsWithoutRef<'button'>, keyof SharedMenuItemProps> {
+    Omit<React.ComponentPropsWithoutRef<'button'>, keyof SharedMenuItemProps> {
   component: any;
 }
 

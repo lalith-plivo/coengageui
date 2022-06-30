@@ -43,7 +43,7 @@ function defaultImageUpload(file: File): Promise<string> {
 
 export interface RichTextEditorProps
   extends DefaultProps<RichTextEditorStylesNames>,
-  Omit<React.ComponentPropsWithoutRef<'div'>, 'onChange'> {
+    Omit<React.ComponentPropsWithoutRef<'div'>, 'onChange'> {
   /** HTML content, value not forced as quill works in uncontrolled mode */
   value: string | Delta;
 

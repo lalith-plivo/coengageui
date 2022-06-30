@@ -11,7 +11,7 @@ import {
 
 export interface AsideProps
   extends HorizontalSectionSharedProps,
-  React.ComponentPropsWithRef<'nav'> {
+    React.ComponentPropsWithRef<'nav'> {
   /** Aside content */
   children: React.ReactNode;
 }

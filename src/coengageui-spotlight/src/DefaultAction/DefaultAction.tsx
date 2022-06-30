@@ -17,7 +17,7 @@ export type DefaultActionStylesNames = Selectors<typeof useStyles>;
 
 export interface DefaultActionProps
   extends DefaultProps<DefaultActionStylesNames>,
-  React.ComponentPropsWithoutRef<'button'> {
+    React.ComponentPropsWithoutRef<'button'> {
   action: SpotlightAction;
   hovered: boolean;
   onTrigger(): void;

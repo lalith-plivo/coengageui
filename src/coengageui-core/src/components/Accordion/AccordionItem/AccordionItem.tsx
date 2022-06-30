@@ -13,7 +13,7 @@ export type AccordionItemStylesNames = Selectors<typeof useStyles>;
 
 export interface PublicAccordionItemProps
   extends DefaultProps<AccordionItemStylesNames>,
-  React.ComponentPropsWithoutRef<'div'> {
+    React.ComponentPropsWithoutRef<'div'> {
   label?: React.ReactNode;
   icon?: React.ReactNode;
   children?: React.ReactNode;

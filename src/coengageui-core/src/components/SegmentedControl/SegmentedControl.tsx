@@ -28,7 +28,7 @@ export type SegmentedControlStylesNames = Selectors<typeof useStyles>;
 
 export interface SegmentedControlProps
   extends DefaultProps<SegmentedControlStylesNames>,
-  Omit<React.ComponentPropsWithoutRef<'div'>, 'value' | 'onChange'> {
+    Omit<React.ComponentPropsWithoutRef<'div'>, 'value' | 'onChange'> {
   /** Data based on which controls are rendered */
   data: string[] | SegmentedControlItem[];
 

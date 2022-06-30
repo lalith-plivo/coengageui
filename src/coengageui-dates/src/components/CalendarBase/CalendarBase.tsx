@@ -83,7 +83,7 @@ export interface CalendarSharedProps extends DefaultProps<CalendarBaseStylesName
 
 export interface CalendarBaseProps
   extends CalendarSharedProps,
-  Omit<React.ComponentPropsWithoutRef<'div'>, 'value' | 'onChange'> { }
+    Omit<React.ComponentPropsWithoutRef<'div'>, 'value' | 'onChange'> {}
 
 export const CalendarBase = forwardRef<HTMLDivElement, CalendarBaseProps>(
   (

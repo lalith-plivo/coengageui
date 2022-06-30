@@ -22,8 +22,9 @@ export const AlphaSlider = forwardRef<HTMLDivElement, AlphaSliderProps>(
         round={false}
         overlays={[
           {
-            backgroundImage: `linear-gradient(45deg, ${_color} 25%, transparent 25%), linear-gradient(-45deg, ${_color} 25%, transparent 25%), linear-gradient(45deg, transparent 75%, ${_color} 75%), linear-gradient(-45deg, ${theme.colorScheme === 'dark' ? theme.colors.dark[7] : theme.white
-              } 75%, ${_color} 75%)`,
+            backgroundImage: `linear-gradient(45deg, ${_color} 25%, transparent 25%), linear-gradient(-45deg, ${_color} 25%, transparent 25%), linear-gradient(45deg, transparent 75%, ${_color} 75%), linear-gradient(-45deg, ${
+              theme.colorScheme === 'dark' ? theme.colors.dark[7] : theme.white
+            } 75%, ${_color} 75%)`,
             backgroundSize: '8px 8px',
             backgroundPosition: '0 0, 0 4px, 4px -4px, -4px 0px',
           },

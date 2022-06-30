@@ -47,7 +47,7 @@ describe('coengageui_core/Checkbox', () => {
   });
 
   it('sets checked state based on indeterminate prop', () => {
-    render(<Checkbox indeterminate checked={false} onChange={() => { }} />);
+    render(<Checkbox indeterminate checked={false} onChange={() => {}} />);
     expect(screen.getByRole('checkbox')).toBeChecked();
   });
 });

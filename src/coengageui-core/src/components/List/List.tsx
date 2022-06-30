@@ -15,7 +15,7 @@ export type ListStylesNames = ListItemStylesNames | Selectors<typeof useStyles>;
 
 export interface ListProps
   extends DefaultProps<ListStylesNames>,
-  React.ComponentPropsWithoutRef<'ul'> {
+    React.ComponentPropsWithoutRef<'ul'> {
   /** <List.Item /> components only */
   children: React.ReactNode;
 

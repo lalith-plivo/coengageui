@@ -6,7 +6,7 @@ import { YearPicker, YearPickerProps } from './YearPicker';
 
 const defaultProps: YearPickerProps = {
   value: 2021,
-  onChange: () => { },
+  onChange: () => {},
   nextDecadeLabel: 'test-next',
   previousDecadeLabel: 'test-previous',
 };

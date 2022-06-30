@@ -31,8 +31,9 @@ function Demo() {
 const useStyles = createStyles((theme) => ({
   prism: {
     '& pre': {
-      backgroundColor: `${theme.colorScheme === 'dark' ? theme.colors.dark[8] : theme.white
-        } !important`,
+      backgroundColor: `${
+        theme.colorScheme === 'dark' ? theme.colors.dark[8] : theme.white
+      } !important`,
       borderRadius: theme.radius.md,
       padding: 14,
       paddingTop: 30,

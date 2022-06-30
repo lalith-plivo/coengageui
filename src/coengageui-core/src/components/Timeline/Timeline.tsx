@@ -13,7 +13,7 @@ import { TimelineItem, TimelineItemStylesNames } from './TimelineItem/TimelineIt
 
 export interface TimelineProps
   extends DefaultProps<TimelineItemStylesNames>,
-  React.ComponentPropsWithoutRef<'div'> {
+    React.ComponentPropsWithoutRef<'div'> {
   /** <Timeline.Item /> components only */
   children: React.ReactNode;
 

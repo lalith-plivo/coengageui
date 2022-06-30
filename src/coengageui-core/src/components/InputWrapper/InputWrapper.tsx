@@ -36,8 +36,8 @@ export interface InputWrapperBaseProps {
 
 export interface InputWrapperProps
   extends DefaultProps<InputWrapperStylesNames>,
-  InputWrapperBaseProps,
-  React.ComponentPropsWithoutRef<'div'> {
+    InputWrapperBaseProps,
+    React.ComponentPropsWithoutRef<'div'> {
   /** Input that should be wrapped */
   children: React.ReactNode;
 
