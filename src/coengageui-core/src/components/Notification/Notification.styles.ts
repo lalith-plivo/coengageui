@@ -1,4 +1,5 @@
 import { createStyles, CoengageUIColor, CoengageUINumberSize } from '@coengageui/styles';
+
 type NotificationVariant = 'info' | 'success' | 'warning' | 'danger';
 
 export interface NotificationStylesParams {

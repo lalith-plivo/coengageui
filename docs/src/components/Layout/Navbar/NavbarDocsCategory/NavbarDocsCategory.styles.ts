@@ -95,13 +95,10 @@ export default createStyles((theme) => ({
   },
 
   linkActive: {
-    borderLeftColor: theme.colors.blue[7],
-    backgroundColor:
-      theme.colorScheme === 'dark'
-        ? theme.fn.rgba(theme.colors.blue[9], 0.45)
-        : theme.colors.blue[0],
-    color: theme.colorScheme === 'dark' ? theme.colors.blue[1] : theme.colors.blue[8],
-    fontWeight: 500,
+    borderLeftColor: theme.colors.info[2],
+    backgroundColor: theme.colorScheme === 'dark' ? theme.colors.info[0] : theme.colors.info[0],
+    color: theme.colorScheme === 'dark' ? theme.colors.info[1] : theme.colors.info[1],
+    fontWeight: 600,
   },
 
   title: {

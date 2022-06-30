@@ -31,21 +31,23 @@ export default createStyles((theme) => ({
   },
 
   items: {
-    borderLeft: `1px solid ${theme.colorScheme === 'dark' ? theme.info[1] : theme.info[1]}`,
+    borderLeft: `1px solid ${
+      theme.colorScheme === 'dark' ? theme.colors.info[1] : theme.colors.info[1]
+    }`,
   },
 
   link: {
     display: 'block',
-    color: theme.colorScheme === 'dark' ? theme.info[2] : theme.info[2],
+    color: theme.colorScheme === 'dark' ? theme.colors.info[2] : theme.colors.info[2],
     borderLeft: '1px solid transparent',
     padding: `8px ${theme.spacing.md}px`,
     marginLeft: -1,
   },
 
   linkActive: {
-    borderLeftColor: theme.info[2],
-    backgroundColor: theme.colorScheme === 'dark' ? theme.info[0] : theme.info[0],
-    color: theme.colorScheme === 'dark' ? theme.info[1] : theme.info[1],
+    borderLeftColor: theme.colors.info[2],
+    backgroundColor: theme.colorScheme === 'dark' ? theme.colors.info[0] : theme.colors.info[0],
+    color: theme.colorScheme === 'dark' ? theme.colors.info[1] : theme.colors.info[1],
     fontWeight: 600,
   },
 
@@ -58,6 +60,6 @@ export default createStyles((theme) => ({
   title: {
     marginLeft: theme.spacing.md,
     fontWeight: 500,
-    fontSize: theme.fontSize.lg,
+    fontSize: theme.fontSizes.lg,
   },
 }));

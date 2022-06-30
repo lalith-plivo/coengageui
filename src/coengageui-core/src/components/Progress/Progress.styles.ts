@@ -26,9 +26,10 @@ export default createStyles(
     root: {
       position: 'relative',
       height: theme.fn.size({ size, sizes }),
-      backgroundColor: theme.colorScheme === 'dark' ? theme.colors.dark[4] : theme.colors.gray[2],
+      backgroundColor:
+        theme.colorScheme === 'dark' ? theme.colors.neutral[7] : theme.colors.neutral[7],
       borderRadius: theme.fn.size({ size: radius, sizes: theme.radius }),
-      overflow: 'hidden',
+      // overflow: 'hidden',
     },
 
     bar: {
@@ -68,12 +69,15 @@ export default createStyles(
     },
 
     label: {
-      color: theme.white,
+      color: theme.colors.neutral[3],
       fontSize: theme.fn.size({ size, sizes }) * 0.65,
       fontWeight: 700,
       userSelect: 'none',
       overflow: 'hidden',
       whiteSpace: 'nowrap',
+      position: 'absolute',
+      right: 0,
+      bottom: '100%',
     },
   })
 );

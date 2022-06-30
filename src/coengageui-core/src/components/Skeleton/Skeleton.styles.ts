@@ -27,7 +27,7 @@ export default createStyles(
       '&::before': {
         content: '""',
         position: 'absolute',
-        background: theme.colorScheme === 'dark' ? theme.colors.dark[7] : theme.white,
+        background: theme.colorScheme === 'dark' ? theme.colors.neutral[5] : theme.white,
         top: 0,
         bottom: 0,
         left: 0,
@@ -38,7 +38,8 @@ export default createStyles(
       '&::after': {
         content: '""',
         position: 'absolute',
-        background: theme.colorScheme === 'dark' ? theme.colors.dark[4] : theme.colors.gray[3],
+        background:
+          theme.colorScheme === 'dark' ? theme.colors.neutral[5] : theme.colors.neutral[5],
         top: 0,
         bottom: 0,
         left: 0,

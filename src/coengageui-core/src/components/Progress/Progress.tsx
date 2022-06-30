@@ -102,17 +102,18 @@ export const Progress = forwardRef<HTMLDivElement, ProgressProps>((props: Progre
   return (
     <Box className={cx(classes.root, className)} ref={ref} {...others}>
       {segments || (
-        <div
-          role="progressbar"
-          aria-valuemax={100}
-          aria-valuemin={0}
-          aria-valuenow={value}
-          aria-label={ariaLabel}
-          className={classes.bar}
-          style={{ width: `${value}%` }}
-        >
+        <>
           {label ? <Text className={classes.label}>{label}</Text> : ''}
-        </div>
+          <div
+            role="progressbar"
+            aria-valuemax={100}
+            aria-valuemin={0}
+            aria-valuenow={value}
+            aria-label={ariaLabel}
+            className={classes.bar}
+            style={{ width: `${value}%` }}
+          />
+        </>
       )}
     </Box>
   );
