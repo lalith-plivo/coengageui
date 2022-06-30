@@ -9,24 +9,21 @@ export default createStyles((theme, { size }: SelectItemsStyles) => ({
     boxSizing: 'border-box',
     textAlign: 'left',
     width: '100%',
-    padding: `${theme.fn.size({ size, sizes: theme.spacing }) / 1.5}px ${theme.fn.size({
-      size,
-      sizes: theme.spacing,
-    })}px`,
+    padding: '8px 20px',
     cursor: 'pointer',
-    fontSize: theme.fn.size({ size, sizes: theme.fontSizes }),
-    color: theme.colorScheme === 'dark' ? theme.colors.dark[0] : theme.black,
-    borderRadius: theme.radius.sm,
+    fontSize: theme.fn.size({ size: 'sm', sizes: theme.fontSizes }),
+    color: theme.colorScheme === 'dark' ? theme.typography_light : theme.typography_light,
   },
 
   selected: {
-    backgroundColor:
-      theme.colorScheme === 'dark' ? theme.colors.dark[7] : theme.colors[theme.primaryColor][0],
-    color: theme.colorScheme === 'dark' ? theme.white : theme.colors[theme.primaryColor][9],
+    backgroundColor: theme.colorScheme === 'dark' ? theme.colors.info[0] : theme.colors.info[0],
+    color: theme.colorScheme === 'dark' ? theme.black : theme.black,
+    fontWeight: 500,
   },
 
   hovered: {
-    backgroundColor: theme.colorScheme === 'dark' ? theme.colors.dark[4] : theme.colors.gray[1],
+    backgroundColor: theme.colorScheme === 'dark' ? theme.colors.info[0] : theme.colors.info[0],
+    color: theme.colorScheme === 'dark' ? theme.black : theme.black,
   },
 
   nothingFound: {
@@ -38,8 +35,8 @@ export default createStyles((theme, { size }: SelectItemsStyles) => ({
   },
 
   disabled: {
-    cursor: 'default',
-    color: theme.colors.dark[2],
+    cursor: 'not-allowed',
+    color: theme.colors.neutral[6],
   },
 
   separator: {
@@ -53,6 +50,6 @@ export default createStyles((theme, { size }: SelectItemsStyles) => ({
   },
 
   separatorLabel: {
-    color: theme.colorScheme === 'dark' ? theme.colors.dark[3] : theme.colors.gray[5],
+    color: theme.colorScheme === 'dark' ? theme.typography_light : theme.typography_light,
   },
 }));

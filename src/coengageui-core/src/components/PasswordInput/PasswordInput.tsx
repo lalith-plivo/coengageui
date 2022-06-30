@@ -51,7 +51,7 @@ const rightSectionSizes = {
 };
 
 const defaultProps: Partial<PasswordInputProps> = {
-  size: 'sm',
+  size: 'md',
   toggleTabIndex: -1,
   visibilityToggleIcon: PasswordToggleIcon,
   __staticSelector: 'PasswordInput',
@@ -100,6 +100,7 @@ export const PasswordInput = forwardRef<HTMLInputElement, PasswordInputProps>(
 
     const rightSection = (
       <ActionIcon<'button'>
+        color="gray"
         className={classes.visibilityToggle}
         tabIndex={toggleTabIndex}
         radius={radius}

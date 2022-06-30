@@ -68,8 +68,8 @@ type InputComponent = (<C = 'input'>(props: InputProps<C>) => React.ReactElement
 };
 
 const defaultProps: Partial<InputProps<any>> = {
-  rightSectionWidth: 36,
-  size: 'sm',
+  rightSectionWidth: 30,
+  size: 'md',
   __staticSelector: 'Input',
 };
 

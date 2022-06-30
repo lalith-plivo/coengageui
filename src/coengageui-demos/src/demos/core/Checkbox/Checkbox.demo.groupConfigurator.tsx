@@ -52,6 +52,5 @@ export const groupConfigurator: CoengageUIDemo = {
     { name: 'error', type: 'string', initialValue: '' },
     { name: 'required', type: 'boolean', initialValue: true, defaultValue: false },
     { name: 'spacing', type: 'size', initialValue: 'lg', defaultValue: 'lg' },
-    { name: 'size', type: 'size', initialValue: 'sm', defaultValue: 'sm' },
   ],
 };

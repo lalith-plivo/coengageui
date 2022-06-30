@@ -149,7 +149,7 @@ export function defaultShouldCreate(query: string, data: SelectItem[]) {
 
 const defaultProps: Partial<SelectProps> = {
   required: false,
-  size: 'sm',
+  size: 'md',
   shadow: 'sm',
   itemComponent: DefaultItem,
   transition: 'fade',

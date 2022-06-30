@@ -21,13 +21,16 @@ export default createStyles((theme, { size }: InputWrapperStylesParams) => ({
   },
 
   error: {
-    marginTop: 8,
+    marginTop: 4,
     wordBreak: 'break-word',
     color: theme.colors.danger[1],
+    lineHeight: 1.5,
+    fontWeight: 400,
+    fontSize: `${theme.fontSizes.sm}px`,
   },
 
   description: {
-    marginTop: 8,
+    marginTop: 4,
     wordBreak: 'break-word',
     color: `${
       theme.colorScheme === 'dark' ? theme.typography_light : theme.typography_light

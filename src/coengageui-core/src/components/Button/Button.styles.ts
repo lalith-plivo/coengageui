@@ -102,8 +102,6 @@ interface GetVariantStyles {
 
 function getVariantStyles({ variant, theme, color }: GetVariantStyles) {
   const colors = theme.fn.variant({ color, variant });
-  console.log(colors, variant);
-  console.log(`\n`);
   return {
     border: `1px solid ${colors.border}`,
     backgroundColor: colors.background,

@@ -103,7 +103,7 @@ export function defaultShouldCreate(query: string, data: SelectItem[]) {
 }
 
 const defaultProps: Partial<MultiSelectProps> = {
-  size: 'sm',
+  size: 'md',
   valueComponent: DefaultValue,
   itemComponent: DefaultItem,
   transition: 'pop-top-left',

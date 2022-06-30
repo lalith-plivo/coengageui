@@ -43,7 +43,7 @@ export interface NativeSelectProps
 }
 
 const defaultProps: Partial<NativeSelectProps> = {
-  size: 'sm',
+  size: 'md',
 };
 
 export const NativeSelect = forwardRef<HTMLSelectElement, NativeSelectProps>(

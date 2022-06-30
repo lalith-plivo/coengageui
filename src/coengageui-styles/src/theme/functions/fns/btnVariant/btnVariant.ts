@@ -28,7 +28,6 @@ export interface VariantOutput {
 export function btnVariant(theme: CoengageUIThemeBase) {
   // eslint-disable-next-line @typescript-eslint/no-shadow
   return ({ variant, danger }: VariantInput): VariantOutput => {
-    console.log(variant, danger);
     if (variant === 'subtle') {
       return {
         border: danger ? theme.colors.danger[1] : 'transparent',

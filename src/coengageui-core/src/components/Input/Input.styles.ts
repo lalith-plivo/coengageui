@@ -16,7 +16,7 @@ export interface InputStylesParams {
 export const sizes = {
   xs: 30,
   sm: 36,
-  md: 42,
+  md: 48,
   lg: 50,
   xl: 60,
 };
@@ -68,27 +68,27 @@ export default createStyles(
               boxSizing: 'border-box',
               fontSize: theme.fn.size({ size, sizes: theme.fontSizes }),
               width: '100%',
-              color: theme.colorScheme === 'dark' ? theme.colors.dark[0] : theme.black,
+              color: theme.colorScheme === 'dark' ? theme.black : theme.black,
               display: 'block',
               textAlign: 'left',
               ...sizeStyles,
 
               '&:disabled': {
                 backgroundColor:
-                  theme.colorScheme === 'dark' ? theme.colors.dark[6] : theme.colors.gray[1],
-                color: theme.colors.dark[2],
+                  theme.colorScheme === 'dark' ? theme.colors.neutral[8] : theme.colors.neutral[8],
+                color: theme.colors.neutral[5],
                 opacity: 0.6,
                 cursor: 'not-allowed',
 
                 '&::placeholder': {
-                  color: theme.colors.dark[2],
+                  color: theme.typography_light,
                 },
               },
-
               '&::placeholder': {
                 opacity: 1,
                 userSelect: 'none',
-                color: theme.colorScheme === 'dark' ? theme.colors.dark[3] : theme.colors.gray[5],
+                color:
+                  theme.colorScheme === 'dark' ? theme.typography_light : theme.typography_light,
               },
 
               '&::-webkit-inner-spin-button, &::-webkit-outer-spin-button, &::-webkit-search-decoration, &::-webkit-search-cancel-button, &::-webkit-search-results-button, &::-webkit-search-results-decoration':
@@ -103,14 +103,14 @@ export default createStyles(
 
       defaultVariant: {
         border: `1px solid ${
-          theme.colorScheme === 'dark' ? theme.colors.dark[5] : theme.colors.gray[4]
+          theme.colorScheme === 'dark' ? theme.colors.neutral[6] : theme.colors.neutral[6]
         }`,
-        backgroundColor: theme.colorScheme === 'dark' ? theme.colors.dark[8] : theme.white,
+        backgroundColor: theme.colorScheme === 'dark' ? theme.white : theme.white,
         transition: 'border-color 100ms ease',
 
         '&:focus, &:focus-within': {
           outline: 'none',
-          borderColor: theme.colors[theme.primaryColor][theme.colorScheme === 'dark' ? 8 : 5],
+          borderColor: theme.colors.info[theme.colorScheme === 'dark' ? 1 : 1],
         },
       },
 
@@ -177,18 +177,18 @@ export default createStyles(
         pointerEvents: 'none',
         position: 'absolute',
         zIndex: 1,
-        left: 0,
+        left: 16,
         top: 0,
         bottom: 0,
         display: 'flex',
         alignItems: 'center',
         justifyContent: 'center',
-        width: typeof iconWidth === 'number' ? iconWidth : theme.fn.size({ size, sizes }),
+        width: typeof iconWidth === 'number' ? iconWidth : 20,
         color: invalid
-          ? theme.colors.red[theme.colorScheme === 'dark' ? 6 : 7]
+          ? theme.colors.danger[theme.colorScheme === 'dark' ? 1 : 1]
           : theme.colorScheme === 'dark'
-          ? theme.colors.dark[2]
-          : theme.colors.gray[5],
+          ? theme.colors.neutral[5]
+          : theme.colors.neutral[5],
       },
 
       rightSection: {

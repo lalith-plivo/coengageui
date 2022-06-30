@@ -16,8 +16,8 @@ export default createStyles((theme, { size }: AutocompleteStylesParams) => {
       textAlign: 'left',
       width: '100%',
       padding: `${spacing / 1.5}px ${spacing}`,
-      fontSize: theme.fn.size({ size, sizes: theme.fontSizes }),
-      color: theme.colorScheme === 'dark' ? theme.colors.dark[0] : theme.black,
+      fontSize: theme.fn.size({ size: 'sm', sizes: theme.fontSizes }),
+      color: theme.colorScheme === 'dark' ? theme.black : theme.black,
     },
 
     hovered: {

@@ -11,7 +11,7 @@ import {
   useCoengageUIDefaultProps,
 } from '@coengageui/styles';
 import { Box } from '../Box';
-import useStyles, { heights, ButtonVariant } from './Button.styles';
+import useStyles, { ButtonVariant } from './Button.styles';
 import { Loader, LoaderProps } from '../Loader';
 
 export type ButtonStylesNames = Selectors<typeof useStyles>;
