@@ -42,13 +42,6 @@ export const configurator: CoengageUIDemo = {
       initialValue: 'Tooltip',
     },
     {
-      name: 'color',
-      type: 'color',
-      initialValue: 'gray',
-      defaultValue: 'gray',
-    },
-    { name: 'radius', type: 'size', initialValue: 'sm', defaultValue: 'sm' },
-    {
       name: 'position',
       type: 'select',
       data: [
@@ -70,6 +63,16 @@ export const configurator: CoengageUIDemo = {
       ],
       initialValue: 'center',
       defaultValue: 'center',
+    },
+    {
+      name: 'variant',
+      type: 'segmented',
+      data: [
+        { label: 'dark', value: 'dark' },
+        { label: 'light', value: 'light' },
+      ],
+      initialValue: 'dark',
+      defaultValue: 'dark',
     },
     { name: 'withArrow', type: 'boolean', initialValue: true, defaultValue: false },
   ],

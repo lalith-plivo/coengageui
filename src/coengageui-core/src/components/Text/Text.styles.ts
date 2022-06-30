@@ -30,9 +30,10 @@ interface GetTextColor {
 
 function getTextColor({ theme, color, variant }: GetTextColor) {
   if (color === 'dimmed') {
-    return theme.colorScheme === 'dark' ? theme.colors.dark[2] : theme.colors.gray[6];
+    return theme.colorScheme === 'dark' ? theme.typography_light : theme.typography_light;
   }
 
+  // TODO CHANGE TO USE ONLY COENGAGE COLORS
   return color in theme.colors
     ? theme.colors[color][theme.colorScheme === 'dark' ? 5 : 7]
     : variant === 'link'

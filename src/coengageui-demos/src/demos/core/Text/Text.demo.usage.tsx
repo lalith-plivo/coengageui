@@ -8,8 +8,8 @@ function Demo() {
   return (
     <>
       <Text size="xs">Extra small text</Text>
-      <Text size="sm">Small text</Text>
-      <Text size="md">Default text</Text>
+      <Text size="sm">Default text </Text>
+      <Text size="md">Medium text</Text>
       <Text size="lg">Large text</Text>
       <Text size="xl">Extra large text</Text>
       <Text weight={500}>Semibold</Text>
@@ -32,8 +32,8 @@ function Demo() {
   return (
     <>
       <Text size="xs">Extra small text</Text>
-      <Text size="sm">Small text</Text>
-      <Text size="md">Default text</Text>
+      <Text size="sm">Default text </Text>
+      <Text size="md">Medium text</Text>
       <Text size="lg">Large text</Text>
       <Text size="xl">Extra large text</Text>
       <Text weight={500}>Semibold</Text>

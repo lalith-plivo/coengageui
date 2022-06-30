@@ -1,11 +1,10 @@
-import { createStyles, CoengageUIColor, CoengageUINumberSize } from '@coengageui/styles';
+import { createStyles } from '@coengageui/styles';
 
 export interface TooltipStylesParams {
-  color: CoengageUIColor;
-  radius: CoengageUINumberSize;
+  variant: 'light' | 'dark';
 }
 
-export default createStyles((theme, { color, radius }: TooltipStylesParams) => ({
+export default createStyles((theme, { variant }: TooltipStylesParams) => ({
   root: {
     position: 'relative',
     display: 'inline-block',
@@ -13,20 +12,22 @@ export default createStyles((theme, { color, radius }: TooltipStylesParams) => (
 
   body: {
     ...theme.fn.fontStyles(),
-    backgroundColor: theme.fn.themeColor(color, theme.colorScheme === 'dark' ? 3 : 9),
+    backgroundColor: variant === 'light' ? `${theme.white}` : `${theme.black}`,
+    boxShadow: variant === 'light' ? `${theme.shadows.sm}` : 'none',
     lineHeight: theme.lineHeight,
     fontSize: theme.fontSizes.sm,
-    borderRadius: theme.fn.radius(radius),
-    padding: `${theme.spacing.xs / 2}px ${theme.spacing.xs}px`,
-    color: theme.colorScheme === 'dark' ? theme.colors.dark[9] : theme.white,
+    padding: '6px 12px',
+    color: variant === 'light' ? `${theme.black}` : `${theme.white}`,
     position: 'relative',
     overflow: 'hidden',
     textOverflow: 'ellipsis',
+    fontWeight: 500,
   },
 
   arrow: {
     border: 0,
-    background: theme.fn.themeColor(color, theme.colorScheme === 'dark' ? 3 : 9),
+    background: variant === 'light' ? `${theme.white}` : `${theme.black}`,
+    boxShadow: variant === 'light' ? `${theme.shadows.sm}` : 'none',
     zIndex: 1,
   },
 }));

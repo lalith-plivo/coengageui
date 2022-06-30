@@ -120,13 +120,7 @@ export const Button: ButtonComponent = forwardRef(
       { classNames, styles, name: 'Button' }
     );
     const colors = theme.fn.variant({ color, variant });
-    const loader = (
-      <Loader
-        color={colors.color}
-        size={theme.fn.size({ size, sizes: heights }) / 2}
-        {...loaderProps}
-      />
-    );
+    const loader = <Loader color={colors.color} size={20} {...loaderProps} />;
 
     return (
       <Box

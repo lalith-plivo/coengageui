@@ -3,6 +3,10 @@ import type { CoengageUISizes, CoengageUISize, CoengageUINumberSize } from './Co
 import type { DeepPartial } from './DeepPartial';
 import type { CoengageUIThemeColors } from './CoengageUIColor';
 import type { VariantInput, VariantOutput } from '../functions/fns/variant/variant';
+import type {
+  VariantInput as ButtonVariantInput,
+  VariantOutput as ButtonVariantOutput,
+} from '../functions/fns/btnVariant/btnVariant';
 import type { ColorScheme } from './ColorScheme';
 import { CSSObject } from '../../tss';
 
@@ -36,6 +40,7 @@ interface CoengageUIThemeFunctions {
   darken(color: string, alpha: number): string;
   radius(size: CoengageUINumberSize | (string & {})): string | number;
   variant(payload: VariantInput): VariantOutput;
+  btnVariant(payload: ButtonVariantInput): ButtonVariantOutput;
   primaryShade(colorScheme?: ColorScheme): Shade;
   hover(hoverStyle: CSSObject): any;
 }

@@ -1,7 +1,6 @@
 import React, { useState, useRef, forwardRef, useEffect } from 'react';
 import {
   DefaultProps,
-  CoengageUIColor,
   Selectors,
   getDefaultZIndex,
   CoengageUINumberSize,
@@ -33,11 +32,10 @@ export interface TooltipProps
   /** Close delay in ms, 0 to disable delay */
   closeDelay?: number;
 
-  /** Any color from theme.colors, defaults to gray in light color scheme and dark in dark colors scheme */
-  color?: CoengageUIColor;
-
-  /** Radius from theme.radius, or number to set border-radius in px */
   radius?: CoengageUINumberSize;
+
+  /** Any color from theme.colors, defaults to gray in light color scheme and dark in dark colors scheme */
+  variant?: 'dark' | 'light';
 
   /** True to disable tooltip */
   disabled?: boolean;
@@ -71,7 +69,6 @@ const defaultProps: Partial<TooltipProps> = {
   openDelay: 0,
   closeDelay: 0,
   gutter: 5,
-  color: 'gray',
   disabled: false,
   withArrow: false,
   arrowSize: 2,
@@ -85,6 +82,7 @@ const defaultProps: Partial<TooltipProps> = {
   allowPointerEvents: false,
   positionDependencies: [],
   withinPortal: true,
+  variant: 'dark',
 };
 
 export const Tooltip = forwardRef<HTMLDivElement, TooltipProps>((props: TooltipProps, ref) => {
@@ -96,7 +94,6 @@ export const Tooltip = forwardRef<HTMLDivElement, TooltipProps>((props: TooltipP
     openDelay,
     closeDelay,
     gutter,
-    color,
     radius,
     disabled,
     withArrow,
@@ -118,13 +115,11 @@ export const Tooltip = forwardRef<HTMLDivElement, TooltipProps>((props: TooltipP
     styles,
     onMouseLeave,
     onMouseEnter,
+    variant,
     ...others
   } = useCoengageUIDefaultProps('Tooltip', defaultProps, props);
 
-  const { classes, cx, theme } = useStyles(
-    { color, radius },
-    { classNames, styles, name: 'Tooltip' }
-  );
+  const { classes, cx, theme } = useStyles({ variant }, { classNames, styles, name: 'Tooltip' });
   const openTimeoutRef = useRef<number>();
   const closeTimeoutRef = useRef<number>();
   const [_opened, setOpened] = useState(false);
@@ -193,7 +188,7 @@ export const Tooltip = forwardRef<HTMLDivElement, TooltipProps>((props: TooltipP
         arrowDistance={theme.fn.radius(radius) > 10 ? 7 : 3}
         zIndex={zIndex}
         arrowClassName={classes.arrow}
-        forceUpdateDependencies={[color, radius, ...positionDependencies]}
+        forceUpdateDependencies={[variant, ...positionDependencies]}
         withinPortal={withinPortal}
       >
         <Box

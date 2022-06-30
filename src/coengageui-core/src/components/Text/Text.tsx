@@ -53,7 +53,7 @@ type TextComponent = (<C = 'div'>(props: TextProps<C>) => React.ReactElement) & 
 };
 
 const defaultProps: Partial<TextProps<any>> = {
-  size: 'md',
+  size: 'sm',
   variant: 'text',
   gradient: { from: 'blue', to: 'cyan', deg: 45 },
   inline: false,

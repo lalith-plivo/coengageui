@@ -6,7 +6,6 @@ import {
   CoengageUIColor,
   CoengageUITheme,
 } from '@coengageui/styles';
-import { INPUT_SIZES } from '../Input';
 
 export type ButtonVariant =
   | 'filled'
@@ -15,7 +14,9 @@ export type ButtonVariant =
   | 'gradient'
   | 'white'
   | 'default'
-  | 'subtle';
+  | 'subtle'
+  | 'danger'
+  | 'danger_outline';
 
 export interface ButtonStylesParams {
   color: CoengageUIColor;
@@ -30,28 +31,23 @@ export interface ButtonStylesParams {
 
 const sizes = {
   xs: {
-    height: INPUT_SIZES.xs,
-    padding: '0 14px',
+    padding: '8px 12px',
   },
 
   sm: {
-    height: INPUT_SIZES.sm,
-    padding: '0 18px',
+    padding: '8px 12px',
   },
 
   md: {
-    height: INPUT_SIZES.md,
-    padding: '0 22px',
+    padding: '10px 20px',
   },
 
   lg: {
-    height: INPUT_SIZES.lg,
-    padding: '0 26px',
+    padding: '12px 20px',
   },
 
   xl: {
-    height: INPUT_SIZES.xl,
-    padding: '0 32px',
+    padding: '14px 24px',
   },
 
   'compact-xs': {
@@ -106,7 +102,8 @@ interface GetVariantStyles {
 
 function getVariantStyles({ variant, theme, color }: GetVariantStyles) {
   const colors = theme.fn.variant({ color, variant });
-
+  console.log(colors, variant);
+  console.log(`\n`);
   return {
     border: `1px solid ${colors.border}`,
     backgroundColor: colors.background,
@@ -167,6 +164,9 @@ export default createStyles(
       white: getVariantStyles({ variant: 'white', theme, color }),
       subtle: getVariantStyles({ variant: 'subtle', theme, color }),
 
+      danger: getVariantStyles({ variant: 'danger', theme, color }),
+      danger_outline: getVariantStyles({ variant: 'danger_outline', theme, color }),
+
       gradient: {
         border: 0,
         backgroundImage: gradient.background,
@@ -183,9 +183,9 @@ export default createStyles(
         ...theme.fn.focusStyles(),
         ...getWidthStyles(fullWidth),
         borderRadius: theme.fn.radius(radius),
-        fontWeight: 600,
+        fontWeight: 500,
         position: 'relative',
-        lineHeight: 1,
+        lineHeight: 1.5,
         fontSize: theme.fn.size({ size, sizes: theme.fontSizes }),
         WebkitTapHighlightColor: 'transparent',
         userSelect: 'none',

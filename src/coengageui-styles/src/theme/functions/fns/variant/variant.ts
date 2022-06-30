@@ -14,6 +14,7 @@ export interface VariantInput {
     | 'subtle'
     | 'info'
     | 'danger'
+    | 'danger_outline'
     | 'warning'
     | 'success';
   color?: CoengageUIColor;
@@ -71,6 +72,27 @@ export function variant(theme: CoengageUIThemeBase) {
         dark: rgba(getThemeColor(color, theme.colorScheme === 'dark' ? 1 : 1), 1),
         regular: rgba(getThemeColor(color, theme.colorScheme === 'dark' ? 1 : 1), 1),
         light: rgba(getThemeColor(color, theme.colorScheme === 'dark' ? 0 : 0), 1),
+        // Button
+        border: 'transparent',
+        background: theme.colorScheme === 'dark' ? theme.colors.danger[1] : theme.colors.danger[1],
+        color: theme.colorScheme === 'dark' ? theme.white : theme.white,
+        hover:
+          theme.colorScheme === 'dark'
+            ? rgba(theme.colors.danger[1], 0.85)
+            : rgba(theme.colors.danger[1], 0.85),
+      };
+    }
+
+    if (variant === 'danger_outline') {
+      return {
+        dark: rgba(getThemeColor(color, theme.colorScheme === 'dark' ? 1 : 1), 1),
+        regular: rgba(getThemeColor(color, theme.colorScheme === 'dark' ? 1 : 1), 1),
+        light: rgba(getThemeColor(color, theme.colorScheme === 'dark' ? 0 : 0), 1),
+        // Button
+        border: theme.colorScheme === 'dark' ? theme.colors.danger[1] : theme.colors.danger[1],
+        background: theme.white,
+        color: theme.colorScheme === 'dark' ? theme.colors.danger[1] : theme.colors.danger[1],
+        hover: theme.colorScheme === 'dark' ? theme.colors.danger[0] : theme.colors.danger[0],
       };
     }
 

@@ -20,6 +20,7 @@ export function attachFunctions(themeBase: CoengageUIThemeBase): CoengageUITheme
       primaryShade: fns.primaryShade(themeBase),
       radius: fns.radius(themeBase),
       variant: fns.variant(themeBase),
+      btnVariant: fns.btnVariant(themeBase),
       hover: fns.hover,
     },
   };

@@ -10,6 +10,7 @@ import { darken } from './darken/darken';
 import { lighten } from './lighten/lighten';
 import { radius } from './radius/radius';
 import { variant } from './variant/variant';
+import { btnVariant } from './btnVariant/btnVariant';
 import { primaryShade } from './primary-shade/primary-shade';
 import { hover } from './hover/hover';
 
@@ -28,6 +29,7 @@ export const fns = {
   lighten,
   radius,
   variant,
+  btnVariant,
   primaryShade,
   hover,
 } as const;

@@ -42,5 +42,20 @@ export const loadingConfigurator: CoengageUIDemo = {
       initialValue: 'left',
       defaultValue: 'left',
     },
+    {
+      name: 'variant',
+      type: 'select',
+      data: [
+        { label: 'filled', value: 'filled' },
+        { label: 'light', value: 'light' },
+        { label: 'outline', value: 'outline' },
+        { label: 'default', value: 'default' },
+        { label: 'subtle', value: 'subtle' },
+        { label: 'danger_outline', value: 'danger_outline' },
+        { label: 'danger', value: 'danger' },
+      ],
+      initialValue: 'filled',
+      defaultValue: 'filled',
+    },
   ],
 };
