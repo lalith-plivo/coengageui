@@ -8,6 +8,7 @@ export default createStyles((theme, { size }: InputWrapperStylesParams) => ({
   root: {
     ...theme.fn.fontStyles(),
     lineHeight: theme.lineHeight,
+    size,
   },
 
   label: {

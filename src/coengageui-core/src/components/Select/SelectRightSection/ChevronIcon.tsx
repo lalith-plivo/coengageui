@@ -16,7 +16,6 @@ const iconSizes = {
 
 export function ChevronIcon({ size, error, style, ...others }: ChevronIconProps) {
   const theme = useCoengageUITheme();
-  const _size = theme.fn.size({ size, sizes: iconSizes });
 
   return (
     <svg

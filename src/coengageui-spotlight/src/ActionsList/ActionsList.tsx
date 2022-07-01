@@ -24,7 +24,7 @@ export interface ActionsListProps extends DefaultProps<ActionsListStylesNames> {
   onActionTrigger(action: SpotlightAction): void;
   highlightQuery: boolean;
   highlightColor: CoengageUIColor;
-  radius: CoengageUINumberSize;
+  radius?: CoengageUINumberSize;
 }
 
 export function ActionsList({
@@ -39,8 +39,8 @@ export function ActionsList({
   nothingFoundMessage,
   highlightQuery,
   highlightColor,
-  radius,
-}: ActionsListProps) {
+}: // radius,
+ActionsListProps) {
   const { classes } = useStyles(null, { classNames, styles, name: 'Spotlight' });
 
   const items = actions.map((item) => {
@@ -54,7 +54,7 @@ export function ActionsList({
           onMouseEnter={() => onActionHover(item.index)}
           classNames={classNames}
           styles={styles}
-          radius={radius}
+          // radius={radius}
           onTrigger={() => onActionTrigger(item.item)}
           highlightQuery={highlightQuery}
           highlightColor={highlightColor}

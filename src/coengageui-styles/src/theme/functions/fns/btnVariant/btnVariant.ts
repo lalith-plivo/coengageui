@@ -1,4 +1,4 @@
-import type { CoengageUIColor, CoengageUIGradient, CoengageUIThemeBase } from '../../../types';
+import type { CoengageUIColor, CoengageUIThemeBase } from '../../../types';
 import { rgba } from '../rgba/rgba';
 
 export interface VariantInput {

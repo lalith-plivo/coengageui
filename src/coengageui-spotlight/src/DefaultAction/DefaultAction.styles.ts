@@ -1,10 +1,10 @@
-import { createStyles, CoengageUINumberSize } from 'coengageui_core';
+import { createStyles } from 'coengageui_core';
 
-export interface DefaultActionStylesParams {
-  radius: CoengageUINumberSize;
-}
+// export interface DefaultActionStylesParams {
+//   radius?: CoengageUINumberSize;
+// }
 
-export default createStyles((theme, { radius }: DefaultActionStylesParams) => ({
+export default createStyles((theme) => ({
   action: {
     position: 'relative',
     display: 'block',

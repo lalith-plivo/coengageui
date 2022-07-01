@@ -24,7 +24,7 @@ export interface DefaultActionProps
   highlightQuery: boolean;
   highlightColor: CoengageUIColor;
   query: string;
-  radius: CoengageUINumberSize;
+  radius?: CoengageUINumberSize;
 }
 
 export function DefaultAction({
@@ -39,7 +39,7 @@ export function DefaultAction({
   radius,
   ...others
 }: DefaultActionProps) {
-  const { classes, cx } = useStyles({ radius }, { styles, classNames, name: 'Spotlight' });
+  const { classes, cx } = useStyles();
 
   return (
     <UnstyledButton

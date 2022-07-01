@@ -1,49 +1,46 @@
-import { createStyles, CoengageUINumberSize } from 'coengageui_core';
+import { createStyles } from 'coengageui_core';
 
 export interface SpotlightStylesParams {
   centered: boolean;
   maxWidth: number;
   topOffset: number;
-  radius: CoengageUINumberSize;
 }
 
-export default createStyles(
-  (theme, { centered, maxWidth, topOffset, radius }: SpotlightStylesParams) => ({
-    root: {
-      ...theme.fn.cover(),
-      position: 'fixed',
-    },
+export default createStyles((theme, { centered, maxWidth, topOffset }: SpotlightStylesParams) => ({
+  root: {
+    ...theme.fn.cover(),
+    position: 'fixed',
+  },
 
-    spotlight: {
-      position: 'relative',
-      zIndex: 2,
-      backgroundColor: theme.colorScheme === 'dark' ? theme.white : theme.white,
-      // borderRadius: theme.fn.radius(radius),
-      width: '100%',
-      maxWidth,
-      overflow: 'hidden',
-      marginLeft: 'calc(var(--removed-scroll-width, 0px) * -1)',
-    },
+  spotlight: {
+    position: 'relative',
+    zIndex: 2,
+    backgroundColor: theme.colorScheme === 'dark' ? theme.white : theme.white,
+    // borderRadius: theme.fn.radius(radius),
+    width: '100%',
+    maxWidth,
+    overflow: 'hidden',
+    marginLeft: 'calc(var(--removed-scroll-width, 0px) * -1)',
+  },
 
-    overlay: {
-      ...theme.fn.cover(),
-      position: 'fixed',
-    },
+  overlay: {
+    ...theme.fn.cover(),
+    position: 'fixed',
+  },
 
-    inner: {
-      height: '100vh',
-      display: 'flex',
-      flexDirection: 'column',
-      paddingTop: centered ? theme.spacing.md : topOffset,
-      justifyContent: centered ? 'center' : 'flex-start',
-      alignItems: 'center',
-    },
+  inner: {
+    height: '100vh',
+    display: 'flex',
+    flexDirection: 'column',
+    paddingTop: centered ? theme.spacing.md : topOffset,
+    justifyContent: centered ? 'center' : 'flex-start',
+    alignItems: 'center',
+  },
 
-    searchInput: {
-      border: 0,
-      borderBottomRightRadius: 0,
-      borderBottomLeftRadius: 0,
-      backgroundColor: theme.colorScheme === 'dark' ? theme.white : theme.white,
-    },
-  })
-);
+  searchInput: {
+    border: 0,
+    borderBottomRightRadius: 0,
+    borderBottomLeftRadius: 0,
+    backgroundColor: theme.colorScheme === 'dark' ? theme.white : theme.white,
+  },
+}));

@@ -116,7 +116,7 @@ export function Spotlight({
   overlayOpacity = 0.25,
   overlayBlur = 3,
   shadow = 'md',
-  radius = 'sm',
+  // radius = 'sm',
   centered = false,
   closeOnActionTrigger = true,
   highlightQuery = false,
@@ -136,7 +136,7 @@ export function Spotlight({
 }: SpotlightProps) {
   const [hovered, setHovered] = useState(-1);
   const { classes, cx } = useStyles(
-    { centered, maxWidth, topOffset, radius },
+    { centered, maxWidth, topOffset },
     { classNames, styles, name: 'Spotlight' }
   );
 
@@ -227,7 +227,7 @@ export function Spotlight({
                 style={transitionStyles.spotlight}
                 className={classes.spotlight}
                 shadow={shadow}
-                radius={radius}
+                // radius={radius}
                 onMouseLeave={resetHovered}
               >
                 <TextInput
@@ -256,7 +256,7 @@ export function Spotlight({
                     }}
                     styles={styles}
                     classNames={classNames}
-                    radius={radius}
+                    // radius={radius}
                   />
                 </ActionsWrapper>
               </Paper>
