@@ -1,10 +1,10 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
-import { XCircleFillIcon } from '@primer/octicons-react';
+// import { XCircleFillIcon } from '@primer/octicons-react';
 import { CoengageUIProvider } from 'coengageui_styles';
 import { StylesAPIStory } from 'coengageui_storybook';
 import { Alert, AlertProps } from './Alert';
-import { Title } from '../Title';
+// import { Title } from '../Title';
 
 const defaultProps: AlertProps = {
   title: 'Alert title',
@@ -13,7 +13,7 @@ const defaultProps: AlertProps = {
 };
 
 export type AlertStyleType = 'filled' | 'outline' | 'light';
-const types: Array<AlertStyleType> = ['light', 'filled', 'outline'];
+// const types: Array<AlertStyleType> = ['light', 'filled', 'outline'];
 
 storiesOf('Alert', module)
   .add('Styles API', () => <StylesAPIStory component={Alert} name="Alert" props={defaultProps} />)
