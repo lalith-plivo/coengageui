@@ -1,7 +1,7 @@
 import React from 'react';
 import { render } from '@testing-library/react';
 import { itSupportsSystemProps } from 'coengageui_tests';
-import { DEFAULT_THEME } from 'coengageui_styles';
+// import { DEFAULT_THEME } from 'coengageui_styles';
 import { Loader, LoaderProps } from './Loader';
 
 const defaultProps: LoaderProps = {};
