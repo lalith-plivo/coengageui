@@ -2,7 +2,7 @@
   "name": "coengageui_styles-api",
   "description": "CoengageUI components styles api descriptions",
   "private": true,
-  "version": "0.0.1",
+  "version": "1.1.0",
   "main": "cjs/index.js",
   "module": "esm/index.js",
   "types": "lib/index.d.ts",
@@ -16,8 +16,8 @@
     "directory": "src/coengageui-styles-api"
   },
   "peerDependencies": {
-    "coengageui_core": "0.0.1",
-    "coengageui_hooks": "0.0.1"
+    "coengageui_core": "1.1.0",
+    "coengageui_hooks": "1.1.0"
   },
   "dependencies": {},
   "devDependencies": {}

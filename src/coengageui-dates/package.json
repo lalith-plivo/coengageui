@@ -1,7 +1,7 @@
 {
   "name": "coengageui_dates",
   "description": "Calendars, date and time pickers based on CoengageUI components",
-  "version": "0.0.1",
+  "version": "1.1.0",
   "main": "cjs/index.js",
   "module": "esm/index.js",
   "types": "lib/index.d.ts",
@@ -23,8 +23,8 @@
     "picker"
   ],
   "peerDependencies": {
-    "coengageui_core": "0.0.1",
-    "coengageui_hooks": "0.0.1",
+    "coengageui_core": "1.1.0",
+    "coengageui_hooks": "1.1.0",
     "dayjs": "^1.10.5",
     "react": ">=16.8.0"
   },

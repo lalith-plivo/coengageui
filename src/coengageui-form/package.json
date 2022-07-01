@@ -1,7 +1,7 @@
 {
   "name": "coengageui_form",
   "description": "CoengageUI form management library",
-  "version": "0.0.1",
+  "version": "1.1.0",
   "main": "cjs/index.js",
   "module": "esm/index.js",
   "types": "lib/index.d.ts",
