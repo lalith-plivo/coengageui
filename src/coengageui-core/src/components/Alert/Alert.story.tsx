@@ -40,56 +40,56 @@ storiesOf('Alert', module)
       </Alert>
     </div>
   ))
-  .add('All variants', function renderVariants() {
-    return (
-      <>
-        {types.map((type) => {
-          return (
-            <div style={{ maxWidth: 500, margin: 'auto', padding: 40 }}>
-              <Title mb={'xs'} order={3}>
-                {type}
-              </Title>
-              <Alert
-                icon={<XCircleFillIcon size={16} />}
-                title="Bummer!"
-                color="red"
-                type={type}
-                variant="info"
-              >
-                Something terrible happened! You made a mistake and there is no going back, your
-                data was lost forever!
-              </Alert>
-              <Alert icon={<XCircleFillIcon size={16} />} title="Bummer!" variant="success" mt="xl">
-                Something terrible happened! You made a mistake and there is no going back, your
-                data was lost forever!
-              </Alert>
-              <Alert
-                type={type}
-                icon={<XCircleFillIcon size={16} />}
-                title="Bummer!"
-                variant="warning"
-                mt="xl"
-              >
-                Something terrible happened! You made a mistake and there is no going back, your
-                data was lost forever!
-              </Alert>
+  // .add('All variants', function renderVariants() {
+  //   return (
+  //     <>
+  //       {types.map((type) => {
+  //         return (
+  //           <div style={{ maxWidth: 500, margin: 'auto', padding: 40 }}>
+  //             <Title mb={'xs'} order={3}>
+  //               {type}
+  //             </Title>
+  //             <Alert
+  //               icon={<XCircleFillIcon size={16} />}
+  //               title="Bummer!"
+  //               color="red"
+  //               type={type}
+  //               variant="info"
+  //             >
+  //               Something terrible happened! You made a mistake and there is no going back, your
+  //               data was lost forever!
+  //             </Alert>
+  //             <Alert icon={<XCircleFillIcon size={16} />} title="Bummer!" variant="success" mt="xl">
+  //               Something terrible happened! You made a mistake and there is no going back, your
+  //               data was lost forever!
+  //             </Alert>
+  //             <Alert
+  //               type={type}
+  //               icon={<XCircleFillIcon size={16} />}
+  //               title="Bummer!"
+  //               variant="warning"
+  //               mt="xl"
+  //             >
+  //               Something terrible happened! You made a mistake and there is no going back, your
+  //               data was lost forever!
+  //             </Alert>
 
-              <Alert
-                type={type}
-                icon={<XCircleFillIcon size={16} />}
-                title="Bummer!"
-                variant="danger"
-                mt="xl"
-              >
-                Something terrible happened! You made a mistake and there is no going back, your
-                data was lost forever!
-              </Alert>
-            </div>
-          );
-        })}
-      </>
-    );
-  })
+  //             <Alert
+  //               type={type}
+  //               icon={<XCircleFillIcon size={16} />}
+  //               title="Bummer!"
+  //               variant="danger"
+  //               mt="xl"
+  //             >
+  //               Something terrible happened! You made a mistake and there is no going back, your
+  //               data was lost forever!
+  //             </Alert>
+  //           </div>
+  //         );
+  //       })}
+  //     </>
+  //   );
+  // })
   .add('Default props on CoengageUIProvider', () => (
     <CoengageUIProvider defaultProps={{ Alert: { color: 'cyan', title: 'Context prop' } }}>
       <Alert title="Hello" sx={{ maxWidth: 400 }} mx="auto" my={50}>

@@ -5,15 +5,6 @@ interface ChevronIconProps extends DefaultProps, React.ComponentPropsWithoutRef<
   size: CoengageUISize;
   error: any;
 }
-
-const iconSizes = {
-  xs: 14,
-  sm: 18,
-  md: 20,
-  lg: 24,
-  xl: 28,
-};
-
 export function ChevronIcon({ size, error, style, ...others }: ChevronIconProps) {
   const theme = useCoengageUITheme();
 

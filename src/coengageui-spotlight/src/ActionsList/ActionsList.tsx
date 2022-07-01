@@ -24,7 +24,7 @@ export interface ActionsListProps extends DefaultProps<ActionsListStylesNames> {
   onActionTrigger(action: SpotlightAction): void;
   highlightQuery: boolean;
   highlightColor: CoengageUIColor;
-  radius?: CoengageUINumberSize;
+  // radius?: CoengageUINumberSize;
 }
 
 export function ActionsList({
