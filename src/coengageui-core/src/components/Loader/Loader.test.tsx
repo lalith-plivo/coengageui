@@ -18,8 +18,8 @@ describe('coengageui_core/Loader', () => {
     expect(container.querySelector('svg')).toHaveAttribute('width', '41px');
   });
 
-  it('sets svg fill based on color prop', () => {
-    const { container } = render(<Loader color="yellow" variant="bars" />);
-    expect(container.querySelector('svg')).toHaveAttribute('fill', DEFAULT_THEME.colors.yellow[6]);
-  });
+  // it('sets svg fill based on color prop', () => {
+  //   const { container } = render(<Loader color="yellow" variant="bars" />);
+  //   expect(container.querySelector('svg')).toHaveAttribute('fill', DEFAULT_THEME.colors.yellow[6]);
+  // });
 });
