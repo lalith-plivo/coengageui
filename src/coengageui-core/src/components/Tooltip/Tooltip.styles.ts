@@ -1,10 +1,11 @@
-import { createStyles } from 'coengageui_styles';
+import { createStyles, CoengageUINumberSize } from 'coengageui_styles';
 
 export interface TooltipStylesParams {
   variant: 'light' | 'dark';
+  radius: CoengageUINumberSize;
 }
 
-export default createStyles((theme, { variant }: TooltipStylesParams) => ({
+export default createStyles((theme, { variant, radius }: TooltipStylesParams) => ({
   root: {
     position: 'relative',
     display: 'inline-block',
@@ -22,6 +23,7 @@ export default createStyles((theme, { variant }: TooltipStylesParams) => ({
     overflow: 'hidden',
     textOverflow: 'ellipsis',
     fontWeight: 500,
+    borderRadius: theme.fn.radius(radius),
   },
 
   arrow: {

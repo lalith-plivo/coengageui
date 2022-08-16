@@ -32,7 +32,7 @@ export default createStyles((theme, { size, invalid }: MultiSelectStylesParams) 
     backgroundColor: 'transparent',
     border: 0,
     outline: 0,
-    fontSize: theme.fn.size({ size, sizes: theme.fontSizes }),
+    fontSize: 14,
     padding: 0,
     margin: theme.spacing.xs / 2,
     appearance: 'none',
@@ -40,10 +40,8 @@ export default createStyles((theme, { size, invalid }: MultiSelectStylesParams) 
 
     '&::placeholder': {
       color: invalid
-        ? theme.colors.red[theme.colorScheme === 'dark' ? 6 : 7]
-        : theme.colorScheme === 'dark'
-        ? theme.colors.dark[3]
-        : theme.colors.gray[5],
+        ? theme.colors.danger[1]
+        : theme.typography_light,
     },
 
     '&:disabled': {

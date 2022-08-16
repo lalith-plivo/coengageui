@@ -53,16 +53,16 @@ export function MdxPageTabs({ body, frontmatter, headings, siblings }: MdxPagePr
   if (!hasProps && !hasStyles) {
     return null;
   }
-
+  console.log(frontmatter, 'frontmatter');
   const propsTables = hasProps
     ? frontmatter.props.map((component) => (
-        <div key={component}>
-          <Title order={2} sx={{ fontWeight: 600 }} mb={20}>
-            {component} component props
-          </Title>
-          <PropsTable key={component} component={component} query={query} />
-        </div>
-      ))
+      <div key={component}>
+        <Title order={2} sx={{ fontWeight: 600 }} mb={20}>
+          {component} component props
+        </Title>
+        <PropsTable key={component} component={`${frontmatter.package}/${component}`} query={query} />
+      </div>
+    ))
     : null;
 
   return (

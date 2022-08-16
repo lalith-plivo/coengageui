@@ -3,7 +3,7 @@ import { useForm } from './use-form';
 
 const TEST_FORM = {
   initialValues: {
-    email: 'hello@coengageui.dev',
+    email: 'hellocoengageui.dev',
     confirmEmail: '',
     name: 'CoengageUI',
     age: 1,
@@ -203,16 +203,16 @@ describe('coengageui_hooks/use-form', () => {
     const hook = renderHook(() => useForm(TEST_FORM));
     act(() => {
       hook.result.current.setValues({
-        email: 'hello@coengageui.dev',
-        confirmEmail: 'hello@coengageui.dev',
+        email: 'hellocoengageui.dev',
+        confirmEmail: 'hellocoengageui.dev',
         name: 'CoengageUI',
         age: 1,
       });
     });
 
     expect(hook.result.current.values).toStrictEqual({
-      email: 'hello@coengageui.dev',
-      confirmEmail: 'hello@coengageui.dev',
+      email: 'hellocoengageui.dev',
+      confirmEmail: 'hellocoengageui.dev',
       name: 'CoengageUI',
       age: 1,
     });

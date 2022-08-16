@@ -32,8 +32,8 @@ export type MenuStylesNames =
 
 export interface MenuProps
   extends DefaultProps<MenuStylesNames>,
-    SharedPopperProps,
-    React.ComponentPropsWithRef<'div'> {
+  SharedPopperProps,
+  React.ComponentPropsWithRef<'div'> {
   /** <MenuItem /> and <Divider /> components only, children are passed to MenuBody component  */
   children: React.ReactNode;
 
@@ -142,7 +142,7 @@ const defaultProps: Partial<MenuProps> = {
   closeOnItemClick: true,
   transitionDuration: 150,
   size: 'md',
-  shadow: 'md',
+  shadow: 'sm',
   position: 'bottom',
   placement: 'start',
   gutter: 5,
@@ -150,7 +150,6 @@ const defaultProps: Partial<MenuProps> = {
   transition: 'pop-top-left',
   controlRefProp: 'ref',
   trigger: 'click',
-  radius: 'sm',
   delay: 100,
   zIndex: getDefaultZIndex('popover'),
   withinPortal: true,

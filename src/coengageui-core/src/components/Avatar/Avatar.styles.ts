@@ -9,7 +9,7 @@ export interface AvatarStylesParams {
 export const sizes = {
   xs: 16,
   sm: 26,
-  md: 38,
+  md: 40,
   lg: 56,
   xl: 84,
 };
@@ -42,7 +42,7 @@ export default createStyles((theme, { size, radius, color }: AvatarStylesParams)
       ...theme.fn.fontStyles(),
       fontSize: theme.fn.size({ size, sizes }) / 2.5,
       color: colors.color,
-      fontWeight: 700,
+      fontWeight: 500,
       backgroundColor: colors.background,
       display: 'flex',
       alignItems: 'center',

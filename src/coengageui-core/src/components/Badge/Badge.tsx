@@ -54,7 +54,7 @@ type BadgeComponent = (<C = 'div'>(props: BadgeProps<C>) => React.ReactElement) 
 const defaultProps: Partial<BadgeProps<any>> = {
   variant: 'light',
   size: 'md',
-  radius: 'xl',
+  radius: 0,
   gradient: { from: 'blue', to: 'cyan', deg: 45 },
 };
 

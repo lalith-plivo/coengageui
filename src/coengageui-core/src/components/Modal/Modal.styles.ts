@@ -17,7 +17,7 @@ export interface ModalStylesParams {
 }
 
 export default createStyles((theme, { overflow, size, centered, zIndex }: ModalStylesParams) => ({
-  close: {},
+  close: { color: theme.typograhy_dark },
   overlay: {},
 
   root: {
@@ -47,6 +47,9 @@ export default createStyles((theme, { overflow, size, centered, zIndex }: ModalS
     textOverflow: 'ellipsis',
     display: 'block',
     wordBreak: 'break-word',
+    color: theme.typograhy_dark,
+    fontWeight: 600,
+    fontSize: theme.fontSizes.lg
   },
 
   modal: {
@@ -64,7 +67,7 @@ export default createStyles((theme, { overflow, size, centered, zIndex }: ModalS
     display: 'flex',
     alignItems: 'center',
     justifyContent: 'space-between',
-    marginBottom: theme.spacing.md,
+    // marginBottom: theme.spacing.md,
     marginRight: -9,
   },
 

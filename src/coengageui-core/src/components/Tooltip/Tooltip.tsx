@@ -15,8 +15,8 @@ export type TooltipStylesNames = Selectors<typeof useStyles>;
 
 export interface TooltipProps
   extends DefaultProps<TooltipStylesNames>,
-    SharedPopperProps,
-    React.ComponentPropsWithoutRef<'div'> {
+  SharedPopperProps,
+  React.ComponentPropsWithoutRef<'div'> {
   /** Tooltip content */
   label: React.ReactNode;
 
@@ -119,7 +119,7 @@ export const Tooltip = forwardRef<HTMLDivElement, TooltipProps>((props: TooltipP
     ...others
   } = useCoengageUIDefaultProps('Tooltip', defaultProps, props);
 
-  const { classes, cx, theme } = useStyles({ variant }, { classNames, styles, name: 'Tooltip' });
+  const { classes, cx, theme } = useStyles({ variant, radius }, { classNames, styles, name: 'Tooltip' });
   const openTimeoutRef = useRef<number>();
   const closeTimeoutRef = useRef<number>();
   const [_opened, setOpened] = useState(false);
