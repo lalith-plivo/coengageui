@@ -18,12 +18,13 @@ import { OptionalPortal } from '../Portal';
 import { Box } from '../Box';
 import { GroupedTransition, CoengageUITransition } from '../Transition';
 import useStyles from './Modal.styles';
+import { Divider } from '../Divider';
 
 export type ModalStylesNames = Selectors<typeof useStyles>;
 
 export interface ModalProps
   extends Omit<DefaultProps<ModalStylesNames>, CoengageUIStyleSystemSize>,
-    Omit<React.ComponentPropsWithoutRef<'div'>, 'title'> {
+  Omit<React.ComponentPropsWithoutRef<'div'>, 'title'> {
   /** Mounts modal if true */
   opened: boolean;
 
@@ -102,7 +103,7 @@ const defaultProps: Partial<ModalProps> = {
   transitionDuration: 250,
   overflow: 'outside',
   transition: 'pop',
-  padding: 'lg',
+  padding: 0,
   shadow: 'lg',
   closeOnClickOutside: true,
   closeOnEscape: true,
@@ -157,8 +158,8 @@ export function Modal(props: ModalProps) {
     typeof overlayOpacity === 'number'
       ? overlayOpacity
       : theme.colorScheme === 'dark'
-      ? 0.85
-      : 0.75;
+        ? 0.85
+        : 0.75;
 
   const [, lockScroll] = useScrollLock();
 
@@ -222,20 +223,24 @@ export function Modal(props: ModalProps) {
                 style={transitionStyles.modal}
               >
                 {(title || withCloseButton) && (
-                  <div className={classes.header}>
-                    <Text id={titleId} className={classes.title}>
-                      {title}
-                    </Text>
+                  <>
+                    <div className={classes.header}>
+                      <Text id={titleId} className={classes.title}>
+                        {title}
+                      </Text>
 
-                    {withCloseButton && (
-                      <CloseButton
-                        iconSize={16}
-                        onClick={onClose}
-                        aria-label={closeButtonLabel}
-                        className={classes.close}
-                      />
-                    )}
-                  </div>
+                      {withCloseButton && (
+                        <CloseButton
+                          iconSize={16}
+                          onClick={onClose}
+                          aria-label={closeButtonLabel}
+                          className={classes.close}
+                        />
+                      )}
+                    </div>
+                    <Divider />
+                  </>
+
                 )}
 
                 <div id={bodyId} className={classes.body}>

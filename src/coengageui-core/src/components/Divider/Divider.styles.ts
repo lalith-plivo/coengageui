@@ -41,22 +41,14 @@ export default createStyles((theme, { size, variant, color }: DividerStylesParam
       content: '""',
       flex: 1,
       height: 1,
-      borderTop: `${theme.fn.size({ size, sizes })}px ${variant} ${theme.fn.themeColor(
-        color,
-        theme.colorScheme === 'dark' ? 3 : 4,
-        false
-      )}`,
+      borderTop: `${theme.fn.size({ size, sizes })}px ${variant} ${theme.colors.neutral[7]}`,
       marginRight: theme.spacing.xs,
     },
 
     '&::after': {
       content: '""',
       flex: 1,
-      borderTop: `${theme.fn.size({ size, sizes })}px ${variant} ${theme.fn.themeColor(
-        color,
-        theme.colorScheme === 'dark' ? 3 : 4,
-        false
-      )}`,
+      borderTop: `${theme.fn.size({ size, sizes })}px ${variant} ${theme.colors.neutral[7]}`,
       marginLeft: theme.spacing.xs,
     },
   },
@@ -66,10 +58,10 @@ export default createStyles((theme, { size, variant, color }: DividerStylesParam
       color === 'dark'
         ? theme.colors.dark[1]
         : theme.fn.themeColor(
-            color,
-            theme.colorScheme === 'dark' ? 5 : theme.fn.primaryShade(),
-            false
-          ),
+          color,
+          theme.colorScheme === 'dark' ? 5 : theme.fn.primaryShade(),
+          false
+        ),
   },
 
   horizontal: {

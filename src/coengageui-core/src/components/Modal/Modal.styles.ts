@@ -67,8 +67,8 @@ export default createStyles((theme, { overflow, size, centered, zIndex }: ModalS
     display: 'flex',
     alignItems: 'center',
     justifyContent: 'space-between',
-    // marginBottom: theme.spacing.md,
-    marginRight: -9,
+    padding: theme.spacing.lg,
+    margin: 0,
   },
 
   body: {
